@@ -14,7 +14,7 @@ functionality.
 actual error with all possible details about the error, including the time it occurred, method and class 
 name etc. 
 
-**Measure Performance**- At a time of design & writing the code, start analysing on how the 
+**Measure Performance**- At a time of design & writing the code, start analyzing on how the 
 performance of this function is, and where is the bottleneck.
 
 **Do write unit test** - Write and perform rigorous unit testing.
@@ -22,3 +22,4 @@ performance of this function is, and where is the bottleneck.
 **Object-Oriented Design** - Follow guidance available
 
 **Naming Conventions**- Follow standards naming conventions applicable for the language
+

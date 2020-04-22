@@ -23,3 +23,10 @@ performance of this function is, and where is the bottleneck.
 
 **Naming Conventions**- Follow standards naming conventions applicable for the language
 
+# Unit Testing Checklist
+- [ ] Does each requirement that applies to the class have its own test case?
+- [ ] Does each element from the design that applies to the class have its own test case? 
+- [ ] Have all defined-used data-flow paths been tested with at least one test case?
+- [ ] Has the code been checked for data-flow patterns that are unlikely to be correct, such as defined-defined, defined-exited, and defined-killed?
+- [ ] Has a list of common errors been used to write test cases to detect errors that can occur?
+- [ ] Have all simple boundaries been tested: maximum, minimum, and off-by-one boundaries?

@@ -9,4 +9,4 @@
 1. Test Automation is complete
 1. Acceptance criteria are covered by successful tests
 1. Integration Tests and Functional Tests have been created and are passing
-1. Functionality has been verified on DEV/QA environment
+1. Functionality has been verified on DEV/QA environment (100% dev and test cycle pass percentages)

@@ -2,7 +2,7 @@
 
 - Short lived branches
 - Recommended lifetime: 2-10 days
-- Naming Convention - <developername>/<UserStoryID/WorkItemId>
+- Branch naming convention - <developername>/<UserStoryID/WorkItemId>
 - PRs to be raised against master branch
 
 ![image.png](/.attachments/image-a49e2356-66d1-4521-9577-c0b2aadff9e5.png)

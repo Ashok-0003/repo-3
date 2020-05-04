@@ -9,7 +9,7 @@
 
 ## Branch Policies
 1. Minimum Number of Reviewers: 1.
-1. Don’t allow users to approve their own changes.
+1. Users cant approve their own changes.
 1. Check for linked work items – REQUIRED.
 1. Check for Comment Resolution – REQUIRED.
 1. Squash Merge.

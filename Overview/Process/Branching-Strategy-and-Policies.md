@@ -7,7 +7,7 @@
 
 ![image.png](/.attachments/image-a49e2356-66d1-4521-9577-c0b2aadff9e5.png)
 
-## Branch Policies
+## Branch Policies for master
 1. Minimum Number of Reviewers: 1.
 1. Users cant approve their own changes.
 1. Check for linked work items – REQUIRED.

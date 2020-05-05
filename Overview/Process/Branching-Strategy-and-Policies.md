@@ -13,7 +13,7 @@
 1. Check for linked work items – REQUIRED.
 1. Check for Comment Resolution – REQUIRED.
 1. Squash Merge.
-1. Mandatory approvers based on ADO groups like ARM templates approved by DevOps lead, Mobile changes approved by Mobile feature teal lead.
+1. Mandatory approvers based on ADO groups like ARM templates approved by DevOps lead, Mobile changes approved by Mobile feature team lead.
 
 ## Pull Request
 1. Developer will raise a pull request for the master branch only.

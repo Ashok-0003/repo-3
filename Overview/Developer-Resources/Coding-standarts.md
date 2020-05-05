@@ -6,5 +6,7 @@
 |  |  |  |
 
 **Solutions:**
-Solution/project name should follow {Company}.{Product/Entity}.{Solution}.{ProjectName} structure; e.g. "Mcs.Tasmu.Mobile" as solution name and "Mcs.Tasmu.Mobile.Core" as project name.
+Solution/project name should follow {Company}.{Product/Entity}.{Solution}.{ProjectName} structure;
+-  "Mcs.Tasmu.Mobile" as solution name and 
+- "Mcs.Tasmu.Mobile.Core" as project name.
 

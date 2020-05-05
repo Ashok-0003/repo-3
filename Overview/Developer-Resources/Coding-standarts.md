@@ -1,2 +1,9 @@
-[Naming conventions.xlsx](/.attachments/Naming%20conventions-a19ae0a9-2f7d-479f-a0b7-16bed1c6d4b4.xlsx)
+
+| Stack | Type | Additional Notes |
+|--|--|--|
+| Dev/C# | PascalCase (except local and instance variables). For further details- https://github.com/ktaranov/naming-convention/blob/master/C%23%20Coding%20Standards%20and%20Naming%20Conventions.md |  |
+|DevOps  |PascalCase (all environment variables, AKV keys, etc.)  |
+|  |  |  |
+
+
 

@@ -19,4 +19,5 @@
 1. Developer will raise a pull request for the master branch only.
 1. Work Item association is MUST for the pull request.
 1. CI Build validation should pass before the code is merged into master branch.
+1. Delete the branch after merge 
 

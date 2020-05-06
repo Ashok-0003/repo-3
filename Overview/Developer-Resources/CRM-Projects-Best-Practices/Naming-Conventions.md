@@ -5,7 +5,7 @@ TASMU_CPM_Core
 CRM Customization Prefix
 CPM_
 API- Project Namespace ?
-MS.TASMU.[Profile].API
+MCS.TASMU.[Profile].API
 
 Publisher:
 Customer Name : TASMU
@@ -29,12 +29,12 @@ Example :
 Intake Status would be CPM _lookup_intakestatus
 Plugins
 Format : [CustomerSolutionPrefix].Plugins.[EntityName]
-Example : CPM.Plugins.Intake
+Example : MCS.TASMU.CRM.Plugins.Intake
 
  
 Plugin Steps/Classes
 Format : [CustomerSolutionPrefix].Plugins.[EntityName].[Process]
-Example : CPM.Plugins.Intake.IntakeProcessing
+Example : MCS.TASMU.CRM.Plugins.Intake.IntakeProcessing
 
  
 Web Resources – JavaScript
@@ -70,4 +70,4 @@ Format : [EntityName] – [Process Name]
 Example : CPM :  Intake – Set Required Fields on Type Change
 
 Javascripts :
-Namespace :MS.TASMU
+Namespace :TASMU

@@ -68,3 +68,6 @@ Email workflows should begin with Notification – [Process Name], so they can b
 Business Rules
 Format : [EntityName] – [Process Name]
 Example : CPM :  Intake – Set Required Fields on Type Change
+
+Javascripts :
+Namespace :MS.TASMU

@@ -5,7 +5,7 @@ TASMU_CPM_Core
 CRM Customization Prefix
 CPM_
 API- Project Namespace ?
-TASMU.Core.[Profile].API
+MS.TASMU.[Profile].API
 
 Publisher:
 Customer Name : TASMU

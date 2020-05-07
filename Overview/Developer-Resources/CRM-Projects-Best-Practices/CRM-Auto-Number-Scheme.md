@@ -11,7 +11,7 @@ Prefix-[Seed]
 
 Contact (Profile) : USR-[1000000000]
 Account (Organisation) : ORG-[100000000]
-Organisation Role : ORL-[10000000000]
+Organisation Profile Link : OPL-[10000000000]
 **Notification Templates**
 
 Email Template : EML-[10000]

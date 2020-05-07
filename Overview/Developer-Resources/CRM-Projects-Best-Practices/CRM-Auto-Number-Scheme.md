@@ -27,6 +27,7 @@ Municipality : CPM-[20000]
 Zone : CPM-[30000]
 Taxonomy : CPM-[40000]
 Taxonomy Items : CPM-[50000]
+District : CPM-[60000]
 
 ## **Excluded Entities**
 

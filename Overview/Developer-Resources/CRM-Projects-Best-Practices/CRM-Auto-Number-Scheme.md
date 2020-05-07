@@ -10,8 +10,10 @@ Each entity that is exposed through the API's will contain an additional field c
 Prefix-[Seed]
 
 Contact (Profile) : USR-[1000000000]
+Credential : CDL-[1000000000]
 Account (Organisation) : ORG-[100000000]
 Organisation Profile Link : OPL-[10000000000]
+
 **Notification Templates**
 
 Email Template : EML-[10000]

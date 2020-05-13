@@ -1,0 +1,9 @@
+- ## Capacity calculation for sprint, 1 day for sprint planning and last day for demo, retrospective, 6 hours everyday for each resource. Remove the vacation days. 
+- ## User stories which not in approved status(Need to be approved by Architects/BA in coordination with Customer) should not be taken up for development in any sprint
+- ## All user stories should be groomed before its taken up for development, all user stories should have acceptance criteria which is agreed upon.
+- ## Changing the status of the user stories as mentioned in previous emails.(Flow should be New- Approved-Committed-Under Development- Dev Complete – Test Complete – Resolved- Closed )
+- ## Regular effort logging, meaning reducing/adding hours to Remaining hours, adding the burnt hours to Completed hours.
+- ## Changing the status of the tasks to Active when work in progress, and moving to closed when completed.
+- ## Logging any clarifications for the user stories in the comments section for each user story.
+- ## All user stories should have tasks with effort in hours, and all user stories should have story points.
+- ## Log any dependencies in DevOps using templates.(Detailed steps would come in few days)

@@ -23,91 +23,48 @@ Ensure you have completed the below steps before you start development.
   - Primary / Essential Skill Set 
 
     - VS2019 
-
     - C# 
-
     - XAML 
-
     - Angular 8/9 , AOT , Webpack, IVY, Modules 
-
     - TypeScript 
-
     - Karma, Jasmine 
-
     - JavaScript/JQuery 
-
     - Asp.Net  Web API 
-
     - EF Core with LINQ 
-
     - Git fundamentals 
-
     - Postman 
-
+    - Docker
+   
+- Mobile dev
     - XUnit Tests, MOQ
-
     - Kendo for Angular 
-
     - Basics of Kubernetes 
-
     - Azure CLI/PowerShell (For Dev-Ops role) 
-
     - Xamarin 
-
     - Xamarin Forms 
-
     - Xamarin Native, some level of iOS/Android native  
-
     - Xamarin Essentials 
-
     - Xamarin UITests 
-
     - MVVM 
-
     - SQLite 
 
-    - Docker 
-
-  
-
-  
-
-  
-
-Azure Stack (Mandatory) 
-
-·         App Services 
-
-·         Logic Apps 
-
-·         Redis 
-
-·         Azure Active directory 
-
-·         Key Vault 
-
-·         Application Insights 
-
-·         APIM 
-
-·         Azure Application Gateway 
-
-·         Storage Accounts 
-
-·         ARM templates 
-
-·         AKS (For Dev-Ops) 
-
-·         YAML (For Dev-Ops) 
-
-·         HELM (for DevOps) 
-
-·         Azure Sql Db 
-
-·         Azure Notification services 
-
-·         Azure Monitor 
-
-·         Event hubs 
-
-·         Azure PowerShell 
+  - Azure Stack (Mandatory) 
+    - App Services
+    - AAD (B2B/B2C)
+    - Logic Apps
+    - Redis
+    - Azure Active directory
+    - Key Vault
+    - Application Insights
+    - APIM
+    - Azure Application Gateway
+    - Storage Accounts 
+    - ARM templates  
+    - AKS (For Dev-Ops) 
+    - YAML (For Dev-Ops) 
+    - HELM (for DevOps)  
+    - Azure Sql Db 
+    - Azure Notification services  
+    - Azure Monitor  
+    - Event hubs 
+    - Azure PowerShell 

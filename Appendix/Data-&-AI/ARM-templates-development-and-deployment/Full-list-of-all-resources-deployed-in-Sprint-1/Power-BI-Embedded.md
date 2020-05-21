@@ -1,4 +1,4 @@
-# PowerBI Embedded (Dedicated Capacity)
+# Power BI Embedded (Dedicated Capacity)
 
 This module is used to deploy a Power BI Embedded resource (also called Power BI Dedicated Capacity)
 

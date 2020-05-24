@@ -11,6 +11,7 @@
 1. Test Data (if required) has been provided or planned to be provided before the completion of the story
 1. Product Owner has marked the Story as "Approved" in Azure DevOps
 1. Story size should not exceed 13 story points  
+1. Edge cases/exception scenarios are captured where applicable in the story
 
 
 ## Note:

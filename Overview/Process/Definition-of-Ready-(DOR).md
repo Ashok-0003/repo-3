@@ -1,5 +1,5 @@
 # An User Story is considered as "Ready" for development when:
-1. The story is described in accordance with standard "As a ..." template . Describe it in Who What Why format
+1. The story is described in accordance with standard "As a ..." template . Describe it in Who, What, Why format.
 1. Acceptance criteria is clear and unambiguous
 1. Assumptions (if any) are clearly documented
 1. The story has been assigned a priority by the Product Owner (either stack rank, relative or both)

@@ -70,4 +70,4 @@ Format : [EntityName] – [Process Name]
 Example : CPM :  Intake – Set Required Fields on Type Change
 
 Javascripts :
-Namespace :TASMU
+Namespace :Tasmu

@@ -20,7 +20,7 @@
   <TD  width=553  class=xl27 style="width:415pt">Description (as a pop up to provide guidence)</TD>
  </TR>
  <TR style="height:54.0pt">
-  <TD  width=106  height=72  class=xl16 style="width:80pt;height:54.0pt">**RAID Item ID***</TD>
+  <TD  width=106  height=72  class=xl16 style="width:80pt;height:54.0pt"><b>RAID Item ID*</b></TD>
   <TD  width=260  class=xl24 style="width:195pt">Automatically generated valuebased on previous #s<BR/>
   <BR/>
   Risk: B12_R001, B12_R002, etc<BR/>
@@ -34,14 +34,14 @@
   </TD>
  </TR>
  <TR style="height:18.0pt">
-  <TD  width=106  height=24  class=xl16 style="width:80pt;height:18.0pt">Initiative*</TD>
+  <TD  width=106  height=24  class=xl16 style="width:80pt;height:18.0pt"><b>Initiative*</b></TD>
   <TD  width=260  class=xl25 style="width:195pt"><SPAN  class=font9>Automatic for all: </SPAN><SPAN 
   class=font5><BR/>
   B 12 - Smart Qatar Platform Development</SPAN></TD>
   <TD  width=553  class=xl16 style="width:415pt">-</TD>
  </TR>
  <TR style="height:72.0pt">
-  <TD  width=106  height=96  class=xl16 style="width:80pt;height:72.0pt">Status*</TD>
+  <TD  width=106  height=96  class=xl16 style="width:80pt;height:72.0pt"><b>Status*</b></TD>
   <TD  width=260  class=xl25 style="width:195pt">New<BR/>
   In Progress<BR/>
   Closed<BR/>
@@ -57,22 +57,22 @@
   class=font6>Cancelled—</SPAN><SPAN  class=font5>The assumption was no longer valid and no action was taken. No further action is required.</SPAN></TD>
  </TR>
  <TR style="height:18.0pt">
-  <TD  width=106  height=24  class=xl18 style="width:80pt;height:18.0pt">Created By*</TD>
+  <TD  width=106  height=24  class=xl18 style="width:80pt;height:18.0pt"><b>Created By*</b></TD>
   <TD  width=260  class=xl21 style="width:195pt">Assigned to OC member on DevOps and shows up in their 'to do' or kanban</TD>
   <TD  width=553  class=xl19 style="width:415pt">Name of user who created the assumption.</TD>
  </TR>
  <TR style="height:14.25pt">
-  <TD  width=106  height=19  class=xl18 style="width:80pt;height:14.25pt">Created On*</TD>
+  <TD  width=106  height=19  class=xl18 style="width:80pt;height:14.25pt"><b>Created On*</TD>
   <TD  width=260  class=xl21 style="width:195pt">DD-MM-YY</TD>
   <TD  width=553  class=xl19 style="width:415pt">Date the assumption was created.</TD>
  </TR>
  <TR style="height:18.0pt">
-  <TD  width=106  height=24  class=xl18 style="width:80pt;height:18.0pt">Assigned To*</TD>
+  <TD  width=106  height=24  class=xl18 style="width:80pt;height:18.0pt"><b>Assigned To*</TD>
   <TD  width=260  class=xl21 style="width:195pt">Assigned to OC member on DevOps and shows up in their 'to do' or kanban</TD>
   <TD  width=553  class=xl19 style="width:415pt">Name of person responsible for validating the assumption.</TD>
  </TR>
  <TR style="height:72.0pt">
-  <TD  width=106  height=96  class=xl18 style="width:80pt;height:72.0pt">Priority*</TD>
+  <TD  width=106  height=96  class=xl18 style="width:80pt;height:72.0pt"><b>Priority*</TD>
   <TD  width=260  class=xl21 style="width:195pt">Critical<BR/>
   High<BR/>
   Medium<BR/>
@@ -89,7 +89,7 @@
   class=font6>Low—</SPAN><SPAN  class=font5>The assumption can be validated one month after it is created.</SPAN></TD>
  </TR>
  <TR style="height:225.0pt">
-  <TD  width=106  height=300  class=xl18 style="width:80pt;height:225.0pt">Type*</TD>
+  <TD  width=106  height=300  class=xl18 style="width:80pt;height:225.0pt"><b>Type*</TD>
   <TD  width=260  class=xl21 style="width:195pt">Contact<BR/>
   External<BR/>
   Financial<BR/>
@@ -132,7 +132,7 @@
   class=font6>General</SPAN><SPAN  class=font5>—Any assumption that cannot be categorized into one of the above categories.</SPAN></TD>
  </TR>
  <TR style="height:63.0pt">
-  <TD  width=106  height=84  class=xl18 style="width:80pt;height:63.0pt">Probablity*</TD>
+  <TD  width=106  height=84  class=xl18 style="width:80pt;height:63.0pt"><b>Probability*</TD>
   <TD  width=260  class=xl21 style="width:195pt">Drop Down of options:<BR/>
   1—Very unlikely to occur<BR/>
   2—Less likely to occur<BR/>
@@ -143,7 +143,7 @@
   <TD  width=553  class=xl19 style="width:415pt">-</TD>
  </TR>
  <TR style="height:72.0pt">
-  <TD  width=106  height=96  class=xl18 style="width:80pt;height:72.0pt">Impact*</TD>
+  <TD  width=106  height=96  class=xl18 style="width:80pt;height:72.0pt"><b>Impact*</TD>
   <TD  width=260  class=xl21 style="width:195pt">Drop Down of options: <BR/>
   0—No impact<BR/>
   1—Insignificant changes<BR/>
@@ -155,7 +155,7 @@
   <TD  width=553  class=xl19 style="width:415pt">-</TD>
  </TR>
  <TR style="height:14.25pt">
-  <TD  width=106  height=19  class=xl18 style="width:80pt;height:14.25pt">Description*</TD>
+  <TD  width=106  height=19  class=xl18 style="width:80pt;height:14.25pt"><b>Description*</TD>
   <TD  width=260  class=xl21 style="width:195pt">Text only</TD>
   <TD  width=553  class=xl19 style="width:415pt">Description of the assumption.</TD>
  </TR>
@@ -163,24 +163,24 @@
   <TD  colspan=3  width=919  height=19  class=xl39 style="width:689pt;height:14.25pt">Details</TD>
  </TR>
  <TR style="height:14.25pt">
-  <TD  width=106  height=19  class=xl18 style="width:80pt;height:14.25pt">Identified On*</TD>
+  <TD  width=106  height=19  class=xl18 style="width:80pt;height:14.25pt"><b>Identified On*</TD>
   <TD  width=260  class=xl21 style="width:195pt">DD-MM-YY</TD>
   <TD  width=553  class=xl19 style="width:415pt">Date the assumption was identified, which may be prior to the current date.</TD>
  </TR>
  <TR style="height:14.25pt">
-  <TD  width=106  height=19  class=xl18 style="width:80pt;height:14.25pt">Date Due*</TD>
+  <TD  width=106  height=19  class=xl18 style="width:80pt;height:14.25pt"><b>Date Due*</TD>
   <TD  width=260  class=xl21 style="width:195pt">DD-MM-YY</TD>
   <TD  width=553  class=xl19 style="width:415pt">Assumption validation target date.</TD>
  </TR>
  <TR style="height:18.0pt">
-  <TD  width=106  height=24  class=xl18 style="width:80pt;height:18.0pt">Internal / External*</TD>
+  <TD  width=106  height=24  class=xl18 style="width:80pt;height:18.0pt"><b>Internal / External*</TD>
   <TD  width=260  class=xl21 style="width:195pt">Internal<BR/>
   External</TD>
   <TD  width=553  class=xl19 style="width:415pt">Internal - OC<BR/>
   External - MoTC</TD>
  </TR>
  <TR style="height:108.0pt">
-  <TD  width=106  height=144  class=xl18 style="width:80pt;height:108.0pt">Affected Phase*</TD>
+  <TD  width=106  height=144  class=xl18 style="width:80pt;height:108.0pt"><b>Affected Phase*</TD>
   <TD  width=260  class=xl21 style="width:195pt">Sprint 0<BR/>
   Sprint 1<BR/>
   Sprint 2<BR/>
@@ -223,12 +223,12 @@
   <TD  width=553  class=xl29 style="width:415pt">-</TD>
  </TR>
  <TR style="height:19.5pt">
-  <TD  width=106  height=26  class=xl18 style="width:80pt;height:19.5pt">Resolution</TD>
+  <TD  width=106  height=26  class=xl18 style="width:80pt;height:19.5pt"><b>Resolution</TD>
   <TD  width=260  class=xl21 style="width:195pt">Text only</TD>
   <TD  width=553  class=xl19 style="width:415pt">Actions required to address RAID item</TD>
  </TR>
  <TR style="height:18.0pt">
-  <TD  width=106  height=24  class=xl18 style="width:80pt;height:18.0pt">Closure Criteria</TD>
+  <TD  width=106  height=24  class=xl18 style="width:80pt;height:18.0pt"><b>Closure Criteria</TD>
   <TD  width=260  class=xl21 style="width:195pt">Text only</TD>
   <TD  width=553  class=xl19 style="width:415pt">Criteria to close the RAID item.<BR/>
   &quot;I know this is closed when…….&quot;</TD>

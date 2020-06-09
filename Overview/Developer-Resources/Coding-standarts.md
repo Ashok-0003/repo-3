@@ -1,3 +1,18 @@
+**Technical Quality Check**
+
+Technical Quality check (minimum) for API Implementations 
+ 
+
+- Follow OOPS / SOLID principles while designing the classes / components. 
+- Adhere to REST API practices such as Route Paths, HTTP Verbs, Versioning, Filtering and Pagination & Swagger
+- Implement Telemetry and Instrumentation, includes logging, exception handling, performance metrics and usage data capture 
+- Support Testability (Unit / API Testing)
+- Design for Reliability (Availability, Performance and Scalability)
+      1. Prefer Micro-services over monoliths.   
+      2. Incorporate Cloud Design Patterns as applicable.  
+- Meet Code Quality standards as per StyleCop, FxCop, SonarQube and other agreed linting tools
+- Document Code: Capture necessary details, and check for grammar and spelling mistakes
+
 **Naming Conventions:**
 | Stack | Type | Additional Notes |
 |--|--|--|

@@ -11,3 +11,9 @@
 -        The Cloud Policy Statement is ready to be sent to the Cabinet for approval. MoTC Cloud First Policy for public procurement purposes is under development.
 •	What will be the grace period (period from release of policy to compliance)?
 -        The Cloud Policy Statement is a policy document. As such, it provides guidance and directions for a State cloud policy. Any regulatory instrument that will be required for the implementation of the Cloud Policy Statement will be developed by the CRA after approval of the Cloud Policy Statement by the Cabinet.
+•        Are there specific countries or Azure regions which could be used to store or replicate the data for DR purposes?
+- You can select between WE Western Europe (Ireland) and NE Northern Europe (Netherlands).
+- I'm not sure where the DRaaS is offered (As we still negotiating with Microsoft ) 
+•        Are there any specific policies or guidelines on how DR should be implemented once the Azure Qatar region will be available?
+- As of now  i don't think so.
+

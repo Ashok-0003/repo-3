@@ -6,4 +6,14 @@
 | SQL geo Queries | https://docs.microsoft.com/en-us/sql/relational-databases/spatial/query-spatial-data-for-nearest-neighbor?view=sql-server-ver15 |
 | ADX geo Queries | https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/geo-point-in-circle-function |
 |GeoJson Objects  | https://docs.mongodb.com/manual/reference/geojson/#point |
+| Load GeoJson into Azure SQL | https://techcommunity.microsoft.com/t5/sql-server/loading-geojson-data-into-sql-server/ba-p/384601 |
 |  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+

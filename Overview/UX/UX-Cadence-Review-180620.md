@@ -1,3 +1,5 @@
+*_The following notes are raw and have not been reviewed, at this point. Microsoft has not at this stage committed to action these and are subject to updates._    
+
 ## **Web screens**
 •	**Mike Park (Mada)**
 o	Search box contrast to be reviewed within the top header as yellow on yellow not clear, look at changing contrast 

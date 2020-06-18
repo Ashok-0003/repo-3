@@ -3,7 +3,7 @@
 o	Search box contrast to be reviewed within the top header as yellow on yellow not clear, look at changing contrast 
 o	Text on image in hero banner, look at having a solid colour behind text where possible to ensure readability 
 o	View all> left align those links vs. right aligned, look to align the 'View all>' text links from right aligned to left aligned on English layout (opposite for Arabic)
-o	Log in screen to move to the left with image to the right so the login boxes are to the left of the screen
+o	Log in screen - to move to the fields to the left and the image to the right so the login boxes are to the left of the screen
 o	Contrast text for registration page - look at the text contrast used on the registration page to ensure better readability 
 o	Rating for service – look to move closer to title of the service so there is a clear relationship between the two
 

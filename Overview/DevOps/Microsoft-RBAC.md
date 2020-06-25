@@ -1,3 +1,4 @@
+
 # Security Groups:
 
 |Group Name|Description  |
@@ -38,3 +39,7 @@ For Central Platform Hub resource groups, refer file - [cph-rbac-mapping.csv](ht
 
 #Subscription Level Access
 [subscription-rbac-mapping.csv](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FInternalRBAC%2Froleassignments%2Fsubscription-rbac-mapping.csv)
+
+
+## Additional links:
+[Path for Interal RBAC Scripts](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FInternalRBAC) 

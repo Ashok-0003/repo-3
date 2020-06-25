@@ -18,7 +18,7 @@
 | ms-cpp-all | Production Subscription All Users |
 |  ms-cpp-readers |Production Subscription Readers  |
 
-- Any new groups for Microsoft users should be added to [security-groups.csv](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FInternalRBAC%2Fgroups%2Fsecurity-groups.csv) in infra repo
+- Any new security group for Microsoft users should be added to [security-groups.csv](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FInternalRBAC%2Fgroups%2Fsecurity-groups.csv) in infra repo
 - Any new member should be added to their respective group file in [add members](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FInternalRBAC%2FaddMembers)
 
 # Access Levels:

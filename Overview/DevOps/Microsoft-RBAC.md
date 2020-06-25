@@ -42,4 +42,4 @@ For Central Platform Hub resource groups, refer file - [cph-rbac-mapping.csv](ht
 
 
 ## Additional links:
-[Path for Interal RBAC Scripts](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FInternalRBAC) 
+[Path for Internal RBAC Scripts](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FInternalRBAC) 

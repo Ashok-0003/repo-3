@@ -6,7 +6,7 @@ Ensure you have completed the below steps before you start development.
 
 - Install VS 2019 Enterprise + .NET Core 3.1 
 
-- Work with Manvir (manvkaur@microsoft.com) to get access to VSTS 
+- Work with Manvir (manvkaur@microsoft.com) to get access to Azure DevOps
 - [Accessing Azure Subscription](https://portal.azure.com/#@tasmusqcp.onmicrosoft.com)
 
 - Finish the mandatory trainings as below  

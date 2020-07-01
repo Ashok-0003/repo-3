@@ -7,6 +7,7 @@ Ensure you have completed the below steps before you start development.
 - Install VS 2019 Enterprise + .NET Core 3.1 
 
 - Work with Manvir (manvkaur@microsoft.com) to get access to VSTS 
+- [Accessing Azure Subscription](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/77/Azure-Subscription)
 
 - Finish the mandatory trainings as below  
 

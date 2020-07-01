@@ -27,3 +27,9 @@ Following are the resolutions supported for all the portal applications
 
 Reference: 
 https://getbootstrap.com/docs/4.1/layout/overview/
+
+
+Browser/OS Support
+- Microsoft Edge (Edge chromium	81.0.416.72) running on Windows 10
+- Google Chrome (Chrome 81.0.4044.138)
+- Apple Safari (Safari 13+ on MAC OS X 10.10 and later)

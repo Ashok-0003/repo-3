@@ -1,17 +1,5 @@
+**API Scopes**
 
-| **API** | **Permission**  | **Scope**  | **Comments**  |
-|--|--|--|--|
-| CMS API | Read |  |  |
-| Complaint Service API | Read, Write |  |  |
-| Config API | Read |  |  |
-| Demographic API |  |  |  |
-| Email Template API | Read |  |  |
-| Knowledge Base Article API |  |  |  |
-| Marketplace Catalogue API  |  |  |  |
-| Notification Service API  |  |  |  |
-| Organization Profile API  |  |  |  |
-| Profile API  | Read, Write |  |  |
-| Service Request API  | Read, Write |  |  |
-| Smart Parking API  | Read, Write |  |  |
-| SMS Template API  | Read |  |  |
+![image.png](/.attachments/image-e7446489-3afe-4af9-b06f-cab8ac8cedfd.png)
 
+https://microsofteur.sharepoint.com/:x:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/EfoVaKMscI1Oo1CityyB_8oBLH5OLr8BSUwI8yFW7nGC_w?e=RgR1W9

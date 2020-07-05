@@ -10,4 +10,3 @@
 |[data-platform](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/data-platform)|Code for all data processing components||
 |[crm-platform](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/crm-platform)|Code for CRM components|[CI-CrmPlatform-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=107)|[QC-CrmPlatform-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=129)|[CD-CrmPlatform-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=111)|
 |[automation](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/automation)|Test Automation Components||
-|[automation-crm](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/automation-crm)|CRM Specific Test Automation Components||

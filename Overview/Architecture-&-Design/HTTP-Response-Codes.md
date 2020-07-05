@@ -6,11 +6,11 @@
 | API Not found | 404  |
 | Request accepted for processing | 202 | Like notification API accepting SMS
 | Data not found | 404 with message | [Sample JSON Response 404](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/90/HTTP-Response-Codes?anchor=sample-json-response-404-(data-not-found))
-| Invalid input, Model validation errors | 400  | [Sample JSON Schema 400](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/90/HTTP-Response-Codes?anchor=sample-json-schema-400)
+| Invalid input, Model validation errors | 400  | [Sample JSON Response 400](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/90/HTTP-Response-Codes?anchor=sample-json-schema-400)
 | Forbidden | 403  |
 | Conflict | 409  | For example while updating mismatch in state of data sent and the one in server.
 | Unauthorized | 401  |
-| Unhandled exception | 500  | Response JSON Schema as per - https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?anchor=global-exception-handling
+| Unhandled exception | 500  | Response JSON Response as per - https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?anchor=global-exception-handling
 
 
 
@@ -25,7 +25,7 @@
 }
 ```
 
-# Sample JSON Schema 400
+# Sample JSON Response 400
 
 ```
 {

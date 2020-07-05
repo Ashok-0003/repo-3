@@ -6,4 +6,5 @@
 | sqcp-ado-spn-prod| Azure Resource Manager | Central Platform Production |Contributor|
 | ServicesDevopsEndpoint|Services Code Endpoint|NA|NA|
 | ServiceSonar-CORP|SonarQube|NA|NA|
+|cpd-dev-adx-spn|Azure Data Explorer|Central Platform Development||
 

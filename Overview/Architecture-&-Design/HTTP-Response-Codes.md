@@ -14,7 +14,7 @@
 
 
 
-# Sample JSON Schema 404
+# Sample JSON response 404 (data not found)
 
 ```
 {
@@ -22,5 +22,21 @@
   "title": "Not Found",
   "status": 404,
   "traceId": "00-8f65b537cc7cb84887427de531931a77-1b8a92a6a6ee1d4b-00"
+}
+```
+
+# Sample JSON Schema 400
+
+```
+{
+  "errors": {
+    "dateofbirth": [
+      "Could not convert string to DateTime: ww. Path 'dateofbirth', line 1, position 236."
+    ]
+  },
+  "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+  "title": "One or more validation errors occurred.",
+  "status": 400,
+  "traceId": "00-b95541b30871c74393a98dba4d77d944-ce20ed9cd46c2e48-00"
 }
 ```

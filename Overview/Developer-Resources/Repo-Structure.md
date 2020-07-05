@@ -1,7 +1,7 @@
 
 |Repo Name|Description  |CI Pipeline | Sonar| CD Pipeline|
 |--|--|--|--|--|
-|[infra](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/infra)  | All infrastructure related code (IaC) | Multiple for each module  ||
+|[infra](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/infra)  | All infrastructure related code (IaC) | Multiple for each module  ||Resource group specific
 |[platform-core](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-core)| Code for all common reusable components - nuget, npm|[CI-PlatformCore-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=119)||[CI-PlatformCore-Nuget](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=120)|
 |[platform-apis](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-apis)|Code for all REST API Services hosted on the Central Platform|[CI-PlatformAPIs-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=9)|[QC-PlatformAPIs-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=13)|[CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)|
 |[web-apps](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/web-apps)| Code for Citizen Portal and other Web Apps hosted on Central Platform |[CI-WebApps-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=37)|[QC-WebApps-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=44)|[CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)|

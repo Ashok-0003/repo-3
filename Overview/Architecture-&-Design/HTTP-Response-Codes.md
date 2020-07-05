@@ -5,7 +5,7 @@
 | Post/Put API Success | 201 - Created  |
 | API Not found | 404  |
 | Request accepted for processing | 202 | Like notification API accepting SMS
-| Data not found | 404 with message | [Sample JSON Schema 404](Sample-JSON-Schema-404)
+| Data not found | 404 with message | [Sample JSON Schema 404](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/90/HTTP-Response-Codes?anchor=sample-json-schema-404)
 | Invalid input, Model validation errors | 400  |
 | Forbidden | 403  |
 | Conflict | 409  | For example while updating mismatch in state of data sent and the one in server.

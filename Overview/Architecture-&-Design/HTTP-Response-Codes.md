@@ -3,6 +3,7 @@
 |--|--|--|
 | Get API Success | 200 - Ok |
 | Post/Put API Success | 201 - Created  |
+| Patch/Delete API Success | 204 - No Content  |
 | API Not found | 404  |
 | Request accepted for processing | 202 | Like notification API accepting SMS
 | Data not found | 404 with message | [Sample JSON Response 404](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/90/HTTP-Response-Codes?anchor=sample-json-response-404-(data-not-found))

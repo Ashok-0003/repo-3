@@ -5,4 +5,4 @@
 - Any Sonar/Style cop suppression should be part of .editorconfig which is located at the root of the repo, however **avoid** any such suppressions.
 - All magic numbers/strings should be declared as static integers/strings.
 - All service changes should have relevant unit tests.
-- Variables should have proper names. Names like obj, test should be avoided and should be descriptive.
+- Variables should have proper names. Names like obj, test should be avoided and should be descriptive. Similarly function names should be descriptive and follow naming guidelines, for example asynchronous methods should end with Async.

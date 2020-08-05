@@ -7,3 +7,6 @@
 - All service changes should have relevant unit tests.
 - Variables should have proper names. Names like obj, test should be avoided and should be descriptive. Similarly function names should be descriptive and follow naming guidelines, for example asynchronous methods should end with Async.
 - Secrets should be part of keyvault and all the configuration changes should be updated for all the environments.
+
+**Angular/JavaScript/TypeScript**
+- Look for any possible missing null checks.

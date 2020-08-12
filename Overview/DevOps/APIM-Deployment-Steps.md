@@ -106,8 +106,12 @@ Execute the resource group based CD pipeline, for example sandbox environment: [
 
 4.  Update the parameters.json [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2FTemplateAndParameters%2Fdev%2Fparameters.json) with APIM instance name created in Azure infrastructure creation section.
 
-5. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=197&_a=summary) CI-APIMConfig-Master-Build to generate the ARM templates. By running this it will generate ARM templates for all the apis or configure the list of apis with semicolon separated values of the api names used in step 3 to the variable of the above pipeline value: buildQueueInit.
+5. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=197&_a=summary) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. 
 
-6. After this run the Release pipeline for the APIMConfiguration to be deployed which is environment specific.
+6. After this run the Release pipeline for the APIMConfiguration to be deployed which is environment specific. Below are the list based on environment.
+
+- SBX: [CD-APIMConfig-sbx-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=298)
+- DEV: [CD-APIMConfig-dev-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=299)
+- TST: [CD-APIMConfig-tst-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=300)
 
 

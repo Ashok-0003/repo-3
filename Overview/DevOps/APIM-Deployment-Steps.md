@@ -1,4 +1,15 @@
-**Below are the APIM Deployment Steps:**
+**Pre-requisities**
+
+1. API developed and deployed in an environment with AKS endpoint url.
+2. Swagger.json file uploaded in the project folder of the API.
+3. Policy.xml file for the api
+4. Suffix name for the api to be used in APIM.
+
+**Deployment of Azure Infrastructure**
+
+Execute the resource group based CD pipeline, for example sandbox environment: [SBX Pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=254)
+
+**Below are the Deployment of the APIM solution components:**
 
 1. Update the Swagger.json file in the API source folder of that api.
 2. create a api policy xml file refer this file, can reuse it directly if any changes needed do that and place it in a folder(create if doesn't exist) under input/apis/ with the api name/1.0/ like this:
@@ -93,8 +104,10 @@
         "apiUrl": "http://172.20.42.30/profile"
  },`
 
-4.  Update the parameters.json [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2FTemplateAndParameters%2Fdev%2Fparameters.json)
+4.  Update the parameters.json [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2FTemplateAndParameters%2Fdev%2Fparameters.json) with APIM instance name created in Azure infrastructure creation section.
 
 5. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=197&_a=summary) CI-APIMConfig-Master-Build to generate the ARM templates. By running this it will generate ARM templates for all the apis or we can configure the list of apis with semicolon separated values of the api names used in step 3 to the variable of the above pipeline value: buildQueueInit.
 
 6. After this we have to run the Release pipeline for the APIMConfiguration to be deployed which is environment specific.
+
+

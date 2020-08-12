@@ -31,7 +31,7 @@
     </on-error>
 </policies>`
 3. Add the API details in the [valid.yml](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2Fvalid.yml&version=GBmaster&_a=contents) file like below:
-     a. Under apis element in that api file add the below content and update it related to your api, like name, displayname, description, apiversion, apiversiondescription, api revision.
+-    Under apis element in that api file add the below content and update it related to your api, like name, displayname, description, apiversion, apiversiondescription, api revision.
 
     
 ```
@@ -80,5 +80,17 @@
         enableHttpCorrelationHeaders: true
 ```
 
-  b. Update openApiSpec value with Swagger.json file path created as per step 1.
-  c. Update policy value with apiServicePolicy.xml file path created as part of step 2.
+-  Update openApiSpec value with Swagger.json file path created as per step 1.
+`openApiSpec: './../../../src/services/Mcs.Tasmu.Profile.Api/Mcs.Tasmu.Profile.Api/Swagger.json'`
+-   Update policy value with apiServicePolicy.xml file path created as part of step 2.
+`policy: './Input/apis/ProfileApi/1.0/apiServicePolicy.xml'`
+- Update suffix value as per the [excel file](https://microsofteur.sharepoint.com/:x:/r/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/_layouts/15/Doc.aspx?action=edit&sourcedoc=%7B402304D9-A074-41C8-A796-CDDC69CF0B6B%7D&cid=0283f482-f352-4a80-b6e6-26baadf70389).
+`      suffix: profile`
+
+3. Update the TemplateAndParameters/(environment-folder)/BackendUrlParameters.json [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2FTemplateAndParameters%2Fdev%2FBackendUrlParameters.json) with the name of your api as an key and value will be url of api(aks host name for that environment) in the environment with suffix as mentioned in the above step.
+`{
+        "apiName": "Profile",
+        "apiUrl": "http://172.20.42.30/profile"
+ },`
+
+4.  

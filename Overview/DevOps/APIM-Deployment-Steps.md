@@ -9,6 +9,8 @@
 
 Execute the resource group based CD pipeline, for example sandbox environment: [SBX Pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=254)
 
+Estimated Time: 15mins
+
 **Below are the Deployment of the APIM solution components:**
 
 1. Update the Swagger.json file in the API source folder of that api.
@@ -114,4 +116,8 @@ Execute the resource group based CD pipeline, for example sandbox environment: [
 - DEV: [CD-APIMConfig-dev-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=299)
 - TST: [CD-APIMConfig-tst-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=300)
 
+**Estimated Time:**
+1. For Updating the contents in above section steps and swagger file uploading: 20Mins
+1. For Running CI pipeline for an API: 5 Mins
+1. For Running CD pipeline for an API: 2 Mins
 

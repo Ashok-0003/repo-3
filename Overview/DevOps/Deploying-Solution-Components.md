@@ -22,3 +22,26 @@ CD-<ResourceGroupName>-Master-Release
 # Deployment of the solution components
 CD-<RepoName>-Release
 
+|Step| per API |overall  |
+|--|--|--|
+| Build docker images |  2 mins|  35 mins|
+
+1. Seed app configurations and key vault references - 20s
+1. Deploy all APIs using helm charts - 2 mins
+
+
+
+1. [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/results?buildId=5014)
+Build - 35 mins
+Dev - 3 min
+Test - 3 min
+1. [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
+Build - 10 mins
+Dev - 1 min
+Test - 1 min
+1. [CD-Integration-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=301)
+Build - 40s
+Dev - 1 min
+Test - 1 min
+
+

@@ -19,7 +19,7 @@ CD-<ResourceGroupName>-Master-Release
 |[CD-rg-cpd-pltf-net-dev-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=79)| 5 mins| 2 mins
 |[CD-rg-cpd-apps-dev-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=181)| 60 mins  | 5 mins|
 
-APIM Internal VNet deployment takes 40 - 60 mins
+APIM Internal VNet deployment takes 40 - 60 mins, first deployment takes time if APIM is put in VNet
 
 # Deployment of the solution components
 CD-<RepoName>-Release

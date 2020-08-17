@@ -56,7 +56,7 @@ Estimated Time: 15mins
       openApiSpec: './../../../src/services/Mcs.Tasmu.Profile.Api/Mcs.Tasmu.Profile.Api/Swagger.json'
       policy: './Input/apis/ProfileApi/1.0/apiServicePolicy.xml'
       suffix: profile
-      subscriptionRequired: true
+      subscriptionRequired: false
       isCurrent: true
       apiVersion:
       apiVersionDescription: Profile Api first version
@@ -106,18 +106,32 @@ Estimated Time: 15mins
         "apiUrl": "http://172.20.42.30/profile"
  },`
 
-4.  Update the parameters.json [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2FTemplateAndParameters%2Fdev%2Fparameters.json) with APIM instance name created in Azure infrastructure creation section.
+4.  Update the Pipeline.yml [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2FDeployment%2FPipeline%2FTemplates%2FtestandDeployTemplate.yml&version=GBmaster&_a=contents) with APIM instance name created in Azure infrastructure creation section along with resource group.
+
+            
+```
+            sandbox:
+              environment: sbx
+              resourceGroupName: rg-cpd-apps-sbx-we-01
+              apimName: apim-cpd-apps-sbx-we-01
+            dev:
+              environment: dev
+              resourceGroupName: rg-cpd-apps-dev-we-01
+              apimName: apim-cpd-apps-dev-we-01
+            test:
+              environment: tst
+              resourceGroupName: rg-cpd-apps-tst-we-01
+              apimName: apim-cpd-apps-tst-we-01
+```
+
+
 
 5. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=197&_a=summary) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. 
 
-6. After this run the Release pipeline for the APIMConfiguration to be deployed which is environment specific. Below are the list based on environment.
-
-- SBX: [CD-APIMConfig-sbx-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=298)
-- DEV: [CD-APIMConfig-dev-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=299)
-- TST: [CD-APIMConfig-tst-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=300)
+6. After this run the Release pipeline([CD-APIMConfig-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=298&_a=summary)) for the APIMConfiguration to be deployed.
 
 **Estimated Time:**
 1. For Updating the contents in above section steps and swagger file uploading: 20Mins
-1. For Running CI pipeline for an API: 5 Mins
+1. For Running CI pipeline for an API: 40 Mins
 1. For Running CD pipeline for an API: 2 Mins
 

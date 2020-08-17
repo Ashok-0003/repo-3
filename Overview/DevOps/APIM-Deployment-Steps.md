@@ -133,5 +133,5 @@ Estimated Time: 15mins
 **Estimated Time:**
 1. For Updating the contents in above section steps and swagger file uploading: 20Mins
 1. For Running CI pipeline for an API: 40 Mins
-1. For Running CD pipeline for an API: 2 Mins
+1. For Running CD pipeline for an API in an environment: 2 Mins
 

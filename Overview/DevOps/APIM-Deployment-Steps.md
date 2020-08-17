@@ -128,7 +128,11 @@ Estimated Time: 15mins
 
 5. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=197&_a=summary) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. 
 
-6. After this run the Release pipeline([CD-APIMConfig-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=298&_a=summary)) for the APIMConfiguration to be deployed.
+6. After this run the Release pipeline based on environment for the APIMConfiguration to be deployed.
+
+- [CD-APIMConfig-sbx-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=298&_a=summary)
+- [CD-APIMConfig-dev-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=256&_a=summary)
+- [CD-APIMConfig-tst-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=257)
 
 **Estimated Time:**
 1. For Updating the contents in above section steps and swagger file uploading: 20Mins

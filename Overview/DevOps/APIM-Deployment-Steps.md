@@ -17,18 +17,7 @@ Estimated Time: 15mins
 2. create a api policy xml file refer this file, can reuse it directly if any changes needed do that and place it in a folder(create if doesn't exist) under input/apis/ with the api name/1.0/ like this:
 `/Input/apis/ProfileApi/1.0/apiServicePolicy.xml`
    Content of sample policy xml file:
-`<!--
-    IMPORTANT:
-    - Policy elements can appear only within the <inbound>, <outbound>, <backend> section elements.
-    - To apply a policy to the incoming request (before it is forwarded to the backend service), place a corresponding policy element within the <inbound> section element.
-    - To apply a policy to the outgoing response (before it is sent back to the caller), place a corresponding policy element within the <outbound> section element.
-    - To add a policy, place the cursor at the desired insertion point and select a policy from the sidebar.
-    - To remove a policy, delete the corresponding policy statement from the policy document.
-    - Position the <base> element within a section element to inherit all policies from the corresponding section element in the enclosing scope.
-    - Remove the <base> element to prevent inheriting policies from the corresponding section element in the enclosing scope.
-    - Policies are applied in the order of their appearance, from the top down.
-    - Comments within policy elements are not supported and may disappear. Place your comments between policy elements or at a higher level scope.
--->
+`
 <policies>
     <inbound>
         <base />
@@ -45,6 +34,7 @@ Estimated Time: 15mins
 </policies>`
 3. Add the API details in the [valid.yml](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2Fvalid.yml&version=GBmaster&_a=contents) file like below:
 -    Under apis element in that api file add the below content and update it related to your api, like name, displayname, description, apiversion, apiversiondescription, api revision.
+- Here the name field is used in all places in next steps (from below sample name is : **ProfileApi**)
 
     
 ```
@@ -100,13 +90,13 @@ Estimated Time: 15mins
 - Update suffix value as per the [excel file](https://microsofteur.sharepoint.com/:x:/r/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/_layouts/15/Doc.aspx?action=edit&sourcedoc=%7B402304D9-A074-41C8-A796-CDDC69CF0B6B%7D&cid=0283f482-f352-4a80-b6e6-26baadf70389).
 `      suffix: profile`
 
-3. Update the TemplateAndParameters/(environment-folder)/BackendUrlParameters.json [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2FTemplateAndParameters%2Fdev%2FBackendUrlParameters.json) with the name of your api as an key and value will be url of api(aks host name for that environment) in the environment with suffix as mentioned in the above step.
+3. Update the TemplateAndParameters/(environment-folder)/BackendUrlParameters.json [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2FTemplateAndParameters%2Fdev%2FBackendUrlParameters.json) with the name of your api(name mentioned in step 2 - as per this sample its **ProfileApi**) as an key and value will be url of api(aks host name for that environment) in the environment with suffix as mentioned in the above step.
 `{
-        "apiName": "Profile",
+        "apiName": "ProfileApi",
         "apiUrl": "http://172.20.42.30/profile"
  },`
 
-4.  Update the Pipeline.yml [file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2FDeployment%2FPipeline%2FTemplates%2FtestandDeployTemplate.yml&version=GBmaster&_a=contents) with APIM instance name created in Azure infrastructure creation section along with resource group.
+4.  Update the [Pipeline.yml file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2FDeployment%2FPipeline%2FTemplates%2FtestandDeployTemplate.yml&version=GBmaster&_a=contents) with APIM instance name created in Azure infrastructure creation section along with resource group.
 
             
 ```
@@ -126,13 +116,46 @@ Estimated Time: 15mins
 
 
 
-5. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=197&_a=summary) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. 
 
-6. After this run the Release pipeline based on environment for the APIMConfiguration to be deployed.
+5. After this add the api related entry in CI pipeline like below:
+
+  
+```
+- template: templates/build-template.yml
+    parameters:
+      name: ProfileApi
+      solutionFolder: "ProfileApi"
+      componentStorageAccountSubscriptionIdParam: $(componentStorageAccountSubscriptionId)
+      componentStorageAccountNameParam: $(componentStorageAccountName)
+      componentStorageContainerNameParam: $(componentStorageContainerName)
+      ServiceConnectionForAPIMParam: $(ServiceConnectionForAPIM)
+```
+
+
+
+6. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=197&_a=summary) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names(as per this sample the name is **ProfileApi**) used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. Variable value look like below: - `ProfileApi;`
+
+
+7. After this add the api related entry like below in CD pipeline for each environment files listed in step 8:
+
+      
+```
+- template: ./Templates/testandDeployTemplate.yml
+        parameters:
+          FolderForApiVal: ProfileApi
+          dependsonParam: previousapi
+```
+
+          
+
+8. After this run the Release pipeline based on environment for the APIMConfiguration to be deployed.
 
 - [CD-APIMConfig-sbx-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=298&_a=summary)
 - [CD-APIMConfig-dev-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=256&_a=summary)
 - [CD-APIMConfig-tst-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=257)
+
+9. Refer [this PR](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis/pullrequest/1222) where we have added two apis newly
+
 
 **Estimated Time:**
 1. For Updating the contents in above section steps and swagger file uploading: 20Mins

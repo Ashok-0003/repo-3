@@ -3,7 +3,7 @@
 | SL |Name  | Remarks | 
 |--|--|--| 
 | 1 |[k6.io](https://k6.io)  |Load Testing Framework (Tentative)|
-|2|||[CKAN](https://ckan.org/)  ||
+| 2 |[CKAN](https://ckan.org/)  ||
 
 
 # OSS Registrations (Microsoft Internal Use Only)

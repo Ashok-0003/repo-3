@@ -15,7 +15,7 @@ CD-<ResourceGroupName>-Master-Release
 
 | Pipeline Name | Estimated First run  | Incremental Run|
 |--|--|--|
-|[CD-rg-cpd-glob-npd-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=33)|||
+|[CD-rg-cpd-glob-npd-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=33)| 1 min| < 60s|
 |[CD-rg-cpd-pltf-net-dev-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=79)| 5 mins| 2 mins
 |[CD-rg-cpd-apps-dev-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=181)| 60 mins  | 5 mins|
 

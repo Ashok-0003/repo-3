@@ -7,4 +7,6 @@
 | ServicesDevopsEndpoint|Services Code Endpoint|NA|NA|
 | ServiceSonar-CORP|SonarQube|NA|NA|
 |cpd-dev-adx-spn|Azure Data Explorer|Central Platform Development||
+| Tasmu App Center Connection | AppCenter | For connecting to appcenter and deploying it to specific slots | NA |
+| Telerik |  Telerik Nuget | For connecting to telerik licensed nuget feed | NA |
 

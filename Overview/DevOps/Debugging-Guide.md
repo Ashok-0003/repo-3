@@ -48,7 +48,7 @@ For APIs, change the API path accordingly as per ingress path configured
 2. webapps - marketplace, adminportal, other web apps
 3. jobs - functions
 
-## Sandbox AKS Cluster
+## AKS Cluster
 ### Using portal UI
 1. Go to the environment specific cluster - aks-cpd-apps-<env>-we-01
 Monitoring -> Insights -> Containers

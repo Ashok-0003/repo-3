@@ -34,7 +34,7 @@ For APIs, change the API path accordingly as per ingress path configured
 
 
 # Debugging Guide
-1. Please make sure you have the certificate installed and using the correct url. If your API is still not accessible, try below steps:
+1. Make sure you have the certificate installed and using the correct url. If your API is still not accessible, try below steps:
 2. The API swagger.json was updated and the API was deployed to the target environment APIM using APIM pipelines.
 3. Go to application gateway acting as an ingress controller (agw-cpd-apps-<env>-we-01) to run a health probe on the API.
 - Settings -> Health probes -> Select the matching probe -> Test

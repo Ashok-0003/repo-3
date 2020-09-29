@@ -38,9 +38,38 @@ For APIs, change the API path accordingly as per ingress path configured
 2. The API swagger.json was updated and the API was deployed to the target environment APIM using APIM pipelines.
 3. Go to application gateway acting as an ingress controller (agw-cpd-apps-<env>-we-01) to run a health probe on the API.
 - Settings -> Health probes -> Select the matching probe -> Test
-- If the communication is not successful, there is some problem with AKS cluster
+- If the communication is not successful, there is some problem with AKS cluster (check steps to debug the cluster)
 - If the communication is successful, for dev, tst, tra, run the health probes on external application gateway - agw-cph-apps-temp-we-01
  (having restricted access) for the respective backend
 - If the backend is not healthy, check whether it is APIM or AGIC, test the communication from VM having bastion access (restricted access) using the URLs specific to APIM or AGIC
 
-4. 
+### AKS Namespaces:
+1. apiapps - All Platform APIs
+2. webapps - marketplace, adminportal, other web apps
+3. jobs - functions
+
+## Sandbox AKS Cluster
+1. Connect to the subscription
+```
+az account get-access-token --subscription 'Central Platform Development'
+```
+2. Connect to the cluster
+```
+az aks get-credentials -g rg-cpd-apps-sbx-we-01 -n aks-cpd-apps-sbx-we-01
+```
+3. If already connected to a cluster, confirm the name
+```
+kubectl config current-context
+```
+4. To monitor a specific pod
+```
+kubectl get pods -n <namespace>
+```
+5. Copy the pod name and then fetch logs
+```
+kubectl logs pod/<podname> -n <namespace>
+```
+6. To get the other details about pod image/events
+```
+kubectl describe pod/<podname> -n <namespace>
+```

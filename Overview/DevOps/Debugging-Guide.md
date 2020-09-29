@@ -1,4 +1,4 @@
-Access URLs updated and certificates installed
+# Access URLs updated and certificates installed
 
 If you want to test or browse the APIs or applications on public network using https. Please follow below steps:
 1.	Make the host file entries as below:
@@ -34,3 +34,13 @@ For APIs, change the API path accordingly as per ingress path configured
 
 
 # Debugging Guide
+1. Please make sure if you have the certificate installed and using the correct url. If your API is still not accessible, try below steps:
+2. The API swagger.json was updated and the API was deployed to the target environment APIM using APIM pipelines.
+3. Go to application gateway acting as an ingress controller (agw-cpd-apps-<env>-we-01) to run a health probe on the API.
+- Settings -> Health probes -> Select the matching probe -> Test
+- If the communication is not successful, there is some problem with AKS cluster
+- If the communication is successful, for dev, tst, tra, run the health probes on external application gateway - agw-cph-apps-temp-we-01
+ (having restricted access) for the respective backend
+- If the backend is not healthy, check whether it is APIM or AGIC, test the communication from VM having bastion access (restricted access) using the URLs specific to APIM or AGIC
+
+4. 

@@ -60,6 +60,11 @@ Monitoring -> Insights -> Containers
  Cluster -> Kubernetes Resources -> Deployments, Jobs
 
 ### Using command line
+Pre requisites to run these from local system:
+1. Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
+2. Install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-powershell-from-psgallery)
+
+Commands:
 1. Connect to the subscription
 ```
 az account get-access-token --subscription 'Central Platform Development'
@@ -84,3 +89,8 @@ kubectl logs pod/<podname> -n <namespace>
 ```
 kubectl describe pod/<podname> -n <namespace>
 ```
+7. Get events from a namespace
+```
+kubectl get events -n <namespace> 
+```
+8. For more debugging, follow this [link](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)

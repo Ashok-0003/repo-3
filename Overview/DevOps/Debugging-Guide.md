@@ -34,7 +34,7 @@ For APIs, change the API path accordingly as per ingress path configured
 
 
 # Debugging Guide
-1. Please make sure if you have the certificate installed and using the correct url. If your API is still not accessible, try below steps:
+1. Please make sure you have the certificate installed and using the correct url. If your API is still not accessible, try below steps:
 2. The API swagger.json was updated and the API was deployed to the target environment APIM using APIM pipelines.
 3. Go to application gateway acting as an ingress controller (agw-cpd-apps-<env>-we-01) to run a health probe on the API.
 - Settings -> Health probes -> Select the matching probe -> Test
@@ -49,6 +49,17 @@ For APIs, change the API path accordingly as per ingress path configured
 3. jobs - functions
 
 ## Sandbox AKS Cluster
+### Using portal UI
+1. Go to the environment specific cluster - aks-cpd-apps-<env>-we-01
+Monitoring -> Insights -> Containers
+- Select the relevant container
+- Check if the deployed image is latest or matched with the build Id
+- Select view in analytics and view kubernetes event logs
+
+2. For public clusters, kubernetes resources pane gives good view on workloads
+ Cluster -> Kubernetes Resources -> Deployments, Jobs
+
+### Using command line
 1. Connect to the subscription
 ```
 az account get-access-token --subscription 'Central Platform Development'

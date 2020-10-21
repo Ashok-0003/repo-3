@@ -1,6 +1,9 @@
 Update APIM policy for
 
+1. Get all features and their values.
+1. Get the value for the key given in settings.
 
+```
 <policies>
    <inbound>
         <base />
@@ -21,3 +24,4 @@ Update APIM policy for
         <base />
     </on-error>
 </policies>
+```

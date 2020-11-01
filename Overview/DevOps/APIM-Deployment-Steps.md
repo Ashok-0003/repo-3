@@ -133,7 +133,7 @@ Estimated Time: 15mins
 
 
 
-6. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=197&_a=summary) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names(as per this sample the name is **ProfileApi**) used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. Variable value look like below: - `ProfileApi;`
+6. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=477) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names(as per this sample the name is **ProfileApi**) used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. Variable value look like below: - `ProfileApi;`
 
 
 7. After this add the api related entry like below in CD pipeline for each environment files listed in step 8:

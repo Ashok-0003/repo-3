@@ -33,10 +33,33 @@ Key Vault
 
 # Deployment of Apps Infrastructure
 1. [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
+APIM - apim-cpd-shrd-uat-we-01
+Application Gateway - agw-cpd-shrd-uat-we-01
+CDN - cdn-cpd-shrd-uat-we-01
+CDN Endpoint - uat-tasmu
+Storage Account - stcpdshrduatwe01
 1. [rg-cpd-apps-str-dev-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
+App Config Store - acst-cpd-apps-str-uat-we-01
+Cosmos Account - cosmos-cpd-apps-str-uat-we-01
+Notification Hub - ntf-cpd-apps-str-uat-we-01
+Notification Hub Namespace - ntfns-cpd-apps-str-uat-we-01
+Redis Cache - redis-cpd-apps-str-uat-we-01
+Service Bus - sb-cpd-apps-strntf-uat-we-01
+Storage Account - stcpdappsstruatwe01
 1. [rg-cpd-apps-cog-dev-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
+App Service - app-cpd-apps-qna-uat-we-01
+App Service Plan - plan-cpd-apps-cog-we-01
+Bot Service - bot-cpd-apps-cog-uat-we-01
+Cognitive Service Luis Authoring - cog-cpd-apps-luisath-uat-we-01
+Cognitive Service Luis Runtime - cog-cpd-apps-luisrt-uat-we-01
+Cognitive Service QnAMaker - cog-cpd-apps-qna-uat-we-01 
+Logic App -	logic-cpd-apps-cogsrch-we-01
+Search Service - srch-cpd-apps-cog-uat-we-01
+Web App Bot - app-cpd-apps-cog-uat-we-01
 1. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 1. [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
+AKS Cluster - aks-cpd-apps-uat-we-01
+Application Gateway - agw-cpd-apps-aks-uat-we-01
 
 # Deployment of the solution components
 CD-<RepoName>-Release

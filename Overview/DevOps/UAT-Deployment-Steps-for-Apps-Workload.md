@@ -57,6 +57,15 @@ Logic App -	logic-cpd-apps-cogsrch-we-01
 Search Service - srch-cpd-apps-cog-uat-we-01
 Web App Bot - app-cpd-apps-cog-uat-we-01
 1. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+API Connection - apicon-cpd-apps-into365-uat-we-01
+API Connection - apicon-cpd-apps-intsb-uat-we-01
+API Connection - apicon-cpd-apps-intspo-uat-we-01
+App Service Plan - plan-cpd-apps-int-uat-we-01
+Event Hub - ev-cpd-apps-int-uat-we-01
+Function App - func-cpd-apps-intbpa-uat-we-01
+Logic App - logic-cpd-apps-intbpa-uat-we-01
+Logic App - logic-cpd-apps-intcms-uat-we-01
+Service Bus - sb-cpd-apps-int-uat-we-01
 1. [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
 AKS Cluster - aks-cpd-apps-uat-we-01
 Application Gateway - agw-cpd-apps-aks-uat-we-01

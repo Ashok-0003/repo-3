@@ -32,11 +32,11 @@ Network Security Groups
 Key Vault
 
 # Deployment of Apps Infrastructure
-1. rg-cpd-shrd-uat-we-01
-1. rg-cpd-apps-str-dev-we-01
-1. rg-cpd-apps-cog-dev-we-01
-1. rg-cpd-apps-int-uat-we-01
-1. rg-cpd-apps-aks-uat-we-01
+1. [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
+1. [rg-cpd-apps-str-dev-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
+1. [rg-cpd-apps-cog-dev-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
+1. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+1. [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
 
 # Deployment of the solution components
 CD-<RepoName>-Release

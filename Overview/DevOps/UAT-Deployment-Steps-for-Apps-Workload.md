@@ -80,6 +80,5 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 1. For platform apis, ingress controller helm-config needs to be added for new env (refer above image) and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
 1. For integration function app, add stage to the following pipeline pointing to uat resources
 [CD-Integration-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=301)
-<Work in progress>
 1. For web apps, add stage to the following pipeline pointing to uat resources
 [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)

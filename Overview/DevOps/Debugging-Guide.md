@@ -70,11 +70,14 @@ Pre requisites to run these from local system:
 Commands:
 1. Connect to the subscription
 ```
-az account get-access-token --subscription 'Central Platform Development'
+az login
+```
+```
+az account set --subscription 'Central Platform Development'
 ```
 2. Connect to the cluster
 ```
-az aks get-credentials -g rg-cpd-apps-sbx-we-01 -n aks-cpd-apps-sbx-we-01
+az aks get-credentials -g <Resource Group Name> -n <AKS Cluster Name>
 ```
 3. If already connected to a cluster, confirm the name
 ```

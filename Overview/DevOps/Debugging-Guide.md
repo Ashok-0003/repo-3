@@ -65,9 +65,14 @@ Monitoring -> Insights -> Containers
 ### Using command line
 Pre requisites to run these from local system:
 1. Install [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
-2. Install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-powershell-from-psgallery)
+1. Install [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-with-powershell-from-psgallery)
+1. Install [chocolatey](https://chocolatey.org/docs/installation#install-with-powershellexe) (to install helm using below command)
+1. Install helm 3 (to deploy charts from local)
+```
+choco install kubernetes-helm
+```
 
-Commands:
+Commands to connect to the cluster and debug:
 1. Connect to the subscription
 ```
 az login

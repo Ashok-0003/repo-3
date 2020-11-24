@@ -13,7 +13,7 @@ Estimated Time: 15mins
 
 **Below are the Deployment of the APIM solution components:**
 
-1. Update the Swagger.json file in the API source folder of that api.
+1. Update the Swagger.json file in the following path: './Input/apis/ProfileApi/1.0/' where ProfileApi is folder created in api name.
 2. create a api policy xml file refer this file, can reuse it directly if any changes needed do that and place it in a folder(create if doesn't exist) under input/apis/ with the api name/1.0/ like this:
 `/Input/apis/ProfileApi/1.0/apiServicePolicy.xml`
    Content of sample policy xml file:

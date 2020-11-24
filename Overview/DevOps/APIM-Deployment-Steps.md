@@ -32,7 +32,7 @@ Estimated Time: 15mins
         <base />
     </on-error>
 </policies>`
-3. Add the API details in the [valid.yml](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2Fvalid.yml&version=GBmaster&_a=contents) file like below:
+3. Add the API details in the [valid.yml](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2Fvalid.yml&version=GBmain&_a=contents) file like below:
 -    Under apis element in that api file add the below content and update it related to your api, like name, displayname, description, apiversion, apiversiondescription, api revision.
 - Here the name field is used in all places in next steps (from below sample name is : **ProfileApi**)
 
@@ -117,7 +117,7 @@ Estimated Time: 15mins
 
 
 
-5. After this add the api related entry in CI pipeline like below:
+5. After this add the api related entry in CI pipeline(link provided in step 6) like below:
 
   
 ```
@@ -133,10 +133,10 @@ Estimated Time: 15mins
 
 
 
-6. After all the above 4 steps trigger the [CI pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=477) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names(as per this sample the name is **ProfileApi**) used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. Variable value look like below: - `ProfileApi;`
+6. After all the above 4 steps trigger the pipeline name: [CI-APIMConfig-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=570) CI-APIMConfig-Master-Build to generate the ARM templates. Configure the list of apis added newly/modified with semicolon separated values of the api names (as per this sample the name is **ProfileApi**) used in step 3 to the variable of the above pipeline value: `buildQueueInit`.By running this it will generate ARM templates for all the three environments for the apis passed in variables. Variable value look like below: - `ProfileApi;`
 
 
-7. After this add the api related entry like below in CD pipeline for each environment files listed in step 8:
+7. After this add the api related entry like below in CD pipelines for each environment files listed in step 8:
 
       
 ```
@@ -150,11 +150,16 @@ Estimated Time: 15mins
 
 8. After this run the Release pipeline based on environment for the APIMConfiguration to be deployed.
 
-- [CD-APIMConfig-sbx-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=298&_a=summary)
-- [CD-APIMConfig-dev-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=256&_a=summary)
-- [CD-APIMConfig-tst-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=257)
+- [CD-APIMConfig-sbx-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=571)
+- [CD-APIMConfig-dev-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=572)
+- [CD-APIMConfig-tst-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=573)
+- [CD-APIMConfig-tra-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=574)
+- [CD-APIMConfig-uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=575)
 
-9. Refer [this PR](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis/pullrequest/1222) where we have added two apis newly
+9. For executing each pipeline CI and CD pipelines you must pass your pipeline key(name given in step 3: for our example its `"ProfileApi"`) as variable of the pipeline so that only your api executes when running pipeline without wasting resources by executing all apis.
+
+
+10. Refer [this PR](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis/pullrequest/1222) where we have added two apis newly
 
 
 **Estimated Time:**

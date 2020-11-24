@@ -84,7 +84,7 @@ Estimated Time: 15mins
 ```
 
 -  Update openApiSpec value with Swagger.json file path created as per step 1.
-`openApiSpec: './../../../src/services/Mcs.Tasmu.Profile.Api/Mcs.Tasmu.Profile.Api/Swagger.json'`
+`openApiSpec: './Input/apis/ProfileApi/1.0/Swagger.json'`
 -   Update policy value with apiServicePolicy.xml file path created as part of step 2.
 `policy: './Input/apis/ProfileApi/1.0/apiServicePolicy.xml'`
 - Update suffix value as per the [excel file](https://microsofteur.sharepoint.com/:x:/r/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/_layouts/15/Doc.aspx?action=edit&sourcedoc=%7B402304D9-A074-41C8-A796-CDDC69CF0B6B%7D&cid=0283f482-f352-4a80-b6e6-26baadf70389).

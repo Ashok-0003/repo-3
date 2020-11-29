@@ -5,6 +5,7 @@ R. can you clarify this question.
 •	Is it possible to set limits to MQTT and HTTPS calls per seconds, what happens if the calls exceed the limits do we get an alert?  
 R. Please see this link for Azure IoT Hub throttling details - Understand Azure IoT Hub quotas and throttling | Microsoft Docs. Yes, see  429 ThrottlingException as the queue fills up.
 
+
 •	Are there MQTT or HTTPS requests Queue, can we put a limit on the size of the Queue.
 R. IoT Hub message maximum retention for device-to-cloud messages is 7 days. See this article IoT Hub throttling and you | Azure Blog and Updates | Microsoft Azure
 

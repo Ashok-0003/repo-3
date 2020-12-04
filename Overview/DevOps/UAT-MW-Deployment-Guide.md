@@ -46,7 +46,4 @@ param (
 
   Keep monitoring to see if it is creating all the terms, columns, content types, lists and provisioning other features! 
 
-Trigger the Integration Pipeline
-
-Trigger the API Pipeline
   

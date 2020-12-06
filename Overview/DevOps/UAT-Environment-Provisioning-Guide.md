@@ -1,4 +1,4 @@
-
+Estimated duration for completion of the deployment steps per workstream
 |SL| Step | Workstream  | Estimated Duration |
 |--|--|--|--|
 | 1 | Infrastructure Provisioning  |  |  |

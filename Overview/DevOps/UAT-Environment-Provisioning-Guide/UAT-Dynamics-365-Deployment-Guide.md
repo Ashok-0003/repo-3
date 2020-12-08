@@ -1,3 +1,5 @@
-Please follow the deployment steps mentioned in the following Wiki.
+1. Run the following pipeline for UAT stage.
+https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=111
 
+2. Then follow deployment steps mentioned in the following Wiki. The items marked as [Automated] can be ignore because those steps are automatically performed by the pipeline above.
 [Dynamics 365 Deployment Guide](/Overview/DevOps/Dynamics-365-Deployment-Guide)

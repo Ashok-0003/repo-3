@@ -19,11 +19,11 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 
 
 # Development Environment
-|SL| Portal / App | URL | Remarks  |
+|SL| Portal / App | URL |  Remarks  |
 |--|--|--|--|
 | 1 | API Access URL  | https://api.dev.sqcp.qa | Base URL for all API calls  |
 | 2 | Marketplace Portal (B2B)  | https://marketplace.dev.sqcp.qa  |  |
-| 3 | Smart eServices Portal (B2C)  | https://mytasmu.dev.sqcp.qa  |  |
+| 3 | Smart Services Portal (B2C)  | https://mytasmu.dev.sqcp.qa  |  |
 | 4 | Developer Portal | https://developer.dev.sqcp.qa |  |
 | 5 | Open Data Portal | http://opendata.dev.sqcp.qa |  |
 | 6 | SQCP Admin Portal| https://cpadmin.dev.sqcp.qa | | |
@@ -37,7 +37,7 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 |--|--|--|--|
 | 1 | API Access URL  | https://api.tst.sqcp.qa | Base URL for all API calls  |
 | 2 | Marketplace Portal (B2B)  | https://marketplace.tst.sqcp.qa  |  |
-| 3 | Smart eServices Portal (B2C)  | https://mytasmu.tst.sqcp.qa  |  |
+| 3 | Smart Services Portal (B2C)  | https://mytasmu.tst.sqcp.qa  |  |
 | 4 | Developer Portal | https://developer.tst.sqcp.qa |  |
 | 5 | Open Data Portal | http://opendata.tst.sqcp.qa |  |
 | 6 | SQCP Admin Portal| https://cpadmin.tst.sqcp.qa | | |

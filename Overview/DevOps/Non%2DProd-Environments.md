@@ -15,7 +15,7 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 7 | Dynamics365Client | 315614d7-eae9-4021-8836-640f4d3a9583  |  |
 | 8 | Notification Service API | 016c0e73-6713-4fe9-a18e-b5f1be83de92 | |
 | 9 | Smart Parking API ?? | | |
-|10 | | | |
+|10 | spn-adminportal |9b6a8eef-0181-4a7e-a5ee-7e0477db25ad | |
 
 
 # Development Environment

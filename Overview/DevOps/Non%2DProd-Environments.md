@@ -27,7 +27,7 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 4 | Developer Portal | https://developer.dev.sqcp.qa |  |
 | 5 | Open Data Portal | http://opendata.dev.sqcp.qa |  |
 | 6 | SQCP Admin Portal| https://cpadmin.dev.sqcp.qa | | |
-| 7 | Dynamics 365 Instance| | | |
+| 7 | Dynamics 365 Instance| https://tasmu-dev2.crm4.dynamics.com | | |
 | 8 | Office 365 Instance/Tenant | | | |
 | 9 | CDN URL | | | | |
 
@@ -41,7 +41,7 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 4 | Developer Portal | https://developer.tst.sqcp.qa |  |
 | 5 | Open Data Portal | http://opendata.tst.sqcp.qa |  |
 | 6 | SQCP Admin Portal| https://cpadmin.tst.sqcp.qa | | |
-| 7 | Dynamics 365 Instance| | | |
+| 7 | Dynamics 365 Instance| https://tasmu-test.crm4.dynamics.com | | |
 | 8 | Office 365 Instance/Tenant | | | |
 | 9 | CDN URL | | | | |
 

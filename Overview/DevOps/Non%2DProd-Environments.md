@@ -6,13 +6,13 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 
 |SL| App Registration  | Client ID | Secret  |
 |--|--|--|--|
-| 1 | IdentityExperienceFramework | | |
-| 2 | ProxyIdentityExperienceFramework|||
-| 3 |b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.|||
+| 1 | IdentityExperienceFramework |9cdd7fad-14bf-46e0-8776-d553f1ad3402 | |
+| 2 | ProxyIdentityExperienceFramework|ead1b126-6f19-4fe0-b11c-b976c010cbf5||
+| 3 |b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.|7a966e81-c9d4-4a5e-b170-d37c45e282bd||
 | 4 | Central-Platform-Core-APIs | bc67474e-612b-4d7f-b75a-ac54d45f143a | ~-P5-4IVO44Xvqau5.6XH0L~B9Vcgz473m |
 | 5 | TASMU-Portal | dd0623e2-0163-4b05-82f8-ef798ff16c86 |  |
 | 6 | TASMU-MobileApp | c9e6a345-fabf-4cbc-94a5-1a94638aee51 |  |
-| 7 | Dynamics-365-Client | 315614d7-eae9-4021-8836-640f4d3a9583  | aYgcrfnV1xVsfVP~.94J3lctl.fR7f~jRM |
+| 7 | Dynamics365Client | 315614d7-eae9-4021-8836-640f4d3a9583  | aYgcrfnV1xVsfVP~.94J3lctl.fR7f~jRM |
 | 8 | Notification Service API | 016c0e73-6713-4fe9-a18e-b5f1be83de92 | |
 | 9 | Smart Parking API ?? | | |
 |10 | spn-adminportal |9b6a8eef-0181-4a7e-a5ee-7e0477db25ad | |
@@ -25,11 +25,11 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 2 | Marketplace Portal (B2B)  | https://marketplace.dev.sqcp.qa  |  |
 | 3 | Smart Services Portal (B2C)  | https://mytasmu.dev.sqcp.qa  |  |
 | 4 | Developer Portal | https://developer.dev.sqcp.qa |  |
-| 5 | Open Data Portal | http://opendata.dev.sqcp.qa |  |
+| 5 | Open Data Portal | https://opendata.dev.sqcp.qa |  |
 | 6 | SQCP Admin Portal| https://cpadmin.dev.sqcp.qa | | |
-| 7 | Dynamics 365 Instance| https://tasmu-dev2.crm4.dynamics.com | | |
+| 7 | Dynamics 365 Instance|https://tasmu-dev2.crm4.dynamics.com| | |
 | 8 | Office 365 Instance/Tenant | | | |
-| 9 | CDN URL | | | | |
+| 9 | CDN URL |https://dev-cdntasmu.azureedge.net | | | |
 
 # Test Environment
 
@@ -39,11 +39,36 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 2 | Marketplace Portal (B2B)  | https://marketplace.tst.sqcp.qa  |  |
 | 3 | Smart Services Portal (B2C)  | https://mytasmu.tst.sqcp.qa  |  |
 | 4 | Developer Portal | https://developer.tst.sqcp.qa |  |
-| 5 | Open Data Portal | http://opendata.tst.sqcp.qa |  |
+| 5 | Open Data Portal | https://opendata.tst.sqcp.qa |  |
 | 6 | SQCP Admin Portal| https://cpadmin.tst.sqcp.qa | | |
-| 7 | Dynamics 365 Instance| https://tasmu-test.crm4.dynamics.com | | |
+| 7 | Dynamics 365 Instance|https://tasmu-test.crm4.dynamics.com | | |
 | 8 | Office 365 Instance/Tenant | | | |
-| 9 | CDN URL | | | | |
+| 9 | CDN URL |https://tst-cdntasmu.azureedge.net | | | |
 
 # Training Environment
+
+|SL| Portal / App | URL | Remarks  |
+|--|--|--|--|
+| 1 | API Access URL  | https://api.trn.sqcp.qa | Base URL for all API calls  |
+| 2 | Marketplace Portal (B2B)  | https://marketplace.trn.sqcp.qa  |  |
+| 3 | Smart Services Portal (B2C)  | https://mytasmu.trn.sqcp.qa  |  |
+| 4 | Developer Portal | https://developer.trn.sqcp.qa |  |
+| 5 | Open Data Portal | https://opendata.trn.sqcp.qa |  |
+| 6 | SQCP Admin Portal| https://cpadmin.trn.sqcp.qa | | |
+| 7 | Dynamics 365 Instance|https://tasmu-uat.crm4.dynamics.com | | |
+| 8 | Office 365 Instance/Tenant | | | |
+| 9 | CDN URL |https://trn-cdntasmu.azureedge.net | | | |
+
 # UAT Environment
+
+|SL| Portal / App | URL | Remarks  |
+|--|--|--|--|
+| 1 | API Access URL  | https://api.uat.sqcp.qa | Base URL for all API calls  |
+| 2 | Marketplace Portal (B2B)  | https://marketplace.uat.sqcp.qa  |  |
+| 3 | Smart Services Portal (B2C)  | https://mytasmu.uat.sqcp.qa  |  |
+| 4 | Developer Portal | https://developer.uat.sqcp.qa |  |
+| 5 | Open Data Portal | https://opendata.uat.sqcp.qa |  |
+| 6 | SQCP Admin Portal| https://cpadmin.uat.sqcp.qa | | |
+| 7 | Dynamics 365 Instance|https://tasmu-uat.crm4.dynamics.com | | |
+| 8 | Office 365 Instance/Tenant | | | |
+| 9 | CDN URL |https://uat-cdntasmu.azureedge.net | | | |

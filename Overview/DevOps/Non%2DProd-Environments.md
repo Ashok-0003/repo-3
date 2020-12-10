@@ -9,7 +9,7 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 1 | IdentityExperienceFramework | | |
 | 2 | ProxyIdentityExperienceFramework|||
 | 3 |b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.|||
-| 4 | Central-Platform-Core-APIs | bc67474e-612b-4d7f-b75a-ac54d45f143a |  |
+| 4 | Central-Platform-Core-APIs | bc67474e-612b-4d7f-b75a-ac54d45f143a | ~-P5-4IVO44Xvqau5.6XH0L~B9Vcgz473m |
 | 5 | TASMU-Portal | dd0623e2-0163-4b05-82f8-ef798ff16c86 |  |
 | 6 | TASMU-MobileApp | c9e6a345-fabf-4cbc-94a5-1a94638aee51 |  |
 | 7 | Dynamics365Client | 315614d7-eae9-4021-8836-640f4d3a9583  |  |

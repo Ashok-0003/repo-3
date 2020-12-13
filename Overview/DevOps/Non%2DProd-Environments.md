@@ -4,18 +4,18 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 
 # Application Registrations in Azure AD B2C
 
-|SL| App Registration  | Client ID | Secret  |
-|--|--|--|--|
-| 1 | IdentityExperienceFramework |9cdd7fad-14bf-46e0-8776-d553f1ad3402 | |
-| 2 | ProxyIdentityExperienceFramework|ead1b126-6f19-4fe0-b11c-b976c010cbf5||
-| 3 |b2c-extensions-app. Do not modify. Used by AADB2C for storing user data.|7a966e81-c9d4-4a5e-b170-d37c45e282bd||
-| 4 | Central-Platform-Core-APIs | bc67474e-612b-4d7f-b75a-ac54d45f143a | ~-P5-4IVO44Xvqau5.6XH0L~B9Vcgz473m |
-| 5 | TASMU-Portal | dd0623e2-0163-4b05-82f8-ef798ff16c86 |  |
-| 6 | TASMU-MobileApp | c9e6a345-fabf-4cbc-94a5-1a94638aee51 |  |
-| 7 | Dynamics365Client | 315614d7-eae9-4021-8836-640f4d3a9583  | aYgcrfnV1xVsfVP~.94J3lctl.fR7f~jRM |
-| 8 | Notification Service API | 016c0e73-6713-4fe9-a18e-b5f1be83de92 | |
-| 9 | Smart Parking API ?? | | |
-|10 | spn-adminportal |9b6a8eef-0181-4a7e-a5ee-7e0477db25ad |619nB86VE4~wds-Kir-4H~vSVHExz-8~Lo |
+|SL| App Registrations  | 
+|--|--|
+| 1 | IdentityExperienceFramework<p>clientid:9cdd7fad-14bf-46e0-8776-d553f1ad3402</p> | | |
+| 2 | ProxyIdentityExperienceFramework <p>clientid:ead1b126-6f19-4fe0-b11c-b976c010cbf5</p>|
+| 3 |b2c-extensions-app. Do not modify. Used by AADB2C for storing user data. <p>clientid:7a966e81-c9d4-4a5e-b170-d37c45e282bd</p>|
+| 4 | <p>Central-Platform-Core-APIs</p><p>clientid: bc67474e-612b-4d7f-b75a-ac54d45f143a</p><p>clientsecret: ~-P5-4IVO44Xvqau5.6XH0L~B9Vcgz473m</p><p>Scopes:</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Subscription.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Subscription.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Review.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/FieldService.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/FieldService.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/ServiceRequest.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/ServiceRequest.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Organisation.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Organisation.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Case.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Case.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Profile.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Profile.Read</p>| 
+| 5 | TASMU-Portal <p>clientid: dd0623e2-0163-4b05-82f8-ef798ff16c86</p>|
+| 6 | TASMU-MobileApp <p>clientid: c9e6a345-fabf-4cbc-94a5-1a94638aee51</p> | 
+| 7 | Dynamics365Client <p>clientid: 315614d7-eae9-4021-8836-640f4d3a9583</p><p>clientsecret: aYgcrfnV1xVsfVP~.94J3lctl.fR7f~jRM</p>|
+| 8 | Notification Service API <p>clientid: 016c0e73-6713-4fe9-a18e-b5f1be83de92</p>|
+| 9 | Smart Parking API ?? <p></p>|
+|10 | spn-adminportal <p>clientid: 9b6a8eef-0181-4a7e-a5ee-7e0477db25ad</p><p>clientsecret: 619nB86VE4~wds-Kir-4H~vSVHExz-8~Lo</p>|
 
 
 # Development Environment

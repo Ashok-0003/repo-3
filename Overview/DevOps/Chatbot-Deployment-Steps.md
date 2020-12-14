@@ -1,7 +1,5 @@
 # Chatbot Resources
 
-## Dev
-
 1. app-cpd-apps-arqna-<env>-we-01 - App service for Arabic QnA
 2. app-cpd-apps-bot-<env>-we-01 - App service for Bot API
 3. app-cpd-apps-qna-<env>-we-01 - App service for English QnA

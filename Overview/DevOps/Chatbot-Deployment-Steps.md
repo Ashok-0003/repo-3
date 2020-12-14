@@ -3,8 +3,33 @@
 1. app-cpd-apps-arqna-<env>-we-01 - App service for Arabic QnA
 2. app-cpd-apps-bot-<env>-we-01 - App service for Bot API
 3. app-cpd-apps-qna-<env>-we-01 - App service for English QnA
-4. 
+4. cog-cpd-apps-luisauth-<env>-we-01 - Cognitive services LUIS Authoring
+5. cog-cpd-apps-luisrt-<env>-we-01 - Cognitive Services LUIS Runtime
+6. cog-cpd-apps-arqna-<env>-we-01 - Cognitive Services QnAMaker Arabic
+7. cog-cpd-apps-qna-<env>-we-01 - Cognitive Services QnAMaker English
+8. func-cpd-apps-luistra-<env>-we-01 - Function app Luis Trainer
+9. func-cpd-apps-qnasync-<env>-we-01 - Function App QnAMaker Sync triggered by logic app for Knowledgebase data synchronize from CRM dynamics to QnAMaker and qnamaker copying from one qnamaker source instance to destination instance.
+10. logic-cpd-apps-qnacopy-<env>-we-01 - Logic App QnAMaker FAQ copier from source to destination qnamaker specified in qnamaker section.
+11. logic-cpd-apps-qnakbsync-<env>-we-01 - Logic App QnAMaker Knowledge articles Synchronizer from CRM dynamics to QnAMaker instance.
+12. srch-cpd-apps-arcog-<env>-we-01 - Search Service Arabic Cognitive service for QnAMaker
+13. srch-cpd-apps-cog-<env>-we-01 - Search Service English Cognitive Service for QnAMaker
+14. bot-cpd-apps-<env>-we-01 - Webapp Bot
 
+# LUIS (Language Understanding Intelligent Service)
+
+1. tasmubot_ar_ar_Dispatch - Arabic Dispatch LUIS
+2. tasmubot_ar_ar_General - Arabic General LUIS
+3. tasmubot_en_us_Dispatch - English Dispatch LUIS
+4. tasmubot_en_us_General - English General LUIS
+
+# QnAMaker Instances
+
+1. tasmubot_FAQ_ar_ar - Arabic FAQ Destination instance used in BOT
+2. tasmubot_CRMKnowledgebase_ar_ar - Arabic Knowledgebase Instance synched from dynamics(CRM) used in BOT
+3. tasmubot_Source_FAQ_ar_ar - Source FAQ instance used by Admin or User to create or update FAQ data.
+4. tasmubot_FAQ_en_us - English FAQ Destination intance used in BOT
+5. tasmubot_CRMKnowledgebase_en_us - English Knowledgebase Insatance synched from dynamics(CRM) used in BOT
+6. tasmubot_Source_FAQ_en_us - Source FAQ instance used by Admin or User to create or update FAQ data.
 
 
 # Chatbot Deployment Steps

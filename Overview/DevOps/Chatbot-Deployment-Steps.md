@@ -1,8 +1,21 @@
+# Chatbot Resources
+
+## Dev
+
+1. app-cpd-apps-arqna-<env>-we-01 - App service for Arabic QnA
+2. app-cpd-apps-bot-<env>-we-01 - App service for Bot API
+3. app-cpd-apps-qna-<env>-we-01 - App service for English QnA
+4. 
+
+
+
 # Chatbot Deployment Steps
+
+
 
 ## LUIS QnAMaker Deployments
 
-1. Trigger [CD-BotLuisQnAInitialDeploy](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=542&_a=summary) Pipeline which will deploy four QnAMaker instances two for English and two for Arabic each for FAQ and KB, then four Luis instances two for English and two for Arabic each for General and Dispatch LUIS. 
+1. Trigger [CD-BotLuisQnAInitialDeploy](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=542&_a=summary) Pipeline which will deploy 6 QnAMaker instances three for English and three for Arabic each for Source FAQ, Destination FAQ and KB, then four Luis instances two for English and two for Arabic each for General and Dispatch LUIS. 
 It also generates a config json file in the build artifacts which will contain all the details of the LUIS and QnAMaker instances. 
 This pipeline should be triggered only once on first deployment.
 

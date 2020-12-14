@@ -44,6 +44,10 @@ This pipeline should be triggered only once on first deployment.
 
 2. Copy the config json generated in step 1 and update it to the app configuration of the infra repo so that the bot when deployed uses this app configuration.
 
+3. Update the LUIS instances in this portal with Authoring resource. (https://eu.luis.ai/)
+
+4. we can access QnAMaker instances in this url - https://www.qnamaker.ai/Home/MyServices
+
 ## BOT Api Deployment
 
 1. Trigger [CD-Bot-Release-Master](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=293&_a=summary) which will trigger deployment of Bot Api, two Azure functions - QnAMakerSync and LuisTrainer Functions.

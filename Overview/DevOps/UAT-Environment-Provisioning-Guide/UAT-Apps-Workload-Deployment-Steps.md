@@ -76,7 +76,14 @@ Logic App - logic-cpd-apps-intaprv1-uat-we-01
 Logic App - logic-cpd-apps-intgbaprl-uat-we-01
 Logic App - logic-cpd-apps-intprdt-uat-we-01
 Logic App - logic-cpd-apps-intsec-uat-we-01
+Logic App - logic-cpd-apps-route-uat-we-01
+Logic App - logic-cpd-apps-6dbill-uat-we-01
+Logic App - logic-cpd-apps-6dhook-uat-we-01
+Logic App - logic-cpd-apps-mpsidx-uat-we-01
+Logic App - logic-cpd-apps-mpsd365-uat-we-01
+Logic App - logic-cpd-apps-mpso365-uat-we-01
 Service Bus - sb-cpd-apps-int-uat-we-01
+Storage Account - stcpdappsintuatwe01
 1. [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
 AKS Cluster - aks-cpd-apps-uat-we-01
 Application Gateway - agw-cpd-apps-aks-uat-we-01

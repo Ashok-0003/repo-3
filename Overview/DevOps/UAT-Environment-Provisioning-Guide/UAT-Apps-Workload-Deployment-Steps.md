@@ -34,10 +34,10 @@ Key Vault
 # Deployment of Apps Infrastructure
 1. [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 APIM - apim-cpd-shrd-uat-we-01
-Application Gateway - agw-cpd-shrd-uat-we-01
 CDN - cdn-cpd-shrd-uat-we-01
 CDN Endpoint - uat-tasmu
 Storage Account - stcpdshrduatwe01
+
 1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 App Config Store - acst-cpd-apps-str-uat-we-01
 Cosmos Account - cosmos-cpd-apps-str-uat-we-01

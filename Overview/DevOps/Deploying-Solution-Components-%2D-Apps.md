@@ -1,3 +1,6 @@
+Document is deprecated
+
+
 # Pre requisites
 1. ARM Modules must be created
 1. Resource Group specific deployment files must be stitched

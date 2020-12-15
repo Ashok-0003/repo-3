@@ -65,6 +65,7 @@ API Connection - apicon-cpd-apps-intspo-uat-we-01
 API Connection - apicon-cpd-apps-integ-uat-we-01
 API Connection - apicon-cpd-apps-intkv-uat-we-01
 API Connection - apicon-cpd-apps-integd-uat-we-01
+API Connection - apicon-cpd-apps-intst-uat-we-01
 API Connection - apicon-cpd-apps-intcog-uat-we-01
 App Service Plan - plan-cpd-apps-int-uat-we-01
 Event Hub - ev-cpd-apps-int-uat-we-01

@@ -12,8 +12,8 @@
 |[CD-APIMConfig-tst-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=573)| Deploy the latest changes to tst APIM (apim-cpd-shared-tst-we-01)| Dependent on execution of CI-APIMConfig-Master-Build, <br> Pass the run time variable BuildQueueInit with ; separated values for the apis to update|
 |[CD-APIMConfig-tra-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=574)| Deploy the latest changes to tra APIM (apim-cpd-shared-tra-we-01)| Dependent on execution of CI-APIMConfig-Master-Build, <br> Pass the run time variable BuildQueueInit with ; separated values for the apis to update|
 |[CD-APIMConfig-uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=575)| Deploy the latest changes to uat APIM (apim-cpd-shrd-uat-we-01)| Dependent on execution of CI-APIMConfig-Master-Build, <br> Pass the run time variable BuildQueueInit with ; separated values for the apis to update|
-|[CD-Bot-Release-Master](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=293&_a=summary)| Deploy the latest changes to Bot api (app-cpd-apps-bot-<env>-we-01), deploy latest changes to General LUIS, Deploy latest changes to Bot related Function apps (func-cpd-apps-luistra-<env>-we-01 & func-cpd-apps-qnasync-<env>-we-01)| |
-|[CD-BotLuisQnAInitialDeploy](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=542&_a=summary)| To be DEPLOYED ONLY ONCE On environment creation. Deploy the LUIS and QnaMaker instances to environments ||
+|[CD-Bot-Release-Master](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=293&_a=summary)| Deploy the latest changes to Bot api (app-cpd-apps-bot-<env>-we-01),<br>deploy latest changes to General LUIS,<br> Deploy latest changes to Bot related function apps<br>(func-cpd-apps-luistra-<env>-we-01 & func-cpd-apps-qnasync-<env>-we-01)| |
+|[CD-BotLuisQnAInitialDeploy](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=542&_a=summary)| To be DEPLOYED ONLY ONCE On environment creation.<br> Deploy the LUIS and QnaMaker instances to environments ||
 
 
 

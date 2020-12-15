@@ -47,12 +47,14 @@ Redis Cache - redis-cpd-apps-str-uat-we-01
 Service Bus - sb-cpd-apps-strntf-uat-we-01
 Storage Account - stcpdappsstruatwe01
 1. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
-App Service - app-cpd-apps-qna-uat-we-01
+App Service - appcog-cpd-apps-qna-uat-we-01
+App Service - appcog-cpd-apps-arqna-uat-we-01
 App Service Plan - plan-cpd-apps-cog-we-01
 Bot Service - bot-cpd-apps-cog-uat-we-01
 Cognitive Service Luis Authoring - cog-cpd-apps-luisath-uat-we-01
 Cognitive Service Luis Runtime - cog-cpd-apps-luisrt-uat-we-01
-Cognitive Service QnAMaker - cog-cpd-apps-qna-uat-we-01 
+Cognitive Service QnAMaker English - appcog-cpd-apps-qna-uat-we-01 
+Cognitive Service QnAMaker Arabic - appcog-cpd-apps-arqna-uat-we-01
 Logic App -	logic-cpd-apps-cogsrch-we-01
 Search Service - srch-cpd-apps-cog-uat-we-01
 Web App Bot - app-cpd-apps-cog-uat-we-01

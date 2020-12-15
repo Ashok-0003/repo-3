@@ -69,6 +69,11 @@ Service Bus - sb-cpd-apps-int-uat-we-01
 1. [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
 AKS Cluster - aks-cpd-apps-uat-we-01
 Application Gateway - agw-cpd-apps-aks-uat-we-01
+1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
+Application Gateway - agw-cpd-apps-api-uat-we-01
+Application Gateway - agw-cpd-apps-web-uat-we-01
+
+
 # Link AKS Cluster DNS Zone to CPH Subscription
 1. A user account being used should have access to both the subscriptions 
 1. Go to AKS node resource group (rg-cpd-apps-aksnode-uat-we-01)

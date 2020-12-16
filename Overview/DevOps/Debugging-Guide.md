@@ -1,22 +1,12 @@
 # Access URLs updated and certificates installed
 
 If you want to test or browse the APIs or applications on public network using https. Please follow below steps:
-1.	Make the host file entries as below:
-20.54.136.87 dev-api.tasmu.gov.qa
-20.54.136.87 dev-accounts.tasmu.gov.qa
-20.54.136.87 dev-marketplace.tasmu.gov.qa
-20.54.136.87 dev-cpadmin.tasmu.gov.qa
-20.54.136.87 tst-api.tasmu.gov.qa
-20.54.136.87 tst-accounts.tasmu.gov.qa
-20.54.136.87 tst-marketplace.tasmu.gov.qa
-20.54.136.87 tst-cpadmin.tasmu.gov.qa
-20.54.136.87 tra-api.tasmu.gov.qa
-20.54.136.87 tra-accounts.tasmu.gov.qa
-20.54.136.87 tra-marketplace.tasmu.gov.qa
-20.54.136.87 tra-cpadmin.tasmu.gov.qa
+1.	Make the host file entries as below for sbx environment only:
 20.54.136.87 sbx-accounts.tasmu.gov.qa
 20.54.136.87 sbx-marketplace.tasmu.gov.qa
 20.54.136.87 sbx-cpadmin.tasmu.gov.qa
+20.54.136.87 sbx-mytasmu.tasmu.gov.qa
+
 2.	Download the certificate - wildcard.tasmu.gov.qa.pfx from [Certs](https://microsofteur.sharepoint.com/:f:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/EmAB3GrQ2RBLnNB0TS4C6PgBO5_p8E-iFFZPQGv8FYT9lg?e=PkJ84E)
 3.	Install the cert using below steps:
 a)	Choose store location as local 
@@ -27,12 +17,13 @@ e)	Finish
 
 URLs per environment:
 
-| Environment | APIs |Marketplace  |Admin Portal  |
-|--|--|--|--|
-|sbx|https://apim-cpd-shared-sbx-we-01.azure-api.net/config/api/feature |https://sbx-marketplace.tasmu.gov.qa/ |https://sbx-cpadmin.tasmu.gov.qa/ |
-|dev|https://dev-api.tasmu.gov.qa/config/api/feature|https://dev-marketplace.tasmu.gov.qa/|https://dev-cpadmin.tasmu.gov.qa/|
-|tst|https://tst-api.tasmu.gov.qa/config/api/feature|https://tst-marketplace.tasmu.gov.qa/|https://tst-cpadmin.tasmu.gov.qa/|
-|tra|https://tra-api.tasmu.gov.qa/config/api/feature|https://tra-marketplace.tasmu.gov.qa/|https://tra-cpadmin.tasmu.gov.qa/|
+| Environment | APIs |Marketplace  |Admin Portal  |My TASMU| Account|
+|--|--|--|--|--|--|
+|sbx|https://apim-cpd-shared-sbx-we-01.azure-api.net/config/api/feature |https://sbx-marketplace.tasmu.gov.qa/ |https://sbx-cpadmin.tasmu.gov.qa/ |https://sbx-mytasmu.tasmu.gov.qa/ ||https://sbx-accounts.tasmu.gov.qa/ |
+|dev|https://api.dev.sqcp.qa/config/api/feature|https://marketplace.dev.sqcp.qa/|https://cpadmin.dev.sqcp.qa/|https://mytasmu.dev.sqcp.qa/|https://account.dev.sqcp.qa/|
+|tst|https://api.tst.sqcp.qa/config/api/feature|https://marketplace.tst.sqcp.qa/|https://cpadmin.tst.sqcp.qa/|https://mytasmu.tst.sqcp.qa/|https://account.tst.sqcp.qa/|
+|tra|https://api.trn.sqcp.qa/config/api/feature|https://marketplace.trn.sqcp.qa/|https://cpadmin.trn.sqcp.qa/|https://mytasmu.trn.sqcp.qa/|https://account.trn.sqcp.qa/|
+|uat|https://api.uat.sqcp.qa/config/api/feature|https://marketplace.uat.sqcp.qa/|https://cpadmin.uat.sqcp.qa/|https://mytasmu.uat.sqcp.qa/|https://account.uat.sqcp.qa/|
 For APIs, change the API path accordingly as per ingress path configured
 
 

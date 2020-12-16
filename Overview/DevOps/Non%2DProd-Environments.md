@@ -16,8 +16,8 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 8 | Notification Service API <p>clientid: 016c0e73-6713-4fe9-a18e-b5f1be83de92</p><p>clientsecret: Xcs0~4IIgudrQKNJ3rtDSs_X5j-6f~.X~8</p>|
 | 9 | Smart Parking API ?? <p>clientid: 64db2dba-79c5-4b6c-84e0-696b3d1f0465</p><p>clientsecret: jgUnyX7VziON-~59iM_mL-F6J~MDMlzRtS</p>|
 |10 | spn-adminportal <p>clientid: 9b6a8eef-0181-4a7e-a5ee-7e0477db25ad</p><p>clientsecret: 619nB86VE4~wds-Kir-4H~vSVHExz-8~Lo</p>|
-|11 | ManageEvent Non Prod<p>clientid: 11f1f420-3ce0-4f26-85f5-9cf902553e72  clientsecret: nHYgb4zKoOfQ8GuDK6l3_qe9.rU--6eRte  tenantid: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698  scope: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default</p>|
-|12 | ITSM Non Prod<p>clientid: ce633c1d-d8b4-4381-b68a-1f7d0851250f  clientsecret: WnIaXQ~IT~P.O3CyjZNmwnj42vC2FoK_B7  tenantid: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698  scope: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default</p>|
+|11 | ManageEvent Non Prod<p>clientid: 11f1f420-3ce0-4f26-85f5-9cf902553e72</p><p>clientsecret: nHYgb4zKoOfQ8GuDK6l3_qe9.rU--6eRte</p><p>scope: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default</p>|
+|12 | ITSM Non Prod<p>clientid: ce633c1d-d8b4-4381-b68a-1f7d0851250f</p><p>clientsecret: WnIaXQ~IT~P.O3CyjZNmwnj42vC2FoK_B7</p><p>scope: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default</p>|
 
 
 

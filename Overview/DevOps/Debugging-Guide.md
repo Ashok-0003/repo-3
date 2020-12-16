@@ -1,4 +1,4 @@
-# Access URLs updated and certificates installed
+# Access URLs updated and certificates installed (for sbx env only)
 
 If you want to test or browse the APIs or applications on public network using https. Please follow below steps:
 1.	Make the host file entries as below for sbx environment only:

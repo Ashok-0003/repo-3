@@ -86,7 +86,7 @@ Import the following data packages using configuration migration tool (refer App
 3.	Select Common Entities, and Customer Service Entities from Enable Auditing and click on OK.
  ![image.png](/.attachments/image-a68fa140-492e-4317-860d-bc25f3c19548.png)
 
-2.3	Enable Connect to Maps for Showing Work Orders in the schedule Board
+### 3.3	Enable Connect to Maps for Showing Work Orders in the schedule Board
 
 1.	To enable the Map in the Schedule Board we need to Configure the Below Steps.
 ![image.png](/.attachments/image-a2a2d7c9-a5ce-4c8f-880d-4330cf17e5dc.png)
@@ -94,7 +94,7 @@ Import the following data packages using configuration migration tool (refer App
 2.	If “Connected to Maps” is “Yes”, we can view the Work order in the Map view.
 ![image.png](/.attachments/image-90402d7d-d125-4ddb-90c2-a9614483e90e.png)
 
-2.4	Configure customer voice survey on case resolve.
+### 3.4	Configure customer voice survey on case resolve.
 
 1.	Browse customer voice URL and create new Project.  In Project Template select Support.
 ![image.png](/.attachments/image-e84b8208-422a-45cf-bdbc-f83cc8aed3b0.png)

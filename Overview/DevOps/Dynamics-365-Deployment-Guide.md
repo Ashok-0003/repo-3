@@ -67,20 +67,20 @@ Note: During import of managed solutions into ETE Organization, make sure to sel
 Import the following data packages using configuration migration tool (refer Appendix B).
 •	MasterData.zip
 
-2.2	Updating System Settings [Automated]
+### 3.2	Updating System Settings [Automated]
 1.	Sign into Dynamics 365 as System administrator user.
 2.	Go to Settings and click on Administration.
 3.	Go to System Settings.
 
-2.2.1	General Settings
+### 3.2.1	General Settings
 1.	Click on General Tab.
 2.	Enter 60 minutes for Duration of inactivity before timeout and 10 min for inactivity warning.
 ![image.png](/.attachments/image-c865c73c-b7c5-4989-bb15-9bc72e4e674e.png)
  
-2.2.2	Increase the Note attachment Limit to 20MB (20480 KB)
+### 3.2.2	Increase the Note attachment Limit to 20MB (20480 KB)
 ![image.png](/.attachments/image-3de6efc0-5cf3-4e54-a2de-7da3c57f8552.png)
  
-2.2.3	Audit Settings
+### 3.2.3	Audit Settings
 1.	Click on Auditing Tab.
 2.	Select Start Auditing and Audit user access from Audit Settings.
 3.	Select Common Entities, and Customer Service Entities from Enable Auditing and click on OK.

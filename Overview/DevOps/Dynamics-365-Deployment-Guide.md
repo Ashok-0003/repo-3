@@ -47,8 +47,8 @@ Follow steps below to create and configure above team.
 7.	Click on MANAGE ROLES ribbon button and assign security role ‘Tasmu Article Approver’  to the team and click on OK button as highlighted in below screen.
  ![image.png](/.attachments/image-9131576b-8fee-49de-a763-0894906df37c.png)
 
-2.Deployment
-1.1	CRM Solution Import [Automated]
+## 2.Deployment
+### 2.1	CRM Solution Import [Automated]
 
 The following are the CRM Customizations and related solutions shown below to be imported sequentially in the order mentioned to the required CRM online instance.
 

@@ -24,7 +24,7 @@ Follow below steps to create and configure above queues.
 
 6.	Repeat the above steps to create other queues listed.
 
-1.2 Configure Team and assign roles
+### 1.2 Configure Team and assign roles
 The following is the team to be created. 
 1.	Knowledge Article Approvers
 

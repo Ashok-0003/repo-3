@@ -2,7 +2,7 @@
 The purpose of this document is to explain the steps to deploy TASMU Dynamics 365 CE Solution.
 
 ## 1	Pre-Deployment
-### 1.3 Configure Queues [Automated]
+### 1.1 Configure Queues [Automated]
 The following are the queues to be created. 
 1.	Business Operations Queue
 2.	ITSM Queue
@@ -24,7 +24,7 @@ Follow below steps to create and configure above queues.
 
 6.	Repeat the above steps to create other queues listed.
 
-1.4 Configure Team and assign roles
+1.2 Configure Team and assign roles
 The following is the team to be created. 
 1.	Knowledge Article Approvers
 

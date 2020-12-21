@@ -129,7 +129,7 @@ Import the following data packages using configuration migration tool (refer App
 ![image.png](/.attachments/image-557c3e05-f2dc-46b9-a74c-0df6e0142b69.png)
  
 
-2.7	Enable Customizable Resolve Case Dialog
+### 3.7	Enable Customizable Resolve Case Dialog
 
 1.	Go to Service Management (Change Area) -> Service Configuration Settings -> Select the Style of Resolve Case Dialog box -> Customizable Dialog.
 ![image.png](/.attachments/image-886c1ec4-f450-40a5-9147-cb26abeb70c9.png)

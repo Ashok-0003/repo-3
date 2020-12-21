@@ -160,7 +160,7 @@ Follow the below steps sequentially to import CRM solution.
 
 8.	Repeat the above steps for all the solutions.
 
-Appendix B - Data Import using Configuration Migration Utility
+## Appendix B - Data Import using Configuration Migration Utility
 Configuration Migration Utility is available as part of Dynamics 365 SDK.
 1.	Run the tool by double clicking on the DataMigrationUtility.exe.
 2.	Click on Import data and then click on Continue.

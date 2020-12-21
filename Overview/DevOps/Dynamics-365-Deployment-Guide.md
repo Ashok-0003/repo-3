@@ -111,7 +111,7 @@ Import the following data packages using configuration migration tool (refer App
 5.	Browse Flows  and Turn on Send Survey Flow.
 ![image.png](/.attachments/image-6cfc9a74-53fe-4196-ab28-1ad3778af50c.png)
  
-2.5	Enable SLA Flows after deployment
+### 3.5	Enable SLA Flows after deployment
 
 1.	Go to SLA record (Service Management --> Service Level Agreement) and open SLA Record and deactivate.
 ![image.png](/.attachments/image-079c03df-279d-4391-9ca5-ae273dee4334.png)
@@ -123,7 +123,7 @@ Import the following data packages using configuration migration tool (refer App
 ![image.png](/.attachments/image-5153c0e9-d206-42f2-a26f-a140e5effa02.png)
 ![image.png](/.attachments/image-39a7f78b-8328-42ae-a815-cdac296f5a51.png)
 
-2.6	Case Routing Rules
+### 3.6	Case Routing Rules
 
 1.	Once the Case Routing rules solution is imported into the target instance, manually update the Queue in the rule items and then activate the Routing rule set.
 ![image.png](/.attachments/image-557c3e05-f2dc-46b9-a74c-0df6e0142b69.png)
@@ -134,7 +134,7 @@ Import the following data packages using configuration migration tool (refer App
 1.	Go to Service Management (Change Area) -> Service Configuration Settings -> Select the Style of Resolve Case Dialog box -> Customizable Dialog.
 ![image.png](/.attachments/image-886c1ec4-f450-40a5-9147-cb26abeb70c9.png)
  
-Appendix A - Solution Import
+## Appendix A - Solution Import
 
 Follow the below steps sequentially to import CRM solution.
 

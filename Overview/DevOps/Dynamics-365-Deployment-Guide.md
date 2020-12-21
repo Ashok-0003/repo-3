@@ -14,7 +14,6 @@ Follow below steps to create and configure above queues.
  ![image.png](/.attachments/image-383bcdb7-14b7-4cf7-9117-414a2de5eaec.png)
 
 3.	It navigates to below screen, click on Queues as highlighted below.
-
  ![image.png](/.attachments/image-08e10226-ecbd-4e44-85a4-823fff9acb72.png)
 
 4.	Click on + NEW button as shown below
@@ -140,11 +139,9 @@ Follow the below steps sequentially to import CRM solution.
 
 1.	Go to https://make.powerapps.com -> Select the right Environment.
 2.	Go to Solutions and click on Import. 
-
  ![image.png](/.attachments/image-42393822-ec12-4f28-9966-292ea8e7244e.png)
 
 3.	Select the solution to be imported and click next. 
-
  ![image.png](/.attachments/image-b843bfab-8687-4be3-9062-6a50bb8e757c.png)
                   
 4.	The following screen appears and click on ‘Next’.

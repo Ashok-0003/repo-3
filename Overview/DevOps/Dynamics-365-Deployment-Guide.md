@@ -153,7 +153,6 @@ Follow the below steps sequentially to import CRM solution.
  
 
 6.	The below popup opens after clicking on ‘Import’. The green bar shows the progress of the import.
-
  ![image.png](/.attachments/image-76927e3f-c5c6-44ad-8ab6-38a65522b501.png)
 
 7.	Click on Done. 

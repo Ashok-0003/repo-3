@@ -23,7 +23,8 @@ Follow below steps to create and configure above queues.
  ![image.png](/.attachments/image-f103012d-33c3-463a-ba88-76d6da509c8c.png)
 
 6.	Repeat the above steps to create other queues listed.
-1.4 Configure Team and assign role
+
+1.4 Configure Team and assign roles
 The following is the team to be created. 
 1.	Knowledge Article Approvers
 
@@ -45,6 +46,7 @@ Follow steps below to create and configure above team.
  ![image.png](/.attachments/image-d3e44b15-25f5-4beb-9c29-b23ddf907b51.png)
 7.	Click on MANAGE ROLES ribbon button and assign security role ‘Tasmu Article Approver’  to the team and click on OK button as highlighted in below screen.
  ![image.png](/.attachments/image-9131576b-8fee-49de-a763-0894906df37c.png)
+
 2.Deployment
 1.1	CRM Solution Import [Automated]
 

@@ -142,6 +142,8 @@ Import the following data packages using configuration migration tool (refer App
 
 2. once after web resource solution is deployed, we need to make sure that [themes-data.csv](/.attachments/themes-data-359d2f81-f951-48db-96db-736a4566cd46.csv) file is uploaded in the target environment.
 3. Finally when custom theme called "Tasmu Theme" is available , we need to manually publish the theme in the respective environment. 
+
+![Publish Theme.png](/.attachments/Publish%20Theme-f0de7009-2bca-4c0c-9fe2-acb0ae52b284.png)
  
 ## Appendix A - Solution Import
 

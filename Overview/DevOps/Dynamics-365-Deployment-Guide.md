@@ -136,8 +136,12 @@ Import the following data packages using configuration migration tool (refer App
 
 ### 3.8  Move Theme Data
 
-1.    Created a Custom Theme called "Tasmu Theme" and need to add the Logo Post deployment of Web resource solution.
+1.    Created a Custom Theme called "Tasmu Theme".
+
 ![Theme.png](/.attachments/Theme-4d6ec2ba-1e2c-4f39-96fe-d49985fccdd8.png)
+
+2. once after web resource solution is deployed, we need to make sure that [themes-data.csv](/.attachments/themes-data-359d2f81-f951-48db-96db-736a4566cd46.csv) file is uploaded in the target environment.
+3. Finally when custom theme called "Tasmu Theme" is available , we need to manually publish the theme in the respective environment. 
  
 ## Appendix A - Solution Import
 

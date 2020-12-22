@@ -133,6 +133,11 @@ Import the following data packages using configuration migration tool (refer App
 
 1.	Go to Service Management (Change Area) -> Service Configuration Settings -> Select the Style of Resolve Case Dialog box -> Customizable Dialog.
 ![image.png](/.attachments/image-886c1ec4-f450-40a5-9147-cb26abeb70c9.png)
+
+### 3.8  Move Theme Data
+
+1.    Created a Custom Theme called "Tasmu Theme" and need to add the Logo Post deployment of Web resource solution.
+![Theme.png](/.attachments/Theme-4d6ec2ba-1e2c-4f39-96fe-d49985fccdd8.png)
  
 ## Appendix A - Solution Import
 

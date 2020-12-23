@@ -135,13 +135,8 @@ Import the following data packages using configuration migration tool (refer App
 ![image.png](/.attachments/image-886c1ec4-f450-40a5-9147-cb26abeb70c9.png)
 
 ### 3.8  Move Theme Data
-
-1.    Created a Custom Theme called "Tasmu Theme".
-
-![Theme.png](/.attachments/Theme-4d6ec2ba-1e2c-4f39-96fe-d49985fccdd8.png)
-
-2. once after web resource solution is deployed, we need to make sure that [themes-data.csv](/.attachments/themes-data-359d2f81-f951-48db-96db-736a4566cd46.csv) file is uploaded in the target environment.
-3. Finally when custom theme called "Tasmu Theme" is available , we need to manually publish the theme in the respective environment. 
+1. We need to make sure that [themes-data.csv](/.attachments/themes-data-359d2f81-f951-48db-96db-736a4566cd46.csv) file is imported in the target environment [Follow the Appendix C - Import record from Excel ]
+3. After importing, Custom theme called "Tasmu Theme" will available in the desired environment, we need to manually publish the theme in the respective environment. 
 
 ![Publish Theme.png](/.attachments/Publish%20Theme-f0de7009-2bca-4c0c-9fe2-acb0ae52b284.png)
  
@@ -184,3 +179,6 @@ Configuration Migration Utility is available as part of Dynamics 365 SDK.
   ![image.png](/.attachments/image-e3025e03-14c5-42b1-b49e-733f974b6f9e.png)
 
 5.	Verify whether the data is imported by opening the entity from advanced find.
+
+## Appendix C - Import record from Excel
+

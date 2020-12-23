@@ -19,7 +19,7 @@ e)	Finish
 
 | Environment | APIs |Marketplace  |Admin Portal  |My TASMU| Account|
 |--|--|--|--|--|--|
-|sbx|https://apim-cpd-shared-sbx-we-01.azure-api.net/config/api/feature |https://sbx-marketplace.tasmu.gov.qa/ |https://sbx-cpadmin.tasmu.gov.qa/ |https://sbx-mytasmu.tasmu.gov.qa/ ||https://sbx-accounts.tasmu.gov.qa/ |
+|sbx|https://apim-cpd-shrd-sbx-we-01.azure-api.net/config/api/feature |https://sbx-marketplace.tasmu.gov.qa/ |https://sbx-cpadmin.tasmu.gov.qa/ |https://sbx-mytasmu.tasmu.gov.qa/ ||https://sbx-accounts.tasmu.gov.qa/ |
 |dev|https://api.dev.sqcp.qa/config/api/feature|https://marketplace.dev.sqcp.qa/|https://cpadmin.dev.sqcp.qa/|https://mytasmu.dev.sqcp.qa/|https://account.dev.sqcp.qa/|
 |tst|https://api.tst.sqcp.qa/config/api/feature|https://marketplace.tst.sqcp.qa/|https://cpadmin.tst.sqcp.qa/|https://mytasmu.tst.sqcp.qa/|https://account.tst.sqcp.qa/|
 |tra|https://api.trn.sqcp.qa/config/api/feature|https://marketplace.trn.sqcp.qa/|https://cpadmin.trn.sqcp.qa/|https://mytasmu.trn.sqcp.qa/|https://account.trn.sqcp.qa/|

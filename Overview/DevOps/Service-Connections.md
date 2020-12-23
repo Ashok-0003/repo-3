@@ -9,4 +9,5 @@
 |cpd-dev-adx-spn|Azure Data Explorer|Central Platform Development||
 | Tasmu App Center Connection | AppCenter | For connecting to appcenter and deploying it to specific slots | NA |
 | Telerik |  Telerik Nuget | For connecting to telerik licensed nuget feed | NA |
+| powerbiembed-spn | Power BI Service Connection | For establishing connection to Power BI tenant| NA|
 

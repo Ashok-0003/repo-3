@@ -182,3 +182,49 @@ Configuration Migration Utility is available as part of Dynamics 365 SDK.
 
 ## Appendix C - Import record from Excel
 
+
+1. Go to Settings > Data Management > Imports.
+
+![1.Go to Import.png](/.attachments/1.Go%20to%20Import-f6618a9a-8a40-4f22-9a27-1dc51f4f9555.png)
+
+2. On the command bar select Import Data > Import Data.
+
+![2.Import Data.png](/.attachments/2.Import%20Data-1cc1a04c-7043-4038-bd44-b93281bea125.png)
+
+3. Browse to the folder where you saved the file that contains the import file. Select the file, and then select Open. Then, select Next.
+
+![BrowseFile_Import.png](/.attachments/BrowseFile_Import-10d5f3b4-214f-4fd8-88cb-0e108e90824a.png)
+
+4. Review File Upload Summary-> Next
+
+![4.ReviewFileUploadSummary.png](/.attachments/4.ReviewFileUploadSummary-e35a0c3a-fc35-45b2-9934-0c1a361b31bf.png)
+
+5. Select Data Map-> Next
+
+![5.SelectDataMap.png](/.attachments/5.SelectDataMap-0169417f-0f51-4cda-9351-4eae59915973.png)
+
+6. We need to map the type of the record . Source Data file -> themes-data . and Microsoft Dynamics 365 Record Types ->Themes -> Click on Next.
+
+![6.MapRecordType.png](/.attachments/6.MapRecordType-1592e184-c063-4e33-bfce-cbc2644ee110.png) 
+
+7. We can Map  (Do Not Modify) Theme ->Theme (Primary Key) as follows . All other fields will automatically mapped from excel. Click Next.
+
+![7.MapThemeFields_I.png](/.attachments/7.MapThemeFields_I-5aaab5a9-adec-45d7-b754-d21430d1d7d8.png)
+
+![10.MapFields_Next.png](/.attachments/10.MapFields_Next-44d18896-9bbc-4499-ac2d-4d1aae946007.png)
+
+8 . Review Mapping Summary-> Click Next
+
+![11.ReviewMappingSummary.png](/.attachments/11.ReviewMappingSummary-2f1e1d29-aa76-4303-abbd-49a662e0c359.png)
+
+9. Review Settings and Import Data->Submit
+
+![12.ReviewSettingImportData.png](/.attachments/12.ReviewSettingImportData-2d330e26-3deb-4b2d-aafd-259034e07c7e.png)
+
+10. Data Submitted for Import->Finish.
+
+![13.DataSubmitted.png](/.attachments/13.DataSubmitted-ea54401e-16b4-448b-8c88-94340c98249e.png)
+
+11. Data Imported from excel and Successfully imported the record.
+
+![14.DataImported.png](/.attachments/14.DataImported-c01af79e-814d-4b6c-b34a-013b127ef7e7.png)

@@ -1,5 +1,5 @@
 
-|Name|Type|Subscription  |Roles on Subscription|
+|Name|Type|Purpose/Subscription  |Roles on Subscription|
 |--|--|--|--|
 | sqcp-ado-spn-dev |  Azure Resource Manager| Central Platform Development | Contributor, User Access Administrator|
 | sqcp-ado-spn-hub| Azure Resource Manager |  Central Platform Hub|Contributor|

@@ -76,3 +76,5 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 7 | Dynamics 365 Instance|https://tasmu-uat.crm4.dynamics.com | | |
 | 8 | Office 365 Instance/Tenant | | | |
 | 9 | CDN URL |https://uat-cdntasmu.azureedge.net | | | |
+| 10 | CMS URL |https://tasmusqcpuat.sharepoint.com/sites/cms-marketplace | | | |
+| 11 | CMS URL2 |https://tasmusqcpuat.sharepoint.com/sites/cms-global | | | |

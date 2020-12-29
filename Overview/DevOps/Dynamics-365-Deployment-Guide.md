@@ -228,3 +228,21 @@ Configuration Migration Utility is available as part of Dynamics 365 SDK.
 11. Data Imported from excel and Successfully imported the record.
 
 ![14.DataImported.png](/.attachments/14.DataImported-c01af79e-814d-4b6c-b34a-013b127ef7e7.png)
+
+## 4.	Add Security Alert Workflow Automation
+1. Login into https://portal.azure.com.
+2. Go to Security Center.
+![image.png](/.attachments/image-30dfa9ae-2eb6-41f9-832e-023daef8b32b.png)
+3. Navigate to Workflow automation.
+![image.png](/.attachments/image-ac7829c2-780f-47e4-95e3-a42e85eea759.png)
+4. Click on Add Workflow automation, new Workflow automation pop up appears.
+![image.png](/.attachments/image-fa38e7dd-a014-40c9-ad0a-73ffd57a9a11.png)
+5. Enter the details, select the Subscription and Resource group which has the storage blob container which needs to be monitored.
+![image.png](/.attachments/image-d0d006ae-6be8-45c1-a2b4-9d56ed66a728.png)
+6. Select Security Center data types as Threat detection alerts.
+![image.png](/.attachments/image-58247740-fd57-4408-9ae7-a7fb156e35e3.png)
+7. Add 'Potential malware uploaded to a storage blob container' in Alert name contains. In Alert severity select All severities selected.
+![image.png](/.attachments/image-37ec16d4-2a77-4a4f-805b-caac5eee1b13.png)
+8. In Actions, select the subscription and defender logic app.
+![image.png](/.attachments/image-c96bf1b6-3208-4286-a40d-bc9469dab2ac.png)
+9. Click on Create.

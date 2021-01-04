@@ -103,5 +103,5 @@ Replace the following values in the command:
 2. <chartPath> - give the helm chart path from the machine the command is being executed
 3. <releaseName> - specify the release name which is being upgraded
 ```
-helm upgrade --namespace apiapps --install --wait --create-namespace --set image.tag=<buildId>,image.repository=acrcpdglobnpdwe01.azurecr.io/apiapps/<releaseName>,podIdentity=mi-cpd-apps-aks-tst-we-01,environment.ConnectionStrings__AppConfig=https://acst-cpd-apps-tst-we-01.azconfig.io <releasename> <chartPath>
+helm upgrade --namespace apiapps --install --wait --create-namespace --set image.tag=<buildId>,image.repository=acrcpdglobnpdwe01.azurecr.io/apiapps/<releaseName>,podIdentity=mi-cpd-apps-aks-sbx-we-01,environment.ConnectionStrings__AppConfig=https://acst-cpd-apps-sbx-we-01.azconfig.io <releasename> <chartPath>
 ```

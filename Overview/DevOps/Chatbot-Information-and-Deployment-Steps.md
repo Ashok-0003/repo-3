@@ -68,6 +68,24 @@ This pipeline should be triggered only once on first deployment.
 2. Copy the config json generated in step 1 and update it to the app configuration of the infra repo so that the bot when deployed uses this app configuration.
 
 3. Update the LUIS instances in this portal with Authoring resource. (https://eu.luis.ai/)
+a. go to above url and then select directory and then choose authoring resource like image below.
+ ![image.png](/.attachments/image-64fbb0ee-4266-40f7-98b2-d63d2b23c60f.png)
+![image.png](/.attachments/image-9f073d5a-6a5d-48f2-999a-5d76cf94349e.png)
+![image.png](/.attachments/image-b2ec52ae-43ba-4cd3-9f5b-5f377faedeeb.png)
+
+b. you will see these language resources - two for english and two for arabic - each having instance for General and dispatch.
+
+![image.png](/.attachments/image-7511e615-116c-4e8d-8550-f14b5933406b.png)
+
+c. select each resource and follow steps below:
+i. click on manage then azure resources and then add prediction resource
+![image.png](/.attachments/image-10b330ad-e340-43fc-b935-913c1a40d20e.png)
+ii. select cog-cpd-apps-luisrt-<env>-we-01 in the prediction resource.
+![image.png](/.attachments/image-3cd24810-1e8e-47c2-9ccc-96055556e9cf.png)
+iii. then hit this url once: 
+https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar
+https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
+
 
 4. we can access QnAMaker instances in this url - https://www.qnamaker.ai/Home/MyServices
 

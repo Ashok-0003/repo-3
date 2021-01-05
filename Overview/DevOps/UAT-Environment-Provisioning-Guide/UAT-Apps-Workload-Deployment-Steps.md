@@ -93,13 +93,16 @@ Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01
 
 
-# Link AKS Cluster DNS Zone to CPH Subscription
+## Link AKS Cluster DNS Zone to CPH Subscription
 1. A user account being used should have access to both the subscriptions 
 1. Go to AKS node resource group (rg-cpd-apps-aksnode-uat-we-01)
 1. Open the private DNS Zone
 1. Go to virtual network links and add link as below
 
 ![image.png](/.attachments/image-313a362b-dc66-4d5c-989b-61b8579b90a5.png)
+
+# Creation and set up of AD B2C Tenant
+Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharepoint.com/:w:/s/TASMU-CentralPlatformPMO/EdIKRGu6E1VGnA-naCTSBXQBjgdtCiT9C6n5E9rehxUWmw?e=ZSX2Yf)
 
 # Deployment of the solution components
 1. Add the key vault secrets for uat following this [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-secrets-and-certificates-to-key-vault)

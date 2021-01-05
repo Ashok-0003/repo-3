@@ -51,7 +51,9 @@ c. Then update following elements in the json with values below and upload it he
 	],
 "signInAudience": "AzureADandPersonalMicrosoftAccount",
 ```
-
+d. Updating the Secret : 
+select certificates and secrets and generate a secret and copy that to the variable group for all environments value: BotAppSecret
+![image.png](/.attachments/image-33a01e2f-da71-4340-a403-20ffee14ca80.png)
 
 
 # Chatbot Deployment Steps

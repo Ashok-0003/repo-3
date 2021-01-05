@@ -119,4 +119,5 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 
 1. [Deploying Chatbot solutions](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
 
-1. For deploying Payment Preference function to function app, add stage to the following pipeline [CD-PlatformFuncApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738)
+1. For deploying Payment Preference function to function app, add stage to the following pipeline 
+[CD-PlatformFuncApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738)

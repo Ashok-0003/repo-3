@@ -5,7 +5,6 @@
 1. Merge all the code to master branch.
 1. Wait for CI pipelines to complete for the templates to be uploaded to the artifacts storage account
 1. Networking and infra resources must be deployed first
-1. Global resources next - already deployed for non production environment (rg-cpd-glob-npd-we-01)
 1. Specific resource group components can be deployed next
 1. Solution components can be deployed on the azure resources at the end
 

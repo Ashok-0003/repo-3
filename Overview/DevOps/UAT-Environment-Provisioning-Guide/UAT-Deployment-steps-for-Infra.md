@@ -1,3 +1,33 @@
+# Infra Components Deployment Sequence
+Infra components are grouped into two main categories:
+1. Infra functions. These functions and their associated resource groups are listed below:
+* Monitoring: rg-*-mon-*
+* Security: rg-*-sec-*
+* Networking: rg-*-net-*
+* Backup and Recovery: rg-*-bckup-*
+
+2. Infra workloads are workloads like FWs, ADDS and DNS services to support the platform. Each workload exists in dedicated resource groups such like:
+* ADDS: rg-*-adds-*
+* DNSProxy: rg-*-dnsp-*
+* FW Ingress: rg-*-fwin-*
+
+Please note that for each RG deployment there exists a dedicated deployment pipeline to deploy that RG and associated resources within.
+While deploying the landing zone, Infra functions should be deployed prior to the infra workloads or any other platform workloads since most of the workloads depend on existence of infra functions such as Virtual Network, Azure Monitor etc.
+
+While deploying the infra functions following sequence can be used:
+1. -mon- RGs 
+* LogAnalytics worksplaces deployed in the mon RGs are referenced by NSGs and other components in their IaC definition to enable monitoring during the deployment. Because of this reason mon RG should be deployed before the sec RG
+2. -sec- RGs
+* NSGs located in the sec RGs will be referenced during the Virtual Network deployment. Because of this reason sec RG should be deployed before the net RG
+3. -net- RGs
+* RouteTables and VirtualNetwork deployments both exist in the net RGs. However RouteTables should be deployed before the VirtualNetwork. To ensure this sequencing, 'dependsOn' property is used in the deployment template file. This guarantees Virtual Network deployment dependsOn RouteTables deployment. Additionally NSGs are referenced during the VirtualNetwork deployment, thus ensuring sec RGs are deployed prior to the net RG mitigates the potential deployment failure
+4. -bckup- RGs
+* Recovery Services Vaults might be referenced by the infra/platform workloads during their deployments. Because of this reason bckup RGs should be deployed before the workload RGs
+5. <infra workload> RGs
+6. <platform workload> RGs
+
+
+
 [TASMU Landing Zone BOM.xlsx](/.attachments/TASMU%20Landing%20Zone%20BOM-0a24bf9d-e274-40c8-addf-3a93c99166ff.xlsx)
 
 As it is shown in the attached "Tasmu Landing Zone Bom.xlsx" file, UAT and other environments networks created based on pre-defined Vnets/Subnets and IP allocations.

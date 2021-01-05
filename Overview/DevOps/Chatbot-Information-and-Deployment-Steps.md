@@ -53,7 +53,6 @@ c. Then update following elements in the json with values below and upload it he
 ```
 d. Updating the Secret : 
 select certificates and secrets and generate a secret and copy that to the variable group for all environments value: BotAppSecret
-![image.png](/.attachments/image-33a01e2f-da71-4340-a403-20ffee14ca80.png)
 ![image.png](/.attachments/image-bc0d6906-187c-4ac1-b088-fda9b1840486.png)
 
 # Chatbot Deployment Steps

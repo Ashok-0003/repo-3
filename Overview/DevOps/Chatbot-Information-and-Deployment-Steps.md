@@ -31,6 +31,28 @@
 5. tasmubot_CRMKnowledgebase_en_us - English Knowledgebase Insatance synched from dynamics(CRM) used in BOT
 6. tasmubot_Source_FAQ_en_us - Source FAQ instance used by Admin or User to create or update FAQ data.
 
+# Webapp Bot AD update
+
+1. After successful deployment of chatbot resources in step 1 above, we have to update manifest file and variable group with secret. for that follow below steps:
+
+a. Go to the webapp bot resource created like below screenshot and select manage as highlighted in image below.
+![image.png](/.attachments/image-9a7719e9-834a-4b31-9863-7cd60f72eb1e.png)
+b.  Then click on manifest like below image and download the json file.
+![image.png](/.attachments/image-330dfc10-197b-42a4-8ca1-481893222739.png)
+c. Then update following elements in the json with values below and upload it here.
+
+```
+"accessTokenAcceptedVersion": 2
+"replyUrlsWithType": [	
+		{	
+			"url": "https://token.botframework.com/.auth/web/redirect",	
+			"type": "Web"	
+		}	
+	],
+"signInAudience": "AzureADandPersonalMicrosoftAccount",
+```
+
+
 
 # Chatbot Deployment Steps
 

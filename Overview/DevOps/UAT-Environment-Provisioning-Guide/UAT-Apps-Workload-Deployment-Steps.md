@@ -14,13 +14,13 @@
 1. [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
 Application Insights
 Automation Account
-Event Hub
+Event Hub Namespaces
 Log Analytics
 Storage Account
 1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 Application Insights
 Automation Account
-Event Hub
+Event Hub Namespaces
 Log Analytics
 Storage Account
 1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)

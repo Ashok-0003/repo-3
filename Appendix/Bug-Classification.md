@@ -15,6 +15,22 @@
 |Chatty interface leading to too many  remote calls|Bugs resulting due to multiple calls or payload that can be optimized by the development team|
 |Code not optimized|Bugs resulting due to non-adherence to coding guidelines or best practices|
 |Coding/Deployment/Build/Config Issues|Bugs resulting from incorrect coding logic, missing deployment, incorrect build artifacts or config issues|
+|Dependency not met||
+|Deployment/Build issue||
+|DoD was not met||
+|DoR was not met||
+|Implicit requirement||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
 |||
 |||
 |||

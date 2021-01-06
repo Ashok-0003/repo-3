@@ -12,6 +12,27 @@
 
 # Deployment of Data Infrastructure
 
+# Environment Variables for Azure Pipelines
+The following list of variables are required to be updated after a new Azure infrastructure is created prior to deploying the solution components below.
+
+
+|Variable Name| Description |
+|--|--|
+| RawZone-Key |  |
+| GoldZone-Key |  |
+| GoldZone-CRM-Key |  |
+| stcpddata01-Key |  |
+| SQLServer01-Admin-Password |  |
+| SQLServer01-Admin-Username |  |
+| Databricks-bearerToken |  |
+| iot_sharedAccessPolicyKey |  |
+| evh_sharedAccessPolicyKey |  |
+| SPN-Data-Id |  |
+| SPN-Data-Key |  |
+| SPN-ADO-Id |  |
+| SPN-ADO-Key |  |
+
+
 # Deployment of the solution components
 Run the following pipelines in sequence:
 1. [Deploy Azure SQLDB](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=501)

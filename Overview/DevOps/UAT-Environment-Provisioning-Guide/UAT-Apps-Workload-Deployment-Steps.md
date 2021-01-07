@@ -24,7 +24,7 @@ Event Hub Namespaces - evhns-cpd-apps-mon-uat-we-01
 Log Analytics - log-cpd-apps-mon-uat-we-01
 Storage Account - stcpdappsdiaguatwe01
 1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
-Network Security Groups
+Network Security Groups - nsg-cpd-apps-aks-uat-we-01
 Key Vault
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 Virtual Network

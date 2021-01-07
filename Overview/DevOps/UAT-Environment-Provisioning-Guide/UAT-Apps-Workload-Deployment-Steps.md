@@ -12,17 +12,17 @@
 
 # Deployment of Azure Infrastructure
 1. [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
-Application Insights
-Automation Account
-Event Hub Namespaces
-Log Analytics
-Storage Account
+Application Insights - appi-cpd-shrd-mon-uat-we-01
+Automation Account - aut-cpd-shrd-mon-uat-we-01
+Event Hub Namespaces - evhns-cpd-shrd-mon-uat-we-01
+Log Analytics - log-cpd-shrd-mon-uat-we-01
+Storage Account - stcpdshrddiaguatwe01
 1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-Application Insights
-Automation Account
-Event Hub Namespaces
-Log Analytics
-Storage Account
+Application Insights - appi-cpd-apps-mon-uat-we-01
+Automation Account - aut-cpd-apps-mon-uat-we-01
+Event Hub Namespaces - evhns-cpd-apps-mon-uat-we-01
+Log Analytics - log-cpd-apps-mon-uat-we-01
+Storage Account - stcpdappsdiaguatwe01
 1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 Network Security Groups
 Key Vault

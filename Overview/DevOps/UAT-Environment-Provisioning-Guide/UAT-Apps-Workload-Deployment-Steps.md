@@ -24,12 +24,12 @@ Event Hub Namespaces - evhns-cpd-apps-mon-uat-we-01
 Log Analytics - log-cpd-apps-mon-uat-we-01
 Storage Account - stcpdappsdiaguatwe01
 1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
-Network Security Groups - nsg-cpd-apps-aks-uat-we-01
-Key Vault
+Network Security Groups - nsg-cpd-apps-aks-uat-we-01, nsg-cpd-apps-agw-uat-we-01, nsg-cpd-apps-agwweb-uat-we-01, nsg-cpd-apps-agwapi-uat-we-01, nsg-cpd-apps-agwntf-uat-we-01, nsg-cpd-apps-apim-uat-we-01, nsg-cpd-apps-bkend-uat-we-01, nsg-cpd-apps-testvms-uat-we-01
+Key Vault - kv-cpd-apps-uat-we-01
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-Virtual Network
+Virtual Network - vnet-cpd-pltf-uat-we-01
 1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
-Route Tables
+Route Tables - route-cpd-apps-aks-uat-we-01, route-cpd-apps-apim-uat-we-01, route-cpd-apps-bkend-uat-we-01, route-cpd-apps-testvms-uat-we-01
 
 # Deployment of Apps Infrastructure
 1. [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)

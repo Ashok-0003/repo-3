@@ -1,20 +1,3 @@
-# Access URLs updated and certificates installed (for sbx env only)
-
-If you want to test or browse the APIs or applications on public network using https. Please follow below steps:
-1.	Make the host file entries as below for sbx environment only:
-20.54.136.87 sbx-accounts.tasmu.gov.qa
-20.54.136.87 sbx-marketplace.tasmu.gov.qa
-20.54.136.87 sbx-cpadmin.tasmu.gov.qa
-20.54.136.87 sbx-mytasmu.tasmu.gov.qa
-
-2.	Download the certificate - wildcard.tasmu.gov.qa.pfx from [Certs](https://microsofteur.sharepoint.com/:f:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/EmAB3GrQ2RBLnNB0TS4C6PgBO5_p8E-iFFZPQGv8FYT9lg?e=PkJ84E)
-3.	Install the cert using below steps:
-a)	Choose store location as local 
-b)	Give the path to downloaded pfx
-c)	Give password
-d)	Specify store as Trusted Root Certification Authority 
-e)	Finish
-
 # URLs per environment:
 
 | Environment| Developer Portal | APIs |Marketplace  |Admin Portal  |My TASMU| Account|
@@ -105,3 +88,20 @@ Replace the following values in the command:
 ```
 helm upgrade --namespace apiapps --install --wait --create-namespace --set image.tag=<buildId>,image.repository=acrcpdglobnpdwe01.azurecr.io/apiapps/<releaseName>,podIdentity=mi-cpd-apps-aks-sbx-we-01,environment.ConnectionStrings__AppConfig=https://acst-cpd-apps-sbx-we-01.azconfig.io <releasename> <chartPath>
 ```
+
+# Access URLs updated and certificates installed (for sbx env only)
+
+If you want to test or browse the APIs or applications on public network using https. Please follow below steps:
+1.	Make the host file entries as below for sbx environment only:
+20.54.136.87 sbx-accounts.tasmu.gov.qa
+20.54.136.87 sbx-marketplace.tasmu.gov.qa
+20.54.136.87 sbx-cpadmin.tasmu.gov.qa
+20.54.136.87 sbx-mytasmu.tasmu.gov.qa
+
+2.	Download the certificate - wildcard.tasmu.gov.qa.pfx from [Certs](https://microsofteur.sharepoint.com/:f:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/EmAB3GrQ2RBLnNB0TS4C6PgBO5_p8E-iFFZPQGv8FYT9lg?e=PkJ84E)
+3.	Install the cert using below steps:
+a)	Choose store location as local 
+b)	Give the path to downloaded pfx
+c)	Give password
+d)	Specify store as Trusted Root Certification Authority 
+e)	Finish

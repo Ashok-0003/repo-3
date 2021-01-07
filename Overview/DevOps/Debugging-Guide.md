@@ -16,14 +16,12 @@ For APIs, change the API path accordingly as per ingress path configured
 3. Go to application gateway acting as an ingress controller (agw-cpd-apps-<env>-we-01) to run a health probe on the API.
 - Settings -> Health probes -> Select the matching probe -> Test
 - If the communication is not successful, there is some problem with AKS cluster (check steps to debug the cluster)
-- If the communication is successful, for dev, tst, tra, run the health probes on external application gateway - agw-cph-apps-temp-we-01
- (having restricted access) for the respective backend
 - If the backend is not healthy, check whether it is APIM or AGIC, test the communication from VM having bastion access (restricted access) using the URLs specific to APIM or AGIC
 
 ### AKS Namespaces:
 1. apiapps - All Platform APIs
 2. webapps - marketplace, adminportal, other web apps
-3. jobs - functions
+3. jobs - function apps
 
 ## AKS Cluster
 ### Using portal UI

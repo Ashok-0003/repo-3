@@ -62,6 +62,12 @@
 
 
 # Deployment of Data Infrastructure
+1. Deployment of KeyVault
+
+1. Deployment of KeyVault secrets
+
+1. Deployment of Infrastructure (master pipeline)
+
 
 # Environment Variables for Azure Pipelines
 The following list of variables are required to be updated after a new Azure infrastructure is created prior to deploying the solution components below.

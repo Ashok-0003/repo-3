@@ -33,7 +33,7 @@ The following list of variables are required to be updated after a new Azure inf
 | SPN-ADO-Key |  |
 
 
-# Deployment of the solution components
+# Deployment of the solution components (Smart Parking components)
 Run the following pipelines in sequence:
 1. [Deploy Azure SQLDB](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=501)
 1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=509)

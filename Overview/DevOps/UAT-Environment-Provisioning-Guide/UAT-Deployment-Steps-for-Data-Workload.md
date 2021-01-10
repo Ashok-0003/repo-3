@@ -10,6 +10,57 @@
 
 # Deployment of Azure Infrastructure
 
+|Pipeline|Dependencies |
+|--|--|
+
+
+|Resource Group|rg-cpd-data-uat-we-01|
+|--|--|
+|Analysis Services |aascpddatauatwe01|
+|API Connection |apicon-cpd-data-uat-we-01  |
+|API Connection  |apicon-cpd-data-uat-we-02  |
+|Function App  |func-cpd-data-uat-we-01  |
+|Function App  |func-cpd-data-uat-we-02  |
+|Function App | func-cpd-data-uat-we-03 |
+|Function App  | func-cpd-telsim-uat-we-01 |
+|App Service Plan  | plan-cpd-data-uat-we-01 |
+|Application Insight  | appi-cpd-data-uat-we-01 |
+|Azure Databricks  | databricks-cpd-data-uat-we-01 |
+|Azure Data Factory  |adf-cpd-data-uat-we-01  |
+|Azure Data Explorer Cluster  |adxcpddatauatwe01  |
+|Event Hubs Namespace   |evh-cpd-data-uat-we-01ns  |
+|Event Hubs Namespace   |evh-cpd-data-uat-we-02ns  |
+|Azure IoT Hub  |iot-cpd-data-uat-we-01  |
+|Load Balancer  |kucompute-adxcpddatauatwe01-elb  |
+|Load Balancer  |kucompute-adxcpddatauatwe01-ilb  |
+|Load Balancer  |kudatamgmt-adxcpddatauatwe01-elb|
+|Load Balancer  |kudatamgmt-adxcpddatauatwe01-ilb|
+|Log Analytics Workspace  |iot-cpd-data-uat-we-01  |
+|Logic App  |logic-cpd-data-uat-we-01  |
+|Public IP address  |adxuatdmip |
+|Public IP address  |adxuatpip |
+|SQL database  |sql-cpd-data-uat-we-01  |
+|SQL database  |sql-cpd-dynamics-data-uat-we-01  |
+|Dedicated SQL pool  |sqldw-cpd-data-uat-we-01  |
+|Dedicated SQL pool  |sqldw-smartcity-data-uat-we-01  |
+|SQL server  |sql-cpd-data-uat-we-01  |
+|Storage Account (ADLS)  |dlsgoldzoneuatwe01  |
+|Storage Account (ADLS)  |dlslandingzoneuatwe01  |
+|Storage Account (ADLS)  |dlsrawzoneuatwe01  |
+|Storage Account (ADLS)  |dlsopenzoneuatwe01  |
+|Storage Account  |stcpddatauatwe01  |
+|Storage Account  |stcpddatauatwe02  |
+|Stream Analytics job  |asa-cpd-data-uat-we-01  |
+|Stream Analytics job  |asa-cpd-data-uat-we-02  |
+|Synapse Workspace  |snp-cpd-data-uat-we-01   |
+
+
+
+
+
+
+
+
 # Deployment of Data Infrastructure
 
 # Environment Variables for Azure Pipelines

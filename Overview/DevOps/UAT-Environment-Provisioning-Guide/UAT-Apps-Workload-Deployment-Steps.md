@@ -47,7 +47,7 @@ Route Tables - route-cpd-apps-aks-uat-we-01, route-cpd-apps-apim-uat-we-01, rout
 1. 
 |Pipeline|Dependencies|
 |-|-|
-|[rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)[rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)||
+|[rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)|[rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)|
 APIM - apim-cpd-shrd-uat-we-01
 CDN - cdn-cpd-shrd-uat-we-01
 CDN Endpoint - uat-tasmu

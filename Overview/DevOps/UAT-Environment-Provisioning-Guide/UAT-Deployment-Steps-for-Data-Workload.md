@@ -53,21 +53,18 @@
 |Stream Analytics job  |asa-cpd-data-uat-we-01  |
 |Stream Analytics job  |asa-cpd-data-uat-we-02  |
 |Synapse Workspace  |snp-cpd-data-uat-we-01   |
-
-
-
-
+|Virtual Machine  |vmdgattstwe01|
+|Virtual Machine  |vmdgattstwe02|
+|Virtual Machine  |vmdgattstwe03|
+|Virtual Machine  |vmdgattstwe04|
 
 
 
 
 # Deployment of Data Infrastructure
-1. Deployment of KeyVault
-
-1. Deployment of KeyVault secrets
-
-1. Deployment of Infrastructure (master pipeline)
-
+1. [Deployment of KeyVault](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=488)
+1. [Deployment of KeyVault secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=493)
+1. [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
 
 # Environment Variables for Azure Pipelines
 The following list of variables are required to be updated after a new Azure infrastructure is created prior to deploying the solution components below.

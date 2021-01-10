@@ -32,13 +32,13 @@ Storage Account - stcpdappsdiaguatwe01
 1.
 |Pipeline|Dependencies|
 |-|-|
-|  [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)||
+|  [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)|[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)|
 Network Security Groups - nsg-cpd-apps-aks-uat-we-01, nsg-cpd-apps-agw-uat-we-01, nsg-cpd-apps-agwweb-uat-we-01, nsg-cpd-apps-agwapi-uat-we-01, nsg-cpd-apps-agwntf-uat-we-01, nsg-cpd-apps-apim-uat-we-01, nsg-cpd-apps-bkend-uat-we-01, nsg-cpd-apps-testvms-uat-we-01
 Key Vault - kv-cpd-apps-uat-we-01
 1.
 |Pipeline|Dependencies|
 |-|-|
-|   [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)||
+|   [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)|[rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)|
 Virtual Network - vnet-cpd-pltf-uat-we-01
 1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 Route Tables - route-cpd-apps-aks-uat-we-01, route-cpd-apps-apim-uat-we-01, route-cpd-apps-bkend-uat-we-01, route-cpd-apps-testvms-uat-we-01
@@ -47,7 +47,7 @@ Route Tables - route-cpd-apps-aks-uat-we-01, route-cpd-apps-apim-uat-we-01, rout
 1. 
 |Pipeline|Dependencies|
 |-|-|
-|[rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)||
+|[rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)[rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)||
 APIM - apim-cpd-shrd-uat-we-01
 CDN - cdn-cpd-shrd-uat-we-01
 CDN Endpoint - uat-tasmu
@@ -56,7 +56,7 @@ Storage Account - stcpdshrduatwe01
 1.
 |Pipeline|Dependencies|
 |-|-|
-| [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)|[rg-cpd-shrd-mon-uat-we-01]||(https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)|
+| [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)||
 App Config Store - acst-cpd-apps-str-uat-we-01
 Cosmos Account - cosmos-cpd-apps-str-uat-we-01
 Notification Hub - ntf-cpd-apps-str-uat-we-01
@@ -67,7 +67,7 @@ Storage Account - stcpdappsstruatwe01
 1. 
 |Pipeline|Dependencies|
 |-|-|
-| [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)||
+| [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)|[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)|
 App Service - appcog-cpd-apps-qna-uat-we-01
 App Service - appcog-cpd-apps-arqna-uat-we-01
 App Service Plan - plan-cpd-apps-cog-we-01
@@ -82,7 +82,7 @@ Web App Bot - app-cpd-apps-cog-uat-we-01
 1. 
 |Pipeline|Dependencies|
 |-|-|
-[rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498) | |
+[rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498) |[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) |
 API Connection - apicon-cpd-apps-into365-uat-we-01
 API Connection - apicon-cpd-apps-intsb-uat-we-01
 API Connection - apicon-cpd-apps-intspo-uat-we-01
@@ -112,13 +112,13 @@ Storage Account - stcpdappsintuatwe01
 1. 
 |Pipeline|Dependencies|
 |-|-|
-| [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)||
+| [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)|[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)|
 AKS Cluster - aks-cpd-apps-uat-we-01
 Application Gateway - agw-cpd-apps-aks-uat-we-01
 1. 
 |Pipeline|Dependencies|
 |-|-|
-| [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621) ||
+| [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621) |[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)|
 Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01
 

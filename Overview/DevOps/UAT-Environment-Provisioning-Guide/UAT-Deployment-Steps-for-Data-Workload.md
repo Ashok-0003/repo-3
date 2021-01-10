@@ -33,7 +33,7 @@ The following list of variables are required to be updated after a new Azure inf
 | SPN-ADO-Key |  |
 
 
-# Deployment of the solution components (Smart Parking components)
+# Deployment of the solution components (Synthetic Use Case components)
 Run the following pipelines in sequence:
 1. [Deploy Azure SQLDB](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=501)
 1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=509)
@@ -44,6 +44,14 @@ Run the following pipelines in sequence:
 1. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)
+
+# Deployment of the solution components (Smart City components)
+
+# Deployment of the solution components (Smart Parking components)
+
+# Deployment of the solution components (Application Insights components)
+
+# Deployment of the solution components (Platform Events components)
 
 # Deployment of Power BI Reports
 Currently we are deploying all the Power BI reports in the tst environment. A new workspace named “Automation Tst - Tasmu Command & Control Center Dashboards” is created where all the reports are automatically deployed.

@@ -41,13 +41,23 @@ Storage Account - stcpdappsdiaguatwe01
 1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 **Resources** -
-Network Security Groups - nsg-cpd-apps-aks-uat-we-01, nsg-cpd-apps-agw-uat-we-01, nsg-cpd-apps-agwweb-uat-we-01, nsg-cpd-apps-agwapi-uat-we-01, nsg-cpd-apps-agwntf-uat-we-01, nsg-cpd-apps-apim-uat-we-01, nsg-cpd-apps-bkend-uat-we-01, nsg-cpd-apps-testvms-uat-we-01
+Network Security Groups - nsg-cpd-apps-aks-uat-we-01
+Network Security Groups - nsg-cpd-apps-agw-uat-we-01
+Network Security Groups - nsg-cpd-apps-agwweb-uat-we-01
+Network Security Groups - nsg-cpd-apps-agwapi-uat-we-01
+Network Security Groups - nsg-cpd-apps-agwntf-uat-we-01
+Network Security Groups - nsg-cpd-apps-apim-uat-we-01
+Network Security Groups - nsg-cpd-apps-bkend-uat-we-01
+Network Security Groups - nsg-cpd-apps-testvms-uat-we-01
 Key Vault - kv-cpd-apps-uat-we-01
 
 1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 **Dependencies** -
 **Resources** -
-Route Tables - route-cpd-apps-aks-uat-we-01, route-cpd-apps-apim-uat-we-01, route-cpd-apps-bkend-uat-we-01, route-cpd-apps-testvms-uat-we-01
+Route Tables - route-cpd-apps-aks-uat-we-01
+Route Tables - route-cpd-apps-apim-uat-we-01
+Route Tables - route-cpd-apps-bkend-uat-we-01
+Route Tables - route-cpd-apps-testvms-uat-we-01
 
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Dependencies** - [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)

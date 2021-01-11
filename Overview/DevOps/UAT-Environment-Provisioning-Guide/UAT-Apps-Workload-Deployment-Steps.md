@@ -16,6 +16,9 @@
 2. Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
 3. Send Grid Account 
 
+# Creation and set up of AD B2C Tenant
+Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharepoint.com/:w:/s/TASMU-CentralPlatformPMO/EdIKRGu6E1VGnA-naCTSBXQBjgdtCiT9C6n5E9rehxUWmw?e=ZSX2Yf)
+
 # Deployment of Azure Infrastructure
 1.
 |Pipeline|Dependencies|
@@ -130,7 +133,9 @@ Storage Account - stcpdappsintuatwe01
 |-|-|
 | [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)|[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)|
 AKS Cluster - aks-cpd-apps-uat-we-01
+Managed Identity - mi-cpd-apps-aks-uat-we-01 (Deployed in rg-cpd-apps-aksnode-uat-we-01)
 Application Gateway - agw-cpd-apps-aks-uat-we-01
+
 
 6. 
 |Pipeline|Dependencies|
@@ -138,6 +143,18 @@ Application Gateway - agw-cpd-apps-aks-uat-we-01
 | [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621) |[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)|
 Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01
+
+7. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01
+
+|Object Id| Secrets |  Certificates|
+|--|--|--|
+|mi-cpd-apps-aks-uat-we-01|Get||
+|app-cpd-apps-bot-uat-we-01|Get||
+|func-cpd-apps-qnasync-uat-we-01|Get||
+|func-cpd-apps-luistra-uat-we-01|Get||
+|func-cpd-apps-intbpa-uat-we-01|Get|Get|
+
+
 
 
 ## Link AKS Cluster DNS Zone to CPH Subscription
@@ -148,8 +165,6 @@ Application Gateway - agw-cpd-apps-web-uat-we-01
 
 ![image.png](/.attachments/image-313a362b-dc66-4d5c-989b-61b8579b90a5.png)
 
-# Creation and set up of AD B2C Tenant
-Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharepoint.com/:w:/s/TASMU-CentralPlatformPMO/EdIKRGu6E1VGnA-naCTSBXQBjgdtCiT9C6n5E9rehxUWmw?e=ZSX2Yf)
 
 # Deployment of the solution components
 1. Add the key vault secrets for uat following this [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-secrets-and-certificates-to-key-vault)

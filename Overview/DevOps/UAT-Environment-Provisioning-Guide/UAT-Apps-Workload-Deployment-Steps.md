@@ -84,6 +84,18 @@ Notification Hub - ntf-cpd-apps-str-uat-we-01
 Notification Hub Namespace - ntfns-cpd-apps-str-uat-we-01
 Redis Cache - redis-cpd-apps-str-uat-we-01
 Service Bus - sb-cpd-apps-strntf-uat-we-01
+Service Bus Topic - sbt-cpd-apps-strntfbulk-uat-we-01
+Service Bus Topic - sbt-cpd-apps-strntfbulkdl-uat-we-01
+Service Bus Topic - sbt-cpd-apps-strntfoutboundgsmssingle-uat-we-01
+Service Bus Topic - sbt-cpd-apps-strntfsingle-uat-we-01
+Service Bus Topic - sbt-cpd-apps-strsmsbulk-uat-we-01
+Service Bus Topic - sbt-cpd-apps-strsmssingle-uat-we-01
+Service Bus Topic Subscription - sbts-cpd-apps-strntfbulk-uat-we-01 
+Service Bus Topic Subscription - sbts-cpd-apps-strntfbulkdl-uat-we-01
+Service Bus Topic Subscription - sbts-cpd-apps-strntfoutboundgsmssingle-uat-we-01
+Service Bus Topic Subscription - sbts-cpd-apps-strntfsingle-uat-we-01
+Service Bus Topic Subscription - sbts-cpd-apps-strsmsbulk-uat-we-01
+Service Bus Topic Subscription - sbts-cpd-apps-strsmssingle-uat-we-01
 Storage Account - stcpdappsstruatwe01
 1. Seed the Key Vault Secrets required in the cognitive and integration pipelines in kv-cpd-apps-uat-we-01
 

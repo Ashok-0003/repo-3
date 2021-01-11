@@ -162,7 +162,11 @@ Application Gateway - agw-cpd-apps-web-uat-we-01
 1. Go to virtual network links and add link as below
 
 ![image.png](/.attachments/image-313a362b-dc66-4d5c-989b-61b8579b90a5.png)
-
+## Role Assignments 
+1. CDN Endpoint Contributor
+2. App Configuration Store Data Reader
+3. AKS indentities
+<to be updated>
 
 # Deployment of the solution components
 1. Add the key vault secrets for uat following this [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-secrets-and-certificates-to-key-vault)

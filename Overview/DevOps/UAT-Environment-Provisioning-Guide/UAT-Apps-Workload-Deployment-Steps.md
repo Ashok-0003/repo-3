@@ -71,6 +71,8 @@ Storage Account - stcpdshrduatwe01
 **Resources** -
 App Config Store - acst-cpd-apps-str-uat-we-01
 Cosmos Account - cosmos-cpd-apps-str-uat-we-01
+Cosmos DB - sql-cosmos-cpd-apps-str-ntf-uat-we-01, sql-cosmos-cpd-apps-str-pt-uat-we-01, sql-cosmos-cpd-apps-str-bot-uat-we-01
+Cosmos DB Container - sqlc-cosmos-cpd-apps-str-ntf-uat-we-01, sqlc-cosmos-cpd-apps-str-botfb-uat-we-01, sqlc-cosmos-cpd-apps-str-botrt-uat-we-01, sqlc-cosmos-cpd-apps-str-botst-uat-we-01, sqlc-cosmos-cpd-apps-str-pt-uat-we-01, 
 Notification Hub - ntf-cpd-apps-str-uat-we-01
 Notification Hub Namespace - ntfns-cpd-apps-str-uat-we-01
 Redis Cache - redis-cpd-apps-str-uat-we-01

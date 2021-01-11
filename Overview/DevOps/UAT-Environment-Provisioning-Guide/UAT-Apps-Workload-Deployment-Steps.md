@@ -44,14 +44,13 @@ Storage Account - stcpdappsdiaguatwe01
 Network Security Groups - nsg-cpd-apps-aks-uat-we-01, nsg-cpd-apps-agw-uat-we-01, nsg-cpd-apps-agwweb-uat-we-01, nsg-cpd-apps-agwapi-uat-we-01, nsg-cpd-apps-agwntf-uat-we-01, nsg-cpd-apps-apim-uat-we-01, nsg-cpd-apps-bkend-uat-we-01, nsg-cpd-apps-testvms-uat-we-01
 Key Vault - kv-cpd-apps-uat-we-01
 
-4.[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)|[rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)|
+4. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+**Dependencies** - [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+**Resources** -
 Virtual Network - vnet-cpd-pltf-uat-we-01
 
-5.
-|Pipeline|Dependencies|
-|-|-|
-|[rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)|[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)|
-**Dependencies** - 
+5. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+**Dependencies** - [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Resources** -
 Route Tables - route-cpd-apps-aks-uat-we-01, route-cpd-apps-apim-uat-we-01, route-cpd-apps-bkend-uat-we-01, route-cpd-apps-testvms-uat-we-01
 
@@ -74,9 +73,16 @@ Notification Hub Namespace - ntfns-cpd-apps-str-uat-we-01
 Redis Cache - redis-cpd-apps-str-uat-we-01
 Service Bus - sb-cpd-apps-strntf-uat-we-01
 Storage Account - stcpdappsstruatwe01
+4. Seed the Key Vault Secrets required in the cognitive and integration pipelines in kv-cpd-apps-uat-we-01
+
+| Resource Name |Secret Name  | Key Vault Name |
+|--|--|--|
+
+
 
 3. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
-**Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
+**Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) <br>
+[rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 **Resources** -
 App Service - appcog-cpd-apps-qna-uat-we-01
 App Service - appcog-cpd-apps-arqna-uat-we-01
@@ -144,8 +150,10 @@ Application Gateway - agw-cpd-apps-web-uat-we-01
 |func-cpd-apps-luistra-uat-we-01|Get||
 |func-cpd-apps-intbpa-uat-we-01|Get|Get|
 
-8. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01) CD-KeyVault
+8. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
+<To Be Updated> the list of secrets - Scripts\KeyVault\all-secrets.yml
 9. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
+<To Be Updated> the configurations and their retrieval - Scripts\AppConfigurations
 
 ## Link AKS Cluster DNS Zone to CPH Subscription
 1. A user account being used should have access to both the subscriptions 

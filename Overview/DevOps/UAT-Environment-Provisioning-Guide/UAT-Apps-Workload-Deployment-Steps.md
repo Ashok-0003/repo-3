@@ -179,6 +179,7 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 2. App Configuration Store Data Reader
 3. AKS indentities
 <to be updated>
+## Configuring Notification Hubs for APN and Firebase
 
 # Deployment of the solution components
 1. Add the CI and CD APIM Pipelines and URLs pointing to AKS AGW for most of the APIs

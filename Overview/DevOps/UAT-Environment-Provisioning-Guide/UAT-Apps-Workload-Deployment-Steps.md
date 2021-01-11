@@ -98,16 +98,21 @@ Storage Account - stcpdappsstruatwe01
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 **Resources** -
-App Service - appcog-cpd-apps-qna-uat-we-01
-App Service - appcog-cpd-apps-arqna-uat-we-01
+App Service - appcog-cpd-apps-qna-uat-we-01 - App service for English QnA
+App Service - appcog-cpd-apps-arqna-uat-we-01 - App service for Arabic QnA
+App Service - app-cpd-apps-bot-uat-we-01 - App service for Bot API
 App Service Plan - plan-cpd-apps-cog-we-01
 Bot Service - bot-cpd-apps-cog-uat-we-01
 Cognitive Service Luis Authoring - cog-cpd-apps-luisath-uat-we-01
 Cognitive Service Luis Runtime - cog-cpd-apps-luisrt-uat-we-01
 Cognitive Service QnAMaker English - appcog-cpd-apps-qna-uat-we-01 
 Cognitive Service QnAMaker Arabic - appcog-cpd-apps-arqna-uat-we-01
-Logic App -	logic-cpd-apps-cogsrch-we-01
-Search Service - srch-cpd-apps-cog-uat-we-01
+Function App - func-cpd-apps-luistra-uat-we-01 - Function app Luis Trainer
+Function App - func-cpd-apps-qnasync-uat-we-01 - Function App QnAMaker Sync triggered by logic app for Knowledgebase data synchronize from CRM dynamics to QnAMaker and qnamaker copying from one qnamaker source instance to destination instance.
+Logic App - logic-cpd-apps-qnacopy-uat-we-01 - Logic App QnAMaker FAQ copier from source to destination qnamaker specified in qnamaker section
+Logic App - logic-cpd-apps-qnakbsync-uat-we-01 - Logic App QnAMaker Knowledge articles Synchronizer from CRM dynamics to QnAMaker instance
+Search Service - srch-cpd-apps-cog-uat-we-01 - Search Service English Cognitive Service for QnAMaker
+Search Service - srch-cpd-apps-arcog-uat-we-01 - Search Service Arabic Cognitive service for QnAMaker
 Web App Bot - app-cpd-apps-cog-uat-we-01
 
 4. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)

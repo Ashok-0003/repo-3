@@ -72,20 +72,26 @@ The following list of variables are required to be updated after a new Azure inf
 
 |Variable Name| Description |
 |--|--|
-| RawZone-Key |  |
-| GoldZone-Key |  |
-| GoldZone-CRM-Key |  |
-| stcpddata01-Key |  |
-| SQLServer01-Admin-Password |  |
-| SQLServer01-Admin-Username |  |
-| Databricks-bearerToken |  |
-| iot_sharedAccessPolicyKey |  |
-| evh_sharedAccessPolicyKey |  |
-| SPN-Data-Id |  |
-| SPN-Data-Key |  |
-| SPN-ADO-Id |  |
-| SPN-ADO-Key |  |
+| RawZone-Key | Primary key for raw zone storage |
+| GoldZone-Key | Primary key for gold zone storage |
+| GoldZone-CRM-Key |Primary key for CRM storage  |
+| stcpddata01-Key | Primary key for stcpddata01 storage |
+| SQLServer01-Admin-Password | Admin Password |
+| SQLServer01-Admin-Username | Admin Username |
+| Databricks-bearerToken | Generate a new user bearer tokerm from databricks portal |
+| iot_sharedAccessPolicyKey | IOT policy key |
+| evh_sharedAccessPolicyKey | Event Hub policy key |
+| SPN-Data-Id | Service Principle Id |
+| SPN-Data-Key | Service Principle Key |
+| SPN-ADO-Id | Service Principle Id |
+| SPN-ADO-Key | Service Principle Key |
 
+# Update ADX Project for new Environment
+Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=%2FSmartParking%2FMcs.Tasmu.SmartParking.ADX) similar to the existing environments implementation for:
+1. Deploy
+1. Functions
+1. Policies 
+1. Tables
 
 # Deployment of the solution components (Synthetic Use Case components (not production ready!))
 Run the following pipelines in sequence:

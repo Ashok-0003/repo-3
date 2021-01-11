@@ -133,6 +133,9 @@ Logic App - logic-cpd-apps-dfndr-uat-we-01
 Logic App - logic-cpd-apps-intfile-uat-we-01
 Logic App - logic-cpd-apps-intsubs-uat-we-01
 Service Bus - sb-cpd-apps-int-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intprodsync-uat-we-01, sbq-cpd-apps-intntf-uat-we-01, sbq-cpd-apps-intsec-uat-we-01, sbq-cpd-apps-int6dbill-uat-we-01, sbq-cpd-apps-intd365-uat-we-01, sbq-cpd-apps-into365-uat-we-01, sbq-cpd-apps-intchglog-uat-we-01, sbq-cpd-apps-intaprvl-uat-we-01, sbq-cpd-apps-intgbaprl-uat-we-01, sbq-cpd-apps-intcoreapi-uat-we-01, sbq-cpd-apps-intiotalert-uat-we-01
+Service Bus Topic - sbt-cpd-apps-qnasync-uat-we-01
+Service Bus Topic Subscription - sbts-cpd-apps-copyqna-uat-we-01
 Storage Account - stcpdappsintuatwe01
 
 6.  [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)

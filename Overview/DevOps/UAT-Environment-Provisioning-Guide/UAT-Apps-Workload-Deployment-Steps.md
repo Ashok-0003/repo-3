@@ -67,15 +67,6 @@ Virtual Network - vnet-cpd-pltf-uat-we-01
 
 
 # Deployment of Apps Infrastructure
-1. [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
-**Dependencies** - [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
-[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-**Resources** -
-APIM - apim-cpd-shrd-uat-we-01
-CDN - cdn-cpd-shrd-uat-we-01
-CDN Endpoint - uat-tasmu
-Storage Account - stcpdshrduatwe01
-
 1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 **Dependencies** - 
 **Resources** -
@@ -103,7 +94,7 @@ Storage Account - stcpdappsstruatwe01
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|kv-cpd-glob-npd-we-01|
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-glob-npd-we-01|
 
-4. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
+3. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 **Resources** -
@@ -119,7 +110,7 @@ Logic App -	logic-cpd-apps-cogsrch-we-01
 Search Service - srch-cpd-apps-cog-uat-we-01
 Web App Bot - app-cpd-apps-cog-uat-we-01
 
-5. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+4. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
 **Resources** -
 API Connection - apicon-cpd-apps-into365-uat-we-01 - API Connection to Office 365 Tenant (CMS)
@@ -168,7 +159,17 @@ Service Bus Topic - sbt-cpd-apps-qnasync-uat-we-01
 Service Bus Topic Subscription - sbts-cpd-apps-copyqna-uat-we-01
 Storage Account - stcpdappsintuatwe01
 
-6.  [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
+1. [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
+**Dependencies** - [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
+[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+[rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+**Resources** -
+APIM - apim-cpd-shrd-uat-we-01
+CDN - cdn-cpd-shrd-uat-we-01
+CDN Endpoint - uat-tasmu
+Storage Account - stcpdshrduatwe01
+
+1.  [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
@@ -179,7 +180,7 @@ Managed Identity - mi-cpd-apps-aks-uat-we-01 (Deployed in rg-cpd-apps-aksnode-ua
 Application Gateway - agw-cpd-apps-aks-uat-we-01
 
 
-7. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
+1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Resources** -
@@ -187,14 +188,14 @@ Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01
 Application Gateway - agw-cpd-apps-ntf-uat-we-01
 
-8. [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
+1. [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 **Resources** - 
 Key Vault - kv-cpd-apps-pt-uat-we-01
 App Service Plan - plan-cpd-apps-pt-uat-we-01
 Function App - func-cpd-apps-pt-uat-we-01
 
-9. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01
+1. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
@@ -204,11 +205,11 @@ Function App - func-cpd-apps-pt-uat-we-01
 |func-cpd-apps-luistra-uat-we-01|Get||
 |func-cpd-apps-intbpa-uat-we-01|Get|Get|
 
-9. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
+10. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
 <To Be Updated> the list of secrets - Scripts\KeyVault\all-secrets.yml
 Add the key vault secrets for the env following this [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-secrets-and-certificates-to-key-vault)
 Stage for uat must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
-10. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
+11. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
 <To Be Updated> the configurations and their retrieval - Scripts\AppConfigurations
 Add application configurations for uat  - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
 Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)

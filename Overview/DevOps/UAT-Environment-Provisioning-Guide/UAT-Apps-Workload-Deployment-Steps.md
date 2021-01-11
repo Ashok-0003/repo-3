@@ -133,6 +133,7 @@ Storage Account - stcpdappsintuatwe01
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 **Resources** -
 AKS Cluster - aks-cpd-apps-uat-we-01
 Managed Identity - mi-cpd-apps-aks-uat-we-01 (Deployed in rg-cpd-apps-aksnode-uat-we-01)

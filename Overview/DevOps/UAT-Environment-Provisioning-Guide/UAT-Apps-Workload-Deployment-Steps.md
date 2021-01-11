@@ -10,6 +10,12 @@
 1. Specific resource group components can be deployed next
 1. Solution components can be deployed on the azure resources at the end
 
+# Global Resources for a tenant
+[rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
+1. Azure Container Registry - acrcpdglobnpdwe01
+2. Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
+3. Send Grid Account 
+
 # Deployment of Azure Infrastructure
 1.
 |Pipeline|Dependencies|

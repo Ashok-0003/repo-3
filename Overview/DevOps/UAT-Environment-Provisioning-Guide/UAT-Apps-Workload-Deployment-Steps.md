@@ -175,7 +175,14 @@ Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01
 Application Gateway - agw-cpd-apps-ntf-uat-we-01
 
-8. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01
+8. [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
+**Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+**Resources** - 
+Key Vault - kv-cpd-apps-pt-uat-we-01
+App Service Plan - plan-cpd-apps-pt-uat-we-01
+Function App - func-cpd-apps-pt-uat-we-01
+
+9. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|

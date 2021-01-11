@@ -107,7 +107,7 @@ Cognitive Service Luis Authoring - cog-cpd-apps-luisath-uat-we-01
 Cognitive Service Luis Runtime - cog-cpd-apps-luisrt-uat-we-01
 Cognitive Service QnAMaker English - appcog-cpd-apps-qna-uat-we-01 
 Cognitive Service QnAMaker Arabic - appcog-cpd-apps-arqna-uat-we-01
-Function App - func-cpd-apps-luistra-uat-we-01 - func app Luis Trainer
+Function App - func-cpd-apps-luistra-uat-we-01 - func app luis trainer
 Function App - func-cpd-apps-qnasync-uat-we-01 - func app triggered by logic-cpd-apps-qnakbsync-uat-we-01
 Logic App - logic-cpd-apps-qnacopy-uat-we-01 - QnAMaker FAQ copier from source to destination
 Logic App - logic-cpd-apps-qnakbsync-uat-we-01 - QnAMaker Knowledge articles Synchronizer

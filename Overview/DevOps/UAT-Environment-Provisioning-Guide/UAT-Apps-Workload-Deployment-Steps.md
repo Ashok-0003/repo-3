@@ -108,7 +108,7 @@ Cognitive Service Luis Runtime - cog-cpd-apps-luisrt-uat-we-01
 Cognitive Service QnAMaker English - appcog-cpd-apps-qna-uat-we-01 
 Cognitive Service QnAMaker Arabic - appcog-cpd-apps-arqna-uat-we-01
 Function App - func-cpd-apps-luistra-uat-we-01 - Function app Luis Trainer
-Function App - func-cpd-apps-qnasync-uat-we-01 - Function App QnAMaker Sync triggered by logic app for Knowledgebase data synchronize from CRM dynamics to QnAMaker and qnamaker copying from one qnamaker source instance to destination instance.
+Function App - func-cpd-apps-qnasync-uat-we-01 - func app triggered by logic-cpd-apps-qnakbsync-uat-we-01
 Logic App - logic-cpd-apps-qnacopy-uat-we-01 - QnAMaker FAQ copier from source to destination
 Logic App - logic-cpd-apps-qnakbsync-uat-we-01 - QnAMaker Knowledge articles Synchronizer
 Search Service - srch-cpd-apps-cog-uat-we-01 - Search Service English Cognitive Service for QnAMaker

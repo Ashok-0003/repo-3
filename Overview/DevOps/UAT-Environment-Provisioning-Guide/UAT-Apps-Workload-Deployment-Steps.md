@@ -99,7 +99,7 @@ Web App Bot - app-cpd-apps-cog-uat-we-01
 5. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
 **Resources** -
-API Connection - apicon-cpd-apps-into365-uat-we-01
+API Connection - apicon-cpd-apps-into365-uat-we-01 - API Connection to Office 365 Tenant (CMS)
 API Connection - apicon-cpd-apps-intsb-uat-we-01
 API Connection - apicon-cpd-apps-intspo-uat-we-01
 API Connection - apicon-cpd-apps-integ-uat-we-01

@@ -109,8 +109,8 @@ Cognitive Service QnAMaker English - appcog-cpd-apps-qna-uat-we-01
 Cognitive Service QnAMaker Arabic - appcog-cpd-apps-arqna-uat-we-01
 Function App - func-cpd-apps-luistra-uat-we-01 - Function app Luis Trainer
 Function App - func-cpd-apps-qnasync-uat-we-01 - Function App QnAMaker Sync triggered by logic app for Knowledgebase data synchronize from CRM dynamics to QnAMaker and qnamaker copying from one qnamaker source instance to destination instance.
-Logic App - logic-cpd-apps-qnacopy-uat-we-01 - Logic App QnAMaker FAQ copier from source to destination qnamaker specified in qnamaker section
-Logic App - logic-cpd-apps-qnakbsync-uat-we-01 - Logic App QnAMaker Knowledge articles Synchronizer from CRM dynamics to QnAMaker instance
+Logic App - logic-cpd-apps-qnacopy-uat-we-01 - QnAMaker FAQ copier from source to destination
+Logic App - logic-cpd-apps-qnakbsync-uat-we-01 - QnAMaker Knowledge articles Synchronizer
 Search Service - srch-cpd-apps-cog-uat-we-01 - Search Service English Cognitive Service for QnAMaker
 Search Service - srch-cpd-apps-arcog-uat-we-01 - Search Service Arabic Cognitive service for QnAMaker
 Web App Bot - app-cpd-apps-cog-uat-we-01

@@ -110,6 +110,9 @@ API Connection - apicon-cpd-apps-intkv-uat-we-01
 API Connection - apicon-cpd-apps-integd-uat-we-01
 API Connection - apicon-cpd-apps-intst-uat-we-01
 API Connection - apicon-cpd-apps-intcog-uat-we-01
+API Connection - apicon-cpd-apps-ascalrt-uat-we-01
+API Connection - apicon-cpd-apps-intcds-uat-we-01
+API Connection - apicon-cpd-apps-prdcds-uat-we-01
 App Service Plan - plan-cpd-apps-int-uat-we-01
 Event Hub - ev-cpd-apps-int-uat-we-01
 Event Grid Domain - egd-cpd-apps-int-uat-we-01
@@ -126,6 +129,9 @@ Logic App - logic-cpd-apps-6dhook-uat-we-01
 Logic App - logic-cpd-apps-mpsidx-uat-we-01
 Logic App - logic-cpd-apps-mpsd365-uat-we-01
 Logic App - logic-cpd-apps-mpso365-uat-we-01
+Logic App - logic-cpd-apps-dfndr-uat-we-01
+Logic App - logic-cpd-apps-intfile-uat-we-01
+Logic App - logic-cpd-apps-intsubs-uat-we-01
 Service Bus - sb-cpd-apps-int-uat-we-01
 Storage Account - stcpdappsintuatwe01
 

@@ -25,8 +25,8 @@ Tenant Name - tasmusqcp.onmicrosoft.com
 Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 # Application Registrations in Azure AD - tasmusqcp.onmicrosoft.com
 
-|SL| App Registrations  | 
-|--|--|
+|SL| App Registrations |Environment |
+|--|--|--|
 
 # Development Environment
 |SL| Portal / App | URL |  Remarks  |

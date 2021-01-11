@@ -71,8 +71,14 @@ Storage Account - stcpdshrduatwe01
 **Resources** -
 App Config Store - acst-cpd-apps-str-uat-we-01
 Cosmos Account - cosmos-cpd-apps-str-uat-we-01
-Cosmos DB - sql-cosmos-cpd-apps-str-ntf-uat-we-01, sql-cosmos-cpd-apps-str-pt-uat-we-01, sql-cosmos-cpd-apps-str-bot-uat-we-01
-Cosmos DB Container - sqlc-cosmos-cpd-apps-str-ntf-uat-we-01, sqlc-cosmos-cpd-apps-str-botfb-uat-we-01, sqlc-cosmos-cpd-apps-str-botrt-uat-we-01, sqlc-cosmos-cpd-apps-str-botst-uat-we-01, sqlc-cosmos-cpd-apps-str-pt-uat-we-01, 
+Cosmos DB - sql-cosmos-cpd-apps-str-ntf-uat-we-01
+Cosmos DB - sql-cosmos-cpd-apps-str-pt-uat-we-01 
+Cosmos DB - sql-cosmos-cpd-apps-str-bot-uat-we-01
+Cosmos DB Container - sqlc-cosmos-cpd-apps-str-ntf-uat-we-01
+Cosmos DB Container - sqlc-cosmos-cpd-apps-str-botfb-uat-we-01
+Cosmos DB Container - sqlc-cosmos-cpd-apps-str-botrt-uat-we-01
+Cosmos DB Container - sqlc-cosmos-cpd-apps-str-botst-uat-we-01
+Cosmos DB Container - sqlc-cosmos-cpd-apps-str-pt-uat-we-01
 Notification Hub - ntf-cpd-apps-str-uat-we-01
 Notification Hub Namespace - ntfns-cpd-apps-str-uat-we-01
 Redis Cache - redis-cpd-apps-str-uat-we-01
@@ -135,7 +141,17 @@ Logic App - logic-cpd-apps-dfndr-uat-we-01
 Logic App - logic-cpd-apps-intfile-uat-we-01
 Logic App - logic-cpd-apps-intsubs-uat-we-01
 Service Bus - sb-cpd-apps-int-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intprodsync-uat-we-01, sbq-cpd-apps-intntf-uat-we-01, sbq-cpd-apps-intsec-uat-we-01, sbq-cpd-apps-int6dbill-uat-we-01, sbq-cpd-apps-intd365-uat-we-01, sbq-cpd-apps-into365-uat-we-01, sbq-cpd-apps-intchglog-uat-we-01, sbq-cpd-apps-intaprvl-uat-we-01, sbq-cpd-apps-intgbaprl-uat-we-01, sbq-cpd-apps-intcoreapi-uat-we-01, sbq-cpd-apps-intiotalert-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intprodsync-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intntf-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intsec-uat-we-01
+Service Bus Queue - sbq-cpd-apps-int6dbill-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intd365-uat-we-01
+Service Bus Queue - sbq-cpd-apps-into365-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intchglog-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intaprvl-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intgbaprl-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intcoreapi-uat-we-01
+Service Bus Queue - sbq-cpd-apps-intiotalert-uat-we-01
 Service Bus Topic - sbt-cpd-apps-qnasync-uat-we-01
 Service Bus Topic Subscription - sbts-cpd-apps-copyqna-uat-we-01
 Storage Account - stcpdappsintuatwe01

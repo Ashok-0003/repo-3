@@ -19,7 +19,7 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 |11 | ManageEvent Non Prod<p>clientid: 11f1f420-3ce0-4f26-85f5-9cf902553e72</p><p>clientsecret: nHYgb4zKoOfQ8GuDK6l3_qe9.rU--6eRte</p><p>scope: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default</p>|
 |12 | ITSM Non Prod<p>clientid: ce633c1d-d8b4-4381-b68a-1f7d0851250f</p><p>clientsecret: WnIaXQ~IT~P.O3CyjZNmwnj42vC2FoK_B7</p><p>scope: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default</p>|
 |13|6DClient <p>Client ID: 1e5dfced-126a-4009-8479-21bfc4e078c1</p><p>Client Secret : cK4XfnAo3a..~If43-91m6.ui_Gb2Qbu1m</p>|
-|14|Integration Client Id Secret <p><p>spn-crm-common-integration-test</p>Client ID: 9364f7ba-f249-4151-b278-c5fd3c00c5a8</p><p>Client Secret : gzU97iLDN77_q74pixH.V_32-_VnrxNTbz</p><p><p>spn-crm-profile-management-integration-test</p>Client ID: d60021f7-df14-4731-a311-83d30d2bec1b</p><p>Client Secret : btm.DcfK.Olj99_16FUzizeofpS.PRcT5G</p><p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : -J_Cbr2tD2tC5-si.XYF_4x495nO-J.c8R</p>|
+|14|Integration Client Id Secret <p><p>spn-crm-common-integration-test</p>Client ID: 9364f7ba-f249-4151-b278-c5fd3c00c5a8</p><p>Client Secret : **********</p><p><p>spn-crm-profile-management-integration-test</p>Client ID: d60021f7-df14-4731-a311-83d30d2bec1b</p><p>Client Secret : **********</p><p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : **********</p>|
 
 # Azure AD Instance
 Tenant Name - tasmusqcp.onmicrosoft.com
@@ -28,6 +28,13 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 
 |SL| App Registrations |Environment |
 |--|--|--|
+1|<p><p>spn-crm-common-integration-test</p>Client ID: 9364f7ba-f249-4151-b278-c5fd3c00c5a8</p><p>Client Secret : **********</p><p><p>|Test
+2|<p><p>spn-crm-profile-management-integration-test</p>Client ID: d60021f7-df14-4731-a311-83d30d2bec1b</p><p>Client Secret : **********</p><p><p>|Test
+3|<p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : **********</p><p><p>|Test
+4|<p><p>spn-crm-general-integration-dev</p>Client ID: d99b1bc8-c4b4-4165-821c-bfa088255bfa</p><p>Client Secret : **********</p><p><p>|Dev
+5|<p><p>spn-crm-profile-management-integration-dev</p>Client ID: 339cd370-6762-4b24-be2e-35ffa8d3bcc4</p><p>Client Secret : **********</p><p><p>|Dev
+6|<p><p>spn-crm-case-management-integration-dev</p>Client ID: 28832e23-19ed-48b8-aaff-4979519394df</p><p>Client Secret : **********</p><p><p>|Dev
+
 
 # Development Environment
 |SL| Portal / App | URL |  Remarks  |

@@ -182,6 +182,8 @@ Storage Account - stcpdappsintuatwe01
 [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Resources** -
 APIM - apim-cpd-shrd-uat-we-01
+APIM Backend - apimlab-cpd-shrd-uat-we-01 
+APIM API - apimapi-cpd-shrd-uat-we-01
 CDN - cdn-cpd-shrd-uat-we-01
 CDN Endpoint - uat-tasmu
 Storage Account - stcpdshrduatwe01

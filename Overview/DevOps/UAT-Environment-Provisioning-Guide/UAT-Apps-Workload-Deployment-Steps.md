@@ -59,6 +59,7 @@ Virtual Network - vnet-cpd-pltf-uat-we-01
 # Deployment of Apps Infrastructure
 1. [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 **Dependencies** - [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
+[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Resources** -
 APIM - apim-cpd-shrd-uat-we-01
 CDN - cdn-cpd-shrd-uat-we-01
@@ -131,6 +132,7 @@ Storage Account - stcpdappsintuatwe01
 6.  [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
+[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Resources** -
 AKS Cluster - aks-cpd-apps-uat-we-01
 Managed Identity - mi-cpd-apps-aks-uat-we-01 (Deployed in rg-cpd-apps-aksnode-uat-we-01)
@@ -139,9 +141,11 @@ Application Gateway - agw-cpd-apps-aks-uat-we-01
 
 7. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Resources** -
 Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01
+Application Gateway - agw-cpd-apps-ntf-uat-we-01
 
 8. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01
 

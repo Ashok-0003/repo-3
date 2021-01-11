@@ -154,8 +154,12 @@ Application Gateway - agw-cpd-apps-web-uat-we-01
 
 9. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
 <To Be Updated> the list of secrets - Scripts\KeyVault\all-secrets.yml
+Add the key vault secrets for the env following this [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-secrets-and-certificates-to-key-vault)
+Stage for uat must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
 10. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
 <To Be Updated> the configurations and their retrieval - Scripts\AppConfigurations
+Add application configurations for uat  - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
+Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 
 ## Link AKS Cluster DNS Zone to CPH Subscription
 1. A user account being used should have access to both the subscriptions 
@@ -171,10 +175,6 @@ Application Gateway - agw-cpd-apps-web-uat-we-01
 <to be updated>
 
 # Deployment of the solution components
-1. Add the key vault secrets for uat following this [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-secrets-and-certificates-to-key-vault)
-Stage for uat must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
-1. Add application configurations for uat  - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
-Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 1. Add the CI and CD APIM Pipelines and URLs pointing to AKS AGW for most of the APIs
 ![image.png](/.attachments/image-9b9f0d1d-d858-4764-aa2a-a2f6e477f0cd.png)
 1. For platform apis, ingress controller helm-config needs to be added for new env (refer above image) and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env

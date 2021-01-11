@@ -105,7 +105,7 @@ Storage Account - stcpdappsstruatwe01
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|kv-cpd-glob-npd-we-01|
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-glob-npd-we-01|
 
-<to be updated>
+
 
 4. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)

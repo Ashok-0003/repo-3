@@ -219,10 +219,17 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 
 ![image.png](/.attachments/image-313a362b-dc66-4d5c-989b-61b8579b90a5.png)
 ## Role Assignments 
-1. CDN Endpoint Contributor
-2. App Configuration Store Data Reader
-3. AKS indentities
-<to be updated>
+
+|Identity Name| Type  | Target Resource | Role |
+|--|--|--|--|
+|func-cpd-apps-luistra-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
+|func-cpd-apps-qnasync-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
+|func-cpd-apps-intbpa-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
+|func-cpd-apps-intntf-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
+|app-cpd-apps-bot-<env>-we-01 | App Service  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
+|mi-cpd-apps-aks-<env>-we-01 | App Service  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
+| |  | <env>-cdntasmu | CDN Endpoint Contributor |
+
 ## Configuring Notification Hubs for APN and Firebase
 
 https://docs.netcoresmartech.com/docs/firebase-cloud-messaging-fcm

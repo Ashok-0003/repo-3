@@ -215,6 +215,8 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 <to be updated>
 ## Configuring Notification Hubs for APN and Firebase
 
+https://docs.netcoresmartech.com/docs/firebase-cloud-messaging-fcm
+
 # Deployment of the solution components
 1. Add the CI and CD APIM Pipelines and URLs pointing to AKS AGW for most of the APIs
 ![image.png](/.attachments/image-9b9f0d1d-d858-4764-aa2a-a2f6e477f0cd.png)

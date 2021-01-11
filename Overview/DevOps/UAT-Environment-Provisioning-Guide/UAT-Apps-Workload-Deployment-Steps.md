@@ -97,7 +97,10 @@ Storage Account - stcpdappsstruatwe01
 1. Seed the Key Vault Secrets required in the cognitive and integration pipelines in kv-cpd-apps-uat-we-01
 
 | Resource Name |Secret Name  | Key Vault Name |
-|--|--|--|
+
+|apicon-cpd-apps-intcds-uat-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01|
+
+|apicon-cpd-apps-prdcds-uat-we-01|Crm-Common-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01|
 
 <to be updated>
 

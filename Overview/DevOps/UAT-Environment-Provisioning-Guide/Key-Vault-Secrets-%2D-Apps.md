@@ -2,7 +2,7 @@
 |Key Vault Name| Name  | Type | How to Retrieve | Remarks|
 |--|--|--|--|--|
 |kv-cpd-apps-<env>-we-01|Cms-Function-ServiceBusConnectionString| Secret |Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01|
-|kv-cpd-apps-<env>-we-01|Cms-Function-NotificationUrl| Secret |Function URL of notify function in func-cpd-apps-intntf-<env>-we-01|Default(Function Key)|
+|kv-cpd-apps-<env>-we-01|Cms-Function-NotificationUrl| Secret |Default(Function Key) Function URL of notify function in func-cpd-apps-intntf-<env>-we-01||
 |kv-cpd-apps-<env>-we-01|CDNSettings-StorageAccount| Secret |Connection string of the resource stcpdshrd<env>we01||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FieldServiceServiceBus| Secret |Connection string for connecting to FieldServiceServiceBus||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FileStorageAccount| Secret |Connection string for connecting to FileStorageAccount||

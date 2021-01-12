@@ -74,30 +74,30 @@ param (
 
 1. Change the necessary URLs for your sites in Scripts/CMS/ProvisioningScripts/resources/Arabic.xml file
 
-     ![image.png](/.attachments/image-276c9b6b-3ed0-45c8-a0f3-4625d6f389c8.png)
+     ![image.png](/.attachments/image-d50715f4-2390-4b54-a74d-0d0e69009d18.png)
  
 1. Make sure the default language for cms.automation account is set to Arabic in the Office profile
-     ![image.png](/.attachments/image-279f71f9-36c4-4398-b6cf-c029211ca25c.png)
+     ![image.png](/.attachments/image-da51dc53-4c85-4e2d-ac44-176896a27e7f.png)
      Steps to add a new language : https://support.microsoft.com/en-us/office/change-your-personal-language-and-region-settings-caa1fccc-bcdb-42f3-9e5b-45957647ffd7
 1. Go to pipeline [CD-SPO-NavTrans-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=722)
 1. Update the necessary variables and run the pipeline.
-     ![image.png](/.attachments/image-be71b248-fefe-4f1a-9b1e-03c3b8dd5de1.png)
+     ![image.png](/.attachments/image-987edea8-bafa-4bac-91ac-1e1080cbd883.png)
 
 - For exporting and importing resource files 
 For each of the sites repeat the following steps
 1. Go to site settings and click on Export Translations
 
-     ![image.png](/.attachments/image-06550a0c-cc25-4219-bfaa-d9dd2201c348.png)
+     ![image.png](/.attachments/image-8af24e25-4685-4883-aa63-d429b65c9786.png)
 1. Choose the language as Arabic and click on Export, a file will get downloaded to your system.
 
-     ![image.png](/.attachments/image-ddfbc8aa-c72b-4ab8-a6a0-77f3996c5cc0.png)
+     ![image.png](/.attachments/image-9bf1df77-9f48-4509-b216-b5584f717b38.png)
 1. Download the CSV Scripts/CMS/ProvisioningScripts/resources/Translations.csv in your system.   
 1. Copy the script Scripts/CMS/ProvisioningScripts/UpdateResx.ps1, make the necessary changes and run it in your system 
-     ![image.png](/.attachments/image-5c816892-15ab-41fb-8fdb-7a668c00a7a5.png)
+     ![image.png](/.attachments/image-dae3c975-8427-4190-a7f2-cfc36dcd0657.png)
 1. Go to site settings and click on Import Translations
-     ![image.png](/.attachments/image-06550a0c-cc25-4219-bfaa-d9dd2201c348.png)
+     ![image.png](/.attachments/image-c35e80ae-eb45-4207-8a20-9de2cac55ca0.png)
 1. Click on Browse, select the updated resx file and click on Import
-     ![image.png](/.attachments/image-548a8d21-538d-4b3d-aac9-9d65e5ece340.png)
+     ![image.png](/.attachments/image-66e202fa-990a-4b7e-a735-993793180dd7.png)
 
 
 - Steps to Update office 365 tenant theme and logo : [Update o365 Tenant](https://docs.microsoft.com/en-us/microsoft-365/admin/setup/customize-your-organization-theme?view=o365-worldwide)

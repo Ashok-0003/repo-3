@@ -26,10 +26,9 @@ _**messages.en-US.xlf**_
 # RTL Handling for HTML Controls
 ### Add **i18n-dir** tag with **dir="ltr"** to the div element.
 `<div class="container-fluid" i18n-dir dir="ltr">...</div>`
-### Run **ng xi18n** command to generate locale specific files and change the target element value to "rtl" like below in Arabic locale file.
+### Run **npm run i18n-extract** command to generate locale specific files and change the target element value to "rtl" like below in Arabic locale file.
 `<trans-unit id="" datatype="html><source>ltr</source><target>rtl</target>....</trans-unit>`
 
-If two css files are used for extra control on English and Arabic Styling [rtlcss](https://rtlcss.com/) will be helpful.
 # RTL Handling for Kendo Controls
 - ### Provide RTL value as true in providers.
   - `import { RTL } from '@progress/kendo-angular-l10n';`

@@ -405,18 +405,18 @@ All the list and libraries that need to be provisioned for the Entity along with
 All the webpart that would need to be added in the home page of the entity site, need to be added under entityPageWebpart xml element node.
 ![image.png](/.attachments/image-bb13729d-b68d-40a7-a646-14e253eb0861.png)
  
-As navigation for the newly created Entity needs to be updated in global site and marketplace in SharePoint, the same has to be mentioned under globalConfigNav and globalNav node sections
+As navigation for the newly created Entity needs to be updated in global site and marketplace in SharePoint, the same has to be mentioned under **globalConfigNav** and **globalNav** node sections
  ![image.png](/.attachments/image-b1428712-1e0c-4d2b-bc59-9f054eb90227.png)
-As navigation needs to be created for the Sector under which Entity was created, the same must be mentioned under QuickLaunchNav section.
+As navigation needs to be created for the Sector under which Entity was created, the same must be mentioned under **QuickLaunchNav** section.
  ![image.png](/.attachments/image-98f47cde-3a99-455f-9a1a-b734e54de731.png)
 
-As top navigation of existing sectors and current sector need to be updated to include the newly provisioned Entity, the same needs to be mentioned under TopNav section along with all existing sectors.
+As top navigation of existing sectors and current sector need to be updated to include the newly provisioned Entity, the same needs to be mentioned under **TopNav** section along with all existing sectors.
  
 ![image.png](/.attachments/image-be402c60-98b2-48a3-bc49-37d0b394320f.png)
-As navigation for the newly created Entity needs to be updated, the same has to be mentioned under the section entityNav
+As navigation for the newly created Entity needs to be updated, the same has to be mentioned under the section **entityNav**
  ![image.png](/.attachments/image-744cbd44-bcf2-4c44-a977-bc4bf5302bcb.png)
 
-All list names that would need to be updated in the configuration list of global site for the newly provisioned sector would need to come under the section entityAddItemConfigurationList
+All list names that would need to be updated in the configuration list of global site for the newly provisioned sector would need to come under the section **entityAddItemConfigurationList**
 
  ![image.png](/.attachments/image-71cc04d7-3e60-47ae-9d72-3f5210aa5cb1.png)
 

@@ -58,7 +58,9 @@
 |Virtual Machine  |vmdgattstwe03|
 |Virtual Machine  |vmdgattstwe04|
 
-
+|Resource Group|rg-cpd-data-sec-uat-we-01|
+|--|--|
+|Key Vault |kv-cpd-data-uat-we-01|
 
 
 # Deployment of Data Infrastructure

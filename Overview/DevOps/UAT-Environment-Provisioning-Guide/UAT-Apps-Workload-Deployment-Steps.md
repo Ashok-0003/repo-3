@@ -248,6 +248,8 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 |func-cpd-apps-qnasync-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |func-cpd-apps-intbpa-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |func-cpd-apps-intntf-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
+| manageeventfunc | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
+| fieldservicefunc | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |app-cpd-apps-bot-<env>-we-01 | App Service  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 | |  | <env>-cdntasmu | CDN Endpoint Contributor |

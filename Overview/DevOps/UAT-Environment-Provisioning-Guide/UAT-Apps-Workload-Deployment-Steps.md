@@ -219,11 +219,13 @@ Function App - func-cpd-apps-pt-uat-we-01
 |Object Id| Secrets |  Certificates|
 |--|--|--|
 |mi-cpd-apps-aks-uat-we-01|Get||
+|func-cpd-apps-acm-uat-we-01|Get||
 |app-cpd-apps-bot-uat-we-01|Get||
 |func-cpd-apps-qnasync-uat-we-01|Get||
 |func-cpd-apps-luistra-uat-we-01|Get||
 |func-cpd-apps-intntf-uat-we-01|Get||
 |func-cpd-apps-intbpa-uat-we-01|Get|Get|
+
 
 10. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
 <To Be Updated> the list of secrets - Scripts\KeyVault\all-secrets.yml
@@ -249,8 +251,6 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 |func-cpd-apps-qnasync-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |func-cpd-apps-intbpa-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |func-cpd-apps-intntf-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-| manageeventfunc | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-| fieldservicefunc | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |app-cpd-apps-bot-<env>-we-01 | App Service  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 | |  | <env>-cdntasmu | CDN Endpoint Contributor |

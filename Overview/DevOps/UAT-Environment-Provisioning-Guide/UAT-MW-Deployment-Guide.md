@@ -392,17 +392,17 @@ param (
  
 ![image.png](/.attachments/image-1591e5ed-9deb-422e-bd6a-c00d91a7a8fb.png)
 
-The entities.xml follows the same definition as the Site.xml  except that it provisions only Entities. All email ids mentioned in the file need to be changed to appropriate email ids for that specific tenant and SharePoint group.
-In order to provision a new Entity for a given Sector, an entityassociatedsite element node needs to be created under the Site node of the required sector.
+The entities.xml follows the same definition as the **Site.xml**  except that it provisions only Entities. All email ids mentioned in the file need to be changed to appropriate email ids for that specific tenant and SharePoint group.
+In order to provision a new Entity for a given Sector, an **entityassociatedsite** element node needs to be created under the **Site** node of the required sector.
  
 ![image.png](/.attachments/image-55fca8da-6b44-4174-b1f3-b1b2e41c689d.png)
-All the list of groups that need to be provisioned for that Entity along with email ids need to be mentioned under entitySPGroup element.
+All the list of groups that need to be provisioned for that Entity along with email ids need to be mentioned under **entitySPGroup** element.
 
  ![image.png](/.attachments/image-0e4e43b2-e195-48e7-bdd3-ae10fa9c03bb.png)
 
-All the list and libraries that need to be provisioned for the Entity along with their default views and custom views need to be mentioned under the xml element node entitySPList
+All the list and libraries that need to be provisioned for the Entity along with their default views and custom views need to be mentioned under the xml element node **entitySPList**
  ![image.png](/.attachments/image-515c43c8-0ad3-45ff-8a42-7592c65cebfd.png)
-All the webpart that would need to be added in the home page of the entity site, need to be added under entityPageWebpart xml element node.
+All the webpart that would need to be added in the home page of the entity site, need to be added under **entityPageWebpart** xml element node.
 ![image.png](/.attachments/image-bb13729d-b68d-40a7-a646-14e253eb0861.png)
  
 As navigation for the newly created Entity needs to be updated in global site and marketplace in SharePoint, the same has to be mentioned under **globalConfigNav** and **globalNav** node sections

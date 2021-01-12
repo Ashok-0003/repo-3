@@ -2,6 +2,11 @@
  
 1. Add SharePoint Administration account as a site collection administrators. 
 1. Make sure the users Email id is right in the “resources\site.xml” 
+Please check below image for reference
+
+![user_group_TASMU.PNG](/.attachments/user_group_TASMU-e3955649-ead0-4abc-a669-f794bb5b1eda.PNG)
+
+The highlighted section of the above image needed to be modified with the correct users. This should be done for all the groups mentioned in the above image both for marketplace (*globalSPGroup*) and sectors (*SectorSPGroup*)
 1. Make the needed changes in "resources\site.xml"
 1. Trigger the [CD-SPO-Provision-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=593)
 1. Provide the below inputs as provided in the example.

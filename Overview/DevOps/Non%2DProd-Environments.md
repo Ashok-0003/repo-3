@@ -34,7 +34,9 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 4|<p><p>spn-crm-general-integration-dev</p>Client ID: d99b1bc8-c4b4-4165-821c-bfa088255bfa</p><p>Client Secret : **********</p><p><p>|Dev
 5|<p><p>spn-crm-profile-management-integration-dev</p>Client ID: 339cd370-6762-4b24-be2e-35ffa8d3bcc4</p><p>Client Secret : **********</p><p><p>|Dev
 6|<p><p>spn-crm-case-management-integration-dev</p>Client ID: 28832e23-19ed-48b8-aaff-4979519394df</p><p>Client Secret : **********</p><p><p>|Dev
-
+7|<p><p>spn-crm-common-integration-test</p>Client ID: 9364f7ba-f249-4151-b278-c5fd3c00c5a8</p><p>Client Secret : **********</p><p><p>|UAT
+8|<p><p>spn-crm-profile-management-integration-test</p>Client ID: d60021f7-df14-4731-a311-83d30d2bec1b</p><p>Client Secret : **********</p><p><p>|UAT
+9|<p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : **********</p><p><p>|UAT
 
 # Development Environment
 |SL| Portal / App | URL |  Remarks  |

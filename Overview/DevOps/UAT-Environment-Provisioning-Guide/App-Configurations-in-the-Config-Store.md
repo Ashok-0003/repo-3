@@ -6,13 +6,13 @@
 |Cms.Function:NotificationUrl| Default(Function Key) Function URL of notify function in func-cpd-apps-intntf-<env>-we-01|||
 |Cms.Function:ServiceBusConnectionString| Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01||
 |CDNSettings:StorageAccount| Connection string of the resource stcpdshrd<env>we01||
-|Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. https://tasmusqcp<env>.sharepoint.com|
-|Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. https://tasmusqcp<env>.sharepoint.com|
+|Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
+|Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:TenantID|Directory (tenant) ID of Azure AD App spn-cmsbpa-<env>||
 |Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>||
 |Cms.Function:ClientId|Application (client) ID of Azure AD app spn-cmsbpa-<env>||
-|Cms.Function:GlobalSiteUrl|URL of global site|`E.g. https://tasmusqcp<env>.sharepoint.com/sites/cms-global`|
-|Cms.Function:MarketplaceSiteUrl|URL of marketplace site|`E.g. https://tasmusqcp<env>.sharepoint.com/sites/cms-marketplace`|
+|Cms.Function:GlobalSiteUrl|URL of global site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-global`|
+|Cms.Function:MarketplaceSiteUrl|URL of marketplace site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-marketplace`|
 |Cms.Function:EventGridApiUrl|URL of the event integration api||
 |Cms.Function:PreviewApiUrl|Marketplace preview URL||
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|

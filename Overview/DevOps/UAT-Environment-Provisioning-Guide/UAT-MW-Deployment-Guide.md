@@ -69,25 +69,6 @@ param (
 
   Keep monitoring to see if it is creating all the terms, columns, content types, lists and provisioning other features! 
 
-
-**Post Deployment Steps**
-
-
-1. Make sure you have the entries of your sites in Scripts/CMS/ProvisioningScripts/resources/Arabic.xml file
-
-     ![image.png](/.attachments/image-1a289f4e-9d2a-4b58-a979-157a6ccaa69c.png)
- 
-1. Make sure the o365 default language for cms.automation account is set to Arabic
-     ![image.png](/.attachments/image-279f71f9-36c4-4398-b6cf-c029211ca25c.png)
-1. Make the needed changes in "resources\site.xml"
-1. Trigger the [CD-SPO-Provision-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=593)
-1. Provide the below inputs as provided in the example.
-
-<p>
-<br/><br/><br/>
-</p>
-
- 
 **Post Deployment Steps**
 - For Translation of Site Titles and Navigation Bar content
 

@@ -210,9 +210,9 @@ email ids for that specific tenant and SharePoint group.</SPAN></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>In order to provision a new sector a <B>Site</B>
 element node for the same need to be created</SPAN></P>
 
+![image.png](/.attachments/image-56fbca91-676b-4f9a-9d75-663084b212fd.png)
 <P  class=MsoNormal><SPAN  lang=EN-US>
- 
-**** 
+
 </SPAN><SPAN  lang=EN-US></SPAN></P>
 
 <P  class=MsoNormal><SPAN  lang=EN-US>&nbsp;</SPAN></P>

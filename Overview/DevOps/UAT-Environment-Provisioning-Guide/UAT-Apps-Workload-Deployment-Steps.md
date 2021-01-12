@@ -222,6 +222,7 @@ Function App - func-cpd-apps-pt-uat-we-01
 |app-cpd-apps-bot-uat-we-01|Get||
 |func-cpd-apps-qnasync-uat-we-01|Get||
 |func-cpd-apps-luistra-uat-we-01|Get||
+|func-cpd-apps-intntf-uat-we-01|Get||
 |func-cpd-apps-intbpa-uat-we-01|Get|Get|
 
 10. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)

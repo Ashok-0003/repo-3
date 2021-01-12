@@ -255,7 +255,7 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 | |  | <env>-cdntasmu | CDN Endpoint Contributor |
 
-## Configuring Notification Hubs for APN and Firebase
+## Configuring Notification Hubs for FCM and APNS
 1. Update the Google Settings for API Key
 Obtain the API Key from Google Firebase Cloud Account after creating the project
 2. Update the Apple Settings for iOS Certificate (@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> to share details in Mobile Apps deployments)

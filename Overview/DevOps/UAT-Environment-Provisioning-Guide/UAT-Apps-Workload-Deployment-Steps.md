@@ -254,6 +254,15 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 |app-cpd-apps-bot-<env>-we-01 | App Service  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 | |  | <env>-cdntasmu | CDN Endpoint Contributor |
+| |  | rg-cpd-apps-aks-<env>-we-01 | Reader |
+| |  | agw-cpd-apps-aks-<env>-we-01 | Contributor |
+| |  | rg-cpd-apps-aksnode-<env>-we-01 | Reader |
+| |  | aks-cpd-apps-<env>-we-01-agentpool | Managed Identity Operator |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | acrcpdglobnpdwe01 | Acr Pull |
+| |  | rg-cpd-apps-aksnode-<env>-we-01 | Virtual Machine Contributor |
+| |  | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
+| |  | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
+| |  | vnet-cpd-pltf-<env>-we-01 | Network Contributor |
 
 ## Configuring Notification Hubs for FCM and APNS
 1. Update the Google Settings for API Key

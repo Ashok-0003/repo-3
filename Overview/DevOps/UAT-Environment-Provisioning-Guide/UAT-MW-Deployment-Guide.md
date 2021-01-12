@@ -27,7 +27,7 @@ b. If you click *Run Pipeline* button, system will take you to below page for th
 Select the branch **master** and click on the *Run* button to start the pipeline. 
 The variable input details is provided below. 
 
-1. Provide the below inputs as provided in the example.
+5. Provide the below inputs as provided in the example.
 
 .INPUTS 
 

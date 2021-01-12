@@ -6,12 +6,12 @@
 |Cms.Function:NotificationUrl| Default(Function Key) Function URL of notify function in func-cpd-apps-intntf-<env>-we-01|||
 |Cms.Function:ServiceBusConnectionString| Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01||
 |CDNSettings:StorageAccount| https://kv-cpd-apps-{env}-we-01.vault.azure.net/secrets/CDNSettings-StorageAccount||
-|Cms.Common:Resource|Tenant URL||
-|Cms.Common:SourceURL|Tenant URL||
-|Cms.Common:TenantID|Tenant ID||
+|Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>||
+|Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>||
+|Cms.Common:TenantID|Directory (tenant) ID of Azure AD App spn-cmsbpa-<env>||
 |Cms.Function:ChangeLogConfigList|ChangeLog list name at global site|If list name is "ChangeLog" then value should be "ChangeLog"|
-|Cms.Function:ClientApp|Client App Name||
-|Cms.Function:ClientId|Client App ID||
+|Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>||
+|Cms.Function:ClientId|Application (client) ID of Azure AD app spn-cmsbpa-<env>||
 |Cms.Function:GlobalConfigList|Configuartion list name at global site|If list name is "Configuration" then value should be "Configuration"|
 |Cms.Function:GlobalSiteUrl|URL of global site||
 |Cms.Function:MarketplaceSiteUrl|URL of marketplace site||

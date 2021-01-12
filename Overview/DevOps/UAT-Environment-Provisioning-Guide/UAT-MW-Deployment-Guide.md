@@ -60,7 +60,10 @@ param (
   
   **Provisioning Sectors Individually** 
 
-Individual sectors can be provisioned through the pipeline [CDO-SPO-ProvisionSector-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=808) . This script will make use of the file Sectors.xml to provision the sectors. This script will provision new sector site collection, list, libraries with custom views, provision user groups, add navigation menus appropriately to the new sectors and existing sectors,marketplace,etc. This script will not create Taxonomy at TermStore or Content Types and SiteColumns at content type hub.
+1. Individual sectors can be provisioned through the pipeline [CDO-SPO-ProvisionSector-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=808) . 
+1. This script will make use of the file Sectors.xml to provision the sectors. 
+1. This script will provision new sector site collection, list, libraries with custom views, provision user groups, add navigation menus appropriately to the new sectors and existing sectors,marketplace,etc. 
+1. This script will not create Taxonomy at TermStore or Content Types and SiteColumns at content type hub.
 
 Below are the input parameters for the script
 
@@ -172,6 +175,7 @@ param (
 
 **Modifying Sectors.xml for provisioning**
 
+![image.png](/.attachments/image-6b3a72e6-aeb3-433a-8b20-3b66e4a15ae6.png)
 <P  class=MsoNormal><SPAN  lang=EN-US>
  
  

@@ -210,7 +210,7 @@ email ids for that specific tenant and SharePoint group.</SPAN></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>In order to provision a new sector a <B>Site</B>
 element node for the same need to be created</SPAN></P>
 
-![image.png](/.attachments/image-a821b7c7-1e40-43e7-bf66-1737fc0cad59.png)
+![image.png](/.attachments/image-0275ab9b-8540-46c5-911e-0c559d40e6ee.png)
 
 <P  class=MsoNormal><SPAN  lang=EN-US>
 
@@ -221,10 +221,10 @@ element node for the same need to be created</SPAN></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>All the list of groups that need to be provisioned
 for that sector along with email ids need to be mentioned under <B>sectorSPGroup
 </B>element.</SPAN></P>
-![image.png](/.attachments/image-609d73d3-1f54-4e32-9015-c0d338810ce0.png)
+
 <P  class=MsoNormal><SPAN  lang=EN-US>
  
- 
+ ![image.png](/.attachments/image-a821b7c7-1e40-43e7-bf66-1737fc0cad59.png)
  
  
  
@@ -238,7 +238,7 @@ under the xml element node <B>sectorSPList</B></SPAN></P>
 
 <P  class=MsoNormal><SPAN  lang=EN-US>
  
- 
+ ![image.png](/.attachments/image-988fba08-ede3-4ac6-9bc1-e93e9204c480.png)
  
  
  
@@ -246,7 +246,8 @@ under the xml element node <B>sectorSPList</B></SPAN></P>
 
 <P  class=MsoNormal><SPAN  lang=EN-US>All the webpart that would need to be added
 in the home page of the sector site, need to be added under <B>sectorPageWebpart</B>
-xml element node.</SPAN></P>
+xml element node.</SPAN>
+</P>
 
 <P  class=MsoNormal><SPAN  lang=EN-US>&nbsp;</SPAN></P>
 

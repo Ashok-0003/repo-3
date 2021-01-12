@@ -5,7 +5,8 @@
 |kv-cpd-apps-<env>-we-01|Cms-Function-NotificationUrl| Secret |Default(Function Key) Function URL of notify function in func-cpd-apps-intntf-<env>-we-01||
 |kv-cpd-apps-<env>-we-01|CDNSettings-StorageAccount| Secret |Connection string of the resource stcpdshrd<env>we01||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FieldServiceServiceBus| Secret |Connection string for connecting to FieldServiceServiceBus||
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-FileStorageAccount| Secret |Connection string for connecting to FileStorageAccount||
+|kv-cpd-apps-<env>-we-01|ConnectionStrings-FileStorageAccount| Secret |Connection string for connecting to FileStorageAccount
+stcpdappsstr<env>we01||
 |kv-cpd-apps-<env>-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret| Secret |Client secret used for Case api connection||
 |kv-cpd-apps-<env>-we-01|Crm-Common-DynamicsSettings-ClientSecret| Secret |Client secret used for common dynamic connection||
 |kv-cpd-apps-<env>-we-01|Crm-ProfileManagement-DynamicsSettings-ClientSecret| Secret |Client secret used for Profile api connection||

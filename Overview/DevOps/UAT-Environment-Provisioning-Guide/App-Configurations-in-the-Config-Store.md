@@ -42,4 +42,5 @@
 |Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:0:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
 |Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
 |Bot.CognitiveModels:CognitiveModels:En-us:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/||
+|EventGridSettings:DomainEndpoint|Name of the resource https://egd-cpd-apps-int-<env>-we-01.westeurope-1.eventgrid.azure.net/api/events||
 

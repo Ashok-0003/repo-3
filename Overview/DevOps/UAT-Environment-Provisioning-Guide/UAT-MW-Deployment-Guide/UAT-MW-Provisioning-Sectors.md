@@ -1,4 +1,4 @@
- #Provisioning Sectors Individually
+**Provisioning Sectors**
 
 1. Individual sectors can be provisioned through the pipeline [CDO-SPO-ProvisionSector-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=808) . 
 1. This script will make use of the file Sectors.xml to provision the sectors. 

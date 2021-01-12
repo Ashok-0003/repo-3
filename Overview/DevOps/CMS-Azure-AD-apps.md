@@ -7,13 +7,13 @@
     ![image.png](/.attachments/image-8ea316ad-d02c-4597-a45a-d33edd3973c2.png)
 
 
-**To enable API Permissions follow these steps**
+#**To enable API Permissions follow these steps**
 1. Go to the Azure AD app
 1. Click on API permissions in the right pane
     ![image.png](/.attachments/image-2e593bd0-dc4c-4236-909e-c578c3779185.png)
 1. Click on Add a permission, select required permission and click on Add permission.
 
-**There are two Azure AD apps used in CMS**
+#**There are two Azure AD apps used in CMS**
 # 1. spn-cmsbpa-<env>
 - Following permissions should be enabled for this app 
   ![image.png](/.attachments/image-caed65b8-f0a1-4123-8302-662e23580f0e.png)

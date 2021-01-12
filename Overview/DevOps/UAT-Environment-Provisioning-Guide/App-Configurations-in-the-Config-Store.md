@@ -9,7 +9,6 @@
 |Cms.Common:Resource|Tenant URL||
 |Cms.Common:SourceURL|Tenant URL||
 |Cms.Common:TenantID|Tenant ID||
-|Cms.Common:TenantID|Tenant ID||
 |Cms.Function:ChangeLogConfigList|ChangeLog list name at global site||
 |Cms.Function:ClientApp|Client App Name||
 |Cms.Function:ClientId|Client App ID||

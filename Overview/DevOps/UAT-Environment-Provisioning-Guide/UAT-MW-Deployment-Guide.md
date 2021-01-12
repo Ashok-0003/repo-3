@@ -88,4 +88,34 @@ param (
 </p>
 
  
+**Post Deployment Steps**
+- For Translation of Site Titles and Navigation Bar content
+
+1. Change the necessary URLs for your sites in Scripts/CMS/ProvisioningScripts/resources/Arabic.xml file
+
+     ![image.png](/.attachments/image-276c9b6b-3ed0-45c8-a0f3-4625d6f389c8.png)
+ 
+1. Make sure the default language for cms.automation account is set to Arabic in the Office profile
+     ![image.png](/.attachments/image-279f71f9-36c4-4398-b6cf-c029211ca25c.png)
+     Steps to add a new language : https://support.microsoft.com/en-us/office/change-your-personal-language-and-region-settings-caa1fccc-bcdb-42f3-9e5b-45957647ffd7
+1. Go to pipeline [CD-SPO-NavTrans-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=722)
+1. Update the necessary variables and run the pipeline.
+     ![image.png](/.attachments/image-be71b248-fefe-4f1a-9b1e-03c3b8dd5de1.png)
+
+- For exporting and importing resource files 
+For each of the sites repeat the following steps
+1. Go to site settings and click on Export Translations
+
+     ![image.png](/.attachments/image-06550a0c-cc25-4219-bfaa-d9dd2201c348.png)
+1. Choose the language as Arabic and click on Export, a file will get downloaded to your system.
+
+     ![image.png](/.attachments/image-ddfbc8aa-c72b-4ab8-a6a0-77f3996c5cc0.png)
+1. Download the CSV Scripts/CMS/ProvisioningScripts/resources/Translations.csv in your system.   
+1. Copy the script Scripts/CMS/ProvisioningScripts/UpdateResx.ps1, make the necessary changes and run it in your system 
+     ![image.png](/.attachments/image-5c816892-15ab-41fb-8fdb-7a668c00a7a5.png)
+1. Go to site settings and click on Import Translations
+     ![image.png](/.attachments/image-06550a0c-cc25-4219-bfaa-d9dd2201c348.png)
+1. Click on Browse, select the updated resx file and click on Import
+     ![image.png](/.attachments/image-548a8d21-538d-4b3d-aac9-9d65e5ece340.png)
+
 

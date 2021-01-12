@@ -15,6 +15,14 @@ _**messages.ar.xlf**_
 `<trans-unit id='success_message'><source>verified successfully<source><target>تم التحقق بنجاح</target></trans-unit>`
 _**messages.en-US.xlf**_
 `<trans-unit id='success_message'><source>verified successfully<source><target>verified successfully</target></trans-unit>`
+
+#Debug Localization
+- Once the Localization resource files are updated run below commands to serve/open the application in specific language
+**_For Arabic version_**:
+`ng serve --configuration=production-ar`
+**_For English version_**:
+`ng serve --configuration=production-en-US`
+
 # RTL Handling for HTML Controls
 ### Add **i18n-dir** tag with **dir="ltr"** to the div element.
 `<div class="container-fluid" i18n-dir dir="ltr">...</div>`
@@ -27,4 +35,4 @@ If two css files are used for extra control on English and Arabic Styling [rtlcs
   - `import { RTL } from '@progress/kendo-angular-l10n';`
   - `providers:[{provide:RTL, useValue:true}]`
 # Kendo UI Components Support for RTL
-- Please go to [Kendo UI components support for RTL](https://www.telerik.com/kendo-angular-ui/components/globalization/globalization-support/) to know more.
+- Please go to [Kendo UI components support for RTL](https://www.telerik.com/kendo-angular-ui/components/globalization/globalization-support/) to know more.ug

@@ -31,4 +31,8 @@
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:KbQna:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/||
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri|Name of the resource https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en||
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/||
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:KbQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/||
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri|Name of the resource https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar||
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:SourceCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/||
+|Bot.CognitiveModels:CognitiveModels:Ar-ar:DispatchModel:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/||
 

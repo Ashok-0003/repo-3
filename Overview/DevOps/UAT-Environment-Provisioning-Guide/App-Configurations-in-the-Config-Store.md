@@ -15,8 +15,8 @@
 |Cms.Function:GlobalConfigList|Configuartion list name at global site||
 |Cms.Function:GlobalSiteUrl|URL of global site||
 |Cms.Function:MarketplaceSiteUrl|URL of marketplace site||
-|Cms.Function:EventGridApiUrl|||
-|Cms.Function:PreviewApiUrl|||
+|Cms.Function:EventGridApiUrl|URL of the event integration api||
+|Cms.Function:PreviewApiUrl|Marketplace preview URL||
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center||
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center||
 |CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01||

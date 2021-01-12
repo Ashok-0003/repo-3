@@ -12,7 +12,7 @@
 |kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret |Client secret used for ManageEvent Function connection||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-IntegrationServiceBus| Secret |Secret used for storing integration service bus connection string for deployment||
 |kv-cpd-apps-<env>-we-01|EventGridSettings-DomainKey| Secret |Secret used for Event Grid Domain Key||
-|kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |||
-|kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate ||| 
+|kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint||
+|kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|| 
 
 

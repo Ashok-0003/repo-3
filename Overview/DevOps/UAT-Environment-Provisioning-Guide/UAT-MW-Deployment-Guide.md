@@ -248,7 +248,13 @@ under the xml element node <B>sectorSPList</B></SPAN></P>
 in the home page of the sector site, need to be added under <B>sectorPageWebpart</B>
 xml element node.</SPAN>
 </P>
-
+<P  class=MsoNormal><SPAN  lang=EN-US>
+ 
+![image.png](/.attachments/image-d598d210-6c67-4c1a-8ab3-dbb79301eb2f.png)
+ 
+ 
+ 
+</SPAN><B><SPAN  lang=EN-US></SPAN></B></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>&nbsp;</SPAN></P>
 
 <P  class=MsoNormal><SPAN  lang=EN-US>
@@ -262,7 +268,13 @@ xml element node.</SPAN>
 <P  class=MsoNormal><SPAN  lang=EN-US>As navigation for the newly created sector needs
 to be updated in global site and marketplace, the same has to be mentioned under
 <B>glbalConfigNav</B> and <B>globalNav</B></SPAN></P>
-
+<P  class=MsoNormal><SPAN  lang=EN-US>
+ 
+![image.png](/.attachments/image-0905f180-9029-4523-8bd4-0ce4876b4e18.png)
+ 
+ 
+ 
+</SPAN><B><SPAN  lang=EN-US></SPAN></B></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>
  
  
@@ -273,7 +285,13 @@ to be updated in global site and marketplace, the same has to be mentioned under
 
 <P  class=MsoNormal><SPAN  lang=EN-US>As navigation needs to be created for the sector,
 the same has to be mentioned under <B>QuickLaunchNav</B> section.</SPAN></P>
-
+<P  class=MsoNormal><SPAN  lang=EN-US>
+ 
+![image.png](/.attachments/image-72a8b225-8db5-45f3-96de-7adf99d17cec.png)
+ 
+ 
+ 
+</SPAN><B><SPAN  lang=EN-US></SPAN></B></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>
  
  
@@ -287,7 +305,13 @@ the same has to be mentioned under <B>QuickLaunchNav</B> section.</SPAN></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>As top navigation of existing sectors and current
 sector need to be updated to include the newly provisioned sector, the same needs
 to be mentioned under <B>TopNav</B> section along with all existing sectors.</SPAN></P>
-
+<P  class=MsoNormal><SPAN  lang=EN-US>
+ 
+![image.png](/.attachments/image-9f09c8f9-c16e-4753-b647-c05ec6d1058f.png)
+ 
+ 
+ 
+</SPAN><B><SPAN  lang=EN-US></SPAN></B></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>
  
  
@@ -311,3 +335,10 @@ sector would need to come under the section </SPAN><B><SPAN style="color:black">
  
 </SPAN><B><SPAN  lang=EN-US></SPAN></B></P> 
 
+<P  class=MsoNormal><SPAN  lang=EN-US>
+ 
+![image.png](/.attachments/image-93c8c7d8-8b98-49c5-8418-b91b674118ef.png)
+ 
+ 
+ 
+</SPAN><B><SPAN  lang=EN-US></SPAN></B></P>

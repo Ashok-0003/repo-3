@@ -253,7 +253,6 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 |func-cpd-apps-intntf-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |app-cpd-apps-bot-<env>-we-01 | App Service  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-|mi-cpd-apps-aks-<env>-we-01 |  | <env>-cdntasmu | CDN Endpoint Contributor |
 |mi-cpd-apps-aks-<env>-we-01 | Resource Group | rg-cpd-apps-aks-<env>-we-01 | Reader |
 |mi-cpd-apps-aks-<env>-we-01 | Application Gateway | agw-cpd-apps-aks-<env>-we-01 | Contributor |
 |mi-cpd-apps-aks-<env>-we-01 | Resource Group | rg-cpd-apps-aksnode-<env>-we-01 | Reader |

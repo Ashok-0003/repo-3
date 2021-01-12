@@ -210,7 +210,8 @@ email ids for that specific tenant and SharePoint group.</SPAN></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>In order to provision a new sector a <B>Site</B>
 element node for the same need to be created</SPAN></P>
 
-![image.png](/.attachments/image-56fbca91-676b-4f9a-9d75-663084b212fd.png)
+![image.png](/.attachments/image-a821b7c7-1e40-43e7-bf66-1737fc0cad59.png)
+
 <P  class=MsoNormal><SPAN  lang=EN-US>
 
 </SPAN><SPAN  lang=EN-US></SPAN></P>
@@ -220,7 +221,7 @@ element node for the same need to be created</SPAN></P>
 <P  class=MsoNormal><SPAN  lang=EN-US>All the list of groups that need to be provisioned
 for that sector along with email ids need to be mentioned under <B>sectorSPGroup
 </B>element.</SPAN></P>
-
+![image.png](/.attachments/image-609d73d3-1f54-4e32-9015-c0d338810ce0.png)
 <P  class=MsoNormal><SPAN  lang=EN-US>
  
  

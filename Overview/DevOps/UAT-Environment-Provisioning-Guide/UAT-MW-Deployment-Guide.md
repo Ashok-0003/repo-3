@@ -100,3 +100,5 @@ For each of the sites repeat the following steps
      ![image.png](/.attachments/image-548a8d21-538d-4b3d-aac9-9d65e5ece340.png)
 
 
+- Steps to Update office 365 tenant theme and logo : [Update o365 Tenant](https://docs.microsoft.com/en-us/microsoft-365/admin/setup/customize-your-organization-theme?view=o365-worldwide)
+- Steps to enable office 365 usage analytics permissions : [Enable Analytics permission](https://docs.microsoft.com/en-us/microsoft-365/admin/usage-analytics/enable-usage-analytics?view=o365-worldwide)

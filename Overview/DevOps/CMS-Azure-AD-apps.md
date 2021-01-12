@@ -1,4 +1,4 @@
-**Here are the deployment details of CMS Azure AD apps**
+
 #**To upload a self signed certificate follow these steps**
 1. Go to the Azure AD app
 1. Click on Certificates & Secrets in the right pane

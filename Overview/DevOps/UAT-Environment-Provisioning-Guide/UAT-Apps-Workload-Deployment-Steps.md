@@ -253,15 +253,16 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 |func-cpd-apps-intntf-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |app-cpd-apps-bot-<env>-we-01 | App Service  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-|mi-cpd-apps-aks-<env>-we-01 | Resource Group | rg-cpd-apps-aks-<env>-we-01 | Reader |
-|mi-cpd-apps-aks-<env>-we-01 | Application Gateway | agw-cpd-apps-aks-<env>-we-01 | Contributor |
-|mi-cpd-apps-aks-<env>-we-01 | Resource Group | rg-cpd-apps-aksnode-<env>-we-01 | Reader |
-|mi-cpd-apps-aks-<env>-we-01 | User Assigned Identities | aks-cpd-apps-<env>-we-01-agentpool | Managed Identity Operator |
-|aks-cpd-apps-<env>-we-01-agentpool | Registries | acrcpdglobnpdwe01 | Acr Pull |
-|aks-cpd-apps-<env>-we-01-agentpool | Resource Group | rg-cpd-apps-aksnode-<env>-we-01 | Virtual Machine Contributor |
-|aks-cpd-apps-<env>-we-01-agentpool | Resource Group | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
-|aks-cpd-apps-<env>-we-01-agentpool | Resource Group | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
-|aks-cpd-apps-<env>-we-01-agentpool | Virtual Network Subnet  | vnet-cpd-pltf-<env>-we-01/snet-cpd-apps-aks-<env>-we-01 | Network Contributor |
+|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | <env>-cdntasmu | CDN Endpoint Contributor |
+|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | rg-cpd-apps-aks-<env>-we-01 | Reader |
+|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | agw-cpd-apps-aks-<env>-we-01 | Contributor |
+|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Reader |
+|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | aks-cpd-apps-<env>-we-01-agentpool | Managed Identity Operator |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | acrcpdglobnpdwe01 | Acr Pull |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | rg-cpd-apps-aksnode-<env>-we-01 | Virtual Machine Contributor |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities  | vnet-cpd-pltf-<env>-we-01/snet-cpd-apps-aks-<env>-we-01 | Network Contributor |
 
 ## Configuring Notification Hubs for FCM and APNS
 1. Update the Google Settings for API Key

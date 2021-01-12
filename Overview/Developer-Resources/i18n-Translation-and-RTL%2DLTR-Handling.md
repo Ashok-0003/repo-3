@@ -7,8 +7,14 @@ _messages.ar.xlf(arabic) , messages.en-US.xlf(english) , messages.xlf(default)_
 - Once xlf files are generated open **messages.ar.xlf** file and update the target element value to arabic for sepecific translation unit that was already generated from the above step like below
 `<trans-unit id="GUID" datatype="html"><source>text</source><target>نص</target>....</trans-unit>`
 
-
-
+#Adding Localization Support for text in Code(TS files)
+- To have localization support for the text in code add **$localize** decorator to that specific string value like below
+_public static successMessage = $localize\`:@@succes_message:verified successfully\`_
+- Next a translation unit should be manually added in both  and messages.en-US.xlf with id **success_message**like below
+_**messages.ar.xlf**_
+`<trans-unit id='success_message'><source>verified successfully<source><target>تم التحقق بنجاح</target></trans-unit>`
+_**messages.en-US.xlf**_
+`<trans-unit id='success_message'><source>verified successfully<source><target>verified successfully</target></trans-unit>`
 # RTL Handling for HTML Controls
 ### Add **i18n-dir** tag with **dir="ltr"** to the div element.
 `<div class="container-fluid" i18n-dir dir="ltr">...</div>`

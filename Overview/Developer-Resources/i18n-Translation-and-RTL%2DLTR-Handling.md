@@ -16,6 +16,12 @@ _**messages.ar.xlf**_
 _**messages.en-US.xlf**_
 `<trans-unit id='success_message'><source>verified successfully<source><target>verified successfully</target></trans-unit>`
 
+#Localization changes in library projects
+- In some cases, if **i18n tag** or **$localize** decoratorare added for localization in **_library projects_** below are the steps to generate translation units for the same.
+- Navigate to the library project where i18n tag or $localize decorator is added.
+- run ng build --prod and npm link command 
+
+
 #Debug Localization
 - Once the Localization resource files are updated run below commands to serve/open the application in specific language
 **_For Arabic version_**:

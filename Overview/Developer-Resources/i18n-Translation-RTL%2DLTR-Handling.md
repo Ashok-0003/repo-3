@@ -6,6 +6,9 @@
 _messages.ar.xlf(arabic) , messages.en-US.xlf(english) , messages.xlf(default)_
 - Once xlf files are generated open **messages.ar.xlf** file and update the target element value to arabic for sepecific translation unit that was already generated from the above step like below
 `<trans-unit id="GUID" datatype="html"><source>text</source><target>نص</target>....</trans-unit>`
+
+
+
 # RTL Handling for HTML Controls
 ### Add **i18n-dir** tag with **dir="ltr"** to the div element.
 `<div class="container-fluid" i18n-dir dir="ltr">...</div>`

@@ -19,8 +19,8 @@
 |Cms.Function:PreviewApiUrl|||
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center||
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center||
-|CDNSettings:Profile|||
-|CDNSettings:Endpoint|||
-|CDNSettings:Container|||
-|CDNSettings:ResourceGroup|||
+|CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01||
+|CDNSettings:Endpoint|Name of the CDN endpoint resource <env>-cdntasmu||
+|CDNSettings:Container|The storage blob container linked to CDN endpoint||
+|CDNSettings:ResourceGroup|Name of the resource rg-cpd-shrd-<env>-we-01||
 

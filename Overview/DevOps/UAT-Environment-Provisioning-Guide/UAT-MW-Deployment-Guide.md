@@ -55,11 +55,11 @@ param (
 
     $sp_user = "admin@M365B188241.onmicrosoft.com", 
 
-    $sp_password = "a064Not9xH", 
+    $sp_password = "a064Not9xH", # Note this value is a secret in the pipeline variable
 
     $scope = "subscription", 
 
-    $InstrumentationKey = “984ca526-2038-4d9d-b0cf-653706512c58” 
+    $InstrumentationKey = “984ca526-2038-4d9d-b0cf-653706512c58”  # Note this value is a secret in the pipeline variable
 
 ) 
 

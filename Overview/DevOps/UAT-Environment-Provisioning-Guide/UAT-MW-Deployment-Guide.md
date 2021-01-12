@@ -1,24 +1,32 @@
 **SharePoint Online Artifacts Provisioning** 
  
 1. Add SharePoint Administration account as a site collection administrators. 
-1. Make sure the users Email id is right in the “resources\site.xml” 
-Please check below image for reference
+2. Make sure the users Email id is right in the “resources\site.xml” 
+3. Please check below image for reference
 
 ![user_group_TASMU.PNG](/.attachments/user_group_TASMU-e3955649-ead0-4abc-a669-f794bb5b1eda.PNG)
 
 The highlighted section of the above image needed to be modified with the correct users. This should be done for all the groups mentioned in the above image both for marketplace (*globalSPGroup*) and sectors (*SectorSPGroup*)
-1. Trigger the pipeline [CD-SPO-Provision-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=593) by clicking on the link.
+4. Trigger the pipeline [CD-SPO-Provision-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=593) by clicking on the link.
 Once clicked , you will land on below page. 
+
 ![run_uat_pipeline_TASMU.PNG](/.attachments/run_uat_pipeline_TASMU-129db537-c02b-4c8c-bbb6-b513e0d37b8e.PNG)
 If you need to edit/update any variables, click on the Edit button, or if you want to Run the pipeline, click 'Run pipeline'.
+
 a. If you click *Edit* button, the system will take you to the Edit page of the pipeline as shown below.
+
 ![uat_pipeline_variables_TASMU.PNG](/.attachments/uat_pipeline_variables_TASMU-fc9bc749-8a1f-4207-9be3-7c050afc10be.PNG)
 If you want to edit/modify any variables, click on *Variable* button
+
 ![uat_variables_modification_TASMU.PNG](/.attachments/uat_variables_modification_TASMU-32818179-5b19-4fd2-91a7-87c0558f0e3e.PNG)
+
 b. If you click *Run Pipeline* button, system will take you to below page for the final confirmation. 
+
 ![run_from_master_branch_TASMU.PNG](/.attachments/run_from_master_branch_TASMU-7a6e57a4-1692-4978-b9eb-598aa7891a9e.PNG)
+
 Select the branch **master** and click on the *Run* button to start the pipeline. 
 The variable input details is provided below. 
+
 1. Provide the below inputs as provided in the example.
 
 .INPUTS 

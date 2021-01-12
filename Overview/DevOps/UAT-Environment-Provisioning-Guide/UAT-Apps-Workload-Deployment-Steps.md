@@ -214,7 +214,7 @@ Key Vault - kv-cpd-apps-pt-uat-we-01
 App Service Plan - plan-cpd-apps-pt-uat-we-01
 Function App - func-cpd-apps-pt-uat-we-01
 
-1. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01
+1. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01 and redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|

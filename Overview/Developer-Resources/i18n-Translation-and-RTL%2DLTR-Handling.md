@@ -19,8 +19,10 @@ _**messages.en-US.xlf**_
 #Localization changes in library projects
 - In some cases, if **i18n tag** or **$localize** decoratorare added for localization in **_library projects_** below are the steps to generate translation units for the same.
 - Navigate to the library project where i18n tag or $localize decorator is added.
-- run ng build --prod and npm link command 
-
+- Link the library project to the main applications**(marketplace or eservices or account)** where it is being used refer https://web.microsoftstream.com/video/4c40a1ff-0400-b9eb-9ded-f1eb2d5e65e6
+- Once library linking is done navigate to main application and run below command
+`npm run i18n-extract`
+**NOTE**: Translation units will be generated automatically only for i18n tags added in html. In case of code translations using $localize a trans-unit should be maually added.
 
 #Debug Localization
 - Once the Localization resource files are updated run below commands to serve/open the application in specific language

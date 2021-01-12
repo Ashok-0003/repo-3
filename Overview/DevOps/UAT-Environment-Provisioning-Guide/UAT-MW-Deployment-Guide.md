@@ -1,7 +1,7 @@
 **SharePoint Online Artifacts Provisioning** 
  
 1. Add SharePoint Administration account as a site collection administrators. 
-2. Make sure the users Email id is right in the “resources\site.xml” 
+2. Make sure the users Email Address are updated correctly in the “resources\site.xml”
 3. Please check below image for reference
 
 ![user_group_TASMU.PNG](/.attachments/user_group_TASMU-e3955649-ead0-4abc-a669-f794bb5b1eda.PNG)

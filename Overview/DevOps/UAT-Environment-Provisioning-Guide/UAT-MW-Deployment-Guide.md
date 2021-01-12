@@ -3,7 +3,7 @@
 1. Add SharePoint Administration account as a site collection administrators. 
 1. Make sure the users’ Email id is right in the “resources\site.xml” 
 1. Make the needed changes in "resources\site.xml"
-1. Trigger the [CD-infra-spo](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=139)
+1. Trigger the [CD-SPO-Provision-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=593)
 1. Provide the below inputs as provided in the example.
 
 .INPUTS 

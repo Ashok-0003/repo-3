@@ -1,5 +1,5 @@
 # Pre requisites
-1. Self Hosted Agents equivalent to Microsoft Hosted Windows Agent provisioned in Central Platform Hub VNet
+1. Self Hosted Agents equivalent to Microsoft Hosted Windows Agent provisioned in Central Platform Hub VNet to deploy APIM and AKS solutions
 1. ARM Modules must be created
 1. Resource Group specific deployment files must be stitched
 (Refer [README.md](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FREADME.md&_a=preview) of infra repo for details)

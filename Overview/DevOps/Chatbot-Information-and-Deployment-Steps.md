@@ -157,6 +157,7 @@ After updating infra repo, following Keys needs to be added/updated in the varia
 
 - **LuisGeneralAppIdEn** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
 - **LuisGeneralAppIdAr** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
+      - The above two Keys are used to update appId for English and Arabic LUIS General services under _**/platfom-apis/pipelines/bot/cognitiveModels.json**_
 - **Bot-AppSettings-LuisAuthSubscriptionKey** 
 
 ![luis-auth-subs.PNG](/.attachments/luis-auth-subs-519a745d-fe61-4835-9f61-0c53351ea8c9.PNG)

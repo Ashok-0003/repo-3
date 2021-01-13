@@ -17,6 +17,8 @@
 |Cms.Function:PreviewApiUrl|Marketplace preview URL||
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|
+|CDNSettings:TenantId|The Tenant Id||
+|CDNSettings:ClientId|The Client Id|Client Id of **spn-cmsbpa-dev**|
 |CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01||
 |CDNSettings:Endpoint|Name of the CDN endpoint resource <env>-cdntasmu||
 |CDNSettings:ResourceGroup|Name of the resource rg-cpd-shrd-<env>-we-01||

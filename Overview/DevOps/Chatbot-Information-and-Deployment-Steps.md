@@ -114,7 +114,9 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 | From (OutputCognitiveModels.json) | To infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json  |
 |--|--|
 |  | "LuisCustomEndpoint" |
+|  | "DispatchLuisAppIdEn" |
 | "cognitiveModels" -> "en-us" -> "languageModels" -> "appid": | "GeneralLuisAppIdEn" |
+|  | "DispatchLuisAppIdAr" |
 | "cognitiveModels" -> "ar-ar" -> "languageModels" -> "appid": | "GeneralLuisAppIdAr" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "endpointKey": | "EnQnaMaker": { "EndpointKey" |
 |  | "EnQnaMaker": { "Endpoint" |

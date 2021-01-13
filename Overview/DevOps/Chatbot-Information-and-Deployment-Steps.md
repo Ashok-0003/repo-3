@@ -108,7 +108,7 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 ![published.PNG](/.attachments/published-515af584-91c5-45a9-bff1-3a8a8647e669.PNG)
 2. Download outputCognitiveModels.json file from that artifact as shown in the following image.
 ![outputcog.PNG](/.attachments/outputcog-95cca4eb-2872-49c1-818b-09a79d88d8d1.PNG)
-3. The outputCognitiveModels.json file contains LUIS and QnA keys which now should be mapped to infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json where **<env>** is the environment for which pipeline was executed.
+3. The outputCognitiveModels.json file contains LUIS and QnA keys which now should be mapped to infra repo under _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_ where **<env>** is the environment for which pipeline was executed.
 4. Following are the keys from outputCognitiveModels.json whose values should be mapped to appsettings.json in infra.
 
 
@@ -132,6 +132,9 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "FAQ_ar_ar"** | "ArQnaMaker": { "FaqKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_ar_ar"** | "ArQnaMaker": { "KbQnAKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_ar_ar"** | "ArQnaMaker": { "SourceFAQKbId" |
+
+Reference images:
+"LuisCustomEndpoint" - ![luiscustom.PNG](/.attachments/luiscustom-51065cae-3af2-443d-aa18-5ce929cda728.PNG)
 
 
 

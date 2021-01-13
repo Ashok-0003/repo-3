@@ -116,8 +116,8 @@ Storage Account - stcpdappsstruatwe01
 |--|--|--|--|
 |apicon-cpd-apps-intcds-uat-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Id of the App Registration () - to authenticate Common Data Service Connection|
 |apicon-cpd-apps-prdcds-uat-we-01|Crm-Common-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the App Registration () - to authenticate Common Data Service Connection|
-|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|Global Key Vault or Environment Specific Key Vault| Client Id of the service principal having contributor access on eEvent grid to authenticate event grid api connection
-|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|Global Key Vault or Environment Specific Key Vault| Client Secret of the service principal having contributor access on eEvent grid to authenticate event grid api connection|
+|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|Global Key Vault or Environment Specific Key Vault| Client Id of the service principal having contributor access on Event grid to authenticate event grid api connection
+|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|Global Key Vault or Environment Specific Key Vault| Client Secret of the service principal having contributor access on Event grid to authenticate event grid api connection|
 
 3. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)

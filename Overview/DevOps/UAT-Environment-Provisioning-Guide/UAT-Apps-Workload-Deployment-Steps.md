@@ -187,6 +187,7 @@ Service Bus Queue - sbq-cpd-apps-intchglog-uat-we-01
 Service Bus Queue - sbq-cpd-apps-intaprvl-uat-we-01
 Service Bus Queue - sbq-cpd-apps-intgbaprl-uat-we-01
 Service Bus Queue - sbq-cpd-apps-intcoreapi-uat-we-01
+Service Bus Queue - sbq-cpd-apps-qnaadd-uat-we-01
 Service Bus Queue - sbq-cpd-apps-intiotalert-uat-we-01
 Service Bus Topic - sbt-cpd-apps-qnasync-uat-we-01
 Service Bus Topic Subscription - sbts-cpd-apps-copyqna-uat-we-01

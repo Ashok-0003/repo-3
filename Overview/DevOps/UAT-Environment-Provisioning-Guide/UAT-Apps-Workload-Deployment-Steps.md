@@ -257,8 +257,9 @@ Stage for uat must be added to pipeline and run the pipeline to populate key vau
 
 12. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
 The configurations and their retrieval - Scripts\AppConfigurations
-Add application configurations for env - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
-Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
+Add application configurations for <env> - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
+Copy existi
+Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 
 ## Link AKS Cluster DNS Zone to CPH Subscription
 1. A user account being used should have access to both the subscriptions 

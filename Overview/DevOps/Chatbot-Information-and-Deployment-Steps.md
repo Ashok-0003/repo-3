@@ -105,9 +105,13 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 
 # Updating Infra repo with LUIS and QNA keys
 1. Once [CD-BotLuisQnAInitialDeploy](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/resultsbuildId=22348&view=results) is successfully ran, it will publish single [artifact](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/results?buildId=22348&view=artifacts&pathAsName=false&type=publishedArtifacts) specific to selected environment.
+
 ![published.PNG](/.attachments/published-515af584-91c5-45a9-bff1-3a8a8647e669.PNG)
+
 2. Download outputCognitiveModels.json file from that artifact as shown in the following image.
+
 ![outputcog.PNG](/.attachments/outputcog-95cca4eb-2872-49c1-818b-09a79d88d8d1.PNG)
+
 3. The outputCognitiveModels.json file contains LUIS and QnA keys which now should be mapped to infra repo under _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_ where **<env>** is the environment for which pipeline was executed.
 4. Following are the keys from outputCognitiveModels.json whose values should be mapped to appsettings.json in infra.
 
@@ -115,7 +119,7 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 
 | From (OutputCognitiveModels.json) | To infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json  |
 |--|--|
-| [Refer]() | "LuisCustomEndpoint" |
+| [Refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22luiscustomendpoint%22) | "LuisCustomEndpoint" |
 |  | "DispatchLuisAppIdEn" |
 | "cognitiveModels" -> "en-us" -> "languageModels" -> "appid": | "GeneralLuisAppIdEn" |
 |  | "DispatchLuisAppIdAr" |
@@ -134,7 +138,7 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_ar_ar"** | "ArQnaMaker": { "SourceFAQKbId" |
 
 # Reference images:
-"LuisCustomEndpoint" 
+##"LuisCustomEndpoint" 
 ![luiscustom.PNG](/.attachments/luiscustom-51065cae-3af2-443d-aa18-5ce929cda728.PNG)
 
 

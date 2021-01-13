@@ -14,8 +14,8 @@
 |kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret |Client secret stored in kv-cpd-apps-<env>-we-01 used for ManageEvent Function connection, generate secret from Azure AD app registration.||
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|Self signed certificate|
 |kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|Self signed certificate| 
-|kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisAuthSubscriptionKey| Secret | | |
-|kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisRtSubscriptionKey| Secret | | |
+|kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisAuthSubscriptionKey| Secret | Primary key of the resource cog-cpd-apps-luiauth-<env>-we-01 | |
+|kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisRtSubscriptionKey| Secret | Primary key of the resource cog-cpd-apps-luisrt-<env>-we-01 | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaEnSubscriptionKey| Secret | | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaArSubscriptionKey| Secret | | | 
 

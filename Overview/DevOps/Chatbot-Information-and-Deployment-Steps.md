@@ -152,6 +152,22 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 ### "ArQnaMaker": { "Endpoint"
 ![endpoint-ar.PNG](/.attachments/endpoint-ar-e4f5a927-14e8-4f7e-bae2-2ee54b1dfd6a.PNG)
 
+## Add/Update Keys in Azure DevOps Variable Groups
+After updating infra repo, following Keys needs to be added/updated in the variable groups:
+
+- **GeneralLuisAppIdAr** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
+- **GeneralLuisAppIdEn** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
+- **Bot-AppSettings-LuisAuthSubscriptionKey** 
+
+![luis-auth-subs.PNG](/.attachments/luis-auth-subs-519a745d-fe61-4835-9f61-0c53351ea8c9.PNG)
+
+- **Bot-AppSettings-LuisRtSubscriptionKey**
+
+![luis-rt-subs.PNG](/.attachments/luis-rt-subs-f32698a6-1eae-4c27-9c0c-4693f85941d0.PNG)
+
+- **Bot-AppSettings-QnaArSubscriptionKey** - From "cognitiveModels" -> "en-us" -> "knowledgebases" ->  "subscriptionKey" inside OutputCognitiveModels.json downloaded under this step - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=updating-infra-repo-with-luis-and-qna-keys)
+- **Bot-AppSettings-QnaEnSubscriptionKey** -  From "cognitiveModels" -> "ar-ar" -> "knowledgebases" ->  "subscriptionKey" inside OutputCognitiveModels.json downloaded under this step - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=updating-infra-repo-with-luis-and-qna-keys)
+
 
 
 

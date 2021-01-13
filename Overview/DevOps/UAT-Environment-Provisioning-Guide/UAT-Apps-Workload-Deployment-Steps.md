@@ -11,13 +11,25 @@
 1. Solution components can be deployed on the azure resources at the end
 
 # Global Resources for a tenant
-[rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
-1. Azure Container Registry - acrcpdglobnpdwe01
-2. Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
-3. Send Grid Account 
+1. [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
+**Dependencies** - 
+**Resources** -
+Azure Container Registry - acrcpdglobnpdwe01
+Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
+Send Grid Account 
+
+2. [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
+**Dependencies** - 
+**Resources** -
+Storage Account - stcpdglobacmwe01
+[Create a daily export of azure consumption metering for 6D Billing](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal#create-a-daily-export)
 
 # Creation and set up of AD B2C Tenant
 Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharepoint.com/:w:/s/TASMU-CentralPlatformPMO/EdIKRGu6E1VGnA-naCTSBXQBjgdtCiT9C6n5E9rehxUWmw?e=ZSX2Yf)
+
+# Register the applications in AD and AD B2C
+1. [AD B2C Registrations](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad-b2c)
+2. [AAD Registrations](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad---tasmusqcp.onmicrosoft.com)
 
 # Deployment of Azure Infrastructure
 1. [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
@@ -97,6 +109,7 @@ Service Bus Topic Subscription - sbts-cpd-apps-strntfsingle-uat-we-01
 Service Bus Topic Subscription - sbts-cpd-apps-strsmsbulk-uat-we-01
 Service Bus Topic Subscription - sbts-cpd-apps-strsmssingle-uat-we-01
 Storage Account - stcpdappsstruatwe01
+
 1. Seed the Key Vault Secrets required in the cognitive and integration pipelines in kv-cpd-apps-uat-we-01
 
 | Resource Name |Secret Name  | Key Vault Name |
@@ -129,6 +142,7 @@ Web App Bot - app-cpd-apps-cog-uat-we-01
 
 4. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
+[rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
 **Resources** -
 API Connection - apicon-cpd-apps-into365-uat-we-01 - API Connection to Office 365 Tenant (CMS)
 API Connection - apicon-cpd-apps-intsb-uat-we-01
@@ -146,6 +160,7 @@ Event Hub - ev-cpd-apps-int-uat-we-01
 Event Grid Domain - egd-cpd-apps-int-uat-we-01
 Function App - func-cpd-apps-intbpa-uat-we-01
 Function App - func-cpd-apps-intntf-uat-we-01
+Function App - func-cpd-apps-acm-uat-we-01 - Function app to monitor consumption metering storage for 6D
 Logic App - logic-cpd-apps-inttrsl-uat-we-01
 Logic App - logic-cpd-apps-intaprv1-uat-we-01
 Logic App - logic-cpd-apps-intgbaprl-uat-we-01
@@ -224,15 +239,15 @@ Function App - func-cpd-apps-pt-uat-we-01
 |func-cpd-apps-qnasync-uat-we-01|Get||
 |func-cpd-apps-luistra-uat-we-01|Get||
 |func-cpd-apps-intntf-uat-we-01|Get||
+|func-cpd-apps-acm-uat-we-01|Get||
 |func-cpd-apps-intbpa-uat-we-01|Get|Get|
 
-
-10. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
+11. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
 <To Be Updated> the list of secrets - Scripts\KeyVault\all-secrets.yml
 Add the key vault secrets for the env following this [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-secrets-and-certificates-to-key-vault)
 Stage for uat must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
-11. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
-<To Be Updated> the configurations and their retrieval - Scripts\AppConfigurations
+12. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
+The configurations and their retrieval - Scripts\AppConfigurations
 Add application configurations for uat  - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
 Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 

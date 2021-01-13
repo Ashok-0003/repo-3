@@ -149,7 +149,11 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 ![dispatchar.PNG](/.attachments/dispatchar-13f01db8-5625-44a4-9cc7-8c2fb6dff3e9.PNG)
 
 ### "EnQnaMaker": { "Endpoint"
+![endpoint-en.PNG](/.attachments/endpoint-en-0011cf21-d0a4-43a8-9336-413c4c30364b.PNG)
+
 ### "ArQnaMaker": { "Endpoint"
+![endpoint-ar.PNG](/.attachments/endpoint-ar-e4f5a927-14e8-4f7e-bae2-2ee54b1dfd6a.PNG)
+
 
 
 

@@ -115,12 +115,19 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 |--|--|
 |  | "LuisCustomEndpoint" |
 |  | "GeneralLuisAppIdEn" |
-|  | "GeneralLuisAppIdEn" |
-|  | "GeneralLuisAppIdEn" |
-|  | "GeneralLuisAppIdEn" |
-|  | "GeneralLuisAppIdEn" |
-|  | "GeneralLuisAppIdEn" |
-|  | "GeneralLuisAppIdEn" |
+|  | "GeneralLuisAppIdAr" |
+|  | "EnQnaMaker": { "EndpointKey" |
+|  | "EnQnaMaker": { "Endpoint" |
+|  | "EnQnaMaker": { "Hostname" |
+|  | "EnQnaMaker": { "FaqKbId" |
+|  | "EnQnaMaker": { "KbQnAKbId" |
+|  | "EnQnaMaker": { "SourceFAQKbId" |
+|  | "ArQnaMaker": { "EndpointKey" |
+|  | "ArQnaMaker": { "Endpoint" |
+|  | "ArQnaMaker": { "Hostname" |
+|  | "ArQnaMaker": { "FaqKbId" |
+|  | "ArQnaMaker": { "KbQnAKbId" |
+|  | "ArQnaMaker": { "SourceFAQKbId" |
 
 
 

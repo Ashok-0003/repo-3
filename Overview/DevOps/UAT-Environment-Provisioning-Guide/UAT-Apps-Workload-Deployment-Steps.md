@@ -288,6 +288,7 @@ Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigura
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities  | vnet-cpd-pltf-<env>-we-01/snet-cpd-apps-aks-<env>-we-01 | Network Contributor |
+|spn-cmsbpa-dev|Azure AD App|<env>-cdntasmu|CDN Endpoint Contributor|
 
 ## Configuring Notification Hubs for FCM and APNS
 1. Update the Google Settings for API Key

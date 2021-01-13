@@ -119,27 +119,34 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 
 | From (OutputCognitiveModels.json) | To infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json  |
 |--|--|
-| [Refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22luiscustomendpoint%22) | "LuisCustomEndpoint" |
-|  | "DispatchLuisAppIdEn" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22luiscustomendpoint%22) | "LuisCustomEndpoint" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22dispatchluisappiden%22) | "DispatchLuisAppIdEn" |
 | "cognitiveModels" -> "en-us" -> "languageModels" -> "appid": | "GeneralLuisAppIdEn" |
-|  | "DispatchLuisAppIdAr" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22dispatchluisappidar%22) | "DispatchLuisAppIdAr" |
 | "cognitiveModels" -> "ar-ar" -> "languageModels" -> "appid": | "GeneralLuisAppIdAr" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "endpointKey": | "EnQnaMaker": { "EndpointKey" |
-|  | "EnQnaMaker": { "Endpoint" |
+| Refer this - [Image]() | "EnQnaMaker": { "Endpoint" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "hostname" | "EnQnaMaker": { "Hostname" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "FAQ_en_us"** | "EnQnaMaker": { "FaqKbId" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_en_us"** | "EnQnaMaker": { "KbQnAKbId" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_en_us"** | "EnQnaMaker": { "SourceFAQKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "endpointKey": | "ArQnaMaker": { "EndpointKey" |
-|  | "ArQnaMaker": { "Endpoint" |
+| Refer this - [Image]() | "ArQnaMaker": { "Endpoint" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "hostname" | "ArQnaMaker": { "Hostname" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "FAQ_ar_ar"** | "ArQnaMaker": { "FaqKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_ar_ar"** | "ArQnaMaker": { "KbQnAKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_ar_ar"** | "ArQnaMaker": { "SourceFAQKbId" |
 
 # Reference images:
-##"LuisCustomEndpoint" 
+- Follow [this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=luis-qnamaker-deployments) to reach following pages in (https://eu.luis.ai/).
+### "LuisCustomEndpoint" 
 ![luiscustom.PNG](/.attachments/luiscustom-51065cae-3af2-443d-aa18-5ce929cda728.PNG)
+
+### "DispatchLuisAppIdEn"
+![dispacthId.PNG](/.attachments/dispacthId-9355345c-6d30-4804-9c60-0dabebe93694.PNG)
+
+### "DispatchLuisAppIdAr"
+![dispatchar.PNG](/.attachments/dispatchar-13f01db8-5625-44a4-9cc7-8c2fb6dff3e9.PNG)
 
 
 

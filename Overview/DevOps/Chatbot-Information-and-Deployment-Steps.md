@@ -98,7 +98,7 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 
 ## Bot WebChat Deployment
 
-1. Trigger [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130) which will deploy bot webchat into blob storage which will be available in cdn used in the marketplace, eservices portals and mobile app.
+1. Trigger [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130) which will deploy bot webchat into blob storage which will be available in cdn used in the marketplace, eservices portals and mobile app. [Bot webchat components available here](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/web-apps?path=%2Fbotwebchat%2Fbotwebchat).
 
 
 # Updating Infra repo with LUIS and QNA keys

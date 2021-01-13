@@ -112,12 +112,12 @@ Storage Account - stcpdappsstruatwe01
 
 1. Seed the Key Vault Secrets required in the cognitive and integration pipelines in kv-cpd-apps-uat-we-01
 
-| Resource Name |Secret Name  | Key Vault Name |
-|--|--|--|
-|apicon-cpd-apps-intcds-uat-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01|
-|apicon-cpd-apps-prdcds-uat-we-01|Crm-Common-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01|
-|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|kv-cpd-glob-npd-we-01|
-|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-glob-npd-we-01|
+| Resource Name |Secret Name  | Key Vault Name | Usage|
+|--|--|--|--|
+|apicon-cpd-apps-intcds-uat-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Id of the App Registration () - to authenticate Common Data Service Connection|
+|apicon-cpd-apps-prdcds-uat-we-01|Crm-Common-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the App Registration () - to authenticate Common Data Service Connection|
+|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|Global Key Vault or Environment Specific Key Vault| Client Id of the service principal having contributor access on eEvent grid to authenticate event grid api connection
+|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|Global Key Vault or Environment Specific Key Vault| Client Secret of the service principal having contributor access on eEvent grid to authenticate event grid api connection|
 
 3. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)

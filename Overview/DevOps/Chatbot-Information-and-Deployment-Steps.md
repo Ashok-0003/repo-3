@@ -155,8 +155,8 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 ## Add/Update Keys in Azure DevOps Variable Groups
 After updating infra repo, following Keys needs to be added/updated in the variable groups:
 
-- **GeneralLuisAppIdAr** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
-- **GeneralLuisAppIdEn** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
+- **GeneralAppid** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
+- **GeneralArAppId** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
 - **Bot-AppSettings-LuisAuthSubscriptionKey** 
 
 ![luis-auth-subs.PNG](/.attachments/luis-auth-subs-519a745d-fe61-4835-9f61-0c53351ea8c9.PNG)

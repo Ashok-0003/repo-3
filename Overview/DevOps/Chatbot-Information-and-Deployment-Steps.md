@@ -99,9 +99,6 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 
 1. Trigger [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130) which will deploy bot webchat into blob storage which will be available in cdn used in the marketplace, eservices portals and mobile app.
 
-# Configuration Details for BOT
-
-1. After triggering infra repo components, we have to update redirect url for the webapp bot appid Azure AD and also update microsoft as authentication account, so that bot api user name password login is allowed to access from bot client.
 
 # Updating Infra repo with LUIS and QNA keys
 1. Once [CD-BotLuisQnAInitialDeploy](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/resultsbuildId=22348&view=results) is successfully ran, it will publish single [artifact](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/results?buildId=22348&view=artifacts&pathAsName=false&type=publishedArtifacts) specific to selected environment.

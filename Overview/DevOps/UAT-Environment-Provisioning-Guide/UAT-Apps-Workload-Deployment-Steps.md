@@ -228,8 +228,14 @@ Application Gateway - agw-cpd-apps-ntf-uat-we-01
 Key Vault - kv-cpd-apps-pt-uat-we-01
 App Service Plan - plan-cpd-apps-pt-uat-we-01
 Function App - func-cpd-apps-pt-uat-we-01
+1. Updating Key Vault Access Policies - kv-cpd-apps-pt-we-01 and redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
 
-1. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01 and redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+|Object Id| Secrets |  Certificates|
+|--|--|--|
+|func-cpd-apps-pt-uat-we-01|Get, List, Set||
+
+
+10. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01 and redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
@@ -243,12 +249,14 @@ Function App - func-cpd-apps-pt-uat-we-01
 |func-cpd-apps-intbpa-uat-we-01|Get|Get|
 
 11. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
-<To Be Updated> the list of secrets - Scripts\KeyVault\all-secrets.yml
-Add the key vault secrets for the env following this [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-secrets-and-certificates-to-key-vault)
+Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - uat
+[Update the secret values after retrieval](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/151/Key-Vault-Secrets-Apps)
+The list of secrets to be seeded to kv-cpd-apps-<env>-we-01 - Scripts\KeyVault\all-secrets.yml
 Stage for uat must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
+
 12. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
 The configurations and their retrieval - Scripts\AppConfigurations
-Add application configurations for uat  - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
+Add application configurations for env - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
 Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 
 ## Link AKS Cluster DNS Zone to CPH Subscription

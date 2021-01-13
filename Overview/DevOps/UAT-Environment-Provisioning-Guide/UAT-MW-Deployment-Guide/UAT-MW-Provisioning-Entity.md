@@ -1,6 +1,6 @@
 **Provisioning Entity**
 
-1. Entities can be provisioned using the pipline [CDO-SPO-ProvisionEntity-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=807) . It makes use of the file Entities.xml as reference for provisioning. 
+1. Entities can be provisioned using the pipline [CD-SPO-ProvisionEntity-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=807) . It makes use of the file Entities.xml as reference for provisioning. 
 1. This script will provision new entity site collection, list, libraries with custom views, provision user groups, add navigation menus appropriately to all sectors, marketplace, etc. 
 1. This script will not create Taxonomy at TermStore or Content Types or SiteColumns at content type hub.
 

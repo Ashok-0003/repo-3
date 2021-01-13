@@ -122,12 +122,12 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "FAQ_en_us"** | "EnQnaMaker": { "FaqKbId" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_en_us"** | "EnQnaMaker": { "KbQnAKbId" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_en_us"** | "EnQnaMaker": { "SourceFAQKbId" |
-|  | "ArQnaMaker": { "EndpointKey" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "endpointKey": | "ArQnaMaker": { "EndpointKey" |
 |  | "ArQnaMaker": { "Endpoint" |
-|  | "ArQnaMaker": { "Hostname" |
-|  | "ArQnaMaker": { "FaqKbId" |
-|  | "ArQnaMaker": { "KbQnAKbId" |
-|  | "ArQnaMaker": { "SourceFAQKbId" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "hostname" | "ArQnaMaker": { "Hostname" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "FAQ_ar_ar"** | "ArQnaMaker": { "FaqKbId" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_ar_ar"** | "ArQnaMaker": { "KbQnAKbId" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_ar_ar"** | "ArQnaMaker": { "SourceFAQKbId" |
 
 
 

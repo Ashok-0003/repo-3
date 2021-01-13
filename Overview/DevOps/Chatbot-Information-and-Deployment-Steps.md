@@ -104,8 +104,10 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 1. After triggering infra repo components, we have to update redirect url for the webapp bot appid Azure AD and also update microsoft as authentication account, so that bot api user name password login is allowed to access from bot client.
 
 # Updating Infra repo with LUIS and QNA keys
-1. Once [CD-BotLuisQnAInitialDeploy](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/results buildId=22348&view=results) is successfully ran, it will publish single [artifact](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/results?buildId=22348&view=artifacts&pathAsName=false&type=publishedArtifacts) specific to that environment.
-2. Download outputCognitiveModels.json file from that artifact as shown in the following picture.
+1. Once [CD-BotLuisQnAInitialDeploy](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/resultsbuildId=22348&view=results) is successfully ran, it will publish single [artifact](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build/results?buildId=22348&view=artifacts&pathAsName=false&type=publishedArtifacts) specific to selected environment.
+![published.PNG](/.attachments/published-515af584-91c5-45a9-bff1-3a8a8647e669.PNG)
+2. Download outputCognitiveModels.json file from that artifact as shown in the following image.
+![outputcog.PNG](/.attachments/outputcog-95cca4eb-2872-49c1-818b-09a79d88d8d1.PNG)
 3. The outputCognitiveModels.json file contains LUIS and QnA keys which now should be mapped to infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json where **<env>** is the environment for which pipeline was executed.
 4. Following are the keys from outputCognitiveModels.json whose values should be mapped to appsettings.json in infra.
 

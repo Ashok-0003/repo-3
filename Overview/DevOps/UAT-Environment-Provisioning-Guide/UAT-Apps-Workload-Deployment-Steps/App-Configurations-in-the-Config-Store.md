@@ -1,11 +1,6 @@
 
 |Key Name| How to retrieve | Remarks |  |
 |--|--|--|--|
-|Cms.Api:ClientCertificate|Self signed certificate||
-|Cms.Function:ClientCertificate|Self signed certificate||
-|Cms.Function:NotificationUrl| Default(Function Key) Function URL of notify function in func-cpd-apps-intntf-<env>-we-01|||
-|Cms.Function:ServiceBusConnectionString| Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01||
-|CDNSettings:StorageAccount| Connection string of the resource stcpdshrd<env>we01||
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:TenantID|Directory (tenant) ID of Azure AD App spn-cmsbpa-<env>||

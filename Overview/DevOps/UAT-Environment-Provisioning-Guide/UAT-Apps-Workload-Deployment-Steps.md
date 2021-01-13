@@ -146,27 +146,28 @@ Web App Bot - app-cpd-apps-cog-uat-we-01
 [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
 **Resources** -
 API Connection - apicon-cpd-apps-into365-uat-we-01 - API Connection to Office 365 Tenant (CMS)
-API Connection - apicon-cpd-apps-intsb-uat-we-01
-API Connection - apicon-cpd-apps-intspo-uat-we-01
-API Connection - apicon-cpd-apps-integ-uat-we-01
+API Connection - apicon-cpd-apps-intsb-uat-we-01 - API Connection to Service Bus
+API Connection - apicon-cpd-apps-intspo-uat-we-01 - API Connection to Sharepoint Online
+API Connection - apicon-cpd-apps-integ-uat-we-01 - API Connection to Event Grid Domain
 API Connection - apicon-cpd-apps-intkv-uat-we-01
 API Connection - apicon-cpd-apps-integd-uat-we-01
 API Connection - apicon-cpd-apps-intst-uat-we-01
-API Connection - apicon-cpd-apps-intcog-uat-we-01
+API Connection - apicon-cpd-apps-intcog-uat-we-01 - API Connection to Translator Cognitive Service
 API Connection - apicon-cpd-apps-ascalrt-uat-we-01 - API Connection to Azure Security Alert trigger.
 API Connection - apicon-cpd-apps-intcds-uat-we-01 - API Connection to Common Data Service for Case api.
 API Connection - apicon-cpd-apps-prdcds-uat-we-01- API Connection to Common Data Service for market place product api.
 App Service Plan - plan-cpd-apps-int-uat-we-01
 Event Hub - ev-cpd-apps-int-uat-we-01
 Event Grid Domain - egd-cpd-apps-int-uat-we-01
-Function App - func-cpd-apps-intbpa-uat-we-01
-Function App - func-cpd-apps-intntf-uat-we-01
+Function App - func-cpd-apps-intbpa-uat-we-01 - Function App to subscribe and process the Sharepoint data
+Function App - func-cpd-apps-intntf-uat-we-01 - Function App to track the changes of Sharepoint data
 Function App - func-cpd-apps-acm-uat-we-01 - Function app to monitor consumption metering storage for 6D
-Logic App - logic-cpd-apps-inttrsl-uat-we-01
-Logic App - logic-cpd-apps-intaprv1-uat-we-01
-Logic App - logic-cpd-apps-intgbaprl-uat-we-01
+Logic App - logic-cpd-apps-inttrsl-uat-we-01 - Logic app to create Translation Task and do Auto Translation from English to Arabic of Sharepoint data
+Logic App - logic-cpd-apps-intaprv1-uat-we-01 - Logic app for Level 1 Approval
+Logic App - logic-cpd-apps-intgbaprl-uat-we-01 - Logic app for Level 2 approval
 Logic App - logic-cpd-apps-intprdt-uat-we-01
-Logic App - logic-cpd-apps-intsec-uat-we-01
+Logic App - logic-cpd-apps-intsec-uat-we-01 - Logic app to sync Global Sectors List
+Logic App - logic-cpd-apps-secsync-uat-we-01 - Logic app to sync Global Sectors List with Sharepoint Taxonomy terms
 Logic App - logic-cpd-apps-route-uat-we-01
 Logic App - logic-cpd-apps-6dbill-uat-we-01
 Logic App - logic-cpd-apps-6dhook-uat-we-01

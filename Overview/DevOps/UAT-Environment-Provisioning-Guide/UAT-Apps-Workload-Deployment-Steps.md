@@ -228,6 +228,7 @@ Application Gateway - agw-cpd-apps-ntf-uat-we-01
 Key Vault - kv-cpd-apps-pt-uat-we-01
 App Service Plan - plan-cpd-apps-pt-uat-we-01
 Function App - func-cpd-apps-pt-uat-we-01
+
 1. Updating Key Vault Access Policies - kv-cpd-apps-pt-we-01 and redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
 
 |Object Id| Secrets |  Certificates|
@@ -288,7 +289,7 @@ Add stage for uat to the app configuration seeding pipeline - [CD-AppConfigurati
 
 ## Configuring Notification Hubs for FCM and APNS
 1. Update the Google Settings for API Key
-Obtain the API Key from Google Firebase Cloud Account after creating the project
+Obtain the Web API Key of [Google Firebase Cloud Account](https://console.firebase.google.com/) after creating the project from project settings
 2. Update the Apple Settings for iOS Certificate (@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> to share details in Mobile Apps deployments)
 3. Test Send (Support and troubleshooting) for Apple and Windows Phone
 

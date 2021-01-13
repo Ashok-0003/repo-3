@@ -258,8 +258,8 @@ Stage for uat must be added to pipeline and run the pipeline to populate key vau
 
 12. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
 The configurations and their retrieval - Scripts\AppConfigurations
-Add application configurations for <env> - [wiki link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=adding-configurations-to-app-config-store)
-Copy existi
+Add application configurations for <env>.
+Placeholders already present for all env
 Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 
 ## Link AKS Cluster DNS Zone to CPH Subscription
@@ -307,7 +307,7 @@ destinationAPIMName - apim-cpd-shrd-<env>-we-01
 destinationAPIMSASToken - *****
 publishEndpoint - develeoper.<env>.sqcp.qa
 
-1. For platform apis, ingress controller helm-config needs to be added for new env (refer above image) and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
+1. For platform apis, ingress controller helm-config needs to be added for new env and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
 1. For integration function apps, add stage to the following pipeline pointing to uat resources
 [CD-Integration-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=301)
 1. For web apps, add stage to the following pipeline pointing to uat resources

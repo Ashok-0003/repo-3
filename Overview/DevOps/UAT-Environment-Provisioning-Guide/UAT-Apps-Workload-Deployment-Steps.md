@@ -1,4 +1,5 @@
 # Pre requisites
+1. Self Hosted Agents equivalent to Microsoft Hosted Windows Agent provisioned in Central Platform Hub VNet
 1. ARM Modules must be created
 1. Resource Group specific deployment files must be stitched
 (Refer [README.md](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FREADME.md&_a=preview) of infra repo for details)
@@ -295,8 +296,17 @@ Obtain the Web API Key of [Google Firebase Cloud Account](https://console.fireba
 3. Test Send (Support and troubleshooting) for Apple and Windows Phone
 
 # Deployment of the solution components
-1. Add the CI and CD APIM Pipelines and URLs pointing to AKS AGW for most of the APIs
-![image.png](/.attachments/image-9b9f0d1d-d858-4764-aa2a-a2f6e477f0cd.png)
+1. Update APIM Pipelines for new environments:
+[CI-APIMConfig-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=570)
+[CD-APIMConfig-<env>-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=575)
+[CD-APIMDevPortal-rg-cpd-shrd-<env>-we-01-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=504)
+add the following variables:
+sourceAPIMName - apim-cpd-shrd-<env>-we-01
+sourceAPIMSASToken - ******
+destinationAPIMName - apim-cpd-shrd-<env>-we-01
+destinationAPIMSASToken - *****
+publishEndpoint - develeoper.<env>.sqcp.qa
+
 1. For platform apis, ingress controller helm-config needs to be added for new env (refer above image) and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
 1. For integration function apps, add stage to the following pipeline pointing to uat resources
 [CD-Integration-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=301)

@@ -114,14 +114,14 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 | From (OutputCognitiveModels.json) | To infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json  |
 |--|--|
 |  | "LuisCustomEndpoint" |
-|  | "GeneralLuisAppIdEn" |
-|  | "GeneralLuisAppIdAr" |
-|  | "EnQnaMaker": { "EndpointKey" |
+| "cognitiveModels" -> "en-us" -> "languageModels" -> "appid": | "GeneralLuisAppIdEn" |
+| "cognitiveModels" -> "ar-ar" -> "languageModels" -> "appid": | "GeneralLuisAppIdAr" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "endpointKey": | "EnQnaMaker": { "EndpointKey" |
 |  | "EnQnaMaker": { "Endpoint" |
-|  | "EnQnaMaker": { "Hostname" |
-|  | "EnQnaMaker": { "FaqKbId" |
-|  | "EnQnaMaker": { "KbQnAKbId" |
-|  | "EnQnaMaker": { "SourceFAQKbId" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "hostname" | "EnQnaMaker": { "Hostname" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "FAQ_en_us"** | "EnQnaMaker": { "FaqKbId" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_en_us"** | "EnQnaMaker": { "KbQnAKbId" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_en_us"** | "EnQnaMaker": { "SourceFAQKbId" |
 |  | "ArQnaMaker": { "EndpointKey" |
 |  | "ArQnaMaker": { "Endpoint" |
 |  | "ArQnaMaker": { "Hostname" |

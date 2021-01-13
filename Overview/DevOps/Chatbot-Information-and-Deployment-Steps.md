@@ -125,13 +125,13 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 | Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22dispatchluisappidar%22) | "DispatchLuisAppIdAr" |
 | "cognitiveModels" -> "ar-ar" -> "languageModels" -> "appid": | "GeneralLuisAppIdAr" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "endpointKey": | "EnQnaMaker": { "EndpointKey" |
-| Refer this - [Image]() | "EnQnaMaker": { "Endpoint" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22enqnamaker%22%3A-%7B-%22endpoint%22) | "EnQnaMaker": { "Endpoint" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "hostname" | "EnQnaMaker": { "Hostname" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "FAQ_en_us"** | "EnQnaMaker": { "FaqKbId" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_en_us"** | "EnQnaMaker": { "KbQnAKbId" |
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_en_us"** | "EnQnaMaker": { "SourceFAQKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "endpointKey": | "ArQnaMaker": { "EndpointKey" |
-| Refer this - [Image]() | "ArQnaMaker": { "Endpoint" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22arqnamaker%22%3A-%7B-%22endpoint%22) | "ArQnaMaker": { "Endpoint" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "hostname" | "ArQnaMaker": { "Hostname" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "FAQ_ar_ar"** | "ArQnaMaker": { "FaqKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_ar_ar"** | "ArQnaMaker": { "KbQnAKbId" |
@@ -147,6 +147,9 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 
 ### "DispatchLuisAppIdAr"
 ![dispatchar.PNG](/.attachments/dispatchar-13f01db8-5625-44a4-9cc7-8c2fb6dff3e9.PNG)
+
+### "EnQnaMaker": { "Endpoint"
+### "ArQnaMaker": { "Endpoint"
 
 
 

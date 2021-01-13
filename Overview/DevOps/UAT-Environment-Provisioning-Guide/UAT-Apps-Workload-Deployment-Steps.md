@@ -312,6 +312,56 @@ destinationAPIMSASToken - *****
 publishEndpoint - develeoper.<env>.sqcp.qa
 
 1. For platform apis, ingress controller helm-config needs to be added for new env and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
+```
+- stage: Deploy_<env>
+    displayName: Deploy <env> stage
+    dependsOn: Build
+    variables:
+      - group: <env>
+      - name: azureResourceGroup
+        value: "rg-cpd-apps-aks-<env>-dev-we-01"
+      - name: kubernetesCluster
+        value: "aks-cpd-apps-<env>-we-01"
+      - name: containerRegistry
+        value: "acrcpdglobnpdwe01.azurecr.io"
+      - name: appConfigConnection
+        value: "https://acst-cpd-apps-str-<env>-we-01.azconfig.io"
+      - name: podIdentity
+        value: "mi-cpd-apps-aks-<env>-we-01"
+      - name: podIdentityClientId
+        value: ""
+      - name: podIdentityResourceId
+        value: "/subscriptions/<subscriptionId>/resourceGroups/rg-cpd-apps-aksnode-<env>-we-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mi-cpd-apps-aks-<env>-we-01"
+      - name: env
+        value: "<env>"
+    pool:
+      name: "<agentPool>"
+    jobs:
+      - deployment: Deploy
+        displayName: Deploy Dev APIs
+        environment: "<env>"
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: HelmInstaller@1
+                  inputs:
+                    helmVersionToInstall: "3.2.1"
+
+                - template: templates/helm-resources.yml
+                  parameters:
+                    updateHelmResources: false
+
+                - template: templates/deploy-dapr.yml
+                  parameters:
+                    installDapr: true
+
+                - template: templates/add-keda.yml
+                  parameters:
+                    addKeda: false
+
+                - template: templates/deploy-apps.yml
+```
 1. For integration function apps, add stage to the following pipeline pointing to uat resources
 [CD-Integration-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=301)
 1. For web apps, add stage to the following pipeline pointing to uat resources

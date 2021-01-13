@@ -285,11 +285,11 @@ Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigura
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | agw-cpd-apps-aks-<env>-we-01 | Contributor |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Reader |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | aks-cpd-apps-<env>-we-01-agentpool | Managed Identity Operator |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | acrcpdglobnpdwe01 | Acr Pull |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | rg-cpd-apps-aksnode-<env>-we-01 | Virtual Machine Contributor |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Identities  | vnet-cpd-pltf-<env>-we-01/snet-cpd-apps-aks-<env>-we-01 | Network Contributor |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | acrcpdglobnpdwe01 | Acr Pull |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Virtual Machine Contributor |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity  | vnet-cpd-pltf-<env>-we-01/snet-cpd-apps-aks-<env>-we-01 | Network Contributor |
 |spn-cmsbpa-dev|Service Principal|<env>-cdntasmu|CDN Endpoint Contributor|
 
 ## Configuring Notification Hubs for FCM and APNS

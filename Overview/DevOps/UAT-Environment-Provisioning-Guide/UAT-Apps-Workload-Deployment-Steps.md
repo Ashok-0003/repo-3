@@ -299,21 +299,7 @@ Obtain the Web API Key of [Google Firebase Cloud Account](https://console.fireba
 3. Test Send (Support and troubleshooting) for Apple and Windows Phone
 
 # Deployment of the solution components
-1. Update APIM Pipelines for new environments:
-[CI-APIMConfig-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=570)
--- Add variable group for new env in [build-template.yml](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FPipeline%2Ftemplates%2Fbuild-template.yml) 
--- Add [backend URLs input file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2FTemplateAndParameters) for the env
--- Backend URL IP should be poiniting to private IP of agw-cpd-apps-aks-<env>-we-01
--- Add a new pipeline for deployment of APIM ARM Templates by referencing the below pipeline
-[CD-APIMConfig-<env>-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=575)
-[CD-APIMDevPortal-rg-cpd-shrd-<env>-we-01-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=504)
-add the following variables:
-sourceAPIMName - apim-cpd-shrd-<env>-we-01
-sourceAPIMSASToken - ******
-destinationAPIMName - apim-cpd-shrd-<env>-we-01
-destinationAPIMSASToken - *****
-publishEndpoint - develeoper.<env>.sqcp.qa
-
+1. [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
 1. For platform apis, ingress controller helm-config needs to be added for new env and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
 ```
 - stage: Deploy_<env>

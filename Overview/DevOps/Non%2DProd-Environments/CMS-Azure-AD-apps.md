@@ -16,7 +16,7 @@
 #**There are two Azure AD apps used in CMS**
 # 1. spn-cmsbpa-<env>
 - Following permissions should be enabled for this app 
-  ![image.png](/.attachments/image-caed65b8-f0a1-4123-8302-662e23580f0e.png)
+  ![image.png](/.attachments/image-2852ce21-575e-4976-b2d4-f2346dc1fa0d.png)
 # 2. spn-cmsapi-<env>
 - Following permissions should be enabled for this app 
   ![image.png](/.attachments/image-9cc120e1-0530-4ed0-8749-1f05da542310.png)

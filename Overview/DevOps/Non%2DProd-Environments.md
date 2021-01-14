@@ -18,7 +18,7 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 <p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Subscription.Write</p>
 <p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Case.Read</p>
 <p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Case.Write</p>
-<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Review.Write</p> | 
+<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Review.Write</p> 
 | 7 | <p>Dynamics365Client</p> <p>clientid: 315614d7-eae9-4021-8836-640f4d3a9583</p><p>clientsecret: aYgcrfnV1xVsfVP~.94J3lctl.fR7f~jRM</p>|
 | 8 | Notification Service API <p>clientid: 016c0e73-6713-4fe9-a18e-b5f1be83de92</p><p>clientsecret: Xcs0~4IIgudrQKNJ3rtDSs_X5j-6f~.X~8</p>|
 | 9 | Smart Parking API ?? <p>clientid: 64db2dba-79c5-4b6c-84e0-696b3d1f0465</p><p>clientsecret: jgUnyX7VziON-~59iM_mL-F6J~MDMlzRtS</p>|

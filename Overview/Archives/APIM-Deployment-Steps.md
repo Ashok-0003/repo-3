@@ -1,3 +1,7 @@
+All updates being made in apim-api-config repo [README file](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2FREADME.md)
+
+<<Deprecated>>
+
 **Pre-requisities**
 
 1. API developed and deployed in an environment with AKS endpoint url.

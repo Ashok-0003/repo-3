@@ -11,7 +11,14 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 | 3 |b2c-extensions-app. Do not modify. Used by AADB2C for storing user data. <p>clientid:7a966e81-c9d4-4a5e-b170-d37c45e282bd</p>|
 | 4 | <p>Central-Platform-Core-APIs</p><p>clientid: bc67474e-612b-4d7f-b75a-ac54d45f143a</p><p>clientsecret: ~-P5-4IVO44Xvqau5.6XH0L~B9Vcgz473m</p><p>Scopes:</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Subscription.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Subscription.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Review.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/FieldService.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/FieldService.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/ServiceRequest.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/ServiceRequest.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Organisation.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Organisation.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Case.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Case.Read</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Profile.Write</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Profile.Read</p>| 
 | 5 | TASMU-Portal <p>clientid: dd0623e2-0163-4b05-82f8-ef798ff16c86</p>  Secret jNEGx~YBG.PUZj9969BvjZ7B~ZEL5a-W5y|
-| 6 | TASMU-MobileApp <p>clientid: c9e6a345-fabf-4cbc-94a5-1a94638aee51</p> | 
+| 6 | TASMU-MobileApp <p>clientid: c9e6a345-fabf-4cbc-94a5-1a94638aee51</p>
+<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Profile.Read</p>
+<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Profile.Write</p>
+<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Subscription.Read</p>
+<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Subscription.Write</p>
+<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Case.Read</p>
+<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Case.Write</p>
+<p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/Review.Write</p> | 
 | 7 | <p>Dynamics365Client</p> <p>clientid: 315614d7-eae9-4021-8836-640f4d3a9583</p><p>clientsecret: aYgcrfnV1xVsfVP~.94J3lctl.fR7f~jRM</p>|
 | 8 | Notification Service API <p>clientid: 016c0e73-6713-4fe9-a18e-b5f1be83de92</p><p>clientsecret: Xcs0~4IIgudrQKNJ3rtDSs_X5j-6f~.X~8</p>|
 | 9 | Smart Parking API ?? <p>clientid: 64db2dba-79c5-4b6c-84e0-696b3d1f0465</p><p>clientsecret: jgUnyX7VziON-~59iM_mL-F6J~MDMlzRtS</p>|

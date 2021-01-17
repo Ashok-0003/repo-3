@@ -18,7 +18,7 @@ TASMU_AD_CPP_UAT_D365 (environment access group)
 https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database
 
 - Azure AD app registrations
-The following app registrations are required in the **Azure Active Directory**.
+The following app registrations are required in the **Azure Active Directory**. Please follow steps mentioned in the **Appendix E - Azure AD App registration** to create app registrations for this purpose.
 spn-crm-common-integration-<env>
 spn-crm-profile-management-integration-<env>
 spn-crm-case-management-integration-<env>

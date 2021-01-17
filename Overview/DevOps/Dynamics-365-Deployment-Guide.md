@@ -126,6 +126,8 @@ Import the following data packages using configuration migration tool (refer App
 ![image.png](/.attachments/image-5153c0e9-d206-42f2-a26f-a140e5effa02.png)
 ![image.png](/.attachments/image-39a7f78b-8328-42ae-a815-cdac296f5a51.png)
 
+4.	Go back to the SLA record and activate it.
+
 ### 3.6	Case Routing Rules
 
 1.	Once the Case Routing rules solution is imported into the target instance, manually update the Queue in the rule items and then activate the Routing rule set.

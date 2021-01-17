@@ -62,7 +62,7 @@ Network Security Groups - nsg-cpd-apps-agwntf-uat-we-01
 Network Security Groups - nsg-cpd-apps-apim-uat-we-01
 Network Security Groups - nsg-cpd-apps-bkend-uat-we-01
 Network Security Groups - nsg-cpd-apps-testvms-uat-we-01
-Key Vault - kv-cpd-apps-uat-we-01
+Key Vault - kv-cpd-apps-uat-we-01 (Access Policy added only for ADO Service Connection)
 
 1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 **Dependencies** -
@@ -77,6 +77,18 @@ Route Tables - route-cpd-apps-testvms-uat-we-01
 [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 **Resources** -
 Virtual Network - vnet-cpd-pltf-uat-we-01
+
+1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+**Dependencies** - 
+**Resources** -
+kv-cpd-pltf-uat-we-01 (Access Policy added only for ADO Service Connection)
+mi-cpd-pltf-uat-we-01
+
+1. Updating Key Vault Access Policies - kv-cpd-pltf-uat-we-01 and redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+
+|Object Id| Secrets |  Certificates|
+|--|--|--|
+|mi-cpd-pltf-uat-we-01|Get|Get|
 
 
 # Deployment of Apps Infrastructure
@@ -117,8 +129,8 @@ Storage Account - stcpdappsstruatwe01
 |--|--|--|--|
 |apicon-cpd-apps-intcds-uat-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Id of the App Registration () - to authenticate Common Data Service Connection|
 |apicon-cpd-apps-prdcds-uat-we-01|Crm-Common-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the App Registration () - to authenticate Common Data Service Connection|
-|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|Global Key Vault or Environment Specific Key Vault| Client Id of the service principal having contributor access on integration event grid domain  to authenticate event grid api connection
-|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|Global Key Vault or Environment Specific Key Vault| Client Secret of the service principal having contributor access on integration event grid domain to authenticate event grid api connection|
+|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|kv-cpd-pltf-uat-we-01| Client Id of the service principal having contributor access on integration event grid domain  to authenticate event grid api connection
+|apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-pltf-uat-we-01| Client Secret of the service principal having contributor access on integration event grid domain to authenticate event grid api connection|
 
 3. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
@@ -144,13 +156,15 @@ Web App Bot - app-cpd-apps-cog-uat-we-01
 4. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
 [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
+Two secrets added to kv-cpd-pltf-uat-we-01
+[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Resources** -
 API Connection - apicon-cpd-apps-into365-uat-we-01 - API Connection to Office 365 Tenant (CMS)
 API Connection - apicon-cpd-apps-intsb-uat-we-01 - API Connection to Service Bus
 API Connection - apicon-cpd-apps-intspo-uat-we-01 - API Connection to Sharepoint Online
 API Connection - apicon-cpd-apps-integ-uat-we-01 - API Connection to Event Grid Domain
 API Connection - apicon-cpd-apps-intkv-uat-we-01
-API Connection - apicon-cpd-apps-integd-uat-we-01
+API Connection - apicon-cpd-apps-integd-uat-we-01 (Refer - kv-cpd-pltf-uat-we-01 for secret)
 API Connection - apicon-cpd-apps-intst-uat-we-01
 API Connection - apicon-cpd-apps-intcog-uat-we-01 - API Connection to Translator Cognitive Service
 API Connection - apicon-cpd-apps-ascalrt-uat-we-01 - API Connection to Azure Security Alert trigger.
@@ -220,6 +234,10 @@ Application Gateway - agw-cpd-apps-aks-uat-we-01
 1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+Certificated uploaded to kv-cpd-pltf-uat-we-01
+**Notes**
+Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
 **Resources** -
 Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01

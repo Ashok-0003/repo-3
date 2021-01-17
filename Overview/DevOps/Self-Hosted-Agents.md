@@ -10,7 +10,7 @@
 3. Android SDK
 4. Powershell 7
 5. Android SDK Build Tools - 29.0.x
-6. Java SDK - 1.8.x
+6. Java - 1.8.x
 7. Azure RM powershell modules
 8. Helm 3.4.x
 

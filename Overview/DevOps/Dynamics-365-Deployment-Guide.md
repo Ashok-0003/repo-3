@@ -12,6 +12,8 @@ TASMU_AD_CPP_D365_CSE_License (customer service license group)
 TASMU_AD_CPP_D365_FS_License (field service license group)
 TASMU_AD_CPP_UAT_D365 (environment access group)
 
+- A service account (preferably non interactive) for the purpose of performing automated deployment to Dynamics environment. This account should have access to the target Dynamics environment and must have System Administrator security role within target Dynamics environment (this is not an Azure AD role).
+
 - Provision the environment by following this document.
 https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database
 

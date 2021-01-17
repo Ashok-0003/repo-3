@@ -5,6 +5,7 @@ The purpose of this document is to explain the steps to deploy TASMU Dynamics 36
 The following are Prerequisites for the deployment.
 - Dynamics tenant and valid customer service enterprise and field service licenses.
 - At least 5 GB of database capacity remaining.
+- 'Dynamics 365 Administrator' Azure AD role for the person provisioning the environment.
 - Security groups must be created for environment access and licenses assignments similar to below. And the users requiring access must be present in these groups (membership in this groups can be updated after deployment also).
 TASMU_AD_CPP_D365_CSE_License (customer service license group)
 TASMU_AD_CPP_D365_FS_License (field service license group)

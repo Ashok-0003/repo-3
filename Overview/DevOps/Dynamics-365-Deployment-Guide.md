@@ -165,6 +165,15 @@ For UAT:
 ![image.png](/.attachments/image-c96bf1b6-3208-4286-a40d-bc9469dab2ac.png)
 9. Click on Create.
  
+### 3.10 Configure export to data lake
+1. Go to https://make.powerapps.com -> select the right environment -> click on Export to data lake -> click on New link to data lake.
+![image.png](/.attachments/image-fd0c30f3-6fd0-48b0-83c7-da388a5639e9.png)
+
+2. Select the right resource group, and storage account (contact data and ai team for the storage account name) and click on next.
+
+3. Select all entities in the next screen and finish the setup. More details below.
+https://docs.microsoft.com/en-us/powerapps/maker/data-platform/export-to-data-lake#select-and-export-dataverse-table-data-to-azure-data-lake-storage-gen2.
+
 ## Appendix A - Solution Import
 
 Follow the below steps sequentially to import CRM solution.

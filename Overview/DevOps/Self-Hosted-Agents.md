@@ -11,7 +11,11 @@
 1. Powershell 7
 1. Android SDK Build Tools - 29.0.x
 1. Java - 1.8.x
-1. [Azure powershell modules](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md#powershell-tools)
+1. Azure PowerShell module 2.1.0 
+1. AzureRM PowerShell module 2.1.0 
+1. Powershell modules 
+Pester	- 5.0.2
+PowerShellGet
 1. Helm 3.4.x
 1. Docker 19.03.13
 1. Node 14.15.1

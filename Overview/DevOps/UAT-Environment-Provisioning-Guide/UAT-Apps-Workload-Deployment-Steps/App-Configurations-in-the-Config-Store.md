@@ -1,6 +1,6 @@
 
-|Key Name| How to retrieve | Remarks |  |
-|--|--|--|--|
+|Key Name| How to retrieve | Remarks/ Examples (UAT)|
+|--|--|--|
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:TenantID|Directory (tenant) ID of Azure AD App spn-cmsbpa-<env>||
@@ -38,4 +38,5 @@
 |Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
 |Bot.CognitiveModels:CognitiveModels:En-us:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/||
 |EventGridSettings:DomainEndpoint|Name of the resource https://egd-cpd-apps-int-<env>-we-01.westeurope-1.eventgrid.azure.net/api/events||
+|Crm.CaseManagement.DynamicsSettings:ClientId| Client Id of App Registration -  | |
 

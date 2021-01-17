@@ -5,14 +5,23 @@
 - OS - Windows Server 2019 (latest)
 
 # Capabilities:
-1. Visual Studio Enterprise 2019 (v16.8.x) 
-2. Azure CLI - 2.16.0
-3. Android SDK
-4. Powershell 7
-5. Android SDK Build Tools - 29.0.x
-6. Java - 1.8.x
-7. Azure RM powershell modules
-8. Helm 3.4.x
+1. [Visual Studio Enterprise 2019 (v16.8.x)](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md#visual-studio-enterprise-2019) 
+1. Azure CLI - 2.16.0
+1. Android SDK
+1. Powershell 7
+1. Android SDK Build Tools - 29.0.x
+1. Java - 1.8.x
+1. [Azure powershell modules](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md#powershell-tools)
+1. Helm 3.4.x
+1. Docker 19.03.13
+1. Node 14.15.1
+1. Kubectl 1.20.0
+1. NuGet 5.8.0.6930
+1. NPM 6.14.8
+1. Microsoft Edge
+1. Google Chrome
+1. OpenSSL 1.1.1
+
 
 # Agent Pools:
 1. tasmumsagents

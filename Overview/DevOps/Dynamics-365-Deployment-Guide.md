@@ -327,7 +327,7 @@ To create an application registration in Azure AD, follow these steps.
 3. In the Register an application form provide a name for the app, select Accounts in this organizational directory only, and choose Register. A redirect URI is not needed for the purpose of this deployment.
 ![image.png](/.attachments/image-e90fad09-c63f-4942-99d3-6bccc5fcf653.png)
 
-4. Select Overview in the navigation panel, record the Display name, Application ID, and Directory ID values of the app registration. You will provide these later in the code sample.
+4. Select Overview in the navigation panel, record the Display name, Application ID, and Directory ID values of the app registration. You will need these in the later steps.
 
 5. In the navigation panel, select Certificates & secrets
 

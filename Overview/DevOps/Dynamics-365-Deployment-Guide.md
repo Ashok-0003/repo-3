@@ -195,7 +195,16 @@ For UAT:
 https://docs.microsoft.com/en-us/powerapps/maker/data-platform/export-to-data-lake#select-and-export-dataverse-table-data-to-azure-data-lake-storage-gen2.
 
 ### 3.11 Create and assign security role to Application Users
-1. Create the following application users by following Appendix D.
+1. Create the following application users by following "Appendix D - Application User Creation".
+
+| Name | Security Role |
+|--|--|
+| spn-crm-common-integration-<env> | Common - Integration |
+| spn-crm-profile-management-integration-<env> | Profile Management - Integration |
+| spn-crm-case-management-integration-<env> | Case Management - Integration |
+
+More details on application users below (only FYI).
+https://docs.microsoft.com/en-us/powerapps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation
 
 ## Appendix A - Solution Import
 

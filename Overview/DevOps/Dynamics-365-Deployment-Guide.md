@@ -329,8 +329,8 @@ To create an application registration in Azure AD, follow these steps.
 
 4. Select Overview in the navigation panel, record the Display name, Application ID, and Directory ID values of the app registration. You will need these in the later steps.
 
-5. In the navigation panel, select Certificates & secrets
+5. In the navigation panel, select Certificates & secrets.
 
-6. Below Client secrets, choose + New client secret to create a secret
+6. Below Client secrets, choose + New client secret to create a secret.
 
 7. In the form, enter a description and select Add. Record the secret string. You will not be able to view the secret again once you leave the current screen.

@@ -24,8 +24,8 @@ Follow below steps to create and configure above queues.
 
 6.	Repeat the above steps to create other queues listed.
 
-### 1.2 Configure Team and assign roles
-The following is the team to be created. 
+### 1.2 Configure Team [Automated]
+The following is the team to be created.
 1.	Knowledge Article Approvers
 
 Follow steps below to create and configure above team.
@@ -41,10 +41,13 @@ Follow steps below to create and configure above team.
  
 5.	Click on ribbon button + NEW
 ![image.png](/.attachments/image-1ea20d7b-7052-447f-8557-61a8eedc4274.png)
- 
+
 6.	Provide the Team Name and other details as shown below and save the record.
  ![image.png](/.attachments/image-d3e44b15-25f5-4beb-9c29-b23ddf907b51.png)
-7.	Click on MANAGE ROLES ribbon button and assign security role ‘Tasmu Article Approver’  to the team and click on OK button as highlighted in below screen.
+
+### 1.3 Assign security roles to the teams
+ 
+1.	Open the team crated in the previous step, click on MANAGE ROLES ribbon button and assign security role ‘Tasmu Article Approver’  to the team and click on OK button as highlighted in below screen.
  ![image.png](/.attachments/image-9131576b-8fee-49de-a763-0894906df37c.png)
 
 ## 2.Deployment

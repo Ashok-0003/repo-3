@@ -8,7 +8,7 @@ The following are Prerequisites for the deployment.
 - Security groups must be created for environment access and licenses assignments similar to below. And the users requiring access must be present in these groups (membership in this groups can be updated after deployment also).
 TASMU_AD_CPP_D365_CSE_License (customer service license group)
 TASMU_AD_CPP_D365_FS_License (field service license group)
-TASMU_AD_CPP_PRE_D365 (environment access group)
+TASMU_AD_CPP_UAT_D365 (environment access group)
 
 - Provision the environment by following this document.
 https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database

@@ -318,3 +318,19 @@ To create an unlicensed "application user" in your environment, follow these ste
 ![image.png](/.attachments/image-4fae397c-5811-4638-b5ca-51cf40f9180f.png)
 
 7. Before exiting the user form, choose MANAGE ROLES and assign a security role to this application user so that the application user can access the desired organization data.
+
+## Appendix E - Azure AD App registration
+To create an application registration in Azure AD, follow these steps.
+
+1. Navigate to https://portal.azure.com and switch to the same directory as target dynamics environment.
+2. Open Azure Active Directory -> App registrations -> Choose + New registration. 
+3. In the Register an application form provide a name for the app, select Accounts in this organizational directory only, and choose Register. A redirect URI is not needed for the purpose of this deployment.
+![image.png](/.attachments/image-e90fad09-c63f-4942-99d3-6bccc5fcf653.png)
+
+4. Select Overview in the navigation panel, record the Display name, Application ID, and Directory ID values of the app registration. You will provide these later in the code sample.
+
+5. In the navigation panel, select Certificates & secrets
+
+6. Below Client secrets, choose + New client secret to create a secret
+
+7. In the form, enter a description and select Add. Record the secret string. You will not be able to view the secret again once you leave the current screen.

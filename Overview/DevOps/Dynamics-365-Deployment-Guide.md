@@ -148,8 +148,9 @@ Import the following data packages using configuration migration tool (refer App
 ![image.png](/.attachments/image-ac7829c2-780f-47e4-95e3-a42e85eea759.png)
 4. Click on Add Workflow automation, new Workflow automation pop up appears.
 ![image.png](/.attachments/image-fa38e7dd-a014-40c9-ad0a-73ffd57a9a11.png)
-5. Enter the details, select the Subscription and Resource group which has the storage blob container which needs to be monitored.
+5. Enter the details name as alert-rg-cpd-apps-int-<env>-we-01, select the Subscription and Resource group which has the storage blob container which needs to be monitored.
 ![image.png](/.attachments/image-d0d006ae-6be8-45c1-a2b4-9d56ed66a728.png)
+![image.png](/.attachments/image-3807ade8-6968-4353-ac39-de66a88d550b.png)
 6. Select Security Center data types as Threat detection alerts.
 ![image.png](/.attachments/image-58247740-fd57-4408-9ae7-a7fb156e35e3.png)
 7. Add 'Potential malware uploaded to a storage blob container' in Alert name contains. In Alert severity select All severities selected.

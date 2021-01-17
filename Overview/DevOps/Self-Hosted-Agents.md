@@ -14,4 +14,13 @@ Capabilities:
 7. Azure RM powershell modules
 8. Helm 3.4.x
 
+Agent Pools:
+1. tasmumsagents
+2. webappspool
+3. platformapispool
+4. datapool
+5. testagentpool
+Pipelines:
+<List to be updated>
+
 

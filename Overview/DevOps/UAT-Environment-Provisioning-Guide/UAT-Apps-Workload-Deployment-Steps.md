@@ -171,7 +171,6 @@ API Connection - apicon-cpd-apps-ascalrt-uat-we-01 - API Connection to Azure Sec
 API Connection - apicon-cpd-apps-intcds-uat-we-01 - API Connection to Common Data Service for Case api.
 API Connection - apicon-cpd-apps-prdcds-uat-we-01- API Connection to Common Data Service for market place product api.
 App Service Plan - plan-cpd-apps-int-uat-we-01
-Event Hub - ev-cpd-apps-int-uat-we-01
 Event Grid Domain - egd-cpd-apps-int-uat-we-01
 Function App - func-cpd-apps-intbpa-uat-we-01 - Function App to subscribe and process the Sharepoint data
 Function App - func-cpd-apps-intntf-uat-we-01 - Function App to track the changes of Sharepoint data

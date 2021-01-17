@@ -1,5 +1,6 @@
 # 1 	Purpose
-The purpose of this document is to explain the steps to deploy TASMU Dynamics 365 CE Solution.
+The purpose of this document is to explain the steps to deploy TASMU Dynamics 365 CE Solution. Pipeline steps are documented below.
+https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/crm-platform?anchor=deployment
 
 # 1 	Prerequisites
 The following are Prerequisites for the deployment.

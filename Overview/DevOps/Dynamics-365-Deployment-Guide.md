@@ -15,6 +15,12 @@ TASMU_AD_CPP_UAT_D365 (environment access group)
 - Provision the environment by following this document.
 https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database
 
+- Azure AD app registrations
+The following app registrations are required in the **Azure Active Directory***.
+spn-crm-common-integration-<env>
+spn-crm-profile-management-integration-<env>
+spn-crm-case-management-integration-<env>
+
 ## 1	Pre-Deployment
 ### 1.1 Configure Queues [Automated]
 The following are the queues to be created. 
@@ -188,6 +194,9 @@ For UAT:
 3. Select all entities in the next screen and finish the setup. More details below.
 https://docs.microsoft.com/en-us/powerapps/maker/data-platform/export-to-data-lake#select-and-export-dataverse-table-data-to-azure-data-lake-storage-gen2.
 
+### 3.11 Create and assign security role to Application Users
+1. Create the following application users by following Appendix D.
+
 ## Appendix A - Solution Import
 
 Follow the below steps sequentially to import CRM solution.
@@ -276,3 +285,25 @@ Configuration Migration Utility is available as part of Dynamics 365 SDK.
 11. Data Imported from excel and Successfully imported the record.
 
 ![14.DataImported.png](/.attachments/14.DataImported-c01af79e-814d-4b6c-b34a-013b127ef7e7.png)
+
+## Appendix D - Application User Creation
+To create an unlicensed "application user" in your environment, follow these steps. This application user will be given access to your environment's data on behalf of the end user who is using your application.
+
+1. Navigate to your Dataverse environment (https://[org].crm.dynamics.com).
+
+2. Navigate to Settings > Security > Users.
+
+3. Choose Application Users in the view filter.
+
+4. Select + New.
+
+5. In the Application User form, enter the required information. In the Application ID field, enter the application ID of the app you registered earlier in Azure AD.
+![image.png](/.attachments/image-7501a7d9-6a45-4a61-bfdd-b616b75cb7d4.png)
+
+6. After selecting SAVE, if all goes well, the User Name, Application ID URI, Azure AD Object Id, Full Name, and Primary Email fields will auto-populate with correct values where:
+  User Name == 'Application Name + Application ID'@TenantID.com
+  Full Name == 'Application Name'
+  Primary Email == User Name
+![image.png](/.attachments/image-4fae397c-5811-4638-b5ca-51cf40f9180f.png)
+
+7. Before exiting the user form, choose MANAGE ROLES and assign a security role to this application user so that the application user can access the desired organization data.

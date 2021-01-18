@@ -146,7 +146,8 @@ https://customervoice.microsoft.com/
 
 ![image.png](/.attachments/image-6f644559-5c10-4094-a6b5-f675ec360577.png)
  
-5.	Browse Flows  and Turn on Send Survey Flow.
+5.	Go to Send tab and click on Edit in Power Automate and Turn on Send Survey Flow.
+![image.png](/.attachments/image-0c719ccd-b197-47e4-9572-1f71c2259bc4.png)
 ![image.png](/.attachments/image-6cfc9a74-53fe-4196-ab28-1ad3778af50c.png)
  
 ### 3.5	Enable SLA Flows after deployment

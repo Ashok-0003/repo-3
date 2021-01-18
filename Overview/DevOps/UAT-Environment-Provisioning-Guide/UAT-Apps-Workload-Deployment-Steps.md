@@ -135,12 +135,13 @@ Storage Account - stcpdappsstruatwe01
 3. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+App Registration - spn-bot-<env>
 **Resources** -
 App Service - appcog-cpd-apps-qna-uat-we-01 - App service for English QnA
 App Service - appcog-cpd-apps-arqna-uat-we-01 - App service for Arabic QnA
 App Service - app-cpd-apps-bot-uat-we-01 - App service for Bot API
 App Service Plan - plan-cpd-apps-cog-we-01
-Bot Service - bot-cpd-apps-cog-uat-we-01
+Bot Service - bot-cpd-apps-cog-uat-we-01 (appId is ClientID of spn-bot-<env>)
 Cognitive Service Luis Authoring - cog-cpd-apps-luisath-uat-we-01
 Cognitive Service Luis Runtime - cog-cpd-apps-luisrt-uat-we-01
 Cognitive Service QnAMaker English - appcog-cpd-apps-qna-uat-we-01 

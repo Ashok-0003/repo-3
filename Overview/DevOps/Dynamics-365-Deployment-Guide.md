@@ -129,11 +129,11 @@ Import the following data packages using configuration migration tool (refer App
 
 ### 3.4	Configure customer voice survey on case resolve.
 
-1.	Browse customer voice URL and create new Project.  In Project Template select Support.
+1.	Browse customer voice URL and create new Project.  In Project Template select **Support**.
 https://customervoice.microsoft.com/
 ![image.png](/.attachments/image-e84b8208-422a-45cf-bdbc-f83cc8aed3b0.png)
  
-2.	Select the Environment and Create.
+2.	Select an existing Environment and click on **Select and Clone**.
 ![image.png](/.attachments/image-b633e72e-db38-4172-abb3-8c92dfd30451.png)
  
 3.	Expand the customization and create Case ID Variable.

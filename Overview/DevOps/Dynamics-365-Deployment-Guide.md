@@ -136,10 +136,14 @@ https://customervoice.microsoft.com/
 2.	Select an existing Environment and click on **Select and Clone**.
 ![image.png](/.attachments/image-b633e72e-db38-4172-abb3-8c92dfd30451.png)
  
-3.	Expand the customization and create Case ID Variable.
+3.	Expand the customization and Click on Personalization and create Case ID Variable.
+![image.png](/.attachments/image-956a8ccf-19e7-43be-9ebd-39c4c457fd37.png)
 ![image.png](/.attachments/image-b7a8f009-926a-462b-aa09-ccab5186c65a.png)
  
-4.	Edit the Design Section and the Case ID Variable in the content.
+4.	Edit the Design Section and add Case ID Variable in the content.
+
+"Hi {{First Name}},We are contacting you regarding the case {{ID}} you had with us.We appreciate your business, and we hope you had a great experience with our customer service. Please share your feedback so we can make the experience even better."
+
 ![image.png](/.attachments/image-6f644559-5c10-4094-a6b5-f675ec360577.png)
  
 5.	Browse Flows  and Turn on Send Survey Flow.

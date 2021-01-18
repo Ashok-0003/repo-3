@@ -3,9 +3,7 @@
 |--|--|--|
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
-|Cms.Common:TenantID|Directory (tenant) ID of Azure AD App spn-cmsbpa-<env>||
 |Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>||
-|Cms.Function:ClientId|Application (client) ID of Azure AD app spn-cmsbpa-<env>||
 |Cms.Function:GlobalSiteUrl|URL of global site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-global`|
 |Cms.Function:MarketplaceSiteUrl|URL of marketplace site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-marketplace`|
 |Cms.Function:EventGridApiUrl|URL of the event integration api||

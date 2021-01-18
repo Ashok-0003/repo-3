@@ -28,7 +28,7 @@ The following app registrations are required in the **Azure Active Directory B2C
 Refer to the "Dynamics365Client" app registration in the non prod b2c tenant for reference as shown below. API permissions shown below needs to be given and admin consent needs to be given by a Global Admin of the B2C tenant. Keep the client id and secret of this app for later reference.
 ![image.png](/.attachments/image-263913e3-7020-496c-8bdf-355dc7d7868a.png)
 
-- Setup deployment pipelines by following the document below.
+- Setup deployment pipelines by following the document below. This step requires Azure DevOps permissions to create new **service connections** as well as permission to **edit the pipeline(s)** mentioned in the document below.
 https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/crm-platform?anchor=deployment
 
 ## 1	Pre-Deployment

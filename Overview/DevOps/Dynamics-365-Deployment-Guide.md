@@ -133,7 +133,7 @@ Import the following data packages using configuration migration tool (refer App
 https://customervoice.microsoft.com/
 ![image.png](/.attachments/image-e84b8208-422a-45cf-bdbc-f83cc8aed3b0.png)
  
-2.	Click on Next -> select the target environment and click on **Select and Close** -> click on **Create**.
+2.	Click on Next -> select the target environment and click on **Select and Close** -> click on **Create**. Below is example for Tasmu Config environment.
 ![image.png](/.attachments/image-b633e72e-db38-4172-abb3-8c92dfd30451.png)
  
 3.	Expand the customization and Click on Personalization and create Case ID Variable.

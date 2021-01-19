@@ -58,12 +58,12 @@
 |CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01||
 |CDNSettings:Endpoint|Name of the CDN endpoint resource <env>-cdntasmu||
 |CDNSettings:ResourceGroup|Name of the resource rg-cpd-shrd-<env>-we-01||
-|Cms.Api:ClientApp| @<ACAA2713-B2D1-668C-A427-A1DB1890F198> ||
-|Cms.Api:ClientId|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>||
+|Cms.Api:ClientApp| App Name of Azure AD app spn-cmsapi-<env>|Eg. `NONISV|TASMU|spn-cmsapi-<env>`|
+|Cms.Api:ClientId|Application (client) ID of Azure AD app spn-cmsapi-<env>||
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:TargetURL|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>||
-|Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>|
+|Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>|Eg. `NONISV|TASMU|spn-cmsbpa-<env>`|
 |Cms.Function:GlobalSiteUrl|URL of global site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-global`|
 |Cms.Function:MarketplaceSiteUrl|URL of marketplace site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-marketplace`|
 |Cms.Function:EventGridApiUrl|URL of the event integration api|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>|

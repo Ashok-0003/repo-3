@@ -3,7 +3,7 @@
 |--|--|--|--|--|
 |kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret|Client Secret from adminportal app registration in B2C Tenant||
 |kv-cpd-apps-<env>-we-01|AdminPortal-AuthClaims-GroupId|Secret|Azure Ad "Platformadmin" Group Object Id||
-|kv-cpd-apps-<env>-we-01|Azure-Search-Key|Secret|||
+|kv-cpd-apps-<env>-we-01|Azure-Search-Key|Secret|Primary Admin key of resource srch-cpd-apps-cog-<env>-we-01 ||
 |kv-cpd-apps-<env>-we-01|BotAppSecret|Secret|||
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisAuthSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luiauth-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisRtSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luisrt-<env>-we-01** | |

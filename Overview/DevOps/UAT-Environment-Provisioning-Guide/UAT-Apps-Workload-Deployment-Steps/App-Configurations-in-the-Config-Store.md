@@ -89,37 +89,43 @@
 |ManageEventFunction.AzureADOptions:Instance|Instance of  @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg: |
 |ManageEventFunction.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
 |ManageEventFunction.AzureADOptions:TenantId|Tenant Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg:|
-|Mobile:AccountManagementApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C>|Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
-|Mobile:AuthenticationSettings:BoPolicySignUpSignIn| @<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthenticationSettings:ClientId|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthenticationSettings:PolicyChangePassword|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthenticationSettings:PolicyLinkAccounts|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthenticationSettings:PolicyResetPassword|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthenticationSettings:PolicySignUpSignIn|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthorizationSettings:CentralScope,0|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthorizationSettings:CentralScope,1|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthorizationSettings:CentralScope,2|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthorizationSettings:CentralScope,3|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthorizationSettings:CentralScope,4|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthorizationSettings:CentralScope,5|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthorizationSettings:CentralScope,6|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:AuthzPaymentEndpoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://account.<env>.sqcp.qa/authorizecard`|
-|Mobile:BillingInfoApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/billingentityinfo`|
-|Mobile:CaseApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/case`|
-|Mobile:CatalogueEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/catalogue`|
-|Mobile:ChatBotUrl|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://<env>-cdntasmu.azureedge.net/app/botwebchat/botchatui.html?isMobile=true&locale=`|
-|Mobile:ConfigApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/config`|
-|Mobile:CustomerManagementApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/customermanagement`|
-|Mobile:DemographicApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/demographic`|
-|Mobile:EndUserLicenseAgreementLink|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:FileUploadEndpoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
-|Mobile:InvoiceApiEndpoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/invoice`|
-|Mobile:KbApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/knowledge`|
-|Mobile:OrderApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/ordermanagement`|
-|Mobile:PaymentApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/payment`|
-|Mobile:ProfileApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa/profile`|
-|Mobile:SearchApiEndpoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> |Eg. `https://api.<env>.sqcp.qa`|
-|Mobile:TermsAndConditionsLink|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
+|Mobile:AccountManagementApiEndPoint|API endpoint for accountmanagement service |Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
+|Mobile:AuthenticationSettings:BoPolicySignUpSignIn|AAD B2C policy for business owner signup  ||
+|Mobile:AuthenticationSettings:ClientId|App registration for the mobile application in AAD B2C  | guid-type value|
+|Mobile:AuthenticationSettings:PolicyChangePassword|AAD B2C policy for changing password ||
+|Mobile:AuthenticationSettings:PolicyLinkAccounts|AAD B2C policy for link accounts  ||
+|Mobile:AuthenticationSettings:PolicyResetPassword|AAD B2C policy for resetting password ||
+|Mobile:AuthenticationSettings:PolicySignUpSignIn|AAD B2C policy for individual user signup ||
+|Mobile:AuthenticationSettings:Tenant|AAD B2C tenant name ||
+|Mobile:AuthenticationSettings:IosKeyChainGroup|AAD B2C iOS key chain group ||
+|Mobile:AuthorizationSettings:CentralScope,0|API scope permission required for API used ||
+|Mobile:AuthorizationSettings:CentralScope,1|API scope permission required for API used ||
+|Mobile:AuthorizationSettings:CentralScope,2|API scope permission required for API used ||
+|Mobile:AuthorizationSettings:CentralScope,3|API scope permission required for API used ||
+|Mobile:AuthorizationSettings:CentralScope,4|API scope permission required for API used ||
+|Mobile:AuthorizationSettings:CentralScope,5|API scope permission required for API used ||
+|Mobile:AuthorizationSettings:CentralScope,6|API scope permission required for API used ||
+|Mobile:AuthzPaymentEndpoint|The URL for authorization card site |Eg. `https://account.<env>.sqcp.qa/authorizecard`|
+|Mobile:BillingInfoApiEndPoint|API endpoint for billing service |Eg. `https://api.<env>.sqcp.qa/billingentityinfo`|
+|Mobile:CaseApiEndPoint|API endpoint for service and support service |Eg. `https://api.<env>.sqcp.qa/case`|
+|Mobile:CatalogueEndPoint|API endpoint for catalogue service |Eg. `https://api.<env>.sqcp.qa/catalogue`|
+|Mobile:ChatBotUrl|The URL for TASMU Chat bot |Eg. `https://<env>-cdntasmu.azureedge.net/app/botwebchat/botchatui.html?isMobile=true&locale=`|
+|Mobile:ConfigApiEndPoint|API endpoint for config service |Eg. `https://api.<env>.sqcp.qa/config`|
+|Mobile:CustomerManagementApiEndPoint|API endpoint for customermanagement service |Eg. `https://api.<env>.sqcp.qa/customermanagement`|
+|Mobile:DemographicApiEndPoint|API endpoint for demographic service |Eg. `https://api.<env>.sqcp.qa/demographic`|
+|Mobile:EndUserLicenseAgreementLink|The URL for payment EULA ||
+|Mobile:FileUploadEndpoint|The URL for file upload ||
+|Mobile:InvoiceApiEndpoint|API endpoint for Invoice service |Eg. `https://api.<env>.sqcp.qa/invoice`|
+|Mobile:KbApiEndPoint|API endpoint for Knowledge Base service |Eg. `https://api.<env>.sqcp.qa/knowledge`|
+|Mobile:OrderApiEndPoint|API endpoint for Order service |Eg. `https://api.<env>.sqcp.qa/ordermanagement`|
+|Mobile:PaymentApiEndPoint|API endpoint for Payment service |Eg. `https://api.<env>.sqcp.qa/payment`|
+|Mobile:ProfileApiEndPoint|API endpoint for Profile service |Eg. `https://api.<env>.sqcp.qa/profile`|
+|Mobile:SearchApiEndpoint|The URL for Azure search service |Eg. `https://api.<env>.sqcp.qa`|
+|Mobile:TermsAndConditionsLink|The URL for Terms & Conditions link for payments ||
+|Mobile.VideoUrl|The URL for the video in About page ||
+|Mobile.MaxFileUploadSizeKB|The max file size in KB||
+|Mobile.DefaultCacheTtl|The default cache time-to-live time in sec ||
+|Mobile.LogLevel|The log level for application instrumentation||
 |NotificationFunctionSettings:ApimRootUrl|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5> |Eg. `https://api.<env>.sqcp.qa`|
 |NotificationFunctionSettings:FromAddress| @<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5>  ||
 |NotificationFunctionSettings:FromName|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5>  ||

@@ -1,14 +1,14 @@
 
 |Key Name| How to retrieve | Remarks/ Examples (UAT)|
 |--|--|--|
-|AdminPortal.ADAuth:Authority| @<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E>|   |
-|AdminPortal.ADAuth:ClientId|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> | |
-|AdminPortal.ADAuth:Domain|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> | |
-|AdminPortal.ADAuth:Scope| @<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E>| |
-|AdminPortal.ADAuth:TenantId|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> | |
+|AdminPortal.ADAuth:Authority| Authority url with B2C TenantId| Eg. `https://login.microsoftonline.com/<TenantId>/v2.0`  |
+|AdminPortal.ADAuth:ClientId|ClientId of adminportal app registration in B2C Tenant |Eg. `9b6a8eef-0181-4a7e-a5ee-7e0477db25ad` |
+|AdminPortal.ADAuth:Domain|B2C Tenant Domain Name | Eg.`tasmucpb2cnonprod.onmicrosoft.com`|
+|AdminPortal.ADAuth:Scope| central platform api scope| |
+|AdminPortal.ADAuth:TenantId| Directory(tenant) Id of adminportal app registration |Eg.`24f9d756-bf0c-43e9-ad5e-2073ae2d6698` |
 |AppSettings:ApiBaseUrl| |Eg. `https://api.<env>.sqcp.qa`|
 |AppSettings:InstrumentationKey| Instrumentation Key of the resource (appi-cpd-apps-mon-<env>-we-01) | |
-|AzureSearchFunction.AzureSearchSettings:ServiceName|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> |Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
+|AzureSearchFunction.AzureSearchSettings:ServiceName|Search Index Name from resource srch-cpd-apps-cog-<env>-we-01|Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
 |Bot.AppSettings:ArQnaMaker:Endpoint| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> |Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|
 |Bot.AppSettings:ArQnaMaker:EndpointKey| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:ArQnaMaker:FaqKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||

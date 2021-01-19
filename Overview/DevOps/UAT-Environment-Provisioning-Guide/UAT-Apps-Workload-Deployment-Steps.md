@@ -282,7 +282,8 @@ redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Centra
 |func-cpd-apps-pt-uat-we-01|Get, List, Set||
 
 
-### 10. Update Key Vault Access Policies -kv-cpd-apps-uat-we-01 and redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+### 10. Update Key Vault Access Policies -kv-cpd-apps-uat-we-01
+redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|

@@ -20,6 +20,14 @@ TASMU_AD_CPP_UAT_D365 (environment access group)
 1.7. Provision the environment by following this document.
 https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database
 
+Verify that the environment is provisioned in **West Europe** from the [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=3.10-configure-export-to-data-lake) configuration page. If its not, raise a product support ticket to get it moved to West Europe.
+
+Make sure to enter values based on the target environment. Below is sample from UAT. **For production, the type needs to be selected as Production instead of Sandbox**.
+
+![image.png](/.attachments/image-dc21cff4-9dda-440b-8744-c419eff61b80.png)
+
+![image.png](/.attachments/image-7ae998b3-d387-4776-9afe-b35bce0aee46.png)
+
 1.8. Azure AD app registrations
 The following app registrations are required in the **Azure Active Directory**. Please follow steps mentioned in the **Appendix E - Azure AD App registration** to create app registrations for this purpose.
 spn-crm-common-integration-<env>

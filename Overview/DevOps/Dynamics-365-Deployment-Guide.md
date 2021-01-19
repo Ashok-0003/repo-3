@@ -35,7 +35,7 @@ Refer to the "Dynamics365Client" app registration in the non prod b2c tenant for
 - Setup deployment pipelines by following the document below. This step requires Azure DevOps permissions to create new **service connections** as well as permission to **edit the pipeline(s)** mentioned in the document below.
 https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/crm-platform?anchor=deployment
 
-## 3	Pre-Deployment
+# 3	Pre-Deployment
 ### 3.1 Configure Queues [Automated]
 The following are the queues to be created. 
 1.	Business Operations Queue
@@ -62,7 +62,7 @@ Follow below steps to create and configure above queues.
 
 6.	Repeat the above steps to create other queues listed.
 
-## 4 Deployment
+# 4 Deployment
 ### 4.1	CRM Solution Import [Automated]
 
 The following are the CRM Customizations and related solutions shown below to be imported sequentially in the order mentioned to the required CRM online instance.
@@ -90,7 +90,7 @@ Please refer to Appendix A for detailed steps to import the CRM Solution.
 Note: During import of managed solutions into ETE Organization, make sure to selelct ‘Overwrite Customizations option’ in ‘Import Options’ window as shown below.
  ![image.png](/.attachments/image-cced0f4a-4239-4d3c-9d4b-c0d775e8b1e3.png)
 
-## 5.	Post Deployment Steps
+# 5.	Post Deployment Steps
 ### 5.1	Import Data [Automated]
 Import the following data packages using configuration migration tool (refer Appendix B).
 •	MasterData.zip

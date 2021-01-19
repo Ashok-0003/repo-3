@@ -4,7 +4,7 @@
 |AdminPortal.ADAuth:Authority| Authority url with B2C TenantId| Eg. `https://login.microsoftonline.com/<TenantId>/v2.0`  |
 |AdminPortal.ADAuth:ClientId|ClientId of adminportal app registration in B2C Tenant |Eg. `9b6a8eef-0181-4a7e-a5ee-7e0477db25ad` |
 |AdminPortal.ADAuth:Domain|B2C Tenant Domain Name | Eg.`tasmucpb2cnonprod.onmicrosoft.com`|
-|AdminPortal.ADAuth:Scope| central platform api scope| |
+|AdminPortal.ADAuth:Scope| SmartParking api scope from smartparking api app registration|Eg.`https://tasmucpb2cnonprod.onmicrosoft.com/SmartParkingAPI/.default` |
 |AdminPortal.ADAuth:TenantId| Directory(tenant) Id of adminportal app registration |Eg.`24f9d756-bf0c-43e9-ad5e-2073ae2d6698` |
 |AppSettings:ApiBaseUrl| |Eg. `https://api.<env>.sqcp.qa`|
 |AppSettings:InstrumentationKey| Instrumentation Key of the resource (appi-cpd-apps-mon-<env>-we-01) | |

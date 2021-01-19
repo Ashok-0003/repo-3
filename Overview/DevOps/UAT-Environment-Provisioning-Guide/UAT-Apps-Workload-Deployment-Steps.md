@@ -11,29 +11,30 @@
 1. Specific resource group components can be deployed next
 1. Solution components can be deployed on the azure resources at the end
 
-# Global Resources for a tenant
-1. [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
+## Global Resources for a tenant
+### 1. [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
 **Dependencies** - 
 **Resources** -
 Azure Container Registry - acrcpdglobnpdwe01
 Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
 Send Grid Account 
 
-2. [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
+###2. [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
 **Dependencies** - 
 **Resources** -
 Storage Account - stcpdglobacmwe01
 [Create a daily export of azure consumption metering for 6D Billing](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal#create-a-daily-export)
 
-# Creation and set up of AD B2C Tenant
+## Creation and set up of AD B2C Tenant
 Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharepoint.com/:w:/s/TASMU-CentralPlatformPMO/EdIKRGu6E1VGnA-naCTSBXQBjgdtCiT9C6n5E9rehxUWmw?e=ZSX2Yf)
 
-# Register the applications in AD and AD B2C
+## Register the applications in AD and AD B2C
 1. [AD B2C Registrations](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad-b2c)
 2. [AAD Registrations](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad---tasmusqcp.onmicrosoft.com)
 
-# Deployment of Azure Infrastructure
-1. [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
+# Deployment of networking and monitoring infrastructure
+### 1. Shared Monitoring Resource Group
+ [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
 **Dependencies** - 
 **Resources** -
 Application Insights - appi-cpd-shrd-mon-uat-we-01
@@ -42,7 +43,8 @@ Event Hub Namespaces - evhns-cpd-shrd-mon-uat-we-01
 Log Analytics - log-cpd-shrd-mon-uat-we-01
 Storage Account - stcpdshrddiaguatwe01
 
-1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+### 2. Apps Monitoring Resource Group
+[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 **Dependencies** - 
 **Resources** -
 Application Insights - appi-cpd-apps-mon-uat-we-01
@@ -51,7 +53,8 @@ Event Hub Namespaces - evhns-cpd-apps-mon-uat-we-01
 Log Analytics - log-cpd-apps-mon-uat-we-01
 Storage Account - stcpdappsdiaguatwe01
 
-1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+### 3. Apps Security Resource Group
+ [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 **Resources** -
 Network Security Groups - nsg-cpd-apps-aks-uat-we-01
@@ -64,7 +67,8 @@ Network Security Groups - nsg-cpd-apps-bkend-uat-we-01
 Network Security Groups - nsg-cpd-apps-testvms-uat-we-01
 Key Vault - kv-cpd-apps-uat-we-01 (Access Policy added only for ADO Service Connection)
 
-1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+### 4. Apps Networking Resource Group
+[rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 **Dependencies** -
 **Resources** -
 Route Tables - route-cpd-apps-aks-uat-we-01
@@ -72,19 +76,21 @@ Route Tables - route-cpd-apps-apim-uat-we-01
 Route Tables - route-cpd-apps-bkend-uat-we-01
 Route Tables - route-cpd-apps-testvms-uat-we-01
 
-1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+### 5. Platform Networking Resource Group
+ [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Dependencies** - [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 **Resources** -
 Virtual Network - vnet-cpd-pltf-uat-we-01
 
-1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+### 6. Platform Security Resource Group
+[rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 **Dependencies** - 
 **Resources** -
 kv-cpd-pltf-uat-we-01 (Access Policy added only for ADO Service Connection)
 mi-cpd-pltf-uat-we-01
 
-1. Updating Key Vault Access Policies - kv-cpd-pltf-uat-we-01 and redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+### 6. Platform Security Resource Group Updating Key Vault Access Policies - kv-cpd-pltf-uat-we-01 and redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
@@ -92,7 +98,8 @@ mi-cpd-pltf-uat-we-01
 
 
 # Deployment of Apps Infrastructure
-1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
+### 1. Apps Storage Resource Group
+[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 **Dependencies** - 
 **Resources** -
 App Config Store - acst-cpd-apps-str-uat-we-01
@@ -123,7 +130,8 @@ Service Bus Topic Subscription - sbts-cpd-apps-strsmsbulk-uat-we-01
 Service Bus Topic Subscription - sbts-cpd-apps-strsmssingle-uat-we-01
 Storage Account - stcpdappsstruatwe01
 
-1. Seed the Key Vault Secrets required in the cognitive and integration pipelines in kv-cpd-apps-uat-we-01
+### 2. Seed the Key Vault Secrets in kv-cpd-apps-uat-we-01
+required in the cognitive and integration pipelines 
 
 | Resource Name |Secret Name  | Key Vault Name | Usage|
 |--|--|--|--|
@@ -132,7 +140,8 @@ Storage Account - stcpdappsstruatwe01
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|kv-cpd-pltf-uat-we-01| Client Id of the service principal having contributor access on integration event grid domain  to authenticate event grid api connection
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-pltf-uat-we-01| Client Secret of the service principal having contributor access on integration event grid domain to authenticate event grid api connection|
 
-3. [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
+### 3. Apps Cognitive Resource Group
+ [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 App Registration - spn-bot-<env>
@@ -165,7 +174,8 @@ Following QnA resources app-cpd-apps-qna-uat-we-01 and app-cpd-apps-arqna-uat-we
 |SearchService | srch-cpd-apps-arcog-uat-we-01 | Search Service Arabic Cognitive service for QnAMaker
 | WebappBot | bot-cpd-apps-uat-we-01 | appId is ClientID of spn-bot-<env>
 
-4. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+### 4. Apps Integration Resource Group 
+[rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
 [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
 Two secrets added to kv-cpd-pltf-uat-we-01
@@ -219,7 +229,8 @@ Service Bus Topic - sbt-cpd-apps-qnasync-uat-we-01
 Service Bus Topic Subscription - sbts-cpd-apps-copyqna-uat-we-01
 Storage Account - stcpdappsintuatwe01
 
-1. [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
+### 5. Shared Resource Group 
+[rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 **Dependencies** - [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
@@ -231,7 +242,8 @@ CDN - cdn-cpd-shrd-uat-we-01
 CDN Endpoint - uat-tasmu
 Storage Account - stcpdshrduatwe01
 
-1.  [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
+### 6. Apps AKS Resource Group
+ [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
@@ -241,8 +253,8 @@ AKS Cluster - aks-cpd-apps-uat-we-01
 Managed Identity - mi-cpd-apps-aks-uat-we-01 (Deployed in rg-cpd-apps-aksnode-uat-we-01)
 Application Gateway - agw-cpd-apps-aks-uat-we-01
 
-
-1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
+### 7. Apps WAF Resource Group
+[rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
@@ -254,21 +266,23 @@ Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01
 Application Gateway - agw-cpd-apps-ntf-uat-we-01
 
-1. [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
+### 8. Apps Payment Token Resource Group
+ [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 **Resources** - 
 Key Vault - kv-cpd-apps-pt-uat-we-01
 App Service Plan - plan-cpd-apps-pt-uat-we-01
 Function App - func-cpd-apps-pt-uat-we-01
 
-1. Updating Key Vault Access Policies - kv-cpd-apps-pt-we-01 and redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
+### 9. Update Key Vault Access Policies - kv-cpd-apps-pt-we-01
+redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
 |func-cpd-apps-pt-uat-we-01|Get, List, Set||
 
 
-10. Updating Key Vault Access Policies - kv-cpd-apps-uat-we-01 and redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+### 10. Update Key Vault Access Policies -kv-cpd-apps-uat-we-01 and redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|

@@ -13,14 +13,16 @@
 1. Solution components can be deployed on the azure resources at the end
 
 ## Global Resources for a tenant
-### 1. [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
+### 1. Global Non Production Resource Group
+ [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
 **Dependencies** - 
 **Resources** -
 Azure Container Registry - acrcpdglobnpdwe01
 Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
 Send Grid Account - Silver Tier
 
-###2. [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
+### 2. Global Consumption Metering Resource Group
+[rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
 **Dependencies** - 
 **Resources** -
 Storage Account - stcpdglobacmwe01

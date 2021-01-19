@@ -146,7 +146,7 @@
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of |Eg: |
 |PowerBIEmbed.AzureAd:ClientId|Client Id of |Eg: |
 |PowerBIEmbed.AzureAd:TenantId|Tenant Id of |Eg: |
-|SmartParking.ADB2CAuth:ClientId|Client Id of |Eg: |
+|SmartParking.ADB2CAuth:ClientId|Client Id of SmartParking Api app registration B2C Tenant |Eg: |
 |SmartParking.ADB2CAuth:Domain|Domain of |Eg: |
 |SmartParking.ADB2CAuth:Instance|Instance of |Eg: |
 |SmartParking.ProfileApi.AzureADOptions:ClientId|Client Id of |Eg: |

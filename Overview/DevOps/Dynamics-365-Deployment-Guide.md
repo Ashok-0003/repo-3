@@ -167,11 +167,9 @@ Go to Setting-> Service Management->Roting Rule Sets->Case Routing Rules->Rule I
 
 ![BasedonRuleTitleAddtoQueue.png](/.attachments/BasedonRuleTitleAddtoQueue-ff82349b-c0d3-4c4c-9dcc-66a4d8a87f19.png)
 
-2. Based on the title of the rule Items we are moving to the respective queue as shown in the below screenshot. We need to Do the Same for "Support Request Moves to Billing Queue" and "By Default Move to SQCC queue" rule Items .
+2. Based on the title of the rule Items we are Routing to the respective queue. Open each row from rule items grid and update the queue lookup.
 
-![MoveToITSMQueue.png](/.attachments/MoveToITSMQueue-69a0fad9-610b-45cf-9d55-5d774e8d74bd.png)
 
-![By Default Move to SQCC queue.png](/.attachments/By%20Default%20Move%20to%20SQCC%20queue-50a438ab-9829-4ad5-9bb1-9ee5774d4dc1.png)
 
 ### 3.7	Enable Customizable Resolve Case Dialog
 

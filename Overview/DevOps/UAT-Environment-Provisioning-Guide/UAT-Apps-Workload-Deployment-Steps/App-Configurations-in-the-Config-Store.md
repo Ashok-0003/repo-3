@@ -1,76 +1,74 @@
 
 |Key Name| How to retrieve | Remarks/ Examples (UAT)|
 |--|--|--|
-|AdminPortal.ADAuth:Authority| | |
-|AdminPortal.ADAuth:ClientId| | |
-|AdminPortal.ADAuth:Domain| | |
-|AdminPortal.ADAuth:Scope| | |
-|AdminPortal.ADAuth:TenantId| | |
+|AdminPortal.ADAuth:Authority| @<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E>|   |
+|AdminPortal.ADAuth:ClientId|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> | |
+|AdminPortal.ADAuth:Domain|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> | |
+|AdminPortal.ADAuth:Scope| @<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E>| |
+|AdminPortal.ADAuth:TenantId|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> | |
 |AppSettings:ApiBaseUrl| |Eg. `https://api.<env>.sqcp.qa`|
-|AppSettings:InstrumentationKey| | |
-|AppSettings:TerminalId|Name of the resource TASMU-<env>||
-|AzureSearchFunction.AzureSearchSettings:ServiceName| |Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
-|Bot.AppSettings:ArQnaMaker:Endpoint||Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|
-|Bot.AppSettings:ArQnaMaker:EndpointKey|||
-|Bot.AppSettings:ArQnaMaker:FaqKbId|||
-|Bot.AppSettings:ArQnaMaker:Hostname||Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.azurewebsites.net/`|
-|Bot.AppSettings:ArQnaMaker:KbQnAkId|||
-|Bot.AppSettings:ArQnaMaker:SourceFAQKbId|||
-|Bot.AppSettings:CaseApiUrl||Eg. `https://api.<env>.sqcp.qa/case`|
-|Bot.AppSettings:ConnectionName|||
-|Bot.AppSettings:ConnectModerator:Key|||
-|Bot.AppSettings:DispatchLuisAppIdAr|||
-|Bot.AppSettings:DispatchLuisAppIdEn|||
-|Bot.AppSettings:EnQnaMaker:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.AppSettings:EnQnaMaker:EndpointKey|||
-|Bot.AppSettings:EnQnaMaker:FaqKbId|||
-|Bot.AppSettings:EnQnaMaker:KbQnAKbId|||
-|Bot.AppSettings:EnQnaMaker:SourceFAQKbId|||
-|Bot.AppSettings:GeneralLuisAppIdAr|||
-|Bot.AppSettings:GeneralLuisAppIdEn|||
-|Bot.AppSettings:KnowledgebasePortalUrl||Eg. `https://marketplace.<env>.sqcp.qa/en/support/articledetails?articleid=`|
-|Bot.AppSettings:Luis:AccountName|Name of the resource cog-cpd-apps-luisauth-<env>-we-01||
-|Bot.AppSettings:LuisCustomEndpoint||Eg. `https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/`|
-|Bot.AppSettings:ProductCatalogueApiUrl||Eg. `https://api.<env>.sqcp.qa/catalogue/api`|
-|Bot.AppSettings:ResourceGroupName|Name of the resource rg-cpd-apps-cog-<env>-we-01||
-|Bot.AppSettings:SearchApiUrl||Eg. `https://api.<env>.sqcp.qa/searchapi`|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:DestinationCopyQna:LuisTrainerUri||Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:LuisTrainerUri||Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:KbQna:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri|Name of the resource https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en||
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:KbQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri|Name of the resource https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar||
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:SourceCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.CognitiveModels:CognitiveModels:Ar-ar:DispatchModel:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.CognitiveModels:CognitiveModels:Ar-ar:Knowledgebases:0:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
-|Bot.CognitiveModels:CognitiveModels:Ar-ar:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
-|Bot.CognitiveModels:CognitiveModels:Ar-ar:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.CognitiveModels:CognitiveModels:En-us:DispatchModel:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:0:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
-|Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
-|Bot.CognitiveModels:CognitiveModels:En-us:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.MenuAndCards:MenuAndCards:Cards:FindInformationMenuCard|||
-|Bot.MenuAndCards:MenuAndCards:Cards:MainMenuCard|||
-|Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard|||
+|AppSettings:InstrumentationKey| Instrumentation Key of the resource (appi-cpd-apps-mon-<env>-we-01) | |
+|AzureSearchFunction.AzureSearchSettings:ServiceName|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> |Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
+|Bot.AppSettings:ArQnaMaker:Endpoint| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> |Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|
+|Bot.AppSettings:ArQnaMaker:EndpointKey| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:ArQnaMaker:FaqKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:ArQnaMaker:Hostname| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.azurewebsites.net/`|
+|Bot.AppSettings:ArQnaMaker:KbQnAkId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:ArQnaMaker:SourceFAQKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:CaseApiUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://api.<env>.sqcp.qa/case`|
+|Bot.AppSettings:ConnectionName| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:ConnectModerator:Key| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:DispatchLuisAppIdAr| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:DispatchLuisAppIdEn| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:EnQnaMaker:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AppSettings:EnQnaMaker:EndpointKey| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:EnQnaMaker:FaqKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:EnQnaMaker:KbQnAKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:EnQnaMaker:SourceFAQKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:GeneralLuisAppIdAr| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:GeneralLuisAppIdEn| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:KnowledgebasePortalUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://marketplace.<env>.sqcp.qa/en/support/articledetails?articleid=`|
+|Bot.AppSettings:Luis:AccountName|Name of the resource cog-cpd-apps-luisauth-<env>-we-01| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AppSettings:LuisCustomEndpoint| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/`|
+|Bot.AppSettings:ProductCatalogueApiUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://api.<env>.sqcp.qa/catalogue/api`|
+|Bot.AppSettings:ResourceGroupName|Name of the resource rg-cpd-apps-cog-<env>-we-01| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AppSettings:SearchApiUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://api.<env>.sqcp.qa/searchapi`|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:DestinationCopyQna:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:KbQna:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri|Name of the resource https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:KbQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri|Name of the resource https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:SourceCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.CognitiveModels:CognitiveModels:Ar-ar:DispatchModel:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.CognitiveModels:CognitiveModels:Ar-ar:Knowledgebases:0:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.CognitiveModels:CognitiveModels:Ar-ar:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.CognitiveModels:CognitiveModels:Ar-ar:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.CognitiveModels:CognitiveModels:En-us:DispatchModel:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:0:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.CognitiveModels:CognitiveModels:En-us:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.MenuAndCards:MenuAndCards:Cards:FindInformationMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.MenuAndCards:MenuAndCards:Cards:MainMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |CDNSettings:TenantId|The Tenant Id|Tenant Id of azure ad associated with azure subscription|
 |CDNSettings:ClientId|The Client Id|Client Id of **spn-cmsbpa-dev**|
 |CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01||
 |CDNSettings:Endpoint|Name of the CDN endpoint resource <env>-cdntasmu||
 |CDNSettings:ResourceGroup|Name of the resource rg-cpd-shrd-<env>-we-01||
-|Cms.Api:ClientApp|||
-|Cms.Api:ClientId|||
+|Cms.Api:ClientApp| @<ACAA2713-B2D1-668C-A427-A1DB1890F198> ||
+|Cms.Api:ClientId|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>||
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
-|Cms.Common:TargetURL|||
-|Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>||
+|Cms.Common:TargetURL|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>||
+|Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>|
 |Cms.Function:GlobalSiteUrl|URL of global site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-global`|
 |Cms.Function:MarketplaceSiteUrl|URL of marketplace site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-marketplace`|
-|Cms.Function:EventGridApiUrl|URL of the event integration api||
-|Cms.Function:PreviewApiUrl|Marketplace preview URL||
+|Cms.Function:EventGridApiUrl|URL of the event integration api|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>|
+|Cms.Function:PreviewApiUrl|Marketplace preview URL|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>|
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|
-|Cms.Function.SupportedHtmlTags|List of HTML tags support for rich text||
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Common.CoreApis.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Common.CoreApis.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|

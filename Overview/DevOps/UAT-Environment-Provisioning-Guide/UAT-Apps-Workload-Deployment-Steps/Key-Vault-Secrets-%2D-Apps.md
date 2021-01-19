@@ -24,7 +24,7 @@
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FieldServiceServiceBus| Secret |Send,Listen access policy connection string of the resource **sb-cpd-apps-int-<env>-we-01**||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FileStorageAccount| Secret |Connection string for **stcpdappsstr<env>we01**||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-IntegrationServiceBus| Secret |Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01 for deployment||
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-IoTHub| Secret |||
+|kv-cpd-apps-<env>-we-01|ConnectionStrings-IoTHub| Secret |Retrieve connection string from **iot-cpd-data-<env>-we-01** -> **Shared access policies** -> **registryRead** -> **Connection-String-Primary Key**||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-NotificationHub| Secret |||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-Redis| Secret |||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-SmartParkingSQLDB| Secret |||

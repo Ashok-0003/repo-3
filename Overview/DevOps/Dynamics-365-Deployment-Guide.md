@@ -158,8 +158,16 @@ https://customervoice.microsoft.com/
 ### 3.6	Case Routing Rules
 
 1.	Once the Case Routing rules solution is imported into the target instance, manually update the Queue in the rule items and then activate the Routing rule set.
-![image.png](/.attachments/image-557c3e05-f2dc-46b9-a74c-0df6e0142b69.png)
- 
+
+Go to Setting-> Service Management->Roting Rule Sets->Case Routing Rules->Rule Items->open Support Request Moves to ITSM Queue
+
+![BasedonRuleTitleAddtoQueue.png](/.attachments/BasedonRuleTitleAddtoQueue-ff82349b-c0d3-4c4c-9dcc-66a4d8a87f19.png)
+
+2. Based on the title of the rule Items we are moving to the respective queue as shown in the below screenshot. We need to Do the Same for "Support Request Moves to Billing Queue" and "By Default Move to SQCC queue" rule Items .
+
+![MoveToITSMQueue.png](/.attachments/MoveToITSMQueue-69a0fad9-610b-45cf-9d55-5d774e8d74bd.png)
+
+![By Default Move to SQCC queue.png](/.attachments/By%20Default%20Move%20to%20SQCC%20queue-50a438ab-9829-4ad5-9bb1-9ee5774d4dc1.png)
 
 ### 3.7	Enable Customizable Resolve Case Dialog
 

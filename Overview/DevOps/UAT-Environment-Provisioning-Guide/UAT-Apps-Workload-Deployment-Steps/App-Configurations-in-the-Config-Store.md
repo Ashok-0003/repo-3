@@ -146,10 +146,10 @@
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of |Eg: |
 |PowerBIEmbed.AzureAd:ClientId|Client Id of |Eg: |
 |PowerBIEmbed.AzureAd:TenantId|Tenant Id of |Eg: |
-|SmartParking.ADB2CAuth:ClientId|Client Id of SmartParking Api app registration B2C Tenant |Eg: |
-|SmartParking.ADB2CAuth:Domain|Domain of |Eg: |
-|SmartParking.ADB2CAuth:Instance|Instance of |Eg: |
-|SmartParking.ProfileApi.AzureADOptions:ClientId|Client Id of |Eg: |
-|SmartParking.ProfileApi.AzureADOptions:Scope|Scope of |Eg: |
-|SmartParking.ProfileApi.AzureADOptions:TenantId|Tenant Id of |Eg: |
+|SmartParking.ADB2CAuth:ClientId|Application(Client Id) of SmartParking Api app registration B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
+|SmartParking.ADB2CAuth:Domain|Domain Name of B2C Tenant|Eg: `tasmucpb2cnonprod.onmicrosoft.com`|
+|SmartParking.ADB2CAuth:Instance|Instance of microsoft login|Eg: `https://login.microsoftonline.com/`|
+|SmartParking.ProfileApi.AzureADOptions:ClientId|Client Id of Central-Platform-core-apis app registration|Eg: `bc67474e-612b-4d7f-b75a-ac54d45f143a`|
+|SmartParking.ProfileApi.AzureADOptions:Scope|Scope of Central-Platform-core-apis|Eg: `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
+|SmartParking.ProfileApi.AzureADOptions:TenantId|Tenant Id of B2C Tenant|Eg: |
 |SubscriptionId|||

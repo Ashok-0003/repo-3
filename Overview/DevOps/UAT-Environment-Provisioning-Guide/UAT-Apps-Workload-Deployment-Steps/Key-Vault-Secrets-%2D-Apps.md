@@ -19,8 +19,8 @@
 |kv-cpd-apps-<env>-we-01|CDNSettings-StorageAccount| Secret |Connection string of the resource **stcpdshrd<env>we01**||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-ConsumptionStorageAccount|Secret|||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-CosmosDBAuthKey|Secret|||
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSql|Secret|||
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSqlExport|Secret|||
+|kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSql|Secret|@<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
+|kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSqlExport|Secret|@<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FieldServiceServiceBus| Secret |Send,Listen access policy connection string of the resource **sb-cpd-apps-int-<env>-we-01**||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FileStorageAccount| Secret |Connection string for **stcpdappsstr<env>we01**||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-IntegrationServiceBus| Secret |Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01 for deployment||
@@ -39,21 +39,21 @@
 |kv-cpd-apps-<env>-we-01|Mobile-AppCenterIosKey| Secret |||
 |kv-cpd-apps-<env>-we-01|Mobile-CmsSubscriptionKeyName| Secret |||
 |kv-cpd-apps-<env>-we-01|Mobile-NotificationHubListenConn| Secret |||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret |||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthToken| Secret |||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-AzureADOptions-ClientSecret| Secret |||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-GSMSKey| Secret |||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret |||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret |||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret |||
-|kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret |||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2> ||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthToken| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-AzureADOptions-ClientSecret| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-GSMSKey| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
+|kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret | @<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-Password| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-GetPaymentPreferenceServiceURL| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-TerminalPwd| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-Token| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AzureAd-ClientSecret| Secret @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|||
-|kv-cpd-apps-<env>-we-01|PowerBIEmbed-UpdatePaymentPreferenceServiceURL| Secret |@@<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> ||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AzureAd-ClientSecret| Secret| @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|kv-cpd-apps-<env>-we-01|PowerBIEmbed-UpdatePaymentPreferenceServiceURL| Secret |@<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> ||
 |kv-cpd-apps-<env>-we-01|SmartParking-ADAuth-ClientSecret| Secret |Client Secret fo Smart Parking APi App regestration in B2C tenant||
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint| CMSBPA Self signed certificate|
 |kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|CMSAPI Self signed certificate| 

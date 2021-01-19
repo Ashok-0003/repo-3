@@ -55,9 +55,9 @@
 |Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |CDNSettings:TenantId|The Tenant Id|Tenant Id of azure ad associated with azure subscription|
 |CDNSettings:ClientId|The Client Id|Client Id of **spn-cmsbpa-dev**|
-|CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01||
-|CDNSettings:Endpoint|Name of the CDN endpoint resource <env>-cdntasmu||
-|CDNSettings:ResourceGroup|Name of the resource rg-cpd-shrd-<env>-we-01||
+|CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01|Eg. cdn-cpd-shrd-<env>-we-01|
+|CDNSettings:Endpoint|Name of the CDN endpoint resource <env>-cdntasmu|Eg. <env>-cdntasmu|
+|CDNSettings:ResourceGroup|Name of the resource rg-cpd-shrd-<env>-we-01|Eg. rg-cpd-shrd-<env>-we-01|
 |Cms.Api:ClientApp| App Name of Azure AD app spn-cmsapi-<env>|Eg. `NONISV|TASMU|spn-cmsapi-<env>`|
 |Cms.Api:ClientId|Application (client) ID of Azure AD app spn-cmsapi-<env>|Eg. 5e4456ea-6c48-414e-bf7b-904882a21f82|
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|

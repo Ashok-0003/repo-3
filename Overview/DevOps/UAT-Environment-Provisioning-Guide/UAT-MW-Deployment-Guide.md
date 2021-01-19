@@ -124,7 +124,10 @@ Video Link :
 8. Once all the webparts title are updated, click on Publish button. 
 ![image.png](/.attachments/image-f3c0b594-6e51-490f-9822-e8be823e6b27.png)
 
-Video Link :
+   Video Link :
 
 - Steps to Update office 365 tenant theme and logo : [Update o365 Tenant](https://docs.microsoft.com/en-us/microsoft-365/admin/setup/customize-your-organization-theme?view=o365-worldwide)
+Video Link :
+
 - Steps to enable office 365 usage analytics permissions : [Enable Analytics permission](https://docs.microsoft.com/en-us/microsoft-365/admin/usage-analytics/enable-usage-analytics?view=o365-worldwide)
+Video Link :

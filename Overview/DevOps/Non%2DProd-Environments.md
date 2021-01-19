@@ -36,8 +36,12 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 7|<p><p>spn-crm-common-integration-test</p>Client ID: 9364f7ba-f249-4151-b278-c5fd3c00c5a8</p><p>Client Secret : **********</p><p><p>|UAT
 8|<p><p>spn-crm-profile-management-integration-test</p>Client ID: d60021f7-df14-4731-a311-83d30d2bec1b</p><p>Client Secret : **********</p><p><p>|UAT
 9|<p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : **********</p><p><p>|UAT
-10|<p><p>spn-cmsbpa-tst</p>Client ID: f822b95e-e7ae-4b4c-945d-a2791b96c43a</p><p>Certificate</p><p><p>|Test
-11|<p><p>spn-cmsapi-tst</p>Client ID: 570a1b9e-f0e6-43da-a8af-aa8f7f31044e</p><p>Certificate</p><p><p>|Test
+10|<p><p>spn-cmsbpa-dev</p>Client ID: 18de3da3-ecfa-4b26-b819-f6bf366f0265</p><p>Certificate</p><p><p>|Dev
+11|<p><p>spn-cmsapi-dev</p>Client ID: 8b3a1cb0-c080-4a28-ae3e-3de3de56549c</p><p>Certificate</p><p><p>|Dev
+12|<p><p>spn-cmsbpa-tst</p>Client ID: f822b95e-e7ae-4b4c-945d-a2791b96c43a</p><p>Certificate</p><p><p>|Test
+13|<p><p>spn-cmsapi-tst</p>Client ID: 570a1b9e-f0e6-43da-a8af-aa8f7f31044e</p><p>Certificate</p><p><p>|Test
+14|<p><p>spn-cmsbpa-uat</p>Client ID: 5cff9256-4cc7-4b39-92a2-e48926e22d7c</p><p>Certificate</p><p><p>|UAT
+15|<p><p>spn-cmsapi-uat</p>Client ID: 5e4456ea-6c48-414e-bf7b-904882a21f82</p><p>Certificate</p><p><p>|UAT
 
 **For more details on CMS Azure AD apps please refer** : [*CMS Azure AD apps*](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/153/CMS-Azure-AD-apps) 
 

@@ -91,7 +91,8 @@ Virtual Network - vnet-cpd-pltf-uat-we-01
 kv-cpd-pltf-uat-we-01 (Access Policy added only for ADO Service Connection)
 mi-cpd-pltf-uat-we-01
 
-### 7. Platform Security Resource Group Updating Key Vault Access Policies - kv-cpd-pltf-uat-we-01 and redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+### 7. Update Key Vault Access Policies - kv-cpd-pltf-uat-we-01
+ redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|

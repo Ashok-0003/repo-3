@@ -54,26 +54,6 @@ Follow below steps to create and configure above queues.
 
 6.	Repeat the above steps to create other queues listed.
 
-### 1.2 Configure Team [Automated]
-The following is the team to be created.
-1.	Knowledge Article Approvers
-
-Follow steps below to create and configure above team.
-1.	Go to https://make.powerapps.com -> Select the right Environment.
-2.	Click on Settings on the top right corner “gear” symbol button and then on Advanced Settings button as highlighted below.
- ![image.png](/.attachments/image-012fd760-c5c7-4484-9d9b-ae57ccd1f23d.png)
-
-3.	Navigate to Security under System area in sitemap as highlighted in below screenshot.
-![image.png](/.attachments/image-ba33bda7-5b4e-47d8-94bb-59d8d6dcd0ec.png)
-
-4.	Click on Teams as highlighted in below screenshot.
-![image.png](/.attachments/image-4c5dfbd9-57df-4956-8472-cab53f68b86e.png)
- 
-5.	Click on ribbon button + NEW
-![image.png](/.attachments/image-1ea20d7b-7052-447f-8557-61a8eedc4274.png)
-
-6.	Provide the Team Name and other details as shown below and save the record.
- ![image.png](/.attachments/image-d3e44b15-25f5-4beb-9c29-b23ddf907b51.png)
 
 ### 1.3 Assign security roles to the teams
  

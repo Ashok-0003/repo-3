@@ -90,7 +90,7 @@ Virtual Network - vnet-cpd-pltf-uat-we-01
 kv-cpd-pltf-uat-we-01 (Access Policy added only for ADO Service Connection)
 mi-cpd-pltf-uat-we-01
 
-### 6. Platform Security Resource Group Updating Key Vault Access Policies - kv-cpd-pltf-uat-we-01 and redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+### 7. Platform Security Resource Group Updating Key Vault Access Policies - kv-cpd-pltf-uat-we-01 and redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
@@ -296,13 +296,13 @@ redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Centr
 |func-cpd-apps-acm-uat-we-01|Get||
 |func-cpd-apps-intbpa-uat-we-01|Get|Get|
 
-11. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
+### 11. Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
 Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - uat
 [Update the secret values after retrieval](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/151/Key-Vault-Secrets-Apps)
 The list of secrets to be seeded to kv-cpd-apps-<env>-we-01 - Scripts\KeyVault\all-secrets.yml
 Stage for uat must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
 
-12. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
+### 12. Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
 The configurations and their retrieval - Scripts\AppConfigurations
 Add application configurations for <env>.
 Placeholders already present for all env

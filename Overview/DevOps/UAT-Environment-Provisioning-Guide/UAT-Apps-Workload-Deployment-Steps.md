@@ -137,22 +137,26 @@ Storage Account - stcpdappsstruatwe01
 [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 App Registration - spn-bot-<env>
 **Resources** -
-App Service - appcog-cpd-apps-qna-uat-we-01 - App service for English QnA
-App Service - appcog-cpd-apps-arqna-uat-we-01 - App service for Arabic QnA
-App Service - app-cpd-apps-bot-uat-we-01 - App service for Bot API
-App Service Plan - plan-cpd-apps-cog-we-01
-Bot Service - bot-cpd-apps-cog-uat-we-01 (appId is ClientID of spn-bot-<env>)
-Cognitive Service Luis Authoring - cog-cpd-apps-luisath-uat-we-01
-Cognitive Service Luis Runtime - cog-cpd-apps-luisrt-uat-we-01
-Cognitive Service QnAMaker English - appcog-cpd-apps-qna-uat-we-01 
-Cognitive Service QnAMaker Arabic - appcog-cpd-apps-arqna-uat-we-01
-Function App - func-cpd-apps-luistra-uat-we-01 - func app luis trainer
-Function App - func-cpd-apps-qnasync-uat-we-01 - func app triggered by logic-cpd-apps-qnakbsync-uat-we-01
-Logic App - logic-cpd-apps-qnacopy-uat-we-01 - QnAMaker FAQ copier from source to destination
-Logic App - logic-cpd-apps-qnakbsync-uat-we-01 - QnAMaker Knowledge articles Synchronizer
-Search Service - srch-cpd-apps-cog-uat-we-01 - Search Service English Cognitive Service for QnAMaker
-Search Service - srch-cpd-apps-arcog-uat-we-01 - Search Service Arabic Cognitive service for QnAMaker
-Web App Bot - app-cpd-apps-cog-uat-we-01
+
+aming convention was not followed because QnA Maker requires App Service name
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+| App Service | appcog-cpd-apps-qna-uat-we-01 | App service for English QnA 
+| App Service | appcog-cpd-apps-arqna-uat-we-01 | App service for Arabic QnA
+|App Service | app-cpd-apps-bot-uat-we-01 | App service for Bot API
+|App Service Plan | plan-cpd-apps-cog-uat-we-01
+|Bot Service | bot-cpd-apps-cog-uat-we-01 | (appId is ClientID of spn-bot-<env>)
+|Cognitive Service | cog-cpd-apps-luisauth-uat-we-01 | Luis Authoring
+|Cognitive Service | cog-cpd-apps-luisrt-uat-we-01 | Luis Runtime
+|Cognitive Service | appcog-cpd-apps-qna-uat-we-01 | QnAMaker English  
+|Cognitive Service | appcog-cpd-apps-arqna-uat-we-01 | QnAMaker Arabic
+|Function App | func-cpd-apps-luistra-uat-we-01 | func app luis trainer
+|Function App | func-cpd-apps-qnasync-uat-we-01 | func app triggered by logic-cpd-apps-qnakbsync-uat-we-01
+|Logic App | logic-cpd-apps-qnacopy-uat-we-01 | QnAMaker FAQ copier from source to destination
+|Logic App | logic-cpd-apps-qnakbsync-uat-we-01 | QnAMaker Knowledge articles Synchronizer
+|Search Service | srch-cpd-apps-cog-uat-we-01 | Search Service English Cognitive Service for QnAMaker
+|Search Service | srch-cpd-apps-arcog-uat-we-01 | Search Service Arabic Cognitive service for QnAMaker
+|Web App Bot | bot-cpd-apps-cog-uat-we-01
 
 4. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 

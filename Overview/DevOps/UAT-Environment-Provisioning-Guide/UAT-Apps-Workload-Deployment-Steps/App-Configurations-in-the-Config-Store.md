@@ -15,7 +15,7 @@
 |Bot.AppSettings:CaseApiUrl||Eg. `https://api.<env>.sqcp.qa/case`|
 |Bot.AppSettings:Luis:AccountName|Name of the resource cog-cpd-apps-luisauth-<env>-we-01||
 |Bot.AppSettings:EnQnaMaker:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/||
-|Bot.AppSettings:KnowledgebasePortalUrl||Eg. `https://marketplace.prd.sqcp.qa/en/support/articledetails?articleid=`|
+|Bot.AppSettings:KnowledgebasePortalUrl||Eg. `https://marketplace.<env>.sqcp.qa/en/support/articledetails?articleid=`|
 |Bot.AppSettings:LuisCustomEndpoint||Eg. `https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/`|
 |Bot.AppSettings:ProductCatalogueApiUrl||Eg. `https://api.<env>.sqcp.qa/catalogue/api`|
 |Bot.AppSettings:ResourceGroupName|Name of the resource rg-cpd-apps-cog-<env>-we-01||

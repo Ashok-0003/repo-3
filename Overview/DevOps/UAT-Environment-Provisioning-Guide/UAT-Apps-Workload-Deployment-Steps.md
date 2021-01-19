@@ -14,17 +14,19 @@
 
 ## Global Resources for a tenant
 ### 1. Global Non Production Resource Group
+#### Resource Group
  [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
-**Dependencies** - 
-**Resources** -
+#### Dependencies
+#### Resources
 Azure Container Registry - acrcpdglobnpdwe01
 Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
 Send Grid Account - Silver Tier
 
 ### 2. Global Consumption Metering Resource Group
+#### Resource Group
 [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
-**Dependencies** - 
-**Resources** -
+#### Dependencies
+#### Resources
 Storage Account - stcpdglobacmwe01
 [Create a daily export of azure consumption metering for 6D Billing](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal#create-a-daily-export)
 
@@ -37,9 +39,10 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 
 # Deployment of networking and monitoring infrastructure
 ### 1. Shared Monitoring Resource Group
+#### Resource Group
  [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
-**Dependencies** - 
-**Resources** -
+#### Dependencies
+#### Resources
 Application Insights - appi-cpd-shrd-mon-uat-we-01
 Automation Account - aut-cpd-shrd-mon-uat-we-01
 Event Hub Namespaces - evhns-cpd-shrd-mon-uat-we-01

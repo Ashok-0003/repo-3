@@ -11,11 +11,25 @@
 |AppSettings:TerminalId|Name of the resource TASMU-<env>||
 |AzureSearchFunction.AzureSearchSettings:ServiceName| |Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
 |Bot.AppSettings:ArQnaMaker:Endpoint||Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|
+|Bot.AppSettings:ArQnaMaker:EndpointKey|||
+|Bot.AppSettings:ArQnaMaker:FaqKbId|||
 |Bot.AppSettings:ArQnaMaker:Hostname||Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.azurewebsites.net/`|
+|Bot.AppSettings:ArQnaMaker:KbQnAkId|||
+|Bot.AppSettings:ArQnaMaker:SourceFAQKbId|||
 |Bot.AppSettings:CaseApiUrl||Eg. `https://api.<env>.sqcp.qa/case`|
-|Bot.AppSettings:Luis:AccountName|Name of the resource cog-cpd-apps-luisauth-<env>-we-01||
+|Bot.AppSettings:ConnectionName|||
+|Bot.AppSettings:ConnectModerator:Key|||
+|Bot.AppSettings:DispatchLuisAppIdAr|||
+|Bot.AppSettings:DispatchLuisAppIdEn|||
 |Bot.AppSettings:EnQnaMaker:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/||
+|Bot.AppSettings:EnQnaMaker:EndpointKey|||
+|Bot.AppSettings:EnQnaMaker:FaqKbId|||
+|Bot.AppSettings:EnQnaMaker:KbQnAKbId|||
+|Bot.AppSettings:EnQnaMaker:SourceFAQKbId|||
+|Bot.AppSettings:GeneralLuisAppIdAr|||
+|Bot.AppSettings:GeneralLuisAppIdEn|||
 |Bot.AppSettings:KnowledgebasePortalUrl||Eg. `https://marketplace.<env>.sqcp.qa/en/support/articledetails?articleid=`|
+|Bot.AppSettings:Luis:AccountName|Name of the resource cog-cpd-apps-luisauth-<env>-we-01||
 |Bot.AppSettings:LuisCustomEndpoint||Eg. `https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/`|
 |Bot.AppSettings:ProductCatalogueApiUrl||Eg. `https://api.<env>.sqcp.qa/catalogue/api`|
 |Bot.AppSettings:ResourceGroupName|Name of the resource rg-cpd-apps-cog-<env>-we-01||
@@ -37,21 +51,27 @@
 |Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:0:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
 |Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/||
 |Bot.CognitiveModels:CognitiveModels:En-us:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/||
+|Bot.MenuAndCards:MenuAndCards:Cards:FindInformationMenuCard|||
+|Bot.MenuAndCards:MenuAndCards:Cards:MainMenuCard|||
+|Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard|||
 |CDNSettings:TenantId|The Tenant Id|Tenant Id of azure ad associated with azure subscription|
 |CDNSettings:ClientId|The Client Id|Client Id of **spn-cmsbpa-dev**|
 |CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01||
 |CDNSettings:Endpoint|Name of the CDN endpoint resource <env>-cdntasmu||
 |CDNSettings:ResourceGroup|Name of the resource rg-cpd-shrd-<env>-we-01||
+|Cms.Api:ClientApp|||
+|Cms.Api:ClientId|||
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
+|Cms.Common:TargetURL|||
 |Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>||
 |Cms.Function:GlobalSiteUrl|URL of global site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-global`|
 |Cms.Function:MarketplaceSiteUrl|URL of marketplace site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-marketplace`|
 |Cms.Function:EventGridApiUrl|URL of the event integration api||
 |Cms.Function:PreviewApiUrl|Marketplace preview URL||
-|Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|
 |Cms.Function.SupportedHtmlTags|List of HTML tags support for rich text||
+|Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Common.CoreApis.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Common.CoreApis.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |ConnectionStrings:CosmosDBEndpoint||Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
@@ -65,11 +85,27 @@
 |Crm.Common.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Crm.Common.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |EventGridSettings:DomainEndpoint|Name of the resource https://egd-cpd-apps-int-<env>-we-01.westeurope-1.eventgrid.azure.net/api/events||
+|GraphB2cExtensionAppClientId|||
+|GraphClientId|||
+|GraphTenant|||
 |ManageEventFunction.AzureADOptions:ClientId|Client Id of |Eg:|
 |ManageEventFunction.AzureADOptions:Instance|Instance of |Eg:|
 |ManageEventFunction.AzureADOptions:Scope|Scope of |Eg:|
 |ManageEventFunction.AzureADOptions:TenantId|Tenant Id of |Eg:|
 |Mobile:AccountManagementApiEndPoint||Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
+|Mobile:AuthenticationSettings:BoPolicySignUpSignIn|||
+|Mobile:AuthenticationSettings:ClientId|||
+|Mobile:AuthenticationSettings:PolicyChangePassword|||
+|Mobile:AuthenticationSettings:PolicyLinkAccounts|||
+|Mobile:AuthenticationSettings:PolicyResetPassword|||
+|Mobile:AuthenticationSettings:PolicySignUpSignIn|||
+|Mobile:AuthorizationSettings:CentralScope,0|||
+|Mobile:AuthorizationSettings:CentralScope,1|||
+|Mobile:AuthorizationSettings:CentralScope,2|||
+|Mobile:AuthorizationSettings:CentralScope,3|||
+|Mobile:AuthorizationSettings:CentralScope,4|||
+|Mobile:AuthorizationSettings:CentralScope,5|||
+|Mobile:AuthorizationSettings:CentralScope,6|||
 |Mobile:AuthzPaymentEndpoint||Eg. `https://account.<env>.sqcp.qa/authorizecard`|
 |Mobile:BillingInfoApiEndPoint||Eg. `https://api.<env>.sqcp.qa/billingentityinfo`|
 |Mobile:CaseApiEndPoint||Eg. `https://api.<env>.sqcp.qa/case`|
@@ -78,16 +114,25 @@
 |Mobile:ConfigApiEndPoint||Eg. `https://api.<env>.sqcp.qa/config`|
 |Mobile:CustomerManagementApiEndPoint||Eg. `https://api.<env>.sqcp.qa/customermanagement`|
 |Mobile:DemographicApiEndPoint||Eg. `https://api.<env>.sqcp.qa/demographic`|
+|Mobile:EndUserLicenseAgreementLink|||
+|Mobile:FileUploadEndpoint|||
 |Mobile:InvoiceApiEndpoint||Eg. `https://api.<env>.sqcp.qa/invoice`|
 |Mobile:KbApiEndPoint||Eg. `https://api.<env>.sqcp.qa/knowledge`|
 |Mobile:OrderApiEndPoint||Eg. `https://api.<env>.sqcp.qa/ordermanagement`|
 |Mobile:PaymentApiEndPoint||Eg. `https://api.<env>.sqcp.qa/payment`|
 |Mobile:ProfileApiEndPoint||Eg. `https://api.<env>.sqcp.qa/profile`|
 |Mobile:SearchApiEndpoint||Eg. `https://api.<env>.sqcp.qa`|
+|Mobile:TermsAndConditionsLink|||
 |NotificationFunctionSettings:ApimRootUrl||Eg. `https://api.<env>.sqcp.qa`|
+|NotificationFunctionSettings:FromAddress|||
+|NotificationFunctionSettings:FromName|||
 |NotificationFunctionSettings:NotificationHubPath|Name of Notification Hub resource - ntf-cpd-apps-str-<env>-we-01||
 |NotificationSettings:CosmosDBEndPointUri||Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
+|NotificationSettings:GSMSAppID|||
+|NotificationSettings:GSMSServiceUri|||
+|NotificationSettings:Originator|||
 |NotificationSettings:ProfileApiUrl||Eg. `https://api.<env>.sqcp.qa/profile/api/profiles`|
+|NotificationSettings:SmsApiName|||
 |NotificationSettings.ADB2CAuth:ClientId|Client Id of |Eg: |
 |NotificationSettings.ADB2CAuth:Domain|Domain of |Eg: |
 |NotificationSettings.ADB2CAuth:Instance|Instance of |Eg: |
@@ -110,3 +155,4 @@
 |SmartParking.ProfileApi.AzureADOptions:ClientId|Client Id of |Eg: |
 |SmartParking.ProfileApi.AzureADOptions:Scope|Scope of |Eg: |
 |SmartParking.ProfileApi.AzureADOptions:TenantId|Tenant Id of |Eg: |
+|SubscriptionId|||

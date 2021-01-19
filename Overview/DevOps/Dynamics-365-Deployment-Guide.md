@@ -91,7 +91,7 @@ Please refer to Appendix A for detailed steps to import the CRM Solution.
 Note: During import of managed solutions into ETE Organization, make sure to selelct ‘Overwrite Customizations option’ in ‘Import Options’ window as shown below.
  ![image.png](/.attachments/image-cced0f4a-4239-4d3c-9d4b-c0d775e8b1e3.png)
 
-# 5.	Post Deployment Steps
+# 5	Post Deployment Steps
 ### 5.1	Import Data [Automated]
 Import the following data packages using configuration migration tool (refer Appendix B).
 •	MasterData.zip

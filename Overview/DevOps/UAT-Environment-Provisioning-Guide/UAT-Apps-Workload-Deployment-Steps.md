@@ -145,39 +145,39 @@ required in the cognitive and integration pipelines
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-pltf-uat-we-01| Client Secret of the service principal having contributor access on integration event grid domain to authenticate event grid api connection|
 
 ### 3. Apps Cognitive Resource Group
- [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
-**Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br> [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
-[rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
-App Registration - spn-bot-<env>
-**Resources** -
-
-#### Remark - 
+ ####Resource Group Name - [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
+####Dependencies - 
+1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
+1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+1. App Registration - spn-bot-<env>
+#### Notes - 
 1. Naming Convention- 
 Naming convention has deviation because QnA Maker requires names for both App Service and Cognitive Service as identical. It was consulted with product team and it's an issue in QnA Maker. This is the reason why app service and cognitive service for QnaMaker are named as **appcog-cpd-apps-qna-uat-we-01** for English and **appcog-cpd-apps-arqna-uat-we-01** for Arabic.
 
 2. Location -
  QnA resources -  app-cpd-apps-qna-uat-we-01 and app-cpd-apps-arqna-uat-we-01 are deployed in West US as that is the only supported location for resource type - QnA. 
 More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra/pullrequest/3568)
-
+#### Resources -
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-| AppServiceManagement | app-cpd-apps-qna-uat-we-01 | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=remark--)
-| AppServicePropertiesQnA | app-cpd-apps-qna-uat-we-01 | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=remark--)
-| AppServiceManagement | app-cpd-apps-arqna-uat-we-01 | App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=remark--)
-| AppServicePropertiesQnA | app-cpd-apps-arqna-uat-we-01 | App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=remark--)
+| AppServiceManagement | app-cpd-apps-qna-uat-we-01 | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+| AppServicePropertiesQnA | app-cpd-apps-qna-uat-we-01 | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+| AppServiceManagement | app-cpd-apps-arqna-uat-we-01 | App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+| AppServicePropertiesQnA | app-cpd-apps-arqna-uat-we-01 | App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
 | AppServiceManagement | app-cpd-apps-bot-uat-we-01 | App service for Bot API
 |AppServicePlan | plan-cpd-apps-cog-uat-we-01
 | CognitiveServices | cog-cpd-apps-luisauth-uat-we-01 | Luis Authoring
 | CognitiveServices | cog-cpd-apps-luisrt-uat-we-01 | Luis Runtime
-| CognitiveServicesQna | cog-cpd-apps-qna-uat-we-01 | QnAMaker English - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&_a=edit&anchor=major-remark--)
-|CognitiveServicesQna | cog-cpd-apps-arqna-uat-we-01 | QnAMaker Arabic - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&_a=edit&anchor=major-remark--)
+| CognitiveServicesQna | cog-cpd-apps-qna-uat-we-01 | QnAMaker English - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+|CognitiveServicesQna | cog-cpd-apps-arqna-uat-we-01 | QnAMaker Arabic - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
 |FunctionAppQna | func-cpd-apps-luistra-uat-we-01 | func app luis trainer
 |FunctionAppQna | func-cpd-apps-qnasync-uat-we-01 | func app triggered by logic-cpd-apps-qnakbsync-uat-we-01
 |LogicApp | logic-cpd-apps-qnacopy-uat-we-01 | QnAMaker FAQ copier from source to destination
 |LogicApp | logic-cpd-apps-qnakbsync-uat-we-01 | QnAMaker Knowledge articles Synchronizer
 |SearchService | srch-cpd-apps-cog-uat-we-01 | Search Service English Cognitive Service for QnAMaker
 |SearchService | srch-cpd-apps-arcog-uat-we-01 | Search Service Arabic Cognitive service for QnAMaker
-| WebappBot | bot-cpd-apps-uat-we-01 | appId is ClientID of spn-bot-<env>
+| WebappBot | bot-cpd-apps-uat-we-01 | appId is ClientID of App Registration spn-bot-<env>
 
 ### 4. Apps Integration Resource Group 
 [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)

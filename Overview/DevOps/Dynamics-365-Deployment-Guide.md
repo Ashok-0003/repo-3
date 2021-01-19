@@ -11,7 +11,7 @@ TASMU_AD_CPP_D365_CSE_License (customer service license group)
 TASMU_AD_CPP_D365_FS_License (field service license group)
 TASMU_AD_CPP_UAT_D365 (environment access group)
 
-- Owner permission for the person performing the deployment, on the storage account for setting up [Export to Data Lake](/Overview/DevOps/Dynamics-365-Deployment-Guide?anchor=3.10-configure-export-to-data-lake).
+- Owner permission for the person performing the deployment, on the storage account for setting up [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=3.10-configure-export-to-data-lake).
 
 - A service account (preferably non interactive) for the purpose of performing automated deployment to Dynamics environment. This account should have access to the target Dynamics environment and must have System Administrator security role within target Dynamics environment (this is not an Azure AD role).
 

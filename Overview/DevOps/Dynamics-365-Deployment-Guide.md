@@ -226,6 +226,7 @@ https://docs.microsoft.com/en-us/powerapps/maker/data-platform/export-to-data-la
 More details on application users below (only FYI).
 https://docs.microsoft.com/en-us/powerapps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation
 
+# 6 	Appendix
 ## Appendix A - Solution Import
 
 Follow the below steps sequentially to import CRM solution.

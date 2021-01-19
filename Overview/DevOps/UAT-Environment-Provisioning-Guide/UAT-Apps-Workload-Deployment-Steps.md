@@ -179,8 +179,8 @@ Function App - func-cpd-apps-acm-uat-we-01 - Function app to monitor consumption
 Logic App - logic-cpd-apps-inttrsl-uat-we-01 - Logic app to create Translation Task and do Auto Translation from English to Arabic of Sharepoint data
 Logic App - logic-cpd-apps-intaprv1-uat-we-01 - Logic app for Level 1 Approval
 Logic App - logic-cpd-apps-intgbaprl-uat-we-01 - Logic app for Level 2 approval
-Logic App - logic-cpd-apps-intprdt-uat-we-01
-Logic App - logic-cpd-apps-intsec-uat-we-01 - Logic app to sync Global Sectors List
+Logic App - logic-cpd-apps-intprdt-uat-we-01 - Logic app to sync Products from CRM
+Logic App - logic-cpd-apps-intsec-uat-we-01 - Logic app to sync Global Sectors List from CRM
 Logic App - logic-cpd-apps-secsync-uat-we-01 - Logic app to sync Global Sectors List with Sharepoint Taxonomy terms
 Logic App - logic-cpd-apps-route-uat-we-01
 Logic App - logic-cpd-apps-6dbill-uat-we-01

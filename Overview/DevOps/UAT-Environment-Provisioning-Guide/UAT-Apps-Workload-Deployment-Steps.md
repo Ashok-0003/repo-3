@@ -143,6 +143,7 @@ App Registration - spn-bot-<env>
 Naming convention was not followed because QnA Maker requires names for both App Service and Cognitive Service as identical. It was consulted with product team and it's an issue in QnA Maker. This is the reason why app service and cognitive service for QnaMaker are named as **appcog-cpd-apps-qna-uat-we-01** for English and **appcog-cpd-apps-arqna-uat-we-01** for Arabic.
 
 **Location**
+Following QnA resources app-cpd-apps-qna-uat-we-01 and app-cpd-apps-arqna-uat-we-01 are deployed in west-us as that is the only supported location for resource type-QnA. For more information - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra/pullrequest/3568)
 
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|

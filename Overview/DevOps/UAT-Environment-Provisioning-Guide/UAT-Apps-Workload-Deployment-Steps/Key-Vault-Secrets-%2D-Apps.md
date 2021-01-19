@@ -1,7 +1,7 @@
 
 |Key Vault Name| Name  | Type | How to Retrieve | Remarks|
 |--|--|--|--|--|
-|kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret|||
+|kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret|Client Secret from adminportal app registration in B2C Tenant||
 |kv-cpd-apps-<env>-we-01|AdminPortal-AuthClaims-GroupId|Secret|||
 |kv-cpd-apps-<env>-we-01|Azure-Search-Key|Secret|||
 |kv-cpd-apps-<env>-we-01|BotAppSecret|Secret|||

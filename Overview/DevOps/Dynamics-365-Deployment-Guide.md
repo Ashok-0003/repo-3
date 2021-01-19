@@ -75,6 +75,19 @@ Note: The solution import should be performed by a user with System Administrato
 Please refer to Appendix A for detailed steps to import the CRM Solution.
 Note: During import of managed solutions into ETE Organization, make sure to selelct ‘Overwrite Customizations option’ in ‘Import Options’ window as shown below.
  ![image.png](/.attachments/image-cced0f4a-4239-4d3c-9d4b-c0d775e8b1e3.png)
+
+### 2.2	Additional CRM Solution Import
+The following are the CRM Customizations and related solutions shown below to be imported sequentially in the order mentioned to the required CRM online instance.
+
+Note: The solution import should be performed by a user with System Administrator or System Customizer role.
+
+1.	TASMU_CPM_SLAs
+2.	TASMU_CPM_RoutingRules
+
+Please refer to Appendix A for detailed steps to import the CRM Solution.
+Note: During import of managed solutions into ETE Organization, make sure to selelct ‘Overwrite Customizations option’ in ‘Import Options’ window as shown below.
+ ![image.png](/.attachments/image-cced0f4a-4239-4d3c-9d4b-c0d775e8b1e3.png)
+
 ## 3.	Post Deployment Steps
 ### 3.1	Import Data [Automated]
 Import the following data packages using configuration migration tool (refer Appendix B).

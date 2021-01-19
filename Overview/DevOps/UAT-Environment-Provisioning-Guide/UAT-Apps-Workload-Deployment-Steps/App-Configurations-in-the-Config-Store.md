@@ -62,12 +62,11 @@
 |Cms.Api:ClientId|Application (client) ID of Azure AD app spn-cmsapi-<env>|Eg. 5e4456ea-6c48-414e-bf7b-904882a21f82|
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
-|Cms.Common:TargetURL|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>||
 |Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>|Eg. `NONISV|TASMU|spn-cmsbpa-<env>`|
 |Cms.Function:GlobalSiteUrl|URL of global site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-global`|
 |Cms.Function:MarketplaceSiteUrl|URL of marketplace site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-marketplace`|
-|Cms.Function:EventGridApiUrl|URL of the event integration api|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>|
-|Cms.Function:PreviewApiUrl|Marketplace preview URL|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>|
+|Cms.Function:EventGridApiUrl|URL of the event integration api|Eg. `https://api.<env>.sqcp.qa/eventintegration/messages`|
+|Cms.Function:PreviewApiUrl|Marketplace preview URL|Eg. `https://marketplace.<env>.sqcp.qa/`|
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Common.CoreApis.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|

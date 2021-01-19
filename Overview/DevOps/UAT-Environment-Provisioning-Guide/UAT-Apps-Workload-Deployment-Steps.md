@@ -139,7 +139,7 @@ App Registration - spn-bot-<env>
 **Resources** -
 
 ### Major Remark -
-Naming convention was not followed because QnA Maker requires App Service name and Cognitive Service name should be same. This is the reason why app service and cognitive service for QnaMaker are named as **appcog-cpd-apps-qna-uat-we-01** for English and **appcog-cpd-apps-arqna-uat-we-01** for Arabic.
+Naming convention was not followed because QnA Maker requires names for both App Service and Cognitive Service as identical. It was consulted with product team and it's an issue in QnA Maker. This is the reason why app service and cognitive service for QnaMaker are named as **appcog-cpd-apps-qna-uat-we-01** for English and **appcog-cpd-apps-arqna-uat-we-01** for Arabic.
 
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|

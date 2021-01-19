@@ -160,7 +160,7 @@ Naming convention was not followed because QnA Maker requires names for both App
 |LogicApp | logic-cpd-apps-qnakbsync-uat-we-01 | QnAMaker Knowledge articles Synchronizer
 |SearchService | srch-cpd-apps-cog-uat-we-01 | Search Service English Cognitive Service for QnAMaker
 |SearchService | srch-cpd-apps-arcog-uat-we-01 | Search Service Arabic Cognitive service for QnAMaker
-| WebappBot | bot-cpd-apps-uat-we-01
+| WebappBot | bot-cpd-apps-uat-we-01 | WeappBot is same as BotService
 
 4. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 

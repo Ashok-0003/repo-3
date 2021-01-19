@@ -2,10 +2,8 @@
 |Key Name| How to retrieve | Remarks/ Examples (UAT)|
 |--|--|--|
 |AdminPortal.ADAuth:Authority| | |
-|AdminPortal.ADAuth:CallbackPath| |Eg. /signin-oidc|
 |AdminPortal.ADAuth:ClientId| | |
 |AdminPortal.ADAuth:Domain| | |
-|AdminPortal.ADAuth:Instance| | Eg. `https://login.microsoftonline.com/`|
 |AdminPortal.ADAuth:Scope| | |
 |AdminPortal.ADAuth:TenantId| | |
 |AppSettings:ApiBaseUrl| |Eg. `https://api.<env>.sqcp.qa`|

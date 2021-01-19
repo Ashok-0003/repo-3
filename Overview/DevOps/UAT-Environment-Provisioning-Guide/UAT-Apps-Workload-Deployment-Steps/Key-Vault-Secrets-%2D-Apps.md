@@ -22,7 +22,7 @@
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSqlExport|Secret|@<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FieldServiceServiceBus| Secret |Send,Listen access policy connection string of the resource **sb-cpd-apps-int-<env>-we-01**| @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  do we require to seed this secret name now?|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-IntegrationServiceBus| Secret |Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01 for deployment||
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-IoTHub| Secret |Retrieve connection string from **iot-cpd-data-<env>-we-01** -> **Shared access policies** -> **registryRead** -> **Connection-String-Primary Key**||
+|kv-cpd-apps-<env>-we-01|ConnectionStrings-IoTHub| Secret |Retrieve connection string from **iot-cpd-data-<env>-we-01** -> **Shared access policies** -> **registryRead** -> **Connection-String-Primary Key**| Eg. `HostName=iot-cpd-data-uat-we-01.azure-devices.net;SharedAccessKeyName=registryRead;SharedAccessKey=<key>`|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-NotificationHub| Secret | @<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5> ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-Redis| Secret | Primary connection string of redis-cpd-apps-str-<env>-we-01|Eg.`redis-cpd-apps-str-uat-we-01.redis.cache.windows.net:6380,password=<>=,ssl=True,abortConnect=False`|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-SmartParkingSQLDB| Secret |Form the connection string for sql-cpd-data-<env>-we-01|Eg.`Data Source=sql-cpd-data-<env>-we-01.database.windows.net;Initial Catalog=sqldb-cpd-data-<env>-we-01;User Id=<userId>;Password=<pwd>`|

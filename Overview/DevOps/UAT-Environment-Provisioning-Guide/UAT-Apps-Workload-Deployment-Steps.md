@@ -17,7 +17,7 @@
 **Resources** -
 Azure Container Registry - acrcpdglobnpdwe01
 Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
-Send Grid Account 
+Send Grid Account - Silver Tier
 
 ###2. [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
 **Dependencies** - 

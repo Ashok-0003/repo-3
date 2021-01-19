@@ -6,7 +6,7 @@
 |AdminPortal.ADAuth:Domain|B2C Tenant Domain Name | Eg.`tasmucpb2cnonprod.onmicrosoft.com`|
 |AdminPortal.ADAuth:Scope| SmartParking api scope from smartparking api app registration|Eg.`https://tasmucpb2cnonprod.onmicrosoft.com/SmartParkingAPI/.default` |
 |AdminPortal.ADAuth:TenantId| Directory(tenant) Id of adminportal app registration |Eg.`24f9d756-bf0c-43e9-ad5e-2073ae2d6698` |
-|AppSettings:ApiBaseUrl| |Eg. `https://api.<env>.sqcp.qa`|
+|AppSettings:ApiBaseUrl| Base URL for APIs end point (routing via APIM) |Eg. `https://api.<env>.sqcp.qa`|
 |AppSettings:InstrumentationKey| Instrumentation Key of the resource (appi-cpd-apps-mon-<env>-we-01) | Eg. `984ca526-2038-4d9d-b0cf-653706512c58`|
 |AzureSearchFunction.AzureSearchSettings:ServiceName|Search Index Name from resource srch-cpd-apps-cog-<env>-we-01|Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
 |Bot.AppSettings:ArQnaMaker:Endpoint| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> |Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|

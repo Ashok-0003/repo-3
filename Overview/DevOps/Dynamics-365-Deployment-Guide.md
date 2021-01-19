@@ -3,7 +3,7 @@ The purpose of this document is to explain the steps to deploy TASMU Dynamics 36
 
 [[_TOC_]]
 
-# 1 	Prerequisites
+# 2 	Prerequisites
 The following are Prerequisites for the deployment.
 1.1. Dynamics tenant and valid customer service enterprise and field service licenses.
 1.2. At least 5 GB of database capacity remaining.
@@ -35,8 +35,8 @@ Refer to the "Dynamics365Client" app registration in the non prod b2c tenant for
 - Setup deployment pipelines by following the document below. This step requires Azure DevOps permissions to create new **service connections** as well as permission to **edit the pipeline(s)** mentioned in the document below.
 https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/crm-platform?anchor=deployment
 
-## 1	Pre-Deployment
-### 1.1 Configure Queues [Automated]
+## 3	Pre-Deployment
+### 3.1 Configure Queues [Automated]
 The following are the queues to be created. 
 1.	Business Operations Queue
 2.	ITSM Queue
@@ -62,8 +62,8 @@ Follow below steps to create and configure above queues.
 
 6.	Repeat the above steps to create other queues listed.
 
-## 2.Deployment
-### 2.1	CRM Solution Import [Automated]
+## 4 Deployment
+### 4.1	CRM Solution Import [Automated]
 
 The following are the CRM Customizations and related solutions shown below to be imported sequentially in the order mentioned to the required CRM online instance.
 
@@ -78,7 +78,7 @@ Please refer to Appendix A for detailed steps to import the CRM Solution.
 Note: During import of managed solutions into ETE Organization, make sure to selelct ‘Overwrite Customizations option’ in ‘Import Options’ window as shown below.
  ![image.png](/.attachments/image-cced0f4a-4239-4d3c-9d4b-c0d775e8b1e3.png)
 
-### 2.2	Additional CRM Solution Import
+### 4.2	Additional CRM Solution Import
 The following are the CRM Customizations and related solutions shown below to be imported sequentially in the order mentioned to the required CRM online instance.
 
 Note: The solution import should be performed by a user with System Administrator or System Customizer role.
@@ -90,31 +90,31 @@ Please refer to Appendix A for detailed steps to import the CRM Solution.
 Note: During import of managed solutions into ETE Organization, make sure to selelct ‘Overwrite Customizations option’ in ‘Import Options’ window as shown below.
  ![image.png](/.attachments/image-cced0f4a-4239-4d3c-9d4b-c0d775e8b1e3.png)
 
-## 3.	Post Deployment Steps
-### 3.1	Import Data [Automated]
+## 5.	Post Deployment Steps
+### 5.1	Import Data [Automated]
 Import the following data packages using configuration migration tool (refer Appendix B).
 •	MasterData.zip
 
-### 3.2	Updating System Settings [Automated]
+### 5.2	Updating System Settings [Automated]
 1.	Sign into Dynamics 365 as System administrator user.
 2.	Go to Settings and click on Administration.
 3.	Go to System Settings.
 
-### 3.2.1	General Settings
+### 5.2.1	General Settings
 1.	Click on General Tab.
 2.	Enter 60 minutes for Duration of inactivity before timeout and 10 min for inactivity warning.
 ![image.png](/.attachments/image-c865c73c-b7c5-4989-bb15-9bc72e4e674e.png)
  
-### 3.2.2	Increase the Note attachment Limit to 20MB (20480 KB)
+### 5.2.2	Increase the Note attachment Limit to 20MB (20480 KB)
 ![image.png](/.attachments/image-3de6efc0-5cf3-4e54-a2de-7da3c57f8552.png)
  
-### 3.2.3	Audit Settings
+### 5.2.3	Audit Settings
 1.	Click on Auditing Tab.
 2.	Select Start Auditing and Audit user access from Audit Settings.
 3.	Select Common Entities, and Customer Service Entities from Enable Auditing and click on OK.
  ![image.png](/.attachments/image-a68fa140-492e-4317-860d-bc25f3c19548.png)
 
-### 3.3	Enable Connect to Maps for Showing Work Orders in the schedule Board
+### 5.3	Enable Connect to Maps for Showing Work Orders in the schedule Board
 
 1.	To enable the Map in the Schedule Board we need to Configure the Below Steps.
 ![image.png](/.attachments/image-a2a2d7c9-a5ce-4c8f-880d-4330cf17e5dc.png)
@@ -122,7 +122,7 @@ Import the following data packages using configuration migration tool (refer App
 2.	If “Connected to Maps” is “Yes”, we can view the Work order in the Map view.
 ![image.png](/.attachments/image-90402d7d-d125-4ddb-90c2-a9614483e90e.png)
 
-### 3.4	Configure customer voice survey on case resolve.
+### 5.4	Configure customer voice survey on case resolve.
 
 1.	Browse customer voice URL and create new Project.  In Project Template select **Support**.
 https://customervoice.microsoft.com/
@@ -145,7 +145,7 @@ https://customervoice.microsoft.com/
 ![image.png](/.attachments/image-0c719ccd-b197-47e4-9572-1f71c2259bc4.png)
 ![image.png](/.attachments/image-6cfc9a74-53fe-4196-ab28-1ad3778af50c.png)
  
-### 3.5	Enable SLA Flows after deployment
+### 5.5	Enable SLA Flows after deployment
 
 1.	Go to SLA record (Service Management --> Service Level Agreement) and open SLA Record and deactivate.
 ![image.png](/.attachments/image-079c03df-279d-4391-9ca5-ae273dee4334.png)
@@ -159,7 +159,7 @@ https://customervoice.microsoft.com/
 
 4.	Go back to the SLA record and activate it.
 
-### 3.6	Case Routing Rules
+### 5.6	Case Routing Rules
 
 1.	Once the Case Routing rules solution is imported into the target instance, manually update the Queue in the rule items and then activate the Routing rule set.
 
@@ -174,18 +174,18 @@ https://customervoice.microsoft.com/
 ![ActivateRoutingRuleset.png](/.attachments/ActivateRoutingRuleset-eb551604-2034-4601-9d5f-3dd2527c132c.png)
  
 
-### 3.7	Enable Customizable Resolve Case Dialog
+### 5.7	Enable Customizable Resolve Case Dialog
 
 1.	Go to Service Management (Change Area) -> Service Configuration Settings -> Select the Style of Resolve Case Dialog box -> Customizable Dialog.
 ![image.png](/.attachments/image-886c1ec4-f450-40a5-9147-cb26abeb70c9.png)
 
-### 3.8  Move Theme Data
+### 5.8  Move Theme Data
 1. We need to make sure that [themes-data.csv](/.attachments/themes-data-359d2f81-f951-48db-96db-736a4566cd46.csv) file is imported in the target environment [Follow the Appendix C - Import record from Excel ]
 3. After importing, Custom theme called "Tasmu Theme" will available in the desired environment, we need to manually publish the theme in the respective environment. 
 
 ![Publish Theme.png](/.attachments/Publish%20Theme-f0de7009-2bca-4c0c-9fe2-acb0ae52b284.png)
 
-### 3.9  Add Security Alert Workflow Automation
+### 5.9  Add Security Alert Workflow Automation
 1. Login into https://portal.azure.com.
 2. Go to Security Center.
 ![image.png](/.attachments/image-30dfa9ae-2eb6-41f9-832e-023daef8b32b.png)
@@ -205,7 +205,7 @@ For UAT:
 ![image.png](/.attachments/image-c96bf1b6-3208-4286-a40d-bc9469dab2ac.png)
 9. Click on Create.
  
-### 3.10 Configure export to data lake
+### 5.10 Configure export to data lake
 1. Go to https://make.powerapps.com -> select the right environment -> click on Export to data lake -> click on New link to data lake.
 ![image.png](/.attachments/image-fd0c30f3-6fd0-48b0-83c7-da388a5639e9.png)
 
@@ -214,7 +214,7 @@ For UAT:
 3. Select all entities in the next screen and finish the setup. More details below.
 https://docs.microsoft.com/en-us/powerapps/maker/data-platform/export-to-data-lake#select-and-export-dataverse-table-data-to-azure-data-lake-storage-gen2.
 
-### 3.11 Create and assign security role to Application Users
+### 5.11 Create and assign security role to Application Users
 1. Create the following application users by following "Appendix D - Application User Creation".
 
 | Name | Security Role |

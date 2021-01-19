@@ -324,7 +324,7 @@ Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigura
 ## Configuring Notification Hubs for FCM and APNS
 1. Update the Google Settings for API Key
 Obtain the Web API Key of [Google Firebase Cloud Account](https://console.firebase.google.com/) after creating the project from project settings
-2. Update the Apple Settings for iOS Certificate (@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> to share details in Mobile Apps deployments)
+2. Download the Apple Push Notification (Development & Distribution) certificate from the Apple Developer Account into the development Mac machine. Follow the steps to [export the certificate](https://help.attendify.com/en/articles/613466-how-to-export-a-push-notification-apns-certificate-in-a-p12-file#:~:text=Generate%20APNS.p12%20certificate%20Double%20click%20the%20Development%20certificate,app%20certificate%20and%20right%20click%20to%20export%20it.)  in .p12 format . Update the Apple Settings for iOS Certificate.
 3. Test Send (Support and troubleshooting) for Apple and Windows Phone
 
 # Deployment of the solution components

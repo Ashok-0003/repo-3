@@ -97,9 +97,9 @@ For each of the sites repeat the following steps
    ![image.png](/.attachments/image-ce5232e5-0984-42a2-b60e-8f2ffeb28a2b.png)
 1. Open Powershell on your system and run the following commands:
 
-- [ ]  `cd <Path to your extracted folder>` eg: cd C:\Users\XXXXX\Downloads\ResourceFileTranslation
+    i) `cd <Path to your extracted folder>` eg: cd C:\Users\XXXXX\Downloads\ResourceFileTranslation
 
-- [ ]   `.\UpdateResx.ps1`
+   ii) `.\UpdateResx.ps1`
 Once you get the message "File Updated Successfully" on the powershell, proceed to step 6. 
 1. Go to site settings and click on Import Translations
      ![image.png](/.attachments/image-c35e80ae-eb45-4207-8a20-9de2cac55ca0.png)

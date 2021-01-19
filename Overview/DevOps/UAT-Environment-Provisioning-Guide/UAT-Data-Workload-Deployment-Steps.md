@@ -48,6 +48,7 @@
 |Storage Account (ADLS)  |dlslandingzoneuatwe01  |
 |Storage Account (ADLS)  |dlsrawzoneuatwe01  |
 |Storage Account (ADLS)  |dlsopenzoneuatwe01  |
+|Storage Account (ADLS)  |dlscrmuatwe01  |
 |Storage Account  |stcpddatauatwe01  |
 |Storage Account  |stcpddatauatwe02  |
 |Stream Analytics job  |asa-cpd-data-uat-we-01  |

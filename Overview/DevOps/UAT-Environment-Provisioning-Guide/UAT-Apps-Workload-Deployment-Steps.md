@@ -51,8 +51,8 @@ Storage Account - stcpdshrddiaguatwe01
 
 ### 2. Apps Monitoring Resource Group
 [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-**Dependencies** - 
-**Resources** -
+#### Dependencies
+#### Resources
 Application Insights - appi-cpd-apps-mon-uat-we-01
 Automation Account - aut-cpd-apps-mon-uat-we-01
 Event Hub Namespaces - evhns-cpd-apps-mon-uat-we-01
@@ -60,7 +60,8 @@ Log Analytics - log-cpd-apps-mon-uat-we-01
 Storage Account - stcpdappsdiaguatwe01
 
 ### 3. Apps Security Resource Group
- [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+ #### Resource Group
+[rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 **Resources** -
 Network Security Groups - nsg-cpd-apps-aks-uat-we-01
@@ -74,6 +75,7 @@ Network Security Groups - nsg-cpd-apps-testvms-uat-we-01
 Key Vault - kv-cpd-apps-uat-we-01 (Access Policy added only for ADO Service Connection)
 
 ### 4. Apps Networking Resource Group
+#### Resource Group
 [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 **Dependencies** -
 **Resources** -
@@ -83,7 +85,8 @@ Route Tables - route-cpd-apps-bkend-uat-we-01
 Route Tables - route-cpd-apps-testvms-uat-we-01
 
 ### 5. Platform Networking Resource Group
- [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+#### Resource Group
+[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 **Dependencies** - [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 **Resources** -
@@ -106,6 +109,7 @@ mi-cpd-pltf-uat-we-01
 
 # Deployment of Apps Infrastructure
 ### 1. Apps Storage Resource Group
+#### Resource Group
 [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 **Dependencies** - 
 **Resources** -
@@ -183,6 +187,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 | WebappBot | bot-cpd-apps-uat-we-01 | appId is ClientID of App Registration spn-bot-<env>
 
 ### 4. Apps Integration Resource Group 
+#### Resource Group
 [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
 [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
@@ -238,6 +243,7 @@ Service Bus Topic Subscription - sbts-cpd-apps-copyqna-uat-we-01
 Storage Account - stcpdappsintuatwe01
 
 ### 5. Shared Resource Group 
+#### Resource Group
 [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 **Dependencies** - [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
@@ -262,6 +268,7 @@ Managed Identity - mi-cpd-apps-aks-uat-we-01 (Deployed in rg-cpd-apps-aksnode-ua
 Application Gateway - agw-cpd-apps-aks-uat-we-01
 
 ### 7. Apps WAF Resource Group
+#### Resource Group
 [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
@@ -275,7 +282,8 @@ Application Gateway - agw-cpd-apps-web-uat-we-01
 Application Gateway - agw-cpd-apps-ntf-uat-we-01
 
 ### 8. Apps Payment Token Resource Group
- [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
+ #### Resource Group
+[rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 **Resources** - 
 Key Vault - kv-cpd-apps-pt-uat-we-01

@@ -77,8 +77,8 @@ Key Vault - kv-cpd-apps-uat-we-01 (Access Policy added only for ADO Service Conn
 ### 4. Apps Networking Resource Group
 #### Resource Group
 [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
-**Dependencies** -
-**Resources** -
+#### Dependencies
+#### Resources
 Route Tables - route-cpd-apps-aks-uat-we-01
 Route Tables - route-cpd-apps-apim-uat-we-01
 Route Tables - route-cpd-apps-bkend-uat-we-01
@@ -87,15 +87,18 @@ Route Tables - route-cpd-apps-testvms-uat-we-01
 ### 5. Platform Networking Resource Group
 #### Resource Group
 [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-**Dependencies** - [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
-[rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
-**Resources** -
+
+#### Dependencies
+1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+#### Resources
 Virtual Network - vnet-cpd-pltf-uat-we-01
 
 ### 6. Platform Security Resource Group
+#### Resource Group
 [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
-**Dependencies** - 
-**Resources** -
+#### Dependencies
+#### Resources
 kv-cpd-pltf-uat-we-01 (Access Policy added only for ADO Service Connection)
 mi-cpd-pltf-uat-we-01
 
@@ -111,8 +114,8 @@ mi-cpd-pltf-uat-we-01
 ### 1. Apps Storage Resource Group
 #### Resource Group
 [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
-**Dependencies** - 
-**Resources** -
+#### Dependencies
+#### Resources
 App Config Store - acst-cpd-apps-str-uat-we-01
 Cosmos Account - cosmos-cpd-apps-str-uat-we-01
 Cosmos DB - sql-cosmos-cpd-apps-str-ntf-uat-we-01
@@ -189,11 +192,14 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 ### 4. Apps Integration Resource Group 
 #### Resource Group
 [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
-**Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
-[rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
-Two secrets added to kv-cpd-pltf-uat-we-01
-[rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
-**Resources** -
+
+#### Dependencies
+1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
+1. [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
+1. Two secrets added to kv-cpd-pltf-uat-we-01
+1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+#### Resources
 API Connection - apicon-cpd-apps-into365-uat-we-01 - API Connection to Office 365 Tenant (CMS)
 API Connection - apicon-cpd-apps-intsb-uat-we-01 - API Connection to Service Bus
 API Connection - apicon-cpd-apps-intspo-uat-we-01 - API Connection to Sharepoint Online

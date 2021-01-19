@@ -163,10 +163,16 @@ https://customervoice.microsoft.com/
 
 1.	Once the Case Routing rules solution is imported into the target instance, manually update the Queue in the rule items and then activate the Routing rule set.
 
-Go to Setting-> Service Management->Roting Rule Sets->Case Routing Rules->Rule Items->open Support Request Moves to ITSM Queue
-Open each row from rule items grid and update the queue lookup as mentioned in the below screenshot.
+2. Go to Settings-> Service Management->Routing Rule Sets->Case Routing Rules->Rule Items.
+
+3. Open each row from the rule items grid and update the queue lookup based on the queue name given in the title as shown in the example below.
 
 ![BasedonRuleTitleAddtoQueue.png](/.attachments/BasedonRuleTitleAddtoQueue-ff82349b-c0d3-4c4c-9dcc-66a4d8a87f19.png)
+
+4. Once all rule items are updated, activate the routing rule set.
+
+![ActivateRoutingRuleset.png](/.attachments/ActivateRoutingRuleset-eb551604-2034-4601-9d5f-3dd2527c132c.png)
+ 
 
 ### 3.7	Enable Customizable Resolve Case Dialog
 

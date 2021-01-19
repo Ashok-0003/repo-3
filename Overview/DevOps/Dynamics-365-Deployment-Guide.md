@@ -167,7 +167,7 @@ Go to Setting-> Service Management->Roting Rule Sets->Case Routing Rules->Rule I
 
 ![BasedonRuleTitleAddtoQueue.png](/.attachments/BasedonRuleTitleAddtoQueue-ff82349b-c0d3-4c4c-9dcc-66a4d8a87f19.png)
 
-2. Based on the title of the rule Items we are Routing to the respective queue. Open each row from rule items grid and update the queue lookup.
+2. Based on the title of the rule Items we are Routing to the respective queue. Open each row from rule items grid and update the queue lookup as mentioned in the above screenshot.
 
 
 

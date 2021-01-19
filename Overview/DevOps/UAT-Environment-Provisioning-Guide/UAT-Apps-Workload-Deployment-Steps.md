@@ -138,7 +138,8 @@ Storage Account - stcpdappsstruatwe01
 App Registration - spn-bot-<env>
 **Resources** -
 
-### Remark - Naming Convention
+### Remark - 
+**Naming Convention**
 Naming convention was not followed because QnA Maker requires names for both App Service and Cognitive Service as identical. It was consulted with product team and it's an issue in QnA Maker. This is the reason why app service and cognitive service for QnaMaker are named as **appcog-cpd-apps-qna-uat-we-01** for English and **appcog-cpd-apps-arqna-uat-we-01** for Arabic.
 
 | Module Name | Parameter File Name | Remarks |
@@ -149,7 +150,6 @@ Naming convention was not followed because QnA Maker requires names for both App
 | AppServicePropertiesQnA | app-cpd-apps-arqna-uat-we-01 | App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&_a=edit&anchor=major-remark--)
 | AppServiceManagement | app-cpd-apps-bot-uat-we-01 | App service for Bot API
 |AppServicePlan | plan-cpd-apps-cog-uat-we-01
-|Bot Service | bot-cpd-apps-uat-we-01 | (appId is ClientID of spn-bot-<env>)
 | CognitiveServices | cog-cpd-apps-luisauth-uat-we-01 | Luis Authoring
 | CognitiveServices | cog-cpd-apps-luisrt-uat-we-01 | Luis Runtime
 | CognitiveServicesQna | cog-cpd-apps-qna-uat-we-01 | QnAMaker English - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&_a=edit&anchor=major-remark--)

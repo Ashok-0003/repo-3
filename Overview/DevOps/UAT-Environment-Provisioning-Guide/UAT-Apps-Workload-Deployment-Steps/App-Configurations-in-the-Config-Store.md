@@ -7,7 +7,7 @@
 |AdminPortal.ADAuth:Scope| SmartParking api scope from smartparking api app registration|Eg.`https://tasmucpb2cnonprod.onmicrosoft.com/SmartParkingAPI/.default` |
 |AdminPortal.ADAuth:TenantId| Directory(tenant) Id of adminportal app registration |Eg.`24f9d756-bf0c-43e9-ad5e-2073ae2d6698` |
 |AppSettings:ApiBaseUrl| |Eg. `https://api.<env>.sqcp.qa`|
-|AppSettings:InstrumentationKey| Instrumentation Key of the resource (appi-cpd-apps-mon-<env>-we-01) | |
+|AppSettings:InstrumentationKey| Instrumentation Key of the resource (appi-cpd-apps-mon-<env>-we-01) | Eg. `984ca526-2038-4d9d-b0cf-653706512c58`|
 |AzureSearchFunction.AzureSearchSettings:ServiceName|Search Index Name from resource srch-cpd-apps-cog-<env>-we-01|Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
 |Bot.AppSettings:ArQnaMaker:Endpoint| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> |Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|
 |Bot.AppSettings:ArQnaMaker:EndpointKey| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
@@ -71,11 +71,11 @@
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Common.CoreApis.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Common.CoreApis.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|ConnectionStrings:CosmosDBEndpoint||Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
+|ConnectionStrings:CosmosDBEndpoint| End point for Cosmos Account|Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
 |ConnectionStrings:GisParkingLotsApi||Eg. `https://api.<env>.sqcp.qa/`|
-|ConnectionStrings:NotificationApi||Eg. `https://api.<env>.sqcp.qa/notification/api/Notification/`|
-|ConnectionStrings:ProfileApi||Eg. `https://api.<env>.sqcp.qa/profile/api/`|
-|ConnectionStrings:SmartParkingApi||Eg. `https://api.<env>.sqcp.qa/smartparking/api/`|
+|ConnectionStrings:NotificationApi| End point for notification api |Eg. `https://notification.<env>.sqcp.qa/api/Notification/`|
+|ConnectionStrings:ProfileApi|End point for profile api|Eg. `https://api.<env>.sqcp.qa/profile/api/`|
+|ConnectionStrings:SmartParkingApi|End point for smartparking api|Eg. `https://api.<env>.sqcp.qa/smartparking/api/`|
 |Crm.CaseManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-case-management-integration-<env>| Eg: 37fd8453-e25f-4b3e-bd78-32b28328f51a|
 |Crm.Common.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|
 |Crm.ProfileManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
@@ -85,11 +85,11 @@
 |GraphB2cExtensionAppClientId|@<C2ADC2E9-9B1C-6B31-A4CE-DBC64F092458> ||
 |GraphClientId|@<C2ADC2E9-9B1C-6B31-A4CE-DBC64F092458>||
 |GraphTenant|@<C2ADC2E9-9B1C-6B31-A4CE-DBC64F092458>||
-|ManageEventFunction.AzureADOptions:ClientId|Client Id of |Eg: @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |
-|ManageEventFunction.AzureADOptions:Instance|Instance of |Eg: @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |
-|ManageEventFunction.AzureADOptions:Scope|Scope of |Eg: @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |
-|ManageEventFunction.AzureADOptions:TenantId|Tenant Id of |Eg:| @<0322563A-1C16-609F-BBDA-38E4FCFF726E> 
-|Mobile:AccountManagementApiEndPoint||Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
+|ManageEventFunction.AzureADOptions:ClientId|Client Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
+|ManageEventFunction.AzureADOptions:Instance|Instance of  @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg: |
+|ManageEventFunction.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
+|ManageEventFunction.AzureADOptions:TenantId|Tenant Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg:|
+|Mobile:AccountManagementApiEndPoint|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C>|Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
 |Mobile:AuthenticationSettings:BoPolicySignUpSignIn| @<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
 |Mobile:AuthenticationSettings:ClientId|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
 |Mobile:AuthenticationSettings:PolicyChangePassword|@<0D4CAFB9-9E9F-6002-8DB9-5046CBB7EA0C> ||
@@ -124,28 +124,28 @@
 |NotificationFunctionSettings:FromAddress| @<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5>  ||
 |NotificationFunctionSettings:FromName|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5>  ||
 |NotificationFunctionSettings:NotificationHubPath|Name of Notification Hub resource - ntf-cpd-apps-str-<env>-we-01|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5> |
-|NotificationSettings:CosmosDBEndPointUri||Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
-|NotificationSettings:GSMSAppID||@<8C6D8054-8B97-6043-B268-34988AF7E7D2> |
+|NotificationSettings:CosmosDBEndPointUri|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
+|NotificationSettings:GSMSAppID|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>| |
 |NotificationSettings:GSMSServiceUri|@<8C6D8054-8B97-6043-B268-34988AF7E7D2> ||
-|NotificationSettings:Originator||@<8C6D8054-8B97-6043-B268-34988AF7E7D2> |
+|NotificationSettings:Originator|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>| |
 |NotificationSettings:ProfileApiUrl|@<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg. `https://api.<env>.sqcp.qa/profile/api/profiles`|
-|NotificationSettings:SmsApiName||@<8C6D8054-8B97-6043-B268-34988AF7E7D2> |
-|NotificationSettings.ADB2CAuth:ClientId|Client Id of |Eg: v|
-|NotificationSettings.ADB2CAuth:Domain|Domain of |Eg:@<8C6D8054-8B97-6043-B268-34988AF7E7D2>  |
-|NotificationSettings.ADB2CAuth:Instance|Instance of |Eg: @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |
-|NotificationSettings.AzureADOptions:ClientId|Client Id of |Eg: @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |
-|NotificationSettings.AzureADOptions:Domain|Domain of |Eg:@<8C6D8054-8B97-6043-B268-34988AF7E7D2>  |
-|NotificationSettings.AzureADOptions:Instance|Instance of |Eg:@<8C6D8054-8B97-6043-B268-34988AF7E7D2>  |
-|NotificationSettings.AzureADOptions:TenantId|Tenant Id of |Eg: @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |
-|OrganisationApi.AzureADOptions:ClientId|Client Id of |Eg:@<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |
-|OrganisationApi.AzureADOptions:Scope|Scope of |Eg: @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |
-|OrganisationApi.AzureADOptions:Instance|Instance of |Eg: @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |
-|OrganisationApi.AzureADOptions:TenantId|Tenant Id of |Eg:@<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |
-|PaymentGWSettings.ADB2CAuth:ClientId|Client Id of |Eg: @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |
-|PaymentGWSettings.ADB2CAuth:Domain|Domain of |Eg: @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |
-|PaymentGWSettings.ADB2CAuth:Instance|Instance of |Eg:@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>  |
-|PowerBIEmbed.AzureAd:ClientId|Client Id of |Eg: @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>  |
-|PowerBIEmbed.AzureAd:TenantId|Tenant Id of |Eg: @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> |
+|NotificationSettings:SmsApiName|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>| |
+|NotificationSettings.ADB2CAuth:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg: |
+|NotificationSettings.ADB2CAuth:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg:  |
+|NotificationSettings.ADB2CAuth:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
+|NotificationSettings.AzureADOptions:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
+|NotificationSettings.AzureADOptions:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
+|NotificationSettings.AzureADOptions:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
+|NotificationSettings.AzureADOptions:TenantId|Tenant Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg: |
+|OrganisationApi.AzureADOptions:ClientId|Client Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
+|OrganisationApi.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
+|OrganisationApi.AzureADOptions:Instance|Instance of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
+|OrganisationApi.AzureADOptions:TenantId|Tenant Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
+|PaymentGWSettings.ADB2CAuth:ClientId|Client Id of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg:  |
+|PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
+|PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
+|PowerBIEmbed.AzureAd:ClientId|Client Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>  |Eg:   |
+|PowerBIEmbed.AzureAd:TenantId|Tenant Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> |Eg:  |
 |SmartParking.ADB2CAuth:ClientId|Application(Client Id) of SmartParking Api app registration B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
 |SmartParking.ADB2CAuth:Domain|Domain Name of B2C Tenant|Eg: `tasmucpb2cnonprod.onmicrosoft.com`|
 |SmartParking.ADB2CAuth:Instance|Instance of microsoft login|Eg: `https://login.microsoftonline.com/`|

@@ -41,9 +41,9 @@ The following are the queues to be created.
 1.	Business Operations Queue
 2.	ITSM Queue
 3.	SQCC Queue
-4.      Billing Queue
-5.      Article Approver Queue
-6.      Internal Email Queue
+4. Billing Queue
+5. Article Approver Queue
+6. Internal Email Queue
 
 
 Follow below steps to create and configure above queues.

@@ -142,6 +142,8 @@ App Registration - spn-bot-<env>
 **Naming Convention**
 Naming convention was not followed because QnA Maker requires names for both App Service and Cognitive Service as identical. It was consulted with product team and it's an issue in QnA Maker. This is the reason why app service and cognitive service for QnaMaker are named as **appcog-cpd-apps-qna-uat-we-01** for English and **appcog-cpd-apps-arqna-uat-we-01** for Arabic.
 
+**Location**
+
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 | AppServiceManagement | app-cpd-apps-qna-uat-we-01 | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&_a=edit&anchor=major-remark--)
@@ -160,7 +162,7 @@ Naming convention was not followed because QnA Maker requires names for both App
 |LogicApp | logic-cpd-apps-qnakbsync-uat-we-01 | QnAMaker Knowledge articles Synchronizer
 |SearchService | srch-cpd-apps-cog-uat-we-01 | Search Service English Cognitive Service for QnAMaker
 |SearchService | srch-cpd-apps-arcog-uat-we-01 | Search Service Arabic Cognitive service for QnAMaker
-| WebappBot | bot-cpd-apps-uat-we-01 | WeappBot is same as BotService
+| WebappBot | bot-cpd-apps-uat-we-01 | (appId is ClientID of spn-bot-<env>
 
 4. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 **Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394) <br>[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 

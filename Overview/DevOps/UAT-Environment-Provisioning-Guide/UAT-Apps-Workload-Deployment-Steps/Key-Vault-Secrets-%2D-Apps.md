@@ -47,13 +47,13 @@
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret |||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret |||
 |kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret |||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret |||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-Password| Secret |||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-GetPaymentPreferenceServiceURL| Secret |||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-TerminalPwd| Secret |||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-Token| Secret |||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AzureAd-ClientSecret| Secret |||
-|kv-cpd-apps-<env>-we-01|PowerBIEmbed-UpdatePaymentPreferenceServiceURL| Secret |||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> ||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-Password| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-GetPaymentPreferenceServiceURL| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-TerminalPwd| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-Token| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AzureAd-ClientSecret| Secret @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|||
+|kv-cpd-apps-<env>-we-01|PowerBIEmbed-UpdatePaymentPreferenceServiceURL| Secret |@@<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> ||
 |kv-cpd-apps-<env>-we-01|SmartParking-ADAuth-ClientSecret| Secret |Client Secret fo Smart Parking APi App regestration in B2C tenant||
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint| CMSBPA Self signed certificate|
 |kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|CMSAPI Self signed certificate| 

@@ -59,7 +59,7 @@
 |CDNSettings:Endpoint|Name of the CDN endpoint resource <env>-cdntasmu||
 |CDNSettings:ResourceGroup|Name of the resource rg-cpd-shrd-<env>-we-01||
 |Cms.Api:ClientApp| App Name of Azure AD app spn-cmsapi-<env>|Eg. `NONISV|TASMU|spn-cmsapi-<env>`|
-|Cms.Api:ClientId|Application (client) ID of Azure AD app spn-cmsapi-<env>||
+|Cms.Api:ClientId|Application (client) ID of Azure AD app spn-cmsapi-<env>|Eg. 5e4456ea-6c48-414e-bf7b-904882a21f82|
 |Cms.Common:Resource|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:SourceURL|Redirect URL of Azure AD app spn-cmsbpa-<env>|E.g. `https://tasmusqcp<env>.sharepoint.com`|
 |Cms.Common:TargetURL|@<ACAA2713-B2D1-668C-A427-A1DB1890F198>||

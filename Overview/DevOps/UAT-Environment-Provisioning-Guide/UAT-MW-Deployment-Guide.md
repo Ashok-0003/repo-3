@@ -105,7 +105,26 @@ Once you get the message "File Updated Successfully" on the powershell, proceed 
      ![image.png](/.attachments/image-c35e80ae-eb45-4207-8a20-9de2cac55ca0.png)
 1. Click on Browse, select the updated resx file and click on Import
      ![image.png](/.attachments/image-66e202fa-990a-4b7e-a735-993793180dd7.png)
+Video Link :
+- For translation of site pages:
+1. Go to site settings and click on Language Settings.
+![image.png](/.attachments/image-dd61eafd-6f90-465c-9491-18ac86119305.png)
+2. Enable this option, add Arabic language, click on save.
+![image.png](/.attachments/image-01c0fd34-543c-4f3d-962b-ac7f9176a2a5.png)
+3. Go to the page and click on Translation.
+![image.png](/.attachments/image-8e0f24fd-2e11-4b24-bdee-f27677ee4db0.png)
+4. A panel will open up at right side of the window, click on create.
+![image.png](/.attachments/image-18070354-8942-49cb-b428-ef0e7de78b03.png)
+5. Click on view.
+![image.png](/.attachments/image-b2262867-9ae7-4e7c-a439-3bdb7dae3215.png)
+6. A new page will open up with url ending with `SitePages/ar/<PageName>.aspx`. Click on edit.
+![image.png](/.attachments/image-e99848e5-e9c5-44f6-8730-32e085b5ea43.png)
+7. Once the page is in edit mode, for each of the webpart, click on the webpart and update only the **title property** of the webpart to Arabic(eg: News Articles is the title of the selected webpart).
+![image.png](/.attachments/image-7b99ad7f-17cd-44fb-b4f0-87871b9bb5f6.png)
+8. Once all the webparts title are updated, click on Publish button. 
+![image.png](/.attachments/image-f3c0b594-6e51-490f-9822-e8be823e6b27.png)
 
+Video Link :
 
 - Steps to Update office 365 tenant theme and logo : [Update o365 Tenant](https://docs.microsoft.com/en-us/microsoft-365/admin/setup/customize-your-organization-theme?view=o365-worldwide)
 - Steps to enable office 365 usage analytics permissions : [Enable Analytics permission](https://docs.microsoft.com/en-us/microsoft-365/admin/usage-analytics/enable-usage-analytics?view=o365-worldwide)

@@ -1,5 +1,5 @@
 # 1 	Purpose
-The purpose of this document is to explain the steps to deploy TASMU Dynamics 365 CE Solution.
+The purpose of this document is to explain the steps to deploy TASMU Dynamics 365 CE Solution. The sections marked as **[Automated]** are automatically deployed through pipeline, those steps are included in this document only for verification after deployment.
 
 [[_TOC_]]
 

@@ -166,8 +166,7 @@ https://customervoice.microsoft.com/
 Go to Setting-> Service Management->Roting Rule Sets->Case Routing Rules->Rule Items->open Support Request Moves to ITSM Queue
 Open each row from rule items grid and update the queue lookup as mentioned in the below screenshot.
 
-![BasedonRuleTitleAddtoQueue.png]
-(/.attachments/BasedonRuleTitleAddtoQueue-ff82349b-c0d3-4c4c-9dcc-66a4d8a87f19.png)
+![BasedonRuleTitleAddtoQueue.png](/.attachments/BasedonRuleTitleAddtoQueue-ff82349b-c0d3-4c4c-9dcc-66a4d8a87f19.png)
 
 ### 3.7	Enable Customizable Resolve Case Dialog
 

@@ -1,6 +1,8 @@
 # 1 	Purpose
 The purpose of this document is to explain the steps to deploy TASMU Dynamics 365 CE Solution.
 
+[[_TOC_]]
+
 # 1 	Prerequisites
 The following are Prerequisites for the deployment.
 - Dynamics tenant and valid customer service enterprise and field service licenses.

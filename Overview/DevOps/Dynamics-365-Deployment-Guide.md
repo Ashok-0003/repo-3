@@ -55,7 +55,7 @@ Follow below steps to create and configure above queues.
 6.	Repeat the above steps to create other queues listed.
 
 
-### 1.3 Assign security roles to the teams
+### 1.2 Assign security roles to the teams
  
 1.	Open the team crated in the previous step, click on MANAGE ROLES ribbon button and assign security role ‘Tasmu Article Approver’  to the team and click on OK button as highlighted in below screen.
  ![image.png](/.attachments/image-9131576b-8fee-49de-a763-0894906df37c.png)

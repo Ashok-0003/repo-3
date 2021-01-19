@@ -27,7 +27,7 @@
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-IoTHub| Secret |Retrieve connection string from **iot-cpd-data-<env>-we-01** -> **Shared access policies** -> **registryRead** -> **Connection-String-Primary Key**||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-NotificationHub| Secret |||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-Redis| Secret |||
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-SmartParkingSQLDB| Secret |||
+|kv-cpd-apps-<env>-we-01|ConnectionStrings-SmartParkingSQLDB| Secret |Form the connection string for sql-cpd-data-<env>-we-01|Eg.`Data Source=sql-cpd-data-<env>-we-01.database.windows.net;Initial Catalog=sqldb-cpd-data-<env>-we-01;User Id=<userId>;Password=<pwd>`|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-StorageAccount| Secret |||
 |kv-cpd-apps-<env>-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret| Secret |Client secret stored in kv-cpd-apps-<env>-we-01 used for Case api connection, generate secret from Azure AD app registration.<p> UAT - spn-crm-case-management-integration-test<p>Client Secret : **********</p><p> TEST - spn-crm-case-management-integration-test<p>Client Secret : **********</p><p> DEV - spn-crm-case-management-integration-dev<p>Client Secret : **********</p>||
 |kv-cpd-apps-<env>-we-01|Crm-Common-DynamicsSettings-ClientSecret| Secret |Client secret stored in kv-cpd-apps-<env>-we-01 used for common dynamic connection, generate secret from Azure AD app registration.<p> UAT - spn-crm-common-integration-test <p>Client Secret : **********</p><p> TEST - spn-crm-common-integration-test<p>Client Secret : **********</p><p> DEV - spn-crm-general-integration-dev<p>Client Secret : **********</p>||

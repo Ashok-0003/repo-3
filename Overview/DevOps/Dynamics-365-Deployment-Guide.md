@@ -5,19 +5,21 @@ The purpose of this document is to explain the steps to deploy TASMU Dynamics 36
 
 # 2 	Prerequisites
 The following are Prerequisites for the deployment.
-1.1. Dynamics tenant and valid customer service enterprise and field service licenses.
-1.2. At least 5 GB of database capacity remaining.
-1.3. 'Dynamics 365 Administrator' Azure AD role for the person provisioning the environment.
-1.4. Security groups must be created for environment access and licenses assignments similar to below. And the users requiring access must be present in these groups (membership in this groups can be updated after deployment also).
+
+### 2.1. Dynamics tenant and valid customer service enterprise and field service licenses.
+### 2.2. At least 5 GB of database capacity remaining.
+### 2.3. 'Dynamics 365 Administrator' Azure AD role for the person provisioning the environment.
+### 2.4. Security groups must be created for environment access and licenses assignments similar to below. And the users requiring access must be present in these groups (membership in this groups can be updated after deployment also).
+
 TASMU_AD_CPP_D365_CSE_License (customer service license group)
 TASMU_AD_CPP_D365_FS_License (field service license group)
 TASMU_AD_CPP_UAT_D365 (environment access group)
 
-1.5. Owner permission for the person performing the deployment, on the storage account for setting up [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=3.10-configure-export-to-data-lake).
+### 2.5. Owner permission for the person performing the deployment, on the storage account for setting up [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=3.10-configure-export-to-data-lake).
 
-1.6. A service account (preferably non interactive) for the purpose of performing automated deployment to Dynamics environment. This account should have access to the target Dynamics environment and must have System Administrator security role within target Dynamics environment (this is not an Azure AD role).
+### 2.6. A service account (preferably non interactive) for the purpose of performing automated deployment to Dynamics environment. This account should have access to the target Dynamics environment and must have System Administrator security role within target Dynamics environment (this is not an Azure AD role).
 
-1.7. Provision the environment by following this document.
+### 2.7. Provision the environment by following this document.
 https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database
 
 Verify that the environment is provisioned in **West Europe** from the [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=3.10-configure-export-to-data-lake) configuration page. If its not, raise a product support ticket to get it moved to West Europe.
@@ -28,19 +30,19 @@ Make sure to enter values based on the target environment. Below is sample from 
 
 ![image.png](/.attachments/image-7ae998b3-d387-4776-9afe-b35bce0aee46.png)
 
-1.8. Azure AD app registrations
+### 2.8. Azure AD app registrations
 The following app registrations are required in the **Azure Active Directory**. Please follow steps mentioned in the **Appendix E - Azure AD App registration** to create app registrations for this purpose.
 spn-crm-common-integration-<env>
 spn-crm-profile-management-integration-<env>
 spn-crm-case-management-integration-<env>
 
-1.9 Azure AD B2C app registrations
+### 2.9 Azure AD B2C app registrations
 The following app registrations are required in the **Azure Active Directory B2C**.
 **Dynamics365Client<env>**
 Refer to the "Dynamics365Client" app registration in the non prod b2c tenant for reference as shown below. API permissions shown below needs to be given and admin consent needs to be given by a Global Admin of the B2C tenant. Keep the client id and secret of this app for later reference.
 ![image.png](/.attachments/image-263913e3-7020-496c-8bdf-355dc7d7868a.png)
 
-- Azure DevOps permissions for creating [service connections](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices), edit the [CD-CrmPlatform-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=111) pipeline, and create/update the target environment in [environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_environments).
+### 2.10 Azure DevOps permissions for creating [service connections](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices), edit the [CD-CrmPlatform-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=111) pipeline, and create/update the target environment in [environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_environments).
 
 # 3	Pre-Deployment
 ### 3.1 Ensure that the deployment pipeline is setup for the target environment

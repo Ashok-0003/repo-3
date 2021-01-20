@@ -29,7 +29,7 @@
 |Bot.AppSettings:KnowledgebasePortalUrl| `https://marketplace.<env>.sqcp.qa/en/support/articledetails?articleid=`|Eg. `https://marketplace.<env>.sqcp.qa/en/support/articledetails?articleid=`|
 |Bot.AppSettings:Luis:AccountName|Name of the resource cog-cpd-apps-luisauth-<env>-we-01| Eg. `cog-cpd-apps-luisauth-dev-we-01`|
 |Bot.AppSettings:LuisCustomEndpoint| Endpoint value under Keys and Endpoint section of cog-cpd-apps-luisrt-<env>-we-01 cognitive services resource | <p>For initial deployment [refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=updating-infra-repo-with-luis-and-qna-keys)</p> Eg. `https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/`|
-|Bot.AppSettings:ProductCatalogueApiUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://api.<env>.sqcp.qa/catalogue/api`|
+|Bot.AppSettings:ProductCatalogueApiUrl| `https://api.<env>.sqcp.qa/catalogue/api`|Eg. `https://api.<env>.sqcp.qa/catalogue/api`|
 |Bot.AppSettings:ResourceGroupName|Name of the resource rg-cpd-apps-cog-<env>-we-01| Eg. `rg-cpd-apps-cog-dev-we-01`|
 |Bot.AppSettings:SearchApiUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://api.<env>.sqcp.qa/searchapi`|
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|

@@ -161,6 +161,7 @@
 |NotificationSettings.AzureADOptions:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
 |NotificationSettings.AzureADOptions:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
 |NotificationSettings.AzureADOptions:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
+|NotificationSettings.AzureADOptions:Scope|||
 |NotificationSettings.AzureADOptions:TenantId|Tenant Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg: |
 |OrganisationApi.AzureADOptions:ClientId|Client Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
 |OrganisationApi.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |

@@ -140,7 +140,7 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 | "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_en_us"** | "Bot.AppSettings:EnQnaMaker:SourceFAQKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "endpointKey": | "Bot.AppSettings:ArQnaMaker:EndpointKey" |
 | Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22arqnamaker%22%3A-%7B-%22endpoint%22) | "Bot.AppSettings:ArQnaMaker:Endpoint" |
-| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "hostname" | "ArQnaMaker": { "Hostname" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "hostname" | "Bot.AppSettings:ArQnaMaker:Hostname" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "FAQ_ar_ar"** | "Bot.AppSettings:ArQnaMaker:FaqKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_ar_ar"** | "Bot.AppSettings:ArQnaMaker:KbQnAKbId" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_ar_ar"** | "Bot.AppSettings:ArQnaMaker:SourceFAQKbId" |

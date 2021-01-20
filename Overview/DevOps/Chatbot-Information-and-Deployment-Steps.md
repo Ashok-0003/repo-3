@@ -1,3 +1,4 @@
+[[_TOC_]]
 # Chatbot Resources
 
 1. app-cpd-apps-arqna-<env>-we-01 - App service for Arabic QnA

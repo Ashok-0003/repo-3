@@ -173,12 +173,27 @@
 |PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
 |PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|||
+|PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|||
+|PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|||
+|PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|||
+|PaymentGWSettings.AuthorizeCard:Scope||Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
+|PaymentGWSettings.AuthorizeCard:TenantId|||
+|PaymentGWSettings.S2SAuth:Audience|||
+|PaymentGWSettings.S2SAuth:Authority|||
 |PowerBIEmbed.AzureAd:ClientId|Client Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>  |Eg:   |
 |PowerBIEmbed.AzureAd:TenantId|Tenant Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> |Eg:  |
+|PowerBIEmbed.PowerBIEmbed:ScriptPath|||
+|PowerBIEmbed.PowerBIEmbed:EnvPath|||
 |SmartParking.ADB2CAuth:ClientId|Application(Client Id) of SmartParking Api app registration B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
 |SmartParking.ADB2CAuth:Domain|Domain Name of B2C Tenant|Eg: `tasmucpb2cnonprod.onmicrosoft.com`|
 |SmartParking.ADB2CAuth:Instance|Instance of microsoft login|Eg: `https://login.microsoftonline.com/`|
+|SmartParking.ADB2CAuth:SignUpSignInPolicyId|||
+|SmartParking.ProfileApi.AzureADOptions:Authority|||
 |SmartParking.ProfileApi.AzureADOptions:ClientId|Client Id of Central-Platform-core-apis app registration|Eg: `bc67474e-612b-4d7f-b75a-ac54d45f143a`|
+|SmartParking.ProfileApi.AzureADOptions:Domain|||
+|SmartParking.ProfileApi.AzureADOptions:Instance||Eg. `https://login.microsoftonline.com/`|
 |SmartParking.ProfileApi.AzureADOptions:Scope|Scope of Central-Platform-core-apis|Eg: `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
 |SmartParking.ProfileApi.AzureADOptions:TenantId|Tenant Id of B2C Tenant|Eg: |
+|SmartParking.S2SAuth:Audience|||
+|SmartParking.S2SAuth:Authority|||
 |SubscriptionId| @<44D3C2D0-5E60-68E5-8187-D6640EF9C21C> ||

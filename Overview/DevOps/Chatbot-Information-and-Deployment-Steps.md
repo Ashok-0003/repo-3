@@ -36,7 +36,7 @@
 1. After successful deployment of chatbot resources in step 1 above, we have to update manifest file and variable group with secret. for that follow below steps:
 
 a. Go to the webapp bot resource created like below screenshot and select manage as highlighted in image below.
-![webappbot-manage.png](/.attachments/webappbot-manage-ef185e39-eca6-4e0d-a04e-bbfe65de7bb9.png)
+![webappbot-manage.png](/.attachments/webappbot-manage-150f50fb-2b30-40aa-800f-5081714424ef.png)
 b.  Then click on manifest like below image and download the json file.
 ![Manifest.png](/.attachments/Manifest-68983b14-c0ec-40cb-9239-0d73fddd5cee.png)
 c. Then update following elements in the json with values below and upload it here.

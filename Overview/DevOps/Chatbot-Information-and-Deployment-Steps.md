@@ -127,23 +127,23 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 
 | From (OutputCognitiveModels.json) | To infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json  |
 |--|--|
-| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22luiscustomendpoint%22) | "LuisCustomEndpoint" |
-| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22dispatchluisappiden%22) | "DispatchLuisAppIdEn" |
-| "cognitiveModels" -> "en-us" -> "languageModels" -> "appid": | "GeneralLuisAppIdEn" |
-| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22dispatchluisappidar%22) | "DispatchLuisAppIdAr" |
-| "cognitiveModels" -> "ar-ar" -> "languageModels" -> "appid": | "GeneralLuisAppIdAr" |
-| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "endpointKey": | "EnQnaMaker": { "EndpointKey" |
-| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22enqnamaker%22%3A-%7B-%22endpoint%22) | "EnQnaMaker": { "Endpoint" |
-| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "hostname" | "EnQnaMaker": { "Hostname" |
-| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "FAQ_en_us"** | "EnQnaMaker": { "FaqKbId" |
-| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_en_us"** | "EnQnaMaker": { "KbQnAKbId" |
-| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_en_us"** | "EnQnaMaker": { "SourceFAQKbId" |
-| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "endpointKey": | "ArQnaMaker": { "EndpointKey" |
-| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22arqnamaker%22%3A-%7B-%22endpoint%22) | "ArQnaMaker": { "Endpoint" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22luiscustomendpoint%22) | "Bot.AppSettings:LuisCustomEndpoint" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22dispatchluisappiden%22) | "Bot.AppSettings:DispatchLuisAppIdEn" |
+| "cognitiveModels" -> "en-us" -> "languageModels" -> "appid": | "Bot.AppSettings:GeneralLuisAppIdEn" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22dispatchluisappidar%22) | "Bot.AppSettings:DispatchLuisAppIdAr" |
+| "cognitiveModels" -> "ar-ar" -> "languageModels" -> "appid": | "Bot.AppSettings:GeneralLuisAppIdAr" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "endpointKey": | "Bot.AppSettings:EnQnaMaker:EndpointKey" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22enqnamaker%22%3A-%7B-%22endpoint%22) | "Bot.AppSettings:EnQnaMaker:Endpoint" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "hostname" | "Bot.AppSettings:EnQnaMaker:Hostname" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "FAQ_en_us"** | "Bot.AppSettings:EnQnaMaker:FaqKbId" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_en_us"** | "Bot.AppSettings:EnQnaMaker:KbQnAKbId" |
+| "cognitiveModels" -> "en-us" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_en_us"** | "Bot.AppSettings:EnQnaMaker:SourceFAQKbId" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "endpointKey": | "Bot.AppSettings:ArQnaMaker:EndpointKey" |
+| Refer this - [Image](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=%22arqnamaker%22%3A-%7B-%22endpoint%22) | "Bot.AppSettings:ArQnaMaker:Endpoint" |
 | "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "hostname" | "ArQnaMaker": { "Hostname" |
-| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "FAQ_ar_ar"** | "ArQnaMaker": { "FaqKbId" |
-| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_ar_ar"** | "ArQnaMaker": { "KbQnAKbId" |
-| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_ar_ar"** | "ArQnaMaker": { "SourceFAQKbId" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "FAQ_ar_ar"** | "Bot.AppSettings:ArQnaMaker:FaqKbId" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "CRMKnowledgebase_ar_ar"** | "Bot.AppSettings:ArQnaMaker:KbQnAKbId" |
+| "cognitiveModels" -> "ar-ar" -> "knowledgebases" -> "kbId" **where "id": "Source_FAQ_ar_ar"** | "Bot.AppSettings:ArQnaMaker:SourceFAQKbId" |
 
 # Reference images:
 - Follow [this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=luis-qnamaker-deployments) to reach following pages in (https://eu.luis.ai/).

@@ -75,7 +75,7 @@
 |Crm.Common.DynamicsSettings:Resource| Resource of App Registration - spn-crm-common-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
 |Crm.Common.DynamicsSettings:TenantId| TenantId of App Registration - spn-crm-common-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |Crm.Common.S2SAuth:Audience| Audience of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.Common.S2SAuth:Authority| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|Crm.Common.S2SAuth:Authority| Authority of TASMU non prod JWT authentication| Eg: https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0/|
 |Crm.Common.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Crm.ProfileManagement.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.ProfileManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|

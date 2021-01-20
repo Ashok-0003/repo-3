@@ -31,7 +31,9 @@ Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
 [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
 #### Dependencies
 #### Resources
-Storage Account - stcpdglobacmwe01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|StorageAccount | stcpdglobacmwe01 ||
 [Create a daily export of azure consumption metering for 6D Billing](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal#create-a-daily-export)
 
 ## Creation and set up of AD B2C Tenant
@@ -60,11 +62,13 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 #### Dependencies
 #### Resources
-Application Insights - appi-cpd-apps-mon-uat-we-01
-Automation Account - aut-cpd-apps-mon-uat-we-01
-Event Hub Namespaces - evhns-cpd-apps-mon-uat-we-01
-Log Analytics - log-cpd-apps-mon-uat-we-01
-Storage Account - stcpdappsdiaguatwe01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|ApplicationInsights | appi-cpd-apps-mon-uat-we-01||
+|AutomationAccounts | aut-cpd-apps-mon-uat-we-01||
+|EventHubNamespaces | evhns-cpd-apps-mon-uat-we-01||
+|LogAnalytics | log-cpd-apps-mon-uat-we-01||
+|StorageAccount | stcpdappsdiaguatwe01||
 
 ### 3. Apps Security Resource Group
 #### Resource Group
@@ -276,12 +280,14 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 1. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
 #### Resources
-APIM - apim-cpd-shrd-uat-we-01
-APIM Backend - apimlab-cpd-shrd-uat-we-01 
-APIM API - apimapi-cpd-shrd-uat-we-01
-CDN - cdn-cpd-shrd-uat-we-01
-CDN Endpoint - uat-tasmu
-Storage Account - stcpdshrduatwe01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|ApiManagement| apim-cpd-shrd-uat-we-01 ||
+|ApiManagementLogicAppBackend | apimlab-cpd-shrd-uat-we-01 ||
+|ApiManagementAPI | apimapi-cpd-shrd-uat-we-01 ||
+|ContentDeliveryNetwork | cdn-cpd-shrd-uat-we-01 ||
+|ContentDeliveryNetworkEndpoint | uat-tasmu ||
+|StorageAccount | stcpdshrduatwe01 ||
 
 ### 6. Apps AKS Resource Group
 #### Resource Group 

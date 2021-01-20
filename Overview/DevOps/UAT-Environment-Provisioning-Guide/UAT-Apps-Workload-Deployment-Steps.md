@@ -254,10 +254,11 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 ### 5. Shared Resource Group 
 #### Resource Group
 [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
-**Dependencies** - [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
-[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-[rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
-**Resources** -
+#### Dependencies
+1. [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
+1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+1. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+#### Resources
 APIM - apim-cpd-shrd-uat-we-01
 APIM Backend - apimlab-cpd-shrd-uat-we-01 
 APIM API - apimapi-cpd-shrd-uat-we-01

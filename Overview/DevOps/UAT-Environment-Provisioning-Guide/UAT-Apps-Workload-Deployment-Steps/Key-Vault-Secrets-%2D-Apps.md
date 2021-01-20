@@ -1,8 +1,8 @@
 
 |Key Vault Name| Name  | Type | How to Retrieve | Remarks|
 |--|--|--|--|--|
-|kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret| Create Client Secret for adminportal app registration in B2C Tenant under certificates and secrets menu.||
-|kv-cpd-apps-<env>-we-01|AdminPortal-AuthClaims-GroupId|Secret| Create "Platformadmin" Group in Azure Ad and retrieve the object Id of the group.||
+|kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret| Retrieve Client Secret for adminportal app registration in B2C Tenant under certificates and secrets menu.||
+|kv-cpd-apps-<env>-we-01|AdminPortal-AuthClaims-GroupId|Secret| Navigate to"Platformadmin" Group in Azure Ad Groups in B2C Tenant and retrieve the object Id of the group.||
 |kv-cpd-apps-<env>-we-01|Azure-Search-Key|Secret|Primary Admin key of resource srch-cpd-apps-cog-<env>-we-01 ||
 |kv-cpd-apps-<env>-we-01|BotAppSecret|Secret| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> / @<D654DCE5-848A-674D-A624-93B0AB87B9D1> ||
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisAuthSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luiauth-<env>-we-01** | |

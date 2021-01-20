@@ -1,3 +1,4 @@
+[[_TOC_]]
 # Recommended Configurations:
 - Size - Standard_D8s_v3
 - OS Disk Size - 256 GB
@@ -27,7 +28,7 @@ PowerShellGet
 1. Google Chrome
 1. OpenSSL 1.1.1
 
-Powershell Modules Update:
+###Powershell Modules Update:
 1. Open Powershell in Admin mode and run below commands:
 `Install-Module -Name PackageManagement -Repository PSGallery -Force`
 `Install-Module -Name PowerShellGet -Repository PSGallery -Force

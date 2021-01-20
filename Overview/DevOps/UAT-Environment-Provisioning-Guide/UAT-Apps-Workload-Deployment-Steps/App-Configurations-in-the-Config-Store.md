@@ -187,13 +187,13 @@
 |SmartParking.ADB2CAuth:ClientId|Application(Client Id) of SmartParking Api app registration B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
 |SmartParking.ADB2CAuth:Domain|Domain Name of B2C Tenant|Eg: `tasmucpb2cnonprod.onmicrosoft.com`|
 |SmartParking.ADB2CAuth:Instance|Instance of microsoft login|Eg: `https://login.microsoftonline.com/`|
-|SmartParking.ADB2CAuth:SignUpSignInPolicyId|||
-|SmartParking.ProfileApi.AzureADOptions:Authority|||
+|SmartParking.ADB2CAuth:SignUpSignInPolicyId|Get the B2C Individual policy name from custom policies in B2C Tenant B2C_1A_Signup_Signin_<env>|Eg. `B2C_1A_Signup_Signin_TST`|
+|SmartParking.ProfileApi.AzureADOptions:Authority|Authority Url with B2C Tenant Id|Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`|
 |SmartParking.ProfileApi.AzureADOptions:ClientId|Client Id of Central-Platform-core-apis app registration|Eg: `bc67474e-612b-4d7f-b75a-ac54d45f143a`|
-|SmartParking.ProfileApi.AzureADOptions:Domain|||
+|SmartParking.ProfileApi.AzureADOptions:Domain|Domain Name of B2C Tenant where Central-Platform-core-apis app registration resides|Eg. `tasmucpb2cnonprod.onmicrosoft.com`|
 |SmartParking.ProfileApi.AzureADOptions:Instance||Eg. `https://login.microsoftonline.com/`|
 |SmartParking.ProfileApi.AzureADOptions:Scope|Scope of Central-Platform-core-apis|Eg: `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
-|SmartParking.ProfileApi.AzureADOptions:TenantId|Tenant Id of B2C Tenant|Eg: |
-|SmartParking.S2SAuth:Audience|||
-|SmartParking.S2SAuth:Authority|||
+|SmartParking.ProfileApi.AzureADOptions:TenantId|Tenant Id of B2C Tenant|Eg: `24f9d756-bf0c-43e9-ad5e-2073ae2d6698`|
+|SmartParking.S2SAuth:Audience|ClientId of SmartParking Api App registration|Eg. `64db2dba-79c5-4b6c-84e0-696b3d1f0465`|
+|SmartParking.S2SAuth:Authority|Authority Url with tenant id|Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`|
 |SubscriptionId| @<44D3C2D0-5E60-68E5-8187-D6640EF9C21C> ||

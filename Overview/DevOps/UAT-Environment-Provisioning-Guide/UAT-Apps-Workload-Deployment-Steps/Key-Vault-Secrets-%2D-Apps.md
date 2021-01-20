@@ -17,7 +17,7 @@
 |kv-cpd-apps-<env>-we-01|Cms-Function-CertificatePassword| Secret |**CMSBPA** certificate password|
 |kv-cpd-apps-<env>-we-01|Cms-Function-CertificatePfxKey| Secret |**CMSBPA** certificate pfx key|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-ConsumptionStorageAccount|Secret|Connection string of the resource **stcpdglobacmwe01**|Eg `DefaultEndpointsProtocol=https;AccountName=stcpdglobacmwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-CosmosDBAuthKey|Secret| @<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5> ||
+|kv-cpd-apps-<env>-we-01|ConnectionStrings-CosmosDBAuthKey|Secret| Settings-> Keys -> PrimaryKey **cosmos-cpd-apps-<env>-we-01** ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSql|Secret|@<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSqlExport|Secret|@<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-FieldServiceServiceBus| Secret |Send,Listen access policy connection string of the resource **sb-cpd-apps-int-<env>-we-01**| @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  do we require to seed this secret name now?|

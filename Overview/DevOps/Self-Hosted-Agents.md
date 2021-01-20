@@ -3,6 +3,7 @@
 - OS Disk Size - 256 GB
 - Data Disk Count - 3 (128 GB each)
 - OS - Windows Server 2019 (latest)
+- Virtual Network - vnet-cph-pltf-prd-we-01
 
 # Capabilities:
 1. [Visual Studio Enterprise 2019 (v16.8.x)](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md#visual-studio-enterprise-2019)  - Install all the workloads

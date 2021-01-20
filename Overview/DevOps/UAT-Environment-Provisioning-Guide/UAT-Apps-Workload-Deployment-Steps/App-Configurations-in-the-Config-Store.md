@@ -64,19 +64,19 @@
 |ConnectionStrings:NotificationApi| End point for notification api |Eg. `https://notification.<env>.sqcp.qa/api/Notification/`|
 |ConnectionStrings:ProfileApi|End point for profile api|Eg. `https://api.<env>.sqcp.qa/profile/api/`|
 |ConnectionStrings:SmartParkingApi|End point for smartparking api|Eg. `https://api.<env>.sqcp.qa/smartparking/api/`|
-|Crm.CaseManagement.DynamicsSettings:Authority|||
+|Crm.CaseManagement.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.CaseManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-case-management-integration-<env>| Eg: 37fd8453-e25f-4b3e-bd78-32b28328f51a|
-|Crm.CaseManagement.DynamicsSettings:Resource|||
-|Crm.CaseManagement.DynamicsSettings:TenantId|||
+|Crm.CaseManagement.DynamicsSettings:Resource|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.CaseManagement.DynamicsSettings:TenantId|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.Common.B2CAuth:Domain|||
-|Crm.Common.B2CAuth:Instance|||
-|Crm.Common.DynamicsSettings:Authority|||
+|Crm.Common.B2CAuth:Domain|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.Common.B2CAuth:Instance|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.Common.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|
-|Crm.Common.DynamicsSettings:Resource|||
-|Crm.Common.DynamicsSettings:TenantId|||
-|Crm.Common.S2SAuth:Audience|||
-|Crm.Common.S2SAuth:Authority|||
+|Crm.Common.DynamicsSettings:Resource|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.Common.DynamicsSettings:TenantId|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.Common.S2SAuth:Audience|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.Common.S2SAuth:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Crm.ProfileManagement.DynamicsSettings:Authority|||
 |Crm.ProfileManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
@@ -141,13 +141,13 @@
 |NotificationSettings.ADB2CAuth:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg: |
 |NotificationSettings.ADB2CAuth:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg:  |
 |NotificationSettings.ADB2CAuth:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
-|NotificationSettings.ADB2CAuth:SignUpSignInPolicyId|||
+|NotificationSettings.ADB2CAuth:SignUpSignInPolicyId|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
 |NotificationSettings.AzureADOptions:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
 |NotificationSettings.AzureADOptions:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
 |NotificationSettings.AzureADOptions:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
-|NotificationSettings.AzureADOptions:Scope|||
+|NotificationSettings.AzureADOptions:Scope|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
 |NotificationSettings.AzureADOptions:TenantId|Tenant Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg: |
-|NotificationSettings.S2SAuth:Audience|||
+|NotificationSettings.S2SAuth:Audience|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
 |OrganisationApi.AzureADOptions:ClientId|Client Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
 |OrganisationApi.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
 |OrganisationApi.AzureADOptions:Instance|Instance of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
@@ -156,18 +156,18 @@
 |PaymentGWSettings.ADB2CAuth:ClientId|Client Id of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg:  |
 |PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
-|PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|||
-|PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|||
-|PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|||
-|PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|||
+|PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.AuthorizeCard:Scope||Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
-|PaymentGWSettings.AuthorizeCard:TenantId|||
-|PaymentGWSettings.S2SAuth:Audience|||
-|PaymentGWSettings.S2SAuth:Authority|||
+|PaymentGWSettings.AuthorizeCard:TenantId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|PaymentGWSettings.S2SAuth:Audience|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|PaymentGWSettings.S2SAuth:Authority|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PowerBIEmbed.AzureAd:ClientId|Client Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>  |Eg:   |
 |PowerBIEmbed.AzureAd:TenantId|Tenant Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> |Eg:  |
-|PowerBIEmbed.PowerBIEmbed:ScriptPath|||
-|PowerBIEmbed.PowerBIEmbed:EnvPath|||
+|PowerBIEmbed.PowerBIEmbed:ScriptPath|@<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>||
+|PowerBIEmbed.PowerBIEmbed:EnvPath|@<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>||
 |SmartParking.ADB2CAuth:ClientId|Application(Client Id) of SmartParking Api app registration B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
 |SmartParking.ADB2CAuth:Domain|Domain Name of B2C Tenant|Eg: `tasmucpb2cnonprod.onmicrosoft.com`|
 |SmartParking.ADB2CAuth:Instance|Instance of microsoft login|Eg: `https://login.microsoftonline.com/`|

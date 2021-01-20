@@ -81,7 +81,7 @@ a. go to above url and then select directory and then choose authoring resource 
 
 b. you will see these language resources - two for english and two for arabic - each having instance for General and dispatch.
 
-![image.png](/.attachments/image-7511e615-116c-4e8d-8550-f14b5933406b.png)
+![luis.PNG](/.attachments/luis-33dcb8da-8274-4af7-ad73-68cf934c9d42.PNG)
 
 c. select each resource and follow steps below:
 i. click on manage then azure resources and then add prediction resource

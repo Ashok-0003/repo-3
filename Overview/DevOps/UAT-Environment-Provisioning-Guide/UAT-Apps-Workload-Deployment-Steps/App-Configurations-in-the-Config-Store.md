@@ -68,12 +68,12 @@
 |Crm.CaseManagement.DynamicsSettings:Resource| Resource of App Registration - spn-crm-case-management-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
 |Crm.CaseManagement.DynamicsSettings:TenantId| TenantId of App Registration - spn-crm-case-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |Crm.Common.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.Common.B2CAuth:Domain| Domain of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.Common.B2CAuth:Instance|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
-|Crm.Common.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.Common.B2CAuth:Domain| Domain of TASMU non prod B2C authentication| Eg: tasmucpb2cnonprod.onmicrosoft.com|
+|Crm.Common.B2CAuth:Instance| Instance of TASMU non prod B2C authentication| Eg: https://tasmucpb2cnonprod.b2clogin.com/tfp/|
+|Crm.Common.DynamicsSettings:Authority| Authority of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|
 |Crm.Common.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|
-|Crm.Common.DynamicsSettings:Resource|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
-|Crm.Common.DynamicsSettings:TenantId|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.Common.DynamicsSettings:Resource| Client Id of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|
+|Crm.Common.DynamicsSettings:TenantId| Client Id of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|
 |Crm.Common.S2SAuth:Audience|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.S2SAuth:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|

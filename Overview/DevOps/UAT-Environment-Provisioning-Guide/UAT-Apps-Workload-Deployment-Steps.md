@@ -43,11 +43,13 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
  [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
 #### Dependencies
 #### Resources
-Application Insights - appi-cpd-shrd-mon-uat-we-01
-Automation Account - aut-cpd-shrd-mon-uat-we-01
-Event Hub Namespaces - evhns-cpd-shrd-mon-uat-we-01
-Log Analytics - log-cpd-shrd-mon-uat-we-01
-Storage Account - stcpdshrddiaguatwe01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|ApplicationInsights | appi-cpd-shrd-mon-uat-we-01||
+|AutomationAccounts | aut-cpd-shrd-mon-uat-we-01||
+|EventHubNamespaces | evhns-cpd-shrd-mon-uat-we-01||
+|LogAnalytics | log-cpd-shrd-mon-uat-we-01||
+|StorageAccount | stcpdshrddiaguatwe01||
 
 ### 2. Apps Monitoring Resource Group
 #### Resource Group

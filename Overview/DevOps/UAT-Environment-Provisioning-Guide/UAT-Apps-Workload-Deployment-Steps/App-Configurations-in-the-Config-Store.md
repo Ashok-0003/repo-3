@@ -85,10 +85,10 @@
 |GraphB2cExtensionAppClientId|Client Id of default B2C extension app in Azure B2C tenant ||
 |GraphClientId|Client Id of TASMU-Portal app in Azure B2C tenant||
 |GraphTenant|Tenant Id of Azure B2C Tenant||
-|ManageEventFunction.AzureADOptions:ClientId|Client Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: 11f1f420-3ce0-4f26-85f5-9cf902553e72|
-|ManageEventFunction.AzureADOptions:Instance|Instance of  @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg: https://login.microsoftonline.com/{0}|
-|ManageEventFunction.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default|
-|ManageEventFunction.AzureADOptions:TenantId|Tenant Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg:|
+|ManageEventFunction.AzureADOptions:ClientId|Client Id of Manage Event azure function app registration |Eg: 11f1f420-3ce0-4f26-85f5-9cf902553e72|
+|ManageEventFunction.AzureADOptions:Instance|Instance of Manage Event azure function app registration |Eg: https://login.microsoftonline.com/{0}|
+|ManageEventFunction.AzureADOptions:Scope|Scope of Manage Event azure function app registration |Eg: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default|
+|ManageEventFunction.AzureADOptions:TenantId|Tenant Id of Manage Event azure function app registration |Eg: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698|
 |MicrosoftAppId| Microsoft App Id/ClientId of webAppBot bot-cpd-apps-<env>-dev-01 | <p>For initial deployment [refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=updating-infra-repo-with-luis-and-qna-keys)</p> Eg: `2d6a26ed-4c86-4d6e-b7a6-b7cee194e5e9`|
 |Mobile:AccountManagementApiEndPoint|API endpoint for accountmanagement service |Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
 |Mobile:AuthenticationSettings:BoPolicySignUpSignIn|AAD B2C policy for business owner signup  ||

@@ -10,8 +10,8 @@
 |AppSettings:InstrumentationKey| Instrumentation Key of the resource (appi-cpd-apps-mon-<env>-we-01) | Eg. `984ca526-2038-4d9d-b0cf-653706512c58`|
 |AzureSearchFunction.AzureSearchSettings:ServiceName|Search Index Name from resource srch-cpd-apps-cog-<env>-we-01|Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
 |Bot.AppSettings:ArQnaMaker:Endpoint| Endpoint value under Keys and Endpoint section of appcog-cpd-apps-arqna-<env>-we-01 cognitive services resource  |Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|
-|Bot.AppSettings:ArQnaMaker:EndpointKey| At [qnamaker.ai](https://www.qnamaker.ai/), select appcog-cpd-apps-arqna-<env>-we-01 as a service and get the EndpointKey value from any knowledge base under view code.  | Eg. `f35db8ce-35b4-4e9d-8511-b44554dcc80b`|
-|Bot.AppSettings:ArQnaMaker:FaqKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:ArQnaMaker:EndpointKey| At [qnamaker.ai](https://www.qnamaker.ai/), select appcog-cpd-apps-arqna-<env>-we-01 as a service and get the EndpointKey value from any knowledge base under view code.  | Eg. Authorization: EndpointKey `f35db8ce-35b4-4e9d-8511-b44554dcc80b`|
+|Bot.AppSettings:ArQnaMaker:FaqKbId| At [qnamaker.ai](https://www.qnamaker.ai/), select appcog-cpd-apps-arqna-<env>-we-01 as a service and get the FaqKbId value from tasmubot_FAQ_ar_ar knowledge base under view code.  | Eg. POST /knowledgebases/`bb84dae0-1c56-46bc-a02e-c872c753f3db`/generateAnswer|
 |Bot.AppSettings:ArQnaMaker:Hostname| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.azurewebsites.net/`|
 |Bot.AppSettings:ArQnaMaker:KbQnAkId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:ArQnaMaker:SourceFAQKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
@@ -21,8 +21,8 @@
 |Bot.AppSettings:DispatchLuisAppIdAr| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:DispatchLuisAppIdEn| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:EnQnaMaker:Endpoint| Endpoint value under Keys and Endpoint section of appcog-cpd-apps-qna-<env>-we-01 cognitive services resource| Eg. `https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/`|
-|Bot.AppSettings:EnQnaMaker:EndpointKey| At [qnamaker.ai](https://www.qnamaker.ai/), select appcog-cpd-apps-qna-<env>-we-01 as a service and get the EndpointKey value from any knowledge base under view code.  | Eg. `3acd8b1c-999d-4e7d-971e-4483dd7e074f`|
-|Bot.AppSettings:EnQnaMaker:FaqKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:EnQnaMaker:EndpointKey| At [qnamaker.ai](https://www.qnamaker.ai/), select appcog-cpd-apps-qna-<env>-we-01 as a service and get the EndpointKey value from any knowledge base under view code.  | Eg. Authorization: EndpointKey `3acd8b1c-999d-4e7d-971e-4483dd7e074f`|
+|Bot.AppSettings:EnQnaMaker:FaqKbId| At [qnamaker.ai](https://www.qnamaker.ai/), select appcog-cpd-apps-qna-<env>-we-01 as a service and get the FaqKbId value from tasmubot_FAQ_en_us knowledge base under view code.  | Eg. POST /knowledgebases/`f60138b7-0b5e-45d1-828f-a88ca78411f2`/generateAnswer|
 |Bot.AppSettings:EnQnaMaker:Hostname| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> >|Eg. `https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/`|
 |Bot.AppSettings:EnQnaMaker:KbQnAKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:EnQnaMaker:SourceFAQKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||

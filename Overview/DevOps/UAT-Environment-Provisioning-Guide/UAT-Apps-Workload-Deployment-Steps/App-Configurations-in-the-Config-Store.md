@@ -144,7 +144,7 @@
 |Mobile.MaxFileUploadSizeKB|The max file size in KB||
 |Mobile.DefaultCacheTtl|The default cache time-to-live time in sec ||
 |Mobile.LogLevel|The log level for application instrumentation||
-|NotificationFunctionSettings:ApimRootUrl|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5> |Eg. `https://api.<env>.sqcp.qa`|
+|NotificationFunctionSettings:ApimRootUrl|https://api.<env>.sqcp.qa |Eg. `https://api.<env>.sqcp.qa`|
 |NotificationFunctionSettings:FromAddress| @<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5>  ||
 |NotificationFunctionSettings:FromName|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5>  ||
 |NotificationFunctionSettings:NotificationHubPath|Name of Notification Hub resource - ntf-cpd-apps-str-<env>-we-01|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5> |

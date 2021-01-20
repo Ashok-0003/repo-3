@@ -52,11 +52,11 @@
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Common.CoreApis.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Common.CoreApis.B2CAuth:Domain| Client Id of TASMU non prod B2C authentication| | 
-|Common.CoreApis.B2CAuth:Instance| @<0322563A-1C16-609F-BBDA-38E4FCFF726E>| | 
+|Common.CoreApis.B2CAuth:Domain| Domain of TASMU non prod B2C authentication| Eg: tasmucpb2cnonprod.onmicrosoft.com | 
+|Common.CoreApis.B2CAuth:Instance| Instance of TASMU non prod B2C authentication| Eg: https://tasmucpb2cnonprod.b2clogin.com/tfp/ | 
 |Common.CoreApis.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Common.CoreApis.S2SAuth:Audience|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
-|Common.CoreApis.S2SAuth:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Common.CoreApis.S2SAuth:Audience| Audience of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|Common.CoreApis.S2SAuth:Authority| Authority of TASMU non prod JWT authentication| Eg: https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0/|
 |ConnectionStrings:CosmosDBEndpoint| End point for Cosmos Account|Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
 |ConnectionStrings:GisParkingLotsApi||Eg. `https://api.<env>.sqcp.qa/`|
 |ConnectionStrings:NotificationApi| End point for notification api |Eg. `https://notification.<env>.sqcp.qa/api/Notification/`|
@@ -64,8 +64,8 @@
 |ConnectionStrings:SmartParkingApi|End point for smartparking api|Eg. `https://api.<env>.sqcp.qa/smartparking/api/`|
 |Crm.CaseManagement.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.CaseManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-case-management-integration-<env>| Eg: 37fd8453-e25f-4b3e-bd78-32b28328f51a|
-|Crm.CaseManagement.DynamicsSettings:Resource|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
-|Crm.CaseManagement.DynamicsSettings:TenantId|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.CaseManagement.DynamicsSettings:Resource| Resource of App Registration - spn-crm-case-management-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
+|Crm.CaseManagement.DynamicsSettings:TenantId| TenantId of App Registration - spn-crm-case-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |Crm.Common.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Crm.Common.B2CAuth:Domain|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.B2CAuth:Instance|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||

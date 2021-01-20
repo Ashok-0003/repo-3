@@ -52,7 +52,7 @@
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Common.CoreApis.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Common.CoreApis.B2CAuth:Domain| @<0322563A-1C16-609F-BBDA-38E4FCFF726E>| | 
+|Common.CoreApis.B2CAuth:Domain| Client Id of TASMU non prod B2C authentication| | 
 |Common.CoreApis.B2CAuth:Instance| @<0322563A-1C16-609F-BBDA-38E4FCFF726E>| | 
 |Common.CoreApis.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Common.CoreApis.S2SAuth:Audience|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||

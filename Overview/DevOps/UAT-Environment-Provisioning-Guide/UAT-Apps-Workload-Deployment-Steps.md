@@ -50,6 +50,7 @@ Log Analytics - log-cpd-shrd-mon-uat-we-01
 Storage Account - stcpdshrddiaguatwe01
 
 ### 2. Apps Monitoring Resource Group
+#### Resource Group
 [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 #### Dependencies
 #### Resources
@@ -278,22 +279,24 @@ Application Gateway - agw-cpd-apps-aks-uat-we-01
 ### 7. Apps WAF Resource Group
 #### Resource Group
 [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
-**Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-[rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
-Certificated uploaded to kv-cpd-pltf-uat-we-01
-**Notes**
+#### Dependencies 
+1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+1. Certificated uploaded to kv-cpd-pltf-uat-we-01
+#### Notes
 Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
-**Resources** -
+####Resources
 Application Gateway - agw-cpd-apps-api-uat-we-01
 Application Gateway - agw-cpd-apps-web-uat-we-01
 Application Gateway - agw-cpd-apps-ntf-uat-we-01
 
 ### 8. Apps Payment Token Resource Group
- #### Resource Group
+#### Resource Group
 [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
-**Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-**Resources** - 
+#### Dependencies
+1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+#### Resources 
 Key Vault - kv-cpd-apps-pt-uat-we-01
 App Service Plan - plan-cpd-apps-pt-uat-we-01
 Function App - func-cpd-apps-pt-uat-we-01

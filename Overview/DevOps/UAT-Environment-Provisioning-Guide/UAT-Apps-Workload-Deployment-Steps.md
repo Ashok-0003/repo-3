@@ -63,19 +63,22 @@ Log Analytics - log-cpd-apps-mon-uat-we-01
 Storage Account - stcpdappsdiaguatwe01
 
 ### 3. Apps Security Resource Group
- #### Resource Group
+#### Resource Group
 [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
-**Dependencies** - [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-**Resources** -
-Network Security Groups - nsg-cpd-apps-aks-uat-we-01
-Network Security Groups - nsg-cpd-apps-agw-uat-we-01
-Network Security Groups - nsg-cpd-apps-agwweb-uat-we-01
-Network Security Groups - nsg-cpd-apps-agwapi-uat-we-01
-Network Security Groups - nsg-cpd-apps-agwntf-uat-we-01
-Network Security Groups - nsg-cpd-apps-apim-uat-we-01
-Network Security Groups - nsg-cpd-apps-bkend-uat-we-01
-Network Security Groups - nsg-cpd-apps-testvms-uat-we-01
-Key Vault - kv-cpd-apps-uat-we-01 (Access Policy added only for ADO Service Connection)
+#### Dependencies
+1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+#### Resources
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|Network Security Groups | nsg-cpd-apps-aks-uat-we-01||
+|Network Security Groups | nsg-cpd-apps-agw-uat-we-01||
+|Network Security Groups | nsg-cpd-apps-agwweb-uat-we-01||
+|Network Security Groups | nsg-cpd-apps-agwapi-uat-we-01||
+|Network Security Groups | nsg-cpd-apps-agwntf-uat-we-01||
+|Network Security Groups | nsg-cpd-apps-apim-uat-we-01||
+|Network Security Groups | nsg-cpd-apps-bkend-uat-we-01||
+|Network Security Groups | nsg-cpd-apps-testvms-uat-we-01||
+|Key Vault | kv-cpd-apps-uat-we-01 | Access Policy added only for ADO Service Connection |
 
 ### 4. Apps Networking Resource Group
 #### Resource Group

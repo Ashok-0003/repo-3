@@ -86,9 +86,12 @@ b. you will see these language resources - two for english and two for arabic - 
 
 c. select each resource and follow steps below:
 i. click on manage then azure resources and then add prediction resource
-![image.png](/.attachments/image-10b330ad-e340-43fc-b935-913c1a40d20e.png)
+
+![prediction-resource.PNG](/.attachments/prediction-resource-b0631ecb-11cb-4e00-b6d9-bde2dba44fff.PNG)
+
 ii. select cog-cpd-apps-luisrt-<env>-we-01 in the prediction resource.
-![image.png](/.attachments/image-3cd24810-1e8e-47c2-9ccc-96055556e9cf.png)
+![select-prediction.PNG](/.attachments/select-prediction-60ad7dab-0de4-4c09-a5dc-26888a247411.PNG)
+
 iii. then hit this url once: 
 https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar
 https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en

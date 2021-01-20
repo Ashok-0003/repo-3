@@ -36,9 +36,12 @@
 1. After successful deployment of chatbot resources in step 1 above, we have to update manifest file and variable group with secret. for that follow below steps:
 
 a. Go to the webapp bot resource created like below screenshot and select manage as highlighted in image below.
+
 ![webappbot-manage.png](/.attachments/webappbot-manage-b419b3a8-ff19-4df3-8cce-3660542115c1.png)
+
 b.  Then click on manifest like below image and download the json file.
 ![Manifest.png](/.attachments/Manifest-e06082d9-b90e-4b40-8cca-0e5bba332e90.png)
+
 c. Then update following elements in the json with values below and upload it here.
 
 ```
@@ -51,8 +54,10 @@ c. Then update following elements in the json with values below and upload it he
 	],
 "signInAudience": "AzureADandPersonalMicrosoftAccount",
 ```
+
 d. Updating the Secret : 
-select certificates and secrets and generate a secret and copy that to the variable group for all environments value: BotAppSecret
+Select certificates and secrets and generate new client secret with any meaningful description. Once generated copy that secret to **BotAppSecret** Key of the variable group which is present under AzureDevops->Pipelines->Library for all the environments.
+
 ![client-secret.png](/.attachments/client-secret-09a00977-1665-475d-851e-fd7082233e77.png)
 
 # Chatbot Deployment Steps

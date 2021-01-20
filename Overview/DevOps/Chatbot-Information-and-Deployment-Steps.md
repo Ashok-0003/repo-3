@@ -90,6 +90,7 @@ i. click on manage then azure resources and then add prediction resource
 ![prediction-resource.PNG](/.attachments/prediction-resource-b0631ecb-11cb-4e00-b6d9-bde2dba44fff.PNG)
 
 ii. select cog-cpd-apps-luisrt-<env>-we-01 in the prediction resource.
+
 ![select-prediction.PNG](/.attachments/select-prediction-60ad7dab-0de4-4c09-a5dc-26888a247411.PNG)
 
 iii. then hit this url once: 

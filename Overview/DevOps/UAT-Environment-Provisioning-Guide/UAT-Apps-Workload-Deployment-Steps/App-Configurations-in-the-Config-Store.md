@@ -36,8 +36,6 @@
 |Bot.AppSettings:SearchApiUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://api.<env>.sqcp.qa/searchapi`|
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|
-|Bot.MenuAndCards:MenuAndCards:Cards:FindInformationMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
-|Bot.MenuAndCards:MenuAndCards:Cards:MainMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |CDNSettings:TenantId|The Tenant Id|Tenant Id of azure ad associated with azure subscription|
 |CDNSettings:ClientId|The Client Id|Client Id of **spn-cmsbpa-dev**|

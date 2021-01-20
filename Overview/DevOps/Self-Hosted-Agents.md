@@ -8,6 +8,7 @@
 # Capabilities:
 1. [Visual Studio Enterprise 2019 (v16.8.x)](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md#visual-studio-enterprise-2019)  - Install all the workloads
 1. Azure CLI - 2.16.0
+1. Azure DevOps CLI extension 0.18.0
 1. Powershell 7
 1. Android SDK Build Tools - 29.0.x
 1. Java - 1.8.x

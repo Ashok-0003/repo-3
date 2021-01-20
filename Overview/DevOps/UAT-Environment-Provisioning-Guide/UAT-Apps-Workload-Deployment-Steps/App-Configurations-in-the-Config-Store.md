@@ -34,23 +34,8 @@
 |Bot.AppSettings:ProductCatalogueApiUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://api.<env>.sqcp.qa/catalogue/api`|
 |Bot.AppSettings:ResourceGroupName|Name of the resource rg-cpd-apps-cog-<env>-we-01| Eg. `rg-cpd-apps-cog-dev-we-01`|
 |Bot.AppSettings:SearchApiUrl| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://api.<env>.sqcp.qa/searchapi`|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:DestinationCopyQna:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:KbQna:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri|Name of the resource https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:DestinationCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:KbQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri|Name of the resource https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:SourceCopyQna:Endpoint|Name of the resource https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.CognitiveModels:CognitiveModels:Ar-ar:DispatchModel:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.CognitiveModels:CognitiveModels:Ar-ar:Knowledgebases:0:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.CognitiveModels:CognitiveModels:Ar-ar:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.CognitiveModels:CognitiveModels:Ar-ar:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.CognitiveModels:CognitiveModels:En-us:DispatchModel:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:0:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.CognitiveModels:CognitiveModels:En-us:Knowledgebases:1:Hostname|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.CognitiveModels:CognitiveModels:En-us:LanguageModels:0:CustomEndpoint|Name of the resource https://cog-cpd-apps-luisrt-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|
 |Bot.MenuAndCards:MenuAndCards:Cards:FindInformationMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.MenuAndCards:MenuAndCards:Cards:MainMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||

@@ -182,7 +182,7 @@
 |SubscriptionId| @<44D3C2D0-5E60-68E5-8187-D6640EF9C21C> ||
 
 #Reference
-## Bot.MenuAndCards:MenuAndCardsAr:Cards:RequestServiceOrSupportMenuCard
+## Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard
 1. Update following actions.url from the given JSON -
 - "title": "Create Support Request", 
 "url": `https://account.`<env>`.sqcp.qa/en/?navigation=requests/createsupportrequest`
@@ -228,7 +228,7 @@
 ```
 2. After updating the above JSON, convert it to base64 encoding and assign the value to  **Bot.MenuAndCards:MenuAndCardsAr:Cards:RequestServiceOrSupportMenuCard**.
 
-## Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard
+## Bot.MenuAndCards:MenuAndCardsAr:Cards:RequestServiceOrSupportMenuCard
 1. Update following actions.url from the given JSON -
 - "title": " إرسال طلب الدعم",
 "url": `https://account.`<env>`.sqcp.qa/ar/?navigation=requests/createsupportrequest`

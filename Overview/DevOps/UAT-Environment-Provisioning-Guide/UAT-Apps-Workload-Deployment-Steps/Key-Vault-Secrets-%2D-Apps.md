@@ -33,6 +33,7 @@
 |kv-cpd-apps-<env>-we-01|EventGridSettings-DomainKey| Secret | Access key of egd-cpd-apps-int-<env>-we-01||
 |kv-cpd-apps-<env>-we-01|GraphClientSecret| Secret | @<C2ADC2E9-9B1C-6B31-A4CE-DBC64F092458> ||
 |kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret |@<0322563A-1C16-609F-BBDA-38E4FCFF726E>| Client Secret of the AD App Registration (spn-xxxx-xxx-<env>)|
+|kv-cpd-apps-<env>-we-01|NotificationFunctionSettings-SendGridApiKey| Secret ||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2> ||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AuthToken| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AzureADOptions-ClientSecret| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||

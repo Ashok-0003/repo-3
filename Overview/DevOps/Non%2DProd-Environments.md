@@ -42,6 +42,11 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 13|<p><p>spn-cmsapi-tst</p>Client ID: 570a1b9e-f0e6-43da-a8af-aa8f7f31044e</p><p>Certificate</p><p><p>|Test
 14|<p><p>spn-cmsbpa-uat</p>Client ID: 5cff9256-4cc7-4b39-92a2-e48926e22d7c</p><p>Certificate</p><p><p>|UAT
 15|<p><p>spn-cmsapi-uat</p>Client ID: 5e4456ea-6c48-414e-bf7b-904882a21f82</p><p>Certificate</p><p><p>|UAT
+16|<p><p>spn-bot-dev</p>Client ID: 2d6a26ed-4c86-4d6e-b7a6-b7cee194e5e9</p><p>Client Secret : **********</p><p><p>|Dev
+17|<p><p>spn-bot-tst</p>Client ID: 85100d91-3748-446e-b434-a2e5b842c667</p><p>Client Secret : **********</p><p><p>|Test
+18|<p><p>spn-bot-sbx</p>Client ID: 291f394b-1c27-4ddd-b64c-cfa5f65ecea7</p><p>Client Secret : **********</p><p><p>|SBX
+19|<p><p>spn-bot-tra</p>Client ID: 7c42dfb0-b532-4c89-a3cf-9a8a7578bd03</p><p>Client Secret : **********</p><p><p>|TRA
+20|<p><p>spn-bot-uat</p>Client ID: 64d794aa-a017-4fe2-a793-fa841ebed766</p><p>Client Secret : **********</p><p><p>|UAT
 
 **For more details on CMS Azure AD apps please refer** : [*CMS Azure AD apps*](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/153/CMS-Azure-AD-apps) 
 

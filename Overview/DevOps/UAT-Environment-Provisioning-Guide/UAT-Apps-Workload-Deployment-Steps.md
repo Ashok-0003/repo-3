@@ -70,25 +70,27 @@ Storage Account - stcpdappsdiaguatwe01
 #### Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|Network Security Groups | nsg-cpd-apps-aks-uat-we-01||
-|Network Security Groups | nsg-cpd-apps-agw-uat-we-01||
-|Network Security Groups | nsg-cpd-apps-agwweb-uat-we-01||
-|Network Security Groups | nsg-cpd-apps-agwapi-uat-we-01||
-|Network Security Groups | nsg-cpd-apps-agwntf-uat-we-01||
-|Network Security Groups | nsg-cpd-apps-apim-uat-we-01||
-|Network Security Groups | nsg-cpd-apps-bkend-uat-we-01||
-|Network Security Groups | nsg-cpd-apps-testvms-uat-we-01||
-|Key Vault | kv-cpd-apps-uat-we-01 | Access Policy added only for ADO Service Connection |
+|NetworkSecurityGroups | nsg-cpd-apps-aks-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-agw-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-agwweb-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-agwapi-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-agwntf-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-apim-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-bkend-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-testvms-uat-we-01||
+|KeyVault | kv-cpd-apps-uat-we-01 | Access Policy added only for ADO Service Connection |
 
 ### 4. Apps Networking Resource Group
 #### Resource Group
 [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 #### Dependencies
 #### Resources
-Route Tables - route-cpd-apps-aks-uat-we-01
-Route Tables - route-cpd-apps-apim-uat-we-01
-Route Tables - route-cpd-apps-bkend-uat-we-01
-Route Tables - route-cpd-apps-testvms-uat-we-01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|RouteTables | route-cpd-apps-aks-uat-we-01||
+|RouteTables | route-cpd-apps-apim-uat-we-01||
+|RouteTables | route-cpd-apps-bkend-uat-we-01||
+|RouteTables | route-cpd-apps-testvms-uat-we-01||
 
 ### 5. Platform Networking Resource Group
 #### Resource Group

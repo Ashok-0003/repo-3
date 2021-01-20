@@ -33,7 +33,7 @@
 |Bot.AppSettings:ResourceGroupName|Name of the resource rg-cpd-apps-cog-<env>-we-01| Eg. `rg-cpd-apps-cog-dev-we-01`|
 |Bot.AppSettings:SearchApiUrl| `https://api.<env>.sqcp.qa/searchapi`|Eg. `https://api.<env>.sqcp.qa/searchapi`|
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri| `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|
-|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|
+|Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri| `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|
 |Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |CDNSettings:TenantId|The Tenant Id|Tenant Id of azure ad associated with azure subscription|
 |CDNSettings:ClientId|The Client Id|Client Id of **spn-cmsbpa-dev**|

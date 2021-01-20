@@ -49,6 +49,11 @@ Install-Module -Name AzureRM.Search -AllowClobber -AllowPrerelease -Force
 # Pipelines:
 <List to be updated>
 
+# Notes:
+1. VM should have atleast 50-100 GB of extra OS disk space
+2. Clean up the disks on regular intervals to avoid space issues during runtime
+3. Update the VM and agents on regular intervals
+
 # References:
 https://github.com/actions/virtual-environments
 

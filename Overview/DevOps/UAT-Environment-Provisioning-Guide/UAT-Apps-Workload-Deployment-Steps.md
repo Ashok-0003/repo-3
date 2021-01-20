@@ -271,7 +271,11 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |ServiceBusNamespaceTopic | sbt-cpd-apps-qnasync-uat-we-01||
 |ServiceBusNamespaceTopic Subscription | sbts-cpd-apps-copyqna-uat-we-01||
 |StorageAccounts | stcpdappsintuatwe01||
-
+#### Post deployment steps:
+1. In the Azure portal search for `apicon-cpd-apps-intspo-uat-we-01` and open it.
+2. Click on `Edit Api Connection` under General tab in the right panel.
+3. Click on `Authorize` to and authorize the connection using Automation account's credentials.
+4. Repeat the above three steps for `apicon-cpd-apps-into365-uat-we-01`  
 ### 5. Shared Resource Group 
 #### Resource Group
 [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)

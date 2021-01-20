@@ -81,7 +81,10 @@
 |ConnectionStrings:NotificationApi| End point for notification api |Eg. `https://notification.<env>.sqcp.qa/api/Notification/`|
 |ConnectionStrings:ProfileApi|End point for profile api|Eg. `https://api.<env>.sqcp.qa/profile/api/`|
 |ConnectionStrings:SmartParkingApi|End point for smartparking api|Eg. `https://api.<env>.sqcp.qa/smartparking/api/`|
+|Crm.CaseManagement.DynamicsSettings:Authority|||
 |Crm.CaseManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-case-management-integration-<env>| Eg: 37fd8453-e25f-4b3e-bd78-32b28328f51a|
+|Crm.CaseManagement.DynamicsSettings:Resource|||
+|Crm.CaseManagement.DynamicsSettings:TenantId|||
 |Crm.Common.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|
 |Crm.ProfileManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
 |Crm.Common.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|

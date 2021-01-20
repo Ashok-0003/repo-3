@@ -27,6 +27,16 @@ PowerShellGet
 1. Google Chrome
 1. OpenSSL 1.1.1
 
+Powershell Modules Update:
+1. Open Powershell in Admin mode and run below commands:
+`Install-Module -Name PackageManagement -Repository PSGallery -Force`
+`Install-Module -Name PowerShellGet -Repository PSGallery -Force
+`
+2. Close this shell and open a new one again in admin mode:
+`
+Install-Module -Name AzureRM.Search -AllowClobber -AllowPrerelease -Force
+`
+
 
 # Agent Pools:
 1. tasmumsagents

@@ -22,8 +22,6 @@ Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |ContainerRegistry | acrcpdglobnpdwe01 | |
-|KeyVault | kv-cpd-glob-npd-we-01 | |
-|ManagedIdentity | mi-cpd-glob-npd-we-01 | |
 |SendGrid | sga-cpd-glob-email-npd-we-01 | Silver Tier |
 
 ### 2. Global Consumption Metering Resource Group

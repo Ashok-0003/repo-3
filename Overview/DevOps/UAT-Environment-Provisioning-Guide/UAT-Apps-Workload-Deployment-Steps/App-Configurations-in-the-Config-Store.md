@@ -92,6 +92,7 @@
 |ManageEventFunction.AzureADOptions:Instance|Instance of  @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg: |
 |ManageEventFunction.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
 |ManageEventFunction.AzureADOptions:TenantId|Tenant Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg:|
+|MicrosoftAppId| Microsoft App Id/ClientId of webAppBot bot-cpd-apps-<env>-dev-01 | <p>For initial deployment [refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=updating-infra-repo-with-luis-and-qna-keys)</p> Eg: `2d6a26ed-4c86-4d6e-b7a6-b7cee194e5e9`|
 |Mobile:AccountManagementApiEndPoint|API endpoint for accountmanagement service |Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
 |Mobile:AuthenticationSettings:BoPolicySignUpSignIn|AAD B2C policy for business owner signup  ||
 |Mobile:AuthenticationSettings:ClientId|App registration for the mobile application in AAD B2C  | guid-type value|

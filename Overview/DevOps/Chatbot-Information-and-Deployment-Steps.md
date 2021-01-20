@@ -75,10 +75,9 @@ It also generates a config json file in the build artifacts which will contain a
 
 3. Update the LUIS instances in this portal with Authoring resource if its empty. (https://eu.luis.ai/)
 a. go to above url and then select directory and then choose authoring resource like image below.
- ![image.png](/.attachments/image-64fbb0ee-4266-40f7-98b2-d63d2b23c60f.png)
-![authoring-resource.PNG](/.attachments/authoring-resource-f2cde030-3399-4c60-9e11-ac28e999ce2c.PNG)
-![image.png](/.attachments/image-9f073d5a-6a5d-48f2-999a-5d76cf94349e.png)
-![image.png](/.attachments/image-b2ec52ae-43ba-4cd3-9f5b-5f377faedeeb.png)
+
+![luis.PNG](/.attachments/luis-0ec72fc2-4561-4976-bd79-8c28a008bac7.PNG)
+![authoring-resource.PNG](/.attachments/authoring-resource-7885d0b9-e853-435b-9c0a-2533260e69a6.PNG)![done-auth.PNG](/.attachments/done-auth-676eece2-a396-4c72-8fb9-c6c4a5a8bac9.PNG)
 
 b. you will see these language resources - two for english and two for arabic - each having instance for General and dispatch.
 

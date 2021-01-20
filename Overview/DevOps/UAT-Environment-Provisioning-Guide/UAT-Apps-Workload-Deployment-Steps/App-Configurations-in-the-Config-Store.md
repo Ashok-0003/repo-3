@@ -168,9 +168,11 @@
 |OrganisationApi.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
 |OrganisationApi.AzureADOptions:Instance|Instance of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
 |OrganisationApi.AzureADOptions:TenantId|Tenant Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
+|PaymentGWSettings:GetPaymentStatusServiceURL|||
 |PaymentGWSettings.ADB2CAuth:ClientId|Client Id of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg:  |
 |PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
+|PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|||
 |PowerBIEmbed.AzureAd:ClientId|Client Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>  |Eg:   |
 |PowerBIEmbed.AzureAd:TenantId|Tenant Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> |Eg:  |
 |SmartParking.ADB2CAuth:ClientId|Application(Client Id) of SmartParking Api app registration B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |

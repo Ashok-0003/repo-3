@@ -54,11 +54,11 @@
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
 |Common.CoreApis.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Common.CoreApis.B2CAuth:Domain| | | 
-|Common.CoreApis.B2CAuth:Instance| | | 
+|Common.CoreApis.B2CAuth:Domain| @<0322563A-1C16-609F-BBDA-38E4FCFF726E>| | 
+|Common.CoreApis.B2CAuth:Instance| @<0322563A-1C16-609F-BBDA-38E4FCFF726E>| | 
 |Common.CoreApis.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Common.CoreApis.S2SAuth:Audience|||
-|Common.CoreApis.S2SAuth:Authority|||
+|Common.CoreApis.S2SAuth:Audience|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Common.CoreApis.S2SAuth:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |ConnectionStrings:CosmosDBEndpoint| End point for Cosmos Account|Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
 |ConnectionStrings:GisParkingLotsApi||Eg. `https://api.<env>.sqcp.qa/`|
 |ConnectionStrings:NotificationApi| End point for notification api |Eg. `https://notification.<env>.sqcp.qa/api/Notification/`|
@@ -78,10 +78,10 @@
 |Crm.Common.S2SAuth:Audience|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.S2SAuth:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.ProfileManagement.DynamicsSettings:Authority|||
+|Crm.ProfileManagement.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.ProfileManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
-|Crm.ProfileManagement.DynamicsSettings:Resource|||
-|Crm.ProfileManagement.DynamicsSettings:TenantId|||
+|Crm.ProfileManagement.DynamicsSettings:Resource|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.ProfileManagement.DynamicsSettings:TenantId|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |EventGridSettings:DomainEndpoint|Name of the resource https://egd-cpd-apps-int-<env>-we-01.westeurope-1.eventgrid.azure.net/api/events||
 |GraphB2cExtensionAppClientId|Client Id of default B2C extension app in Azure B2C tenant ||
 |GraphClientId|Client Id of TASMU-Portal app in Azure B2C tenant||
@@ -152,7 +152,7 @@
 |OrganisationApi.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
 |OrganisationApi.AzureADOptions:Instance|Instance of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
 |OrganisationApi.AzureADOptions:TenantId|Tenant Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
-|PaymentGWSettings:GetPaymentStatusServiceURL|||
+|PaymentGWSettings:GetPaymentStatusServiceURL|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.ADB2CAuth:ClientId|Client Id of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg:  |
 |PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
@@ -160,7 +160,7 @@
 |PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|PaymentGWSettings.AuthorizeCard:Scope||Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
+|PaymentGWSettings.AuthorizeCard:Scope|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
 |PaymentGWSettings.AuthorizeCard:TenantId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.S2SAuth:Audience|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.S2SAuth:Authority|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
@@ -175,7 +175,7 @@
 |SmartParking.ProfileApi.AzureADOptions:Authority|Authority Url with B2C Tenant Id|Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`|
 |SmartParking.ProfileApi.AzureADOptions:ClientId|Client Id of Central-Platform-core-apis app registration|Eg: `bc67474e-612b-4d7f-b75a-ac54d45f143a`|
 |SmartParking.ProfileApi.AzureADOptions:Domain|Domain Name of B2C Tenant where Central-Platform-core-apis app registration resides|Eg. `tasmucpb2cnonprod.onmicrosoft.com`|
-|SmartParking.ProfileApi.AzureADOptions:Instance||Eg. `https://login.microsoftonline.com/`|
+|SmartParking.ProfileApi.AzureADOptions:Instance|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> |Eg. `https://login.microsoftonline.com/`|
 |SmartParking.ProfileApi.AzureADOptions:Scope|Scope of Central-Platform-core-apis|Eg: `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
 |SmartParking.ProfileApi.AzureADOptions:TenantId|Tenant Id of B2C Tenant|Eg: `24f9d756-bf0c-43e9-ad5e-2073ae2d6698`|
 |SmartParking.S2SAuth:Audience|ClientId of SmartParking Api App registration|Eg. `64db2dba-79c5-4b6c-84e0-696b3d1f0465`|

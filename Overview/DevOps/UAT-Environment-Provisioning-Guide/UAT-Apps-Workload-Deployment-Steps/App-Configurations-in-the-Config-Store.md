@@ -181,7 +181,7 @@
 |SubscriptionId| @<44D3C2D0-5E60-68E5-8187-D6640EF9C21C> ||
 
 #Reference
-### Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard
+## Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard
 1. Update following actions.url from the given JSON -
 - "title": "Create Support Request", 
 "url": `https://account.`<env>`.sqcp.qa/en/?navigation=requests/createsupportrequest`
@@ -225,4 +225,50 @@
     "speak": "Request service or support Menu Card"
 }
 ```
-2. After updating the above JSON, convert it to base64 encoding and assign the value to  **Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard**.
+2. After updating the above JSON, convert it to base64 encoding and assign the value to  **Bot.MenuAndCards:MenuAndCardsAr:Cards:RequestServiceOrSupportMenuCard**.
+
+## Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard
+1. Update following actions.url from the given JSON -
+- "title": " إرسال طلب الدعم",
+"url": `https://account.`<env>`.sqcp.qa/ar/?navigation=requests/createsupportrequest`
+- "title": " حالة طلب الدعم",
+            "url": `https://account.`<env>`.sqcp.qa/ar/?navigation=requests`
+```
+{
+    "type": "AdaptiveCard",
+    "id": "RequestServiceOrSupportMenu",
+    "body": [
+        {
+            "type": "Container",
+            "spacing": "None",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "id": "title",
+                    "spacing": "Medium",
+                    "size": "Medium",
+                    "weight": "Medium",
+                    "text": "من فضلك حدد واحد من الخيارات الأسفل.",
+                    "wrap": true
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+                                            "type": "Action.OpenUrl",
+                                            "title": " إرسال طلب الدعم",
+                                            "url": "https://account.dev.sqcp.qa/ar/?navigation=requests/createsupportrequest"
+                                        },
+        {
+            "type": "Action.OpenUrl",
+            "title": " حالة طلب الدعم",
+            "url": "https://account.dev.sqcp.qa/ar/?navigation=requests"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "speak": "Request service or support Menu Card"
+}
+```
+2. After updating the above JSON, convert it to base64 encoding and assign the value to  **Bot.MenuAndCards:MenuAndCardsAr:Cards:RequestServiceOrSupportMenuCard**.

@@ -200,53 +200,55 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 1. Two secrets added to kv-cpd-pltf-uat-we-01
 1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 #### Resources
-API Connection - apicon-cpd-apps-into365-uat-we-01 - API Connection to Office 365 Tenant (CMS)
-API Connection - apicon-cpd-apps-intsb-uat-we-01 - API Connection to Service Bus
-API Connection - apicon-cpd-apps-intspo-uat-we-01 - API Connection to Sharepoint Online
-API Connection - apicon-cpd-apps-integ-uat-we-01 - API Connection to Event Grid Domain
-API Connection - apicon-cpd-apps-intkv-uat-we-01
-API Connection - apicon-cpd-apps-integd-uat-we-01 (Refer - kv-cpd-pltf-uat-we-01 for secret)
-API Connection - apicon-cpd-apps-intst-uat-we-01
-API Connection - apicon-cpd-apps-intcog-uat-we-01 - API Connection to Translator Cognitive Service
-API Connection - apicon-cpd-apps-ascalrt-uat-we-01 - API Connection to Azure Security Alert trigger.
-API Connection - apicon-cpd-apps-intcds-uat-we-01 - API Connection to Common Data Service for Case api.
-API Connection - apicon-cpd-apps-prdcds-uat-we-01- API Connection to Common Data Service for market place product api.
-App Service Plan - plan-cpd-apps-int-uat-we-01
-Event Grid Domain - egd-cpd-apps-int-uat-we-01
-Function App - func-cpd-apps-intbpa-uat-we-01 - Function App to subscribe and process the Sharepoint data
-Function App - func-cpd-apps-intntf-uat-we-01 - Function App to track the changes of Sharepoint data
-Function App - func-cpd-apps-acm-uat-we-01 - Function app to monitor consumption metering storage for 6D
-Logic App - logic-cpd-apps-inttrsl-uat-we-01 - Logic app to create Translation Task and do Auto Translation from English to Arabic of Sharepoint data
-Logic App - logic-cpd-apps-intaprv1-uat-we-01 - Logic app for Level 1 Approval
-Logic App - logic-cpd-apps-intgbaprl-uat-we-01 - Logic app for Level 2 approval
-Logic App - logic-cpd-apps-intprdt-uat-we-01 - Logic app to sync Products from CRM
-Logic App - logic-cpd-apps-intsec-uat-we-01 - Logic app to sync Global Sectors List from CRM
-Logic App - logic-cpd-apps-secsync-uat-we-01 - Logic app to sync Global Sectors List with Sharepoint Taxonomy terms
-Logic App - logic-cpd-apps-route-uat-we-01
-Logic App - logic-cpd-apps-6dbill-uat-we-01
-Logic App - logic-cpd-apps-6dhook-uat-we-01
-Logic App - logic-cpd-apps-mpsidx-uat-we-01
-Logic App - logic-cpd-apps-mpsd365-uat-we-01
-Logic App - logic-cpd-apps-mpso365-uat-we-01
-Logic App - logic-cpd-apps-dfndr-uat-we-01 - Logic app triggers when a malware file is uploaded in Blob container and update the attachment extension entity Is Unsafe as true.
-Logic App - logic-cpd-apps-intfile-uat-we-01 - Logic app retrieves the content of file from Blob container and update the file content in D365.
-Logic App - logic-cpd-apps-intsubs-uat-we-01 - Logic app performs upsert operation on Market Place Product Subscription.
-Service Bus - sb-cpd-apps-int-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intprodsync-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intntf-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intsec-uat-we-01
-Service Bus Queue - sbq-cpd-apps-int6dbill-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intd365-uat-we-01
-Service Bus Queue - sbq-cpd-apps-into365-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intchglog-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intaprvl-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intgbaprl-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intcoreapi-uat-we-01
-Service Bus Queue - sbq-cpd-apps-qnaadd-uat-we-01
-Service Bus Queue - sbq-cpd-apps-intiotalert-uat-we-01
-Service Bus Topic - sbt-cpd-apps-qnasync-uat-we-01
-Service Bus Topic Subscription - sbts-cpd-apps-copyqna-uat-we-01
-Storage Account - stcpdappsintuatwe01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|APIConnection | apicon-cpd-apps-into365-uat-we-01 | API Connection to Office 365 Tenant (CMS)|
+|ApiConnectionServiceBus | apicon-cpd-apps-intsb-uat-we-01 | API Connection to Service Bus|
+|APIConnection | apicon-cpd-apps-intspo-uat-we-01 | API Connection to Sharepoint Online|
+|ApiConnectionEventGrid | apicon-cpd-apps-integ-uat-we-01 | API Connection to Event Grid Domain|
+|ApiConnectionKeyVault | apicon-cpd-apps-intkv-uat-we-01 ||
+|ApiConnectionEventGridPublish | apicon-cpd-apps-integd-uat-we-01 | (Refer - kv-cpd-pltf-uat-we-01 for secret)
+|ApiConnectionAzureBlob | apicon-cpd-apps-intst-uat-we-01||
+|APIConnectionCognitiveService | apicon-cpd-apps-intcog-uat-we-01 | API Connection to Translator Cognitive Service|
+|APIConnection | apicon-cpd-apps-ascalrt-uat-we-01 | API Connection to Azure Security Alert trigger.|
+|ApiConnectionCommonDataService | apicon-cpd-apps-intcds-uat-we-01 | API Connection to Common Data Service for Case api.|
+|ApiConnectionCommonDataService | apicon-cpd-apps-prdcds-uat-we-01 | API Connection to Common Data Service for market place product api.|
+|AppServicePlan | plan-cpd-apps-int-uat-we-01||
+|EventGridDomain | egd-cpd-apps-int-uat-we-01||
+|FunctionAppBPA | func-cpd-apps-intbpa-uat-we-01 | Function App to subscribe and process the Sharepoint data|
+|FunctionAppNTF | func-cpd-apps-intntf-uat-we-01 | Function App to track the changes of Sharepoint data|
+|FunctionAppCE | func-cpd-apps-acm-uat-we-01 | Function app to monitor consumption metering storage for 6D|
+|LogicApp | logic-cpd-apps-inttrsl-uat-we-01 | Logic app to create Translation Task and do Auto Translation from English to Arabic of Sharepoint data|
+|LogicApp | logic-cpd-apps-intaprv1-uat-we-01 | Logic app for Level 1 Approval|
+|LogicApp | logic-cpd-apps-intgbaprl-uat-we-01 | Logic app for Level 2 approval|
+|LogicApp | logic-cpd-apps-intprdt-uat-we-01 | Logic app to sync Products from CRM|
+|LogicApp | logic-cpd-apps-intsec-uat-we-01 | Logic app to sync Global Sectors List from CRM|
+|LogicApp | logic-cpd-apps-secsync-uat-we-01 | Logic app to sync Global Sectors List with Sharepoint Taxonomy terms|
+|LogicApp | logic-cpd-apps-route-uat-we-01||
+|LogicApp | logic-cpd-apps-6dbill-uat-we-01||
+|LogicApp | logic-cpd-apps-6dhook-uat-we-01||
+|LogicApp | logic-cpd-apps-mpsidx-uat-we-01||
+|LogicApp | logic-cpd-apps-mpsd365-uat-we-01||
+|LogicApp | logic-cpd-apps-mpso365-uat-we-01||
+|LogicApp | logic-cpd-apps-dfndr-uat-we-01 | Logic app triggers when a malware file is uploaded in Blob container and update the attachment extension entity Is Unsafe as true.
+|LogicApp | logic-cpd-apps-intfile-uat-we-01 | Logic app retrieves the content of file from Blob container and update the file content in D365.|
+|LogicApp | logic-cpd-apps-intsubs-uat-we-01 | Logic app performs upsert operation on Market Place Product Subscription.|
+|ServiceBusNamespace | sb-cpd-apps-int-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intprodsync-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intntf-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intsec-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-int6dbill-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intd365-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-into365-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intchglog-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intaprvl-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intgbaprl-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intcoreapi-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-qnaadd-uat-we-01||
+|ServiceBusNamespaceQueue | sbq-cpd-apps-intiotalert-uat-we-01||
+|ServiceBusNamespaceTopic | sbt-cpd-apps-qnasync-uat-we-01||
+|ServiceBusNamespaceTopic Subscription | sbts-cpd-apps-copyqna-uat-we-01||
+|StorageAccounts | stcpdappsintuatwe01||
 
 ### 5. Shared Resource Group 
 #### Resource Group

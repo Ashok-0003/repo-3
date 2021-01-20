@@ -145,8 +145,8 @@
 |Mobile.DefaultCacheTtl|The default cache time-to-live time in sec ||
 |Mobile.LogLevel|The log level for application instrumentation||
 |NotificationFunctionSettings:ApimRootUrl|`https://api.<env>.sqcp.qa` |Eg. `https://api.<env>.sqcp.qa`|
-|NotificationFunctionSettings:FromAddress| `tasmu@sqcp.qa`  ||
-|NotificationFunctionSettings:FromName|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5>  ||
+|NotificationFunctionSettings:FromAddress| tasmu@sqcp.qa  ||
+|NotificationFunctionSettings:FromName|TASMU  ||
 |NotificationFunctionSettings:NotificationHubPath|Name of Notification Hub resource - ntf-cpd-apps-str-<env>-we-01|@<DA118029-E960-6F2C-AC5D-2A6AAE6B33B5> |
 |NotificationSettings:CosmosDBEndPointUri|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
 |NotificationSettings:GSMSAppID|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>| |

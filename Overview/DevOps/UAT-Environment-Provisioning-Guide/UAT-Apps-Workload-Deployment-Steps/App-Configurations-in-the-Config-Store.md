@@ -182,6 +182,11 @@
 
 #Reference
 ### Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard
+1. Update following actions.url from the given JSON -
+- "title": "Create Support Request", 
+"url": `https://account.`<env>`.sqcp.qa/en/?navigation=requests/createsupportrequest`
+- "title": "Status of Support Request",
+            "url": `https://account.`<env>`.sqcp.qa/en/?navigation=requests`
 ```
 {
     "type": "AdaptiveCard",
@@ -220,3 +225,4 @@
     "speak": "Request service or support Menu Card"
 }
 ```
+2. After updating the above JSON, convert it to base64 encoding and assign the value to  **Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard**.

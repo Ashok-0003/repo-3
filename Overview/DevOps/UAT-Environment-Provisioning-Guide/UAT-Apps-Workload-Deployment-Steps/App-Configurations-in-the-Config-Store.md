@@ -157,6 +157,7 @@
 |NotificationSettings.ADB2CAuth:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg: |
 |NotificationSettings.ADB2CAuth:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg:  |
 |NotificationSettings.ADB2CAuth:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
+|NotificationSettings.ADB2CAuth:SignUpSignInPolicyId|||
 |NotificationSettings.AzureADOptions:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
 |NotificationSettings.AzureADOptions:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
 |NotificationSettings.AzureADOptions:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |

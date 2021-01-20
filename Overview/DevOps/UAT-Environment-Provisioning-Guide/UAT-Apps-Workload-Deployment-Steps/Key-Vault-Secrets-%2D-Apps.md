@@ -31,7 +31,7 @@
 |kv-cpd-apps-<env>-we-01|Crm-Common-DynamicsSettings-ClientSecret| Secret |Client secret stored in kv-cpd-apps-<env>-we-01 used for common dynamic connection, generate secret from Azure AD app registration.<p> UAT - spn-crm-common-integration-test <p>Client Secret : **********</p><p> TEST - spn-crm-common-integration-test<p>Client Secret : **********</p><p> DEV - spn-crm-general-integration-dev<p>Client Secret : **********</p>||
 |kv-cpd-apps-<env>-we-01|Crm-ProfileManagement-DynamicsSettings-ClientSecret| Secret |Client secret stored in kv-cpd-apps-<env>-we-01 used for Profile api connection, generate secret from Azure AD app registration.<p> UAT - spn-crm-profile-management-integration-test<p>Client Secret : **********</p><p> TEST - spn-crm-profile-management-integration-test<p>Client Secret : **********</p><p> DEV - spn-crm-profile-management-integration-dev<p>Client Secret : **********</p>||
 |kv-cpd-apps-<env>-we-01|EventGridSettings-DomainKey| Secret | Access key of egd-cpd-apps-int-<env>-we-01||
-|kv-cpd-apps-<env>-we-01|GraphClientSecret| Secret | @<C2ADC2E9-9B1C-6B31-A4CE-DBC64F092458> ||
+|kv-cpd-apps-<env>-we-01|GraphClientSecret| Secret | Client Secret of TASMU-Portal app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret |@<0322563A-1C16-609F-BBDA-38E4FCFF726E>| Client Secret of the AD App Registration (spn-xxxx-xxx-<env>)|
 |kv-cpd-apps-<env>-we-01|NotificationFunctionSettings-SendGridApiKey| Secret | **Sendgrid API key to be provided by customer.** |
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2> ||

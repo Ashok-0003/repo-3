@@ -9,7 +9,7 @@
 |AppSettings:ApiBaseUrl| Base URL for APIs end point (routing via APIM) |Eg. `https://api.<env>.sqcp.qa`|
 |AppSettings:InstrumentationKey| Instrumentation Key of the resource (appi-cpd-apps-mon-<env>-we-01) | Eg. `984ca526-2038-4d9d-b0cf-653706512c58`|
 |AzureSearchFunction.AzureSearchSettings:ServiceName|Search Index Name from resource srch-cpd-apps-cog-<env>-we-01|Eg. srch-cpd-apps-cog-<env>-we-01.search.windows.net|
-|Bot.AppSettings:ArQnaMaker:Endpoint| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> |Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|
+|Bot.AppSettings:ArQnaMaker:Endpoint| Endpoint key under Keys and Endpoint section of appcog-cpd-apps-arqna-<env>-we-01 cognitive services resource  |Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.cognitiveservices.azure.com/`|
 |Bot.AppSettings:ArQnaMaker:EndpointKey| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:ArQnaMaker:FaqKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:ArQnaMaker:Hostname| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|Eg. `https://appcog-cpd-apps-arqna-<env>-we-01.azurewebsites.net/`|
@@ -21,7 +21,7 @@
 |Bot.AppSettings:DispatchLuisAppIdAr| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:DispatchLuisAppIdEn| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:EnQnaMaker:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
-|Bot.AppSettings:EnQnaMaker:EndpointKey| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:EnQnaMaker:EndpointKey| Endpoint key under Keys and Endpoint section of appcog-cpd-apps-qna-<env>-we-01 cognitive services resource |Eg. `https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/`|
 |Bot.AppSettings:EnQnaMaker:FaqKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:EnQnaMaker:Hostname| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> >|Eg. `https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/`|
 |Bot.AppSettings:EnQnaMaker:KbQnAKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||

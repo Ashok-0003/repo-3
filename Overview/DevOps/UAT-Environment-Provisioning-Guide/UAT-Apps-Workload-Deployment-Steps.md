@@ -117,33 +117,35 @@ mi-cpd-pltf-uat-we-01
 [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 #### Dependencies
 #### Resources
-App Config Store - acst-cpd-apps-str-uat-we-01
-Cosmos Account - cosmos-cpd-apps-str-uat-we-01
-Cosmos DB - sql-cosmos-cpd-apps-str-ntf-uat-we-01
-Cosmos DB - sql-cosmos-cpd-apps-str-pt-uat-we-01 
-Cosmos DB - sql-cosmos-cpd-apps-str-bot-uat-we-01
-Cosmos DB Container - sqlc-cosmos-cpd-apps-str-ntf-uat-we-01
-Cosmos DB Container - sqlc-cosmos-cpd-apps-str-botfb-uat-we-01
-Cosmos DB Container - sqlc-cosmos-cpd-apps-str-botrt-uat-we-01
-Cosmos DB Container - sqlc-cosmos-cpd-apps-str-botst-uat-we-01
-Cosmos DB Container - sqlc-cosmos-cpd-apps-str-pt-uat-we-01
-Notification Hub - ntf-cpd-apps-str-uat-we-01
-Notification Hub Namespace - ntfns-cpd-apps-str-uat-we-01
-Redis Cache - redis-cpd-apps-str-uat-we-01
-Service Bus - sb-cpd-apps-strntf-uat-we-01
-Service Bus Topic - sbt-cpd-apps-strntfbulk-uat-we-01
-Service Bus Topic - sbt-cpd-apps-strntfbulkdl-uat-we-01
-Service Bus Topic - sbt-cpd-apps-strntfoutboundgsmssingle-uat-we-01
-Service Bus Topic - sbt-cpd-apps-strntfsingle-uat-we-01
-Service Bus Topic - sbt-cpd-apps-strsmsbulk-uat-we-01
-Service Bus Topic - sbt-cpd-apps-strsmssingle-uat-we-01
-Service Bus Topic Subscription - sbts-cpd-apps-strntfbulk-uat-we-01 
-Service Bus Topic Subscription - sbts-cpd-apps-strntfbulkdl-uat-we-01
-Service Bus Topic Subscription - sbts-cpd-apps-strntfoutboundgsmssingle-uat-we-01
-Service Bus Topic Subscription - sbts-cpd-apps-strntfsingle-uat-we-01
-Service Bus Topic Subscription - sbts-cpd-apps-strsmsbulk-uat-we-01
-Service Bus Topic Subscription - sbts-cpd-apps-strsmssingle-uat-we-01
-Storage Account - stcpdappsstruatwe01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|AppConfigurationStore|acst-cpd-apps-str-uat-we-01||
+|CosmosAccount | cosmos-cpd-apps-str-uat-we-01||
+|CosmosDBSQL | sql-cosmos-cpd-apps-str-ntf-uat-we-01||
+|CosmosDBSQL| sql-cosmos-cpd-apps-str-pt-uat-we-01 ||
+|CosmosDBSQL| sql-cosmos-cpd-apps-str-bot-uat-we-01||
+|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-ntf-uat-we-01||
+|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-botfb-uat-we-01||
+|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-botrt-uat-we-01||
+|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-botst-uat-we-01||
+|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-pt-uat-we-01||
+|NotificationHub | ntf-cpd-apps-str-uat-we-01||
+|NotificationHubNamespace | ntfns-cpd-apps-str-uat-we-01||
+|RedisCache | redis-cpd-apps-str-uat-we-01||
+|ServiceBusNamespace| sb-cpd-apps-strntf-uat-we-01||
+|ServiceBusNamespaceTopic| sbt-cpd-apps-strntfbulk-uat-we-01||
+|ServiceBusNamespaceTopic| sbt-cpd-apps-strntfbulkdl-uat-we-01||
+|ServiceBusNamespaceTopic| sbt-cpd-apps-strntfoutboundgsmssingle-uat-we-01||
+|ServiceBusNamespaceTopic| sbt-cpd-apps-strntfsingle-uat-we-01||
+|ServiceBusNamespaceTopic| sbt-cpd-apps-strsmsbulk-uat-we-01||
+|ServiceBusNamespaceTopic| sbt-cpd-apps-strsmssingle-uat-we-01||
+|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strntfbulk-uat-we-01 ||
+|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strntfbulkdl-uat-we-01||
+|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strntfoutboundgsmssingle-uat-we-01||
+|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strntfsingle-uat-we-01||
+|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strsmsbulk-uat-we-01||
+|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strsmssingle-uat-we-01||
+|StorageAccount | stcpdappsstruatwe01||
 
 ### 2. Seed the Key Vault Secrets in kv-cpd-apps-uat-we-01
 required in the cognitive and integration pipelines 

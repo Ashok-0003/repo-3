@@ -102,7 +102,7 @@
 |EventGridSettings:DomainEndpoint|Name of the resource https://egd-cpd-apps-int-<env>-we-01.westeurope-1.eventgrid.azure.net/api/events||
 |GraphB2cExtensionAppClientId|Client Id of default B2C extension app in Azure B2C tenant ||
 |GraphClientId|Client Id of TASMU-Portal app in Azure B2C tenant||
-|GraphTenant|@<C2ADC2E9-9B1C-6B31-A4CE-DBC64F092458>||
+|GraphTenant|Tenant Id of Azure B2C Tenant||
 |ManageEventFunction.AzureADOptions:ClientId|Client Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
 |ManageEventFunction.AzureADOptions:Instance|Instance of  @<0322563A-1C16-609F-BBDA-38E4FCFF726E>  |Eg: |
 |ManageEventFunction.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |

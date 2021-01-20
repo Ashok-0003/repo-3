@@ -100,15 +100,19 @@ Storage Account - stcpdappsdiaguatwe01
 1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 #### Resources
-Virtual Network - vnet-cpd-pltf-uat-we-01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|VirtualNetwork | vnet-cpd-pltf-uat-we-01||
 
 ### 6. Platform Security Resource Group
 #### Resource Group
 [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 #### Dependencies
 #### Resources
-kv-cpd-pltf-uat-we-01 (Access Policy added only for ADO Service Connection)
-mi-cpd-pltf-uat-we-01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|KeyVault |kv-cpd-pltf-uat-we-01 |Access Policy added only for ADO Service Connection|
+|ManagedIdentity |mi-cpd-pltf-uat-we-01 ||
 
 ### 7. Update Key Vault Access Policies - kv-cpd-pltf-uat-we-01
  redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
@@ -284,9 +288,11 @@ Storage Account - stcpdshrduatwe01
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 #### Resources
-AKS Cluster - aks-cpd-apps-uat-we-01
-Managed Identity - mi-cpd-apps-aks-uat-we-01 (Deployed in rg-cpd-apps-aksnode-uat-we-01)
-Application Gateway - agw-cpd-apps-aks-uat-we-01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|ManagedClusterCNI | aks-cpd-apps-uat-we-01 ||
+|ManagedIdentity | mi-cpd-apps-aks-uat-we-01 | Deployed in rg-cpd-apps-aksnode-uat-we-01 |
+|ApplicationGateway | agw-cpd-apps-aks-uat-we-01 ||
 
 ### 7. Apps WAF Resource Group
 #### Resource Group
@@ -299,9 +305,11 @@ Application Gateway - agw-cpd-apps-aks-uat-we-01
 #### Notes
 Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
 ####Resources
-Application Gateway - agw-cpd-apps-api-uat-we-01
-Application Gateway - agw-cpd-apps-web-uat-we-01
-Application Gateway - agw-cpd-apps-ntf-uat-we-01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|ApplicationGateway | agw-cpd-apps-api-uat-we-01 ||
+|ApplicationGateway | agw-cpd-apps-web-uat-we-01 ||
+|ApplicationGateway | agw-cpd-apps-ntf-uat-we-01 ||
 
 ### 8. Apps Payment Token Resource Group
 #### Resource Group
@@ -309,9 +317,11 @@ Application Gateway - agw-cpd-apps-ntf-uat-we-01
 #### Dependencies
 1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 #### Resources 
-Key Vault - kv-cpd-apps-pt-uat-we-01
-App Service Plan - plan-cpd-apps-pt-uat-we-01
-Function App - func-cpd-apps-pt-uat-we-01
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|KeyVault | kv-cpd-apps-pt-uat-we-01 ||
+|AppServicePlan | plan-cpd-apps-pt-uat-we-01 ||
+|FunctionAppPt | func-cpd-apps-pt-uat-we-01 ||
 
 ### 9. Update Key Vault Access Policies - kv-cpd-apps-pt-we-01
 redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)

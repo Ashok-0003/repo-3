@@ -77,10 +77,10 @@
 |Crm.Common.S2SAuth:Audience| Audience of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Crm.Common.S2SAuth:Authority| Authority of TASMU non prod JWT authentication| Eg: https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0/|
 |Crm.Common.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.ProfileManagement.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.ProfileManagement.DynamicsSettings:Authority| Authority of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
 |Crm.ProfileManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
-|Crm.ProfileManagement.DynamicsSettings:Resource|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
-|Crm.ProfileManagement.DynamicsSettings:TenantId|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.ProfileManagement.DynamicsSettings:Resource|Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
+|Crm.ProfileManagement.DynamicsSettings:TenantId| Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
 |EventGridSettings:DomainEndpoint|Name of the resource https://egd-cpd-apps-int-<env>-we-01.westeurope-1.eventgrid.azure.net/api/events||
 |GraphB2cExtensionAppClientId|Client Id of default B2C extension app in Azure B2C tenant ||
 |GraphClientId|Client Id of TASMU-Portal app in Azure B2C tenant||

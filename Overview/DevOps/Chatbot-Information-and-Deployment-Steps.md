@@ -76,6 +76,7 @@ It also generates a config json file in the build artifacts which will contain a
 3. Update the LUIS instances in this portal with Authoring resource if its empty. (https://eu.luis.ai/)
 a. go to above url and then select directory and then choose authoring resource like image below.
  ![image.png](/.attachments/image-64fbb0ee-4266-40f7-98b2-d63d2b23c60f.png)
+![authoring-resource.PNG](/.attachments/authoring-resource-f2cde030-3399-4c60-9e11-ac28e999ce2c.PNG)
 ![image.png](/.attachments/image-9f073d5a-6a5d-48f2-999a-5d76cf94349e.png)
 ![image.png](/.attachments/image-b2ec52ae-43ba-4cd3-9f5b-5f377faedeeb.png)
 

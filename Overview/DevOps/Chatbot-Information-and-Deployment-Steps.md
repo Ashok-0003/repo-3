@@ -149,7 +149,7 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 
 | KeyName | How to retrieve | Remarks |
 |--|--|--|
-| MicrosoftAppId | Go to bot-cpd-apps-<env>-we-01 and under settings tab, copy the Microsoft App Id | ![webappbot-manage.png](/.attachments/webappbot-manage-b419b3a8-ff19-4df3-8cce-3660542115c1.png) |
+| MicrosoftAppId | Go to bot-cpd-apps-<env>-we-01 and under settings tab, copy the Microsoft App Id | ![ms-bot-appid.PNG](/.attachments/ms-bot-appid-caf4af84-b4e2-4160-87e4-9a5b9c8d4ec8.PNG) |
 
 # Reference images:
 - Follow [this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=luis-qnamaker-deployments) to reach following pages in (https://eu.luis.ai/).

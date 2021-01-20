@@ -23,6 +23,7 @@
 |Bot.AppSettings:EnQnaMaker:Endpoint|Name of the resource https://appcog-cpd-apps-qna-<env>-we-01.cognitiveservices.azure.com/| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>|
 |Bot.AppSettings:EnQnaMaker:EndpointKey| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:EnQnaMaker:FaqKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.AppSettings:EnQnaMaker:Hostname| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> >|Eg. `https://appcog-cpd-apps-qna-<env>-we-01.azurewebsites.net/`|
 |Bot.AppSettings:EnQnaMaker:KbQnAKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:EnQnaMaker:SourceFAQKbId| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
 |Bot.AppSettings:GeneralLuisAppIdAr| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||

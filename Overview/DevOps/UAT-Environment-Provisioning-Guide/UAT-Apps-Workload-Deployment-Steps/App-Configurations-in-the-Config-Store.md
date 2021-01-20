@@ -63,12 +63,12 @@
 |ConnectionStrings:NotificationApi| End point for notification api |Eg. `https://notification.<env>.sqcp.qa/api/Notification/`|
 |ConnectionStrings:ProfileApi|End point for profile api|Eg. `https://api.<env>.sqcp.qa/profile/api/`|
 |ConnectionStrings:SmartParkingApi|End point for smartparking api|Eg. `https://api.<env>.sqcp.qa/smartparking/api/`|
-|Crm.CaseManagement.DynamicsSettings:Authority| Authority of App Registration - spn-crm-case-management-integration-<env>| Eg: |
+|Crm.CaseManagement.DynamicsSettings:Authority| Authority of App Registration - spn-crm-case-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |Crm.CaseManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-case-management-integration-<env>| Eg: 37fd8453-e25f-4b3e-bd78-32b28328f51a|
 |Crm.CaseManagement.DynamicsSettings:Resource| Resource of App Registration - spn-crm-case-management-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
 |Crm.CaseManagement.DynamicsSettings:TenantId| TenantId of App Registration - spn-crm-case-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |Crm.Common.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.Common.B2CAuth:Domain|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.Common.B2CAuth:Domain| Domain of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Crm.Common.B2CAuth:Instance|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
 |Crm.Common.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|

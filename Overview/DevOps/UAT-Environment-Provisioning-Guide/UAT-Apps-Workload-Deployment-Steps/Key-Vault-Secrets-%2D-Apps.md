@@ -4,7 +4,7 @@
 |kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret| Retrieve Client Secret for adminportal app registration in B2C Tenant under certificates and secrets menu.||
 |kv-cpd-apps-<env>-we-01|AdminPortal-AuthClaims-GroupId|Secret| Navigate to"Platformadmin" Group in Azure Ad Groups in B2C Tenant and retrieve the object Id of the group.||
 |kv-cpd-apps-<env>-we-01|Azure-Search-Key|Secret|Primary Admin key of resource srch-cpd-apps-cog-<env>-we-01 ||
-|kv-cpd-apps-<env>-we-01|BotAppSecret|Secret| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> / @<D654DCE5-848A-674D-A624-93B0AB87B9D1> ||
+|kv-cpd-apps-<env>-we-01|BotAppSecret|Secret|  Create client secret for **bot-cpd-apps<env>-we-01** WebAppBot resource. [Refer steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update) ||
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisAuthSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luiauth-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisRtSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luisrt-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaEnSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **appcog-cpd-apps-qna-<env>-we-01** | |

@@ -34,7 +34,7 @@
 |Bot.AppSettings:SearchApiUrl| `https://api.<env>.sqcp.qa/searchapi`|Eg. `https://api.<env>.sqcp.qa/searchapi`|
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSync:LuisTrainerUri| `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en`|
 |Bot.AzureQnaMakerSyncFunction:ConfigQnaSyncAr:LuisTrainerUri| `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|Eg. `https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/ar`|
-|Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996>||
+|Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard| [Refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps%2FApp%20Configurations%20in%20the%20Config%20Store&pageId=150&anchor=bot.menuandcards%3Amenuandcards%3Acards%3Arequestserviceorsupportmenucard) |It will be a base64 encoded of the following [JSON](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps%2FApp%20Configurations%20in%20the%20Config%20Store&pageId=150&anchor=bot.menuandcards%3Amenuandcards%3Acards%3Arequestserviceorsupportmenucard).|
 |CDNSettings:TenantId|The Tenant Id|Tenant Id of azure ad associated with azure subscription|
 |CDNSettings:ClientId|The Client Id|Client Id of **spn-cmsbpa-dev**|
 |CDNSettings:Profile|Name of the CDN profile resource cdn-cpd-shrd-<env>-we-01|Eg. cdn-cpd-shrd-<env>-we-01|
@@ -179,3 +179,44 @@
 |SmartParking.S2SAuth:Audience|ClientId of SmartParking Api App registration|Eg. `64db2dba-79c5-4b6c-84e0-696b3d1f0465`|
 |SmartParking.S2SAuth:Authority|Authority Url with tenant id|Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`|
 |SubscriptionId| @<44D3C2D0-5E60-68E5-8187-D6640EF9C21C> ||
+
+#Reference
+### Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard
+```
+{
+    "type": "AdaptiveCard",
+    "id": "RequestServiceOrSupportMenu",
+    "body": [
+        {
+            "type": "Container",
+            "spacing": "None",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "id": "title",
+                    "spacing": "Medium",
+                    "size": "Medium",
+                    "weight": "Medium",
+                    "text": "Please select one of the options below.",
+                    "wrap": true
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "Create Support Request",
+            "url": "https://account.dev.sqcp.qa/en/?navigation=requests/createsupportrequest"
+        },
+        {
+            "type": "Action.OpenUrl",
+            "title": "Status of Support Request",
+            "url": "https://account.dev.sqcp.qa/en/?navigation=requests"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "speak": "Request service or support Menu Card"
+}
+```

@@ -2,9 +2,9 @@
 # Notes
 1. UAT release can be picked only after it has been deployed on test environment successfuly
 1. For each of the below deployments, pick the ones in which tst stage has succeed and uat is waiting for approval
-![image.png](/.attachments/image-0307be33-0c5a-4809-a3e7-bda01f6a88b6.png)
+![image.png](/.attachments/image-7770911c-bb27-472a-ab75-ca1ebe423177.png)
 1. Approval can be made by clicking on the 0/1 checks passed
-![image.png](/.attachments/image-3fa0b2d2-c310-48f1-a999-3d2e4b420dc8.png)
+![image.png](/.attachments/image-9e510c68-d835-402e-ade2-4ae6be0b2806.png)
 
 # 1. Update Key Vault
 [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337)

@@ -63,7 +63,7 @@
 |ConnectionStrings:NotificationApi| End point for notification api |Eg. `https://notification.<env>.sqcp.qa/api/Notification/`|
 |ConnectionStrings:ProfileApi|End point for profile api|Eg. `https://api.<env>.sqcp.qa/profile/api/`|
 |ConnectionStrings:SmartParkingApi|End point for smartparking api|Eg. `https://api.<env>.sqcp.qa/smartparking/api/`|
-|Crm.CaseManagement.DynamicsSettings:Authority|@<0322563A-1C16-609F-BBDA-38E4FCFF726E>||
+|Crm.CaseManagement.DynamicsSettings:Authority| Authority of App Registration - spn-crm-case-management-integration-<env>| Eg: |
 |Crm.CaseManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-case-management-integration-<env>| Eg: 37fd8453-e25f-4b3e-bd78-32b28328f51a|
 |Crm.CaseManagement.DynamicsSettings:Resource| Resource of App Registration - spn-crm-case-management-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
 |Crm.CaseManagement.DynamicsSettings:TenantId| TenantId of App Registration - spn-crm-case-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|

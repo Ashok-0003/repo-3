@@ -425,12 +425,15 @@ For production environment, use the application mode as production.
 ### Dependencies
 1. Self Hosted Agent
 1. Host File Entry updated
+1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
+
 1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
 ### [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
 
 ## Deploy Platform APIs
 ### Dependencies
 1. Self Hosted Agent
+1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 
 ### Update yml files
 1. For platform apis, ingress controller helm-config needs to be added for new env and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
@@ -491,13 +494,17 @@ For production environment, use the application mode as production.
 ## Deploy Web Apps
 ### Dependencies
 1. Self Hosted Agent
+1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 
 ### Update yml files
 1. For web apps, add stage to the following pipeline pointing to uat resources
 [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
 
 ## Deploy Chatbot Solutions
-1. [Deploying Chatbot solutions](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
+### Dependencies
+1. Self Hosted Agent
+1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
+### [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
 
 ## Deploy Payment Preference Functions
 1. For deploying Payment Preference function to function app, add stage to the following pipeline 

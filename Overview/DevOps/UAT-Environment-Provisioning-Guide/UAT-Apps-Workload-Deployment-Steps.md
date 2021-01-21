@@ -376,7 +376,7 @@ Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigura
 1. Open the private DNS Zone
 1. Go to virtual network links and add link as below
 
-![image.png](/.attachments/image-313a362b-dc66-4d5c-989b-61b8579b90a5.png)
+![image.png](/.attachments/image-1859bd56-2f96-470e-a08e-b7695df98d53.png)
 ## Role Assignments 
 
 |Identity Name| Type  | Target Resource | Role |

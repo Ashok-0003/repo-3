@@ -437,6 +437,17 @@ For production environment, use the application mode as production.
 
 ### Update yml files
 1. For platform apis, ingress controller helm-config needs to be added for new env and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
+
+
+|Variables| Value | Description | Possible Value |
+|--|--|--|--|
+|group|<env>|Name of the variable group in ADO| uat|
+|azureResourceGroup|rg-cpd-apps-aks-<env-we-01| Name of cluster resource group |rg-cpd-apps-aks-uat-we-01|
+|kubernetesCluster|aks-cpd-apps-<env>-we-01| Name of the kubernetes cluster |aks-cpd-apps-uat-we-01|
+|containerRegistry|<acrname>.azurecr.io| Azure Container Registry end point |acrcpdglobnpdwe01.azurecr.io|
+|appConfigConnection|https://acst-cpd-apps-str-<env>-we-01.azconfig.io| App Configuration Store End Point|https://acst-cpd-apps-str-uat-we-01.azconfig.io|
+|appConfigConnection|https://acst-cpd-apps-str-<env>-we-01.azconfig.io| App Configuration Store End Point|https://acst-cpd-apps-str-uat-we-01.azconfig.io|
+
 ```
 - stage: Deploy_<env>
     displayName: Deploy <env> stage

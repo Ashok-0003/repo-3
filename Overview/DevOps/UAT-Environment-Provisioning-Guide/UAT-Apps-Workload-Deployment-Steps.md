@@ -409,7 +409,15 @@ For production environment, use the application mode as production.
 1. Test Send (Support and troubleshooting) for Apple and Windows Phone
 
 # Deployment of the solution components
+## Update host file entries in self hosted agents
+1. In the self hosted agent, update the following file - C:\Windows\System32\drivers\etc\host
+IP mentioned here is private IP of apim-cpd-shrd-<env>-we-01
+`172.20.42.77 apim-cpd-shrd-<env>-we-01.management.azure-api.net`
+
+## Update APIM Pipelines
 1. [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
+
+## Deploy Platform APIs
 1. For platform apis, ingress controller helm-config needs to be added for new env and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
 ```
 - stage: Deploy_<env>
@@ -461,12 +469,17 @@ For production environment, use the application mode as production.
 
                 - template: templates/deploy-apps.yml
 ```
+## Deploy Integration
 1. For integration function apps, add stage to the following pipeline pointing to uat resources
 [CD-Integration-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=301)
+
+## Deploy Web Apps
 1. For web apps, add stage to the following pipeline pointing to uat resources
 [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
 
+## Deploy Chatbot Solutions
 1. [Deploying Chatbot solutions](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
 
+## Deploy Payment Preference Functions
 1. For deploying Payment Preference function to function app, add stage to the following pipeline 
 [CD-PlatformFuncApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738)

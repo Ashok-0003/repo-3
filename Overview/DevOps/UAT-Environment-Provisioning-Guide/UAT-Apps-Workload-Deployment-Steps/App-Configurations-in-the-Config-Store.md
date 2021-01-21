@@ -156,7 +156,7 @@
 |PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
 |PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|unique terminal ID provided by customer for Ooredoo Payment Gateway.|Eg: TASMU-DEV |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.AuthorizeCard:Scope|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|

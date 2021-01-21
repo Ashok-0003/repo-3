@@ -20,6 +20,7 @@ Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 |12 | ITSM Non Prod<p>clientid: ce633c1d-d8b4-4381-b68a-1f7d0851250f</p><p>clientsecret: WnIaXQ~IT~P.O3CyjZNmwnj42vC2FoK_B7</p><p>scope: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default</p>|
 |13|6DClient <p>Client ID: 1e5dfced-126a-4009-8479-21bfc4e078c1</p><p>Client Secret : cK4XfnAo3a..~If43-91m6.ui_Gb2Qbu1m</p>|
 |14|SQCPMonitoring <p>Client ID: ca9d5b7b-8193-4200-bb4b-a56d9b7e32d3</p><p>Client Secret : tlbu57fpi-AKxt3Z.e-L5-T5-lj3~GRhgi</p>|
+| 15 | <p>AuthorizeCard</p><p>clientid: dd0623e2-0163-4b05-82f8-ef798ff16c86</p><p>clientsecret: JBJGh02_5JL9_Ia-ea~C1-vBTuPDB0f1FC</p><p>Scopes:</p><p>https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default| | 
 
 # Azure AD Instance
 Tenant Name - tasmusqcp.onmicrosoft.com

@@ -31,7 +31,7 @@
 |kv-cpd-apps-<env>-we-01|Crm-ProfileManagement-DynamicsSettings-ClientSecret| Secret |Client secret stored in kv-cpd-apps-<env>-we-01 used for Profile api connection, generate secret from Azure AD app registration.<p> UAT - spn-crm-profile-management-integration-test<p>Client Secret : **********</p><p> TEST - spn-crm-profile-management-integration-test<p>Client Secret : **********</p><p> DEV - spn-crm-profile-management-integration-dev<p>Client Secret : **********</p>||
 |kv-cpd-apps-<env>-we-01|EventGridSettings-DomainKey| Secret | Access key of egd-cpd-apps-int-<env>-we-01||
 |kv-cpd-apps-<env>-we-01|GraphClientSecret| Secret | Client Secret of TASMU-Portal app on Azure B2C Tenant ||
-|kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret | Client Secret of the B2C AD App Registration (ManageEventFunction) | |
+|kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret | Client Secret of ManageEventFunction app on Azure B2C Tenant | |
 |kv-cpd-apps-<env>-we-01|NotificationFunctionSettings-SendGridApiKey| Secret | **Sendgrid API key to be provided by customer.** |
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret | Notification History DB Auth Secondary Key, key is retrieved from cosmos-cpd-apps-<env>-we-01||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AuthToken| Secret | Notification History DB Auth Primary Key, key is retrieved from cosmos-cpd-apps-<env>-we-01||

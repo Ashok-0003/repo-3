@@ -436,8 +436,22 @@ For production environment, use the application mode as production.
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 
 ### Update yml files
-1. For platform apis, ingress controller helm-config needs to be added for new env and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
+1. In the platform APIs, repo - pipelines\deploy\charts\stable\agic-ingress
+1. Create a folder for <env>
+1. Add file [helm-config.yaml](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2Fdeploy%2Fcharts%2Fstable%2Fagic-ingress%2Fuat%2Fhelm-config.yaml) to it - reference from uat
+1. Update following values:
 
+```
+subscriptionId: <subscriptionId>
+resourceGroup: rg-cpd-apps-aks-<env>-we-01
+name: agw-cpd-apps-aks-<env>-we-01
+```
+```
+identityResourceID: <Resource ID of mi-cpd-apps-aks-<env>-we-01>
+identityClientID: <Client ID of mi-cpd-apps-aks-<env>-we-01>
+```
+
+1. Edit pipelines\deploy\cd-platformapis-release.yml to add a new stage for the new env as below
 
 |Variables| Value | Description | Possible Value |
 |--|--|--|--|
@@ -481,7 +495,7 @@ For production environment, use the application mode as production.
       - name: updateHelmResources
         value: true
       - name: addKeda
-        value: "true"
+        value: true
     pool:
       name: $(agentPoolEnv)
     jobs:

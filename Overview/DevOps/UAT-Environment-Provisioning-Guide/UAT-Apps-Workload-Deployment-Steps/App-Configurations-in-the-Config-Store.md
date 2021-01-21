@@ -52,12 +52,12 @@
 |Cms.Function:PreviewApiUrl|Marketplace preview URL|Eg. `https://marketplace.<env>.sqcp.qa/`|
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|
 |Cms.Function:TASMUTermGroupId|GUID of TASMU term group present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Click TASMU -> Copy the Unique Identifier|
-|Common.CoreApis.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Common.CoreApis.B2CAuth:Domain| Domain of TASMU non prod B2C authentication| Eg: tasmucpb2cnonprod.onmicrosoft.com | 
-|Common.CoreApis.B2CAuth:Instance| Instance of TASMU non prod B2C authentication| Eg: https://tasmucpb2cnonprod.b2clogin.com/tfp/ | 
-|Common.CoreApis.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Common.CoreApis.S2SAuth:Audience| Audience of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Common.CoreApis.S2SAuth:Authority| Authority of TASMU non prod JWT authentication| Eg: https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0/|
+|Common.CoreApis.B2CAuth:ClientId| Client Id of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|Common.CoreApis.B2CAuth:Domain| Domain of Central-Platform-Core-APIs| Eg: tasmucpb2cnonprod.onmicrosoft.com | 
+|Common.CoreApis.B2CAuth:Instance| Instance of Central-Platform-Core-APIs| Eg: https://tasmucpb2cnonprod.b2clogin.com/tfp/ | 
+|Common.CoreApis.S2SAuth:ClientId| Client Id of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|Common.CoreApis.S2SAuth:Audience| Audience of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|Common.CoreApis.S2SAuth:Authority| Authority of Central-Platform-Core-APIs| Eg: https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0/|
 |ConnectionStrings:CosmosDBEndpoint| End point for Cosmos Account|Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
 |ConnectionStrings:GisParkingLotsApi||Eg. `https://api.<env>.sqcp.qa/`|
 |ConnectionStrings:NotificationApi| End point for notification api |Eg. `https://notification.<env>.sqcp.qa/api/Notification/`|

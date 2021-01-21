@@ -34,13 +34,13 @@
 |kv-cpd-apps-<env>-we-01|GraphClientSecret| Secret | Client Secret of TASMU-Portal app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret |@<0322563A-1C16-609F-BBDA-38E4FCFF726E>| Client Secret of the AD App Registration (spn-xxxx-xxx-<env>)|
 |kv-cpd-apps-<env>-we-01|NotificationFunctionSettings-SendGridApiKey| Secret | **Sendgrid API key to be provided by customer.** |
-|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2> ||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthToken| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-AzureADOptions-ClientSecret| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-GSMSKey| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret | @<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret | Notification History DB Auth Secondary Key, key is retrieved from cosmos-cpd-apps-<env>-we-01||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthToken| Secret | Notification History DB Auth Primary Key, key is retrieved from cosmos-cpd-apps-<env>-we-01||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-AzureADOptions-ClientSecret| Secret | Client Secret for Notification API App Registration in B2C tenant||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-GSMSKey| Secret | Government SMS Provider Password, key to be provided by customer.||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret | Send,Listen access policy connection string of the resource sb-cpd-apps-ntf-<env>-we-01 ||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret | Ooredoo SMS Gateway Provider API Name, key to be provided by customer.||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret | Ooredoo SMS Gateway Password, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret | @<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-Password| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||

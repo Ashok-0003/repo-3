@@ -389,6 +389,7 @@ Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigura
 ![image.png](/.attachments/image-ae0af3f0-3406-4327-bf7f-2d29bfa8c5c4.png)
 
 ## Role Assignments 
+Update role assignment for  following resources
 
 |Identity Name| Type  | Target Resource | Role |
 |--|--|--|--|

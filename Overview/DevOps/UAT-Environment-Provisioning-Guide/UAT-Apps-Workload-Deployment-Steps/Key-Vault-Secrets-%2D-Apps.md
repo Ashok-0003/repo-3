@@ -20,7 +20,6 @@
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-CosmosDBAuthKey|Secret| Settings-> Keys -> PrimaryKey **cosmos-cpd-apps-<env>-we-01** ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSql|Secret|@<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSqlExport|Secret|@<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-FieldServiceServiceBus| Secret |Send,Listen access policy connection string of the resource **sb-cpd-apps-int-<env>-we-01**| |
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-IntegrationServiceBus| Secret |Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01 for deployment||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-IoTHub| Secret |Retrieve connection string from **iot-cpd-data-<env>-we-01** -> **Shared access policies** -> **registryRead** -> **Connection-String-Primary Key**| Eg. `HostName=iot-cpd-data-uat-we-01.azure-devices.net;SharedAccessKeyName=registryRead;SharedAccessKey=<key>`|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-NotificationHub| Secret | Retrieve connection string from **ntf-cpd-apps-str-{​​env}​​-we-01** -> **Access policies** -> **Policy name - DefaultFullSharedAccessSignature** -> **connection string** ||

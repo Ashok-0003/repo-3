@@ -157,9 +157,9 @@
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
 |PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|unique terminal ID provided by customer for Ooredoo Payment Gateway.|Eg: TASMU-DEV1 |
-|PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|PaymentGWSettings.AuthorizeCard:Scope|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
+|PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|URL of the Platform-API's|Eg: `https://api.dev.sqcp.qa/payment/api/PaymentGW` |
+|PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|URL of the vistamoney|Eg: `https://test.vistamoney.info/paymentgateway-external/checkoutvista.xhtml?` |
+|PaymentGWSettings.AuthorizeCard:Scope|Scope of Platform-API's App|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
 |PaymentGWSettings.AuthorizeCard:TenantId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.S2SAuth:Audience|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.S2SAuth:Authority|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||

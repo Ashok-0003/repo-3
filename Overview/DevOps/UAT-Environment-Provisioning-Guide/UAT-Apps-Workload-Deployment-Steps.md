@@ -448,7 +448,7 @@ For production environment, use the application mode as production.
 |appConfigConnection|https://acst-cpd-apps-str-<env>-we-01.azconfig.io| App Configuration Store End Point|https://acst-cpd-apps-str-uat-we-01.azconfig.io|
 |podIdentity|mi-cpd-apps-aks-<env>-we-01| Name of the pod managed identity created in node resource group |mi-cpd-apps-aks-uat-we-01|
 |podIdentityClientId| | Client Id of mi-cpd-apps-aks-<env>-we-01 to be retrieved from the resource | d454a5f5-dbc5-4f3f-93c1-79f057142e49|
-|podIdentityResourceId| /subscriptions/<subscriptionId>/resourceGroups/rg-cpd-apps-aksnode-<env>-we-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mi-cpd-apps-aks-<env>-we-01 |Resource ID of mi-cpd-apps-aks-<env>-we-01 | /subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-apps-aksnode-uat-we-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mi-cpd-apps-aks-uat-we-01|
+|podIdentityResourceId| |Resource Id of mi-cpd-apps-aks-<env>-we-01 ||
 |env| <env> | 3 chars name of the env | uat|
 |agentPoolEnv|  | Name of the self Hosted Agent Pool to be used for deployments | |
 |updateHelmResources| true | Add helm resources - ingress and pod identity to cluster, **use only for initial deployment** | true |

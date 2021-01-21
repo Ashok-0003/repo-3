@@ -65,30 +65,30 @@
 |ConnectionStrings:SmartParkingApi|End point for smartparking api|Eg. `https://api.<env>.sqcp.qa/smartparking/api/`|
 |Crm.CaseManagement.DynamicsSettings:Authority| Authority of App Registration - spn-crm-case-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |Crm.CaseManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-case-management-integration-<env>| Eg: 37fd8453-e25f-4b3e-bd78-32b28328f51a|
-|Crm.CaseManagement.DynamicsSettings:Resource| Resource of App Registration - spn-crm-case-management-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
+|Crm.CaseManagement.DynamicsSettings:Resource| Url of dynamics instance for the environment - spn-crm-case-management-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
 |Crm.CaseManagement.DynamicsSettings:TenantId| TenantId of App Registration - spn-crm-case-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
-|Crm.Common.B2CAuth:ClientId| Client Id of TASMU non prod B2C authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.Common.B2CAuth:Domain| Domain of TASMU non prod B2C authentication| Eg: tasmucpb2cnonprod.onmicrosoft.com|
-|Crm.Common.B2CAuth:Instance| Instance of TASMU non prod B2C authentication| Eg: https://tasmucpb2cnonprod.b2clogin.com/tfp/|
+|Crm.Common.B2CAuth:ClientId| Client Id of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|Crm.Common.B2CAuth:Domain| Domain of Central-Platform-Core-APIs| Eg: tasmucpb2cnonprod.onmicrosoft.com|
+|Crm.Common.B2CAuth:Instance| Instance of Central-Platform-Core-APIs| Eg: https://tasmucpb2cnonprod.b2clogin.com/tfp/|
 |Crm.Common.DynamicsSettings:Authority| Authority of App Registration - spn-crm-common-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |Crm.Common.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-common-integration-<env>| Eg: 9364f7ba-f249-4151-b278-c5fd3c00c5a8|
-|Crm.Common.DynamicsSettings:Resource| Resource of App Registration - spn-crm-common-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
+|Crm.Common.DynamicsSettings:Resource| Url of dynamics instance for the environment - spn-crm-common-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
 |Crm.Common.DynamicsSettings:TenantId| TenantId of App Registration - spn-crm-common-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
-|Crm.Common.S2SAuth:Audience| Audience of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|Crm.Common.S2SAuth:Authority| Authority of TASMU non prod JWT authentication| Eg: https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0/|
-|Crm.Common.S2SAuth:ClientId| Client Id of TASMU non prod JWT authentication| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|Crm.Common.S2SAuth:Audience| Audience of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|Crm.Common.S2SAuth:Authority| Authority of Central-Platform-Core-APIs| Eg: https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0/|
+|Crm.Common.S2SAuth:ClientId| Client Id of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Crm.ProfileManagement.DynamicsSettings:Authority| Authority of App Registration - spn-crm-profile-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |Crm.ProfileManagement.DynamicsSettings:ClientId| Client Id of App Registration - spn-crm-profile-management-integration-<env>| Eg: d60021f7-df14-4731-a311-83d30d2bec1b|
-|Crm.ProfileManagement.DynamicsSettings:Resource| Resource of App Registration - spn-crm-profile-management-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
+|Crm.ProfileManagement.DynamicsSettings:Resource| Url of dynamics instance for the environment - spn-crm-profile-management-integration-<env>| Eg: https://tasmu-uat.crm4.dynamics.com|
 |Crm.ProfileManagement.DynamicsSettings:TenantId| TenantId of App Registration - spn-crm-profile-management-integration-<env>| Eg: https://login.microsoftonline.com/92603419-35d1-4eb0-8427-cac731071355|
 |EventGridSettings:DomainEndpoint|Name of the resource https://egd-cpd-apps-int-<env>-we-01.westeurope-1.eventgrid.azure.net/api/events||
 |GraphB2cExtensionAppClientId|Client Id of default B2C extension app in Azure B2C tenant ||
 |GraphClientId|Client Id of TASMU-Portal app in Azure B2C tenant||
 |GraphTenant|Tenant Id of Azure B2C Tenant||
-|ManageEventFunction.AzureADOptions:ClientId|Client Id of Manage Event azure function app registration |Eg: 11f1f420-3ce0-4f26-85f5-9cf902553e72|
-|ManageEventFunction.AzureADOptions:Instance|Instance of Manage Event azure function app registration |Eg: https://login.microsoftonline.com/{0}|
-|ManageEventFunction.AzureADOptions:Scope|Scope of Manage Event azure function app registration |Eg: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default|
-|ManageEventFunction.AzureADOptions:TenantId|Tenant Id of Manage Event azure function app registration |Eg: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698|
+|ManageEventFunction.AzureADOptions:ClientId|Client Id of ManageEventFunction app registration |Eg: 11f1f420-3ce0-4f26-85f5-9cf902553e72|
+|ManageEventFunction.AzureADOptions:Instance|Instance of ManageEventFunction app registration |Eg: https://login.microsoftonline.com/{0}|
+|ManageEventFunction.AzureADOptions:Scope|Scope of ManageEventFunction app registration |Eg: https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default|
+|ManageEventFunction.AzureADOptions:TenantId|Tenant Id of ManageEventFunction app registration |Eg: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698|
 |MicrosoftAppId| Microsoft App Id/ClientId of webAppBot bot-cpd-apps-<env>-dev-01 | <p>For initial deployment [refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=updating-infra-repo-with-luis-and-qna-keys)</p> Eg: `2d6a26ed-4c86-4d6e-b7a6-b7cee194e5e9`|
 |Mobile:AccountManagementApiEndPoint|API endpoint for accountmanagement service |Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
 |Mobile:AuthenticationSettings:BoPolicySignUpSignIn|AAD B2C policy for business owner signup  ||

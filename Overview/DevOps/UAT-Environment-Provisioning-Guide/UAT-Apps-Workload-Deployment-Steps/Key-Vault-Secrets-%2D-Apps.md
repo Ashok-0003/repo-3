@@ -40,7 +40,7 @@
 |kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret | Send,Listen access policy connection string of the resource sb-cpd-apps-ntf-<env>-we-01 ||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret | Ooredoo SMS Gateway Provider API Name, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret | Ooredoo SMS Gateway Password, key to be provided by customer.||
-|kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret | @<0322563A-1C16-609F-BBDA-38E4FCFF726E> ||
+|kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret | Client Secret of **Central-Platform-Core-APIs** app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-Password| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-GetPaymentPreferenceServiceURL| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||

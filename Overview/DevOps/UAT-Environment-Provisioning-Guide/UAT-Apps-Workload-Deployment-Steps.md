@@ -375,8 +375,8 @@ Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigura
 1. Go to AKS node resource group (rg-cpd-apps-aksnode-uat-we-01)
 1. Open the private DNS Zone
 1. Go to virtual network links and add link as below
+![image.png](/.attachments/image-ae0af3f0-3406-4327-bf7f-2d29bfa8c5c4.png)
 
-![image.png](/.attachments/image-1859bd56-2f96-470e-a08e-b7695df98d53.png)
 ## Role Assignments 
 
 |Identity Name| Type  | Target Resource | Role |

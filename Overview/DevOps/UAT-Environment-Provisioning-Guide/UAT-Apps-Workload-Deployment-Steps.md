@@ -282,6 +282,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 1. [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 1. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+1. Self hosted agent to add event integration end point
 #### Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|

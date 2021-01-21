@@ -148,9 +148,9 @@
 |NotificationSettings.AzureADOptions:TenantId|Tenant Id of B2C Tenant|Eg: `24f9d756-bf0c-43e9-ad5e-2073ae2d6698`|
 |NotificationSettings.S2SAuth:Audience| ClientId of Notification Api App registration |Eg. `64db2dba-79c5-4b6c-84e0-696b3d1f0465`|
 |OrganisationApi.AzureADOptions:ClientId|Client Id of OrganisationApi AzureADOptions App |Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
-|OrganisationApi.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
-|OrganisationApi.AzureADOptions:Instance|Instance of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
-|OrganisationApi.AzureADOptions:TenantId|Tenant Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
+|OrganisationApi.AzureADOptions:Scope|Scope of OrganisationApi AzureADOptions App |Eg:  https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default|
+|OrganisationApi.AzureADOptions:Instance|Instance of OrganisationApi AzureADOptions App |Eg:  https://login.microsoftonline.com/{0}|
+|OrganisationApi.AzureADOptions:TenantId|Tenant Id of OrganisationApi AzureADOptions App |Eg: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698|
 |PaymentGWSettings:GetPaymentStatusServiceURL|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.ADB2CAuth:ClientId|Client Id of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg:  |
 |PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |

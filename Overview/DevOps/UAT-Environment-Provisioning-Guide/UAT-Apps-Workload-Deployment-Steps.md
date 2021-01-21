@@ -286,11 +286,21 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |ApiManagement| apim-cpd-shrd-uat-we-01 ||
-|ApiManagementLogicAppBackend | apimlab-cpd-shrd-uat-we-01 ||
-|ApiManagementAPI | apimapi-cpd-shrd-uat-we-01 ||
 |ContentDeliveryNetwork | cdn-cpd-shrd-uat-we-01 ||
 |ContentDeliveryNetworkEndpoint | uat-tasmu ||
 |StorageAccount | stcpdshrduatwe01 ||
+
+#### Update host file entry for management end point in self hosted agents
+1. In the self hosted agent, update the following file - C:\Windows\System32\drivers\etc\host
+IP mentioned here is private IP of apim-cpd-shrd-<env>-we-01
+`172.20.42.77 apim-cpd-shrd-<env>-we-01.management.azure-api.net`
+
+#### Add Integration APIs
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|ApiManagementLogicAppBackend | apimlab-cpd-shrd-uat-we-01 ||
+|ApiManagementAPI | apimapi-cpd-shrd-uat-we-01 ||
+Redeploy [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 
 ### 6. Apps AKS Resource Group
 #### Resource Group 
@@ -409,11 +419,6 @@ For production environment, use the application mode as production.
 1. Test Send (Support and troubleshooting) for Apple and Windows Phone
 
 # Deployment of the solution components
-## Update host file entries in self hosted agents
-1. In the self hosted agent, update the following file - C:\Windows\System32\drivers\etc\host
-IP mentioned here is private IP of apim-cpd-shrd-<env>-we-01
-`172.20.42.77 apim-cpd-shrd-<env>-we-01.management.azure-api.net`
-
 ## Update APIM Pipelines
 1. [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
 

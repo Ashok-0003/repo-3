@@ -422,9 +422,17 @@ For production environment, use the application mode as production.
 
 # Deployment of the solution components
 ## Update APIM Pipelines
-1. [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
+### Dependencies
+1. Self Hosted Agent
+1. Host File Entry updated
+1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
+### [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
 
 ## Deploy Platform APIs
+### Dependencies
+1. Self Hosted Agent
+
+### Update yml files
 1. For platform apis, ingress controller helm-config needs to be added for new env and stage should be added to [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141) pointing to the new env
 ```
 - stage: Deploy_<env>
@@ -481,6 +489,10 @@ For production environment, use the application mode as production.
 [CD-Integration-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=301)
 
 ## Deploy Web Apps
+### Dependencies
+1. Self Hosted Agent
+
+### Update yml files
 1. For web apps, add stage to the following pipeline pointing to uat resources
 [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
 

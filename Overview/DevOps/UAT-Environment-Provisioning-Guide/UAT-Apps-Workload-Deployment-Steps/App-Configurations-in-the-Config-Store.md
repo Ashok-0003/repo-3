@@ -127,26 +127,26 @@
 |Mobile.MaxFileUploadSizeKB|The max file size in KB||
 |Mobile.DefaultCacheTtl|The default cache time-to-live time in sec ||
 |Mobile.LogLevel|The log level for application instrumentation||
-|NotificationFunctionSettings:ApimRootUrl|`https://api.<env>.sqcp.qa` |Eg. `https://api.<env>.sqcp.qa`|
+|NotificationFunctionSettings:ApimRootUrl|`https://api.<env>.sqcp.qa` |Eg: `https://api.<env>.sqcp.qa`|
 |NotificationFunctionSettings:FromAddress| tasmu@sqcp.qa  ||
 |NotificationFunctionSettings:FromName|TASMU  ||
 |NotificationFunctionSettings:NotificationHubPath|Name of Notification Hub resource - ntf-cpd-apps-str-<env>-we-01|
-|NotificationSettings:CosmosDBEndPointUri|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
-|NotificationSettings:GSMSAppID|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>| |
-|NotificationSettings:GSMSServiceUri|@<8C6D8054-8B97-6043-B268-34988AF7E7D2> ||
-|NotificationSettings:Originator|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>| |
-|NotificationSettings:ProfileApiUrl|@<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg. `https://api.<env>.sqcp.qa/profile/api/profiles`|
-|NotificationSettings:SmsApiName|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>| |
-|NotificationSettings.ADB2CAuth:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg: |
-|NotificationSettings.ADB2CAuth:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg:  |
-|NotificationSettings.ADB2CAuth:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
-|NotificationSettings.ADB2CAuth:SignUpSignInPolicyId|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
-|NotificationSettings.AzureADOptions:ClientId|Client Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
-|NotificationSettings.AzureADOptions:Domain|Domain of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
-|NotificationSettings.AzureADOptions:Instance|Instance of @<8C6D8054-8B97-6043-B268-34988AF7E7D2>|Eg:  |
-|NotificationSettings.AzureADOptions:Scope|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
-|NotificationSettings.AzureADOptions:TenantId|Tenant Id of @<8C6D8054-8B97-6043-B268-34988AF7E7D2> |Eg: |
-|NotificationSettings.S2SAuth:Audience|@<8C6D8054-8B97-6043-B268-34988AF7E7D2>||
+|NotificationSettings:CosmosDBEndPointUri|Notification History DB EndPoint Uri, Uri is retrieved from cosmos-cpd-apps-<env>-we-01|Eg: `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
+|NotificationSettings:GSMSAppID|Government SMS Gateway Provider API Name, key to be provided by customer.|Eg: `ictTEST` |
+|NotificationSettings:GSMSServiceUri|Government SMS Gateway Provider Uri, key to be provided by customer. |Eg: `http://10.19.167.100/smsservice/smsservice.asmx/SMSPush`|
+|NotificationSettings:Originator|Ooredoo SMS Gateway Originator Key, key to be provided by customer.|Eg: `TASMUPlatf` |
+|NotificationSettings:ProfileApiUrl|TASMU Platform Profile Service API Uri, the Uri is retrieved from `https://api.<env>.sqcp.qa/profile/api/profiles` |Eg: `https://api.<env>.sqcp.qa/profile/api/profiles`|
+|NotificationSettings:SmsApiName|Ooredoo SMS Gateway Provider API Name, key to be provided by customer.|Eg: `tasmu` |
+|NotificationSettings.ADB2CAuth:ClientId|Client Id of Notification API App Registration in B2C tenant |Eg: `64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
+|NotificationSettings.ADB2CAuth:Domain|Domain of TASMU non-prod/prod B2C authentication |Eg: `tasmucpb2cnonprod.onmicrosoft.com` |
+|NotificationSettings.ADB2CAuth:Instance|nstance of TASMU non-prod/prod B2C authentication |Eg: `https://login.microsoftonline.com/{0}` |
+|NotificationSettings.ADB2CAuth:SignUpSignInPolicyId|Get the B2C Individual policy name from custom policies in B2C Tenant B2C_1A_Signup_Signin_<env>|Eg: `B2C_1A_Signup_Signin_TST`|
+|NotificationSettings.AzureADOptions:ClientId| Client Id of Notification API App Registration in B2C tenant |Eg: `64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
+|NotificationSettings.AzureADOptions:Domain| Domain of TASMU non-prod/prod B2C authentication |Eg: `tasmucpb2cnonprod.onmicrosoft.com` |
+|NotificationSettings.AzureADOptions:Instance| Instance of TASMU non-prod/prod B2C authentication |Eg: `https://login.microsoftonline.com/{0}` |
+|NotificationSettings.AzureADOptions:Scope| Notification API App Registration Scope in B2C|Eg: `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
+|NotificationSettings.AzureADOptions:TenantId|Tenant Id of B2C Tenant|Eg: `24f9d756-bf0c-43e9-ad5e-2073ae2d6698`|
+|NotificationSettings.S2SAuth:Audience| ClientId of Notification Api App registration |Eg. `64db2dba-79c5-4b6c-84e0-696b3d1f0465`|
 |OrganisationApi.AzureADOptions:ClientId|Client Id of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg: |
 |OrganisationApi.AzureADOptions:Scope|Scope of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |
 |OrganisationApi.AzureADOptions:Instance|Instance of @<0322563A-1C16-609F-BBDA-38E4FCFF726E> |Eg:  |

@@ -15,14 +15,14 @@ TASMU_AD_CPP_D365_CSE_License (customer service license group)
 TASMU_AD_CPP_D365_FS_License (field service license group)
 TASMU_AD_CPP_UAT_D365 (environment access group)
 
-### 2.5. Owner permission for the person performing the deployment, on the storage account for setting up [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=3.10-configure-export-to-data-lake).
+### 2.5. Owner permission for the person performing the deployment, on the storage account for setting up [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=5.10-configure-export-to-data-lake).
 
 ### 2.6. A service account (preferably non interactive) for the purpose of performing automated deployment to Dynamics environment. This account should have access to the target Dynamics environment and must have System Administrator security role within target Dynamics environment (this is not an Azure AD role).
 
 ### 2.7. Provision the environment by following this document.
 https://docs.microsoft.com/en-us/power-platform/admin/create-environment#create-an-environment-with-a-database
 
-Verify that the environment is provisioned in **West Europe** from the [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=3.10-configure-export-to-data-lake) configuration page. If its not, raise a product support ticket to get it moved to West Europe.
+Verify that the environment is provisioned in **West Europe** from the [Export to Data Lake](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/137/Dynamics-365-Deployment-Guide?anchor=5.10-configure-export-to-data-lake) configuration page. If its not, raise a product support ticket to get it moved to West Europe.
 
 Make sure to enter values based on the target environment. Below is sample from UAT. **For production, the type needs to be selected as Production instead of Sandbox**.
 

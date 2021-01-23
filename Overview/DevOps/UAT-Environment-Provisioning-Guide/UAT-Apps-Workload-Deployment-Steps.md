@@ -403,6 +403,7 @@ Update role assignment for  following resources
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | agw-cpd-apps-aks-<env>-we-01 | Contributor |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Reader |
 |mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | aks-cpd-apps-<env>-we-01-agentpool | Managed Identity Operator |
+|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | agw-cpd-apps-aks-<env>-we-01 | Contributor |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | acrcpdglobnpdwe01 | Acr Pull |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Virtual Machine Contributor |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |

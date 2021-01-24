@@ -435,6 +435,7 @@ For production environment, use the application mode as production.
 ### Dependencies
 1. Self Hosted Agent
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
+1. Role Assignments Complete as per [table](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=role-assignments)
 
 ### Update yml files
 1. In the platform APIs, repo - pipelines\deploy\charts\stable\agic-ingress

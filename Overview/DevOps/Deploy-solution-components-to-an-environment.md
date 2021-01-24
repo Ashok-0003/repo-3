@@ -20,6 +20,7 @@
 # 6. Deploy Bot 
 [CD-Bot-Release-Master](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=293)
 # 7. Deploy Sharepoint
+[CD-SPO-Provision-UAT-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=593)
 # 8. Deploy CRM
 [CD-CrmPlatform-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=111)
 # 9. Build and Release Mobile Apps

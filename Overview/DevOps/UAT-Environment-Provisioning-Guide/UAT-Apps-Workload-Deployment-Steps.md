@@ -458,7 +458,19 @@ name: agw-cpd-apps-aks-<env>-we-01
 identityResourceID: <Resource ID of mi-cpd-apps-aks-<env>-we-01>
 identityClientID: <Client ID of mi-cpd-apps-aks-<env>-we-01>
 ```
-
+1. Add charts for pod identity - pipelines\deploy\charts\stable\aad-pod-identity-<env>
+1. Update values.yml for following values:
+```
+azureIdentities:
+  - name: "azure-identity"
+    namespace: "kube-system"
+    type: 0
+    resourceID: "/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-apps-aksnode-<env>-we-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mi-cpd-apps-aks-<env>-we-01"
+    clientID: "#Client ID of Pod Identity" #Client ID of Pod Identity
+    binding:
+      name: "mi-cpd-apps-aks-<env>-we-01-binding"
+      selector: "mi-cpd-apps-aks-<env>-we-01"
+```
 1. Edit pipelines\deploy\cd-platformapis-release.yml to add a new stage for the new env as below
 
 |Variables| Value | Description | Possible Value |

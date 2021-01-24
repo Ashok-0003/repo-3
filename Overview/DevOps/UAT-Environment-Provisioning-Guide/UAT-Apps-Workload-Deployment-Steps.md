@@ -322,7 +322,7 @@ Redeploy [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%2
 |--|--|--|
 |ManagedClusterCNI | aks-cpd-apps-uat-we-01 ||
 |ManagedIdentity | mi-cpd-apps-aks-uat-we-01 | Deployed in rg-cpd-apps-aksnode-uat-we-01 |
-|ApplicationGateway | agw-cpd-apps-aks-uat-we-01 ||
+|ApplicationGateway | agw-cpd-apps-aks-uat-we-01 | SKU and Tier - Standard_v2|
 
 ## 4.7 Apps WAF Resource Group
 ### 4.7.1 Resource Group

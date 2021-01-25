@@ -50,7 +50,7 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 19|<p><p>spn-bot-tra</p>Client ID: 7c42dfb0-b532-4c89-a3cf-9a8a7578bd03</p><p>Client Secret : **********</p><p><p>|TRA
 20|<p><p>spn-bot-uat</p>Client ID: 64d794aa-a017-4fe2-a793-fa841ebed766</p><p>Client Secret : **********</p><p><p>|UAT
 21|<p><p>spn-powerbiembed</p>Client ID: 07ab695f-5e5d-4e05-a5e6-645c70a8e4ff</p><p>Client Secret : **********</p><p><p>|DEV, TST, TRA, UAT
-22|<p><p>spn-armapi-reader-npd</p>Client ID: c00ce23b-b4cd-4164-9735-3c63381f9441</p><p>Client Secret : **********</p><p><p>|DEV, TST, TRA, UAT
+22|<p><p>spn-armapi-reader-npd</p>Client ID: c00ce23b-b4cd-4164-9735-3c63381f9441</p><p>Client Secret : **********</p><p><p>|DEV, TST, TRA, UAT, SBX
 
 **For more details on CMS Azure AD apps please refer** : [*CMS Azure AD apps*](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/153/CMS-Azure-AD-apps) 
 

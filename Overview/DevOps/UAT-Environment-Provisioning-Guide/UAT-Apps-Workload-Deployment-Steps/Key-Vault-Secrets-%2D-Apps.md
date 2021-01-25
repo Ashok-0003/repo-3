@@ -3,6 +3,7 @@
 |--|--|--|--|--|
 |kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret|Create and Retrieve Client Secret for **spn-adminportal** app registration in B2C Tenant under certificates and secrets menu.||
 |kv-cpd-apps-<env>-we-01|AdminPortal-AuthClaims-GroupId|Secret|Create and Navigate to "**Platformadmin**" Group in **Azure Active Directory > Groups** in B2C Tenant and retrieve the **object Id** of the group.||
+|kv-cpd-apps-<env>-we-01|ARMAPI-ClientSecret|Secret|Client secret of the **spn-armapi-reader-npd** Service Principal ||
 |kv-cpd-apps-<env>-we-01|Azure-Search-Key|Secret|Primary Admin key of resource srch-cpd-apps-cog-<env>-we-01 ||
 |kv-cpd-apps-<env>-we-01|BotAppSecret|Secret|  Create client secret for **bot-cpd-apps<env>-we-01** WebAppBot resource and paste the value in this key. | [Refer steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update) |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisAuthSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luiauth-<env>-we-01** | |

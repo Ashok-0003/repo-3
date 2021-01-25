@@ -19,7 +19,7 @@
 |kv-cpd-apps-<env>-we-01|Cms-Function-CertificatePassword| Secret |**CMSBPA** certificate password|
 |kv-cpd-apps-<env>-we-01|Cms-Function-CertificatePfxKey| Secret |**CMSBPA** certificate pfx key|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-ConsumptionStorageAccount|Secret|Connection string of the resource **stcpdglobacmwe01**|Eg `DefaultEndpointsProtocol=https;AccountName=stcpdglobacmwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|
-|kv-cpd-apps-<env>-we-01|ConnectionStrings-CosmosDBAuthKey|Secret| Settings-> Keys -> PrimaryKey **cosmos-cpd-apps-<env>-we-01** ||
+|kv-cpd-apps-<env>-we-01|ConnectionStrings-CosmosDBAuthKey|Secret| Settings-> Keys -> PrimaryKey **cosmos-cpd-apps-str-<env>-we-01** ||
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSqlExport|Secret| Connection string of Dynamics SQL export service database. See remarks column for sample. <br/> **This secret requires a tag with name as [organizationid](https://docs.microsoft.com/en-us/power-platform/admin/determine-org-id-name) of the target dynamics environment and tag value as respective Azure AD tenant id.** <br><br> **Example for the tag name and value**: 1e39380e-1c06-4e94-bb24-ecafb910bd8a, 92603419-35d1-4eb0-8427-cac731071355 | Ex. Server=tcp:sql-cpd-data-uat-we-01.database.windows.net,1433;Initial Catalog=sqldb-cpd-dynamics-data-uat-we-01;Persist Security Info=False;User ID=adminsa;Password=yourpassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30; |
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-DynamicsSql|Secret| Connection string of Dynamics SQL export service database. See remarks column for sample. <br/> This can be replaced with [Dynamics TDS endpoint](https://powerapps.microsoft.com/en-us/blog/tabular-data-stream-tds-protocol-endpoint-for-common-data-service-cds/) when it becomes GA. <br/> Until then the same value as 'ConnectionStrings-DynamicsSqlExport' can be used. | Ex. Server=tcp:sql-cpd-data-uat-we-01.database.windows.net,1433;Initial Catalog=sqldb-cpd-dynamics-data-uat-we-01;Persist Security Info=False;User ID=adminsa;Password=yourpassword;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30; |
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-IntegrationServiceBus| Secret |Send,Listen access policy connection string of the resource sb-cpd-apps-int-<env>-we-01 for deployment||
@@ -35,8 +35,8 @@
 |kv-cpd-apps-<env>-we-01|GraphClientSecret| Secret | Client Secret of TASMU-Portal app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret | Client Secret of ManageEventFunction app on Azure B2C Tenant | |
 |kv-cpd-apps-<env>-we-01|NotificationFunctionSettings-SendGridApiKey| Secret | **Sendgrid API key to be provided by customer.** |
-|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret | Notification History DB Auth Secondary Key, key is retrieved from cosmos-cpd-apps-<env>-we-01||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthToken| Secret | Notification History DB Auth Primary Key, key is retrieved from cosmos-cpd-apps-<env>-we-01||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthKey| Secret | Notification History DB Auth Secondary Key, key is retrieved from cosmos-cpd-apps-str-<env>-we-01||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-AuthToken| Secret | Notification History DB Auth Primary Key, key is retrieved from cosmos-cpd-apps-str-<env>-we-01||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AzureADOptions-ClientSecret| Secret | Client Secret for Notification API App Registration in B2C tenant||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-GSMSKey| Secret | Government SMS Provider Password, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret | Send,Listen access policy connection string of the resource sb-cpd-apps-ntf-<env>-we-01 ||

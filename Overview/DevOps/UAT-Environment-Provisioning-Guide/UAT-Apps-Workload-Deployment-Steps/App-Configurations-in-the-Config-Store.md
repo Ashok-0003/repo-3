@@ -55,7 +55,6 @@
 |Common.CoreApis.B2CAuth:ClientId| Client Id of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Common.CoreApis.B2CAuth:Domain| Domain of Central-Platform-Core-APIs| Eg: tasmucpb2cnonprod.onmicrosoft.com | 
 |Common.CoreApis.B2CAuth:Instance| Instance of Central-Platform-Core-APIs| Eg: https://tasmucpb2cnonprod.b2clogin.com/tfp/ | 
-|Common.CoreApis.S2SAuth:ClientId| Client Id of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Common.CoreApis.S2SAuth:Audience| Audience of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |Common.CoreApis.S2SAuth:Authority| Authority of Central-Platform-Core-APIs| Eg: https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0/|
 |ConnectionStrings:CosmosDBEndpoint| End point for Cosmos Account|Eg. `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|

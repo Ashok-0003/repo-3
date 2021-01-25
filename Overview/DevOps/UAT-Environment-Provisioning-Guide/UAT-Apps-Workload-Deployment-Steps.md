@@ -177,22 +177,22 @@ required in the cognitive and integration pipelines
 ## 4.3 Apps Cognitive Resource Group
 ### 4.3.1 Resource Group
 [rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
-### 4.3.2 Dependencies - 
+### 4.3.2 Dependencies
 1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 1. App Registration - spn-bot-<env>
-1. Enable West US policy for deployment to following resource groups:
+1. Enable West US location policy for deployment of QnA Maker:
     It can be enabled specifically for following resource groups:	
         - rg-cpd-apps-cog-<env>-we-01
         - rg-cph-pltf-iacstg-prd-we-01
         - rg-cph-pltf-iacst-prd-we-01
 
-### 4.3.3 Notes - 
-4.3.3.1. Naming Convention- 
+### 4.3.3 Notes
+4.3.3.1. Naming Convention 
 Naming convention has deviation because QnA Maker requires names for both App Service and Cognitive Service as identical. It was consulted with product team and it's an issue in QnA Maker. This is the reason why app service and cognitive service for QnaMaker are named as **appcog-cpd-apps-qna-uat-we-01** for English and **appcog-cpd-apps-arqna-uat-we-01** for Arabic.
 
-4.3.3.2. Location -
+4.3.3.2. Location
  QnA resources -  app-cpd-apps-qna-uat-we-01 and app-cpd-apps-arqna-uat-we-01 are deployed in West US as that is the only supported location for resource type - QnA. 
 More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra/pullrequest/3568)
 

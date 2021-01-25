@@ -1,3 +1,4 @@
+[[_TOC_]]
 # Azure AD B2C Instance
 Tenant Name: tasmucpb2cnonprod.onmicrosoft.com
 Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
@@ -53,8 +54,8 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 22|<p><p>spn-armapi-reader-npd</p>Client ID: c00ce23b-b4cd-4164-9735-3c63381f9441</p><p>Client Secret : **********</p><p><p>|DEV, TST, TRA, UAT, SBX
 
 **For more details on CMS Azure AD apps please refer** : [*CMS Azure AD apps*](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/153/CMS-Azure-AD-apps) 
-
-# Development Environment
+# Environment URLs
+## Development Environment
 |SL| Portal / App | URL |  Remarks  |
 |--|--|--|--|
 | 1 | API Access URL  | https://api.dev.sqcp.qa | Base URL for all API calls  |
@@ -68,7 +69,7 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 | 9 | CDN URL |https://dev-cdntasmu.azureedge.net | | | |
 | 10 | Authorizecard URL |https://account.dev.sqcp.qa/authorizecard | | | |
 
-# Test Environment
+## Test Environment
 
 |SL| Portal / App | URL | Remarks  |
 |--|--|--|--|
@@ -83,7 +84,7 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 | 9 | CDN URL |https://tst-cdntasmu.azureedge.net | | | |
 | 10 | Authorizecard URL |https://account.tst.sqcp.qa/authorizecard | | | |
 
-# Training Environment
+## Training Environment
 
 |SL| Portal / App | URL | Remarks  |
 |--|--|--|--|
@@ -97,7 +98,7 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 | 8 | Office 365 Instance/Tenant | | | |
 | 9 | CDN URL |https://trn-cdntasmu.azureedge.net | | | |
 
-# UAT Environment
+## UAT Environment
 
 |SL| Portal / App | URL | Remarks  |
 |--|--|--|--|

@@ -293,7 +293,10 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 1. [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 1. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 1. Self hosted agent
+1. Certificates uploaded to kv-cpd-pltf-<env>-we-01
+
 ### 4.5.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
@@ -304,26 +307,23 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 
 
 ### 4.5.4 Update Key Vault Access Policies - kv-cpd-pltf-<env>-we-01
- redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
 |apim-cpd-shrd-<env>-we-01|Get,List||
 
-### Update the parameter file for hostConfigurations
-```
-```
+Redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 
-###  4.5.5 Update host file entry for management end point in self hosted agents
-1. In the self hosted agent, update the following file - C:\Windows\System32\drivers\etc\host
-IP mentioned here is private IP of apim-cpd-shrd-<env>-we-01
-`172.20.42.77 apim-cpd-shrd-<env>-we-01.management.azure-api.net`
+### 4.5.5 Update the parameter file for hostConfigurations for custom domains
+```
+```
 
 ### 4.5.6 Add Integration APIs
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |ApiManagementLogicAppBackend | apimlab-cpd-shrd-uat-we-01 ||
 |ApiManagementAPI | apimapi-cpd-shrd-uat-we-01 ||
+
 ### 4.5.7 Redeploy [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 
 ## 4.6 Apps AKS Resource Group

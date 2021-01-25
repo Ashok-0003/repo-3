@@ -317,6 +317,31 @@ Redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Centr
 ### 4.5.5 Add Custom Domains to APIM
 Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 ```
+"hostnameConfigurations":{
+   "value": [
+      {
+         "type": "DeveloperPortal",
+         "hostName": "developer.<env>.sqcp.qa",
+         "keyVaultId": "https://kv-cpd-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
+         "negotiateClientCertificate": false,
+         "defaultSslBinding": false
+      },
+      {
+         "type": "Proxy",
+         "hostName": "api.<env>.sqcp.qa",
+         "keyVaultId": "https://kv-cpd-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
+         "negotiateClientCertificate": false,
+         "defaultSslBinding": true
+      },
+      {
+         "type": "Management",
+         "hostName": "api-management.<env>.sqcp.qa",
+         "keyVaultId": "https://kv-cpd-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
+         "negotiateClientCertificate": false,
+         "defaultSslBinding": false
+      }
+   ]
+}
 ```
 
 ### 4.5.6 Add Integration APIs

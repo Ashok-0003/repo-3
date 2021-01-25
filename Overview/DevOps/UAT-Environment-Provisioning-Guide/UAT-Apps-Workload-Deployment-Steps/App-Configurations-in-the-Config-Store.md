@@ -1,7 +1,7 @@
 
 |Key Name| How to retrieve | Remarks/ Examples (UAT)|
 |--|--|--|
-|AdminPortal.ADAuth:Authority|Microsoft login Authority url with **B2C TenantId**| Eg. `https://login.microsoftonline.com/<TenantId>/v2.0`  |
+|AdminPortal.ADAuth:Authority|Microsoft login Authority url with **B2C TenantId** **https://login.microsoftonline.com/<TenantId>/v2.0**| Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`  |
 |AdminPortal.ADAuth:ClientId|ClientId of **spn-adminportal** app registration in B2C Tenant |Eg. `9b6a8eef-0181-4a7e-a5ee-7e0477db25ad` |
 |AdminPortal.ADAuth:Domain|B2C Tenant Domain Name | Eg.`tasmucpb2cnonprod.onmicrosoft.com`|
 |AdminPortal.ADAuth:Scope| SmartParking api default scope from **Smart Parking API** app registration as shown in example `https://<B2C Tenant Domain Name>/SmartParkingAPI/.default`|Eg.`https://tasmucpb2cnonprod.onmicrosoft.com/SmartParkingAPI/.default` |

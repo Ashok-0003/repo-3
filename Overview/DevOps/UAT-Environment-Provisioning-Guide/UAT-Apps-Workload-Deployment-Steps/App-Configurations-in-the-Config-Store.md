@@ -1,5 +1,5 @@
 [[_TOC_]]
-# Key Vault Details
+# App Configuration Mappings
 |Key Name| How to retrieve | Remarks/ Examples (UAT)|
 |--|--|--|
 |AdminPortal.ADAuth:Authority|Microsoft login Authority url with **B2C TenantId** **https://login.microsoftonline.com/<TenantId>/v2.0**| Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`  |

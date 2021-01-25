@@ -314,7 +314,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 
 Redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 
-### 4.5.5 Add Custome Domains to APIM
+### 4.5.5 Add Custom Domains to APIM
 Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 ```
 ```
@@ -449,7 +449,7 @@ For production environment, use the application mode as production.
 ## 5.1 Update APIM Pipelines
 ### 5.1.1 Dependencies
 1. Self Hosted Agent
-1. [Custom Domains Updated](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.5.5-add-custome-domains-to-apim)
+1. [Custom Domains Updated](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.5.5-add-custom-domains-to-apim)
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
 

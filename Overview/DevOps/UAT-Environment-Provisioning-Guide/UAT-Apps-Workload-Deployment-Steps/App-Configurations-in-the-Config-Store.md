@@ -163,10 +163,10 @@
 |PaymentGWSettings.AuthorizeCard:TenantId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.S2SAuth:Audience|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |PaymentGWSettings.S2SAuth:Authority|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|PowerBIEmbed.AzureAd:ClientId|Client Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>  |Eg:   |
-|PowerBIEmbed.AzureAd:TenantId|Tenant Id of @<0D90F5BE-863D-67CD-B107-FDC13EEA38B4> |Eg:  |
-|PowerBIEmbed.PowerBIEmbed:ScriptPath|@<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>||
-|PowerBIEmbed.PowerBIEmbed:EnvPath|@<0D90F5BE-863D-67CD-B107-FDC13EEA38B4>||
+|PowerBIEmbed.AzureAd:ClientId|Client Id of Power BI app  |Eg:   |
+|PowerBIEmbed.AzureAd:TenantId|Tenant Id of AD hosting Power BI app |Eg:  |
+|PowerBIEmbed.PowerBIEmbed:ScriptPath|CDN path for javascripts files||
+|PowerBIEmbed.PowerBIEmbed:EnvPath|Enviroment Domain URL|
 |SmartParking.ADB2CAuth:ClientId|Application(Client Id) of SmartParking Api app registration B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
 |SmartParking.ADB2CAuth:Domain|Domain Name of B2C Tenant|Eg: `tasmucpb2cnonprod.onmicrosoft.com`|
 |SmartParking.ADB2CAuth:Instance|Instance of microsoft login|Eg: `https://login.microsoftonline.com/`|

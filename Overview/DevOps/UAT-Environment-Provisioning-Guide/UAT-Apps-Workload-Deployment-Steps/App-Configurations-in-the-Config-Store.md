@@ -179,7 +179,7 @@
 |SmartParking.ProfileApi.AzureADOptions:TenantId|Tenant Id of B2C Tenant|Eg: `24f9d756-bf0c-43e9-ad5e-2073ae2d6698`|
 |SmartParking.S2SAuth:Audience|ClientId of SmartParking Api App registration|Eg. `64db2dba-79c5-4b6c-84e0-696b3d1f0465`|
 |SmartParking.S2SAuth:Authority|Authority Url with tenant id|Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`|
-|SubscriptionId| @<44D3C2D0-5E60-68E5-8187-D6640EF9C21C> ||
+|SubscriptionId| Subscription Id of Azure |Eg. `d0694def-b27e-4bb7-900d-437fbeb802da`|
 
 #Reference
 ## Bot.MenuAndCards:MenuAndCards:Cards:RequestServiceOrSupportMenuCard

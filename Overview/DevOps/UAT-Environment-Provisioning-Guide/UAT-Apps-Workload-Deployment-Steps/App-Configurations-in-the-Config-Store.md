@@ -125,9 +125,9 @@
 |Mobile.DefaultCacheTtl|The default cache time-to-live time in sec ||
 |Mobile.LogLevel|The log level for application instrumentation||
 |NotificationFunctionSettings:ApimRootUrl|`https://api.<env>.sqcp.qa` |Eg: `https://api.<env>.sqcp.qa`|
-|NotificationFunctionSettings:FromAddress| tasmu@sqcp.qa  ||
-|NotificationFunctionSettings:FromName|TASMU  ||
-|NotificationFunctionSettings:NotificationHubPath|Name of Notification Hub resource - ntf-cpd-apps-str-<env>-we-01|
+|NotificationFunctionSettings:FromAddress|  From Email Address for Send Grid Emails |Eg: `tasmu@sqcp.qa`|
+|NotificationFunctionSettings:FromName|Name of the Sender |Eg: `TASMU `|
+|NotificationFunctionSettings:NotificationHubPath|Name of Notification Hub resource - ntf-cpd-apps-str-<env>-we-01|Eg: `ntf-cpd-apps-str-uat-we-01`|
 |NotificationSettings:CosmosDBEndPointUri|Notification History DB EndPoint Uri, Uri is retrieved from cosmos-cpd-apps-<env>-we-01|Eg: `https://cosmos-cpd-apps-str-<env>-we-01.documents.azure.com:443/`|
 |NotificationSettings:GSMSAppID|Government SMS Gateway Provider API Name, key to be provided by customer.|Eg: `ictTEST` |
 |NotificationSettings:GSMSServiceUri|Government SMS Gateway Provider Uri, key to be provided by customer. |Eg: `http://10.19.167.100/smsservice/smsservice.asmx/SMSPush`|

@@ -3,6 +3,9 @@
 Tenant Name: tasmucpb2cnonprod.onmicrosoft.com
 Tenant ID: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698
 
+# Detailed AD B2C Setup
+Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharepoint.com/:w:/s/TASMU-CentralPlatformPMO/EdIKRGu6E1VGnA-naCTSBXQBjgdtCiT9C6n5E9rehxUWmw?e=ZSX2Yf)
+
 # Application Registrations in Azure AD B2C
 
 |SL| App Registrations  | 

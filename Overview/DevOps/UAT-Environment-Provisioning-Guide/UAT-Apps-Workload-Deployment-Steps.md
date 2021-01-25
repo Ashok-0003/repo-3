@@ -163,6 +163,7 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 |ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strsmsbulk-uat-we-01||
 |ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strsmssingle-uat-we-01||
 |StorageAccount | stcpdappsstruatwe01||
+|StorageAccount | stcpdappsapimtuatwe01|
 
 ## 4.2 Seed the Key Vault Secrets in kv-cpd-apps-uat-we-01
 required in the cognitive and integration pipelines 

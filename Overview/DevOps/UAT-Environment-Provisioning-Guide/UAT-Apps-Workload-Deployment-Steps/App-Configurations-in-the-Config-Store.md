@@ -160,7 +160,7 @@
 |PaymentGWSettings.AuthorizeCard:TenantId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
 |PaymentGWSettings.S2SAuth:Audience|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
 |PaymentGWSettings.S2SAuth:Authority|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
-|PowerBIEmbed.AzureAd:ClientId|Client Id of **spn-powerbiembed** app registration  |Eg: `07ab695f-5e5d-4e05-a5e6-645c70a8e4ff`  |
+|PowerBIEmbed.AzureAd:ClientId|Client Id of **spn-powerbiembed** [app registration](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad---tasmusqcp.onmicrosoft.com)  |Eg: `07ab695f-5e5d-4e05-a5e6-645c70a8e4ff`  |
 |PowerBIEmbed.AzureAd:TenantId| Tenant Id of Azure AD hosting the app registration  |Eg: `92603419-35d1-4eb0-8427-cac731071355` |
 |PowerBIEmbed.PowerBIEmbed:ScriptPath|CDN path for javascripts files `https://<env>-cdntasmu.azureedge.net/`| Eg: `https://uat-cdntasmu.azureedge.net/`|
 |PowerBIEmbed.PowerBIEmbed:EnvPath|Enviroment Domain URL `https://account.<env>.sqcp.qa/powerbiembed/`| Eg: `https://account.uat.sqcp.qa/powerbiembed/`|

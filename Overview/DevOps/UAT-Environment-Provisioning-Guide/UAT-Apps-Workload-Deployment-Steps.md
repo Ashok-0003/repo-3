@@ -174,6 +174,7 @@ required in the cognitive and integration pipelines
 |apicon-cpd-apps-prdcds-uat-we-01|Crm-Common-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the [App Registration (spn-crm-common-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|kv-cpd-pltf-uat-we-01| Client Id of the service principal having contributor access on integration event grid domain  to authenticate event grid api connection
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-pltf-uat-we-01| Client Secret of the service principal having contributor access on integration event grid domain to authenticate event grid api connection|
+|logic-cpd-apps-apimt-uat-we-01|ARMAPI-ClientSecret|kv-cpd-pltf-uat-we-01| Client Secret of the service principal with Reader access on APIM to allow it to query APIM metering data|
 
 ## 4.3 Apps Cognitive Resource Group
 ### 4.3.1 Resource Group

@@ -1,5 +1,5 @@
 [[_TOC_]]
-# 1. Pre requisites
+# 1. Prerequisites
 1. [Self Hosted Agents](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/159/Self-Hosted-Agents) equivalent to Microsoft Hosted Windows Agent provisioned in Central Platform Hub VNet to deploy APIM and AKS solutions
 1. ARM Modules must be created
 1. Resource Group specific deployment files must be stitched

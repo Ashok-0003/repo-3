@@ -49,6 +49,6 @@
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AzureAd-ClientSecret| Secret| @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-UpdatePaymentPreferenceServiceURL| Secret | @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|
 |kv-cpd-apps-<env>-we-01|PowerBIEmbed-AzureAd-ClientSecret| Secret |Client Secret for Power BI app registered on AD ||
-|kv-cpd-apps-<env>-we-01|SmartParking-ADAuth-ClientSecret| Secret |create and retrieve Client Secret for **Smart Parking API** App registration in B2C tenant||
+|kv-cpd-apps-<env>-we-01|SmartParking-ADAuth-ClientSecret| Secret |create and retrieve Client Secret for **Smart Parking API** App registration in B2C tenant under certificates and secrets menu||
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint| CMSBPA Self signed certificate|
 |kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|CMSAPI Self signed certificate| 

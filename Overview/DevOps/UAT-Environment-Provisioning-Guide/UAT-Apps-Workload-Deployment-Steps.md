@@ -314,6 +314,17 @@ IP mentioned here is private IP of apim-cpd-shrd-<env>-we-01
 |ApiManagementAPI | apimapi-cpd-shrd-uat-we-01 ||
 Redeploy [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 
+### 4.5.6 APIM Deployment
+1. Initial value for host configurations is empty.
+2. Update the key vault access policy for kv-cpd-pltf-<env>-we-01 with object id of apim-cpd-shrd-<env>-we-01.
+3. Add host configurations as below and refer key vault kv-cpd-pltf-<env>-we-01 
+Hostname for gateway will be api.<env>.sqcp.qa
+![image.png](/.attachments/image-89b308a8-e666-4b63-892b-e9b898c24e49.png)
+Hostname for developer portal will be developer.<env>.sqcp.qa
+![image.png](/.attachments/image-fa2a0e90-5cf9-45f9-b753-40e2255991dc.png)
+Hostname for management will be api-management.<env>.sqcp.qa
+![image.png](/.attachments/image-e07ca1de-7551-4728-aa58-a6afbd25f7f7.png)
+
 ## 4.6 Apps AKS Resource Group
 ### 4.6.1 Resource Group 
 [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)

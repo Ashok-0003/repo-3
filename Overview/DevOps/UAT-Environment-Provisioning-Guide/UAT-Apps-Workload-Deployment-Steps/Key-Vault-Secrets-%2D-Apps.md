@@ -52,3 +52,7 @@
 |kv-cpd-apps-<env>-we-01|SmartParking-ADAuth-ClientSecret| Secret |create and retrieve Client Secret for **Smart Parking API** App registration in B2C tenant under certificates and secrets menu||
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint| CMSBPA Self signed certificate|
 |kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|CMSAPI Self signed certificate| 
+
+# Note: 
+1. All the connection strings and client secrets should be rotated periodically
+2. AKS pods require restart to use new configurations and secrets. (Restart is taken care in CD-AppConfiguration-Master-Release)

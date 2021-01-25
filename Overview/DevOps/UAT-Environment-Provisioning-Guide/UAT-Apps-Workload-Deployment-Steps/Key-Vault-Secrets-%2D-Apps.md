@@ -1,5 +1,6 @@
-
-|Key Vault Name| Name  | Type | How to Retrieve | Remarks|
+[[_TOC_]]
+# Key Vault Secrets and Certificates
+| Key Vault Name |Name|Type|How to Retrieve|Remarks|
 |--|--|--|--|--|
 |kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret|Create and Retrieve Client Secret for **spn-adminportal** app registration in B2C Tenant under certificates and secrets menu.||
 |kv-cpd-apps-<env>-we-01|AdminPortal-AuthClaims-GroupId|Secret|Create and Navigate to "**Platformadmin**" Group in **Azure Active Directory > Groups** in B2C Tenant and retrieve the **object Id** of the group.||
@@ -54,6 +55,6 @@
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint| CMSBPA Self signed certificate|
 |kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|CMSAPI Self signed certificate| 
 
-# Note: 
+# Notes 
 1. All the connection strings and client secrets should be rotated periodically
 2. AKS pods require restart to use new configurations and secrets. (Restart is taken care in CD-AppConfiguration-Master-Release)

@@ -297,7 +297,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 ### 4.5.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ApiManagement| apim-cpd-shrd-uat-we-01 ||
+|ApiManagement| apim-cpd-shrd-uat-we-01 | [Further steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=4.5.6-apim-deployment)|
 |ContentDeliveryNetwork | cdn-cpd-shrd-uat-we-01 ||
 |ContentDeliveryNetworkEndpoint | uat-tasmu ||
 |StorageAccount | stcpdshrduatwe01 ||

@@ -242,8 +242,8 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |ApiConnectionEventGrid | apicon-cpd-apps-integ-uat-we-01 | API Connection to Event Grid Domain|
 |ApiConnectionKeyVault | apicon-cpd-apps-intkv-uat-we-01 ||
 |ApiConnectionEventGridPublish | apicon-cpd-apps-integd-uat-we-01 | (Refer - kv-cpd-pltf-uat-we-01 for secret)
+|ApiConnectionAzureBlob | apicon-cpd-apps-apimtst-uat-we-01| API Connection to **stcpdappsapimtuatwe01** in **rg-cpd-apps-str-uat-we-01**|
 |ApiConnectionAzureBlob | apicon-cpd-apps-intst-uat-we-01||
-|ApiConnectionAzureBlob | apicon-cpd-apps-apimtst-uat-we-01||
 |APIConnectionCognitiveService | apicon-cpd-apps-intcog-uat-we-01 | API Connection to Translator Cognitive Service|
 |APIConnection | apicon-cpd-apps-ascalrt-uat-we-01 | API Connection to Azure Security Alert trigger.|
 |ApiConnectionCommonDataService | apicon-cpd-apps-intcds-uat-we-01 | API Connection to Common Data Service for Case api.|

@@ -182,6 +182,11 @@ required in the cognitive and integration pipelines
 1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
 1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 1. App Registration - spn-bot-<env>
+1. Enable West US policy for deployment to following resource groups:
+    enabled specifically for following resource groups:	
+        - rg-cpd-apps-cog-<env>-we-01
+        - rg-cph-pltf-iacstg-prd-we-01
+        - rg-cph-pltf-iacst-prd-we-01
 
 ### 4.3.3 Notes - 
 4.3.3.1. Naming Convention- 

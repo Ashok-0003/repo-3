@@ -166,9 +166,9 @@
 |PowerBIEmbed.PowerBIEmbed:EnvPath|Enviroment Domain URL|
 |SmartParking.ADB2CAuth:ClientId|Application(Client Id) of **Smart Parking API** app registration in B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
 |SmartParking.ADB2CAuth:Domain|Domain Name of B2C Tenant|Eg: `tasmucpb2cnonprod.onmicrosoft.com`|
-|SmartParking.ADB2CAuth:Instance|Instance of microsoft login|Eg: `https://login.microsoftonline.com/`|
-|SmartParking.ADB2CAuth:SignUpSignInPolicyId|Get the B2C Individual policy name from custom policies in B2C Tenant B2C_1A_Signup_Signin_<env>|Eg. `B2C_1A_Signup_Signin_TST`|
-|SmartParking.ProfileApi.AzureADOptions:Authority|Authority Url with B2C Tenant Id|Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`|
+|SmartParking.ADB2CAuth:Instance|microsoft login url like shown in example|Eg: `https://login.microsoftonline.com/`|
+|SmartParking.ADB2CAuth:SignUpSignInPolicyId|Get the B2C Individual policy name from custom policies in B2C Tenant **B2C_1A_Signup_Signin_<env>**|Eg. `B2C_1A_Signup_Signin_TST`|
+|SmartParking.ProfileApi.AzureADOptions:Authority|Microsoft login url with B2C Tenant Id ashown in example|Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`|
 |SmartParking.ProfileApi.AzureADOptions:ClientId|Client Id of Central-Platform-core-apis app registration|Eg: `bc67474e-612b-4d7f-b75a-ac54d45f143a`|
 |SmartParking.ProfileApi.AzureADOptions:Domain|Domain Name of B2C Tenant where Central-Platform-core-apis app registration resides|Eg. `tasmucpb2cnonprod.onmicrosoft.com`|
 |SmartParking.ProfileApi.AzureADOptions:Instance|@<D2080AAC-DD4F-6726-8B85-F3442AEA9F1E> |Eg. `https://login.microsoftonline.com/`|

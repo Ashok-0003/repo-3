@@ -228,6 +228,8 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 1. [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
 1. Two secrets added to kv-cpd-pltf-uat-we-01
 1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+1. App registration for spn-armapi-reader-npd 
+
 
 ### 4.4.3 Resources
 | Module Name | Parameter File Name | Remarks |

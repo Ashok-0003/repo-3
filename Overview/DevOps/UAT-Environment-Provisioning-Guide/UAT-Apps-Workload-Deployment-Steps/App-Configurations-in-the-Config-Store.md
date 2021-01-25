@@ -164,7 +164,7 @@
 |PowerBIEmbed.AzureAd:TenantId|Tenant Id of AD hosting Power BI app |Eg:  |
 |PowerBIEmbed.PowerBIEmbed:ScriptPath|CDN path for javascripts files||
 |PowerBIEmbed.PowerBIEmbed:EnvPath|Enviroment Domain URL|
-|SmartParking.ADB2CAuth:ClientId|Application(Client Id) of SmartParking Api app registration B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
+|SmartParking.ADB2CAuth:ClientId|Application(Client Id) of **Smart Parking API** app registration in B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |
 |SmartParking.ADB2CAuth:Domain|Domain Name of B2C Tenant|Eg: `tasmucpb2cnonprod.onmicrosoft.com`|
 |SmartParking.ADB2CAuth:Instance|Instance of microsoft login|Eg: `https://login.microsoftonline.com/`|
 |SmartParking.ADB2CAuth:SignUpSignInPolicyId|Get the B2C Individual policy name from custom policies in B2C Tenant B2C_1A_Signup_Signin_<env>|Eg. `B2C_1A_Signup_Signin_TST`|

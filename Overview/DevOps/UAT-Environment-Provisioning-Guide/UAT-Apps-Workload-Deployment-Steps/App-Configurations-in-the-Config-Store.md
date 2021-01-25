@@ -96,7 +96,6 @@
 |Mobile:AuthenticationSettings:PolicyResetPassword|AAD B2C policy for resetting password ||
 |Mobile:AuthenticationSettings:PolicySignUpSignIn|AAD B2C policy for individual user signup ||
 |Mobile:AuthenticationSettings:Tenant|AAD B2C tenant name ||
-|Mobile:AuthenticationSettings:IosKeyChainGroup|AAD B2C iOS key chain group ||
 |Mobile:AuthorizationSettings:CentralScope,0|API scope permission required for API used ||
 |Mobile:AuthorizationSettings:CentralScope,1|API scope permission required for API used ||
 |Mobile:AuthorizationSettings:CentralScope,2|API scope permission required for API used ||

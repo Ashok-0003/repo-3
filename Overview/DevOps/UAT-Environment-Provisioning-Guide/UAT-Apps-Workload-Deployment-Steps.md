@@ -267,6 +267,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |LogicApp | logic-cpd-apps-dfndr-uat-we-01 | Logic app triggers when a malware file is uploaded in Blob container and update the attachment extension entity Is Unsafe as true.
 |LogicApp | logic-cpd-apps-intfile-uat-we-01 | Logic app retrieves the content of file from Blob container and update the file content in D365.|
 |LogicApp | logic-cpd-apps-intsubs-uat-we-01 | Logic app performs upsert operation on Market Place Product Subscription.|
+|LogicApp | logic-cpd-apps-apimt-uat-we-01 | Logic app queries APIM daily to get subscriptions usage information and sends event.|
 |ServiceBusNamespace | sb-cpd-apps-int-uat-we-01||
 |ServiceBusNamespaceQueue | sbq-cpd-apps-intprodsync-uat-we-01||
 |ServiceBusNamespaceQueue | sbq-cpd-apps-intntf-uat-we-01||

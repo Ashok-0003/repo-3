@@ -1,4 +1,5 @@
-
+[[_TOC_]]
+# Key Vault Details
 |Key Name| How to retrieve | Remarks/ Examples (UAT)|
 |--|--|--|
 |AdminPortal.ADAuth:Authority|Microsoft login Authority url with **B2C TenantId** **https://login.microsoftonline.com/<TenantId>/v2.0**| Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/v2.0`  |
@@ -270,3 +271,7 @@
 }
 ```
 2. After updating the above JSON, convert it to base64 encoding and assign the value to  **Bot.MenuAndCards:MenuAndCardsAr:Cards:RequestServiceOrSupportMenuCard**.
+
+## App Registrations
+1. [AD B2C](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad-b2c) 
+2. [AAD](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad---tasmusqcp.onmicrosoft.com)

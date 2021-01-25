@@ -160,8 +160,8 @@
 |PaymentGWSettings.AuthorizeCard:TenantId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
 |PaymentGWSettings.S2SAuth:Audience|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
 |PaymentGWSettings.S2SAuth:Authority|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
-|PowerBIEmbed.AzureAd:ClientId|Client Id of Power BI app  |Eg:   |
-|PowerBIEmbed.AzureAd:TenantId|Tenant Id of AD hosting Power BI app |Eg:  |
+|PowerBIEmbed.AzureAd:ClientId|Client Id of Power BI app registration   |Eg: ``  |
+|PowerBIEmbed.AzureAd:TenantId| Tenant Id of AD hosting Power BI app registration  |Eg: `` |
 |PowerBIEmbed.PowerBIEmbed:ScriptPath|CDN path for javascripts files `https://<env>-cdntasmu.azureedge.net/`| `https://uat-cdntasmu.azureedge.net/`|
 |PowerBIEmbed.PowerBIEmbed:EnvPath|Enviroment Domain URL `https://account.<env>.sqcp.qa/powerbiembed/`| Eg: `https://account.uat.sqcp.qa/powerbiembed/`|
 |SmartParking.ADB2CAuth:ClientId|Application(Client Id) of **Smart Parking API** app registration in B2C Tenant |Eg:`64db2dba-79c5-4b6c-84e0-696b3d1f0465` |

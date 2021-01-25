@@ -148,18 +148,18 @@
 |OrganisationApi.AzureADOptions:Scope|Scope of Central-Platform-Core-APIs App |Eg:  https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default|
 |OrganisationApi.AzureADOptions:Instance|Instance of Central-Platform-Core-APIs App |Eg:  https://login.microsoftonline.com/{0}|
 |OrganisationApi.AzureADOptions:TenantId|Tenant Id of Central-Platform-Core-APIs App |Eg: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698|
-|PaymentGWSettings:GetPaymentStatusServiceURL|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|PaymentGWSettings.ADB2CAuth:ClientId|Client Id of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>|Eg:  |
-|PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
-|PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0> |Eg:  |
-|PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|PaymentGWSettings:GetPaymentStatusServiceURL|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
+|PaymentGWSettings.ADB2CAuth:ClientId|Client Id of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>|Eg:  |
+|PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374> |Eg:  |
+|PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374> |Eg:  |
+|PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
 |PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|unique terminal ID provided by customer for Ooredoo Payment Gateway.|Eg: TASMU-DEV1 |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|URL of the Platform-API's|Eg: `https://api.dev.sqcp.qa/payment/api/PaymentGW` |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|URL of the vistamoney|Eg: `https://test.vistamoney.info/paymentgateway-external/checkoutvista.xhtml?` |
 |PaymentGWSettings.AuthorizeCard:Scope|Scope of Platform-API's App|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
-|PaymentGWSettings.AuthorizeCard:TenantId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|PaymentGWSettings.S2SAuth:Audience|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
-|PaymentGWSettings.S2SAuth:Authority|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>||
+|PaymentGWSettings.AuthorizeCard:TenantId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
+|PaymentGWSettings.S2SAuth:Audience|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
+|PaymentGWSettings.S2SAuth:Authority|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
 |PowerBIEmbed.AzureAd:ClientId|Client Id of Power BI app  |Eg:   |
 |PowerBIEmbed.AzureAd:TenantId|Tenant Id of AD hosting Power BI app |Eg:  |
 |PowerBIEmbed.PowerBIEmbed:ScriptPath|CDN path for javascripts files||

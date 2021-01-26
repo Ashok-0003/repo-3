@@ -113,6 +113,12 @@ Run the following pipelines in sequence:
 1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=510)
 1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=474)
 
+# Deployment of the solution components (Cost Management components)
+Currently the Synapse Workspace product is not mature enough to be fully deployed via Azure Devops. Following manual steps are needed after the automatic deployment of the resource in Azure Portal:
+1. Connect to snp-cpd-data-<ENV>-we-01-ondemand.sql.azuresynapse.net with Synapse Workspace Studio or with a SQL client of your choice
+2. Run queries described in /CommandControl/Mcs.Tasmu.CostMgmt.SyA/CostManagementSynapseQueries, with manual steps as described inline
+
+
 # Deployment of Power BI Reports
 Currently we are deploying all the Power BI reports in the tst environment. A new workspace named “Automation Tst - Tasmu Command & Control Center Dashboards” is created where all the reports are automatically deployed.
 For the automatic deployment, “Power BI: Action” extension is used.

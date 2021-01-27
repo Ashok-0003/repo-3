@@ -465,7 +465,7 @@ Update role assignment for  following resources
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity  | vnet-cpd-pltf-<env>-we-01/snet-cpd-apps-aks-<env>-we-01 | Network Contributor |
-|spn-cmsbpa-<env>|Service Principal|<env>-cdntasmu|CDN Endpoint Contributor. **Note**: Use spn-cmsbpa-dev for environments upto uat and spn-cmsbpa-pre for pre prod and prod|
+|spn-cmsbpa-<env>|Service Principal|<env>-cdntasmu|CDN Endpoint Contributor. **Note**: Use spn-cmsbpa-dev for environments upto uat and spn-cmsbpa-pre for pre prod and prod. The app must be present in the directory where azure subscription is present.|
 |spn-armapi-reader-npd|Service Principal|apim-cpd-shrd-<env>-we-01|Reader|
 
 ## 4.15 Configuring Notification Hubs for FCM and APNS
@@ -593,25 +593,23 @@ addKeda: true
 
                 - template: templates/deploy-apps.yml
 ```
-## 5.3 Deploy Integration
-1. For integration function apps, add stage to the following pipeline pointing to uat resources
-[CD-Integration-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=301)
 
-## 5.4 Deploy Web Apps
-### 5.4.1 Dependencies
+
+## 5.3 Deploy Web Apps
+### 5.3.1 Dependencies
 1. Self Hosted Agent
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 
-### 5.4.2 Update yml files
+### 5.3.2 Update yml files
 1. For web apps, add stage to the following pipeline pointing to uat resources
 [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
 
-## 5.5 Deploy Chatbot Solutions
-### 5.5.1 Dependencies
+## 5.4 Deploy Chatbot Solutions
+### 5.4.1 Dependencies
 1. Self Hosted Agent
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
-### 5.5.2 [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
+### 5.4.2 [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
 
-## 5.6 Deploy Payment Preference Functions
-1. For deploying Payment Preference function to function app, add stage to the following pipeline 
+## 5.5 Deploy Payment Preference and CMS Functions
+1. For deploying Payment Preference and CMS function to function app, add stage to the following pipeline 
 [CD-PlatformFuncApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738)

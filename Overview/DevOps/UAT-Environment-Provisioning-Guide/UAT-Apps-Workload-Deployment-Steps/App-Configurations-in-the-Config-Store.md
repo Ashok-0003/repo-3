@@ -149,11 +149,11 @@
 |OrganisationApi.AzureADOptions:Scope|Scope of Central-Platform-Core-APIs App |Eg:  https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default|
 |OrganisationApi.AzureADOptions:Instance|Instance of Central-Platform-Core-APIs App |Eg:  https://login.microsoftonline.com/{0}|
 |OrganisationApi.AzureADOptions:TenantId|Tenant Id of Central-Platform-Core-APIs App |Eg: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698|
-|PaymentGWSettings:GetPaymentStatusServiceURL|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
-|PaymentGWSettings.ADB2CAuth:ClientId|Client Id of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>|Eg:  |
-|PaymentGWSettings.ADB2CAuth:Domain|Domain of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374> |Eg:  |
-|PaymentGWSettings.ADB2CAuth:Instance|Instance of @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374> |Eg:  |
-|PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
+|PaymentGWSettings:GetPaymentStatusServiceURL|Ooredoo Payment Gateway Get Payment Preference Service URL provided by customer.||
+|PaymentGWSettings.ADB2CAuth:ClientId|Client Id of Payment Gateway API app registration in B2C tenant.|Eg: 51d6e508-7fdb-426c-8896-161c29173e7f |
+|PaymentGWSettings.ADB2CAuth:Domain|Domain Name of B2C Tenant |Eg: tasmucpb2csbx.onmicrosoft.com |
+|PaymentGWSettings.ADB2CAuth:Instance|Instance of TASMU non-prod/prod B2C authentication |Eg: https://tasmucpb2csbx.b2clogin.com/tfp/ |
+|PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|Get the B2C Individual policy name from custom policies in B2C Tenant B2C_1A_Signup_Signin_<env>|Eg: B2C_1A_signup_signin |
 |PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|unique terminal ID provided by customer for Ooredoo Payment Gateway.|Eg: TASMU-DEV1 |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|URL of the Platform-API's|Eg: `https://api.dev.sqcp.qa/payment/api/PaymentGW` |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|URL of the vistamoney|Eg: `https://test.vistamoney.info/paymentgateway-external/checkoutvista.xhtml?` |

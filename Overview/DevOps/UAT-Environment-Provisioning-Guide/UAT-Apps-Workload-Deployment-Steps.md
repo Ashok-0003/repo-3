@@ -485,6 +485,7 @@ For production environment, use the application mode as production.
 1. [Custom Domains Updated](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.5.5-add-custom-domains-to-apim)
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets (Azure-Search-Key, Bot-Directline-Key)
 1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
+1. Service Connection for Prod connecting the APIM
 
 ### 5.1.2 [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
 
@@ -493,6 +494,7 @@ For production environment, use the application mode as production.
 1. Self Hosted Agent
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 1. Role Assignments applied as per [table](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.14-role-assignments)
+1. Service Connection for ACR (acrglobnpdwe01) and Production Subscription to deploy cluster
 
 ### 5.2.2 Update yml files
 1. In the platform APIs, repo - pipelines\deploy\charts\stable\agic-ingress

@@ -3,7 +3,7 @@ Notes:
 
 |Variable Name| How to Retrieve | Example (UAT)| Type| Pipelines Using |
 |--|--|--|--|--|
-|ApplicationInsights-ConnectionString| Connection string of `appi-cpd-apps-mon-<env>-we-01` Eg. `InstrumentationKey=984ca526-2038-4d9d-b0cf-653706512c58`||Plain Text|CD-PlatformApis-Release|
+|ApplicationInsights-ConnectionString| Connection string of `appi-cpd-apps-mon-<env>-we-01` |Eg. `InstrumentationKey=984ca526-2038-4d9d-b0cf-653706512c58`|Plain Text|CD-PlatformApis-Release|
 |ApplicationInsights-InstrumentationKey| Instrumentation key of `appi-cpd-apps-mon-<env>-we-01` |Eg. `984ca526-2038-4d9d-b0cf-653706512c58`|Plain Text|CD-PlatformApis-Release|
 |Azure-Search-Key|Primary Admin key of resource `srch-cpd-apps-cog-<env>-we-01`||Secure|CI-APIMConfig-Master-Build|
 |Bot-Directline-Key| @<DFD5ADF8-872C-6CB0-8570-21B930BB3996> @<D654DCE5-848A-674D-A624-93B0AB87B9D1> ||Secure|CI-APIMConfig-Master-Build|

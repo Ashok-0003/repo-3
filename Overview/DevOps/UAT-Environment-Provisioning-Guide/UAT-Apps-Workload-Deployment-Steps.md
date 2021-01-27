@@ -289,7 +289,12 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |StorageAccounts | stcpdappsintuatwe01||
 
 ### 4.4.4 Post deployment steps
-1. Change the value of "**deploy**" parameter to "**false**" in apicon-cpd-apps-intspo-uat-we-01-parameters.json and apicon-cpd-apps-into365-uat-we-01-parameters.json.
+- If its a fresh deployment follow these steps:
+1. In the Azure portal search for apicon-cpd-apps-intspo-uat-we-01 and open it.
+2. Click on Edit Api Connection under General tab in the right panel.
+3. Click on Authorize to and authorize the connection using cms.automation account's credentials .
+4. Repeat the above three steps for apicon-cpd-apps-into365-uat-we-01
+5. Change the value of "**deploy**" parameter to "**false**" in apicon-cpd-apps-intspo-uat-we-01-parameters.json and apicon-cpd-apps-into365-uat-we-01-parameters.json.
 _`If the value of "deploy" is "false" then we don't need to reauthenticate the api connections on subsequent deployments`_   
 
 ## 4.5 Shared Resource Group 

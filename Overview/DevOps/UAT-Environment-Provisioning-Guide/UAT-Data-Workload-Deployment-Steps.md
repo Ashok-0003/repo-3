@@ -39,8 +39,8 @@
 |Logic App  |logic-cpd-data-uat-we-01  |
 |Public IP address  |adxuatdmip |
 |Public IP address  |adxuatpip |
-|SQL database  |sql-cpd-data-uat-we-01  |
-|SQL database  |sql-cpd-dynamics-data-uat-we-01  |
+|SQL database  |sqldb-cpd-data-uat-we-01  |
+|SQL database  |sqldb-cpd-dynamics-data-uat-we-01  |
 |Dedicated SQL pool  |sqldw-cpd-data-uat-we-01  |
 |Dedicated SQL pool  |sqldw-smartcity-data-uat-we-01  |
 |SQL server  |sql-cpd-data-uat-we-01  |

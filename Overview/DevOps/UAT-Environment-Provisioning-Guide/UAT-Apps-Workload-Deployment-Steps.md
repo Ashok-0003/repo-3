@@ -294,7 +294,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 2. Click on Edit Api Connection under General tab in the right panel.
 3. Click on Authorize to and authorize the connection using cms.automation account's credentials .
 4. Repeat the above three steps for apicon-cpd-apps-into365-uat-we-01
-5. Change the value of "**deploy**" parameter to "**false**" in apicon-cpd-apps-intspo-uat-we-01-parameters.json and apicon-cpd-apps-into365-uat-we-01-parameters.json.
+5. Change the value of "**deploy**" parameter to "**false**" in [apicon-cpd-apps-intspo-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-intspo-uat-we-01-parameters.json&version=GBmaster&_a=contents) and [apicon-cpd-apps-into365-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-into365-uat-we-01-parameters.json&version=GBmaster&_a=contents).
 _`If the value of "deploy" is "false" then we don't need to reauthenticate the api connections on subsequent deployments`_   
 
 ## 4.5 Shared Resource Group 

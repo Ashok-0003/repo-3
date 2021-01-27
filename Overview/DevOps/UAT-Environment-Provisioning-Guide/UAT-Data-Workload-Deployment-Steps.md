@@ -17,8 +17,8 @@
 |Resource Group|rg-cpd-data-uat-we-01|
 |--|--|
 |Analysis Services |aascpddatauatwe01|
-|API Connection |apicon-cpd-data-uat-we-01  |
-|API Connection  |apicon-cpd-data-uat-we-02  |
+|API Connection |apicon-cpd-data-uat-we-01 (apicon-cpd-data-eh-uat-we-01-parameters.json) |
+|API Connection  |apicon-cpd-data-uat-we-02(apicon-cpd-data-sql-uat-we-01-parameters.json)  |
 |Function App  |func-cpd-data-uat-we-01  |
 |Function App  |func-cpd-data-uat-we-02  |
 |Function App | func-cpd-data-uat-we-03 |

@@ -72,6 +72,7 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 | 8 | Office 365 Instance/Tenant | | | |
 | 9 | CDN URL |https://dev-cdntasmu.azureedge.net | | | |
 | 10 | Authorizecard URL |https://account.dev.sqcp.qa/authorizecard | | | |
+| 11 | PaymentGW URL |https://api.dev.sqcp.qa/payment/api/PaymentGW/ | | | |
 
 ## Test Environment
 
@@ -87,6 +88,7 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 | 8 | Office 365 Instance/Tenant | | | |
 | 9 | CDN URL |https://tst-cdntasmu.azureedge.net | | | |
 | 10 | Authorizecard URL |https://account.tst.sqcp.qa/authorizecard | | | |
+| 11 | PaymentGW URL |https://api.tst.sqcp.qa/payment/api/PaymentGW/ | | | |
 
 ## Training Environment
 
@@ -101,6 +103,7 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 | 7 | Dynamics 365 Instance|https://tasmu-uat.crm4.dynamics.com | | |
 | 8 | Office 365 Instance/Tenant | | | |
 | 9 | CDN URL |https://trn-cdntasmu.azureedge.net | | | |
+| 10 | PaymentGW URL |https://api.trn.sqcp.qa/payment/api/PaymentGW/ | | | |
 
 ## UAT Environment
 
@@ -118,3 +121,4 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 | 10 | CMS URL |https://tasmusqcpuat.sharepoint.com/sites/cms-marketplace | | | |
 | 11 | CMS URL2 |https://tasmusqcpuat.sharepoint.com/sites/cms-global | | | |
 | 12 | Authorizecard URL |https://account.uat.sqcp.qa/authorizecard | | | |
+| 13 | PaymentGW URL |https://api.uat.sqcp.qa/payment/api/PaymentGW/ | | | |

@@ -232,7 +232,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 1. App registration for spn-armapi-reader-npd 
 1. Seeding of ARMAPI-ClientSecret in the kv-cpd-apps-uat-we-01 Key Vault
-1. If its a **fresh deployment** then change the value of "**deploy**" parameter to **true** in apicon-cpd-apps-intspo-uat-we-01-parameters.json and apicon-cpd-apps-into365-uat-we-01-parameters.json 
+1. If its a **fresh deployment** then change the value of "**deploy**" parameter to **true** in [apicon-cpd-apps-intspo-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-intspo-uat-we-01-parameters.json&version=GBmaster&_a=contents) and [apicon-cpd-apps-into365-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-into365-uat-we-01-parameters.json&version=GBmaster&_a=contents).
 
 
 ### 4.4.3 Resources

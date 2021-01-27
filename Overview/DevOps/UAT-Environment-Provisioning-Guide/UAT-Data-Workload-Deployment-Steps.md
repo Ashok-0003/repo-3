@@ -117,6 +117,7 @@ Run the following pipelines in sequence:
 Currently the Synapse Workspace product is not mature enough to be fully deployed via Azure Devops. Following manual steps are needed after the automatic deployment of the resource in Azure Portal:
 1. Connect to snp-cpd-data-<ENV>-we-01-ondemand.sql.azuresynapse.net with Synapse Workspace Studio or with a SQL client of your choice
 2. Run queries described in /CommandControl/Mcs.Tasmu.CostMgmt.SyA/CostManagementSynapseQueries, with manual steps as described inline
+3. Please note that Synapse Workspace connects to the Gold Zone datalake with Shared Access Signature, which has an expire date.
 
 
 # Deployment of Power BI Reports

@@ -159,8 +159,8 @@
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|URL of the vistamoney|Eg: `https://test.vistamoney.info/paymentgateway-external/checkoutvista.xhtml?` |
 |PaymentGWSettings.AuthorizeCard:Scope|Scope of Platform-API's App|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
 |PaymentGWSettings.AuthorizeCard:ClientId|Client Id of Payment Gateway API app registration in B2C tenant.|Eg: dd0623e2-0163-4b05-82f8-ef798ff16c86 |
-|PaymentGWSettings.S2SAuth:Audience|Audience of Payment Gateway APIs||
-|PaymentGWSettings.S2SAuth:Authority|Authority of Payment Gateway APIs||
+|PaymentGWSettings.S2SAuth:Audience|Audience of Payment Gateway APIs|Eg: 51d6e508-7fdb-426c-8896-161c29173e7f|
+|PaymentGWSettings.S2SAuth:Authority|Authority of Payment Gateway APIs|Eg: https://login.microsoftonline.com/fa525e36-bf96-43bf-8932-79524b82ce2a/v2.0/ |
 |PowerBIEmbed.AzureAd:ClientId|Client Id of **spn-powerbiembed** [app registration](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad---tasmusqcp.onmicrosoft.com)  |Eg: `07ab695f-5e5d-4e05-a5e6-645c70a8e4ff`  |
 |PowerBIEmbed.AzureAd:TenantId| Tenant Id of Azure AD hosting the spn-powerbiembed app registration  |Eg: `92603419-35d1-4eb0-8427-cac731071355` |
 |PowerBIEmbed.PowerBIEmbed:ScriptPath|CDN path for javascripts files `https://<env>-cdntasmu.azureedge.net/`| Eg: `https://uat-cdntasmu.azureedge.net/`|

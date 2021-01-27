@@ -1,5 +1,5 @@
 
-|Variable Name| How to Retrieve | Pipelines Using |
-|--|--|--|
-|  |  |  |
+|Variable Name| How to Retrieve | Example (UAT)| Pipelines Using |
+|--|--|--|--|
+|  |  |  |  |
 

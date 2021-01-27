@@ -45,11 +45,11 @@
 |kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret | Client Secret of **Central-Platform-Core-APIs** app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | Client Secret of Platform-API's app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-Password| Secret |Ooredoo Payment Gateway Password, key to be provided by customer.||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-GetPaymentPreferenceServiceURL| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374> ||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-TerminalPwd| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-Token| Secret |@<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-GetPaymentPreferenceServiceURL| Secret |Ooredoo Payment Gateway Get Payment Preference Service URL provided by customer.||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-TerminalPwd| Secret |Ooredoo Payment Gateway Terminal password provided by customer.||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-Token| Secret |Ooredoo Payment Gateway Token provided by customer.||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AzureAd-ClientSecret| Secret| @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-UpdatePaymentPreferenceServiceURL| Secret | @<61B6AA19-06EB-6663-BCF0-23DE48E289A0>, @<BDD02ABA-FAC8-6D3B-8CE8-4B7AB6139374>|
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-UpdatePaymentPreferenceServiceURL| Secret | Ooredoo Payment Gateway Update Payment Preference Service URL provided by customer.|
 |kv-cpd-apps-<env>-we-01|PowerBIEmbed-AzureAd-ClientSecret| Secret |Client Secret for **spn-powerbiembed** [app registration](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad---tasmusqcp.onmicrosoft.com) ||
 |kv-cpd-apps-<env>-we-01|SmartParking-ADAuth-ClientSecret| Secret |create and retrieve Client Secret for **Smart Parking API** App registration in B2C tenant under certificates and secrets menu||
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint| CMSBPA Self signed certificate|

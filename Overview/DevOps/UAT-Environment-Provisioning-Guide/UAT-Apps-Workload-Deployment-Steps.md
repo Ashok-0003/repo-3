@@ -288,8 +288,9 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |ServiceBusNamespaceTopic Subscription | sbts-cpd-apps-copyqna-uat-we-01||
 |StorageAccounts | stcpdappsintuatwe01||
 
-### 4.4.4 Post deployment steps:
-1. Change the value of "**deploy**" parameter to "**false**" in apicon-cpd-apps-intspo-uat-we-01-parameters.json and apicon-cpd-apps-into365-uat-we-01-parameters.json  
+### 4.4.4 Post deployment steps
+1. Change the value of "**deploy**" parameter to "**false**" in apicon-cpd-apps-intspo-uat-we-01-parameters.json and apicon-cpd-apps-into365-uat-we-01-parameters.json.
+_`If the value of "deploy" is "false" then we don't need to reauthenticate the api connections on subsequent deployments`_   
 
 ## 4.5 Shared Resource Group 
 ### 4.5.1 Resource Group

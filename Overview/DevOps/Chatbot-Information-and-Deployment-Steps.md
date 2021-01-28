@@ -198,7 +198,7 @@ c. Enable these checkboxes **3.0** and **Block attachment upload from user**.
 d. Enable **Enhanced authentication options**.
 e. Click on **Add a trusted origin** and paste `https://api.<env>.sqcp.qa`.
 
-###For more informa
+###For more information
 The above setup is used at following places:
 1. DirectLine Swagger Page - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2Fapis%2FBotDirectlineApi%2FSwagger.json)
 2. **Bot-Directline-Key** from the variable group is used in following pipeline - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FPipeline%2Ftemplates%2Fbuild-template.yml)

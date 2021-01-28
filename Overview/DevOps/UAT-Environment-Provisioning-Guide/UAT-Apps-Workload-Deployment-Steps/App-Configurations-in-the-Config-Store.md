@@ -154,6 +154,7 @@
 |PaymentGWSettings.ADB2CAuth:Domain|Domain Name of B2C Tenant |Eg: tasmucpb2csbx.onmicrosoft.com |
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of TASMU non-prod/prod B2C authentication |Eg: https://tasmucpb2csbx.b2clogin.com/tfp/ |
 |PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|Get the B2C Individual policy name from custom policies in B2C Tenant B2C_1A_Signup_Signin_<env>|Eg: B2C_1A_signup_signin |
+|PaymentGWSettings.AuthorizeCard:AccessTokenURL| B2C access token URL `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token` |Eg. `https://login.microsoftonline.com/24f9d756-bf0c-43e9-ad5e-2073ae2d6698/oauth2/v2.0/token`|
 |PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|unique terminal ID provided by customer for Ooredoo Payment Gateway.|Eg: TASMU-DEV1 |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|URL of the Platform-API's|Eg: `https://api.dev.sqcp.qa/payment/api/PaymentGW` |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|URL of the vistamoney|Eg: `https://test.vistamoney.info/paymentgateway-external/checkoutvista.xhtml?` |

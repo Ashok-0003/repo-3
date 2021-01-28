@@ -492,7 +492,8 @@ For production environment, use the application mode as production.
 1. Service Connection connecting the APIM
 
 ### 5.1.2 [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
-
+### 5.1.3 Enable access for required products on APIM
+![image.png](/.attachments/image-5ac68024-d75d-42dc-a25b-b9e3402c8f3e.png)
 ## 5.2 Deploy Platform APIs
 ### 5.2.1 Dependencies
 1. Self Hosted Agent

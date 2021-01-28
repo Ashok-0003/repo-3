@@ -1,5 +1,22 @@
-**SharePoint Online Artifacts Provisioning** 
- 
+
+#Prerequisites
+- Enable External Sharing at office365 tenant level
+1. Go to [office365 admin center](https://admin.microsoft.com/#/homepage)
+2. Click on "Show all" in the left navigation as shown in below image.
+ ![image.png](/.attachments/image-aee74f79-e565-4924-9425-ab5a2cd5e52e.png)
+3. Click on settings, then click on Org settings.
+![image.png](/.attachments/image-5567292b-f55b-4620-9aed-098fd30eb35f.png)
+4. Click on Sharepoint.
+![image.png](/.attachments/image-43f9d308-42a8-4705-baec-26c33c90c7cb.png)
+5. Select "New and existing guests ..." radio button and then click on save as shown in the image below.
+![image.png](/.attachments/image-3278a0e7-2a7f-4577-a78e-beaa718d7245.png)
+6. Click on "Go to sharepoint admin center".
+![image.png](/.attachments/image-b912efa0-c001-4059-a36a-f1b715977aae.png)
+7. Expand "More external sharing settings" and select the checkbox "Guests must sign in....", also uncheck the checkbox "Allow guests to...." as shown in the image below.
+![image.png](/.attachments/image-a628d5c5-1fdc-493c-b75f-3b4723a616dc.png)
+8. Scroll to the bottom and click on Save.
+
+**SharePoint Online Artifacts Provisioning**   
 1. Create tenant App Catalog. Follow below steps for creating.
 2. Go to the SharePoint admin center page. The url is : *https://<tenant-name>-admin.sharepoint.com*
 3. Click on **More features** in the left navigation as shown in below image.![sharepoint_admin_center.PNG](/.attachments/sharepoint_admin_center-eff52635-4598-4e8c-989c-4ef303cc369b.PNG)

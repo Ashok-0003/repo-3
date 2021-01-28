@@ -16,3 +16,4 @@ Notes:
 |Mobile-ConfigApiEndPoint| API endpoint for Config API |Eg. `https://api.uat.sqcp.qa/config`||Plain TextCI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-NotificationHubListenConn| Listen Access connection string of Azure Notification hub `ntfns-cpd-apps-str-uat-we-01` ||Secure|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-NotificationHubName| Name of the Azure Notification hub that the mobile app integrated. |Eg. `ntf-cpd-apps-str-uat-we-01`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
+|Cms-Function-CertificatePfxKey| Certificate Password of CMS Self Signed Certificate| @<41E6AD78-7136-6E99-83C1-6B45CCA074B0> , @<ACAA2713-B2D1-668C-A427-A1DB1890F198> |Secure|CD-KeyVault-Secrets-Master-Release|

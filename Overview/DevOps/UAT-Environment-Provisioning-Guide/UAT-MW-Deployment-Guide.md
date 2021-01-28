@@ -7,6 +7,8 @@
 5. Click on **App Catalog**![sharepoint_admin_app_catalog.PNG](/.attachments/sharepoint_admin_app_catalog-03abb494-1721-42f4-9e06-d9afa26216ae.PNG)
 6. Click on the **Ok** button as shown in the image.![sharepoint_admin_app_create.PNG](/.attachments/sharepoint_admin_app_create-7c95dbb4-78e7-45ea-aac4-b940f974bff6.PNG)
 7. Fill the details as per the below image.![sharepoint_admin_app_catalog_creation_step.PNG](/.attachments/sharepoint_admin_app_catalog_creation_step-42e0d888-6617-4c99-a3f3-bdb877d0678b.PNG) **Please Note**: *Make sure you enter the email of the user account under which the provisioning pipeline is going to run*
+8. Verify the user account for running the provisioning pipeline is added as the Site Collection Administrator for the content type hub. To verify access the URL:**https://<tenant-name>.sharepoint.com/sites/contentTypeHub/_layouts/15/mngsiteadmin.aspx** and add the user account. If you are unable to access the above URL, kindly use the below URL: **https://<tenant-name>-admin.sharepoint.com/_layouts/15/online/TA_SiteCollectionOwnersdialog.aspx?site=https://<tenant-name>.sharepoint.com/sites/contentTypeHub** and add the user account.
+9. Also, make sure the user account is added as the site collection administrator for the root site collection. **https://<tenant-name>.sharepoint.com/_layouts/15/mngsiteadmin.aspx**
 2. Make sure the users Email Address are updated correctly in the “Scripts/CMS/ProvisioningScripts/resources/site.xml”
 3. Please check below image for reference
 

@@ -1,6 +1,12 @@
 **SharePoint Online Artifacts Provisioning** 
  
-1. Add SharePoint Administration account as a site collection administrators. 
+1. Create tenant App Catalog. Follow below steps for creating.
+2. Go to the SharePoint admin center page. The url is : *https://<tenant-name>-admin.sharepoint.com*
+3. Click on **More features** in the left navigation as shown in below image.![sharepoint_admin_center.PNG](/.attachments/sharepoint_admin_center-eff52635-4598-4e8c-989c-4ef303cc369b.PNG)
+4. Now click on open as shown in the image.![sharepoint_admin_search.PNG](/.attachments/sharepoint_admin_search-069a69ce-1259-42fb-a432-b5cb8d84ae7e.PNG)
+5. Click on **App Catalog**![sharepoint_admin_app_catalog.PNG](/.attachments/sharepoint_admin_app_catalog-03abb494-1721-42f4-9e06-d9afa26216ae.PNG)
+6. Click on the **Ok** button as shown in the image.![sharepoint_admin_app_create.PNG](/.attachments/sharepoint_admin_app_create-7c95dbb4-78e7-45ea-aac4-b940f974bff6.PNG)
+7. Fill the details as per the below image.![sharepoint_admin_app_catalog_creation_step.PNG](/.attachments/sharepoint_admin_app_catalog_creation_step-42e0d888-6617-4c99-a3f3-bdb877d0678b.PNG) **Please Note**: *Make sure you enter the email of the user account under which the provisioning pipeline is going to run*
 2. Make sure the users Email Address are updated correctly in the “Scripts/CMS/ProvisioningScripts/resources/site.xml”
 3. Please check below image for reference
 

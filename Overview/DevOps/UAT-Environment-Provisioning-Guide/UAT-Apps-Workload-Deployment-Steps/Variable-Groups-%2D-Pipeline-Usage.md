@@ -14,5 +14,5 @@ Notes:
 |Mobile-AppCenterIosKey| App secret for TASMU iOS App in MS App center |Eg. `62ee3511-08ae-4fd8-9cd4-46d15ee42f1a`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-CmsSubscriptionKeyName| APIM Subscription key for CMS Content API ||Secure|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-ConfigApiEndPoint| API endpoint for Config API |Eg. `https://api.uat.sqcp.qa/config`||Plain TextCI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
-|Mobile-NotificationHubListenConn| Connection string of Azure Notification hub that the mobile app integrated ||Secure|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
+|Mobile-NotificationHubListenConn| Listen Access connection string of Azure Notification hub `ntfns-cpd-apps-str-uat-we-01` ||Secure|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-NotificationHubName| Name of the Azure Notification hub that the mobile app integrated. |Eg. `ntf-cpd-apps-str-uat-we-01`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|

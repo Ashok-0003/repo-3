@@ -186,6 +186,21 @@ After updating infra repo, following Keys needs to be added/updated in the varia
 - **Bot-AppSettings-QnaArSubscriptionKey** - From "cognitiveModels" -> "en-us" -> "knowledgebases" ->  "subscriptionKey" inside OutputCognitiveModels.json downloaded under this step - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=updating-infra-repo-with-luis-and-qna-keys)
 - **Bot-AppSettings-QnaEnSubscriptionKey** -  From "cognitiveModels" -> "ar-ar" -> "knowledgebases" ->  "subscriptionKey" inside OutputCognitiveModels.json downloaded under this step - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=updating-infra-repo-with-luis-and-qna-keys)
 
+## Bot DirectLine Setup in APIM
 
+1. After the deployment of bot-cpd-apps-<env>-we-01 WebAppBot Azure resource, go to bot-cpd-apps-<env>-we-01 in Azure portal and perform the following steps.
+a. Under Channels section, select Edit from Direct Line.
+
+![bot-directline-1.PNG](/.attachments/bot-directline-1-05a5ba39-a9a8-42ab-a70d-c944f2dedaa7.PNG)
+
+b. Copy the first secret and place it to the **Bot-Directline-Key** under variable groups of Azure Devops Pipeline specific to the environment - [Refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/219/Variable-Groups-Pipeline-Usage).
+c. Enable these checkboxes **3.0** and **Block attachment upload from user**.
+d. Enable **Enhanced authentication options**.
+e. Click on **Add a trusted origin** and paste `https://api.<env>.sqcp.qa`.
+
+###For more informa
+The above setup is used at following places:
+1. DirectLine Swagger Page - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FInput%2Fapis%2FBotDirectlineApi%2FSwagger.json)
+2. **Bot-Directline-Key** from the variable group is used in following pipeline - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FPipeline%2Ftemplates%2Fbuild-template.yml)
 
 

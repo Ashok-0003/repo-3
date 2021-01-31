@@ -223,7 +223,7 @@ For UAT:
 ![image.png](/.attachments/image-c96bf1b6-3208-4286-a40d-bc9469dab2ac.png)
 9. Click on Create.
  
-### 5.10 Configure export to data lake
+### 5.10 Configure export to data lake and SQL export service
 1. Go to https://make.powerapps.com -> select the right environment -> click on Export to data lake -> click on New link to data lake.
 ![image.png](/.attachments/image-fd0c30f3-6fd0-48b0-83c7-da388a5639e9.png)
 
@@ -231,6 +231,9 @@ For UAT:
 
 3. Select all entities in the next screen and finish the setup. More details below.
 https://docs.microsoft.com/en-us/powerapps/maker/data-platform/export-to-data-lake#select-and-export-dataverse-table-data-to-azure-data-lake-storage-gen2.
+
+4. Setup SQL export service by following the link below.
+https://docs.microsoft.com/en-us/power-platform/admin/replicate-data-microsoft-azure-sql-database
 
 ### 5.11 Create and assign security role to Application Users
 1. Create the following application users by following "Appendix D - Application User Creation".

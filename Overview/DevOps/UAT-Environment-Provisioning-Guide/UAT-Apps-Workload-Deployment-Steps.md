@@ -474,14 +474,12 @@ Update role assignment for  following resources
 |spn-armapi-reader-npd|Service Principal|apim-cpd-shrd-<env>-we-01|Reader|
 
 ## 4.15 Configuring Notification Hubs for FCM and APNS
-1. Go to notification hub (ntf-cpd-apps-str-<env>-we-01) -> Settings
-1. Update the Google Settings for API Key
-Obtain the Web API Key of [Google Firebase Cloud Account](https://console.firebase.google.com/) after creating the project from project settings
-1. Developer Account into the development Mac machine. 
-Follow the steps to [export the certificate](https://help.attendify.com/en/articles/613466-how-to-export-a-push-notification-apns-certificate-in-a-p12-file#:~:text=Generate%20APNS.p12%20certificate%20Double%20click%20the%20Development%20certificate,app%20certificate%20and%20right%20click%20to%20export%20it.)  in .p12 format. 
-1. Update the Apple Settings for iOS Certificate. 
-For production environment, use the application mode as production.
-1. Test Send (Support and troubleshooting) for Apple and Windows Phone
+1. Obtain the API Key of [Google Firebase Cloud Account](https://console.firebase.google.com/) after creating the project from project settings
+1. Obtain the p12 certificate by Developer Account into the development Mac machine. Follow the steps to [export the certificate](https://help.attendify.com/en/articles/613466-how-to-export-a-push-notification-apns-certificate-in-a-p12-file#:~:text=Generate%20APNS.p12%20certificate%20Double%20click%20the%20Development%20certificate,app%20certificate%20and%20right%20click%20to%20export%20it.)  in .p12 format. 
+3. Go to notification hub (ntf-cpd-apps-str-<env>-we-01) -> Settings
+3.1. Update the Google in Settings with the API Key obtained.
+3.2. Update the Apple in Settings for iOS Certificate. For production environment, use the application mode as production.
+1. Test Send (Support and troubleshooting) for Apple and Android Phone for verifications.
 
 # 5 Deployment of the solution components
 ## 5.1 Update APIM Pipelines

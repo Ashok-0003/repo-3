@@ -34,7 +34,7 @@
 
 # Webapp Bot AD update
 
-1. After successful deployment of chatbot resources in step 1 above, we have to update manifest file and variable group with secret. for that follow below steps:
+1. After successful deployment of chatbot resources as part of following Infra Deployment - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps), we have to update manifest file and variable group with secret. for that follow below steps:
 
 a. Go to the webapp bot resource created like below screenshot and select manage as highlighted in image below.
 

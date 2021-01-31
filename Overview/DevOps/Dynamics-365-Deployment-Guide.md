@@ -75,6 +75,11 @@ Follow below steps to create and configure above queues.
 
 6.	Repeat the above steps to create other queues listed.
 
+### 3.3 Enable Arabic Language in Dynamics
+Go to Settings -> Administration -> Languages -> Select Arabic (1025) -> Click on Enable.
+This may take several minutes to process.
+![image.png](/.attachments/image-de134f29-d71b-4a21-9eae-fbe489aa8615.png)
+
 # 4 Deployment
 ### 4.1	CRM Solution Import [Automated]
 

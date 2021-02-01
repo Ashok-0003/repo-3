@@ -36,7 +36,7 @@
 
 ## Items to be updated before triggering below CD-BotLuisQnAInitialDeploy pipeline
 
-Below items to be updated in variable group refer the screenshot reference in end of this wiki to know how to get these keys from azure portal:
+Below items to be updated in variable group refer the [screenshot reference](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=add%2Fupdate-keys-in-azure-devops-variable-groups) to know how to get these keys from azure portal:
 1. Bot-AppSettings-LuisAuthSubscriptionKey
 2. Bot-AppSettings-QnaEnSubscriptionKey
 3. Bot-AppSettings-QnaArSubscriptionKey

@@ -32,35 +32,6 @@
 5. tasmubot_CRMKnowledgebase_en_us - English Knowledgebase Insatance synched from dynamics(CRM) used in BOT
 6. tasmubot_Source_FAQ_en_us - Source FAQ instance used by Admin or User to create or update FAQ data.
 
-# Webapp Bot AD update
-
-1. After successful deployment of chatbot resources as part of following Infra Deployment - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps), we have to update manifest file and variable group with secret. for that follow below steps:
-
-a. Go to the webapp bot resource created like below screenshot and select manage as highlighted in image below.
-
-![webappbot-manage.png](/.attachments/webappbot-manage-b419b3a8-ff19-4df3-8cce-3660542115c1.png)
-
-b.  Then click on manifest like below image and download the json file.
-![Manifest.png](/.attachments/Manifest-e06082d9-b90e-4b40-8cca-0e5bba332e90.png)
-
-c. Then update following elements in the json with values below and upload it here.
-
-```
-"accessTokenAcceptedVersion": 2
-"replyUrlsWithType": [	
-		{	
-			"url": "https://token.botframework.com/.auth/web/redirect",	
-			"type": "Web"	
-		}	
-	],
-"signInAudience": "AzureADandPersonalMicrosoftAccount",
-```
-
-d. Updating the Secret : 
-Select certificates and secrets and generate new client secret with any meaningful description. Once generated copy that secret to **BotAppSecret** Key of the variable group which is present under AzureDevops->Pipelines->Library for all the environments.
-
-![client-secret.png](/.attachments/client-secret-09a00977-1665-475d-851e-fd7082233e77.png)
-
 # Chatbot Deployment Steps
 
 
@@ -185,6 +156,36 @@ After updating infra repo, following Keys needs to be added/updated in the varia
 
 - **Bot-AppSettings-QnaArSubscriptionKey** - From "cognitiveModels" -> "en-us" -> "knowledgebases" ->  "subscriptionKey" inside OutputCognitiveModels.json downloaded under this step - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=updating-infra-repo-with-luis-and-qna-keys)
 - **Bot-AppSettings-QnaEnSubscriptionKey** -  From "cognitiveModels" -> "ar-ar" -> "knowledgebases" ->  "subscriptionKey" inside OutputCognitiveModels.json downloaded under this step - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=updating-infra-repo-with-luis-and-qna-keys)
+
+# Webapp Bot AD update
+
+1. After successful deployment of chatbot resources as part of following Infra Deployment - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps), we have to update manifest file and variable group with secret. for that follow below steps:
+
+a. Go to the webapp bot resource created like below screenshot and select manage as highlighted in image below.
+
+![webappbot-manage.png](/.attachments/webappbot-manage-b419b3a8-ff19-4df3-8cce-3660542115c1.png)
+
+b.  Then click on manifest like below image and download the json file.
+![Manifest.png](/.attachments/Manifest-e06082d9-b90e-4b40-8cca-0e5bba332e90.png)
+
+c. Then update following elements in the json with values below and upload it here.
+
+```
+"accessTokenAcceptedVersion": 2
+"replyUrlsWithType": [	
+		{	
+			"url": "https://token.botframework.com/.auth/web/redirect",	
+			"type": "Web"	
+		}	
+	],
+"signInAudience": "AzureADandPersonalMicrosoftAccount",
+```
+
+d. Updating the Secret : 
+Select certificates and secrets and generate new client secret with any meaningful description. Once generated copy that secret to **BotAppSecret** Key of the variable group which is present under AzureDevops->Pipelines->Library for all the environments.
+
+![client-secret.png](/.attachments/client-secret-09a00977-1665-475d-851e-fd7082233e77.png)
+
 
 ## Bot DirectLine Setup in APIM
 

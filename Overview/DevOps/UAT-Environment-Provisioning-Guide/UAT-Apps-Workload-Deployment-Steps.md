@@ -262,7 +262,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |LogicApp | logic-cpd-apps-intprdt-uat-we-01 | Logic app to sync Products from CRM|
 |LogicApp | logic-cpd-apps-intsec-uat-we-01 | Logic app to sync Global Sectors List from CRM|
 |LogicApp | logic-cpd-apps-secsync-uat-we-01 | Logic app to sync Global Sectors List with Sharepoint Taxonomy terms|
-|LogicApp | logic-cpd-apps-route-uat-we-01||
+|LogicApp | logic-cpd-apps-route-uat-we-01| **Important:** after the APIM resource for this Logic App has been deployed (apim-cpd-shrd-uat-we-01), update the accessControl parameter in the ARM template for this resource to the Public IP of the APIM in the CIDR format. For example, if the Public IP of APIM is <code>1.1.1.1</code>, then replace the value in the ARM template with <code>1.1.1.1/32</code>. If this is not done, the Logic App will return an error stating that the IP is not allowed to access the Logic App trigger.|
 |LogicApp | logic-cpd-apps-6dbill-uat-we-01||
 |LogicApp | logic-cpd-apps-6dhook-uat-we-01||
 |LogicApp | logic-cpd-apps-mpsidx-uat-we-01||

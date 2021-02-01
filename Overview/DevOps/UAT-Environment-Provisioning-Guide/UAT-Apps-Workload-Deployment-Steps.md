@@ -297,6 +297,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 4. Repeat the above three steps for apicon-cpd-apps-into365-uat-we-01
 5. Change the value of "**deploy**" parameter to "**false**" in [apicon-cpd-apps-intspo-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-intspo-uat-we-01-parameters.json&version=GBmaster&_a=contents) and [apicon-cpd-apps-into365-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-into365-uat-we-01-parameters.json&version=GBmaster&_a=contents).
 _`If the value of "deploy" is "false" then we don't need to reauthenticate the api connections on subsequent deployments`_   
+6. Update the accessControl ARM parameter of logic-cpd-apps-route-uat-we-01 with the Public IP of apim-cpd-shrd-uat-we-01 once APIM is deployed. See the remarks of logic-cpd-apps-route-uat-we-01 above for more details. 
 
 ## 4.5 Shared Resource Group 
 ### 4.5.1 Resource Group

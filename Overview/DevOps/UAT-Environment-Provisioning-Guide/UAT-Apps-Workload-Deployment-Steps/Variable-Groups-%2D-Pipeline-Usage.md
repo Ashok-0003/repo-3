@@ -8,7 +8,7 @@ Notes:
 |Azure-Search-Key|Primary Admin key of resource `srch-cpd-apps-cog-<env>-we-01`||Secure|CI-APIMConfig-Master-Build|
 |Bot-Directline-Key| DirectLine secret of `bot-cpd-apps-<env>-we-01` under WebAppBot Azure resource -> channels -> Direct Line -> Secret||Secure|CI-APIMConfig-Master-Build|
 |ConnectionStrings-StorageAccount|Connection string of the resource stcpdappstsr<env>we01|Eg. `DefaultEndpointsProtocol=https;AccountName=stcpdappstsruatwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|Secure|CD-PlatformApis-Release|
-|CMS-API-CertificatePassword|Password of `CMS-CMSAPI-NonProd.pfx` file.||Secure|CI-KeyVault-Master-Build, CD-KeyVaultSecrets-Master-Release|
+|CMS-API-CertificatePassword|Password of `CMS-CMSAPI-<env>.pfx` file.||Secure|CI-KeyVault-Master-Build, CD-KeyVaultSecrets-Master-Release|
 |LuisGeneralAppIdAr| App Id of tasmubot_ar_ar_General at (https://eu.luis.ai/) of `cog-cpd-apps-luisauth-<env>-we-01` authoring resource.|Eg. `5ce7a761-1f56-4ca7-b77a-8a69f6703b27`|Plain Text| CD-Bot-Release-Master |
 |LuisGeneralAppIdEn| App Id of tasmubot_en_us_General at (https://eu.luis.ai/) of `cog-cpd-apps-luisauth-<env>-we-01` authoring resource. |Eg. `2015bee4-e5ce-45ae-9aba-234861ca005d`|Plain Text| CD-Bot-Release-Master |
 |Mobile-AppCenterDroidKey|App secret for TASMU Android App in MS App center  |Eg. `cb8b60ea-3a62-4bfc-9061-5fe61d915025`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|

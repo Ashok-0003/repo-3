@@ -12,12 +12,11 @@
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaEnSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **appcog-cpd-apps-qna-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaArSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **appcog-cpd-apps-arqna-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|CDNSettings-StorageAccount| Secret | Connection string of the resource **stcpdshrd<env>we01**|Eg `DefaultEndpointsProtocol=https;AccountName=stcpdshrduatwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|
-|kv-cpd-apps-<env>-we-01|Cms-Api-CertificatePassword| Secret |**CMSAPI** certificate password|
 |kv-cpd-apps-<env>-we-01|Cms-Function-ServiceBusConnectionString| Secret |Send,Listen access policy connection string of the resource **sb-cpd-apps-int-<env>-we-01**|
 |kv-cpd-apps-<env>-we-01|Cms-Function-NotificationUrl| Secret |Default(Function Key) Function URL of notify function in **func-cpd-apps-intntf-<env>-we-01**|Only available after [CD-PlatformFuncApp-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738&_a=summary) pipeline is succeeded|
 |kv-cpd-apps-<env>-we-01|Cms-Function-TenantId| Secret |Directory (tenant) ID of Azure AD App **spn-cmsbpa-<env>**|
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientId| Secret |Application (client) ID of Azure AD app **spn-cmsbpa-<env>**|
-|kv-cpd-apps-<env>-we-01|Cms-Function-CertificatePassword| Secret |**CMSBPA** certificate password|
+|kv-cpd-apps-<env>-we-01|Cms-Function-CertificatePassword| Secret |**CMSBPA** certificate password of CMS-CMSBPA-NpnProd.pfx|
 |kv-cpd-apps-<env>-we-01|Cms-Function-CertificatePfxKey| Secret |Base64 format of the PFX file associated with **CMSBPA** self signed certificate.| Steps to retrieve : (i) Open Powershell in your system and run this command `cd <PATH TO FOLDER WHERE PFX FILE IS STORED>` (ii) Run the command `$fileContentBytes = get-content <NAME OF YOUR PFX> -Encoding Byte` (iii) Run this command `[System.Convert]::ToBase64String($fileContentBytes) | Out-File ‘pfx-encoded-bytes.txt’` (iv) Open the generated `pfx-encoded-bytes.txt` in notepad and copy the entire content - that's the Pfx key. Eg. `MIIKgQIBAzCCCj0GCSqGSIb3DQE....`|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-ConsumptionStorageAccount|Secret|Connection string of the resource **stcpdglobacmwe01**|Eg `DefaultEndpointsProtocol=https;AccountName=stcpdglobacmwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|
 |kv-cpd-apps-<env>-we-01|ConnectionStrings-CosmosDBAuthKey|Secret| Settings-> Keys -> PrimaryKey **cosmos-cpd-apps-str-<env>-we-01** ||

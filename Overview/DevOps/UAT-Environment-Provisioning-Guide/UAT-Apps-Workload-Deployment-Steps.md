@@ -471,7 +471,7 @@ Update role assignment for  following resources
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
 |aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity  | vnet-cpd-pltf-<env>-we-01/snet-cpd-apps-aks-<env>-we-01 | Network Contributor |
-|spn-cmsbpa-<env>|Service Principal|<env>-cdntasmu|CDN Endpoint Contributor. **Note**: Use spn-cmsbpa-dev for environments upto uat and spn-cmsbpa-pre for pre prod and prod. The app must be present in the directory where azure subscription is present.|
+|spn-cmsbpa-<env>|Service Principal|<env>-cdntasmu|CDN Endpoint Contributor. **Note**: Use spn-cmsbpa-dev for environments upto uat and spn-cmsbpa-prod for pre prod and prod. The app must be present in the same directory where azure subscription is present.|
 |spn-armapi-reader-npd|Service Principal|apim-cpd-shrd-<env>-we-01|Reader|
 
 ## 4.15 Configuring Notification Hubs for FCM and APNS

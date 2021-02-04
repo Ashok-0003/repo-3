@@ -157,8 +157,11 @@ https://customervoice.microsoft.com/
 
 "Hi {{First Name}},This survey is regarding the Case {{ID}} you had with us.We appreciate your business, and we hope you had a great experience with our customer service.Please share your feedback so we can make the experience even better."
 
+![customerVoice_Content.png](/.attachments/customerVoice_Content-ac251c12-58f7-467b-9470-c8f3edca2e35.png)
 
-5.  Updated the "Companyname" variable to "TASMU".
+
+
+5. Updated the "Companyname" variable to "TASMU".
 
 ![1.CustomerVoice_Signature.png](/.attachments/1.CustomerVoice_Signature-64333eaf-65ae-4dee-b068-2ab4cc4c6946.png)
 

@@ -36,6 +36,8 @@
 |SQL database  |sqldb-cpd-data-uat-we-02  |
 |SQL database  |sqldb-cpd-dynamics-data-uat-we-01  |
 |Synapse Workspace  |snp-cpd-data-uat-we-01   |
+|Synapse Workspace SQL pool |smartcity|
+|Synapse Workspace SQL pool |smartparking|
 |Virtual Machine  |vmdgattstwe01|
 |Virtual Machine  |vmdgattstwe02|
 |Virtual Machine  |vmdgattstwe03|

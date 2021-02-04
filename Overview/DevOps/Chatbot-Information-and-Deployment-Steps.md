@@ -44,7 +44,7 @@ Below items to be updated in variable group refer the [screenshot reference](htt
 NOTE: Above variables are also used for key-vault secret update for use inside bot Api also.
 
 # Add Keys in Azure DevOps Variable Groups for CD-BotLuisQnAInitialDeploy pipeline
-After updating infra repo, following Keys needs to be added/updated in the variable groups:
+Before starting CD-BotLuisQnAInitialDeploy pipeline following Keys needs to be added/updated in the variable groups:
 
 - **Bot-AppSettings-LuisAuthSubscriptionKey** 
 

@@ -20,15 +20,12 @@
 |Azure Databricks  | databricks-cpd-data-uat-we-01 |
 |Azure Data Factory  |adf-cpd-data-uat-we-01  |
 |Azure Data Explorer Cluster  |adxcpddatauatwe01  |
-|Event Hubs Namespace   |evh-cpd-am-uat-we-01ns  |
 |Load Balancer  |kucompute-adxcpddatauatwe01-elb  |
 |Load Balancer  |kucompute-adxcpddatauatwe01-ilb  |
 |Load Balancer  |kudatamgmt-adxcpddatauatwe01-elb|
 |Load Balancer  |kudatamgmt-adxcpddatauatwe01-ilb|
 |Public IP address  |adxuatdmip |
 |Public IP address  |adxuatpip |
-|Dedicated SQL pool  |sqldw-cpd-data-uat-we-01  |
-|Dedicated SQL pool  |sqldw-smartcity-data-uat-we-01  |
 |Storage Account (ADLS)  |dlsgoldzoneuatwe01  |
 |Storage Account (ADLS)  |dlslandingzoneuatwe01  |
 |Storage Account (ADLS)  |dlsrawzoneuatwe01  |
@@ -36,8 +33,6 @@
 |Storage Account (ADLS)  |dlscrmuatwe01  |
 |Storage Account  |stcpddatauatwe01  |
 |Storage Account  |stcpddatauatwe02  |
-|Stream Analytics job  |asa-cpd-data-uat-we-01  |
-|Stream Analytics job  |asa-cpd-data-uat-we-02  |
 |Synapse Workspace  |snp-cpd-data-uat-we-01   |
 |Virtual Machine  |vmdgattstwe01|
 |Virtual Machine  |vmdgattstwe02|

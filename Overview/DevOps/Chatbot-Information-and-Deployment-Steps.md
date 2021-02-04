@@ -43,6 +43,21 @@ Below items to be updated in variable group refer the [screenshot reference](htt
 
 NOTE: Above variables are also used for key-vault secret update for use inside bot Api also.
 
+# Add Keys in Azure DevOps Variable Groups for CD-BotLuisQnAInitialDeploy pipeline
+After updating infra repo, following Keys needs to be added/updated in the variable groups:
+
+- **Bot-AppSettings-LuisAuthSubscriptionKey** 
+
+![luis-auth-subs.PNG](/.attachments/luis-auth-subs-69380917-ff77-4503-b2a3-ae7b69364649.PNG)
+
+- **Bot-AppSettings-QnaArSubscriptionKey** 
+
+![qna-ar-subs.PNG](/.attachments/qna-ar-subs-b474c2b0-259c-436c-9251-9d67871b3a03.PNG)
+
+- **Bot-AppSettings-QnaEnSubscriptionKey** 
+
+![qna-en-subs.PNG](/.attachments/qna-en-subs-1bce95d8-e43f-442f-a38c-d9b0241395cf.PNG)
+
 
 ## LUIS QnAMaker Deployments
 
@@ -148,22 +163,17 @@ https://func-cpd-apps-luistra-<env>-we-01.azurewebsites.net/api/locale/en
 ### "ArQnaMaker": { "Endpoint"
 ![endpoint-ar.PNG](/.attachments/endpoint-ar-fe63e04c-6392-4c69-89c0-ec8e08bca714.PNG)
 
-## Add/Update Keys in Azure DevOps Variable Groups
+## Add Keys in Azure DevOps Variable Groups
 After updating infra repo, following Keys needs to be added/updated in the variable groups:
 
 - **LuisGeneralAppIdEn** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
 - **LuisGeneralAppIdAr** - From updated _infra\Scripts\AppConfigurations\settings\\**<env>**\appsettings.json_
       - The above two Keys are used to update appId for English and Arabic LUIS General services under _**/platfom-apis/pipelines/bot/cognitiveModels.json**_
-- **Bot-AppSettings-LuisAuthSubscriptionKey** 
-
-![luis-auth-subs.PNG](/.attachments/luis-auth-subs-65d64413-515d-41dc-80bc-4b09369a1404.PNG)
 
 - **Bot-AppSettings-LuisRtSubscriptionKey**
 
 ![luis-rt-subs.PNG](/.attachments/luis-rt-subs-a33610f0-e7e7-4bf0-8848-8d9daf590f08.PNG)
 
-- **Bot-AppSettings-QnaArSubscriptionKey** - From "cognitiveModels" -> "en-us" -> "knowledgebases" ->  "subscriptionKey" inside OutputCognitiveModels.json downloaded under this step - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=updating-infra-repo-with-luis-and-qna-keys)
-- **Bot-AppSettings-QnaEnSubscriptionKey** -  From "cognitiveModels" -> "ar-ar" -> "knowledgebases" ->  "subscriptionKey" inside OutputCognitiveModels.json downloaded under this step - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FChatbot%20Information%20and%20Deployment%20Steps&pageId=123&anchor=updating-infra-repo-with-luis-and-qna-keys)
 
 # Webapp Bot AD update
 

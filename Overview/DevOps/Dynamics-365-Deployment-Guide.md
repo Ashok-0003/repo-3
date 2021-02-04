@@ -155,9 +155,13 @@ https://customervoice.microsoft.com/
  
 4.	Edit the Design Section and add Case ID Variable in the content.
 
-"Hi {{First Name}},We are contacting you regarding the case {{ID}} you had with us.We appreciate your business, and we hope you had a great experience with our customer service. Please share your feedback so we can make the experience even better."
+"Hi {{First Name}},This survey is regarding the Case {{ID}} you had with us.We appreciate your business, and we hope you had a great experience with our customer service.Please share your feedback so we can make the experience even better."
 
-![image.png](/.attachments/image-6f644559-5c10-4094-a6b5-f675ec360577.png)
+
+5.  Updated the "Companyname" variable to "TASMU".
+
+![1.CustomerVoice_Signature.png](/.attachments/1.CustomerVoice_Signature-64333eaf-65ae-4dee-b068-2ab4cc4c6946.png)
+
  
 5.	Go to Send tab and click on Edit in Power Automate and Turn on Send Survey Flow.
 ![image.png](/.attachments/image-0c719ccd-b197-47e4-9572-1f71c2259bc4.png)

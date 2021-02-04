@@ -33,6 +33,8 @@
 |Storage Account (ADLS)  |dlscrmuatwe01  |
 |Storage Account  |stcpddatauatwe01  |
 |Storage Account  |stcpddatauatwe02  |
+|SQL database  |sqldb-cpd-data-uat-we-02  |
+|SQL database  |sqldb-cpd-dynamics-data-uat-we-01  |
 |Synapse Workspace  |snp-cpd-data-uat-we-01   |
 |Virtual Machine  |vmdgattstwe01|
 |Virtual Machine  |vmdgattstwe02|
@@ -59,11 +61,10 @@ The following list of variables are required to be updated after a new Azure inf
 | GoldZone-Key | Primary key for gold zone storage |
 | GoldZone-CRM-Key |Primary key for CRM storage  |
 | stcpddata01-Key | Primary key for stcpddata01 storage |
+| stcpddata02-Key | Primary key for stcpddata02 storage |
 | SQLServer01-Admin-Password | Admin Password |
 | SQLServer01-Admin-Username | Admin Username |
 | Databricks-bearerToken | Generate a new user bearer tokerm from databricks portal |
-| iot_sharedAccessPolicyKey | IOT policy key |
-| evh_sharedAccessPolicyKey | Event Hub policy key |
 | SPN-Data-Id | Service Principle Id |
 | SPN-Data-Key | Service Principle Key |
 | SPN-ADO-Id | Service Principle Id |
@@ -80,10 +81,6 @@ Add ADX deployment scripts in the following [project](https://dev.azure.com/TASM
 Run the following pipelines in sequence:
 1. [Deploy Azure SQLDB](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=501)
 1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=509)
-1. [Deploy Azure Function Parking Lot Update](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=543)
-1. [Deploy Azure Function Parking Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=544)
-1. [Deploy Azure Function Telemetry Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=625)
-1. [Deploy Azure Stream Analytics Jobs](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=545)
 1. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)

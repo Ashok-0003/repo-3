@@ -16,7 +16,6 @@
 
 |Resource Group|rg-cpd-data-uat-we-01|
 |--|--|
-|Analysis Services |aascpddatauatwe01|
 |API Connection |apicon-cpd-data-uat-we-01 (apicon-cpd-data-eh-uat-we-01-parameters.json) |
 |API Connection  |apicon-cpd-data-uat-we-02(apicon-cpd-data-sql-uat-we-01-parameters.json)  |
 |Function App  |func-cpd-data-uat-we-01  |
@@ -25,47 +24,34 @@
 |Function App  | func-cpd-telsim-uat-we-01 |
 |App Service Plan  | plan-cpd-data-uat-we-01 |
 |Application Insight  | appi-cpd-data-uat-we-01 |
-|Azure Databricks  | databricks-cpd-data-uat-we-01 |
-|Azure Data Factory  |adf-cpd-data-uat-we-01  |
-|Azure Data Explorer Cluster  |adxcpddatauatwe01  |
+|Azure Data Explorer Cluster  |adxcpddatauatwe02  |
 |Event Hubs Namespace   |evh-cpd-data-uat-we-01ns  |
 |Event Hubs Namespace   |evh-cpd-data-uat-we-02ns  |
 |Azure IoT Hub  |iot-cpd-data-uat-we-01  |
-|Load Balancer  |kucompute-adxcpddatauatwe01-elb  |
-|Load Balancer  |kucompute-adxcpddatauatwe01-ilb  |
-|Load Balancer  |kudatamgmt-adxcpddatauatwe01-elb|
-|Load Balancer  |kudatamgmt-adxcpddatauatwe01-ilb|
-|Log Analytics Workspace  |iot-cpd-data-uat-we-01  |
+|Load Balancer  |kucompute-adxcpddatauatwe02-elb  |
+|Load Balancer  |kucompute-adxcpddatauatwe02-ilb  |
+|Load Balancer  |kudatamgmt-adxcpddatauatwe02-elb|
+|Load Balancer  |kudatamgmt-adxcpddatauatwe02-ilb|
+|Log Analytics Workspace  |iot-cpd-data-uat-we-02  |
 |Logic App  |logic-cpd-data-uat-we-01  |
-|Public IP address  |adxuatdmip |
-|Public IP address  |adxuatpip |
+|Public IP address  |adxuatdmip02 |
+|Public IP address  |adxuatpip02 |
 |SQL database  |sqldb-cpd-data-uat-we-01  |
 |SQL database  |sqldb-cpd-dynamics-data-uat-we-01  |
-|Dedicated SQL pool  |sqldw-cpd-data-uat-we-01  |
-|Dedicated SQL pool  |sqldw-smartcity-data-uat-we-01  |
 |SQL server  |sql-cpd-data-uat-we-01  |
-|Storage Account (ADLS)  |dlsgoldzoneuatwe01  |
-|Storage Account (ADLS)  |dlslandingzoneuatwe01  |
-|Storage Account (ADLS)  |dlsrawzoneuatwe01  |
-|Storage Account (ADLS)  |dlsopenzoneuatwe01  |
-|Storage Account (ADLS)  |dlscrmuatwe01  |
-|Storage Account  |stcpddatauatwe01  |
-|Storage Account  |stcpddatauatwe02  |
+|Storage Account  |stcpddatauatwe03  |
+|Storage Account  |stcpddatauatwe04  |
 |Stream Analytics job  |asa-cpd-data-uat-we-01  |
 |Stream Analytics job  |asa-cpd-data-uat-we-02  |
-|Synapse Workspace  |snp-cpd-data-uat-we-01   |
-|Virtual Machine  |vmdgattstwe01|
-|Virtual Machine  |vmdgattstwe02|
-|Virtual Machine  |vmdgattstwe03|
-|Virtual Machine  |vmdgattstwe04|
+|Stream Analytics cluster  |asa-cpd-data-uat-we-03  |
 
-|Resource Group|rg-cpd-data-sec-uat-we-01|
+|Resource Group|rg-cpd-data-sec-uat-we-02|
 |--|--|
 |Key Vault |kv-cpd-data-uat-we-01|
 
 
 # Deployment of Data Infrastructure
-1. [Deployment of KeyVault](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=488)
+1. [Deployment of KeyVault](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=488). The KeyVault Instance is shared with Central Data Platform, so if CDP has been deployed before, this point needs to be avoided.
 1. [Deployment of KeyVault secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=493)
 1. [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
 
@@ -75,10 +61,8 @@ The following list of variables are required to be updated after a new Azure inf
 
 |Variable Name| Description |
 |--|--|
-| RawZone-Key | Primary key for raw zone storage |
-| GoldZone-Key | Primary key for gold zone storage |
-| GoldZone-CRM-Key |Primary key for CRM storage  |
-| stcpddata01-Key | Primary key for stcpddata01 storage |
+| stcpddata03-Key | Primary key for stcpddatauat03 storage |
+| stcpddata04-Key | Primary key for stcpddatauat04 storage |
 | SQLServer01-Admin-Password | Admin Password |
 | SQLServer01-Admin-Username | Admin Username |
 | Databricks-bearerToken | Generate a new user bearer tokerm from databricks portal |
@@ -108,20 +92,9 @@ Run the following pipelines in sequence:
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)
 
-# Deployment of the solution components (Smart City Dashboards components)
-Run the following pipelines in sequence:
-1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=510)
-1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=474)
-
-# Deployment of the solution components (Cost Management components)
-Currently the Synapse Workspace product is not mature enough to be fully deployed via Azure Devops. Following manual steps are needed after the automatic deployment of the resource in Azure Portal:
-1. Connect to snp-cpd-data-<ENV>-we-01-ondemand.sql.azuresynapse.net with Synapse Workspace Studio or with a SQL client of your choice
-2. Run queries described in /CommandControl/Mcs.Tasmu.CostMgmt.SyA/CostManagementSynapseQueries, with manual steps as described inline
-3. Please note that Synapse Workspace connects to the Gold Zone datalake with Shared Access Signature, which has an expire date.
-
 
 # Deployment of Power BI Reports
-Currently we are deploying all the Power BI reports in the tst environment. A new workspace named “Automation Tst - Tasmu Command & Control Center Dashboards” is created where all the reports are automatically deployed.
+Currently we are deploying all the Power BI reports in the TST environment. A new workspace named “Automation Tst - Tasmu Command & Control Center Dashboards” is created where all the reports are automatically deployed.
 For the automatic deployment, “Power BI: Action” extension is used.
 * Automatic:
   * Deployment of Power BI reports to tst environment.

@@ -91,7 +91,7 @@
 |MicrosoftAppId| Microsoft App Id/ClientId of webAppBot bot-cpd-apps-<env>-dev-01 | <p>For initial deployment [refer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=updating-infra-repo-with-luis-and-qna-keys)</p> Eg: `2d6a26ed-4c86-4d6e-b7a6-b7cee194e5e9`|
 |Mobile:AccountManagementApiEndPoint|API endpoint for accountmanagement service |Eg. `https://api.<env>.sqcp.qa/accountmanagement`|
 |Mobile:AuthenticationSettings:BoPolicySignUpSignIn|AAD B2C policy for business owner signup  ||
-|Mobile:AuthenticationSettings:ClientId|App registration for the mobile application in AAD B2C  | guid-type value|
+|Mobile:AuthenticationSettings:ClientId|App registration for the **TASMU-MobileApp** in AAD B2C  | Eg: `c9e6a345-fabf-4cbc-94a5-1a94638aee51`|
 |Mobile:AuthenticationSettings:PolicyChangePassword|AAD B2C policy for changing password ||
 |Mobile:AuthenticationSettings:PolicyLinkAccounts|AAD B2C policy for link accounts  ||
 |Mobile:AuthenticationSettings:PolicyResetPassword|AAD B2C policy for resetting password ||
@@ -151,7 +151,7 @@
 |OrganisationApi.AzureADOptions:Instance|Instance of Central-Platform-Core-APIs App |Eg:  https://login.microsoftonline.com/{0}|
 |OrganisationApi.AzureADOptions:TenantId|Tenant Id of Central-Platform-Core-APIs App |Eg: 24f9d756-bf0c-43e9-ad5e-2073ae2d6698|
 |PaymentGWSettings:GetPaymentStatusServiceURL|Ooredoo Payment Gateway Get Payment Preference Service URL provided by customer.||
-|PaymentGWSettings.ADB2CAuth:ClientId|Client Id of Central-Platform-Core-APIs| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
+|PaymentGWSettings.ADB2CAuth:ClientId|Client Id of **Central-Platform-Core-APIs** in AD B2C App Registrations| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |PaymentGWSettings.ADB2CAuth:Domain|Domain Name of B2C Tenant |Eg: tasmucpb2cnonprod.onmicrosoft.com |
 |PaymentGWSettings.ADB2CAuth:Instance|Instance of TASMU non-prod/prod B2C authentication |Eg: https://tasmucpb2cnonprod.onmicrosoft.com/tfp/ |
 |PaymentGWSettings.ADB2CAuth:SignUpSignInPolicyId|Get the B2C Individual policy name from custom policies in B2C Tenant B2C_1A_Signup_Signin_<env>|Eg: B2C_1A_signup_signin |
@@ -160,8 +160,8 @@
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|URL of the Platform-API's|Eg: `https://api.dev.sqcp.qa/payment/api/PaymentGW` |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|URL of the vistamoney|Eg: `https://test.vistamoney.info/paymentgateway-external/checkoutvista.xhtml?` |
 |PaymentGWSettings.AuthorizeCard:Scope|Scope of Platform-API's App|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
-|PaymentGWSettings.AuthorizeCard:ClientId|Client Id of Payment Gateway API app registration in B2C tenant.|Eg: dd0623e2-0163-4b05-82f8-ef798ff16c86 |
-|PaymentGWSettings.S2SAuth:Audience|Audience of Payment Gateway APIs|Eg: 51d6e508-7fdb-426c-8896-161c29173e7f|
+|PaymentGWSettings.AuthorizeCard:ClientId|Client Id of **TASMU Portal** app registration in B2C tenant.|Eg: `dd0623e2-0163-4b05-82f8-ef798ff16c86` |
+|PaymentGWSettings.S2SAuth:Audience|Client Id of **Central-Platform-Core-APIs** in AD B2C App Registrations| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |PaymentGWSettings.S2SAuth:Authority|Authority of Payment Gateway APIs|Eg: https://login.microsoftonline.com/fa525e36-bf96-43bf-8932-79524b82ce2a/v2.0/ |
 |PowerBIEmbed.AzureAd:ClientId|Client Id of **spn-powerbiembed** [app registration](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments?anchor=application-registrations-in-azure-ad---tasmusqcp.onmicrosoft.com)  |Eg: `07ab695f-5e5d-4e05-a5e6-645c70a8e4ff`  |
 |PowerBIEmbed.AzureAd:TenantId| Tenant Id of Azure AD hosting the spn-powerbiembed app registration  |Eg: `92603419-35d1-4eb0-8427-cac731071355` |

@@ -159,7 +159,7 @@
 |PaymentGWSettings.AuthorizeCard:AutoPayTerminalId|unique terminal ID provided by customer for Ooredoo Payment Gateway.|Eg: TASMU-DEV1 |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayAPIurl|URL of the Platform-API's|Eg: `https://api.dev.sqcp.qa/payment/api/PaymentGW` |
 |PaymentGWSettings.AuthorizeCard:PaymentGatewayUrl|URL of the vistamoney|Eg: `https://test.vistamoney.info/paymentgateway-external/checkoutvista.xhtml?` |
-|PaymentGWSettings.AuthorizeCard:Scope|Scope of Platform-API's App|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
+|PaymentGWSettings.AuthorizeCard:Scope|Scope of **Central-Platform-Core-APIs** App|Eg. `https://tasmucpb2cnonprod.onmicrosoft.com/central-platform-core-apis/.default`|
 |PaymentGWSettings.AuthorizeCard:ClientId|Client Id of **TASMU Portal** app registration in B2C tenant.|Eg: `dd0623e2-0163-4b05-82f8-ef798ff16c86` |
 |PaymentGWSettings.S2SAuth:Audience|Client Id of **Central-Platform-Core-APIs** in AD B2C App Registrations| Eg: bc67474e-612b-4d7f-b75a-ac54d45f143a|
 |PaymentGWSettings.S2SAuth:Authority|Authority of Payment Gateway APIs|Eg: https://login.microsoftonline.com/fa525e36-bf96-43bf-8932-79524b82ce2a/v2.0/ |

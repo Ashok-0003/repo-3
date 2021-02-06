@@ -8,7 +8,7 @@
 |kv-cpd-apps-<env>-we-01|Azure-Search-Key|Secret|Primary Admin key of resource srch-cpd-apps-cog-<env>-we-01 ||
 |kv-cpd-apps-<env>-we-01|BotAppSecret|Secret|  Create client secret for **bot-cpd-apps<env>-we-01** WebAppBot resource and paste the value in this key. | [Refer steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update) |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisAuthSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luiauth-<env>-we-01** | |
-|kv-cpd-apps-<env>-we-01|Bot-AppSettings-LuisRtSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luisrt-<env>-we-01** | |
+|kv-cpd-apps-<env>-we-01|Bot-AppSettinacrcppglobprdwe01-spngs-LuisRtSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **cog-cpd-apps-luisrt-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaEnSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **appcog-cpd-apps-qna-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaArSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **appcog-cpd-apps-arqna-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|CDNSettings-StorageAccount| Secret | Connection string of the resource **stcpdshrd<env>we01**|Eg `DefaultEndpointsProtocol=https;AccountName=stcpdshrduatwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|
@@ -42,7 +42,7 @@
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret | Ooredoo SMS Gateway Provider API Name, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret | Ooredoo SMS Gateway Password, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret | Client Secret of **Central-Platform-Core-APIs** app on Azure B2C Tenant ||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | Client Secret of Platform-API's app on Azure B2C Tenant ||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | Client Secret of **Central-Platform-Core-APIs** app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-Password| Secret |Ooredoo Payment Gateway Password, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-GetPaymentPreferenceServiceURL| Secret |Ooredoo Payment Gateway Get Payment Preference Service URL provided by customer.||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-TerminalPwd| Secret |Ooredoo Payment Gateway Terminal password provided by customer.||

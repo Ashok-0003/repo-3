@@ -52,7 +52,7 @@
 
 # Deployment of Data Infrastructure
 1. [Deployment of KeyVault](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=488). The KeyVault Instance is shared with Central Data Platform, so if CDP has been deployed before, this point needs to be avoided.
-1. [Deployment of KeyVault secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=493)
+1. [Deployment of KeyVault secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=493) - as above.
 1. [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
 
 # Environment Variables for Azure Pipelines

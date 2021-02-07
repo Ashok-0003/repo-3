@@ -76,8 +76,6 @@ The following list of variables are required to be updated after a new Azure inf
 Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=%2FSmartParking%2FMcs.Tasmu.SmartParking.ADX) similar to the existing environments implementation for:
 1. Deploy
 1. Functions
-1. Policies 
-1. Tables
 
 # Deployment of the solution components (Synthetic Use Case components (not production ready!))
 Run the following pipelines in sequence:

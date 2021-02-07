@@ -52,8 +52,12 @@
 
 # Deployment of Data Infrastructure
 1. [Deployment of KeyVault](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=488). The KeyVault Instance is shared with Central Data Platform, so if CDP has been deployed before, this point needs to be avoided.
-1. [Deployment of KeyVault secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=493) - as above.
-1. [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
+1. Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - uat.
+The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\data-secrets.yml
+Stage for uat must be added to pipeline. -  as above
+
+1. Run the pipeline to populate key vault [CD-KeyVaultSecrets-Master-Data-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=966) - as above.
+1.  Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
 
 # Environment Variables for Azure Pipelines
 The following list of variables are required to be updated after a new Azure infrastructure is created prior to deploying the solution components below.

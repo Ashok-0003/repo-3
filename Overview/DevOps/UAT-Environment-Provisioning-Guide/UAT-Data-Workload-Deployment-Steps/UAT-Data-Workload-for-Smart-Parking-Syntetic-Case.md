@@ -50,7 +50,11 @@
 |Key Vault |kv-cpd-data-uat-we-01|
 
 
-# Deployment of Data Infrastructure
+# Deployment of Data Infrastructure in following sentence.
+
+### Please pay your attention to keep the proper order of activities to avoid getting errors due to lack of secrets in KeyVault.
+
+
 1. [Deployment of KeyVault](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=488). The KeyVault Instance is shared with Central Data Platform, so if CDP has been deployed before, this point needs to be avoided.
 1. Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - uat.
 The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\data-secrets.yml

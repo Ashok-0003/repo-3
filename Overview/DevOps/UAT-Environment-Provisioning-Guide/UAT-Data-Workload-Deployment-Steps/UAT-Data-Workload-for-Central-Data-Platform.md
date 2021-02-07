@@ -87,6 +87,7 @@ Run the following pipelines in sequence:
 # Deployment of the solution components (Smart City Dashboards components)
 Run the following pipelines in sequence:
 1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=510)
+1. Create Databricks Cluster (Placeholder)
 1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=474)
 
 # Deployment of the solution components (Cost Management components)

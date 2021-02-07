@@ -73,7 +73,7 @@ The following list of variables are required to be updated after a new Azure inf
 | SPN-ADO-Key | Service Principle Key |
 
 # Update ADX Project for new Environment
-Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=%2FSmartParking%2FMcs.Tasmu.SmartParking.ADX) similar to the existing environments implementation for:
+Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=PlatformEvents/Mcs.PlatformEvents.ADX) similar to the existing environments implementation for:
 1. Deploy
 1. Functions
 

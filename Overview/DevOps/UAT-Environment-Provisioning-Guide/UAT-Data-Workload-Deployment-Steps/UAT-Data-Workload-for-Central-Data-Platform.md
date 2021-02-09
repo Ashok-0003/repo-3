@@ -88,7 +88,7 @@ Add ADX deployment scripts in the following [project](https://dev.azure.com/TASM
 
 # Deployment of the solution components (Synthetic Use Case components (not production ready!))
 Run the following pipelines in sequence:
-1. Deploy Sectorial Data [Environment](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=509) 
+1. Deploy Sectorial Data -> [Environment](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=509) 
 1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=509)
 1. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)

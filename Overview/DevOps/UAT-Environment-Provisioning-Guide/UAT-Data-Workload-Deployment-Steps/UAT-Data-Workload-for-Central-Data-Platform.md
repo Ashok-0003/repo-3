@@ -78,6 +78,8 @@ The following list of variables are required to be updated after a new Azure inf
 | SPN-Data-Key | Service Principle Key |
 | SPN-ADO-Id | Service Principle Id |
 | SPN-ADO-Key | Service Principle Key |
+| rawzone | Rawzone storage account name  |
+| goldzone | Goldzone Storage Account Key |
 
 # Update ADX Project for new Environment
 Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=PlatformEvents/Mcs.PlatformEvents.ADX) similar to the existing environments implementation for:

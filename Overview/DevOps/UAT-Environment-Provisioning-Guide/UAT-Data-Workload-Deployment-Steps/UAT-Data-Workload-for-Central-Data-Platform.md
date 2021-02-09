@@ -79,7 +79,7 @@ The following list of variables are required to be updated after a new Azure inf
 | SPN-ADO-Id | Service Principle Id |
 | SPN-ADO-Key | Service Principle Key |
 | rawzone | Rawzone storage account name  |
-| goldzone | Goldzone Storage Account Key |
+| goldzone | Goldzone storage account name|
 
 # Update ADX Project for new Environment
 Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=PlatformEvents/Mcs.PlatformEvents.ADX) similar to the existing environments implementation for:
@@ -88,6 +88,7 @@ Add ADX deployment scripts in the following [project](https://dev.azure.com/TASM
 
 # Deployment of the solution components (Synthetic Use Case components (not production ready!))
 Run the following pipelines in sequence:
+1. Deploy Sectorial Data [Environment](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=509) 
 1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=509)
 1. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)

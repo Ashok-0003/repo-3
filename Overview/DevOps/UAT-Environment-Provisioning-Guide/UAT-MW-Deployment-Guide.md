@@ -107,8 +107,6 @@ param (
      ![image.png](/.attachments/image-987edea8-bafa-4bac-91ac-1e1080cbd883.png)
 
 - For translation of list titles, content types, field names :
-
- Download this zip file **Scripts/CMS/ProvisioningScripts/resources/ResourceFileTranslation.zip** to your system and extract it to a folder.
  
 For each of the sites repeat the following steps
 1. Go to site settings and click on Export Translations
@@ -117,15 +115,17 @@ For each of the sites repeat the following steps
 1. Choose the language as Arabic and click on Export, a file will get downloaded to your system.
 
      ![image.png](/.attachments/image-9bf1df77-9f48-4509-b216-b5584f717b38.png)
-1. Copy the downloaded resource file to the folder where the zip file is extracted.    
-1. Open UdatedResx.ps file in notepad, and edit the first line of the file, update the name of your resource(.resx) file and save it.
-   ![image.png](/.attachments/image-ce5232e5-0984-42a2-b60e-8f2ffeb28a2b.png)
-1. Open Powershell on your system and run the following commands:
+   
+One you have downloaded these Resource Files for all the site collections, go to TASMU CMS Marketplace site and follow these steps: 
+1. Go to Documents Library.
+2. Click on New -> Folder. 
+3. Give the Folder Name as "ResourceFiles" and click on create.
+4. Open "ResourceFiles" folder, click on Upload -> Files, select all the resource files and upload them.
+5. Verify the variables and Run the pipeline [CD-SPO-UpdateResx-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1014) 
+6. The above pipeline will update the files which you have uploaded in ResourceFiles folder, download the updated files back to your system.
 
-    i) `cd <Path to your extracted folder>` eg: cd C:\Users\XXXXX\Downloads\ResourceFileTranslation
+For each of the sites follow these steps:
 
-   ii) `.\UpdateResx.ps1`
-Once you get the message "File Updated Successfully" on the powershell, proceed to step 6. 
 1. Go to site settings and click on Import Translations
      ![image.png](/.attachments/image-c35e80ae-eb45-4207-8a20-9de2cac55ca0.png)
 1. Click on Browse, select the updated resx file and click on Import

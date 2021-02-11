@@ -102,7 +102,7 @@ param (
 1. Make sure the default language for cms.automation account is set to Arabic in the Office profile
      ![image.png](/.attachments/image-da51dc53-4c85-4e2d-ac44-176896a27e7f.png)
      Steps to add a new language : https://support.microsoft.com/en-us/office/change-your-personal-language-and-region-settings-caa1fccc-bcdb-42f3-9e5b-45957647ffd7
-1. Go to pipeline [CD-SPO-NavTrans-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=722)
+1. Go to pipeline [CD-SPO-NavTrans-Uat-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=722)
 1. Update the necessary variables and run the pipeline.
      ![image.png](/.attachments/image-987edea8-bafa-4bac-91ac-1e1080cbd883.png)
 

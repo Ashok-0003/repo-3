@@ -501,99 +501,9 @@ Update role assignment for  following resources
 1. Role Assignments applied as per [table](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.14-role-assignments)
 1. Service Connection for Azure Container Registry and Azure Resoucre Manager for AKS
 
-### 5.2.2 Update yml files
-1. In the platform APIs, repo - pipelines\deploy\charts\stable\agic-ingress
-1. Create a folder for <env>
-1. Add file [helm-config.yaml](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fpipelines%2Fdeploy%2Fcharts%2Fstable%2Fagic-ingress%2Fuat%2Fhelm-config.yaml) to it - reference from uat
-1. Update following values:
-
-```
-subscriptionId: <subscriptionId>
-resourceGroup: rg-cpd-apps-aks-<env>-we-01
-name: agw-cpd-apps-aks-<env>-we-01
-```
-```
-identityResourceID: <Resource ID of mi-cpd-apps-aks-<env>-we-01>
-identityClientID: <Client ID of mi-cpd-apps-aks-<env>-we-01>
-```
-1. Add charts for pod identity - pipelines\deploy\charts\stable\aad-pod-identity-<env>
-1. Update values.yml for following values:
-```
-azureIdentities:
-  - name: "azure-identity"
-    namespace: "kube-system"
-    type: 0
-    resourceID: "/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-apps-aksnode-<env>-we-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mi-cpd-apps-aks-<env>-we-01"
-    clientID: "#Client ID of Pod Identity" #Client ID of Pod Identity
-    binding:
-      name: "mi-cpd-apps-aks-<env>-we-01-binding"
-      selector: "mi-cpd-apps-aks-<env>-we-01"
-```
-1. Edit pipelines\deploy\cd-platformapis-release.yml to add a new stage for the new env as below
-
-|Variables| Value | Description | Possible Value |
-|--|--|--|--|
-|group|<env>|Name of the variable group in ADO| uat|
-|azureResourceGroup|rg-cpd-apps-aks-<env-we-01| Name of cluster resource group |rg-cpd-apps-aks-uat-we-01|
-|kubernetesCluster|aks-cpd-apps-<env>-we-01| Name of the kubernetes cluster |aks-cpd-apps-uat-we-01|
-|containerRegistry|<acrname>.azurecr.io| Azure Container Registry end point |acrcpdglobnpdwe01.azurecr.io|
-|appConfigConnection|https://acst-cpd-apps-str-<env>-we-01.azconfig.io| App Configuration Store End Point|https://acst-cpd-apps-str-uat-we-01.azconfig.io|
-|podIdentity|mi-cpd-apps-aks-<env>-we-01| Name of the pod managed identity created in node resource group |mi-cpd-apps-aks-uat-we-01|
-|env| <env> | 3 chars name of the env | uat|
-|agentPoolEnv|  | Name of the self Hosted Agent Pool to be used for deployments | |
-
-Following two parameters are only required to be true only during initial deployment:
-updateHelmResources: true
-addKeda: true
-
-```
-- stage: Deploy_<env>
-    displayName: Deploy <env> stage
-    dependsOn: Build
-    variables:
-      - group: <env>
-      - name: azureResourceGroup
-        value: "rg-cpd-apps-aks-<env>-dev-we-01"
-      - name: kubernetesCluster
-        value: "aks-cpd-apps-<env>-we-01"
-      - name: containerRegistry
-        value: "acrcpdglobnpdwe01.azurecr.io"
-      - name: appConfigConnection
-        value: "https://acst-cpd-apps-str-<env>-we-01.azconfig.io"
-      - name: podIdentity
-        value: "mi-cpd-apps-aks-<env>-we-01"
-      - name: env
-        value: "<env>"
-      - name: agentPoolEnv
-        value: ""
-    pool:
-      name: $(agentPoolEnv)
-    jobs:
-      - deployment: Deploy
-        displayName: Deploy Dev APIs
-        environment: "<env>"
-        strategy:
-          runOnce:
-            deploy:
-              steps:
-                - task: HelmInstaller@1
-                  inputs:
-                    helmVersionToInstall: "3.2.1"
-
-                - template: templates/helm-resources.yml
-                  parameters:
-                    updateHelmResources: true
-
-                - template: templates/deploy-dapr.yml
-                  parameters:
-                    installDapr: true
-
-                - template: templates/add-keda.yml
-                  parameters:
-                    addKeda: true
-
-                - template: templates/deploy-apps.yml
-```
+### 5.2.2 [Update platform apis pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?anchor=adding-a-new-environment)
+- [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)
+- [CD-PlatformFuncApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738)
 
 
 ## 5.3 Deploy Web Apps
@@ -602,9 +512,8 @@ addKeda: true
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 1. Service Connection for Azure Resoucre Manager
 
-### 5.3.2 Update yml files
-1. For web apps, add stage to the following pipeline pointing to uat resources
-[CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
+### 5.3.2 [Update web apps pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/web-apps?path=%2F&version=GBmaster&_a=contents&anchor=adding-a-new-environment)
+- [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
 
 ## 5.4 Deploy Chatbot Solutions
 ### 5.4.1 Dependencies
@@ -612,10 +521,3 @@ addKeda: true
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets 
 1. Service Connection for Azure Resoucre Manager
 ### 5.4.2 [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
-
-## 5.5 Deploy Payment Preference and CMS Functions
-### 5.5.1 
-1. Service Connection for Azure Resoucre Manager
-### 5.5.2 Deploy function apps
-1. For deploying Payment Preference and CMS function to function app, add stage to the following pipeline 
-[CD-PlatformFuncApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738)

@@ -17,6 +17,7 @@ https://docs.microsoft.com/en-us/dynamics365/customer-service/customer-service-h
 
 2. This is how we can link related Knowledge article from KB Article.
 open Knowledge Article record. Then summary->Related Information->Related Articles . Same way we can link the related product from KB Article.
+
 ![RelatedArticle1.png](/.attachments/RelatedArticle1-7364b827-f8d5-46eb-96bb-95b13ff80b00.png) 
 
 ![RelatedArticle2.png](/.attachments/RelatedArticle2-fcbe81e4-1a51-4260-8f96-2538d0ed8e04.png)

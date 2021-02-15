@@ -26,10 +26,10 @@ open Knowledge Article record. Then summary->Related Information->Related Articl
 - profile types = b2c individual, b2c business owner
 - catalogue type = use case
 - product category = smart eservices
-As per the Above Condition , It will "My Tasmu" Portal.
+As per the Above Condition , It will show in "My Tasmu" Portal.
 
 In KB Article , When we are selecting the related product as below:
 -  profile types = b2b individual, b2b organisation
 - catalogue type = tasmu
 - product category = tasmu product & services
-As per the Above Condition , It will "Marketplace" Portal.
+As per the Above Condition , It will show in "Marketplace" Portal.

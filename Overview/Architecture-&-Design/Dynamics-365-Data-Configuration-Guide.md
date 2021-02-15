@@ -5,6 +5,19 @@
 We need to add "Marketplace Product Charge" and "Marketplace Product Lifecycle" for the bundle level. We can move to the "Bundle & Association" tab . we can associate the Bundle product there. Now we need to Publish the "Product". 
 
 3. For the Individual Product , we need to enter all the mandatory fields and fill the "Parent" field . Then we can add the "Marketplace Product Lifecycle", "Marketplace Product Plan Benefit", "Marketplace Product Charge", "Marketplace Product Tariff" and "Marketplace Product Usage Limit". Then Publish the Product.
+
+4. While creating product, when we are selecting  as below:
+- profile types = b2c individual, b2c business owner
+- catalogue type = use case
+- product category = smart eservices
+As per the Above Condition , It will visible in "My Tasmu" Portal.
+
+5. While creating product, when we are selecting  as below:
+-  profile types = b2b individual, b2b organisation
+- catalogue type = tasmu
+- product category = tasmu product & services
+As per the Above Condition , It will visible in "Marketplace" Portal.
+
 ---
 Tool for migrating some portion of products.
 [Product Catelog Data Migration.docx](/.attachments/Product%20Catelog%20Data%20Migration-5113cdcc-c92d-4998-b98a-6cd2752fbd90.docx)

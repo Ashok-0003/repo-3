@@ -17,12 +17,11 @@
 [CD-CDNContainer-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=967)
 # 5. Deploy Web Apps or Portals
 [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
-# 6. Deploy Platform Function Apps
-[CD-PlatformFuncApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738)
-# 7. Deploy Bot 
+
+# 6. Deploy Bot 
 [CD-Bot-Release-Master](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=293)
-# 8. Deploy CRM
+# 7. Deploy CRM
 [CD-CrmPlatform-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=111)
-# 9. Build and Release Mobile Apps
+# 8. Build and Release Mobile Apps
 [CI-MobileApps-Android-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=36)
 [CI-MobileApps-iOS-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=108)

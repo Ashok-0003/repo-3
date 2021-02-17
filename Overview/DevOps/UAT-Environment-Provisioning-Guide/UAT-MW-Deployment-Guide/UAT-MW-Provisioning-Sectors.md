@@ -283,7 +283,15 @@ sector would need to come under the section </SPAN><B><SPAN style="color:black">
  
 </SPAN><B><SPAN  lang=EN-US></SPAN></B></P>
 
-<p>
-<br/><br/><br/>
-</p>
+<br>
 
+**Modifying Themes.xml for provisioning**
+
+![image.png](/.attachments/image-b6b5322c-6d59-494f-9dc8-298aff9eb9c1.png)
+
+A theme entry must be present in Themes.xml file for the corresponding Sector theme. The theme name must match with the Theme name provided in Sector.xml theme tag.
+
+**Uploading Custom Style(.css) file to Style Library**
+
+![image.png](/.attachments/image-d340e24a-12d5-46fe-931a-7e795b433e14.png)
+A custom style(.css) file should be present at  ‘https://<tenant>.sharepoint/Style Library’. Naming convention needs to be followed (eg. for the sector with alias cms-sector-technology the name of the file should be cms-sector-technology-customstyle.css).  

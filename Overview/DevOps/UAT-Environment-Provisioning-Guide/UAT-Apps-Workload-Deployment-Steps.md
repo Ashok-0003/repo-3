@@ -62,6 +62,7 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 ### 3.2.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
+|ActionGroup | ag-cpd-apps-mon-uat-we-01||
 |ApplicationInsights | appi-cpd-apps-mon-uat-we-01||
 |AutomationAccounts | aut-cpd-apps-mon-uat-we-01||
 |EventHubNamespaces | evhns-cpd-apps-mon-uat-we-01||

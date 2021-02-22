@@ -504,7 +504,7 @@ Update role assignment for  following resources
 
 ### 5.2.2 [Update platform apis pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?anchor=adding-a-new-environment)
 - [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)
-- [CD-PlatformFuncApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738)
+- [CD-PlatformAPIs-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1021)
 
 
 ## 5.3 Deploy Web Apps

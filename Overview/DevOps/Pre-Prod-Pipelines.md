@@ -9,7 +9,9 @@
 # Bot
 * [CD-BotApi-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1022)
 # APIM
-* [CD-APIMConfig](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=962)
-* [CD-APIMDevPortal](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=963)
+
 ## CI
+* [CI-APIMConfig-Prd-Master-Build] (https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=961)
 ## CD
+* [CD-APIMConfig-pre-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=962)
+* [CD-APIMDevPortal-rg-cpp-shrd-pre-we-01-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=963)

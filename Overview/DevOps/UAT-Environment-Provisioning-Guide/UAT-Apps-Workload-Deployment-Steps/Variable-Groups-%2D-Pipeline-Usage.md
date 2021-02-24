@@ -19,4 +19,5 @@ Notes:
 |Mobile-ConfigApiEndPoint| API endpoint for Config API |Eg. `https://api.uat.sqcp.qa/config`||Plain TextCI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-NotificationHubListenConn| Listen Access connection string of Azure Notification hub `ntfns-cpd-apps-str-uat-we-01` ||Secure|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-NotificationHubName| Name of the Azure Notification hub that the mobile app integrated. |Eg. `ntf-cpd-apps-str-uat-we-01`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
+|Mobile-Msal| The mobile app registration id (clientId) in AAD B2C used for MSAL operations. |Eg. `msalg-u-i-d`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |BPM-APIM-Password| BPM APIM Password ||

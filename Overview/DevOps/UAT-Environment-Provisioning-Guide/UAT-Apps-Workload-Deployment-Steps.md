@@ -486,7 +486,7 @@ Update role assignment for  following resources
 
 # 5 Deployment of Private Endpoints
 ## 5.1 Add service endpoints to subnets 
-1. Update vnet-cpd-pltf-<env>-we-01 ARM template for adding service endpoints to subnets.
+1. Update `vnet-<sub>-pltf-<env>-we-01` ARM template for adding service endpoints to subnets.
 ```
  "subnets": {
             "value": [
@@ -510,15 +510,30 @@ Update role assignment for  following resources
             ]
  }
 ```
-2. Run [CI-VirtualNetwork-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=2) and then [CD-rg-cpd-pltf-net-<env>-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355) to deploy changes.
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|VirtualNetwork| vnet-cpd-pltf-uat-we-01 ||
+
+2. Run [CI-VirtualNetwork-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=2) and then [CD-rg-<sub>-pltf-net-<env>-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355) to deploy changes.
 
 ## 5.2 Add Private DNS Zones
-1. Add template for private dns zone like `cpd-privatelink.cosmos.windows.net`
+1. Add template for private dns zone like `<sub>-privatelink.cosmos.windows.net`
 1. One DNS Zone can have multiple virtual networks hence only one DNS Zone is required for a resource on a subscription. [Refer this](https://portal.azure.com/#@tasmusqcp.onmicrosoft.com/resource/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-pltf-net-dev-we-01/providers/Microsoft.Network/privateDnsZones/privatelink.cosmos.windows.net/overview).
+
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|PrivateDNSZones| cpd-privatelink.cosmos.windows.net ||
+
+3. Run [CI-PrivateDNSZones-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=272) and then [CD-rg-<sub>-pltf-net-<env>-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=79)
 
 ## 5.3 Add private endpoints to resources
 1. Add template for private endpoint like `prvep-cpd-apps-cosmos-<env>-we-01`
-1. Run [CI-PrivateEndpoint-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=748) and then [CD-rg-cpd-apps-net-<env>-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|PrivateEndpoint| prvep-cpd-apps-cosmos-uat-we-01 ||
+
+2. Run [CI-PrivateEndpoint-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=748) and then [CD-rg-cpd-apps-net-<env>-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 
 
 

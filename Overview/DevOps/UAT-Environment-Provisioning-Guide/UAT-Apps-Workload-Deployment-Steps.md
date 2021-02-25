@@ -514,7 +514,7 @@ Update role assignment for  following resources
 |--|--|--|
 |VirtualNetwork| vnet-cpd-pltf-uat-we-01 ||
 
-2. Run [CI-VirtualNetwork-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=2) and then [`CD-rg-<sub>-pltf-net-<env>-we-01-Master-Release`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355) to deploy changes.
+2. Run [`CD-rg-<sub>-pltf-net-<env>-we-01-Master-Release`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355) to deploy changes.
 
 ## 5.2 Add Private DNS Zones
 1. Add template for private dns zone like `<sub>-privatelink.cosmos.windows.net`
@@ -524,7 +524,7 @@ Update role assignment for  following resources
 |--|--|--|
 |PrivateDNSZones| cpd-privatelink.cosmos.windows.net ||
 
-3. Run [CI-PrivateDNSZones-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=272) and then [`CD-rg-<sub>-pltf-net-<env>-we-01`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=79)
+3. Run [`CD-rg-<sub>-pltf-net-<env>-we-01`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=79)
 
 ## 5.3 Add private endpoints to resources
 1. Add template for private endpoint like `prvep-cpd-apps-cosmos-<env>-we-01`
@@ -533,7 +533,7 @@ Update role assignment for  following resources
 |--|--|--|
 |PrivateEndpoint| prvep-cpd-apps-cosmos-uat-we-01 ||
 
-2. Run [CI-PrivateEndpoint-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=748) and then [`CD-rg-<sub>-apps-net-<env>-we-01`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+2. Run [`CD-rg-<sub>-apps-net-<env>-we-01`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 
 
 

@@ -110,6 +110,7 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |VirtualNetwork | vnet-cpd-pltf-uat-we-01||
+||  ||
 
 ## 3.6 Platform Security Resource Group
 ### 3.6.1 Resource Group
@@ -483,43 +484,81 @@ Update role assignment for  following resources
 3.2. Update the Apple in Settings for iOS Certificate. For production environment, use the application mode as production.
 1. Test Send (Support and troubleshooting) for Apple and Android Phone for verifications.
 
-# 5 Deployment of the solution components
-## 5.1 Update APIM Pipelines
-### 5.1.1 Dependencies
+# 5 Deployment of Private Endpoints
+## 5.1 Add service endpoints to subnets 
+1. Update vnet-cpd-pltf-<env>-we-01 ARM template for adding service endpoints to subnets.
+```
+ "subnets": {
+            "value": [
+                {
+                    "name": "snet-cpd-apps-aks-uat-we-01",
+                    "addressPrefix": "172.20.72.0/23",
+                    "networkSecurityGroupName": "nsg-cpd-apps-aks-uat-we-01",
+                    "routeTableName": "route-cpd-apps-aks-uat-we-01",
+                    "serviceEndpoints": [
+                        {
+                            "service": "Microsoft.AzureCosmosDB",
+                            "locations": [
+                                "westeurope"
+                            ]
+                        }
+                    ],
+                    "delegations": [],
+                    "nsgsRGName": "rg-cpd-apps-sec-uat-we-01",
+                    "routesRGName": "rg-cpd-apps-net-uat-we-01"
+                }
+            ]
+ }
+```
+2. Run [CI-VirtualNetwork-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=2) and then [CD-rg-cpd-pltf-net-<env>-we-01-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355) to deploy changes.
+
+## 5.2 Add Private DNS Zones
+1. Add template for private dns zone like `cpd-privatelink.cosmos.windows.net`
+1. One DNS Zone can have multiple virtual networks hence only one DNS Zone is required for a resource on a subscription. [Refer this](https://portal.azure.com/#@tasmusqcp.onmicrosoft.com/resource/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-pltf-net-dev-we-01/providers/Microsoft.Network/privateDnsZones/privatelink.cosmos.windows.net/overview).
+
+## 5.3 Add private endpoints to resources
+1. Add template for private endpoint like `prvep-cpd-apps-cosmos-<env>-we-01`
+1. Run [CI-PrivateEndpoint-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=748) and then [CD-rg-cpd-apps-net-<env>-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+
+
+
+# 6 Deployment of the solution components
+## 6.1 Update APIM Pipelines
+### 6.1.1 Dependencies
 1. Self Hosted Agent
 1. [Custom Domains Updated](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.5.5-add-custom-domains-to-apim)
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets (Azure-Search-Key, Bot-Directline-Key)
 1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
 1. Service Connection connecting the APIM
 
-### 5.1.2 [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
-### 5.1.3 Enable access for required products on APIM
+### 6.1.2 [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
+### 6.1.3 Enable access for required products on APIM
 ![image.png](/.attachments/image-5ac68024-d75d-42dc-a25b-b9e3402c8f3e.png)
-## 5.2 Deploy Platform APIs
-### 5.2.1 Dependencies
+## 6.2 Deploy Platform APIs
+### 6.2.1 Dependencies
 1. Self Hosted Agent
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 1. Role Assignments applied as per [table](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.14-role-assignments)
 1. Service Connection for Azure Container Registry and Azure Resoucre Manager for AKS
 
-### 5.2.2 [Addding a new environment for platform apis](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?anchor=adding-a-new-environment)
+### 6.2.2 [Addding a new environment for platform apis](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?anchor=adding-a-new-environment)
 - [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)
 - [CD-PlatformAPIs-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1021)
 
 
-## 5.3 Deploy Web Apps
-### 5.3.1 Dependencies
+## 6.3 Deploy Web Apps
+### 6.3.1 Dependencies
 1. Self Hosted Agent
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
 1. Service Connection for Azure Resoucre Manager
 
-### 5.3.2 [Update web apps pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/web-apps?path=%2F&version=GBmaster&_a=contents&anchor=adding-a-new-environment)
+### 6.3.2 [Update web apps pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/web-apps?path=%2F&version=GBmaster&_a=contents&anchor=adding-a-new-environment)
 - [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
 - [CD-WebApps-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1020)
 
-## 5.4 Deploy Chatbot Solutions
-### 5.4.1 Dependencies
+## 6.4 Deploy Chatbot Solutions
+### 6.4.1 Dependencies
 1. Self Hosted Agent
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets 
 1. Service Connection for Azure Resoucre Manager
-### 5.4.2 [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
+### 6.4.2 [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)

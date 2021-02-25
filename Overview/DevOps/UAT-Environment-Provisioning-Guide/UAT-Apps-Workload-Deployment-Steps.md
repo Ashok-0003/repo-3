@@ -518,7 +518,7 @@ Update role assignment for  following resources
 
 ## 5.2 Add Private DNS Zones
 1. Add template for private dns zone like `<sub>-privatelink.cosmos.windows.net`
-1. One DNS Zone can have multiple virtual networks hence only one DNS Zone is required for a resource on a subscription. [Refer this](https://portal.azure.com/#@tasmusqcp.onmicrosoft.com/resource/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-pltf-net-dev-we-01/providers/Microsoft.Network/privateDnsZones/privatelink.cosmos.windows.net/overview).
+1. One DNS Zone can have multiple virtual networks hence only one DNS Zone is required for a resource on a subscription. [Refer rg-cpd-pltf-net-dev-we-01 from dev subscription](https://portal.azure.com/#@tasmusqcp.onmicrosoft.com/resource/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-pltf-net-dev-we-01/providers/Microsoft.Network/privateDnsZones/privatelink.cosmos.windows.net/overview).
 
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|

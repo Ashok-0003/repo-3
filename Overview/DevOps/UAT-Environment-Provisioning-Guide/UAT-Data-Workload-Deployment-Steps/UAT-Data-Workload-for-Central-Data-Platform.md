@@ -119,7 +119,7 @@ Currently the Synapse Workspace product is not mature enough to be fully deploye
 1. Connect to snp-cpd-data-uat-we-01.sql.azuresynapse.net with Azure Data Studio, SSMS, Visual Studio or any other tools you can run Stored Procedure.
 1. Sign in to smartcity database.
 1. Run exec dbo.uspLoadDimTime to pupulate Time dimension entity.
-1. Run exec dbo.uspLoadDimDate '' where parameters are first and last date of dimension values scope.
+1. Run exec dbo.uspLoadDimDate '01/01/2020','01-01-2030' where parameters are first and last date of dimension values scope.
 
 
 # Deployment of Power BI Reports

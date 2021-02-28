@@ -115,6 +115,13 @@ Currently the Synapse Workspace product is not mature enough to be fully deploye
 3. Please note that Synapse Workspace connects to the Gold Zone datalake with Shared Access Signature, which has an expire date.
 
 
+# Deployment of Date and Time dimensions.
+1. Connect to snp-cpd-data-uat-we-01.sql.azuresynapse.net with Azure Data Studio, SSMS, Visual Studio or any other tools you can run Stored Procedure.
+1. Sign in to smartcity database.
+1. Run exec dbo.uspLoadDimTime to pupulate Time dimension entity.
+1. Run exec dbo.uspLoadDimDate '' where parameters are first and last date of dimension values scope.
+
+
 # Deployment of Power BI Reports
 Currently we are deploying all the Power BI reports in the tst environment. A new workspace named “Automation Tst - Tasmu Command & Control Center Dashboards” is created where all the reports are automatically deployed.
 For the automatic deployment, “Power BI: Action” extension is used.

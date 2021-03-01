@@ -210,7 +210,32 @@ https://customervoice.microsoft.com/
 
 ![Publish Theme.png](/.attachments/Publish%20Theme-f0de7009-2bca-4c0c-9fe2-acb0ae52b284.png)
 
-### 5.9  Add Security Alert Workflow Automation
+### 5.9  Creating Similar Records Suggestion
+
+1. Go to "Settings"-> "Data Management" -> "Similar Records Suggestions Settings".
+
+![1_SimillarRecordsSettings.png](/.attachments/1_SimillarRecordsSettings-ec245a1f-a02f-40d7-b3f2-3d174ed27ffc.png)
+
+2. Click on  "New" ->Enter "Name" -> "Description" and Save it.
+
+![SimilarCaseRule_1.png](/.attachments/SimilarCaseRule_1-2e32aa5b-9074-4139-b8f1-f2edf2d16fd7.png)
+
+3. Once after it Saved, Go to "Match Fields" tab -> Click on "+" Icon .
+
+![2_SimilarCaseRule_MatchField.png](/.attachments/2_SimilarCaseRule_MatchField-45087fed-3e3f-4351-ada7-712bbe5da8e1.png)
+
+4. Open That Similar Rule  and Go to "Match Field" Tab.-> Click on "New Text Analytic Entity Mapping". After opening the "TEXT ANALYTICS ENTITY MAPPING" , Map the "Entity" and "Field".
+
+![3_CaseText_Analytic_Entity_Mapping.png](/.attachments/3_CaseText_Analytic_Entity_Mapping-25bbf4ba-0f31-4712-9721-2294b8953b9f.png)
+
+![4_SimillarCase_MatchField.png](/.attachments/4_SimillarCase_MatchField-5229d5a0-1097-4347-a108-5c33d02eee10.png)
+
+5. Then "Save and Close" and "Activate" the Similar Rules .
+
+![5_ActivateSimillarRules.png](/.attachments/5_ActivateSimillarRules-c7539edf-441f-4f59-be10-898db28a125f.png)
+
+
+### 5.10  Add Security Alert Workflow Automation
 1. Login into https://portal.azure.com.
 2. Go to Security Center.
 ![image.png](/.attachments/image-30dfa9ae-2eb6-41f9-832e-023daef8b32b.png)
@@ -230,7 +255,7 @@ For UAT:
 ![image.png](/.attachments/image-c96bf1b6-3208-4286-a40d-bc9469dab2ac.png)
 9. Click on Create.
  
-### 5.10 Configure export to data lake and SQL export service
+### 5.11 Configure export to data lake and SQL export service
 1. Go to https://make.powerapps.com -> select the right environment -> click on Export to data lake -> click on New link to data lake.
 ![image.png](/.attachments/image-fd0c30f3-6fd0-48b0-83c7-da388a5639e9.png)
 
@@ -242,7 +267,7 @@ https://docs.microsoft.com/en-us/powerapps/maker/data-platform/export-to-data-la
 4. Setup SQL export service by following the link below.
 https://docs.microsoft.com/en-us/power-platform/admin/replicate-data-microsoft-azure-sql-database
 
-### 5.11 Create and assign security role to Application Users
+### 5.12 Create and assign security role to Application Users
 1. Create the following application users by following "Appendix D - Application User Creation".
 
 | Name | Security Role |

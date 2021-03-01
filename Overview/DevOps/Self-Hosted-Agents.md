@@ -11,7 +11,7 @@
 1. Azure CLI - 2.16.0
 1. Azure DevOps CLI extension 0.18.0
 1. Powershell 7
-1. Android SDK Build Tools - 29.0.x
+1. Android SDK Build Tools - 30.0.3
 1. Java - 1.8.x
 1. Azure PowerShell module 2.1.0 
 1. AzureRM PowerShell module 2.1.0 

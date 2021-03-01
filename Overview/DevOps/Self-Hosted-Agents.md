@@ -65,5 +65,5 @@ Mobile Environment Upgrade:
    a. from Platforms tab choose API 30 (Android 11 R, Android 11 S). 
 ![Android-SDK-Platform.jpg](/.attachments/Android-SDK-Platform-22adff21-04c9-4921-8881-d4be458be058.jpg)
    b. from Tools tab, expand build tools and choose Android SDK Build Tools 30.x.x (series)
-![Android-Build-Tools.jpg](/.attachments/Android-Build-Tools-c4365ef9-42d4-4858-8df9-6042d02a64a2.jpg)
+![Android-Build-Tools.jpg](/.attachments/Android-Build-Tools-e3ba31f3-bbce-4b4d-b804-96341b80bd02.jpg)
 

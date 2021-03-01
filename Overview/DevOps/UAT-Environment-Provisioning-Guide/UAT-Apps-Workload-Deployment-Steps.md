@@ -266,10 +266,10 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |LogicApp | logic-cpd-apps-secsync-uat-we-01 | Logic app to sync Global Sectors List with Sharepoint Taxonomy terms|
 |LogicApp | logic-cpd-apps-route-uat-we-01| This Logic App uses the 2019-05-01 version of the module to allow for Access Control configuration.  **Important:** after the APIM resource for this Logic App has been deployed (apim-cpd-shrd-uat-we-01), update the accessControl parameter in the ARM template for this resource to the Public IP of the APIM in the CIDR format. For example, if the Public IP of APIM is <code>1.1.1.1</code>, then replace the value in the ARM template with <code>1.1.1.1/32</code>. If this is not done, the Logic App will return an error stating that the IP is not allowed to access the Logic App trigger.|
 |LogicApp | logic-cpd-apps-6dbill-uat-we-01||
-|LogicApp | logic-cpd-apps-6dhook-uat-we-01||
+|LogicApp | logic-cpd-apps-6dhook-uat-we-01| If the subscription to the Event Domain has issues, you can try [manually updating it](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=4.4.5-manually-updating-event-topic-subscriptions). |
 |LogicApp | logic-cpd-apps-mpsidx-uat-we-01|This Logic App uses the 2019-05-01 version of the module to allow for Access Control configuration. Access Control has been configured to only allow other Logic Apps to trigger this app. |
-|LogicApp | logic-cpd-apps-mpsd365-uat-we-01||
-|LogicApp | logic-cpd-apps-mpso365-uat-we-01||
+|LogicApp | logic-cpd-apps-mpsd365-uat-we-01|If the subscription to the Event Domain has issues, you can try [manually updating it](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=4.4.5-manually-updating-event-topic-subscriptions).|
+|LogicApp | logic-cpd-apps-mpso365-uat-we-01|If the subscription to the Event Domain has issues, you can try [manually updating it](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=4.4.5-manually-updating-event-topic-subscriptions).|
 |LogicApp | logic-cpd-apps-dfndr-uat-we-01 | Logic app triggers when a malware file is uploaded in Blob container and update the attachment extension entity Is Unsafe as true.
 |LogicApp | logic-cpd-apps-intfile-uat-we-01 | Logic app retrieves the content of file from Blob container and update the file content in D365.|
 |LogicApp | logic-cpd-apps-intsubs-uat-we-01 | Logic app performs upsert operation on Market Place Product Subscription.|

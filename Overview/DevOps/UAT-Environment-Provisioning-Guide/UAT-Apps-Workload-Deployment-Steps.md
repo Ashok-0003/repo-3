@@ -301,6 +301,15 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 _`If the value of "deploy" is "false" then we don't need to reauthenticate the api connections on subsequent deployments`_   
 6. Update the accessControl ARM parameter of logic-cpd-apps-route-uat-we-01 with the Public IP of apim-cpd-shrd-uat-we-01 once APIM is deployed. See the remarks of logic-cpd-apps-route-uat-we-01 above for more details. 
 
+### 4.4.5 Manually Updating Event Topic subscriptions
+When a Logic App that uses the "When a resource event occurs" trigger is deployed for the first time, the subscriptions to the Event Domain topics are created automatically for the relevant event types. However, when you need to edit that subscription, i.e. change its name, or add new event types to the filter, you may need to manually "save" the logic app for the changes to take effect. To do this: 
+1. Make any changes you need to make to the Logic App's event domain subscription in ARM and re-deploy.
+2. Make a small change, i.e. adding a space to the name of the subscription, in the portal.
+3. Once you do this the "Save" button on the top left of the Logic App designer should become active. Click it to update the Logic App's subscription.
+4. (Optional) Undo the "small change" you made, i.e. remove the space you added to the name.
+
+Once this is done, the subscription should be updated. To verify, open the Event Domain resource, find the relevant topic and look at the list of subscriptions and the event types for that subscription.
+
 ## 4.5 Shared Resource Group 
 ### 4.5.1 Resource Group
 [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
@@ -315,7 +324,7 @@ _`If the value of "deploy" is "false" then we don't need to reauthenticate the a
 ### 4.5.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ApiManagement| apim-cpd-shrd-uat-we-01 | hostConfigurations parameter should be empty for inital deployment|
+|ApiManagement| apim-cpd-shrd-uat-we-01 | hostConfigurations parameter should be empty for initial deployment|
 |ContentDeliveryNetwork | cdn-cpd-shrd-uat-we-01 ||
 |ContentDeliveryNetworkEndpoint | uat-tasmu ||
 |StorageAccount | stcpdshrduatwe01 ||

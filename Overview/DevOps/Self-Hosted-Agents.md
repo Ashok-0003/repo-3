@@ -57,4 +57,13 @@ Install-Module -Name AzureRM.Search -AllowClobber -AllowPrerelease -Force
 # References:
 https://github.com/actions/virtual-environments
 
+# VM Update Notes:
+Mobile Environment Upgrade:
+1. Update Visual Studio Installer & Visual Studio to latest in VM.
+2. Open Tools=>Android => SDK Manager, download and install the following.(Use the settings button at the bottom to change the repository from "Approved List" to "Full List" to see additional options)
+![Change-Repository.jpg](/.attachments/Change-Repository-502cbec8-8523-451f-9ba6-d75a566ef34b.jpg)
+   a. from Platforms tab choose API 30 (Android 11 R, Android 11 S). 
+![Android-SDK-Platform.jpg](/.attachments/Android-SDK-Platform-22adff21-04c9-4921-8881-d4be458be058.jpg)
+   b. from Tools tab, expand build tools and choose Android SDK Build Tools 30.x.x (series)
+![Android-Build-Tools.jpg](/.attachments/Android-Build-Tools-c4365ef9-42d4-4858-8df9-6042d02a64a2.jpg)
 

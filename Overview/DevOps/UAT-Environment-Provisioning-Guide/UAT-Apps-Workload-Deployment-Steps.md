@@ -251,8 +251,8 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |ApiConnectionAzureBlob | apicon-cpd-apps-strst-uat-we-01| API Connection to **stcpdappsstruatwe01** in **rg-cpd-apps-str-uat-we-01**|
 |APIConnectionCognitiveService | apicon-cpd-apps-intcog-uat-we-01 | API Connection to Translator Cognitive Service|
 |APIConnection | apicon-cpd-apps-ascalrt-uat-we-01 | API Connection to Azure Security Alert trigger.|
-|ApiConnectionCommonDataService | apicon-cpd-apps-intcds-uat-we-01 | API Connection to Common Data Service for Case api.|
-|ApiConnectionCommonDataService | apicon-cpd-apps-prdcds-uat-we-01 | API Connection to Common Data Service for market place product api.|
+|ApiConnectionCommonDataService | apicon-cpd-apps-intcds-uat-we-01 | API Connection to Common Data Service for Case api. Client Id will be the Client Id mentioned in Crm.CaseManagement.DynamicsSettings|
+|ApiConnectionCommonDataService | apicon-cpd-apps-prdcds-uat-we-01 | API Connection to Common Data Service for market place product api. Client Id will be the Client Id mentioned in Crm.Common.DynamicsSettings|
 |AppServicePlan | plan-cpd-apps-int-uat-we-01||
 |EventGridDomain | egd-cpd-apps-int-uat-we-01||
 |FunctionAppBPA | func-cpd-apps-intbpa-uat-we-01 | Function App to subscribe and process the Sharepoint data|

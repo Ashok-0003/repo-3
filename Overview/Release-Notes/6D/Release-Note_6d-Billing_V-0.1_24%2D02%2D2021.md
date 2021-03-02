@@ -1,3 +1,5 @@
+[Release Note_6d Billing_V 0.1_24-02-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%200.1_24-02-2021-8e3264c4-df51-45cd-ae47-dfb66821cd22.docx)
+
 **Release Note**  
 
 **🚀 2.0 Fixed Defects**

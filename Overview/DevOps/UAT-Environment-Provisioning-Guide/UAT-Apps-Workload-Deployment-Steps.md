@@ -310,6 +310,15 @@ When a Logic App that uses the "When a resource event occurs" trigger is deploye
 
 Once this is done, the subscription should be updated. To verify, open the Event Domain resource, find the relevant topic and look at the list of subscriptions and the event types for that subscription.
 
+Logic apps which in this RG that have the "When a resource event occurs" trigger, and may benefit from this troubleshooting step, are (as of 02-Mar-2021):
+- logic-cpd-apps-6dhook-uat-we-01
+- logic-cpd-apps-intfile-uat-we-01
+- logic-cpd-apps-intprdt-uat-we-01
+- logic-cpd-apps-intsec-uat-we-01
+- logic-cpd-apps-intsubs-uat-we-01
+- logic-cpd-apps-mpsd365-uat-we-01
+- logic-cpd-apps-mpso365-uat-we-01
+
 ## 4.5 Shared Resource Group 
 ### 4.5.1 Resource Group
 [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)

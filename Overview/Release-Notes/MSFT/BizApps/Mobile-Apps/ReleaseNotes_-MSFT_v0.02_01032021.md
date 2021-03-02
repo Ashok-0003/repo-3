@@ -1,3 +1,5 @@
+[ReleaseNotes_ MSFT_v0.02_01Mar2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.02_01Mar2021-18260dfc-157e-49cc-bc8c-6aafe5b5a36f.docx)
+
 **Release Note** 
 _**1	🔧What’s New**_
 New user stories delivered:

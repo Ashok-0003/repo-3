@@ -108,8 +108,23 @@ Run the following pipelines in sequence:
 1. Create Databricks Cluster (Placeholder)
 1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=474)
 
-# Deployment of the solution components (Cost Management components)
-Currently the Synapse Workspace product is not mature enough to be fully deployed via Azure Devops. Following manual steps are needed after the automatic deployment of the resource in Azure Portal:
+# Deployment of Cost Management components
+Automatic export of cost management data needs to be scheduled at subscription level. At the moment this is done manually, but it can be automated. To configure this manually, follow these steps:
+1. Navigate to Subscriptions, select the relevant subscription from the list, and then select Cost analysis in the menu. At the top of the Cost analysis page, select Settings, then Exports.
+2. Select Add and type a name for the export. Name must follow this naming convention: "ActualCostUsage<ENV>", where <ENV> is a 3-letter acronym identifying the environment (eg dev, tst, uat, npd, prd).
+3. For the Metric, select "Actual cost (Usage and Purchases)".
+4. For Export type, select "Daily export of month-to-date costs".
+5. Select the start date.
+6. Specify the subscription for your Azure storage account, then select a resource group or create a new one. Resource group used is "rg-cpd-data-<ENV>-we-01".
+7. Select the storage account name or create a new one. Storage account used is the raw zone storage, thus "dlsrawzone<ENV>we01".
+8. Specify the storage container and the directory path that you'd like the export file to go to. Container must be "costmanagement" and directory path must be "archive".
+9. Review your export details and select Create.
+
+Your new export appears in the list of exports. By default, new exports are enabled.
+Initially, it can take 12-24 hours before the export runs. However, it can take up longer before data is shown in exported files.
+If the exports are configured as described above, and if the Azure Data Factory is configured with the proper connection, the ADF pipeline will run the workflow every day as described in the delivery document.
+
+The data moved by the ADF into the gold zone datalake is then referenced by a Synapse Workspace view. Currently the Synapse Workspace product is not mature enough to be fully deployed via Azure Devops. Following manual steps are needed after the automatic deployment of the Synapse resource in Azure Portal:
 1. Connect to snp-cpd-data-<ENV>-we-01-ondemand.sql.azuresynapse.net with Synapse Workspace Studio or with a SQL client of your choice
 2. Run queries described in /CommandControl/Mcs.Tasmu.CostMgmt.SyA/CostManagementSynapseQueries, with manual steps as described inline
 3. Please note that Synapse Workspace connects to the Gold Zone datalake with Shared Access Signature, which has an expire date.

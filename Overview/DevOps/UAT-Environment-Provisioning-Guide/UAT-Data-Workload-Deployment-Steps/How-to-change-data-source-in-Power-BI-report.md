@@ -1,4 +1,6 @@
 **1. How to update data source in Power BI Report ?**
+This is the guide how to change 
+
 1. Open report in Power BI desktop app.
 
 1. Open Transform Data and next Data Source Settings.

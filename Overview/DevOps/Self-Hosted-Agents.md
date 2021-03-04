@@ -1,7 +1,7 @@
 [[_TOC_]]
 # Recommended Configurations:
 - Size - Standard_D8s_v3
-- OS Disk Size - 256 GB
+- OS Disk Size - atleast 256 GB
 - Data Disk Count - 3 (128 GB each)
 - OS - Windows Server 2019 (latest)
 - Virtual Network - vnet-cph-pltf-prd-we-01
@@ -38,19 +38,8 @@ PowerShellGet
 Install-Module -Name AzureRM.Search -AllowClobber -AllowPrerelease -Force
 `
 
-
-# Agent Pools:
-1. tasmumsagents
-2. webappspool
-3. platformapispool
-4. datapool
-5. testagentpool
-
-# Pipelines:
-<List to be updated>
-
 # Notes:
-1. VM should have atleast 50-100 GB of extra OS disk space
+1. VM should have atleast 100 GB of extra OS disk space
 2. Clean up the disks on regular intervals to avoid space issues during runtime
 3. Update the VM and agents on regular intervals
 

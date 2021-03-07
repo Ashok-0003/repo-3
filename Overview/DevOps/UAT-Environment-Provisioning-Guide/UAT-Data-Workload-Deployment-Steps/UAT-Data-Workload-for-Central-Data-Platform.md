@@ -18,8 +18,7 @@
 |--|--|
 |Analysis Services |aascpddatauatwe01|
 |Azure Databricks  | databricks-cpd-data-uat-we-01 |
-|Azure Data Factory  |adf-cpd-data-uat-we-02 (Smart City) |
-|Azure Data Factory  |adf-cpd-data-uat-we-03 (Smart Parking) |
+|Azure Data Factory  |adf-cpd-data-uat-we-02 (Smart City, Platform Events, Cost Management) |
 |Azure Data Explorer Cluster  |adxcpddatauatwe02  |
 |Load Balancer  |kucompute-adxcpddatauatwe02-elb  |
 |Load Balancer  |kucompute-adxcpddatauatwe02-ilb  |

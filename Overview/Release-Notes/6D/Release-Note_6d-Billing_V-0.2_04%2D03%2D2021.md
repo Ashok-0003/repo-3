@@ -1,3 +1,5 @@
+[Release Note_6d Billing_V 0.2_04-03-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%200.2_04-03-2021-85d55c27-a3c9-40f8-9a1d-d7d5b9602fd0.docx)
+
 **_Release Note_**  
 
 **1.0 What’s New (New delivered user stories)**

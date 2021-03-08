@@ -11,7 +11,6 @@ This is the guide how to change
 
 
 1. Replace connection data to new one host and authenticate user to new host. 
-
 ![image.png](/.attachments/image-384a26b0-7c97-45fb-bf01-541aec9addb1.png)
 
 **The schema of both data sources (old and new) must be the same.**

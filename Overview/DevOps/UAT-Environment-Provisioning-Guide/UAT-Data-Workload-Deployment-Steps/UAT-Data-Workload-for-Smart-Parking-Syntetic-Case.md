@@ -98,6 +98,9 @@ Run the following pipelines in sequence:
 1. [Deploy Azure Stream Analytics Jobs](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=545)
 1. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
 
+#Assign all Smart City services to Log Analytics Workspace.
+Login with az login --tenant "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" where "XXX..." is tenant id
+Run the script SmartParkingLogs.ps1 (PlatformEvents/Mcs.PlatformEvents.LogAnalytics/SmartParkingLogs.ps1) from data-platform repo.
 
 # Deployment of Power BI Reports
 Currently we are deploying all the Power BI reports in the TST environment. A new workspace named “Automation Tst - Tasmu Command & Control Center Dashboards” is created where all the reports are automatically deployed.

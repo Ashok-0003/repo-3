@@ -136,6 +136,10 @@ The data moved by the ADF into the gold zone datalake is then referenced by a Sy
 1. Run exec dbo.uspLoadDimTime to pupulate Time dimension entity.
 1. Run exec dbo.uspLoadDimDate '01/01/2020','01-01-2030' where parameters are first and last date of dimension values scope.
 
+# Deployment of Dynamics custom views
+1. Connect to Dynamics database of the current environment using SSMS
+1. Run the sql script in the code repo under Dynamics/Views.sql  
+
 # Installation of Power BI data gateway.
 Because all resources are closed within VNET, Power BI as a service needs to connect data through gateway installed as high availability cluster (two nodes) on VM deployed as part of infrastructure deployment. The full installation guide of PBI data gateway is available with below URL:
 [Power BI data gateway installation tutorial](https://docs.microsoft.com/en-us/data-integration/gateway/service-gateway-install)

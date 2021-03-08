@@ -1,4 +1,4 @@
-# **Release Note template**  
+# **Release Note Template**  
 **Name the document file as "Release note _ Software name_release number_ Date of availability of the release on the pipeline for MSI to push ", e.g. “Release Notes_6d_v 0.01_5 Dec 2020”** 
 
 **🔧1.0 What’s New (New delivered user stories)**

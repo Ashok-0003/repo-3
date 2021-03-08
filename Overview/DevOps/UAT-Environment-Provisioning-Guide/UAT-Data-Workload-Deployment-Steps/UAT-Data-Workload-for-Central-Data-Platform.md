@@ -129,6 +129,9 @@ The data moved by the ADF into the gold zone datalake is then referenced by a Sy
 2. Run queries described in /CommandControl/Mcs.Tasmu.CostMgmt.SyA/CostManagementSynapseQueries, with manual steps as described inline
 3. Please note that Synapse Workspace connects to the Gold Zone datalake with Shared Access Signature, which has an expire date.
 
+# Assign all Smart City services to Log Analytics Workspace.
+1. Login with az login --tenant "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"  where "XXX..." is tenant id
+1. Run the script SmartCityLogs.ps1 (PlatformEvents/Mcs.PlatformEvents.LogAnalytics/SmartCityLogs.ps1) from data-platform repo.
 
 # Deployment of Date and Time dimensions.
 1. Connect to snp-cpd-data-uat-we-01.sql.azuresynapse.net with Azure Data Studio, SSMS, Visual Studio or any other tools you can run Stored Procedure.

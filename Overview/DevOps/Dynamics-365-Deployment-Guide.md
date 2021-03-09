@@ -279,6 +279,9 @@ https://docs.microsoft.com/en-us/power-platform/admin/replicate-data-microsoft-a
 More details on application users below (only FYI).
 https://docs.microsoft.com/en-us/powerapps/developer/data-platform/use-single-tenant-server-server-authentication#application-user-creation
 
+### 5.13 Ensure The Processes are Activated State
+Once after the deployment, we need to compare the processes with the "Configuration" environment and make sure that the process are in "Activated" state in the desired environment.
+
 # 6 	Appendix
 ## Appendix A - Solution Import
 

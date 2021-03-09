@@ -1,0 +1,1 @@
+Azure Synapse Workload Management is a solution which allows the operator to manage the workload regarding the needs.

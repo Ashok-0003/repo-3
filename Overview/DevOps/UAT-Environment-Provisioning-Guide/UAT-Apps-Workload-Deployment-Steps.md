@@ -110,7 +110,6 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |VirtualNetwork | vnet-cpd-pltf-uat-we-01||
-||  ||
 
 ## 3.6 Platform Security Resource Group
 ### 3.6.1 Resource Group
@@ -594,5 +593,5 @@ Update role assignment for  following resources
 ### 6.4.1 Dependencies
 1. Self Hosted Agent
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets 
-1. Service Connection for Azure Resoucrce Manager
+1. Service Connection for Azure Resource Manager
 ### 6.4.2 [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)

@@ -18,4 +18,6 @@
 
 ## CD
 * [CD-APIMConfig-pre-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=962)
+
+## Developer Portal
 * [CD-APIMDevPortal-rg-cpp-shrd-pre-we-01-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=963)

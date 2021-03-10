@@ -11,7 +11,11 @@
 # APIM
 
 ## CI
-* [CI-APIMConfig-Prd-Master-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=961)
+[CI-APIMConfig-CentralPlatformCore-Master-Prd-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1151)
+[CI-APIMConfig-6d-Master-Prd-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1149)
+[CI-APIMConfig-Gis-Master-Prd-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1150)
+[CI-APIMConfig-Productization-Master-Prd-Build](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1152)
+
 ## CD
 * [CD-APIMConfig-pre-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=962)
 * [CD-APIMDevPortal-rg-cpp-shrd-pre-we-01-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=963)

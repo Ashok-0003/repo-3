@@ -37,7 +37,7 @@
 |kv-cpd-apps-<env>-we-01|NotificationFunctionSettings-SendGridApiKey| Secret | **Sendgrid API key to be provided by customer.** |
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AzureADOptions-ClientSecret| Secret | Client Secret for Notification API App Registration in B2C tenant||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-GSMSKey| Secret | Government SMS Provider Password, key to be provided by customer.||
-|kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret | Send,Listen access policy connection string of the resource sb-cpd-apps-ntf-<env>-we-01 ||
+|kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret | Send,Listen access policy connection string of the resource `sb-cpd-apps-strntf-<env>-we-01` ||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret | Ooredoo SMS Gateway Provider API Name, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret | Ooredoo SMS Gateway Password, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret | Client Secret of **Central-Platform-Core-APIs** app on Azure B2C Tenant ||

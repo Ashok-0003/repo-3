@@ -5,7 +5,7 @@ Notes:
 |--|--|--|--|--|
 |ApplicationInsights-ConnectionString| Connection string of `appi-cpd-apps-mon-<env>-we-01` |Eg. `InstrumentationKey=984ca526-2038-4d9d-b0cf-653706512c58`|Plain Text|CD-PlatformApis-Release|
 |ApplicationInsights-InstrumentationKey| Instrumentation key of `appi-cpd-apps-mon-<env>-we-01` |Eg. `984ca526-2038-4d9d-b0cf-653706512c58`|Plain Text|CD-PlatformApis-Release|
-|ConnectionStrings-StorageAccount|Connection string of the resource stcpdappstsr<env>we01|Eg. `DefaultEndpointsProtocol=https;AccountName=stcpdappstsruatwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|Secure|CD-PlatformApis-Release|
+|ConnectionStrings-StorageAccount|Connection string of the resource stcpdappsstr<env>we01|Eg. `DefaultEndpointsProtocol=https;AccountName=stcpdappsstruatwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|Secure|CD-PlatformApis-Release|
 |ConnectionStrings-IntegrationServiceBus| Connection string of SAS policy (RootManageSharedAccessKey) of resource `sb-cpd-apps-int-<env>-we-01` |Eg. `Endpoint=sb://sb-cpd-apps-int-uat-we-01.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=<key>` |Secure|CD-PlatformApis-Release|
 |NotificationSettings-NotificationServiceBusConnectionString|Connection string of SAS policy (RootManageSharedAccessKey) of resource `sb-cpd-apps-strntf-<env>-we-01` | Eg. `Endpoint=sb://sb-cpd-apps-strntf-uat-we-01.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=<key>` | Secure|CD-PlatformApis-Release|
 |Azure-Search-Key|Primary Admin key of resource `srch-cpd-apps-cog-<env>-we-01`||Secure|CI-APIMConfig-Master-Build|

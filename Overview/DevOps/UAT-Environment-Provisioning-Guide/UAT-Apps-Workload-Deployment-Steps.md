@@ -173,6 +173,7 @@ required in the cognitive and integration pipelines
 |--|--|--|--|
 |apicon-cpd-apps-intcds-uat-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the [App Registration (spn-crm-case-management-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
 |apicon-cpd-apps-prdcds-uat-we-01|Crm-Common-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the [App Registration (spn-crm-common-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
+|apicon-cpd-apps-pflcds-uat-we-01|Crm-ProfileManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the [App Registration (spn-crm-common-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-id|kv-cpd-pltf-uat-we-01| Client Id of the service principal having contributor access on integration event grid domain  to authenticate event grid api connection
 |apicon-cpd-apps-integ-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-pltf-uat-we-01| Client Secret of the service principal having contributor access on integration event grid domain to authenticate event grid api connection|
 |logic-cpd-apps-apimt-uat-we-01|ARMAPI-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the service principal with Reader access on APIM to allow it to query APIM metering data|
@@ -251,7 +252,8 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |APIConnectionCognitiveService | apicon-cpd-apps-intcog-uat-we-01 | API Connection to Translator Cognitive Service|
 |APIConnection | apicon-cpd-apps-ascalrt-uat-we-01 | API Connection to Azure Security Alert trigger.|
 |ApiConnectionCommonDataService | apicon-cpd-apps-intcds-uat-we-01 | API Connection to Common Data Service for Case api. Client Id will be the Client Id of App Registration - `spn-crm-case-management-integration-<env>`|
-|ApiConnectionCommonDataService | apicon-cpd-apps-prdcds-uat-we-01 | API Connection to Common Data Service for market place product api. Client Id will be the Client Id of App Registration - `spn-crm-case-management-integration-<env>`|
+|ApiConnectionCommonDataService | apicon-cpd-apps-prdcds-uat-we-01 | API Connection to Common Data Service for market place product api. Client Id will be the Client Id of App Registration - `spn-crm-general-integration-<env>`|
+|ApiConnectionCommonDataService | apicon-cpd-apps-pflcds-uat-we-01 | API Connection to Common Data Service for profile and organisation profile api. Client Id will be the Client Id of App Registration - `spn-crm-profile-management-integration-<env>`|
 |AppServicePlan | plan-cpd-apps-int-uat-we-01||
 |EventGridDomain | egd-cpd-apps-int-uat-we-01||
 |FunctionAppBPA | func-cpd-apps-intbpa-uat-we-01 | Function App to subscribe and process the Sharepoint data|
@@ -272,6 +274,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |LogicApp | logic-cpd-apps-dfndr-uat-we-01 | Logic app triggers when a malware file is uploaded in Blob container and update the attachment extension entity Is Unsafe as true.
 |LogicApp | logic-cpd-apps-intfile-uat-we-01 | Logic app retrieves the content of file from Blob container and update the file content in D365.|
 |LogicApp | logic-cpd-apps-intsubs-uat-we-01 | Logic app performs upsert operation on Market Place Product Subscription.|
+|LogicApp | logic-cpd-apps-intacnt-uat-we-01 | Logic app performs update operation on organisation and profile.|
 |LogicApp | logic-cpd-apps-apimt-uat-we-01 | Logic app queries APIM daily to get subscriptions usage information and sends event. Requires the **spn-armapi-reader-npd** Service Principal and the **ARMAPI-ClientSecret** secret to be seeded. |
 |ServiceBusNamespace | sb-cpd-apps-int-uat-we-01||
 |ServiceBusNamespaceQueue | sbq-cpd-apps-intprodsync-uat-we-01||
@@ -315,6 +318,7 @@ Logic apps which in this RG that have the "When a resource event occurs" trigger
 - logic-cpd-apps-intprdt-uat-we-01
 - logic-cpd-apps-intsec-uat-we-01
 - logic-cpd-apps-intsubs-uat-we-01
+- logic-cpd-apps-intacnt-uat-we-01
 - logic-cpd-apps-mpsd365-uat-we-01
 - logic-cpd-apps-mpso365-uat-we-01
 

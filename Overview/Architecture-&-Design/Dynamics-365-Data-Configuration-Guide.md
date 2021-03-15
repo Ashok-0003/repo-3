@@ -18,6 +18,8 @@ As per the Above Condition , It will visible in "My Tasmu" Portal.
 - product category = tasmu product & services
 As per the Above Condition , It will visible in "Marketplace" Portal.
 
+6. If related master data is updated, then we have to either revise and publish each products. or run the product updated workflow on demand in bulk.
+
 ---
 Tool for migrating some portion of products.
 [Product Catelog Data Migration.docx](/.attachments/Product%20Catelog%20Data%20Migration-5113cdcc-c92d-4998-b98a-6cd2752fbd90.docx)

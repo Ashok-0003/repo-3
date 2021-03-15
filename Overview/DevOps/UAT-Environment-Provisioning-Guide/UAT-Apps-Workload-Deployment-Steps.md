@@ -303,24 +303,21 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 _`If the value of "deploy" is "false" then we don't need to reauthenticate the api connections on subsequent deployments`_   
 6. Update the accessControl ARM parameter of logic-cpd-apps-route-uat-we-01 with the Public IP of apim-cpd-shrd-uat-we-01 once APIM is deployed. See the remarks of logic-cpd-apps-route-uat-we-01 above for more details. 
 
-### 4.4.5 Manually Updating Event Topic subscriptions
-When a Logic App that uses the "When a resource event occurs" trigger is deployed for the first time, the subscriptions to the Event Domain topics are created automatically for the relevant event types. However, when you need to edit that subscription, i.e. change its name, or add new event types to the filter, you may need to manually "save" the logic app for the changes to take effect. To do this: 
-1. Make any changes you need to make to the Logic App's event domain subscription in ARM and re-deploy.
-2. Make a small change, i.e. adding a space to the name of the subscription, in the portal.
-3. Once you do this the "Save" button on the top left of the Logic App designer should become active. Click it to update the Logic App's subscription.
-4. (Optional) Undo the "small change" you made, i.e. remove the space you added to the name.
+### 4.4.5 Verify Event Topic Subscriptions 
+In `egd-<sub>-apps-int-<env>-we-01`
+Verify that following subscriptions are created in the event grid domain topics
+|Topic| Subscription|
+|--|--|
+|coreapi|`logic-<sub>-apps-intfile-<env>-we-01-sub`|
+|d365|`logic-<sub>-apps-6dhook-<env>-we-01-sub`|
+|d365|`logic-<sub>-apps-mpsd365-<env>-we-01-sub`|
+|d365|`logic-<sub>-apps-intprdt-<env>-we-01-sub`|
+|d365|`logic-<sub>-apps-intsec-<env>-we-01-sub`|
+|d365|`logic-<sub>-apps-qnakbsync-<env>-we-01-sub`|
+|o365|`logic-<sub>-apps-mpso365-<env>-we-01-sub`|
+|6dbilling|`logic-<sub>-apps-intacnt-<env>-we-01-sub`|
+|6dbilling|`logic-<sub>-apps-intsubs-<env>-we-01-sub`|
 
-Once this is done, the subscription should be updated. To verify, open the Event Domain resource, find the relevant topic and look at the list of subscriptions and the event types for that subscription.
-
-Logic apps which in this RG that have the "When a resource event occurs" trigger, and may benefit from this troubleshooting step, are (as of 02-Mar-2021):
-- logic-cpd-apps-6dhook-uat-we-01
-- logic-cpd-apps-intfile-uat-we-01
-- logic-cpd-apps-intprdt-uat-we-01
-- logic-cpd-apps-intsec-uat-we-01
-- logic-cpd-apps-intsubs-uat-we-01
-- logic-cpd-apps-intacnt-uat-we-01
-- logic-cpd-apps-mpsd365-uat-we-01
-- logic-cpd-apps-mpso365-uat-we-01
 
 ## 4.5 Shared Resource Group 
 ### 4.5.1 Resource Group

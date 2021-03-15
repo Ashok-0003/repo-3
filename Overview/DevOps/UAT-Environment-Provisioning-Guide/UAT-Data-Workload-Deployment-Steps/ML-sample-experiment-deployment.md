@@ -26,7 +26,7 @@
 
 
 
-1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
+1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1187)
 
 # Environment Variables for Azure Pipelines
 The following list of variables are required to be updated after a new Azure infrastructure is created prior to deploying the solution components below.

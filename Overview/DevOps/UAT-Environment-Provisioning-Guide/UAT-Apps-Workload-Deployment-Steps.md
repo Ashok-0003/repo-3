@@ -216,8 +216,6 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |CognitiveServicesQna | cog-cpd-apps-arqna-uat-we-01 | QnAMaker Arabic - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
 |FunctionAppQna | func-cpd-apps-luistra-uat-we-01 | func app luis trainer
 |FunctionAppQna | func-cpd-apps-qnasync-uat-we-01 | func app triggered by logic-cpd-apps-qnakbsync-uat-we-01
-|LogicApp | logic-cpd-apps-qnacopy-uat-we-01 | QnAMaker FAQ copier from source to destination
-|LogicApp | logic-cpd-apps-qnakbsync-uat-we-01 | QnAMaker Knowledge articles Synchronizer
 |SearchService | srch-cpd-apps-cog-uat-we-01 | Search Service English Cognitive Service for QnAMaker
 |SearchService | srch-cpd-apps-arcog-uat-we-01 | Search Service Arabic Cognitive service for QnAMaker
 | WebappBot | bot-cpd-apps-uat-we-01 | appId is ClientID of App Registration spn-bot-<env>
@@ -259,6 +257,8 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |FunctionAppBPA | func-cpd-apps-intbpa-uat-we-01 | Function App to subscribe and process the Sharepoint data|
 |FunctionAppNTF | func-cpd-apps-intntf-uat-we-01 | Function App to track the changes of Sharepoint data|
 |FunctionAppCE | func-cpd-apps-acm-uat-we-01 | Function app to monitor consumption metering storage for 6D|
+|LogicApp | logic-cpd-apps-qnacopy-uat-we-01 | QnAMaker FAQ copier from source to destination
+|LogicApp | logic-cpd-apps-qnakbsync-uat-we-01 | QnAMaker Knowledge articles Synchronizer
 |LogicApp | logic-cpd-apps-inttrsl-uat-we-01 | Logic app to create Translation Task and do Auto Translation from English to Arabic of Sharepoint data|
 |LogicApp | logic-cpd-apps-intaprv1-uat-we-01 | This logic app is responsible creating approval task which needs to be approved by Content approvers based on the content sensitivity. |
 |LogicApp | logic-cpd-apps-intgbaprl-uat-we-01 |This logic app is responsible for creating approval task which needs to be approved by marketplace content approvers.|

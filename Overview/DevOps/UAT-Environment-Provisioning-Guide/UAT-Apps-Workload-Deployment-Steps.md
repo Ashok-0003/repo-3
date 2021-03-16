@@ -149,7 +149,7 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 |CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-pt-uat-we-01||
 |NotificationHub | ntf-cpd-apps-str-uat-we-01||
 |NotificationHubNamespace | ntfns-cpd-apps-str-uat-we-01||
-|RedisCache | redis-cpd-apps-str-uat-we-01||
+|RedisCache | redis-cpd-apps-str-uat-we-01| Use 2020-06-01 Module for deploying Azure Cache for Redis instance with Availability zones. |
 |ServiceBusNamespace| sb-cpd-apps-strntf-uat-we-01||
 |ServiceBusNamespaceTopic| sbt-cpd-apps-strntfbulk-uat-we-01||
 |ServiceBusNamespaceTopic| sbt-cpd-apps-strntfbulkdl-uat-we-01||

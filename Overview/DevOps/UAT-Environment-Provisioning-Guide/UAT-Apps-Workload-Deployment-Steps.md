@@ -381,7 +381,7 @@ Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |ApiManagementLogicAppBackend | apimlab-cpd-shrd-uat-we-01 ||
-|ApiManagementAPI | apimapi-cpd-shrd-uat-we-01 ||
+|ApiManagementAPI | apimapi-cpd-shrd-uat-we-01 | Refer module specific read me|
 
 ### 4.5.7 Redeploy [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 

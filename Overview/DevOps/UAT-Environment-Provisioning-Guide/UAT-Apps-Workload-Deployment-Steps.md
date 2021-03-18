@@ -389,6 +389,13 @@ Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 
 ### 4.5.7 Redeploy [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
 
+### 4.5.8 Update the public IP of APIM
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|LogicApp | `logic-<sub>-apps-route-<env>-we-01` | Update the public IP of APIM for access|
+
+### 4.5.8 Redeploy rg-cpd-apps-int-uat-we-01
+
 ## 4.6 Apps AKS Resource Group
 ### 4.6.1 Resource Group 
 [rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
@@ -419,19 +426,7 @@ Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
 ### 4.7.4 Resources
 | Module Name | Resource Name | Remarks |
 |--|--|--|
-| BitnamiCkan | stcpdappsckanuatwe01 | Storage Account |
-| BitnamiCkan | psqlsg-cpd-apps-ckan-uat-we-01 | PostgreSQL Server Group |
-| BitnamiCkan | gresql-cpd-apps-ckan-uat-we-01 | PostgreSQL Server v2 |
-| BitnamiCkan | gresql-cpd-apps-ckan-uat-we-02 | PostgreSQL Server v2 |
-| BitnamiCkan | gresql-cpd-apps-ckan-uat-we-03 | PostgreSQL Server v2 |
-| BitnamiCkan | redis-cpd-apps-ckan-uat-we-01 | Azure Cache for Redis |
-| BitnamiCkan | ckanfeappsuatwe01 | Virtual Machine |
-| BitnamiCkan | ckanfeappsuatwe02 | Virtual Machine |
-| BitnamiCkan | ckanfeappsuatwe03 | Virtual Machine |
-| BitnamiCkan | ckansolrappsuatwe01 | Virtual Machine |
-| BitnamiCkan | ckanredisappsuatwe01 | Virtual Machine |
-| BitnamiCkan | ckanfeappsuatwe01 | Virtual Machine |
-| BitnamiCkan | agw-cpd-apps-ckan-uat-we-01 | Application Gateway |
+| BitnamiCkan | `ckan-<sub>-apps-<env>-we-01` | check module specific read me for more details |
 | ApiConnectionAzureBlob | apicon-cpd-apps-dlszn-uat-we-01 | |
 | ApiConnectionKeyVault | apicon-cpd-apps-ckankv-uat-we-01 | |
 | IntegrationAccount | intac-cpd-apps-ckan-uat-we-01 | |

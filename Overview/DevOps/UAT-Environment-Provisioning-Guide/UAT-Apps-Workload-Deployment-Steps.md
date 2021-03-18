@@ -85,6 +85,9 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 |NetworkSecurityGroups | nsg-cpd-apps-apim-uat-we-01||
 |NetworkSecurityGroups | nsg-cpd-apps-bkend-uat-we-01||
 |NetworkSecurityGroups | nsg-cpd-apps-testvms-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-ckndflt-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-cknagw-uat-we-01||
+|NetworkSecurityGroups | nsg-cpd-apps-cknredis-uat-we-01||
 |KeyVault | kv-cpd-apps-uat-we-01 | Access Policy added only for ADO Service Connection |
 
 ## 3.4 Apps Networking Resource Group
@@ -98,6 +101,7 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 |RouteTables | route-cpd-apps-apim-uat-we-01||
 |RouteTables | route-cpd-apps-bkend-uat-we-01||
 |RouteTables | route-cpd-apps-testvms-uat-we-01||
+|RouteTables | route-cpd-apps-ckndflt-uat-we-01||
 
 ## 3.5 Platform Networking Resource Group
 ### 3.5.1 Resource Group

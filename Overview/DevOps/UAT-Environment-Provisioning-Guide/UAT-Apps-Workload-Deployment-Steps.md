@@ -453,7 +453,6 @@ Refer `kv-<sub>-pltf-<env>-we-01` and `mi-<sub>-pltf-<env>-we-01` for ssl certif
 |ApplicationGateway | `agw-<sub>-apps-api-<env>-we-01` | Refer private IP of `apim-<sub>-shrd-<env>-we-01` in backend pool|
 |ApplicationGateway | `agw-<sub>-apps-web-<env>-we-01` |Refer private IP of `agw-<sub>-apps-aks-<env>-we-01` and `agw-<sub>-apps-ckan-<env>-we-01` in backend pools |
 |ApplicationGateway | `agw-<sub>-apps-ntf-<env>-we-01` |Refer private IP of `apim-<sub>-shrd-<env>-we-01` in backend pool|
-|WAF Policy | `waf-<sub>-apps-ckan-<env>-we-01` | Specific to CKAN solution |
 
 ## 4.9 Apps Payment Token Resource Group
 ### 4.9.1 Resource Group

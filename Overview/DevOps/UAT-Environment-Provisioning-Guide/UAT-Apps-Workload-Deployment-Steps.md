@@ -400,17 +400,17 @@ Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 |ManagedIdentity | mi-cpd-apps-aks-uat-we-01 | Deployed in rg-cpd-apps-aksnode-uat-we-01 |
 |ApplicationGateway | agw-cpd-apps-aks-uat-we-01 | SKU and Tier - Standard_v2|
 
-## 4.7 Apps WAF Resource Group
-### 4.7.1 Resource Group
+## 4.8 Apps WAF Resource Group
+### 4.8.1 Resource Group
 [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
-### 4.7.2 Dependencies 
+### 4.8.2 Dependencies 
 1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 1. Certificates uploaded to kv-cpd-pltf-uat-we-01
-### 4.7.3 Notes
+### 4.8.3 Notes
 Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
-### 4.7.4 Resources
+### 4.8.4 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |ApplicationGateway | agw-cpd-apps-api-uat-we-01 ||
@@ -418,19 +418,19 @@ Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
 |ApplicationGateway | agw-cpd-apps-ntf-uat-we-01 ||
 |WAF Policy | waf-cpd-apps-ckan-uat-we-01 | Specific to CKAN solution |
 
-## 4.8 Apps Payment Token Resource Group
-### 4.8.1 Resource Group
+## 4.9 Apps Payment Token Resource Group
+### 4.9.1 Resource Group
 [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
-### 4.8.2 Dependencies
+### 4.9.2 Dependencies
 1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-### 4.8.3 Resources 
+### 4.9.3 Resources 
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |KeyVault | kv-cpd-apps-pt-uat-we-01 ||
 |AppServicePlan | plan-cpd-apps-pt-uat-we-01 ||
 |FunctionAppPt | func-cpd-apps-pt-uat-we-01 ||
 
-## 4.9 Update Key Vault Access Policies - kv-cpd-apps-pt-we-01
+## 4.10 Update Key Vault Access Policies - kv-cpd-apps-pt-we-01
 redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
 
 |Object Id| Secrets |  Certificates|
@@ -438,7 +438,7 @@ redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Centra
 |func-cpd-apps-pt-uat-we-01|Get, List, Set||
 
 
-## 4.10 Update Key Vault Access Policies -kv-cpd-apps-uat-we-01
+## 4.11 Update Key Vault Access Policies -kv-cpd-apps-uat-we-01
 redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 
 |Object Id| Secrets |  Certificates|
@@ -452,26 +452,26 @@ redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Centr
 |func-cpd-apps-acm-uat-we-01|Get||
 |func-cpd-apps-intbpa-uat-we-01|Get|Get|
 
-## 4.11 Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
+## 4.12 Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
 Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - uat
 [Update the secret values after retrieval](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/151/Key-Vault-Secrets-Apps)
 The list of secrets to be seeded to kv-cpd-apps-<env>-we-01 - Scripts\KeyVault\all-secrets.yml
 Stage for uat must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
 
-## 4.12 Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
+## 4.13 Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
 The configurations and their retrieval - Scripts\AppConfigurations
 Add application configurations for <env>.
 Placeholders already present for all env
 Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 
-## 4.13 Link AKS Cluster DNS Zone to CPH Subscription
+## 4.14 Link AKS Cluster DNS Zone to CPH Subscription
 1. A user account being used should have access to both the subscriptions 
 1. Go to AKS node resource group (rg-cpd-apps-aksnode-uat-we-01)
 1. Open the private DNS Zone
 1. Go to virtual network links and add link as below
 ![image.png](/.attachments/image-ae0af3f0-3406-4327-bf7f-2d29bfa8c5c4.png)
 
-## 4.14 Role Assignments 
+## 4.15 Role Assignments 
 Update role assignment for  following resources
 
 |Identity Name| Type  | Target Resource | Role |
@@ -495,7 +495,7 @@ Update role assignment for  following resources
 |spn-cmsbpa-<env>|Service Principal|<env>-cdntasmu|CDN Endpoint Contributor. **Note**: Use spn-cmsbpa-dev for environments upto uat and spn-cmsbpa-prod for pre prod and prod. The app must be present in the same directory where azure subscription is present.|
 |spn-armapi-reader-npd|Service Principal|apim-cpd-shrd-<env>-we-01|Reader|
 
-## 4.15 Configuring Notification Hubs for FCM and APNS
+## 4.16 Configuring Notification Hubs for FCM and APNS
 1. Obtain the API Key of [Google Firebase Cloud Account](https://console.firebase.google.com/) after creating the project from project settings
 1. Obtain the p12 certificate by Developer Account into the development Mac machine. Follow the steps to [export the certificate](https://help.attendify.com/en/articles/613466-how-to-export-a-push-notification-apns-certificate-in-a-p12-file#:~:text=Generate%20APNS.p12%20certificate%20Double%20click%20the%20Development%20certificate,app%20certificate%20and%20right%20click%20to%20export%20it.)  in .p12 format. 
 3. Go to notification hub (ntf-cpd-apps-str-<env>-we-01) -> Settings

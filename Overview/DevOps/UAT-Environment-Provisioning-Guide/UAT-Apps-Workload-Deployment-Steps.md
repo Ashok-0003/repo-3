@@ -404,11 +404,23 @@ Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 ### 4.7.1 Resource Group
 [rg-cpd-apps-ckan-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1117)
 ### 4.7.2 Dependencies
-1. [rg-cpd-apps-net-uat-we-01]()
-1. [rg-cpd-apps-sec-uat-we-01]
+1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
 1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
 1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
 1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+1. Certificates uploaded to kv-cpd-pltf-uat-we-01
+### 4.7.3 Notes
+
+### 4.7.4 Resources
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+| BitnamiCkan | | |
+| BitnamiCkan | | |
+| BitnamiCkan | | |
+| BitnamiCkan | | |
+| BitnamiCkan | | |
+| BitnamiCkan | | |
 
 ## 4.8 Apps WAF Resource Group
 ### 4.8.1 Resource Group

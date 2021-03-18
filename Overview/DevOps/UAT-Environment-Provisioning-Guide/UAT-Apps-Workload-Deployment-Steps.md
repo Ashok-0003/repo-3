@@ -400,6 +400,16 @@ Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 |ManagedIdentity | mi-cpd-apps-aks-uat-we-01 | Deployed in rg-cpd-apps-aksnode-uat-we-01 |
 |ApplicationGateway | agw-cpd-apps-aks-uat-we-01 | SKU and Tier - Standard_v2|
 
+## 4.7 Apps CKAN Resource Group
+### 4.7.1 Resource Group
+[rg-cpd-apps-ckan-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1117)
+### 4.7.2 Dependencies
+1. [rg-cpd-apps-net-uat-we-01]()
+1. [rg-cpd-apps-sec-uat-we-01]
+1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+
 ## 4.8 Apps WAF Resource Group
 ### 4.8.1 Resource Group
 [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)

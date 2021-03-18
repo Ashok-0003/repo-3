@@ -411,7 +411,7 @@ Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
 1. Certificates uploaded to kv-cpd-pltf-uat-we-01
 ### 4.7.3 Notes
-
+Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
 ### 4.7.4 Resources
 | Module Name | Resource Name | Remarks |
 |--|--|--|

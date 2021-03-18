@@ -13,11 +13,17 @@ _Notes :_
 _- Entities must have "MasterData" classification_ 
 _- Naming conventions must be respected (ex: "HLT" prefix for Healthcare sector)_
 
+## Key Vault
+- Name : kv-cpd-data-dev-we-01
+
+Storing secrets for Purview & SQL connections
+
 ## Landing Area :
 - Dev LandingZone: stlandingzonedevwe01
 
 _Notes:_ 
 _- Files to be processed are to be stored "KPI" root folder_
+_- Files must respect naming conventions (with sector prefix and date ; ex: HLT_002_National inventory of medical supply_2020-10-29.csv)_
 
 ## Databricks
 - Name : db-cpd-datat-dev-we-01
@@ -26,7 +32,7 @@ _- Files to be processed are to be stored "KPI" root folder_
 _Notes :_ 
 _- Mandatory parameters : **file_name_purview, file_to_check, sector**_
 
-Line to be modified to integrate another sector (zone to be mounted):
+Line to be modified to integrate another sector (zone has to be mounted beforehand):
 `folder = "/mnt/landingzone/purviewhealthcare/KPI/"`
 
 ## SQL :

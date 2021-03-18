@@ -416,6 +416,7 @@ Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
 |ApplicationGateway | agw-cpd-apps-api-uat-we-01 ||
 |ApplicationGateway | agw-cpd-apps-web-uat-we-01 ||
 |ApplicationGateway | agw-cpd-apps-ntf-uat-we-01 ||
+|WAF Policy | waf-cpd-apps-ckan-uat-we-01 | Specific to CKAN solution |
 
 ## 4.8 Apps Payment Token Resource Group
 ### 4.8.1 Resource Group

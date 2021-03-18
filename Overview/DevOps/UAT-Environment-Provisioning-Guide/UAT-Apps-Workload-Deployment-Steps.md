@@ -413,14 +413,25 @@ Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 ### 4.7.3 Notes
 
 ### 4.7.4 Resources
-| Module Name | Parameter File Name | Remarks |
+| Module Name | Resource Name | Remarks |
 |--|--|--|
-| BitnamiCkan | | |
-| BitnamiCkan | | |
-| BitnamiCkan | | |
-| BitnamiCkan | | |
-| BitnamiCkan | | |
-| BitnamiCkan | | |
+| BitnamiCkan | stcpdappsckanuatwe01 | Storage Account |
+| BitnamiCkan | psqlsg-cpd-apps-ckan-uat-we-01 | PostgreSQL Server Group |
+| BitnamiCkan | gresql-cpd-apps-ckan-uat-we-01 | PostgreSQL Server v2 |
+| BitnamiCkan | gresql-cpd-apps-ckan-uat-we-02 | PostgreSQL Server v2 |
+| BitnamiCkan | gresql-cpd-apps-ckan-uat-we-03 | PostgreSQL Server v2 |
+| BitnamiCkan | redis-cpd-apps-ckan-uat-we-01 | Azure Cache for Redis |
+| BitnamiCkan | ckanfeappsuatwe01 | Virtual Machine |
+| BitnamiCkan | ckanfeappsuatwe02 | Virtual Machine |
+| BitnamiCkan | ckanfeappsuatwe03 | Virtual Machine |
+| BitnamiCkan | ckansolrappsuatwe01 | Virtual Machine |
+| BitnamiCkan | ckanredisappsuatwe01 | Virtual Machine |
+| BitnamiCkan | ckanfeappsuatwe01 | Virtual Machine |
+| BitnamiCkan | agw-cpd-apps-ckan-uat-we-01 | Application Gateway |
+| ApiConnectionAzureBlob | apicon-cpd-apps-dlszn-uat-we-01 | |
+| ApiConnectionKeyVault | apicon-cpd-apps-ckankv-uat-we-01 | |
+| IntegrationAccount | intac-cpd-apps-ckan-uat-we-01 | |
+| LogicApp | logic-cpd-apps-purvckan-uat-we-01 | |
 
 ## 4.8 Apps WAF Resource Group
 ### 4.8.1 Resource Group

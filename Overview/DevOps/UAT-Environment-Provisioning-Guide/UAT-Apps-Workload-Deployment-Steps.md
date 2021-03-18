@@ -8,30 +8,30 @@
 1. Merge all the code to master branch.
 1. Wait for CI pipelines to complete for the templates to be uploaded to the artifacts storage account
 1. Networking and infra resources must be deployed first
-1. Global resources next - already deployed for non production environment (rg-cpd-glob-npd-we-01)
+1. Global resources next - already deployed for non production environment (`rg-<sub>-glob-npd-we-01`)
 1. Specific resource group components can be deployed next
 1. Solution components can be deployed on the azure resources at the end
 
 # 2. Global Resources for a tenant
 ## 2.1 Global Non Production Resource Group
 ### 2.1.1 Resource Group
- [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
+`rg-<sub>-glob-npd-we-01`
 ### 2.1.2 Dependencies
 ### 2.1.3 Resources
 Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com 
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ContainerRegistry | acrcpdglobnpdwe01 | |
-|SendGrid | sga-cpd-glob-email-npd-we-01 | Silver Tier |
+|ContainerRegistry | `acr<sub>globnpdwe01` | |
+|SendGrid | `sga-<sub>-glob-email-npd-we-01` | Silver Tier |
 
 ## 2.2 Global Consumption Metering Resource Group
 ### 2.2.1 Resource Group
-[rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
+`rg-<sub>-glob-acm-we-01`
 ### 2.2.2 Dependencies
 ### 2.2.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|StorageAccount | stcpdglobacmwe01 ||
+|StorageAccount | `st<sub>globacmwe01` ||
 [Create a daily export of azure consumption metering for 6D Billing](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal#create-a-daily-export)
 
 ## 2.3 Creation and set up of AD B2C Tenant
@@ -44,268 +44,270 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 # 3. Deployment of networking and monitoring infrastructure
 ## 3.1 Shared Monitoring Resource Group
 ### 3.1.1 Resource Group
- [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
+`rg-<sub>-shrd-mon-<env>-we-01`
 ### 3.1.2 Dependencies
 ### 3.1.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ApplicationInsights | appi-cpd-shrd-mon-uat-we-01||
-|AutomationAccounts | aut-cpd-shrd-mon-uat-we-01||
-|EventHubNamespaces | evhns-cpd-shrd-mon-uat-we-01||
-|LogAnalytics | log-cpd-shrd-mon-uat-we-01||
-|StorageAccount | stcpdshrddiaguatwe01||
+|ApplicationInsights | `appi-<sub>-shrd-mon-<env>-we-01`||
+|AutomationAccounts | `aut-<sub>-shrd-mon-<env>-we-01`||
+|EventHubNamespaces | `evhns-<sub>-shrd-mon-<env>-we-01`||
+|LogAnalytics | `log-<sub>-shrd-mon-<env>-we-01`||
+|StorageAccount | `st<sub>shrddiag<env>we01`||
 
 ## 3.2 Apps Monitoring Resource Group
 ### 3.2.1 Resource Group
-[rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+`rg-<sub>-apps-mon-<env>-we-01`
 ### 3.2.2 Dependencies
 ### 3.2.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ActionGroup | ag-cpd-apps-mon-uat-we-01||
-|ApplicationInsights | appi-cpd-apps-mon-uat-we-01||
-|AutomationAccounts | aut-cpd-apps-mon-uat-we-01||
-|EventHubNamespaces | evhns-cpd-apps-mon-uat-we-01||
-|LogAnalytics | log-cpd-apps-mon-uat-we-01||
-|StorageAccount | stcpdappsdiaguatwe01||
+|ActionGroup | `ag-<sub>-apps-mon-<env>-we-01`||
+|ApplicationInsights | `appi-<sub>-apps-mon-<env>-we-01`||
+|AutomationAccounts | `aut-<sub>-apps-mon-<env>-we-01`||
+|EventHubNamespaces | `evhns-<sub>-apps-mon-<env>-we-01`||
+|LogAnalytics | `log-<sub>-apps-mon-<env>-we-01`||
+|StorageAccount | `st<sub>appsdiag<env>we01`||
 
 ## 3.3 Apps Security Resource Group
 ### 3.3.1 Resource Group
-[rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+`rg-<sub>-apps-sec-<env>-we-01`
 ### 3.3.2 Dependencies
-1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+1. `rg-<sub>-apps-mon-<env>-we-01`
 ### 3.3.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|NetworkSecurityGroups | nsg-cpd-apps-aks-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-agw-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-agwweb-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-agwapi-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-agwntf-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-apim-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-bkend-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-testvms-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-ckndflt-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-cknagw-uat-we-01||
-|NetworkSecurityGroups | nsg-cpd-apps-cknredis-uat-we-01||
-|KeyVault | kv-cpd-apps-uat-we-01 | Access Policy added only for ADO Service Connection |
+|NetworkSecurityGroups | `nsg-<sub>-apps-aks-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-agw-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-agwweb-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-agwapi-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-agwntf-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-apim-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-bkend-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-testvms-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-ckndflt-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-cknagw-<env>-we-01`||
+|NetworkSecurityGroups | `nsg-<sub>-apps-cknredis-<env>-we-01`||
+|KeyVault | `kv-<sub>-apps-<env>-we-01` | Access Policy added only for ADO Service Connection |
 
 ## 3.4 Apps Networking Resource Group
 ### 3.4.1 Resource Group
-[rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+`rg-<sub>-apps-net-<env>-we-01`
 ### 3.4.2 Dependencies
 ### 3.4.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|RouteTables | route-cpd-apps-aks-uat-we-01||
-|RouteTables | route-cpd-apps-apim-uat-we-01||
-|RouteTables | route-cpd-apps-bkend-uat-we-01||
-|RouteTables | route-cpd-apps-testvms-uat-we-01||
-|RouteTables | route-cpd-apps-ckndflt-uat-we-01||
+|RouteTables | `route-<sub>-apps-aks-<env>-we-01`||
+|RouteTables | `route-<sub>-apps-apim-<env>-we-01`||
+|RouteTables | `route-<sub>-apps-bkend-<env>-we-01`||
+|RouteTables | `route-<sub>-apps-testvms-<env>-we-01`||
+|RouteTables | `route-<sub>-apps-ckndflt-<env>-we-01`||
 
 ## 3.5 Platform Networking Resource Group
 ### 3.5.1 Resource Group
-[rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
+`rg-<sub>-pltf-net-<env>-we-01`
 
 ### 3.5.2 Dependencies
-1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
-1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
+1. `rg-<sub>-apps-sec-<env>-we-01`
+1. `rg-<sub>-apps-net-<env>-we-01`
 ### 3.5.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|VirtualNetwork | vnet-cpd-pltf-uat-we-01||
+|VirtualNetwork | `vnet-<sub>-pltf-<env>-we-01`||
 
 ## 3.6 Platform Security Resource Group
 ### 3.6.1 Resource Group
-[rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+`rg-<sub>-pltf-sec-<env>-we-01`
 ### 3.6.2 Dependencies
 ### 3.6.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|KeyVault |kv-cpd-pltf-uat-we-01 |Access Policy added only for ADO Service Connection|
-|ManagedIdentity |mi-cpd-pltf-uat-we-01 ||
+|KeyVault |`kv-<sub>-pltf-<env>-we-01` |Access Policy added only for ADO Service Connection|
+|ManagedIdentity |`mi-<sub>-pltf-<env>-we-01` ||
 
-## 3.7 Update Key Vault Access Policies - kv-cpd-pltf-uat-we-01
- redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+## 3.7 Update Key Vault Access Policies
+ `kv-<sub>-pltf-<env>-we-01`
+ redeploy `rg-<sub>-pltf-sec-<env>-we-01`
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
-|mi-cpd-pltf-uat-we-01|Get|Get|
+|`mi-<sub>-pltf-<env>-we-01`|Get|Get|
 
 
 # 4. Deployment of Apps Infrastructure
 ## 4.1 Apps Storage Resource Group
 ### 4.1.1 Resource Group
-[rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
+`rg-<sub>-apps-str-<env>-we-01`
 ### 4.1.2 Dependencies
 ### 4.1.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|AppConfigurationStore|acst-cpd-apps-str-uat-we-01||
-|CosmosAccount | cosmos-cpd-apps-str-uat-we-01||
-|CosmosDBSQL | sql-cosmos-cpd-apps-str-ntf-uat-we-01||
-|CosmosDBSQL| sql-cosmos-cpd-apps-str-pt-uat-we-01 ||
-|CosmosDBSQL| sql-cosmos-cpd-apps-str-bot-uat-we-01||
-|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-ntf-uat-we-01||
-|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-botfb-uat-we-01||
-|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-botrt-uat-we-01||
-|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-botst-uat-we-01||
-|CosmosDBSQLContainer | sqlc-cosmos-cpd-apps-str-pt-uat-we-01||
-|NotificationHub | ntf-cpd-apps-str-uat-we-01||
-|NotificationHubNamespace | ntfns-cpd-apps-str-uat-we-01||
-|RedisCache | redis-cpd-apps-str-uat-we-01| Use 2020-06-01 Module for deploying Azure Cache for Redis instance with Availability zones. |
-|ServiceBusNamespace| sb-cpd-apps-strntf-uat-we-01||
-|ServiceBusNamespaceTopic| sbt-cpd-apps-strntfbulk-uat-we-01||
-|ServiceBusNamespaceTopic| sbt-cpd-apps-strntfbulkdl-uat-we-01||
-|ServiceBusNamespaceTopic| sbt-cpd-apps-strntfoutboundgsmssingle-uat-we-01||
-|ServiceBusNamespaceTopic| sbt-cpd-apps-strntfsingle-uat-we-01||
-|ServiceBusNamespaceTopic| sbt-cpd-apps-strsmsbulk-uat-we-01||
-|ServiceBusNamespaceTopic| sbt-cpd-apps-strsmssingle-uat-we-01||
-|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strntfbulk-uat-we-01 ||
-|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strntfbulkdl-uat-we-01||
-|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strntfoutboundgsmssingle-uat-we-01||
-|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strntfsingle-uat-we-01||
-|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strsmsbulk-uat-we-01||
-|ServiceBusNamespaceTopicSubscription | sbts-cpd-apps-strsmssingle-uat-we-01||
-|StorageAccount | stcpdappsstruatwe01||
-|StorageAccount | stcpdappsapimtuatwe01|
+|AppConfigurationStore|`acst-<sub>-apps-str-<env>-we-01`||
+|CosmosAccount | `cosmos-<sub>-apps-str-<env>-we-01`||
+|CosmosDBSQL |`sql-cosmos-<sub>-apps-str-ntf-<env>-we-01`||
+|CosmosDBSQL| `sql-cosmos-<sub>-apps-str-pt-<env>-we-01` ||
+|CosmosDBSQL| `sql-cosmos-<sub>-apps-str-bot-<env>-we-01`||
+|CosmosDBSQLContainer | `sqlc-cosmos-<sub>-apps-str-ntf-<env>-we-01`||
+|CosmosDBSQLContainer | `sqlc-cosmos-<sub>-apps-str-botfb-<env>-we-01`||
+|CosmosDBSQLContainer | `sqlc-cosmos-<sub>-apps-str-botrt-<env>-we-01`||
+|CosmosDBSQLContainer | `sqlc-cosmos-<sub>-apps-str-botst-<env>-we-01`||
+|CosmosDBSQLContainer | `sqlc-cosmos-<sub>-apps-str-pt-<env>-we-01`||
+|NotificationHub | `ntf-<sub>-apps-str-<env>-we-01`||
+|NotificationHubNamespace | `ntfns-<sub>-apps-str-<env>-we-01`||
+|RedisCache | `redis-<sub>-apps-str-<env>-we-01`| Use 2020-06-01 Module for deploying Azure Cache for Redis instance with Availability zones. |
+|ServiceBusNamespace| `sb-<sub>-apps-strntf-<env>-we-01`||
+|ServiceBusNamespaceTopic| `sbt-<sub>-apps-strntfbulk-<env>-we-01`||
+|ServiceBusNamespaceTopic| `sbt-<sub>-apps-strntfbulkdl-<env>-we-01`||
+|ServiceBusNamespaceTopic| `sbt-<sub>-apps-strntfoutboundgsmssingle-<env>-we-01`||
+|ServiceBusNamespaceTopic| `sbt-<sub>-apps-strntfsingle-<env>-we-01`||
+|ServiceBusNamespaceTopic| `sbt-<sub>-apps-strsmsbulk-<env>-we-01`||
+|ServiceBusNamespaceTopic| `sbt-<sub>-apps-strsmssingle-<env>-we-01`||
+|ServiceBusNamespaceTopicSubscription | `sbts-<sub>-apps-strntfbulk-<env>-we-01` ||
+|ServiceBusNamespaceTopicSubscription | `sbts-<sub>-apps-strntfbulkdl-<env>-we-01`||
+|ServiceBusNamespaceTopicSubscription | `sbts-<sub>-apps-strntfoutboundgsmssingle-<env>-we-01`||
+|ServiceBusNamespaceTopicSubscription | `sbts-<sub>-apps-strntfsingle-<env>-we-01`||
+|ServiceBusNamespaceTopicSubscription | `sbts-<sub>-apps-strsmsbulk-<env>-we-01`||
+|ServiceBusNamespaceTopicSubscription | `sbts-<sub>-apps-strsmssingle-<env>-we-01`||
+|StorageAccount | `st<sub>appsstr<env>we01`||
+|StorageAccount | `st<sub>appsapimt<env>we01`|
 
-## 4.2 Seed the Key Vault Secrets in kv-cpd-apps-uat-we-01
+## 4.2 Seed the Key Vault Secrets in 
+`kv-<sub>-apps-<env>-we-01`
 required in the cognitive and integration pipelines 
 
 | Resource Name |Secret Name  | Key Vault Name | Usage|
 |--|--|--|--|
-|apicon-cpd-apps-intcds-uat-we-01|Crm-CaseManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the [App Registration (spn-crm-case-management-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
-|apicon-cpd-apps-prdcds-uat-we-01|Crm-Common-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the [App Registration (spn-crm-common-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
-|apicon-cpd-apps-pflcds-uat-we-01|Crm-ProfileManagement-DynamicsSettings-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the [App Registration (spn-crm-common-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
-|apicon-cpd-apps-integ-uat-we-01, apicon-cpd-apps-ckankv-uat-we-01|sqcp-ado-spn-client-id|kv-cpd-pltf-uat-we-01| Client Id of the service principal having contributor access on integration event grid domain  to authenticate event grid api connection
-|apicon-cpd-apps-integ-uat-we-01, apicon-cpd-apps-ckankv-uat-we-01|sqcp-ado-spn-client-secret|kv-cpd-pltf-uat-we-01| Client Secret of the service principal having contributor access on integration event grid domain to authenticate event grid api connection|
-|logic-cpd-apps-apimt-uat-we-01|ARMAPI-ClientSecret|kv-cpd-apps-uat-we-01| Client Secret of the service principal with Reader access on APIM to allow it to query APIM metering data|
+|`apicon-<sub>-apps-intcds-<env>-we-01`|Crm-CaseManagement-DynamicsSettings-ClientSecret|`kv-<sub>-apps-<env>-we-01`| Client Secret of the [App Registration (spn-crm-case-management-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
+|`apicon-<sub>-apps-prdcds-<env>-we-01`|Crm-Common-DynamicsSettings-ClientSecret|`kv-<sub>-apps-<env>-we-01`| Client Secret of the [App Registration (spn-crm-common-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
+|`apicon-<sub>-apps-pflcds-<env>-we-01`|Crm-ProfileManagement-DynamicsSettings-ClientSecret|`kv-<sub>-apps-<env>-we-01`| Client Secret of the [App Registration (spn-crm-common-integration-<env>)](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/138/Non-Prod-Environments) - to authenticate Common Data Service Connection|
+|`apicon-<sub>-apps-integ-<env>-we-01`, `apicon-<sub>-apps-ckankv-<env>-we-01`|sqcp-ado-spn-client-id|`kv-<sub>-pltf-<env>-we-01`| Client Id of the service principal having contributor access on integration event grid domain  to authenticate event grid api connection
+|`apicon-<sub>-apps-integ-<env>-we-01`,`apicon-<sub>-apps-ckankv-<env>-we-01`|sqcp-ado-spn-client-secret|`kv-<sub>-pltf-<env>-we-01`| Client Secret of the service principal having contributor access on integration event grid domain to authenticate event grid api connection|
+|`logic-<sub>-apps-apimt-<env>-we-01`|ARMAPI-ClientSecret|`kv-<sub>-apps-<env>-we-01`| Client Secret of the service principal with Reader access on APIM to allow it to query APIM metering data|
 
 ## 4.3 Apps Cognitive Resource Group
 ### 4.3.1 Resource Group
-[rg-cpd-apps-cog-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=497)
+`rg-<sub>-apps-cog-<env>-we-01`
 ### 4.3.2 Dependencies
-1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
-1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
-1. App Registration - spn-bot-<env>
+1. `rg-<sub>-apps-mon-<env>-we-01`
+1. `rg-<sub>-apps-str-<env>-we-01`
+1. `rg-<sub>-apps-sec-<env>-we-01`
+1. App Registration - `spn-bot-<env>`
 1. Enable West US location policy for deployment of QnA Maker:
     It can be enabled specifically for following resource groups:	
-        - rg-cpd-apps-cog-<env>-we-01
-        - rg-cph-pltf-iacstg-prd-we-01
-        - rg-cph-pltf-iacst-prd-we-01
+        - `rg-<sub>-apps-cog-<env>-we-01`
+        - `rg-cph-pltf-iacstg-prd-we-01`
+        - `rg-cph-pltf-iacst-prd-we-01`
 
 ### 4.3.3 Notes
 4.3.3.1. Naming Convention 
-Naming convention has deviation because QnA Maker requires names for both App Service and Cognitive Service as identical. It was consulted with product team and it's an issue in QnA Maker. This is the reason why app service and cognitive service for QnaMaker are named as **appcog-cpd-apps-qna-uat-we-01** for English and **appcog-cpd-apps-arqna-uat-we-01** for Arabic.
+Naming convention has deviation because QnA Maker requires names for both App Service and Cognitive Service as identical. It was consulted with product team and it's an issue in QnA Maker. This is the reason why app service and cognitive service for QnaMaker are named as `appcog-<sub>-apps-qna-<env>-we-01` for English and `appcog-<sub>-apps-arqna-<env>-we-01` for Arabic.
 
 4.3.3.2. Location
- QnA resources -  app-cpd-apps-qna-uat-we-01 and app-cpd-apps-arqna-uat-we-01 are deployed in West US as that is the only supported location for resource type - QnA. 
+ QnA resources -  `app-<sub>-apps-qna-<env>-we-01` and `app-<sub>-apps-arqna-<env>-we-01` are deployed in West US as that is the only supported location for resource type - QnA. 
 More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra/pullrequest/3568)
 
 ### 4.3.4 Resources -
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-| AppServiceManagement | app-cpd-apps-qna-uat-we-01 | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
-| AppServicePropertiesQnA | app-cpd-apps-qna-uat-we-01 | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
-| AppServicePlanScale | scale-cpd-apps-cog-uat-we-01 | App service scale for Bot api App Service
-| AppServiceManagement | app-cpd-apps-arqna-uat-we-01 | App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
-| AppServicePropertiesQnA | app-cpd-apps-arqna-uat-we-01 | App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
-| AppServiceManagement | app-cpd-apps-bot-uat-we-01 | App service for Bot API
-|AppServicePlan | plan-cpd-apps-cog-uat-we-01
-| CognitiveServices | cog-cpd-apps-luisauth-uat-we-01 | Luis Authoring
-| CognitiveServices | cog-cpd-apps-luisrt-uat-we-01 | Luis Runtime
-| CognitiveServicesQna | cog-cpd-apps-qna-uat-we-01 | QnAMaker English - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
-|CognitiveServicesQna | cog-cpd-apps-arqna-uat-we-01 | QnAMaker Arabic - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
-|FunctionAppQna | func-cpd-apps-luistra-uat-we-01 | func app luis trainer
-|FunctionAppQna | func-cpd-apps-qnasync-uat-we-01 | func app triggered by logic-cpd-apps-qnakbsync-uat-we-01
-|SearchService | srch-cpd-apps-cog-uat-we-01 | Search Service English Cognitive Service for QnAMaker
-|SearchService | srch-cpd-apps-arcog-uat-we-01 | Search Service Arabic Cognitive service for QnAMaker
-| WebappBot | bot-cpd-apps-uat-we-01 | appId is ClientID of App Registration spn-bot-<env>
+| AppServiceManagement | `app-<sub>-apps-qna-<env>-we-01` | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2F<env>%20Environment%20Provisioning%20Guide%2F<env>%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+| AppServicePropertiesQnA | `app-<sub>-apps-qna-<env>-we-01` | App service for English QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2F<env>%20Environment%20Provisioning%20Guide%2F<env>%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+| AppServicePlanScale | `scale-<sub>-apps-cog-<env>-we-01` | App service scale for Bot api App Service
+| AppServiceManagement | `app-<sub>-apps-arqna-<env>-we-01`| App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2F<env>%20Environment%20Provisioning%20Guide%2F<env>%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+| AppServicePropertiesQnA | `app-<sub>-apps-arqna-<env>-we-01` | App service for Arabic QnA - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2F<env>%20Environment%20Provisioning%20Guide%2F<env>%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+| AppServiceManagement | `app-<sub>-apps-bot-<env>-we-01` | App service for Bot API
+|AppServicePlan | `plan-<sub>-apps-cog-<env>-we-01`
+| CognitiveServices | `cog-<sub>-apps-luisauth-<env>-we-01` | Luis Authoring
+| CognitiveServices | `cog-<sub>-apps-luisrt-<env>-we-01` | Luis Runtime
+| CognitiveServicesQna | `cog-<sub>-apps-qna-<env>-we-01` | QnAMaker English - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2F<env>%20Environment%20Provisioning%20Guide%2F<env>%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+|CognitiveServicesQna | `cog-<sub>-apps-arqna-<env>-we-01`| QnAMaker Arabic - Refer [Remark](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&pagePath=%2FOverview%2FDevOps%2F<env>%20Environment%20Provisioning%20Guide%2F<env>%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=notes--)
+|FunctionAppQna | `func-<sub>-apps-luistra-<env>-we-01` | func app luis trainer
+|FunctionAppQna | `func-<sub>-apps-qnasync-<env>-we-01` | func app triggered by `logic-<sub>-apps-qnakbsync-<env>-we-01`
+|SearchService | `srch-<sub>-apps-cog-<env>-we-01` | Search Service English Cognitive Service for QnAMaker
+|SearchService | `srch-<sub>-apps-arcog-<env>-we-01` | Search Service Arabic Cognitive service for QnAMaker
+| WebappBot | `bot-<sub>-apps-<env>-we-01` | appId is ClientID of App Registration spn-bot-<env>
 
 ## 4.4 Apps Integration Resource Group 
 ### 4.4.1 Resource Group
-[rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
+`rg-<sub>-apps-int-<env>-we-01`
 
 ### 4.4.2 Dependencies
-1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499) 
-1. [rg-cpd-glob-acm-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=479)
-1. Two secrets added to kv-cpd-pltf-uat-we-01
-1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
-1. App registration for spn-armapi-reader-npd 
-1. Seeding of ARMAPI-ClientSecret in the kv-cpd-apps-uat-we-01 Key Vault
-1. If its a **fresh deployment** then change the value of "**deploy**" parameter to **true** in [apicon-cpd-apps-intspo-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-intspo-uat-we-01-parameters.json&version=GBmaster&_a=contents) and [apicon-cpd-apps-into365-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-into365-uat-we-01-parameters.json&version=GBmaster&_a=contents).
+1. `rg-<sub>-apps-mon-<env>-we-01`
+1. `rg-<sub>-apps-str-<env>-we-01`
+1. `rg-<sub>-glob-acm-we-01`
+1. Two secrets added to `kv-<sub>-pltf-<env>-we-01`
+1. `rg-<sub>-pltf-sec-<env>-we-01`
+1. App registration for `spn-armapi-reader-<env>` 
+1. Seeding of ARMAPI-ClientSecret in the `kv-<sub>-apps-<env>-we-01` Key Vault
+1. If its a **fresh deployment** then change the value of "**deploy**" parameter to **true** in `apicon-<sub>-apps-intspo-<env>-we-01-parameters.json` and `apicon-<sub>-apps-into365-<env>-we-01-parameters.json`
 
 
 ### 4.4.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|APIConnection | apicon-cpd-apps-into365-uat-we-01 | API Connection to Office 365 Tenant (CMS)|
-|ApiConnectionServiceBus | apicon-cpd-apps-intsb-uat-we-01 | API Connection to Service Bus|
-|APIConnection | apicon-cpd-apps-intspo-uat-we-01 | API Connection to Sharepoint Online|
-|ApiConnectionEventGrid | apicon-cpd-apps-integ-uat-we-01 | API Connection to Event Grid Domain|
-|ApiConnectionKeyVault | apicon-cpd-apps-intkv-uat-we-01 ||
-|ApiConnectionEventGridPublish | apicon-cpd-apps-integd-uat-we-01 | (Refer - kv-cpd-pltf-uat-we-01 for secret)
-|ApiConnectionAzureBlob | apicon-cpd-apps-apimtst-uat-we-01| API Connection to **stcpdappsapimtuatwe01** in **rg-cpd-apps-str-uat-we-01**|
-|ApiConnectionAzureBlob | apicon-cpd-apps-intst-uat-we-01||
-|ApiConnectionAzureBlob | apicon-cpd-apps-strst-uat-we-01| API Connection to **stcpdappsstruatwe01** in **rg-cpd-apps-str-uat-we-01**|
-|APIConnectionCognitiveService | apicon-cpd-apps-intcog-uat-we-01 | API Connection to Translator Cognitive Service|
-|APIConnection | apicon-cpd-apps-ascalrt-uat-we-01 | API Connection to Azure Security Alert trigger.|
-|ApiConnectionCommonDataService | apicon-cpd-apps-intcds-uat-we-01 | API Connection to Common Data Service for Case api. Client Id will be the Client Id of App Registration - `spn-crm-case-management-integration-<env>`|
-|ApiConnectionCommonDataService | apicon-cpd-apps-prdcds-uat-we-01 | API Connection to Common Data Service for market place product api. Client Id will be the Client Id of App Registration - `spn-crm-general-integration-<env>`|
-|ApiConnectionCommonDataService | apicon-cpd-apps-pflcds-uat-we-01 | API Connection to Common Data Service for profile and organisation profile api. Client Id will be the Client Id of App Registration - `spn-crm-profile-management-integration-<env>`|
-|AppServicePlan | plan-cpd-apps-int-uat-we-01||
-|EventGridDomain | egd-cpd-apps-int-uat-we-01||
-|FunctionAppBPA | func-cpd-apps-intbpa-uat-we-01 | Function App to subscribe and process the Sharepoint data|
-|FunctionAppNTF | func-cpd-apps-intntf-uat-we-01 | Function App to track the changes of Sharepoint data|
-|FunctionAppCE | func-cpd-apps-acm-uat-we-01 | Function app to monitor consumption metering storage for 6D|
-|LogicApp | logic-cpd-apps-qnacopy-uat-we-01 | QnAMaker FAQ copier from source to destination
-|LogicApp | logic-cpd-apps-qnakbsync-uat-we-01 | QnAMaker Knowledge articles Synchronizer
-|LogicApp | logic-cpd-apps-inttrsl-uat-we-01 | Logic app to create Translation Task and do Auto Translation from English to Arabic of Sharepoint data|
-|LogicApp | logic-cpd-apps-intaprv1-uat-we-01 | This logic app is responsible creating approval task which needs to be approved by Content approvers based on the content sensitivity. |
-|LogicApp | logic-cpd-apps-intgbaprl-uat-we-01 |This logic app is responsible for creating approval task which needs to be approved by marketplace content approvers.|
-|LogicApp | logic-cpd-apps-intprdt-uat-we-01 | Logic app to sync Products from CRM|
-|LogicApp | logic-cpd-apps-intsec-uat-we-01 | Logic app to sync Global Sectors List from CRM|
-|LogicApp | logic-cpd-apps-secsync-uat-we-01 | Logic app to sync Global Sectors List with Sharepoint Taxonomy terms|
-|LogicApp | logic-cpd-apps-route-uat-we-01| This Logic App uses the 2019-05-01 version of the module to allow for Access Control configuration.  **Important:** after the APIM resource for this Logic App has been deployed (apim-cpd-shrd-uat-we-01), update the accessControl parameter in the ARM template for this resource to the Public IP of the APIM in the CIDR format. For example, if the Public IP of APIM is <code>1.1.1.1</code>, then replace the value in the ARM template with <code>1.1.1.1/32</code>. If this is not done, the Logic App will return an error stating that the IP is not allowed to access the Logic App trigger.|
-|LogicApp | logic-cpd-apps-6dbill-uat-we-01|Receives 6DBilling from the Service Bus Queue and forwards it onto the Event Domain. No processing is needed on the Event before passing so it just acts as a forwarder.|
-|LogicApp | logic-cpd-apps-6dhook-uat-we-01| If the subscription to the Event Domain has issues, you can try [manually updating it](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=4.4.5-manually-updating-event-topic-subscriptions). |
-|LogicApp | logic-cpd-apps-mpsidx-uat-we-01|The data that was generated from CRM and CMS will be saved to Azure Search via Events. The data here is for products, KB articles and news. This Logic App uses the 2019-05-01 version of the module to allow for Access Control configuration. Access Control has been configured to only allow other Logic Apps to trigger this app. |
-|LogicApp | logic-cpd-apps-mpsd365-uat-we-01|It triggers when message is received on event trigger domain topic and subscribed to product - create, update, delete and Kbarticle - create, update, delete and send to logic-cpp-apps-mpsidx-pre-we-01. If the subscription to the Event Domain has issues, you can try [manually updating it](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=4.4.5-manually-updating-event-topic-subscriptions).|
-|LogicApp | logic-cpd-apps-mpso365-uat-we-01|It triggers when message is received on event trigger domain topic and subscribed to news - create, update, delete and send to logic-cpd-apps-mpsidx-uat-we-01. If the subscription to the Event Domain has issues, you can try [manually updating it](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=4.4.5-manually-updating-event-topic-subscriptions).|
-|LogicApp | logic-cpd-apps-dfndr-uat-we-01 | Logic app triggers when a malware file is uploaded in Blob container and update the attachment extension entity Is Unsafe as true.
-|LogicApp | logic-cpd-apps-intfile-uat-we-01 | Logic app retrieves the content of file from Blob container and update the file content in D365.|
-|LogicApp | logic-cpd-apps-intsubs-uat-we-01 | Logic app performs upsert operation on Market Place Product Subscription.|
-|LogicApp | logic-cpd-apps-intacnt-uat-we-01 | Logic app performs update operation on organisation and profile.|
-|LogicApp | logic-cpd-apps-apimt-uat-we-01 | Logic app queries APIM daily to get subscriptions usage information and sends event. Requires the **spn-armapi-reader-npd** Service Principal and the **ARMAPI-ClientSecret** secret to be seeded. |
-|ServiceBusNamespace | sb-cpd-apps-int-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intprodsync-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intntf-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intsec-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-int6dbill-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intd365-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-into365-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intchglog-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intaprvl-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intgbaprl-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intcoreapi-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-qnaadd-uat-we-01||
-|ServiceBusNamespaceQueue | sbq-cpd-apps-intiotalert-uat-we-01||
-|ServiceBusNamespaceTopic | sbt-cpd-apps-qnasync-uat-we-01||
-|ServiceBusNamespaceTopic Subscription | sbts-cpd-apps-copyqna-uat-we-01||
-|StorageAccounts | stcpdappsintuatwe01||
+|APIConnection | `apicon-<sub>-apps-into365-<env>-we-01` | API Connection to Office 365 Tenant (CMS)|
+|ApiConnectionServiceBus | `apicon-<sub>-apps-intsb-<env>-we-01` | API Connection to Service Bus|
+|APIConnection | `apicon-<sub>-apps-intspo-<env>-we-01` | API Connection to Sharepoint Online|
+|ApiConnectionEventGrid |`apicon-<sub>-apps-integ-<env>-we-01` | API Connection to Event Grid Domain|
+|ApiConnectionKeyVault | `apicon-<sub>-apps-intkv-<env>-we-01` ||
+|ApiConnectionEventGridPublish | `apicon-<sub>-apps-integd-<env>-we-01` | (Refer - `kv-<sub>-pltf-<env>-we-01` for secret)
+|ApiConnectionAzureBlob | `apicon-<sub>-apps-apimtst-<env>-we-01`| API Connection to `st<sub>appsapimt<env>we01` in `rg-<sub>-apps-str-<env>-we-01`|
+|ApiConnectionAzureBlob | `apicon-<sub>-apps-intst-<env>-we-01`||
+|ApiConnectionAzureBlob | `apicon-<sub>-apps-strst-<env>-we-01`| API Connection to `st<sub>appsstr<env>we01` in `rg-<sub>-apps-str-<env>-we-01`|
+|APIConnectionCognitiveService | `apicon-<sub>-apps-intcog-<env>-we-01` | API Connection to Translator Cognitive Service|
+|APIConnection | `apicon-<sub>-apps-ascalrt-<env>-we-01` | API Connection to Azure Security Alert trigger.|
+|ApiConnectionCommonDataService | `apicon-<sub>-apps-intcds-<env>-we-01` | API Connection to Common Data Service for Case api. Client Id will be the Client Id of App Registration - `spn-crm-case-management-integration-<env>`|
+|ApiConnectionCommonDataService | `apicon-<sub>-apps-prdcds-<env>-we-01` | API Connection to Common Data Service for market place product api. Client Id will be the Client Id of App Registration - `spn-crm-general-integration-<env>`|
+|ApiConnectionCommonDataService | `apicon-<sub>-apps-pflcds-<env>-we-01` | API Connection to Common Data Service for profile and organisation profile api. Client Id will be the Client Id of App Registration - `spn-crm-profile-management-integration-<env>`|
+|AppServicePlan | `plan-<sub>-apps-int-<env>-we-01`||
+|EventGridDomain | `egd-<sub>-apps-int-<env>-we-01`||
+|FunctionAppBPA | `func-<sub>-apps-intbpa-<env>-we-01` | Function App to subscribe and process the Sharepoint data|
+|FunctionAppNTF | `func-<sub>-apps-intntf-<env>-we-01` | Function App to track the changes of Sharepoint data|
+|FunctionAppCE | `func-<sub>-apps-acm-<env>-we-01` | Function app to monitor consumption metering storage for 6D|
+|LogicApp | `logic-<sub>-apps-qnacopy-<env>-we-01` | QnAMaker FAQ copier from source to destination
+|LogicApp | `logic-<sub>-apps-qnakbsync-<env>-we-01` | QnAMaker Knowledge articles Synchronizer
+|LogicApp | `logic-<sub>-apps-inttrsl-<env>-we-01` | Logic app to create Translation Task and do Auto Translation from English to Arabic of Sharepoint data|
+|LogicApp | `logic-<sub>-apps-intaprv1-<env>-we-01` | This logic app is responsible creating approval task which needs to be approved by Content approvers based on the content sensitivity. |
+|LogicApp | `logic-<sub>-apps-intgbaprl-<env>-we-01` |This logic app is responsible for creating approval task which needs to be approved by marketplace content approvers.|
+|LogicApp |`logic-<sub>-apps-intprdt-<env>-we-01` | Logic app to sync Products from CRM|
+|LogicApp | `logic-<sub>-apps-intsec-<env>-we-01` | Logic app to sync Global Sectors List from CRM|
+|LogicApp | `logic-<sub>-apps-secsync-<env>-we-01` | Logic app to sync Global Sectors List with Sharepoint Taxonomy terms|
+|LogicApp | `logic-<sub>-apps-route-<env>-we-01`| This Logic App uses the 2019-05-01 version of the module to allow for Access Control configuration.  **Important:** after the APIM resource for this Logic App has been deployed (`apim-<sub>-shrd-<env>-we-01`), update the accessControl parameter in the ARM template for this resource to the Public IP of the APIM in the CIDR format. For example, if the Public IP of APIM is <code>1.1.1.1</code>, then replace the value in the ARM template with <code>1.1.1.1/32</code>. If this is not done, the Logic App will return an error stating that the IP is not allowed to access the Logic App trigger.|
+|LogicApp | `logic-<sub>-apps-6dbill-<env>-we-01`|Receives 6DBilling from the Service Bus Queue and forwards it onto the Event Domain. No processing is needed on the Event before passing so it just acts as a forwarder.|
+|LogicApp | `logic-<sub>-apps-6dhook-<env>-we-01`|  |
+|LogicApp | `logic-<sub>-apps-mpsidx-<env>-we-01`|The data that was generated from CRM and CMS will be saved to Azure Search via Events. The data here is for products, KB articles and news. This Logic App uses the 2019-05-01 version of the module to allow for Access Control configuration. Access Control has been configured to only allow other Logic Apps to trigger this app. |
+|LogicApp | `logic-<sub>-apps-mpsd365-<env>-we-01`|It triggers when message is received on event trigger domain topic and subscribed to product - create, update, delete and Kbarticle - create, update, delete and send to     `logic-<sub>-apps-mpsidx-<env>-we-01`|
+|LogicApp | `logic-<sub>-apps-mpso365-<env>-we-01`|It triggers when message is received on event trigger domain topic and subscribed to news - create, update, delete and send to `logic-<sub>-apps-mpsidx-<env>-we-01`.|
+|LogicApp | `logic-<sub>-apps-dfndr-<env>-we-01` | Logic app triggers when a malware file is uploaded in Blob container and update the attachment extension entity Is Unsafe as true.
+|LogicApp | `logic-<sub>-apps-intfile-<env>-we-01` | Logic app retrieves the content of file from Blob container and update the file content in D365.|
+|LogicApp | `logic-<sub>-apps-intsubs-<env>-we-01`| Logic app performs upsert operation on Market Place Product Subscription.|
+|LogicApp | `logic-<sub>-apps-intacnt-<env>-we-01` | Logic app performs update operation on organisation and profile.|
+|LogicApp | `logic-<sub>-apps-apimt-<env>-we-01` | Logic app queries APIM daily to get subscriptions usage information and sends event. Requires the `spn-armapi-reader-<env>` Service Principal and the `ARMAPI-ClientSecret` secret to be seeded. |
+|ServiceBusNamespace | `sb-<sub>-apps-int-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intprodsync-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intntf-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intsec-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-int6dbill-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intd365-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-into365-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intchglog-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intaprvl-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intgbaprl-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intcoreapi-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-qnaadd-<env>-we-01`||
+|ServiceBusNamespaceQueue | `sbq-<sub>-apps-intiotalert-<env>-we-01`||
+|ServiceBusNamespaceTopic | `sbt-<sub>-apps-qnasync-<env>-we-01`||
+|ServiceBusNamespaceTopic Subscription | `sbts-<sub>-apps-copyqna-<env>-we-01`||
+|StorageAccounts | `st<sub>appsint<env>we01`||
 
 ### 4.4.4 Post deployment steps
 - If its a fresh deployment follow these steps:
-1. In the Azure portal search for apicon-cpd-apps-intspo-uat-we-01 and open it.
+1. In the Azure portal search for `apicon-<sub>-apps-intspo-<env>-we-01` and open it.
 2. Click on Edit Api Connection under General tab in the right panel.
 3. Click on Authorize to and authorize the connection using cms.automation account's credentials .
-4. Repeat the above three steps for apicon-cpd-apps-into365-uat-we-01
-5. Change the value of "**deploy**" parameter to "**false**" in [apicon-cpd-apps-intspo-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-intspo-uat-we-01-parameters.json&version=GBmaster&_a=contents) and [apicon-cpd-apps-into365-uat-we-01-parameters.json](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=%2FModules%2FARM%2FApiConnection%2F2019-04-01%2FParameters%2Fapicon-cpd-apps-into365-uat-we-01-parameters.json&version=GBmaster&_a=contents).
-_`If the value of "deploy" is "false" then we don't need to reauthenticate the api connections on subsequent deployments`_   
-6. Update the accessControl ARM parameter of logic-cpd-apps-route-uat-we-01 with the Public IP of apim-cpd-shrd-uat-we-01 once APIM is deployed. See the remarks of logic-cpd-apps-route-uat-we-01 above for more details. 
+4. Repeat the above three steps for `apicon-<sub>-apps-into365-<env>-we-01`
+5. Change the value of "**deploy**" parameter to "**false**" in `apicon-<sub>-apps-intspo-<env>-we-01-parameters.json`and `apicon-<sub>-apps-into365-<env>-we-01-parameters.json`
+6. If the value of "deploy" is "false" then we don't need to reauthenticate the api connections on subsequent deployments.  
+6. Update the accessControl ARM parameter of `logic-<sub>-apps-route-<env>-we-01` with the Public IP of `apim-<sub>-shrd-<env>-we-01` once APIM is deployed. See the remarks of `logic-<sub>-apps-route-<env>-we-01` above for more details. 
 
 ### 4.4.5 Verify Event Topic Subscriptions 
 In `egd-<sub>-apps-int-<env>-we-01`
@@ -325,55 +327,56 @@ Verify that following subscriptions are created in the event grid domain topics
 
 ## 4.5 Shared Resource Group 
 ### 4.5.1 Resource Group
-[rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
+`rg-<sub>-shrd-<env>-we-01`
 ### 4.5.2 Dependencies
-1. [rg-cpd-shrd-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=454)
-1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-1. [rg-cpd-apps-int-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=498)
-1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+1. `rg-<sub>-shrd-mon-<env>-we-01`
+1. `rg-<sub>-pltf-net-<env>-we-01`
+1. `rg-<sub>-apps-int-<env>-we-01`
+1. `rg-<sub>-pltf-sec-<env>-we-01`
 1. Self hosted agent
-1. Certificates uploaded to kv-cpd-pltf-<env>-we-01
+1. Certificates uploaded to `kv-<sub>-pltf-<env>-we-01`
 
 ### 4.5.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ApiManagement| apim-cpd-shrd-uat-we-01 | hostConfigurations parameter should be empty for initial deployment|
-|ContentDeliveryNetwork | cdn-cpd-shrd-uat-we-01 ||
-|ContentDeliveryNetworkEndpoint | uat-tasmu ||
-|StorageAccount | stcpdshrduatwe01 ||
+|ApiManagement| `apim-<sub>-shrd-<env>-we-01` | hostConfigurations parameter should be empty for initial deployment|
+|ContentDeliveryNetwork | `cdn-<sub>-shrd-<env>-we-01` ||
+|ContentDeliveryNetworkEndpoint | `<env>-tasmu`||
+|StorageAccount | `st<sub>shrd<env>we01` ||
 
 
-### 4.5.4 Update Key Vault Access Policies - kv-cpd-pltf-<env>-we-01
+### 4.5.4 Update Key Vault Access Policies 
+for `kv-<sub>-pltf-<env>-we-01`
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
-|apim-cpd-shrd-<env>-we-01|Get,List||
+|`apim-<sub>-shrd-<env>-we-01`|Get,List||
 
-Redeploy [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
+Redeploy `rg-<sub>-pltf-sec-<env>-we-01`
 
 ### 4.5.5 Add Custom Domains to APIM
-Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
+Update the parameter file - `apim-<sub>-shrd-<env>-we-01` for hostConfigurations
 ```
 "hostnameConfigurations":{
    "value": [
       {
          "type": "DeveloperPortal",
          "hostName": "developer.<env>.sqcp.qa",
-         "keyVaultId": "https://kv-cpd-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
+         "keyVaultId": "https://kv-<sub>-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
          "negotiateClientCertificate": false,
          "defaultSslBinding": false
       },
       {
          "type": "Proxy",
          "hostName": "api.<env>.sqcp.qa",
-         "keyVaultId": "https://kv-cpd-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
+         "keyVaultId": "https://kv-<sub>-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
          "negotiateClientCertificate": false,
          "defaultSslBinding": true
       },
       {
          "type": "Management",
          "hostName": "api-management.<env>.sqcp.qa",
-         "keyVaultId": "https://kv-cpd-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
+         "keyVaultId": "https://kv-<sub>-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate",
          "negotiateClientCertificate": false,
          "defaultSslBinding": false
       }
@@ -384,121 +387,127 @@ Update the parameter file - apim-cpd-shrd-<env>-we-01 for hostConfigurations
 ### 4.5.6 Add Integration APIs
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ApiManagementLogicAppBackend | apimlab-cpd-shrd-uat-we-01 ||
-|ApiManagementAPI | apimapi-cpd-shrd-uat-we-01 | Refer module specific read me|
+|ApiManagementLogicAppBackend | `apimlab-<sub>-shrd-<env>-we-01`||
+|ApiManagementAPI | `apimapi-<sub>-shrd-<env>-we-01` | Refer module specific read me|
 
-### 4.5.7 Redeploy [rg-cpd-shrd-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=500)
-
+### 4.5.7 Redeploy Sshared Resource Group
+`rg-<sub>-shrd-<env>-we-01`
 ### 4.5.8 Update the public IP of APIM
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |LogicApp | `logic-<sub>-apps-route-<env>-we-01` | Update the public IP of APIM for access|
 
-### 4.5.8 Redeploy rg-cpd-apps-int-uat-we-01
+### 4.5.8 Redeploy Integration Resource Group
+`rg-<sub>-apps-int-<env>-we-01`
 
 ## 4.6 Apps AKS Resource Group
 ### 4.6.1 Resource Group 
-[rg-cpd-apps-aks-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=496)
+`rg-<sub>-apps-aks-<env>-we-01`
 ### 4.6.2 Dependencies
-1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-1. [rg-cpd-glob-npd-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=393)
-1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-1. [rg-cpd-apps-str-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=499)
+1. `rg-<sub>-apps-mon-<env>-we-01`
+1. `rg-<sub>-glob-npd-we-01`
+1. `rg-<sub>-pltf-net-<env>-we-01`
+1. `rg-<sub>-apps-str-<env>-we-01`
 ### 4.6.3 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ManagedClusterCNI | aks-cpd-apps-uat-we-01 ||
-|ManagedIdentity | mi-cpd-apps-aks-uat-we-01 | Deployed in rg-cpd-apps-aksnode-uat-we-01 |
-|ApplicationGateway | agw-cpd-apps-aks-uat-we-01 | SKU and Tier - Standard_v2|
+|ManagedClusterCNI | `aks-<sub>-apps-<env>-we-01` ||
+|ManagedIdentity | `mi-<sub>-apps-aks-<env>-we-01` | Deployed in `rg-<sub>-apps-aksnode-<env>-we-01` |
+|ApplicationGateway | `agw-<sub>-apps-aks-<env>-we-01` | SKU and Tier - Standard_v2, firewallenabled - false|
 
 ## 4.7 Apps CKAN Resource Group
 ### 4.7.1 Resource Group
-[rg-cpd-apps-ckan-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1117)
+`rg-<sub>-apps-ckan-<env>-we-01`
 ### 4.7.2 Dependencies
-1. [rg-cpd-apps-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
-1. [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
-1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
-1. Certificates uploaded to kv-cpd-pltf-uat-we-01
+1. `rg-<sub>-apps-net-<env>-we-01`
+1. `rg-<sub>-apps-sec-<env>-we-01`
+1. `rg-<sub>-apps-mon-<env>-we-01`
+1. `rg-<sub>-pltf-net-<env>-we-01`
+1. `rg-<sub>-pltf-sec-<env>-we-01`
+1. Certificates uploaded to `kv-<sub>-pltf-<env>-we-01`
+1. Secrets seeded in `kv-<sub>-apps-<env>-we-01`
 ### 4.7.3 Notes
-Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
+Refer `kv-<sub>-pltf-<env>-we-01` and `mi-<sub>-pltf-<env>-we-01` for ssl certificates
 ### 4.7.4 Resources
 | Module Name | Resource Name | Remarks |
 |--|--|--|
 | BitnamiCkan | `ckan-<sub>-apps-<env>-we-01` | check module specific read me for more details |
-| ApiConnectionAzureBlob | apicon-cpd-apps-dlszn-uat-we-01 | |
-| ApiConnectionKeyVault | apicon-cpd-apps-ckankv-uat-we-01 | |
-| IntegrationAccount | intac-cpd-apps-ckan-uat-we-01 | |
-| LogicApp | logic-cpd-apps-purvckan-uat-we-01 | |
+| ApiConnectionAzureBlob | `apicon-<sub>-apps-dlszn-<env>-we-01` | |
+| ApiConnectionKeyVault | `apicon-<sub>-apps-ckankv-<env>-we-01` | |
+| IntegrationAccount | `intac-<sub>-apps-ckan-<env>-we-01` | check module specific read me for more details|
+| LogicApp | `logic-<sub>-apps-purvckan-<env>-we-01` | |
 
 ## 4.8 Apps WAF Resource Group
 ### 4.8.1 Resource Group
-[rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
+`rg-<sub>-apps-waf-<env>-we-01`
 ### 4.8.2 Dependencies 
-1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
-1. [rg-cpd-pltf-net-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355)
-1. [rg-cpd-pltf-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=356)
-1. Certificates uploaded to kv-cpd-pltf-uat-we-01
+1. `rg-<sub>-apps-mon-<env>-we-01`
+1. `rg-<sub>-pltf-net-<env>-we-01`
+1. `rg-<sub>-pltf-sec-<env>-we-01`
+1. Certificates uploaded to `kv-<sub>-pltf-<env>-we-01`
 ### 4.8.3 Notes
-Refer kv-cpd-pltf-uat-we-01 and mi-cpd-pltf-uat-we-01 for ssl certificates
+Refer `kv-<sub>-pltf-<env>-we-01` and `mi-<sub>-pltf-<env>-we-01` for ssl certificates
 ### 4.8.4 Resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|ApplicationGateway | agw-cpd-apps-api-uat-we-01 ||
-|ApplicationGateway | agw-cpd-apps-web-uat-we-01 ||
-|ApplicationGateway | agw-cpd-apps-ntf-uat-we-01 ||
-|WAF Policy | waf-cpd-apps-ckan-uat-we-01 | Specific to CKAN solution |
+|ApplicationGateway | `agw-<sub>-apps-api-<env>-we-01` | Refer private IP of `apim-<sub>-shrd-<env>-we-01` in backend pool|
+|ApplicationGateway | `agw-<sub>-apps-web-<env>-we-01` |Refer private IP of `agw-<sub>-apps-aks-<env>-we-01` and `agw-<sub>-apps-ckan-<env>-we-01` in backend pools |
+|ApplicationGateway | `agw-<sub>-apps-ntf-<env>-we-01` |Refer private IP of `apim-<sub>-shrd-<env>-we-01` in backend pool|
+|WAF Policy | `waf-<sub>-apps-ckan-<env>-we-01` | Specific to CKAN solution |
 
 ## 4.9 Apps Payment Token Resource Group
 ### 4.9.1 Resource Group
-[rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
+`rg-<sub>-apps-pt-<env>-we-01`
 ### 4.9.2 Dependencies
-1. [rg-cpd-apps-mon-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=394)
+1. `rg-<sub>-apps-mon-<env>-we-01`
 ### 4.9.3 Resources 
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|KeyVault | kv-cpd-apps-pt-uat-we-01 ||
-|AppServicePlan | plan-cpd-apps-pt-uat-we-01 ||
-|FunctionAppPt | func-cpd-apps-pt-uat-we-01 ||
+|KeyVault | `kv-<sub>-apps-pt-<env>-we-01` ||
+|AppServicePlan | `plan-<sub>-apps-pt-<env>-we-01` ||
+|FunctionAppPt | `func-<sub>-apps-pt-<env>-we-01`||
 
-## 4.10 Update Key Vault Access Policies - kv-cpd-apps-pt-we-01
-redeploy [rg-cpd-apps-pt-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=726)
-
-|Object Id| Secrets |  Certificates|
-|--|--|--|
-|func-cpd-apps-pt-uat-we-01|Get, List, Set||
-
-
-## 4.11 Update Key Vault Access Policies -kv-cpd-apps-uat-we-01
-redeploy [rg-cpd-apps-sec-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=344)
+## 4.10 Update Key Vault Access Policies 
+for `kv-<sub>-apps-pt-we-01`
+Redeploy `rg-<sub>-apps-pt-<env>-we-01`
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
-|mi-cpd-apps-aks-uat-we-01|Get||
-|func-cpd-apps-acm-uat-we-01|Get||
-|app-cpd-apps-bot-uat-we-01|Get||
-|func-cpd-apps-qnasync-uat-we-01|Get||
-|func-cpd-apps-luistra-uat-we-01|Get||
-|func-cpd-apps-intntf-uat-we-01|Get||
-|func-cpd-apps-acm-uat-we-01|Get||
-|func-cpd-apps-intbpa-uat-we-01|Get|Get|
+|`func-<sub>-apps-pt-<env>-we-01`|Get, List, Set||
 
-## 4.12 Seeding secrets to Key Vault (kv-cpd-apps-uat-we-01)
-Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - uat
+
+## 4.11 Update Key Vault Access Policies
+`kv-<sub>-apps-<env>-we-01`
+Redeploy `rg-<sub>-apps-sec-<env>-we-01`
+
+|Object Id| Secrets |  Certificates|
+|--|--|--|
+|`mi-<sub>-apps-aks-<env>-we-01`|Get||
+|`func-<sub>-apps-acm-<env>-we-01`|Get||
+|`app-<sub>-apps-bot-<env>-we-01`|Get||
+|`func-<sub>-apps-qnasync-<env>-we-01`|Get||
+|`func-<sub>-apps-luistra-<env>-we-01`|Get||
+|`func-<sub>-apps-intntf-<env>-we-01`|Get||
+|`func-<sub>-apps-acm-<env>-we-01`|Get||
+|`func-<sub>-apps-intbpa-<env>-we-01`|Get|Get|
+
+## 4.12 Seeding secrets to Key Vault 
+`kv-<sub>-apps-<env>-we-01`
+Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - <env>
 [Update the secret values after retrieval](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/151/Key-Vault-Secrets-Apps)
-The list of secrets to be seeded to kv-cpd-apps-<env>-we-01 - Scripts\KeyVault\all-secrets.yml
-Stage for uat must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
+The list of secrets to be seeded to `kv-<sub>-apps-<env>-we-01` - Scripts\KeyVault\all-secrets.yml
+Stage for `<env>` must be added to pipeline and run the pipeline to populate key vault - [CD-KeyVaultSecrets-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=337) (Uses powershell commands to import)
 
-## 4.13 Adding Configurations to App Config Store (acst-cpd-apps-str-uat-we-01)
+## 4.13 Adding Configurations to App Config Store 
+`acst-<sub>-apps-str-<env>-we-01`
 The configurations and their retrieval - Scripts\AppConfigurations
-Add application configurations for <env>.
+Add application configurations for `<env>`.
 Placeholders already present for all env
-Add stage for <env> to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
+Add stage for `<env>` to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 
 ## 4.14 Link AKS Cluster DNS Zone to CPH Subscription
 1. A user account being used should have access to both the subscriptions 
-1. Go to AKS node resource group (rg-cpd-apps-aksnode-uat-we-01)
+1. Go to AKS node resource group (`rg-<sub>-apps-aksnode-<env>-we-01`)
 1. Open the private DNS Zone
 1. Go to virtual network links and add link as below
 ![image.png](/.attachments/image-ae0af3f0-3406-4327-bf7f-2d29bfa8c5c4.png)
@@ -508,29 +517,29 @@ Update role assignment for  following resources
 
 |Identity Name| Type  | Target Resource | Role |
 |--|--|--|--|
-|func-cpd-apps-luistra-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-|func-cpd-apps-qnasync-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-|func-cpd-apps-intbpa-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-|func-cpd-apps-intntf-<env>-we-01 | Function App  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-|app-cpd-apps-bot-<env>-we-01 | App Service  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader ||spn-cmsbpa-dev | Service Principal | <env>-cdntasmu | CDN Endpoint Contributor |
-|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity  | acst-cpd-apps-str-<env>-we-01 | App Configuration Store Data Reader |
-|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | rg-cpd-apps-aks-<env>-we-01 | Reader |
-|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | agw-cpd-apps-aks-<env>-we-01 | Contributor |
-|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Reader |
-|mi-cpd-apps-aks-<env>-we-01 | User Assigned Managed Identity | aks-cpd-apps-<env>-we-01-agentpool | Managed Identity Operator |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | agw-cpd-apps-aks-<env>-we-01 | Contributor |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | acrcpdglobnpdwe01 | Acr Pull |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Virtual Machine Contributor |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Operator |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity | rg-cpd-apps-aksnode-<env>-we-01 | Managed Identity Contributor |
-|aks-cpd-apps-<env>-we-01-agentpool | User Assigned Managed Identity  | vnet-cpd-pltf-<env>-we-01/snet-cpd-apps-aks-<env>-we-01 | Network Contributor |
-|spn-cmsbpa-<env>|Service Principal|<env>-cdntasmu|CDN Endpoint Contributor. **Note**: Use spn-cmsbpa-dev for environments upto uat and spn-cmsbpa-prod for pre prod and prod. The app must be present in the same directory where azure subscription is present.|
-|spn-armapi-reader-npd|Service Principal|apim-cpd-shrd-<env>-we-01|Reader|
+|  `func-<sub>-apps-luistra-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
+|`func-<sub>-apps-qnasync-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
+|`func-<sub>-apps-intbpa-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
+|`func-<sub>-apps-intntf-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
+|`app-<sub>-apps-bot-<env>-we-01` | App Service  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader ||`spn-cmsbpa-<env>` | Service Principal | `<env>-cdntasmu` | CDN Endpoint Contributor |
+|`mi-<sub>-apps-aks-<env>-we-01` | User Assigned Managed Identity  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
+|`mi-<sub>-apps-aks-<env>-we-01 `| User Assigned Managed Identity | `rg-<sub>-apps-aks-<env>-we-01` | Reader |
+|`mi-<sub>-apps-aks-<env>-we-01 `| User Assigned Managed Identity | `agw-<sub>-apps-aks-<env>-we-01` | Contributor |
+|`mi-<sub>-apps-aks-<env>-we-01` | User Assigned Managed Identity | `rg-<sub>-apps-aksnode-<env>-we-01` | Reader |
+|`mi-<sub>-apps-aks-<env>-we-01` | User Assigned Managed Identity | `aks-<sub>-apps-<env>-we-01-agentpool` | Managed Identity Operator |
+|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `agw-<sub>-apps-aks-<env>-we-01` | Contributor |
+|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `acr<sub>globnpdwe01` | Acr Pull |
+|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `rg-<sub>-apps-aksnode-<env>-we-01` | Virtual Machine Contributor |
+|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `rg-<sub>-apps-aksnode-<env>-we-01` | Managed Identity Operator |
+|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Contributor |
+|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity  | `vnet-<sub>-pltf-<env>-we-01/snet-<sub>-apps-aks-<env>-we-01` | Network Contributor |
+|`spn-cmsbpa-<env>`|Service Principal|`<env>-cdntasmu`|CDN Endpoint Contributor. **Note**: Use `spn-cmsbpa-dev` for environments upto uat and `spn-cmsbpa-prod` for pre prod and prod. The app must be present in the same directory where azure subscription is present.|
+|`spn-armapi-reader-<env>`|Service Principal|`apim-<sub>-shrd-<env>-we-01`|Reader|
 
 ## 4.16 Configuring Notification Hubs for FCM and APNS
 1. Obtain the API Key of [Google Firebase Cloud Account](https://console.firebase.google.com/) after creating the project from project settings
 1. Obtain the p12 certificate by Developer Account into the development Mac machine. Follow the steps to [export the certificate](https://help.attendify.com/en/articles/613466-how-to-export-a-push-notification-apns-certificate-in-a-p12-file#:~:text=Generate%20APNS.p12%20certificate%20Double%20click%20the%20Development%20certificate,app%20certificate%20and%20right%20click%20to%20export%20it.)  in .p12 format. 
-3. Go to notification hub (ntf-cpd-apps-str-<env>-we-01) -> Settings
+3. Go to notification hub (`ntf-<sub>-apps-str-<env>-we-01`) -> Settings
 3.1. Update the Google in Settings with the API Key obtained.
 3.2. Update the Apple in Settings for iOS Certificate. For production environment, use the application mode as production.
 1. Test Send (Support and troubleshooting) for Apple and Android Phone for verifications.
@@ -542,10 +551,10 @@ Update role assignment for  following resources
  "subnets": {
             "value": [
                 {
-                    "name": "snet-cpd-apps-aks-uat-we-01",
+                    "name": "snet-<sub>-apps-aks-<env>-we-01",
                     "addressPrefix": "172.20.72.0/23",
-                    "networkSecurityGroupName": "nsg-cpd-apps-aks-uat-we-01",
-                    "routeTableName": "route-cpd-apps-aks-uat-we-01",
+                    "networkSecurityGroupName": "nsg-<sub>-apps-aks-<env>-we-01",
+                    "routeTableName": "route-<sub>-apps-aks-<env>-we-01",
                     "serviceEndpoints": [
                         {
                             "service": "Microsoft.AzureCosmosDB",
@@ -555,17 +564,17 @@ Update role assignment for  following resources
                         }
                     ],
                     "delegations": [],
-                    "nsgsRGName": "rg-cpd-apps-sec-uat-we-01",
-                    "routesRGName": "rg-cpd-apps-net-uat-we-01"
+                    "nsgsRGName": "rg-<sub>-apps-sec-<env>-we-01",
+                    "routesRGName": "rg-<sub>-apps-net-<env>-we-01"
                 }
             ]
  }
 ```
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|VirtualNetwork| vnet-cpd-pltf-uat-we-01 ||
+|VirtualNetwork| `vnet-<sub>-pltf-<env>-we-01` ||
 
-2. Run [`CD-rg-<sub>-pltf-net-<env>-we-01-Master-Release`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=355) to deploy changes.
+2. Deploy Networking Resource Group - `rg-<sub>-pltf-net-<env>-we-01`
 
 ## 5.2 Add Private DNS Zones
 1. Add template for private dns zone like `<sub>-privatelink.cosmos.windows.net`
@@ -573,16 +582,16 @@ Update role assignment for  following resources
 
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|PrivateDNSZones| cpd-privatelink.cosmos.windows.net ||
+|PrivateDNSZones| `<sub>-privatelink.cosmos.windows.net` ||
 
-3. Run [`CD-rg-<sub>-pltf-net-<env>-we-01`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=79)
+3. Deploy `rg-<sub>-pltf-net-<env>-we-01`
 
 ## 5.3 Add private endpoints to resources
-1. Add template for private endpoint like `prvep-cpd-apps-cosmos-<env>-we-01`
+1. Add template for private endpoint like `prvep-<sub>-apps-cosmos-<env>-we-01`
 
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
-|PrivateEndpoint| prvep-cpd-apps-cosmos-uat-we-01 ||
+|PrivateEndpoint| `prvep-<sub>-apps-cosmos-<env>-we-01` ||
 
 2. Run [`CD-rg-<sub>-apps-net-<env>-we-01`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 
@@ -592,9 +601,9 @@ Update role assignment for  following resources
 ## 6.1 Update APIM Pipelines
 ### 6.1.1 Dependencies
 1. Self Hosted Agent
-1. [Custom Domains Updated](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.5.5-add-custom-domains-to-apim)
+1. Custom Domains Updated
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets (Azure-Search-Key, Bot-Directline-Key)
-1. [rg-cpd-apps-waf-uat-we-01](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=621)
+1. `rg-<sub>-apps-waf-<env>-we-01`
 1. Service Connection connecting the APIM
 
 ### 6.1.2 [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)

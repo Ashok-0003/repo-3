@@ -116,8 +116,8 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |VirtualNetwork | `vnet-<sub>-pltf-<env>-we-01`||
-|PrivateDNSZones| `<sub>-privatelink.cosmos.windows.net` |[Refer this]()|
-|PrivateDNSZones| `<sub>-privatelink.servicebus.windows.net` |[Refer this]()|
+|PrivateDNSZones| `<sub>-privatelink.cosmos.windows.net` |[Refer this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=5.2-add-private-dns-zones)|
+|PrivateDNSZones| `<sub>-privatelink.servicebus.windows.net` |[Refer this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=5.2-add-private-dns-zones)|
 
 ## 3.6 Platform Security Resource Group
 ### 3.6.1 Resource Group

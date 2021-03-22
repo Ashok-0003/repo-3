@@ -577,10 +577,10 @@ Update role assignment for  following resources
                     "routesRGName": "rg-<sub>-apps-net-<env>-we-01"
                 },
                 {
-                    "name": "snet-cpd-apps-bkend-tra-we-01",
+                    "name": "snet-<sub>-apps-bkend-<env>-we-01",
                     "addressPrefix": "172.20.82.192/26",
-                    "networkSecurityGroupName": "nsg-cpd-apps-bkend-tra-we-01",
-                    "routeTableName": "route-cpd-apps-bkend-tra-we-01",
+                    "networkSecurityGroupName": "nsg-<sub>-apps-bkend-<env>-we-01",
+                    "routeTableName": "route-<sub>-apps-bkend-<env>-we-01",
                     "serviceEndpoints": [
                         {
                             "service": "Microsoft.AzureCosmosDB",
@@ -596,8 +596,8 @@ Update role assignment for  following resources
                         }
                     ],
                     "delegations": [],
-                    "nsgsRGName": "rg-cpd-apps-sec-tra-we-01",
-                    "routesRGName": "rg-cpd-apps-net-tra-we-01"
+                    "nsgsRGName": "rg-<sub>-apps-sec-<env>-we-01",
+                    "routesRGName": "rg-<sub>-apps-net-<env>-we-01"
                 }
             ]
  }

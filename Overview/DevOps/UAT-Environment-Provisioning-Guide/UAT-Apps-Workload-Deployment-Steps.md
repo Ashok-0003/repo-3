@@ -102,8 +102,8 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 |RouteTables | `route-<sub>-apps-bkend-<env>-we-01`||
 |RouteTables | `route-<sub>-apps-testvms-<env>-we-01`||
 |RouteTables | `route-<sub>-apps-ckndflt-<env>-we-01`||
-|PrivateEndpoint| `prvep-<sub>-apps-cosmos-<env>-we-01` ||
-|PrivateEndpoint| `prvep-<sub>-apps-sbntf-<env>-we-01` ||
+|PrivateEndpoint| `prvep-<sub>-apps-cosmos-<env>-we-01` |[Refer this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=5.3-add-private-endpoints-to-resources)|
+|PrivateEndpoint| `prvep-<sub>-apps-sbntf-<env>-we-01` |[Refer this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=5.3-add-private-endpoints-to-resources)|
 
 ## 3.5 Platform Networking Resource Group
 ### 3.5.1 Resource Group

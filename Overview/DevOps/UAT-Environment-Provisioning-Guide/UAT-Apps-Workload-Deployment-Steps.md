@@ -102,6 +102,8 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 |RouteTables | `route-<sub>-apps-bkend-<env>-we-01`||
 |RouteTables | `route-<sub>-apps-testvms-<env>-we-01`||
 |RouteTables | `route-<sub>-apps-ckndflt-<env>-we-01`||
+|PrivateEndpoint| `prvep-<sub>-apps-cosmos-<env>-we-01` ||
+|PrivateEndpoint| `prvep-<sub>-apps-sbntf-<env>-we-01` ||
 
 ## 3.5 Platform Networking Resource Group
 ### 3.5.1 Resource Group
@@ -114,6 +116,8 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |VirtualNetwork | `vnet-<sub>-pltf-<env>-we-01`||
+|PrivateDNSZones| `<sub>-privatelink.cosmos.windows.net` ||
+|PrivateDNSZones| `<sub>-privatelink.servicebus.windows.net` ||
 
 ## 3.6 Platform Security Resource Group
 ### 3.6.1 Resource Group

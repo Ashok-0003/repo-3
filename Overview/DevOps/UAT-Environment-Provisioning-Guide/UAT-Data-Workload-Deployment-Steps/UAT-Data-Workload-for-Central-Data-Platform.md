@@ -35,6 +35,7 @@
 |Storage Account  |stcpddatauatwe02  |
 |SQL Server |sql-cpd-data-uat-we-01|
 |SQL database  |sqldb-cpd-dynamics-data-uat-we-01  |
+|SQL database  |sqldb-cpd-data-data-uat-we-01  |
 |Synapse Workspace  |snp-cpd-data-uat-we-01   |
 |Synapse Workspace SQL pool |smartcity|
 |Synapse Workspace SQL pool |smartparking|

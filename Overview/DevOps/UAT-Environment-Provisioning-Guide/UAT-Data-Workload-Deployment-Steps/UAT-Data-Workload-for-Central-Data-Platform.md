@@ -18,8 +18,8 @@
 |--|--|
 |Analysis Services |aascpddatauatwe01|
 |Azure Databricks  | databricks-cpd-data-uat-we-01 |
-|Azure Data Factory  |adf-cpd-data-uat-we-02 (Smart City, Platform Events, Cost Management) |
-|Azure Data Explorer Cluster  |adxcpddatauatwe02  |
+|Azure Data Factory  |adf-cpd-data-uat-we-01 (Smart City, Platform Events, Cost Management) |
+|Azure Data Explorer Cluster  |adxcpddatauatwe01  |
 |Load Balancer  |kucompute-adxcpddatauatwe02-elb  |
 |Load Balancer  |kucompute-adxcpddatauatwe02-ilb  |
 |Load Balancer  |kudatamgmt-adxcpddatauatwe02-elb|
@@ -33,15 +33,16 @@
 |Storage Account (ADLS)  |dlscrmuatwe01  |
 |Storage Account  |stcpddatauatwe01  |
 |Storage Account  |stcpddatauatwe02  |
-|SQL database  |sqldb-cpd-data-uat-we-02  |
+|SQL Server |sql-cpd-data-uat-we-01|
 |SQL database  |sqldb-cpd-dynamics-data-uat-we-01  |
 |Synapse Workspace  |snp-cpd-data-uat-we-01   |
 |Synapse Workspace SQL pool |smartcity|
 |Synapse Workspace SQL pool |smartparking|
-|Virtual Machine  |vmdgattstwe01|
-|Virtual Machine  |vmdgattstwe02|
-|Virtual Machine  |vmdgattstwe03|
-|Virtual Machine  |vmdgattstwe04|
+|Virtual Machine  |vmdgatuatwe01|
+|Virtual Machine  |vmdgatuatwe02|
+|Virtual Machine  |vmdgatuatwe03|
+|Virtual Machine  |vmdgatuatwe04|
+|Event Hub |evhns-cpd-am-uat-we-01|
 
 |Resource Group|rg-cpd-data-sec-uat-we-01|
 |--|--|

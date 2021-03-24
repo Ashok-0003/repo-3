@@ -625,7 +625,7 @@ Update role assignment for  following resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |PrivateEndpoint| `prvep-<sub>-apps-cosmos-<env>-we-01` ||
-|PrivateEndpoint| `prvep-<sub>-apps-sbntf-<env>-we-01` ||
+|PrivateEndpoint| `prvep-<sub>-apps-sbstrntf-<env>-we-01` ||
 
 2. Run [`CD-rg-<sub>-apps-net-<env>-we-01`](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=343)
 

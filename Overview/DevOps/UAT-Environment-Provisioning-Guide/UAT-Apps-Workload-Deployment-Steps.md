@@ -634,43 +634,45 @@ Update role assignment for  following resources
 
 
 # 6 Deployment of the solution components
-## 6.1 Update APIM Pipelines
+
+## 6.1 Deploy Platform APIs
 ### 6.1.1 Dependencies
+1. Self Hosted Agent
+1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
+1. Role Assignments applied as per [table](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.14-role-assignments)
+1. Service Connection for Azure Container Registry and Azure Resource Manager for AKS
+
+### 6.1.2 [Addding a new environment for platform apis](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?anchor=adding-a-new-environment)
+- [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)
+- [CD-PlatformAPIs-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1021)
+
+
+## 6.2 Deploy Web Apps
+### 6.2.1 Dependencies
+1. Self Hosted Agent
+1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
+1. Service Connection for Azure Resource Manager
+
+### 6.2.2 [Update web apps pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/web-apps?path=%2F&version=GBmaster&_a=contents&anchor=adding-a-new-environment)
+- [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
+- [CD-WebApps-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1020)
+
+## 6.3 Deploy Chatbot Solutions
+### 6.3.1 Dependencies
+1. Self Hosted Agent
+1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets 
+1. Service Connection for Azure Resource Manager
+### 6.3.2 [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
+
+## 6.4 Update APIM Pipelines
+### 6.4.1 Dependencies
 1. Self Hosted Agent
 1. Custom Domains Updated
 1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets (Azure-Search-Key, Bot-Directline-Key)
 1. `rg-<sub>-apps-waf-<env>-we-01`
 1. Service Connection connecting the APIM
 
-### 6.1.2 [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
-### 6.1.3 Enable access for required products on APIM
+### 6.4.2 [Update APIM Pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?anchor=adding-a-new-environment)
+### 6.4.3 Enable access for required products on APIM
 ![image.png](/.attachments/image-5ac68024-d75d-42dc-a25b-b9e3402c8f3e.png)
-### 6.1.4 Delete default products "Starter" and "unlimited" on APIM from above screenshot.
-## 6.2 Deploy Platform APIs
-### 6.2.1 Dependencies
-1. Self Hosted Agent
-1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
-1. Role Assignments applied as per [table](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki?wikiVersion=GBwikiMaster&_a=edit&pagePath=%2FOverview%2FDevOps%2FUAT%20Environment%20Provisioning%20Guide%2FUAT%20Apps%20Workload%20Deployment%20Steps&pageId=119&anchor=4.14-role-assignments)
-1. Service Connection for Azure Container Registry and Azure Resource Manager for AKS
-
-### 6.2.2 [Addding a new environment for platform apis](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?anchor=adding-a-new-environment)
-- [CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)
-- [CD-PlatformAPIs-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1021)
-
-
-## 6.3 Deploy Web Apps
-### 6.3.1 Dependencies
-1. Self Hosted Agent
-1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets
-1. Service Connection for Azure Resource Manager
-
-### 6.3.2 [Update web apps pipelines for new environments](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/web-apps?path=%2F&version=GBmaster&_a=contents&anchor=adding-a-new-environment)
-- [CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)
-- [CD-WebApps-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1020)
-
-## 6.4 Deploy Chatbot Solutions
-### 6.4.1 Dependencies
-1. Self Hosted Agent
-1. [Library](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library) variable group - <env> updated with variable and secrets 
-1. Service Connection for Azure Resource Manager
-### 6.4.2 [Detailed Steps](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/123/Chatbot-Information-and-Deployment-Steps?anchor=webapp-bot-ad-update)
+### 6.4.4 Delete default products "Starter" and "unlimited" on APIM from above screenshot.

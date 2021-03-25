@@ -32,7 +32,9 @@ Azure AD B2C Tenant - tasmucpb2cnonprod.onmicrosoft.com
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |StorageAccount | `st<sub>globacmwe01` ||
-[Create a daily export of azure consumption metering for 6D Billing](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal#create-a-daily-export)
+- [Create a daily export of azure consumption metering for 6D Billing](https://docs.microsoft.com/en-us/azure/cost-management-billing/costs/tutorial-export-acm-data?tabs=azure-portal#create-a-daily-export)
+
+![image.png](/.attachments/image-e4ddd176-01e7-404c-80f1-9a337e259737.png)
 
 ## 2.3 Creation and set up of AD B2C Tenant
 Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharepoint.com/:w:/s/TASMU-CentralPlatformPMO/EdIKRGu6E1VGnA-naCTSBXQBjgdtCiT9C6n5E9rehxUWmw?e=ZSX2Yf)

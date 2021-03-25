@@ -285,10 +285,27 @@ Once after the deployment, we need to compare the processes with the "Configurat
 ### 5.14 KB Article Image is not populated in Portal
 First we need to make sure that the image is loaded by the CMS team in the storage account.
 If the Image is loaded in storage account but not populated in portal then we need to open the KB article and open that image in CRM and add manually the web Address (URL). Click on Ok and Update the KB article. 
-
-### 5.14 KB Articles to be created
-Two KB articles (One for english and other for Arabic) need to be created in the CRM environment and update the trackingId and trackingId_AR with respective article Ids in environment specific variable section of CD-WebApps-Release and CD-WebApps-Prd-Release (This is already done for pre)
 ![image.png](/.attachments/image-8fb163c7-8b85-425e-90b1-20eb9f99c3a4.png)
+
+### 5.15 KB Articles to be created
+Two KB articles (One for english and other for Arabic) need to be created in the CRM environment and update the trackingId and trackingId_AR with respective article Ids in environment specific variable section of CD-WebApps-Release and CD-WebApps-Prd-Release (This is already done for pre)
+
+### 5.16 Verify workflows are activated
+After deployment, it needs to be verified if workflows are activated or not. If not activated, then follow the below steps: 
+
+In Test Environment below were in Draft state: 
+Case: Status Change Notification 
+
+External Note: Notify External Note Created 
+
+Steps to Activate: 
+Go to Process -> Check if any Process is in Draft state -> If any of the Process is in Draft state then open that Process -> Solution Layer->Remove Active Customizations->Ok. 
+![image.png](/.attachments/image-7c77d5a2-9ff9-4935-a437-e476450bc0ac.png)
+
+Again, close the workflow. Again, re open the workflow and click on "Activate" button. 
+
+![image.png](/.attachments/image-35e05c78-46c8-4e96-bbfb-786a950953ba.png)
+
 # 6 	Appendix
 ## Appendix A - Solution Import
 

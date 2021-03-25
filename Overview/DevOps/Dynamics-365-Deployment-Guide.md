@@ -282,6 +282,10 @@ https://docs.microsoft.com/en-us/powerapps/developer/data-platform/use-single-te
 ### 5.13 Ensure The Processes are Activated State
 Once after the deployment, we need to compare the processes with the "Configuration" environment and make sure that the process are in "Activated" state in the desired environment.
 
+### 5.14 KB Article Image is not populated in Portal
+First we need to make sure that the image is loaded by the CMS team in the storage account.
+If the Image is loaded in storage account but not populated in portal then we need to open the KB article and open that image in CRM and add manually the web Address (URL). Click on Ok and Update the KB article. 
+![image.png](/.attachments/image-8fb163c7-8b85-425e-90b1-20eb9f99c3a4.png)
 # 6 	Appendix
 ## Appendix A - Solution Import
 

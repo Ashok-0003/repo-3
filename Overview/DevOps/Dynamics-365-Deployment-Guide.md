@@ -285,6 +285,9 @@ Once after the deployment, we need to compare the processes with the "Configurat
 ### 5.14 KB Article Image is not populated in Portal
 First we need to make sure that the image is loaded by the CMS team in the storage account.
 If the Image is loaded in storage account but not populated in portal then we need to open the KB article and open that image in CRM and add manually the web Address (URL). Click on Ok and Update the KB article. 
+
+### 5.14 KB Articles to be created
+Two KB articles (One for english and other for Arabic) need to be created in the CRM environment and update the trackingId and trackingId_AR with respective article Ids in environment specific variable section of CD-WebApps-Release and CD-WebApps-Prd-Release (This is already done for pre)
 ![image.png](/.attachments/image-8fb163c7-8b85-425e-90b1-20eb9f99c3a4.png)
 # 6 	Appendix
 ## Appendix A - Solution Import

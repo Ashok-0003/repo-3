@@ -667,7 +667,7 @@ Update role assignment for  following resources
 |--|--|--|
 |PrivateDNSZones| `<sub>-privatelink.cosmos.windows.net` ||
 |PrivateDNSZones| `<sub>-privatelink.servicebus.windows.net` ||
-|PrivateDNSZones| `<sub>-privatelink.westeurope.azmk8s.io||
+|PrivateDNSZones| `<sub>-privatelink.westeurope.azmk8s.io`||
 
 3. Deploy `rg-<sub>-pltf-net-<env>-we-01`
 

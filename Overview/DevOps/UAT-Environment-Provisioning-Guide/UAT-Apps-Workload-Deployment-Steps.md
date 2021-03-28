@@ -434,8 +434,44 @@ Update the parameter file - `apim-<sub>-shrd-<env>-we-01` for hostConfigurations
 |ManagedIdentity|2018-11-30 |`mi-<sub>-apps-agwaks-<env>-we-01 ` |`rg-<sub>-apps-aks-<env>-we-01 `|
 |ManagedIdentity | 2018-11-30 |`mi-<sub>-apps-aksnode-<env>-we-01` | `rg-<sub>-apps-aksnode-<env>-we-01` |
 |ManagedClustersCNI| 2021-03-26 |`aks-<sub>-apps-<env>-we-01 ` | `rg-<sub>-apps-aks-<env>-we-01` |
-|ApplicationGateway | |`agw-<sub>-apps-aks-<env>-we-01` | `rg-<sub>-apps-aks-<env>-we-01` |
+|ApplicationGateway | 2020-03-26 |`agw-<sub>-apps-aks-<env>-we-01` | `rg-<sub>-apps-aks-<env>-we-01` |
 
+Steps:
+1. Parameters sslCertificates and managedIdentityId must be omitted for first time deployedment of `agw-<sub>-apps-aks-<env>-we-01`
+1. Refer the module specific readme for more details of ManagedClustersCNI module. 
+1. Prepare the `DeploymentOrchestration/Environments/<SUB>/<env>/rg-<sub>-apps-int-<env>-we-01/` (Refer UAT for details) 
+1. Value of `aksServicePrincipal` is client Id of app registration `spn-apps-aks-<env>` 
+1. Add a variable to pipeline named as aksServicePrincipalSecret (value is client secret created for above app registration) keep the value as secret.
+![image.png](/.attachments/image-ba3134d2-c621-4aa5-bc8e-91b283f7785d.png)
+1. Observe the pipeline.yml in UAT for additional CLI steps specific to creating managed cluster using Azure CLI. 
+1. We are using `aks-preview` feature to create a cluster using private DNS Zone to resolve DNS on a custom server. 
+1. Deploy the resource group `rg-<sub>-apps-aks-<env>-we-01`
+1. Add below access policies to key vault: 
+
+|Object Id | Key Vault  |Secret |
+|--|--|--|
+|`mi-<sub>-apps-agwaks-<env>-we-01`| `kv-<sub>-pltf-<env>-we-01`| Get |
+|`mi-<sub>-apps-aksnode-<env>-we-01`| `kv-<sub>-apps-<env>-we-01 `| Get |
+
+10. Add below parameters to `agw-<sub>-apps-aks-<env>-we-01` (Module - 2020-03-26)
+```
+"sslCertificates": {
+            "value": [
+                {
+                    "name": "httpsvaultCert",
+                    "properties": {
+                        "keyVaultSecretId": "https://kv-<sub>-pltf-<env>-we-01.vault.azure.net/secrets/<env>-SQCP-Certificate/"
+                    }
+                }
+            ]
+        },
+        "managedIdentityId": {
+            "value": "/subscriptions/<subscriptionId>/resourceGroups/rg-<sub>-apps-aks-<env>-we-01/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mi-<sub>-apps-agwaks-<env>-we-01"
+        }
+```
+11. Deploy the key vaults from `rg-<sub>-plft-sec-<env>-we-01` and `rg-<sub>-apps-sec-<env>-we-01` 
+12. Redeploy `rg-<sub>-apps-aks-<env>-we-01`
+ 
 ## 4.7 Apps CKAN Resource Group
 ### 4.7.1 Resource Group
 `rg-<sub>-apps-ckan-<env>-we-01`
@@ -502,7 +538,7 @@ Redeploy `rg-<sub>-apps-sec-<env>-we-01`
 
 |Object Id| Secrets |  Certificates|
 |--|--|--|
-|`mi-<sub>-apps-aks-<env>-we-01`|Get||
+|`mi-<sub>-apps-aksnode-<env>-we-01`|Get||
 |`func-<sub>-apps-acm-<env>-we-01`|Get||
 |`app-<sub>-apps-bot-<env>-we-01`|Get||
 |`func-<sub>-apps-qnasync-<env>-we-01`|Get||

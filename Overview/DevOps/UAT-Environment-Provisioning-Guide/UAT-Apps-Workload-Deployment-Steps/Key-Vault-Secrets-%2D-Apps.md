@@ -1,6 +1,6 @@
 [[_TOC_]]
 # Key Vault Secrets and Certificates
-| Key Vault Name |Name|Type|How to Retrieve|Remarks|
+| Key Vault Name |Name|Type|How to Retrieve|Remarks (Exmaple UAT)|
 |--|--|--|--|--|
 |kv-cpd-apps-<env>-we-01|AdminPortal-ADAuth-ClientSecret|Secret|Create and Retrieve Client Secret for **spn-adminportal** app registration in B2C Tenant under certificates and secrets menu.||
 |kv-cpd-apps-<env>-we-01|AdminPortal-AuthClaims-GroupId|Secret|Create and Navigate to "**Platformadmin**" Group in **Azure Active Directory > Groups** in B2C Tenant and retrieve the **object Id** of the group.||
@@ -12,7 +12,7 @@
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaEnSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **appcog-cpd-apps-qna-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|Bot-AppSettings-QnaArSubscriptionKey| Secret | Primary key of the Azure Cognitive services resource **appcog-cpd-apps-arqna-<env>-we-01** | |
 |kv-cpd-apps-<env>-we-01|CDNSettings-StorageAccount| Secret | Connection string of the resource **stcpdshrd<env>we01**|Eg `DefaultEndpointsProtocol=https;AccountName=stcpdshrduatwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|
-|kv-cpd-apps-<env>-we-01|Ckan-Authorization-Token| Secret | Login to Opendata porta with Admin credentials and click on user name, leftside below, we should be able to see **'API Key'** the same guid value has to be stored key vault.|Example: UAT portal value `8dacb687-b7ed-42db-b6df-67364f1181f5`|
+|kv-cpd-apps-<env>-we-01|Ckan-Authorization-Token| Secret | Login to Opendata portal with Admin credentials and click on user name, left side bottom, find the **'API Key'**, the same guid value has to be stored in key vault.| Example: UAT portal value `8dacb687-b7ed-42db-b6df-67364f1181f5`|
 |kv-cpd-apps-<env>-we-01|Cms-Function-ServiceBusConnectionString| Secret |Send,Listen access policy connection string of the resource **sb-cpd-apps-int-<env>-we-01**|
 |kv-cpd-apps-<env>-we-01|Cms-Function-NotificationUrl| Secret |Default(Function Key) Function URL of notify function in **func-cpd-apps-intntf-<env>-we-01**|Only available after [CD-PlatformFuncApp-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=738&_a=summary) pipeline is succeeded|
 |kv-cpd-apps-<env>-we-01|Cms-Function-TenantId| Secret |Directory (tenant) ID of Azure AD App **spn-cmsbpa-<env>**|

@@ -431,9 +431,10 @@ Update the parameter file - `apim-<sub>-shrd-<env>-we-01` for hostConfigurations
 ### 4.6.4 Resources
 | Module Name | Module Version| Parameter File Name | Resource Group|
 |--|--|--|--|
-|ManagedIdentity|2018-11-30 |`mi-<sub>-apps-agwaks-<env>-we-01 ` ||
-|ManagedIdentity | 2018-11-30 |`mi-<sub>-apps-aks-<env>-we-01` | Deployed in `rg-<sub>-apps-aksnode-<env>-we-01` |
-|ApplicationGateway | `agw-<sub>-apps-aks-<env>-we-01` | SKU and Tier - Standard_v2, firewallenabled - false|
+|ManagedIdentity|2018-11-30 |`mi-<sub>-apps-agwaks-<env>-we-01 ` |`rg-<sub>-apps-aks-<env>-we-01 `|
+|ManagedIdentity | 2018-11-30 |`mi-<sub>-apps-aksnode-<env>-we-01` | `rg-<sub>-apps-aksnode-<env>-we-01` |
+|ManagedClustersCNI| 2021-03-26 |`aks-<sub>-apps-<env>-we-01 ` | `rg-<sub>-apps-aks-<env>-we-01` |
+|ApplicationGateway | |`agw-<sub>-apps-aks-<env>-we-01` | `rg-<sub>-apps-aks-<env>-we-01` |
 
 ## 4.7 Apps CKAN Resource Group
 ### 4.7.1 Resource Group

@@ -118,8 +118,14 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |VirtualNetwork | `vnet-<sub>-pltf-<env>-we-01`||
-|PrivateDNSZones| `<sub>-privatelink.cosmos.windows.net` |[Refer this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=5.2-add-private-dns-zones)|
-|PrivateDNSZones| `<sub>-privatelink.servicebus.windows.net` |[Refer this](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/119/UAT-Apps-Workload-Deployment-Steps?anchor=5.2-add-private-dns-zones)|
+|PrivateDNSZones| `<sub>-privatelink.cosmos.windows.net` ||
+|PrivateDNSZones| `<sub>-privatelink.servicebus.windows.net` ||
+|PrivateDNSZones| `<sub>-privatelink.westeurope.azmk8s.io`||
+
+1. One DNS Zone can have multiple virtual networks hence only one DNS Zone is required for a resource on a subscription. [Refer rg-cpd-pltf-net-dev-we-01 from dev subscription](https://portal.azure.com/#@tasmusqcp.onmicrosoft.com/resource/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-pltf-net-dev-we-01/providers/Microsoft.Network/privateDnsZones/privatelink.cosmos.windows.net/overview).
+
+1. Deploy `rg-<sub>-pltf-net-<env>-we-01`
+
 
 ## 3.6 Platform Security Resource Group
 ### 3.6.1 Resource Group
@@ -413,7 +419,7 @@ Update the parameter file - `apim-<sub>-shrd-<env>-we-01` for hostConfigurations
 1. `rg-<sub>-apps-mon-<env>-we-01`
 1. `rg-<sub>-glob-npd-we-01`
 1. `rg-<sub>-pltf-net-<env>-we-01`
-1. `rg-<sub>-apps-str-<env>-we-01
+1. `rg-<sub>-apps-str-<env>-we-01`
 ### 4.6.3 Pre requisite Steps
 1. Create an app registration in Azure Active Directory – `spn-apps-aks-<env>`
 -- Copy the Application (client) ID 
@@ -599,6 +605,8 @@ Update role assignment for  following resources
 1. Test Send (Support and troubleshooting) for Apple and Android Phone for verifications.
 
 # 5 Deployment of Private Endpoints
+## Dependencies
+1. Private DNS Zones deployed
 ## 5.1 Add service endpoints to subnets 
 1. Update `vnet-<sub>-pltf-<env>-we-01` ARM template for adding service endpoints to subnets.
 ```
@@ -656,20 +664,6 @@ Update role assignment for  following resources
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |VirtualNetwork| `vnet-<sub>-pltf-<env>-we-01` ||
-
-2. Deploy Networking Resource Group - `rg-<sub>-pltf-net-<env>-we-01`
-
-## 5.2 Add Private DNS Zones
-1. Add template for private dns zone like `<sub>-privatelink.cosmos.windows.net`
-1. One DNS Zone can have multiple virtual networks hence only one DNS Zone is required for a resource on a subscription. [Refer rg-cpd-pltf-net-dev-we-01 from dev subscription](https://portal.azure.com/#@tasmusqcp.onmicrosoft.com/resource/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-pltf-net-dev-we-01/providers/Microsoft.Network/privateDnsZones/privatelink.cosmos.windows.net/overview).
-
-| Module Name | Parameter File Name | Remarks |
-|--|--|--|
-|PrivateDNSZones| `<sub>-privatelink.cosmos.windows.net` ||
-|PrivateDNSZones| `<sub>-privatelink.servicebus.windows.net` ||
-|PrivateDNSZones| `<sub>-privatelink.westeurope.azmk8s.io`||
-
-3. Deploy `rg-<sub>-pltf-net-<env>-we-01`
 
 ## 5.3 Add private endpoints to resources
 1. Add template for private endpoint like `prvep-<sub>-apps-cosmos-<env>-we-01`

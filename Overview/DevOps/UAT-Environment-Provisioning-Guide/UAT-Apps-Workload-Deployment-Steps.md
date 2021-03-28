@@ -573,24 +573,22 @@ Update role assignment for  following resources
 
 |Identity Name| Type  | Target Resource | Role |
 |--|--|--|--|
-|  `func-<sub>-apps-luistra-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
+|`func-<sub>-apps-luistra-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
 |`func-<sub>-apps-qnasync-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
 |`func-<sub>-apps-intbpa-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
 |`func-<sub>-apps-intntf-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
 |`app-<sub>-apps-bot-<env>-we-01` | App Service  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader ||`spn-cmsbpa-<env>` | Service Principal | `<env>-cdntasmu` | CDN Endpoint Contributor |
-|`mi-<sub>-apps-aks-<env>-we-01` | User Assigned Managed Identity  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
-|`mi-<sub>-apps-aks-<env>-we-01 `| User Assigned Managed Identity | `rg-<sub>-apps-aks-<env>-we-01` | Reader |
-|`mi-<sub>-apps-aks-<env>-we-01 `| User Assigned Managed Identity | `agw-<sub>-apps-aks-<env>-we-01` | Contributor |
-|`mi-<sub>-apps-aks-<env>-we-01` | User Assigned Managed Identity | `rg-<sub>-apps-aksnode-<env>-we-01` | Reader |
-|`mi-<sub>-apps-aks-<env>-we-01` | User Assigned Managed Identity | `aks-<sub>-apps-<env>-we-01-agentpool` | Managed Identity Operator |
-|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `agw-<sub>-apps-aks-<env>-we-01` | Contributor |
-|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `acr<sub>globnpdwe01` | Acr Pull |
-|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `rg-<sub>-apps-aksnode-<env>-we-01` | Virtual Machine Contributor |
-|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `rg-<sub>-apps-aksnode-<env>-we-01` | Managed Identity Operator |
-|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity | `rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Contributor |
-|`aks-<sub>-apps-<env>-we-01-agentpool` | User Assigned Managed Identity  | `vnet-<sub>-pltf-<env>-we-01/snet-<sub>-apps-aks-<env>-we-01` | Network Contributor |
 |`spn-cmsbpa-<env>`|Service Principal|`<env>-cdntasmu`|CDN Endpoint Contributor. **Note**: Use `spn-cmsbpa-dev` for environments upto uat and `spn-cmsbpa-prod` for pre prod and prod. The app must be present in the same directory where azure subscription is present.|
 |`spn-armapi-reader-<env>`|Service Principal|`apim-<sub>-shrd-<env>-we-01`|Reader|
+|`spn-apps-aks-<env>`|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Contributor |
+|`spn-apps-aks-<env>`|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Operator |
+|`spn-apps-aks-<env>`|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Virtual Machine Contributor |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Reader |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Operator |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`acst-<sub>-apps-str-<env>-we-01`| App Configuration Data Reader |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`agw-<sub>-apps-aks-<env>-we-01`| Contributor |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`mi-<sub>-apps-agwaks-<env>-we-01`| Managed Identity Operator |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`rg-<sub>-apps-aks-<env>-we-01`| Reader |
 
 ## 4.16 Configuring Notification Hubs for FCM and APNS
 1. Obtain the API Key of [Google Firebase Cloud Account](https://console.firebase.google.com/) after creating the project from project settings

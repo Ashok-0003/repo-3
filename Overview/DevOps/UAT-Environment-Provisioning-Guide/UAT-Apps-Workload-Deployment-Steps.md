@@ -7,7 +7,7 @@
 ![image.png](/.attachments/image-86e9559c-b9eb-4af6-a652-35a13fad1574.png)
 1. Merge all the code to master branch.
 1. Wait for CI pipelines to complete for the templates to be uploaded to the artifacts storage account
-1. Networking and infra resources must be deployed first
+1. Networking and infra resources must be deployed firstC
 1. Global resources next - already deployed for non production environment (`rg-<sub>-glob-npd-we-01`)
 1. Specific resource group components can be deployed next
 1. Solution components can be deployed on the azure resources at the end
@@ -487,6 +487,8 @@ Steps:
 1. `rg-<sub>-apps-mon-<env>-we-01`
 1. `rg-<sub>-pltf-net-<env>-we-01`
 1. `rg-<sub>-pltf-sec-<env>-we-01`
+1. DLS Open Zone deployed
+1. Purview Instance deployed
 1. Certificates uploaded to `kv-<sub>-pltf-<env>-we-01`
 1. Secrets seeded in `kv-<sub>-apps-<env>-we-01`
 ### 4.7.3 Notes

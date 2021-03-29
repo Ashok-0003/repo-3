@@ -15,6 +15,8 @@ _- Naming conventions must be respected (ex: "HLT" prefix for Healthcare sector)
 
 ## Key Vault
 - Name : kv-cpd-data-dev-we-01
+- Secrets used for Purview : *purview-clientId, purview-clientSecret & purview-tenantId*
+- Secrets used for SQL : *demoPurview-SqlUser* & *demoPurview-SqlPassword*
 
 Storing secrets for Purview & SQL connections
 
@@ -28,9 +30,11 @@ _- Files must respect naming conventions (with sector prefix and date ; ex: HLT_
 ## Databricks
 - Name : db-cpd-datat-dev-we-01
 - Notebooks : **Settings** & **SchemaAndDQConformancyCheck**
+- Mandatory libraries : pyspark-check & spark_mssql_connector_2_12_3_0_1_0_0_alpha
 
 _Notes :_ 
 _- Mandatory parameters : **file_name_purview, file_to_check, sector**_
+_- You can download your jar files to install the libraries [here](https://search.maven.org/)_
 
 Line to be modified to integrate another sector (zone has to be mounted beforehand):
 `folder = "/mnt/landingzone/purviewhealthcare/KPI/"`
@@ -42,6 +46,8 @@ Line to be modified to integrate another sector (zone has to be mounted beforeha
 _Notes :_
 _- Rules are stored in table dq.kpiRules_
 _- Entity name must match entity name in Purview_
+_- Ensure that your IP address is allowed or that Azure Services can access the databases_
+
 
 ## PowerBI Reports
 - Name : MscTasmuDataQualityDemo

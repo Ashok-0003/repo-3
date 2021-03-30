@@ -49,6 +49,7 @@
 |Cms.Function:ClientApp|App Name of Azure AD app spn-cmsbpa-<env>|Eg. `NONISV|TASMU|spn-cmsbpa-<env>`|
 |Cms.Function:GlobalSiteUrl|URL of global site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-global`|
 |Cms.Function:MarketplaceSiteUrl|URL of marketplace site|E.g. `https://tasmusqcp<env>.sharepoint.com/sites/cms-marketplace`|
+|Cms.Function:NotificationUrl|URL of CMS Notification Api, Notify operation|E.g. `https://api.<env>.sqcp.qa/sharepoint/Notify`|
 |Cms.Function:EventGridApiUrl|URL of the event integration api|Eg. `https://api.<env>.sqcp.qa/eventintegration/messages`|
 |Cms.Function:PreviewApiUrl|Marketplace preview URL|Eg. `https://marketplace.<env>.sqcp.qa/`|
 |Cms.Function:SectorTermSetId|GUID of Sectors term set present in sharepoint admin center|Go to `https://tasmusqcp<env>-admin.sharepoint.com/` -> Click on Content Services in left pane -> Term Store -> Expand TASMU -> Click Sectors -> Copy the Unique Identifier|

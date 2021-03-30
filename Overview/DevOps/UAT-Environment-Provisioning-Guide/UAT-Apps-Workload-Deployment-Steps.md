@@ -411,12 +411,12 @@ Update the parameter file - `apim-<sub>-shrd-<env>-we-01` for hostConfigurations
 
 ### 4.5.8 Redeploy Sshared Resource Group
 `rg-<sub>-shrd-<env>-we-01`
-### 4.5.8 Update the public IP of APIM
+### 4.5.9 Update the public IP of APIM
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |LogicApp | `logic-<sub>-apps-route-<env>-we-01` | Update the public IP of APIM for access|
 
-### 4.5.9 Redeploy Integration Resource Group
+### 4.5.10 Redeploy Integration Resource Group
 `rg-<sub>-apps-int-<env>-we-01`
 
 ## 4.6 Apps AKS Resource Group

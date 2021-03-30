@@ -402,14 +402,21 @@ Update the parameter file - `apim-<sub>-shrd-<env>-we-01` for hostConfigurations
 |ApiManagementLogicAppBackend | `apimlab-<sub>-shrd-<env>-we-01`||
 |ApiManagementAPI | `apimapi-<sub>-shrd-<env>-we-01` | Refer module specific read me|
 
-### 4.5.7 Redeploy Sshared Resource Group
+### 4.5.7 Add CMS Notification APIs
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|ApiManagementFunctionAppBackend | `apimfab-<sub>-shrd-<env>-we-01`|Refer module specific read me|
+|ApiManagementCMSNotificationAPI | `apimcms-<sub>-shrd-<env>-we-01` | Refer module specific read me|
+
+
+### 4.5.8 Redeploy Sshared Resource Group
 `rg-<sub>-shrd-<env>-we-01`
 ### 4.5.8 Update the public IP of APIM
 | Module Name | Parameter File Name | Remarks |
 |--|--|--|
 |LogicApp | `logic-<sub>-apps-route-<env>-we-01` | Update the public IP of APIM for access|
 
-### 4.5.8 Redeploy Integration Resource Group
+### 4.5.9 Redeploy Integration Resource Group
 `rg-<sub>-apps-int-<env>-we-01`
 
 ## 4.6 Apps AKS Resource Group

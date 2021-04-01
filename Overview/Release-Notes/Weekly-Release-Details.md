@@ -7,7 +7,7 @@
 | UAT |                       |                                   |
 |-----|-----------------------|-----------------------------------|
 |     | Deployment Start Time | **1st April 2021** :: 20.30 PM IST ( 6.00 PM Doha Time) |
-||Status|In-Progress|
+||Status|**In-Progress**|
 |Pre-Prod|||
 ||Deployment Start Time|**4th April 2021** :: 09.30 AM IST ( 7.00 AM Doha Time ) |
 ||Status|Yet to Begin|

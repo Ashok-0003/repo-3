@@ -20,5 +20,6 @@ Notes:
 |Mobile-NotificationHubListenConn| Listen Access connection string of Azure Notification hub `ntfns-cpd-apps-str-uat-we-01` ||Secure|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-NotificationHubName| Name of the Azure Notification hub that the mobile app integrated. |Eg. `ntf-cpd-apps-str-uat-we-01`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |Mobile-Msal| The mobile app registration id (clientId) in AAD B2C used for MSAL operations. |Eg. `msalg-u-i-d`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
+|Mobile-ApiKey| The key for Google map used in the location service |Eg. `AIzaSyAcn9GXu6D4VeUWgYMkYfNvKwCTT634-A0`|Plain Text|CI-MobileApps-Android-Build, CI-MobileApps-iOS-Build|
 |BPM-APIM-Password| BPM APIM Password |
 |NGIS-App-Token| NGIS App Token - To be obtained from NGIS team. Initial ref. to apiservicePolicy.xml in "NGIS Infra" for resp. env.||

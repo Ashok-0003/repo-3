@@ -27,13 +27,14 @@
 1. Deploy Compute Resources
 https://docs.microsoft.com/en-us/learn/paths/az-104-manage-compute-resources/
 
+1. Build and Release
+
 1. AKS
 https://azure.microsoft.com/mediahandler/files/resourcefiles/kubernetes-learning-path/Kubernetes%20Learning%20Path%20version%201.0.pdf
 
 1. Networking
 https://docs.microsoft.com/en-us/learn/paths/az-104-manage-virtual-networks/
 
-1. Build and Release
 
 # Architectural
 1. TASMU Architecture - [MSFT Internal](https://microsofteur.sharepoint.com/:u:/r/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/_layouts/15/Doc.aspx?sourcedoc=%7BAB69922B-E7DA-4154-A2F5-6AF7B6C4D13E%7D&file=Apps-Design.vsdx&action=default&cid=d99a5502-6aaa-403f-873c-1fb385ff9ac6)

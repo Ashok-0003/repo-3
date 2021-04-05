@@ -250,6 +250,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 1. `rg-<sub>-pltf-sec-<env>-we-01`
 1. App registration for `spn-armapi-reader-<env>` 
 1. Seeding of ARMAPI-ClientSecret in the `kv-<sub>-apps-<env>-we-01` Key Vault
+1. Seeding of CPCoreApis-ClientSecret in the `kv-<sub>-apps-<env>-we-01` Key Vault
 1. If its a **fresh deployment** then change the value of "**deploy**" parameter to **true** in `apicon-<sub>-apps-intspo-<env>-we-01-parameters.json` and `apicon-<sub>-apps-into365-<env>-we-01-parameters.json`
 
 
@@ -285,7 +286,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |LogicApp | `logic-<sub>-apps-secsync-<env>-we-01` | Logic app to sync Global Sectors List with Sharepoint Taxonomy terms|
 |LogicApp | `logic-<sub>-apps-route-<env>-we-01`| This Logic App uses the 2019-05-01 version of the module to allow for Access Control configuration.  **Important:** after the APIM resource for this Logic App has been deployed (`apim-<sub>-shrd-<env>-we-01`), update the accessControl parameter in the ARM template for this resource to the Public IP of the APIM in the CIDR format. For example, if the Public IP of APIM is <code>1.1.1.1</code>, then replace the value in the ARM template with <code>1.1.1.1/32</code>. If this is not done, the Logic App will return an error stating that the IP is not allowed to access the Logic App trigger.|
 |LogicApp | `logic-<sub>-apps-6dbill-<env>-we-01`|Receives 6DBilling from the Service Bus Queue and forwards it onto the Event Domain. No processing is needed on the Event before passing so it just acts as a forwarder.|
-|LogicApp | `logic-<sub>-apps-6dhook-<env>-we-01`|  |
+|LogicApp | `logic-<sub>-apps-6dhook-<env>-we-01`| Depends on Client Secret of Central Platform Core APIs which has to be seeded from `kv-<sub>-apps-<env>-we-01`|
 |LogicApp | `logic-<sub>-apps-mpsidx-<env>-we-01`|The data that was generated from CRM and CMS will be saved to Azure Search via Events. The data here is for products, KB articles and news. This Logic App uses the 2019-05-01 version of the module to allow for Access Control configuration. Access Control has been configured to only allow other Logic Apps to trigger this app. |
 |LogicApp | `logic-<sub>-apps-mpsd365-<env>-we-01`|It triggers when message is received on event trigger domain topic and subscribed to product - create, update, delete and Kbarticle - create, update, delete and send to     `logic-<sub>-apps-mpsidx-<env>-we-01`|
 |LogicApp | `logic-<sub>-apps-mpso365-<env>-we-01`|It triggers when message is received on event trigger domain topic and subscribed to news - create, update, delete and send to `logic-<sub>-apps-mpsidx-<env>-we-01`.|

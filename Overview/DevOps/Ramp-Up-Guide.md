@@ -40,7 +40,7 @@ https://docs.microsoft.com/en-us/learn/paths/az-104-manage-virtual-networks/
 
 # Architectural
 1. TASMU Architecture - [MSFT Internal](https://microsofteur.sharepoint.com/:u:/r/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/_layouts/15/Doc.aspx?sourcedoc=%7BAB69922B-E7DA-4154-A2F5-6AF7B6C4D13E%7D&file=Apps-Design.vsdx&action=default&cid=d99a5502-6aaa-403f-873c-1fb385ff9ac6)
-1. Hub Spoke Networking Topology
+1. [Hub Spoke Networking Topology](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
 
 # Advanced
 Complete below two learning paths:

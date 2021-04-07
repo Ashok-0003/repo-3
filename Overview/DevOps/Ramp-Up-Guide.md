@@ -24,7 +24,7 @@
 https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/27/Branching-Strategy-and-Policies
 
 # Learning Path
-1. [Infra repository understanding](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=introduction)
+1. [Infra repository understanding](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=introduction) -MUST
 
 1. Deploy Compute Resources
 https://docs.microsoft.com/en-us/learn/paths/az-104-manage-compute-resources/

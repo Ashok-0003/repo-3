@@ -14,8 +14,7 @@
 |kv-cpd-apps-<env>-we-01|CDNSettings-StorageAccount| Secret | Connection string of the resource **stcpdshrd<env>we01**|Eg `DefaultEndpointsProtocol=https;AccountName=stcpdshrduatwe01;AccountKey=<key>;EndpointSuffix=core.windows.net`|
 |kv-cpd-apps-<env>-we-01|Ckan-Authorization-Token| Secret | Login to Opendata portal with Admin credentials and click on user name, left side bottom, find the **'API Key'**, the same guid value has to be stored in key vault.| Example: UAT portal value `8dacb687-b7ed-42db-b6df-67364f1181f5`|
 |kv-cpd-apps-<env>-we-01|Ckan-ResourceCreateURL| Secret | this is endpoint to create resource in ckan open data portal | Example: UAT portal value `https://opendata.uat.sqcp.qa/api/3/action/resource_create`|
-|kv-cpd-apps-<env>-we-01|Ckan-ResourceCreationFunctionURL| Secret | Retrieved after first deployment of platform apis
-Azure Portal > `func-<sub>-apps-ckan-<env>-we-01` > Functions > Resource Create > Get Function Url > Copy the default function key| Example: `https://func-cpd-apps-ckan-uat-we-01.azurewebsites.net/api/ResourceCreate?code=<key>`|
+|kv-cpd-apps-<env>-we-01|Ckan-ResourceCreationFunctionURL| Secret | Retrieved after first deployment of platform apis -- Azure Portal > `func-<sub>-apps-ckan-<env>-we-01` > Functions > Resource Create > Get Function Url > Copy the default function key| Example: `https://func-cpd-apps-ckan-uat-we-01.azurewebsites.net/api/ResourceCreate?code=<key>`|
 |kv-cpd-apps-<env>-we-01|Cms-Function-ServiceBusConnectionString| Secret |Send,Listen access policy connection string of the resource **sb-cpd-apps-int-<env>-we-01**|
 |kv-cpd-apps-<env>-we-01|Cms-Function-TenantId| Secret |Directory (tenant) ID of Azure AD App **spn-cmsbpa-<env>**|
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientId| Secret |Application (client) ID of Azure AD app **spn-cmsbpa-<env>**|

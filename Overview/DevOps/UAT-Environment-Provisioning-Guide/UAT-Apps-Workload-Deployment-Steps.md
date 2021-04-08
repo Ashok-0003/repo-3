@@ -510,6 +510,7 @@ Refer `kv-<sub>-pltf-<env>-we-01` and `mi-<sub>-pltf-<env>-we-01` for ssl certif
 | IntegrationAccount | `intac-<sub>-apps-ckan-<env>-we-01` | check module specific read me for more details|
 | LogicApp | `logic-<sub>-apps-purvckan-<env>-we-01` | |
 | FunctionAppCKAN | `func-<sub>-apps-ckan-<env>-we-01` | |
+| AppServicePlan | `plan-<sub>-apps-ckan-<env>-we-01` | |
 
 ## 4.8 Apps WAF Resource Group
 ### 4.8.1 Resource Group

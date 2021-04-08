@@ -563,6 +563,8 @@ Redeploy `rg-<sub>-apps-sec-<env>-we-01`
 |`func-<sub>-apps-intntf-<env>-we-01`|Get||
 |`func-<sub>-apps-acm-<env>-we-01`|Get||
 |`func-<sub>-apps-intbpa-<env>-we-01`|Get|Get|
+|`func-<sub>-apps-pt-<env>-we-01`|Get||
+|`func-<sub>-apps-ckan-<env>-we-01`|Get||
 
 ## 4.12 Seeding secrets to Key Vault 
 `kv-<sub>-apps-<env>-we-01`
@@ -594,6 +596,7 @@ Update role assignment for  following resources
 |`func-<sub>-apps-qnasync-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
 |`func-<sub>-apps-intbpa-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
 |`func-<sub>-apps-intntf-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
+|`func-<sub>-apps-pt-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
 |`func-<sub>-apps-ckan-<env>-we-01` | Function App  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader |
 |`app-<sub>-apps-bot-<env>-we-01` | App Service  | `acst-<sub>-apps-str-<env>-we-01` | App Configuration Store Data Reader ||`spn-cmsbpa-<env>` | Service Principal | `<env>-cdntasmu` | CDN Endpoint Contributor |
 |`spn-cmsbpa-<env>`|Service Principal|`<env>-cdntasmu`|CDN Endpoint Contributor. **Note**: Use `spn-cmsbpa-dev` for environments upto uat and `spn-cmsbpa-prod` for pre prod and prod. The app must be present in the same directory where azure subscription is present.|

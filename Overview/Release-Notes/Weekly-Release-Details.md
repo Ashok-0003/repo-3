@@ -8,7 +8,7 @@
 |-----|-----------------------|-----------------------|--------|
 | UAT |8th April 2021| 18.00 PM IST ( 15.30 PM Doha Time) |Completed |
 |Pre-Prod|11th April 2021| 10.00 AM IST (7.30 AM Doha Time )|In-Progress|
-|Release Notes for deployment|[ [ReleaseNotes_ MSFT_v0.01_05Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_05Apr2021-4be216c1-eea9-44b8-8b8b-d22c958c8142.docx) ])
+|Release Notes for deployment|[[ReleaseNotes_ MSFT_Draft_v0.01_08Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_Draft_v0.01_08Apr2021-0b9b1031-ce9b-41ac-8253-f319218222b7.docx))
 
 | **Note :** There will not be any deployments on 9th April (Friday) due to perf. testing activities by QA team |
 |--|

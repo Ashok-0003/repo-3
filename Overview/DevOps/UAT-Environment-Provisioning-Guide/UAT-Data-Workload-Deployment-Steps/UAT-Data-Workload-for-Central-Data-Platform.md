@@ -89,6 +89,11 @@ Add ADX deployment scripts in the following [project](https://dev.azure.com/TASM
 1. Functions
 
 # Deployment of the solution components (Smart City Dashboards components)
+
+**Copy Sectorial Data**
+If DevOps agent is not deployed within a vnet, to make successful copy data opration the rawzone data lake (dlsrawzoneuatwe01) and goldzone  data lake (dlsrawzoneuatwe01) must be **temporary** available for all networks:
+![image.png](/.attachments/image-6f137059-f948-44d4-b586-44b1979c7b53.png)
+
 Run the following pipelines in sequence:
 1. Deploy Sectorial Data (raw) -> [Environment](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=980) 
 1. Deploy Sectorial Data (raw) -> [Transport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=984) 

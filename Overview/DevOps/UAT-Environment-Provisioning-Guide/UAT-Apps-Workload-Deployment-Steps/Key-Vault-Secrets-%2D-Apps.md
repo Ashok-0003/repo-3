@@ -44,7 +44,7 @@
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiName| Secret | Ooredoo SMS Gateway Provider API Name, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-SmsApiPassword| Secret | Ooredoo SMS Gateway Password, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|OrganisationApi-AzureADOptions-ClientSecret| Secret | Client Secret of **Central-Platform-Core-APIs** app on Azure B2C Tenant ||
-|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | Client Secret of **Central-Platform-Core-APIs** app on Azure B2C Tenant ||
+|kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-ClientSecret| Secret | Client Secret of **TASMU Portal** app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-AuthorizeCard-Password| Secret |Ooredoo Payment Gateway Password, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-GetPaymentPreferenceServiceURL| Secret |Retrieve function app URL from the Info function in func-cpd-apps-pt-<env>-we-01. Replace the string 'profileID' with the digit 0.| Eg: `https://func-cpd-apps-pt-<env>-we-01.azurewebsites.net/api/Info/{0}?code='code'` |
 |kv-cpd-apps-<env>-we-01|PaymentGWSettings-TerminalPwd| Secret |Ooredoo Payment Gateway Terminal password provided by customer.||

@@ -114,6 +114,10 @@ Run the following pipelines in sequence:
 
 1. Create Databricks Cluster (Placeholder)
 1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=474)
+
+Now you can disable the public access to Data Lake and disable firewall rules in NSG service.
+
+
 # Add KeyVault as secret zone of Databricks.
 
 **Create an Azure Key Vault-backed secret scope using the UI**

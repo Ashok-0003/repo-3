@@ -94,7 +94,9 @@ Add ADX deployment scripts in the following [project](https://dev.azure.com/TASM
 If DevOps agent is not deployed within a vnet, to make successful copy data opration the rawzone data lake (dlsrawzoneuatwe01) and goldzone  data lake (dlsrawzoneuatwe01) must be **temporary** available for all networks:
 ![image.png](/.attachments/image-6f137059-f948-44d4-b586-44b1979c7b53.png)
 
-Run the following pipelines in sequence:
+## Run the following pipelines in sequence:
+### 
+
 1. Deploy Sectorial Data (raw) -> [Environment](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=980) 
 1. Deploy Sectorial Data (raw) -> [Transport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=984) 
 1. Deploy Sectorial Data (raw) -> [Logistics](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=982) 
@@ -107,12 +109,18 @@ Run the following pipelines in sequence:
 1. Deploy Sectorial Data (gold) -> [Sport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=989) 
 1. Deploy Sectorial Data (gold) -> [Healtcare](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=987) 
 
+**Before the Azure Synapse database Deployment is going to run, please make sure that one of the deployment team accounts  has user access administrator role assigned. It is needed needs to assign two roles for Synapse administrators: Synapse Administrator and Synapse SQL administrator**
+
+![image.png](/.attachments/image-4a2602b7-6769-4fce-a86b-1b62332e870c.png)
+To check if Synapse permissions are properly configured, please run Synapse Studio, connect to snp-cpd-data-uat-we-01 instance and check the Access Control.
+
 1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
 1. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
 
 1. Create Databricks Cluster (Placeholder)
+
 1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=474)
 
 Now you can disable the public access to Data Lake and disable firewall rules in NSG service.

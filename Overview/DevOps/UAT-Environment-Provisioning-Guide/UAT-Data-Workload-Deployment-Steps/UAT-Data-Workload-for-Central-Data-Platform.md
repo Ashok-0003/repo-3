@@ -119,7 +119,7 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
 
-1. Create Databricks Cluster (Placeholder)
+1. [Create Databricks Cluster as described https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli ](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli). The configuration file is available in repo data-platform **/databricks/script**.
 
 1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=474)
 

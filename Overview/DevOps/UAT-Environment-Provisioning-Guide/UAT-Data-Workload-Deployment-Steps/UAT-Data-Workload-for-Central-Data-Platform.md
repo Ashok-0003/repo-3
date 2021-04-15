@@ -95,7 +95,7 @@ If DevOps agent is not deployed within a vnet, to make successful copy data opra
 ![image.png](/.attachments/image-6f137059-f948-44d4-b586-44b1979c7b53.png)
 
 ## Run the following pipelines in sequence:
-### 
+### Copy sectorial data
 
 1. Deploy Sectorial Data (raw) -> [Environment](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=980) 
 1. Deploy Sectorial Data (raw) -> [Transport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=984) 
@@ -108,6 +108,8 @@ If DevOps agent is not deployed within a vnet, to make successful copy data opra
 1. Deploy Sectorial Data (gold) -> [Logistics](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=983) 
 1. Deploy Sectorial Data (gold) -> [Sport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=989) 
 1. Deploy Sectorial Data (gold) -> [Healtcare](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=987) 
+
+### Configure Synapse 
 
 **Before the Azure Synapse database Deployment is going to run, please make sure that one of the deployment team accounts  has user access administrator role assigned. It is needed needs to assign two roles for Synapse administrators: Synapse Administrator and Synapse SQL administrator**
 

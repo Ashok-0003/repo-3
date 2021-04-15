@@ -138,9 +138,19 @@ Now you can disable the public access to Data Lake and disable firewall rules in
 1. Use the Manage Principal drop-down to specify whether All Users have MANAGE permission for this secret scope.
 1. Enter the DNS Name (for example, https://databrickskv.vault.azure.net/) and Resource ID, for example /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/databricks-rg/providers/Microsoft.KeyVault/vaults/databricksKV
 
-**Create an Azure Key Vault-backed secret scope using the Databricks CLI**
+**(Optional as alternative to the point above) Create an Azure Key Vault-backed secret scope using the Databricks CLI**
 1. Create the Azure Key Vault scope: 
 databricks secrets create-scope --scope <scope-name> --scope-backend-type AZURE_KEYVAULT --resource-id <azure-keyvault-resource-id> --dns-name <azure-keyvault-dns-name> --initial-manage-principal users
+
+**Run the Databricks secret deployment **
+1. Update the uat DevOps environment with the variables as follows:
+
+|Variable| Description  | Sample  |
+|--|--|--|
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
 
 
 

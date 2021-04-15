@@ -8,7 +8,7 @@
 |-----|-----------------------|-----------------------|--------|
 | UAT |15th April 2021| 19.00 PM IST ( 16.30 PM Doha Time) |In-Progres|
 |Pre-Prod|18th April 2021| 09.30 AM IST (7.00 AM Doha Time )|Yet to Begin|
-|Release Notes for deployment|
+|Release Notes for deployment| Will be uploaded once we receive the same |
 ====================================================================================
 | Date  : 12th April 2021 |
 |----------------------|

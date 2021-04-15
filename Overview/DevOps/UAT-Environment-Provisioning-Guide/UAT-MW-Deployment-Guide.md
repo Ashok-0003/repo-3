@@ -146,7 +146,8 @@ Video Link :
 ![image.png](/.attachments/image-e99848e5-e9c5-44f6-8730-32e085b5ea43.png)
 7. Once the page is in edit mode, for each of the webpart, click on the webpart and update only the **title property** of the webpart to Arabic (eg: News Articles is the title of the selected webpart, so update News Articles to المقالات الإخبارية).
 ![image.png](/.attachments/image-7b99ad7f-17cd-44fb-b4f0-87871b9bb5f6.png)
-8. Once all the webparts title are updated, click on Publish button. 
+8. Update the View and the Size(small) property of the webparts wherever required.
+9. Once all the webparts title are updated, click on Publish button. 
 ![image.png](/.attachments/image-f3c0b594-6e51-490f-9822-e8be823e6b27.png)
 
    Video Link :

@@ -58,6 +58,7 @@ The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\d
 
 1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
 
+# Deployment of UAT Central Data Platform 
 ## Environment Variables for Azure Pipelines
 The following list of variables are required to be updated after a new Azure infrastructure is created prior to deploying the solution components below.
 
@@ -112,11 +113,19 @@ _If DevOps agent is not deployed within a vnet, to make successful copy data opr
 ![image.png](/.attachments/image-4a2602b7-6769-4fce-a86b-1b62332e870c.png)
 To check if Synapse permissions are properly configured, please run Synapse Studio, connect to snp-cpd-data-uat-we-01 instance and check the Access Control.
 
-[Deploy Azure Synapse DWH - SQL Pools](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
+[Deploy Azure Synapse DWH - SQL Pools]
+1. Install runtime for Synapse ([How to install runtime for Synapse to access data within a VNET]() )
+(https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
 
 ### Configure and deploy Azure Data Explorer Database.
 [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
+
+### Configure and deploy sematic layer with Analysis Services.
+1. Configure deployment SPN as AAS administrator ([How to assign SPN to AAS a admin role](https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-addservprinc-admins))
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
+
+### Configure and deploy sematic layer with Analysis Services.
+1. Install Runtime for ADF ([How to install ADF runtime]()) 
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
 
 1. [Create Databricks Cluster as described https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli ](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli). The configuration file is available in repo data-platform **/databricks/script**.

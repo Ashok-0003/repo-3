@@ -79,7 +79,7 @@ The following list of variables are required to be updated after a new Azure inf
 | rawzone | Rawzone storage account name eg. dlsrawzoneuat01 |
 | goldzone | Goldzone storage account name eg. dlsgoldzoneuat01|
 
-1. Run the pipeline to populate key vault secrets of Central Data Platform [Deployment of KeyVault CDP secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1459)
+1. Run the pipeline to populate key vault secrets of Central Data Platform [Deployment of KeyVault CDP secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1509)
 
 
 ## Update ADX Project for new Environment

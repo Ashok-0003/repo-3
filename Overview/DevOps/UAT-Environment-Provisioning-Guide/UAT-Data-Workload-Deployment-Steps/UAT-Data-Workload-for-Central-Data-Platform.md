@@ -151,7 +151,7 @@ databricks secrets create-scope --scope <scope-name> --scope-backend-type AZURE_
 |dlsgoldzone  | Goldzone Data Lake account Key  |  
 |dlsopenzonewe01| Openzone Data Lake account Key  |  
 
-2. Run 
+2. [Run the Databricks secrets pipeline deployment]() 
 
 # Deployment of Cost Management components
 Automatic export of cost management data needs to be scheduled at subscription level. At the moment this is done manually, but it can be automated. To configure this manually, follow these steps:

@@ -56,8 +56,7 @@
 
 1. [Deployment of KeyVault](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=488)
 1. Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - uat.
-The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\data-secrets-infra.yml
-Stage for uat must be added to pipeline.
+The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\data-secrets-infra.yml. Stage for uat must be added to pipeline.
 1. Run the pipeline to populate key vault [Deployment of KeyVault secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1459)
 
 1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
@@ -125,7 +124,7 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 
 1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1504)
 
-Now you can disable the public access to Data Lake and disable firewall rules in NSG service.
+**Now you can disable the public access to Data Lake and disable firewall rules in NSG service.**
 
 
 # Add KeyVault as secret zone of Databricks.
@@ -145,12 +144,12 @@ databricks secrets create-scope --scope <scope-name> --scope-backend-type AZURE_
 **Run the Databricks secret deployment **
 1. Update the uat DevOps environment with the variables as follows:
 
-|Variable| Description  | Sample  |
-|--|--|--|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-
+|Variable| Description  
+|--|--|
+|stlandingzonewe01 |Landing zone Data Lake account key  |  
+|dlsrawzonewe01  | Raw zone Data Lake account Key  |  
+|dlsgoldzone  | Goldzone Data Lake account Key  |  
+|dlsopenzonewe01| Openzone Data Lake account Key  |  
 
 
 

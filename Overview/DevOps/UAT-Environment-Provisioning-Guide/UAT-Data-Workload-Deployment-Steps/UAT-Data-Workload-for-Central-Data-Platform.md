@@ -54,7 +54,7 @@
 1. [Deployment of KeyVault](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=488)
 1. Prepare [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps by copying one of the existing variable groups - uat.
 The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\data-secrets-infra.yml. Stage for uat must be added to pipeline.
-1. Run the pipeline to populate key vault [Deployment of KeyVault secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1459)
+1. Run the pipeline to populate key vault [Deployment of KeyVault infra secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1459)
 
 1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
 
@@ -78,6 +78,8 @@ The following list of variables are required to be updated after a new Azure inf
 | SPN-ADO-Key | Service Principle Key |
 | rawzone | Rawzone storage account name eg. dlsrawzoneuat01 |
 | goldzone | Goldzone storage account name eg. dlsgoldzoneuat01|
+
+1. Run the pipeline to populate key vault secrets of Central Data Platform [Deployment of KeyVault CDP secrets](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1459)
 
 
 ## Update ADX Project for new Environment

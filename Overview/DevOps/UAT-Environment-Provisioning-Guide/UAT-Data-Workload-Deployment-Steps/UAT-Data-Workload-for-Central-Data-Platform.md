@@ -129,9 +129,12 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 1. Install Runtime for ADF ([How to install ADF runtime]()) 
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
 1. Adjust all data links to connect via runtime.
+
+### Configure and deploy Azure Databricks.
 1. Configure and deploy Databricks notebooks.
-- [Create Databricks Cluster as described https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli ](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli). The configuration file is available in repo data-platform **/databricks/script**.
-- [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1504)
+1. [Create Databricks Cluster as described https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli ](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli). The configuration file is available in repo data-platform **/databricks/script**.
+1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1504)
+1. [Create an Azure Key Vault-backed secret scope using the UI]().
 1. Add KeyVault as secret zone of Databricks.
 
     **Create an Azure Key Vault-backed secret scope using the UI**

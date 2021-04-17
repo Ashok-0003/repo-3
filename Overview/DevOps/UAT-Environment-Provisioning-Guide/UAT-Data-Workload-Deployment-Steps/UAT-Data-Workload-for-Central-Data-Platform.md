@@ -115,7 +115,8 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 
 [Deploy Azure Synapse DWH - SQL Pools]
 1. Install runtime for Synapse ([How to install runtime for Synapse to access data within a VNET]() )
-(https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
+2. [Deploy Synapse SQL pools](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
+3. Adjust the datalinks to connect via brand new runtime. 
 
 ### Configure and deploy Azure Data Explorer Database.
 [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
@@ -124,10 +125,12 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 1. Configure deployment SPN as AAS administrator ([How to assign SPN to AAS a admin role](https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-addservprinc-admins))
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 
-### Configure and deploy sematic layer with Analysis Services.
+### Configure and deploy Azure Data Factory.
 1. Install Runtime for ADF ([How to install ADF runtime]()) 
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
+1. Adjust all data links to connect via runtime.
 
+### Configure and deploy Databricks notebooks.
 1. [Create Databricks Cluster as described https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli ](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli). The configuration file is available in repo data-platform **/databricks/script**.
 
 1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1504)

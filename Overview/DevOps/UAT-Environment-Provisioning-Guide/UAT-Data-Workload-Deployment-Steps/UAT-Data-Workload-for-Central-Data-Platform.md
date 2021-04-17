@@ -145,7 +145,7 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 1. [Create an Azure Key Vault-backed secret scope using the UI](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/504/Create-an-Azure-Key-Vault-backed-secret-scope-using-the-UI).
 1. [Run the Databricks secret deployment pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1508) 
 
-# Deployment of Cost Management components
+## Deployment of Cost Management components
 Automatic export of cost management data needs to be scheduled at subscription level. At the moment this is done manually, but it can be automated. To configure this manually, follow these steps:
 1. Navigate to Subscriptions, select the relevant subscription from the list, and then select Cost analysis in the menu. At the top of the Cost analysis page, select Settings, then Exports.
 2. Select Add and type a name for the export. Name must follow this naming convention: "ActualCostUsage<ENV>", where <ENV> is a 3-letter acronym identifying the environment (eg dev, tst, uat, npd, prd).

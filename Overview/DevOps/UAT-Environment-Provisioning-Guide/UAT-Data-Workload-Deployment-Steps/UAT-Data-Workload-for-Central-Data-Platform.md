@@ -131,12 +131,7 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 1. Adjust all data links to connect via runtime.
 
 ### Configure and deploy Azure Databricks.
-1. Configure and deploy Databricks notebooks.
-1. [Create Databricks Cluster as described https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli ](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli). The configuration file is available in repo data-platform **/databricks/script**.
-1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1504)
-1. [Create an Azure Key Vault-backed secret scope using the UI](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/504/Create-an-Azure-Key-Vault-backed-secret-scope-using-the-UI).
-1. Run the Databricks secret deployment 
-1. Update the uat DevOps environment with the variables as follows:
+ Update the uat DevOps environment with the variables as follows:
 
 |Variable| Description  
 |--|--|
@@ -145,7 +140,10 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 |dlsgoldzone  | Goldzone Data Lake account Key  |  
 |dlsopenzonewe01| Openzone Data Lake account Key  |  
 
-2. [Run the Databricks secrets pipeline deployment]() 
+1. [Create Databricks Cluster as described https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli ](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/cli/clusters-cli). The configuration file is available in repo data-platform **/databricks/script**.
+1. [Deploy Databricks Notebooks](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1504)
+1. [Create an Azure Key Vault-backed secret scope using the UI](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/504/Create-an-Azure-Key-Vault-backed-secret-scope-using-the-UI).
+1. [Run the Databricks secret deployment pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1508) 
 
 # Deployment of Cost Management components
 Automatic export of cost management data needs to be scheduled at subscription level. At the moment this is done manually, but it can be automated. To configure this manually, follow these steps:

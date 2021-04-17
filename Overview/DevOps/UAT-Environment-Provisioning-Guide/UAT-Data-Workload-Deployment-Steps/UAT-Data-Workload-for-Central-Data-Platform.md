@@ -10,10 +10,7 @@
 
 # Deployment of Azure Infrastructure
 
-|Pipeline|Dependencies |
-|--|--|
-
-
+## All the services deployed for UAT Central Data Platform.
 |Resource Group|rg-cpd-data-uat-we-01|
 |--|--|
 |Analysis Services |aascpddatauatwe01|
@@ -50,7 +47,7 @@
 |Key Vault |kv-cpd-data-uat-we-01|
 
 
-# Deployment of Data Infrastructure in following order.
+## Deployment of Data Infrastructure in following order.
 ### Please pay your attention to keep the proper order of activities to avoid getting errors due to lack of secrets in KeyVault.
 
 
@@ -61,9 +58,8 @@ The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\d
 
 1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
 
-# Environment Variables for Azure Pipelines
+## Environment Variables for Azure Pipelines
 The following list of variables are required to be updated after a new Azure infrastructure is created prior to deploying the solution components below.
-
 
 |Variable Name| Description |
 |--|--|
@@ -82,19 +78,20 @@ The following list of variables are required to be updated after a new Azure inf
 | rawzone | Rawzone storage account name eg. dlsrawzoneuat01 |
 | goldzone | Goldzone storage account name eg. dlsgoldzoneuat01|
 
-# Update ADX Project for new Environment
+
+## Update ADX Project for new Environment
 Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=PlatformEvents/Mcs.PlatformEvents.ADX) similar to the existing environments implementation for:
 1. Deploy
 1. Functions
 
-# Deployment of the solution components (Smart City Dashboards components)
+## Deployment of the solution components (Smart City Dashboards components)
 
-**Copy Sectorial Data**
-If DevOps agent is not deployed within a vnet, to make successful copy data opration the rawzone data lake (dlsrawzoneuatwe01) and goldzone  data lake (dlsrawzoneuatwe01) must be **temporary** available for all networks:
+###Copy Sectorial Data
+_If DevOps agent is not deployed within a vnet, to make successful copy data opration the rawzone data lake (dlsrawzoneuatwe01) and goldzone  data lake (dlsrawzoneuatwe01) must be **temporary** available for all networks:_
+
 ![image.png](/.attachments/image-6f137059-f948-44d4-b586-44b1979c7b53.png)
 
-## Run the following pipelines in sequence:
-### Copy sectorial data
+**Run the following pipelines in sequence:**
 
 1. Deploy Sectorial Data (raw) -> [Environment](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=980) 
 1. Deploy Sectorial Data (raw) -> [Transport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=984) 
@@ -108,15 +105,17 @@ If DevOps agent is not deployed within a vnet, to make successful copy data opra
 1. Deploy Sectorial Data (gold) -> [Sport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=989) 
 1. Deploy Sectorial Data (gold) -> [Healtcare](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=987) 
 
-### Configure Synapse 
+### Configure and deploy Synapse SQL pools 
 
 **Before the Azure Synapse database Deployment is going to run, please make sure that one of the deployment team accounts  has user access administrator role assigned. It is needed needs to assign two roles for Synapse administrators: Synapse Administrator and Synapse SQL administrator**
 
 ![image.png](/.attachments/image-4a2602b7-6769-4fce-a86b-1b62332e870c.png)
 To check if Synapse permissions are properly configured, please run Synapse Studio, connect to snp-cpd-data-uat-we-01 instance and check the Access Control.
 
-1. [Deploy Azure Synapse DWH](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
-1. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
+[Deploy Azure Synapse DWH - SQL Pools](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
+
+### Configure and deploy Azure Data Explorer Database.
+[Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
 
@@ -141,7 +140,7 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 1. Create the Azure Key Vault scope: 
 databricks secrets create-scope --scope <scope-name> --scope-backend-type AZURE_KEYVAULT --resource-id <azure-keyvault-resource-id> --dns-name <azure-keyvault-dns-name> --initial-manage-principal users
 
-**Run the Databricks secret deployment **
+## **Run the Databricks secret deployment** 
 1. Update the uat DevOps environment with the variables as follows:
 
 |Variable| Description  

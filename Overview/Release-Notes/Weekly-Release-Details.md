@@ -7,7 +7,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
 | UAT |15th April 2021| 19.00 PM IST ( 16.30 PM Doha Time) |Completed|
-|Pre-Prod|18th April 2021| 10.30 AM IST (8.00 AM Doha Time )|In-Progress|
+|Pre-Prod|18th April 2021| 10.30 AM IST (8.00 AM Doha Time )|Completed|
 |Release Notes for deployment| [ReleaseNotes_ MSFT_v0.01_15Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_15Apr2021-ab871145-ada3-4e87-998d-d2cf465ba835.docx) |
 ====================================================================================
 | Date  : 12th April 2021 |

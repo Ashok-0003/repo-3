@@ -17,7 +17,7 @@
 |-----|-----------------------|-----------------------|--------|
 | UAT |12th April 2021| 20.30 PM IST ( 18.00 PM Doha Time) |Completed|
 |Pre-Prod|12th April 2021| 22.30 PM IST (8.00 PM Doha Time )|Completed|
-|Release Notes for deployment| Mobile & API (OrderMgmtAPI) deployment | [ReleaseNotes_ MSFT_v0.01_12Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_12Apr2021-f7257722-c035-4c5f-9260-070afcc8dc67.docx) |**CKAN deployments will be executed on Wed**|
+|Release Notes for deployment| Mobile & API (OrderMgmtAPI) deployment | [ReleaseNotes_ MSFT_v0.01_12Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_12Apr2021-f7257722-c035-4c5f-9260-070afcc8dc67.docx) |**CKAN deployments - In Progress - Being executed in conjunction with MS Team**|
 ====================================================================================
 | Date  : 11th April 2021 |
 |----------------------|

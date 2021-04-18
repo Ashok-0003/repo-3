@@ -7,7 +7,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
 | UAT |15th April 2021| 19.00 PM IST ( 16.30 PM Doha Time) |Completed|
-|Pre-Prod|18th April 2021| 09.30 AM IST (7.00 AM Doha Time )|In-Progress|
+|Pre-Prod|18th April 2021| 10.30 AM IST (8.00 AM Doha Time )|In-Progress|
 |Release Notes for deployment| Will be uploaded once we receive the same |
 ====================================================================================
 | Date  : 12th April 2021 |

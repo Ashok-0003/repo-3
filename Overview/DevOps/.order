@@ -1,4 +1,3 @@
-AKS-Configuration-Design
 Ramp-Up-Guide
 Pre-Prod-Pipelines
 Deploy-solution-components-to-an-environment
@@ -6,6 +5,7 @@ Self-Hosted-Agents
 Debugging-Guide
 Dynamics-365-Deployment-Guide
 Chatbot-Information-and-Deployment-Steps
+AKS-Configuration-Design
 Azure-Subscription
 Service-Connections
 Microsoft-RBAC

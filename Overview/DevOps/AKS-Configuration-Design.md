@@ -1,4 +1,4 @@
-For development tenant environments:
+**For development tenant environments**:
 1. Create a private DNS Zone – privatelink.westeurope.azmk8s.io
 1. Add Vnet linking to hub network:
 	vnet-cph-pltf-prd-we-01
@@ -14,7 +14,7 @@ For development tenant environments:
 1. Test the connectivity to clusters.
 1. Detailed documentation on cluster configuration will be shared separately.
 
-Production environments:
+**Production environments**:
 1. Cluster will be created by providing the resource Id of private DNS Zone in CPH.
 2. [To deploy the private cluster in a vNET with a custom DNS and private DNS Zone](https://docs.microsoft.com/en-us/azure/aks/private-clusters#configure-private-dns-zone) 
 	We are using a preview feature - AKS Preview version 0.5.7 or later

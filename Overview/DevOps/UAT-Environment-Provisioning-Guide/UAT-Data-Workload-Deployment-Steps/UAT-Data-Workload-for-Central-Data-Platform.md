@@ -128,7 +128,7 @@ To check if Synapse permissions are properly configured, please run Synapse Stud
 1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 
 ### Configure and deploy Azure Data Factory.
-1. Install Runtime for ADF ([How to install ADF runtime]()) 
+1. Install Runtime for ADF ([How to install ADF runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)) 
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
 1. Adjust all data links to connect via runtime.
 

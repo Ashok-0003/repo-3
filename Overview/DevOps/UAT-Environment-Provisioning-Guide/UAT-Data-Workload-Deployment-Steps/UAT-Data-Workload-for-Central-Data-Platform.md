@@ -108,29 +108,36 @@ _If DevOps agent is not deployed within a vnet, to make successful copy data opr
 1. Deploy Sectorial Data (gold) -> [Sport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=989) 
 1. Deploy Sectorial Data (gold) -> [Healtcare](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=987) 
 
-### Configure and deploy Synapse SQL pools 
-
-**Before the Azure Synapse database Deployment is going to run, please make sure that one of the deployment team accounts  has user access administrator role assigned. It is needed needs to assign two roles for Synapse administrators: Synapse Administrator and Synapse SQL administrator**
-
-![image.png](/.attachments/image-4a2602b7-6769-4fce-a86b-1b62332e870c.png)
-To check if Synapse permissions are properly configured, please run Synapse Studio, connect to snp-cpd-data-uat-we-01 instance and check the Access Control.
-
-[Deploy Azure Synapse DWH - SQL Pools]
-1. Install runtime for Synapse ([How to install runtime for Synapse to access data within a VNET]() )
-2. [Deploy Synapse SQL pools](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
-3. Adjust the datalinks to connect via brand new runtime. 
 
 ### Configure and deploy Azure Data Explorer Database.
 [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
-
-### Configure and deploy sematic layer with Analysis Services.
-1. Configure deployment SPN as AAS administrator ([How to assign SPN to AAS a admin role](https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-addservprinc-admins))
-1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
 
 ### Configure and deploy Azure Data Factory.
 1. Install Runtime for ADF ([How to install ADF runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)) 
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
 1. Adjust all data links to connect via runtime.
+
+### Configure and deploy sematic layer with Analysis Services.
+1. Configure deployment SPN as AAS administrator ([How to assign SPN to AAS a admin role](https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-addservprinc-admins))
+1. [Deploy Azure Analysis Services model](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=560)
+
+
+### Configure and deploy Synapse SQL pools 
+## Synapse pre-requisities.
+**1. Before the Azure Synapse database Deployment is going to run, please make sure that one of the deployment team accounts  has user access administrator role assigned. It is needed needs to assign two roles for Synapse administrators: Synapse Administrator and Synapse SQL administrator**
+
+![image.png](/.attachments/image-4a2602b7-6769-4fce-a86b-1b62332e870c.png)
+To check if Synapse permissions are properly configured, please run Synapse Studio, connect to snp-cpd-data-uat-we-01 instance and check the Access Control.
+2. You can close the All Vnet access now and check the settings. ![image.png](/.attachments/image-f450a75d-355d-4a10-9932-af1dbc78e45a.png).
+All positions highlighted on the picture above need to be set as shown.
+3. Check the settings of Synapse about Managed Identity. Allow pipelines must be checked on.
+![image.png](/.attachments/image-35ea8dcc-b8a7-4ef4-ac92-e67e7e9a037b.png)
+4. Finally verify if **snp-cpd-data-uat-we-01** account (MI of Synapse) is assigned to **dlsgoldzoneuatwe01** storage account as **Storage BLOB Contributor** role. 
+
+##Deploy Azure Synapse DWH - SQL Pool
+2. [Deploy Synapse SQL pools](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1485)
+3. Adjust the datalinks to connect via brand new runtime. 
+
 
 ### Configure and deploy Azure Databricks.
  Update the uat DevOps environment with the variables as follows:

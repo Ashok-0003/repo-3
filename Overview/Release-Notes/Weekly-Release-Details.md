@@ -1,6 +1,15 @@
 =====================================================
    ### **High Level - Weekly Deployment updates in UAT, Pre-Prod Environments**
 =====================================================
+| Date  : 22nd April 2021 |
+|----------------------|
+
+| Environment | Deployment Start Date | Deployment Start Time | Status |
+|-----|-----------------------|-----------------------|--------|
+| UAT |21st April 2021| 21.00 PM IST ( 18.30 PM Doha Time) |Yet to Begin|
+|Pre-Prod|22nd April 2021| 16.45 PM IST (14.15 PM Doha Time )|Yet to Begin|
+|Release Notes for deployment| Security Fixes, AKS cluster re-deployment. Env will be down for 2-3 hrs during the deployments| Will be updated as we receive the same |
+====================================================================================
 | Date  : 21st April 2021 |
 |----------------------|
 

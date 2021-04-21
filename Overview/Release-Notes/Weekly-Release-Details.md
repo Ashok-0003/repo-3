@@ -7,7 +7,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
 | UAT |20th April 2021| 19.30 PM IST ( 17.00 PM Doha Time) |Completed|
-|Pre-Prod|21st April 2021| 11.00 AM IST (8.30 AM Doha Time )|In-Progress|
+|Pre-Prod|21st April 2021| 11.00 AM IST (8.30 AM Doha Time )|Completed|
 |Release Notes for deployment| Defect fixes, CKAN and security setting updates apart from Web, CDN, B2C updates| [ReleaseNotes_ MSFT_v0.01_20Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_20Apr2021-670d078c-002a-45ea-b215-f01ae672653d.docx) |
 ====================================================================================
 

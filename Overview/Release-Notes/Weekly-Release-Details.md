@@ -17,7 +17,7 @@
 |-----|-----------------------|-----------------------|--------|
 | UAT |21st April 2021| 18.30 PM IST ( 16.00 PM Doha Time) |Completed|
 |Pre-Prod|22nd April 2021| 10.30 AM IST (8.00 AM Doha Time )|In-Progress|
-|Release Notes for deployment| Fixes for WebApp, Mobile, B2C| Will be updated as we receive the same |
+|Release Notes for deployment| WebApp, CDN completed. Mobile, B2C In-Progress| [ReleaseNotes_ MSFT_v0.01_21Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_21Apr2021-8a793516-ee3d-46f3-a238-556742761deb.docx) |
 ====================================================================================
 | Date  : 20th April 2021 |
 |----------------------|

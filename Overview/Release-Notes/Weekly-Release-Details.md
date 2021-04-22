@@ -7,7 +7,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
 | UAT |21st April 2021| 21.00 PM IST ( 18.30 PM Doha Time) |Completed|
-|Pre-Prod|22nd April 2021| 16.45 PM IST (14.15 PM Doha Time )|Yet to Begin|
+|Pre-Prod|22nd April 2021| 19.00 PM IST (16.30 PM Doha Time )|Yet to Begin|
 |Release Notes for deployment| Security Fixes, AKS cluster re-deployment. Env will be down for 2-3 hrs during the deployments| Will be updated as we receive the same |
 ====================================================================================
 | Date  : 21st April 2021 |
@@ -16,7 +16,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
 | UAT |21st April 2021| 18.30 PM IST ( 16.00 PM Doha Time) |Completed|
-|Pre-Prod|22nd April 2021| 10.30 AM IST (8.00 AM Doha Time )|In-Progress|
+|Pre-Prod|22nd April 2021| 10.30 AM IST (8.00 AM Doha Time )|Completed|
 |Release Notes for deployment| WebApp, CDN completed. Mobile, B2C In-Progress| [ReleaseNotes_ MSFT_v0.01_21Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_21Apr2021-8a793516-ee3d-46f3-a238-556742761deb.docx) |
 ====================================================================================
 | Date  : 20th April 2021 |

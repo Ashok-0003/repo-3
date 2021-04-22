@@ -393,7 +393,7 @@ Update the parameter file - `apim-<sub>-shrd-<env>-we-01` for hostConfigurations
          "negotiateClientCertificate": false,
          "defaultSslBinding": false
       }
-   ]
+   ]4.6.2
 }
 ```
 
@@ -426,27 +426,12 @@ Update the parameter file - `apim-<sub>-shrd-<env>-we-01` for hostConfigurations
 ### 4.6.2 Dependencies
 1. `rg-<sub>-apps-mon-<env>-we-01`
 1. `rg-<sub>-glob-npd-we-01`
-1. `rg-<sub>-pltf-net-<env>-we-01`
-1. `rg-<sub>-apps-str-<env>-we-01`
-### 4.6.3 Pre requisite Steps
-1. Create an app registration in Azure Active Directory – `spn-apps-aks-<env>`
--- Copy the Application (client) ID 
--- Create the Client Secret for this app.
--- Seed the client secret in `kv-<sub>-pltf-<env>-we-01` with secret name as `aks-spn-<env>-secret`
-2. Add the Vnet link in the `privatelink.westeurope.azmk8s.io` private dns zone to `/subscriptions/d8c326fb-f8b4-4854-a2af-dd55e86f6117/resourceGroups/rg-cph-pltf-net-prd-we-01/providers/Microsoft.Network/virtualNetworks/vnet-cph-pltf-prd-we-01`
-3.  Role Assignments for AKS
-
-|Identity Name| Type  | Target Resource | Role |
-|--|--|--|--|
-|`spn-apps-aks-<env>`|Service Principal |`acr<sub>glob<npd/prd>we01`| AcrPull |
-|`spn-apps-aks-<env>`|Service Principal |`privatelink.westeurope.azmk8s.io`| Private DNS Zone Contributor  |
-|`spn-apps-aks-<env>`|Service Principal |`vnet-<sub>-pltf-<env>-we-01/snet-<sub>-apps-aks-<env>-we-01`| Network Contributor |
-
-### 4.6.4 Resources
-| Module Name | Module Version| Parameter File Name | Resource Group|
-|--|--|--|--|
-|ManagedIdentity|2018-11-30 |`mi-<sub>-apps-agwaks-<env>-we-01 ` ||
-|ManagedIdentity | 2018-11-30 |`mi-<sub>-apps-aks-<env>-we-01` | Deployed in `rg-<sub>-apps-aksnode-<env>-we-01` |
+1. `rg-<sub>-pltf-net-<env>-we-01`1. `rg-<sub>-apps-str-<env>-we-01`
+### 4.6.3 Resources
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|ManagedClusterCNI | `aks-<sub>-apps-<env>-we-01` ||
+|ManagedIdentity | `mi-<sub>-apps-aks-<env>-we-01` | Deployed in `rg-<sub>-apps-aksnode-<env>-we-01` |
 |ApplicationGateway | `agw-<sub>-apps-aks-<env>-we-01` | SKU and Tier - Standard_v2, firewallenabled - false|
 
 ## 4.7 Apps CKAN Resource Group

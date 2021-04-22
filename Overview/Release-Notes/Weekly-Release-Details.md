@@ -6,7 +6,7 @@
 
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
-| UAT |21st April 2021| 21.00 PM IST ( 18.30 PM Doha Time) |Yet to Begin|
+| UAT |21st April 2021| 21.00 PM IST ( 18.30 PM Doha Time) |Completed|
 |Pre-Prod|22nd April 2021| 16.45 PM IST (14.15 PM Doha Time )|Yet to Begin|
 |Release Notes for deployment| Security Fixes, AKS cluster re-deployment. Env will be down for 2-3 hrs during the deployments| Will be updated as we receive the same |
 ====================================================================================
@@ -15,8 +15,8 @@
 
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
-| UAT |21st April 2021| 18.30 PM IST ( 16.00 PM Doha Time) |In-Progress|
-|Pre-Prod|22nd April 2021| 10.30 AM IST (8.00 AM Doha Time )|Yet to Begin|
+| UAT |21st April 2021| 18.30 PM IST ( 16.00 PM Doha Time) |Completed|
+|Pre-Prod|22nd April 2021| 10.30 AM IST (8.00 AM Doha Time )|In-Progress|
 |Release Notes for deployment| Fixes for WebApp, Mobile, B2C| Will be updated as we receive the same |
 ====================================================================================
 | Date  : 20th April 2021 |

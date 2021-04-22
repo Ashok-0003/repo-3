@@ -113,8 +113,9 @@ _If DevOps agent is not deployed within a vnet, to make successful copy data opr
 [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=932)
 
 ### Configure and deploy Azure Data Factory.
-1. Install Runtime for ADF ([How to install ADF runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)) 
+
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
+1. Install Runtime for ADF ([How to install ADF runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)) 
 1. Adjust all data links to connect via runtime.
 
 ### Configure and deploy sematic layer with Analysis Services.

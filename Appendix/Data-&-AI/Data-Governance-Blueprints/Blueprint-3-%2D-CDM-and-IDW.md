@@ -1,4 +1,5 @@
-Content in this section is subject to change as new features are released.
+Content in this section is subject to change as new features are released!
+It for now reflects what has been presented in the blueprint demo on 15th April 2021.
 
 # Data Flow :
 ![image.png](/.attachments/image-2cdf3089-d810-4069-876c-cd190d51ecfa.png)

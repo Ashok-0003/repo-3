@@ -112,7 +112,7 @@ _If DevOps agent is not deployed within a vnet, to make successful copy data opr
 ### Configure and deploy Azure Data Explorer Database.
 
 Before you start, please make sure that:
-1.  SPN account, you will deploy the database with, is already added as Cluster AllDatabasesAdmin role. 
+1.  SPN account, you will deploy the database with, is already added as **Cluster AllDatabasesAdmin** role. 
 ![image.png](/.attachments/image-b7777b31-97a7-440e-bc37-3bd9fe0a404f.png)
 2. All traffic is allowed on NSG assigned to the subnet the ADX cluster is assigned to. This is a temporary solution, needed for deployment of ADX database only. 
 ![image.png](/.attachments/image-d975e147-1c23-44dd-b87a-5455fe508cdb.png)

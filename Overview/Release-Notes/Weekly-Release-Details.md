@@ -7,9 +7,8 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
 | UAT |21st April 2021| 21.00 PM IST ( 18.30 PM Doha Time) |Completed|
-|Pre-Prod|22nd April 2021| 19.00 PM IST (16.30 PM Doha Time )|In-Progress|
-|Release Notes for deployment| Security Fixes, AKS cluster re-deployment. Only CRM portion is pending| [ReleaseNotes_ MSFT_v0.01_22Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_22Apr2021-67b741d5-e943-4cf5-a469-52d7f131ab52.docx) |
-|Pre-Prod - 6D Billing|24th April 2021| 11.00 AM IST (8.30 AM Doha Time )|Yet to Begin|
+|Pre-Prod|22nd April 2021| 19.00 PM IST (16.30 PM Doha Time )|Completed|
+|Release Notes for deployment| Security Fixes, AKS cluster re-deployment & CRM.| [ReleaseNotes_ MSFT_v0.01_22Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_22Apr2021-67b741d5-e943-4cf5-a469-52d7f131ab52.docx) |In-Progress|
 |Release Notes for deployment - 6D Billing| [Release Note_6d Billing_V 0.9_24-04-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%200.9_24-04-2021-dc6a896c-8df0-4877-b5d8-0926150c4032.docx) | |
 ====================================================================================
 | Date  : 21st April 2021 |

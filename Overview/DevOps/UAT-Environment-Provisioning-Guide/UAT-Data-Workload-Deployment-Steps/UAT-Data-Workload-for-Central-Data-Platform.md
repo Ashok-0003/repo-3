@@ -71,6 +71,8 @@ The following list of variables are required to be updated after a new Azure inf
 | stcpddata02-Key | Primary key for stcpddata02 storage |
 | SQLServer01-Admin-Password | Admin Password |
 | SQLServer01-Admin-Username | Admin Username |
+| SYNAPSE-Admin-Password | Synapse Admin Password |
+| SYNAPSE-Admin-Username | Synapse Admin Username |
 | Databricks-bearerToken | Generate a new user bearer tokerm from databricks portal |
 | SPN-Data-Id | Service Principle Id |
 | SPN-Data-Key | Service Principle Key |
@@ -96,6 +98,7 @@ _If DevOps agent is not deployed within a vnet, to make successful copy data opr
 
 **Run the following pipelines in sequence:**
 
+1. Make sure that DevOps SPN has Storage BLOB Contributor role for gold and raw zone storages.
 1. Deploy Sectorial Data (raw) -> [Environment](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=980) 
 1. Deploy Sectorial Data (raw) -> [Transport](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=984) 
 1. Deploy Sectorial Data (raw) -> [Logistics](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=982) 

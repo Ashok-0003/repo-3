@@ -122,9 +122,11 @@ Before you start, please make sure that:
 
 ### Configure and deploy Azure Data Factory.
 
+1. Install Runtime client on vmcpddatauatwe03 and vmcpddatauatwe04 ([How to install ADF runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)) 
+**The Integration runtime _adf-integration-runtime_ must be active. It it is not, the next step will fail.**
+
 1. [Deploy Azure Data Factory - Smart City Only](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=990)
-1. Install Runtime for ADF ([How to install ADF runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)) 
-1. Adjust all data links to connect via runtime.
+
 
 ### Configure and deploy sematic layer with Analysis Services.
 1. Configure deployment SPN as AAS administrator ([How to assign SPN to AAS a admin role](https://docs.microsoft.com/en-us/azure/analysis-services/analysis-services-addservprinc-admins))

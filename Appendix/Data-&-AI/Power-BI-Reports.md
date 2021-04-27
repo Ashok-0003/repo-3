@@ -32,5 +32,17 @@ let
 let
     Source = Sql.Database([_Datasource Parameter Name_],[_Database Parameter Name]_),
 
+## Other possibility
+For Sql Data sources only, a quicker change can be made without having to edit every M query of every table : 
+In the Data Source Settings -> Change Source -> in Server & Database chose the Parameter in question.
+![image.png](/.attachments/image-5042b20e-a27e-4a46-9706-b454c8825aa3.png)
+
 ## Options and Settings
-This option has to be 
+This option has to be chosen in order for the dynamic sources to be working. 
+
+![image.png](/.attachments/image-0f5e4cb8-f8cf-4ed5-a5f8-c65df3814544.png)
+
+## Next Steps
+
+Once the Parameters are implemented, the M queries are changed and the parameterization option is selected in Power BI, if there is any data source or database change, only the parameters have to be changed, and it will update the queries for all the tables. 
+They might be a necessity to enter the credentials of the new data sources if any, for the  tables to be working fine. 

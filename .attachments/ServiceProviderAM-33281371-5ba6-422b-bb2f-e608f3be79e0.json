@@ -1,0 +1,339 @@
+{
+  "apiVersion": "2020-01-12-preview",
+  "properties": {
+    "baseModel": {
+      "name": "Retail",
+      "format": "CDM",
+      "version": "0.1.0"
+    },
+    "entityDefinitions": {
+      "existingEntities": [
+        {
+          "primaryKey": [
+            "ProductId"
+          ],
+          "baseEntityReference": {
+            "path": "/Product.cdm.json/Product",
+            "name": "Product"
+          },
+          "name": "ProductPlan",
+          "description": "",
+          "DenormalizeInfo": {
+            "Entities": [
+              {
+                "ToEntity": "/ProductVendor.cdm.json/ProductVendor",
+                "JoinPairs": [
+                  {
+                    "ToAttribute": "ProductId",
+                    "FromAttribute": {
+                      "Entity": "/Product.cdm.json/Product",
+                      "Name": "ProductId"
+                    }
+                  }
+                ]
+              },
+              {
+                "ToEntity": "/Vendor.cdm.json/Vendor",
+                "JoinPairs": [
+                  {
+                    "ToAttribute": "VendorId",
+                    "FromAttribute": {
+                      "Entity": "/ProductVendor.cdm.json/ProductVendor",
+                      "Name": "VendorId"
+                    }
+                  }
+                ]
+              },
+              {
+                "ToEntity": "/ProductGroupProduct.cdm.json/ProductGroupProduct",
+                "JoinPairs": [
+                  {
+                    "ToAttribute": "ProductId",
+                    "FromAttribute": {
+                      "Entity": "/Product.cdm.json/Product",
+                      "Name": "ProductId"
+                    }
+                  }
+                ]
+              },
+              {
+                "ToEntity": "/ProductGroup.cdm.json/ProductGroup",
+                "JoinPairs": [
+                  {
+                    "ToAttribute": "ProductGroupId",
+                    "FromAttribute": {
+                      "Entity": "/ProductGroupProduct.cdm.json/ProductGroupProduct",
+                      "Name": "ProductGroupId"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "ProductId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Product.cdm.json/Product",
+                  "name": "ProductId"
+                }
+              },
+              {
+                "name": "ProductName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Product.cdm.json/Product",
+                  "name": "ProductName"
+                }
+              },
+              {
+                "name": "ProductInternalName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Product.cdm.json/Product",
+                  "name": "ProductInternalName"
+                }
+              },
+              {
+                "name": "ProductGroupName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductGroup.cdm.json/ProductGroup",
+                  "name": "ProductGroupName"
+                }
+              },
+              {
+                "name": "VendorId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Vendor.cdm.json/Vendor",
+                  "name": "VendorId"
+                }
+              },
+              {
+                "name": "VendorName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Vendor.cdm.json/Vendor",
+                  "name": "VendorName"
+                }
+              },
+              {
+                "name": "VendorNote",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Vendor.cdm.json/Vendor",
+                  "name": "VendorNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "CustomerAccountId"
+          ],
+          "baseEntityReference": {
+            "path": "/CustomerAccount.cdm.json/CustomerAccount",
+            "name": "CustomerAccount"
+          },
+          "name": "CustomerAccountDetail",
+          "description": "",
+          "DenormalizeInfo": {
+            "Entities": [
+              {
+                "ToEntity": "/Customer.cdm.json/Customer",
+                "JoinPairs": [
+                  {
+                    "ToAttribute": "CustomerId",
+                    "FromAttribute": {
+                      "Entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                      "Name": "CustomerId"
+                    }
+                  }
+                ]
+              },
+              {
+                "ToEntity": "/CustomerType.cdm.json/CustomerType",
+                "JoinPairs": [
+                  {
+                    "ToAttribute": "CustomerTypeId",
+                    "FromAttribute": {
+                      "Entity": "/Customer.cdm.json/Customer",
+                      "Name": "CustomerTypeId"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "CustomerAccountId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                  "name": "CustomerAccountId"
+                }
+              },
+              {
+                "name": "CustomerId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                  "name": "CustomerId"
+                }
+              },
+              {
+                "name": "CustomerType",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerType.cdm.json/CustomerType",
+                  "name": "CustomerTypeName"
+                }
+              },
+              {
+                "name": "CustomerAccountOpenedDate",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                  "name": "CustomerAccountOpenedDate"
+                }
+              },
+              {
+                "name": "CustomerAccountClosedDate",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                  "name": "CustomerAccountClosedDate"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "TransactionId",
+            "TransactionLineItemId"
+          ],
+          "baseEntityReference": {
+            "path": "/TransactionLineItem.cdm.json/TransactionLineItem",
+            "name": "TransactionLineItem"
+          },
+          "name": "TransactionLineItemDetail",
+          "description": "",
+          "DenormalizeInfo": {
+            "Entities": [
+              {
+                "ToEntity": "/Transaction.cdm.json/Transaction",
+                "JoinPairs": [
+                  {
+                    "ToAttribute": "TransactionId",
+                    "FromAttribute": {
+                      "Entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                      "Name": "TransactionId"
+                    }
+                  }
+                ]
+              },
+              {
+                "ToEntity": "/UnitOfMeasure.cdm.json/UnitOfMeasure",
+                "JoinPairs": [
+                  {
+                    "ToAttribute": "UnitOfMeasureId",
+                    "FromAttribute": {
+                      "Entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                      "Name": "UnitOfMeasureId"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "TransactionId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "TransactionId"
+                }
+              },
+              {
+                "name": "TransactionLineItemId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "TransactionLineItemId"
+                }
+              },
+              {
+                "name": "ProductId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "ProductId"
+                }
+              },
+              {
+                "name": "Quantity",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "Quantity"
+                }
+              },
+              {
+                "name": "UnitOfMeasureName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/UnitOfMeasure.cdm.json/UnitOfMeasure",
+                  "name": "UnitOfMeasureName"
+                }
+              },
+              {
+                "name": "TotalTransactionLineItemAmount",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "TotalTransactionLineItemAmount"
+                }
+              },
+              {
+                "name": "TransactionEntryTimestamp",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Transaction.cdm.json/Transaction",
+                  "name": "TransactionEntryTimestamp"
+                }
+              },
+              {
+                "name": "CustomerId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Transaction.cdm.json/Transaction",
+                  "name": "CustomerId"
+                }
+              },
+              {
+                "name": "CustomerAccountId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Transaction.cdm.json/Transaction",
+                  "name": "CustomerAccountId"
+                }
+              }
+            ]
+          }
+        }
+
+      ],
+      "newEntities": []
+    },
+    "relationshipDefinitions": []
+  }
+}

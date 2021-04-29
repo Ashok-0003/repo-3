@@ -1,0 +1,383 @@
+{
+  "apiVersion": "2021-01-01-preview",
+  "properties": {
+    "entityDefinitions": {
+      "existingEntities": [],
+      "newEntities": [
+        {
+          "path": "CRMProductFamily.cdm.json",
+          "name": "CRMProductFamily",
+          "attributes": [
+            {
+              "description": "",
+              "name": "Id",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "createdonId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "productnumber",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "cpm_supplier",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "name",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "createdon",
+              "dataType": "datetime"
+            }
+          ],
+          "description": "",
+          "businessArea": "Product",
+          "industries": [],
+          "primaryKey": [
+            "createdonId"
+          ],
+          "id": "/CRMProductFamily.cdm.json/CRMProductFamily"
+        },
+        {
+          "path": "CRMServiceProvider.cdm.json",
+          "name": "CRMServiceProvider",
+          "attributes": [
+            {
+              "description": "",
+              "name": "id",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "createdonId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "name",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "createdon",
+              "dataType": "datetime"
+            }
+          ],
+          "description": "",
+          "businessArea": "Vendor",
+          "industries": [],
+          "primaryKey": [
+            "createdonId"
+          ],
+          "id": "/CRMServiceProvider.cdm.json/CRMServiceProvider"
+        },
+        {
+          "path": "BillingUnitOfMeasure.cdm.json",
+          "name": "BillingUnitOfMeasure",
+          "attributes": [
+            {
+              "description": "",
+              "name": "UnitOfMeasureId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "UnitOfMeasureName",
+              "dataType": "string",
+              "dataTypeLength": 128
+            }
+          ],
+          "description": "",
+          "businessArea": "Inventory",
+          "industries": [],
+          "primaryKey": [
+            "UnitOfMeasureId"
+          ],
+          "id": "/BillingUnitOfMeasure.cdm.json/BillingUnitOfMeasure"
+        },
+        {
+          "path": "BillingCustomerType.cdm.json",
+          "name": "BillingCustomerType",
+          "attributes": [
+            {
+              "description": "",
+              "name": "CustomerTypeId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "CustomerTypeName",
+              "dataType": "string",
+              "dataTypeLength": 128
+            }
+          ],
+          "description": "",
+          "businessArea": "Customer Account",
+          "industries": [],
+          "primaryKey": [
+            "CustomerTypeId"
+          ],
+          "id": "/BillingCustomerType.cdm.json/BillingCustomerType"
+        },
+        {
+          "path": "CRMProductFamilyProduct.cdm.json",
+          "name": "CRMProductFamilyProduct",
+          "attributes": [
+            {
+              "description": "",
+              "name": "ProductFamilyId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "ProductId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "createdon",
+              "dataType": "date"
+            }
+          ],
+          "description": "",
+          "businessArea": "Product",
+          "industries": [],
+          "primaryKey": [
+            "ProductFamilyId",
+            "ProductId"
+          ],
+          "id": "/CRMProductFamilyProduct.cdm.json/CRMProductFamilyProduct"
+        },
+        {
+          "path": "CRMServiceProviderProduct.cdm.json",
+          "name": "CRMServiceProviderProduct",
+          "attributes": [
+            {
+              "description": "",
+              "name": "ServiceProviderId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "ProductId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "createdon",
+              "dataType": "date"
+            }
+          ],
+          "description": "",
+          "businessArea": "Vendor",
+          "industries": [],
+          "primaryKey": [
+            "ServiceProviderId",
+            "ProductId"
+          ],
+          "id": "/CRMServiceProviderProduct.cdm.json/CRMServiceProviderProduct"
+        },
+        {
+          "path": "BillingDailyConsumption.cdm.json",
+          "name": "BillingDailyConsumption",
+          "attributes": [
+            {
+              "description": "",
+              "name": "Date",
+              "dataType": "datetime"
+            },
+            {
+              "description": "",
+              "name": "AccountId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "PlanId",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "PlanName",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "ProductFamilyId",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "SubscriptionId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "ChargeAmount",
+              "dataType": "decimal"
+            },
+            {
+              "description": "",
+              "name": "ConsumptionType",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "ConsumptionQty",
+              "dataType": "decimal"
+            }
+          ],
+          "description": "",
+          "businessArea": "Transaction",
+          "industries": [],
+          "primaryKey": [
+            "AccountId",
+            "SubscriptionId",
+            "ConsumptionType"
+          ],
+          "id": "/BillingDailyConsumption.cdm.json/BillingDailyConsumption"
+        },
+        {
+          "path": "BillingEntityExtract.cdm.json",
+          "name": "BillingEntityExtract",
+          "attributes": [
+            {
+              "description": "",
+              "name": "ProfileId",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "ProfileType",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "AccountId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "AccountStatus",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "ServiceProviderId",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "SubsciptionId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "PlanId",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "SubscriptionStatus",
+              "dataType": "string"
+            },
+            {
+              "description": "",
+              "name": "SubscriptionCreationDate",
+              "dataType": "date"
+            },
+            {
+              "description": "",
+              "name": "RenewalDate",
+              "dataType": "date"
+            },
+            {
+              "description": "",
+              "name": "TerminationDate",
+              "dataType": "date"
+            }
+          ],
+          "description": "",
+          "businessArea": "Transaction",
+          "industries": [],
+          "primaryKey": [
+            "SubsciptionId"
+          ],
+          "id": "/BillingEntityExtract.cdm.json/BillingEntityExtract"
+        },
+        {
+          "path": "CRMProduct.cdm.json",
+          "name": "CRMProduct",
+          "attributes": [
+            {
+              "description": "",
+              "name": "Id",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "createdonId",
+              "dataType": "int32"
+            },
+            {
+              "description": "",
+              "name": "productnumber",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "cpm_supplier",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "name",
+              "dataType": "string",
+              "dataTypeLength": 128
+            },
+            {
+              "description": "",
+              "name": "parentproductid",
+              "dataType": "guid"
+            },
+            {
+              "description": "",
+              "name": "createdon",
+              "dataType": "date"
+            }
+          ],
+          "description": "",
+          "businessArea": "Product",
+          "industries": [],
+          "primaryKey": [
+            "createdonId"
+          ],
+          "id": "/CRMProduct.cdm.json/CRMProduct"
+        }
+      ]
+    },
+    "baseModel": {
+      "name": "Retail",
+      "format": "CDM",
+      "version": "0.1.0"
+    },
+    "relationshipDefinitions": []
+  }
+}

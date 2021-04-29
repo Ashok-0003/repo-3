@@ -58,5 +58,50 @@ az datamodel basemodel version export -n myBaseModel
 [ServiceProviderMapping.xlsx](/.attachments/ServiceProviderMapping-0c7d1275-8e57-4abe-a09f-9049fe4cd091.xlsx)
 [mapping.json](/.attachments/mapping-88101908-854c-4d84-b0de-61bdcaf1765e.json)
 
+`#Generate the mapping.json from Excel`
+az datamodel mapping generate-mapping
+    --storage-account-name "MyStorageAccount"
+    --container-name "excelMapping"
+    --input-file "c:\idw\mapping.xslx"
+    --source-model MySourceModel
+    --source-model-type BaseModel
+    --source-model-version 0.1.0
+    --target-model MyTargetModel
+    --output-file-name "C:\idw\modelmapping.json"
+
+`#Delete if already exist`
+az datamodel mapping delete -n ServiceProviderMapping -g 'rg-cpd-data-dev-we-02'
+
+`#Create the mapping model from json`
+az datamodel mapping create
+    -n ServiceProviderMapping
+    --mapping-directives mapping.json
+    --synapse-workspace 'snp-cpd-data-dev-we-02'
+    -g 'rg-cpd-data-dev-we-02'
+
+`#Generate Source to Standard Pipelines`
+az datamodel generate-pipeline
+    --source-model ServiceProviderSM
+    --target-model ServiceProviderSTD
+    --model-mapping ServiceProviderMapping
+    --source-data-linked-service AzureDataLakeStorage
+    --source-data-container source --source-data-folder data
+    --source-corpus-folder logical --type AdlsToAdls
+    --target-data-linked-service AzureDataLakeStorage
+    --target-data-container standard
+    --target-data-folder data
+    --target-corpus-folder logical
+    -g 'rg-cpd-data-dev-we-02'
+    --generate-partial-pipeline
+    --overwrite-synapse-resource
+
 
 ## Analytical and Reports
+[ServiceProviderAM.json](/.attachments/ServiceProviderAM-33281371-5ba6-422b-bb2f-e608f3be79e0.json)
+
+`#Create the Analytical model`
+az datamodel create
+    -n ServiceProviderSM2
+    --model-directives ServiceProviderAM.json
+    -g 'rg-cpd-data-dev-we-02'
+    --synapse-workspace 'snp-cpd-data-dev-we-02'

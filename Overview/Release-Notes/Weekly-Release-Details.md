@@ -7,7 +7,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status |
 |-----|-----------------------|-----------------------|--------|
 | UAT |29th April 2021| 16.00 PM IST ( 2.00 PM Doha Time) |Completed|
-|Pre-Prod|29th April 2021| 19.00 PM IST (16.30 PM Doha Time )|In-Progress|
+|Pre-Prod|29th April 2021| 19.00 PM IST (16.30 PM Doha Time )|Completed|
 |Release Notes for deployment| CDN,Web Apps, Bot, APIs & CRM.|[ReleaseNotes_ MSFT_v0.01_29Apr2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_29Apr2021-40f0bb1b-93af-4f6c-894e-ee45de2a5362.docx) ||
 |6D Billing| 1st May 2021 (11.00 AM IST - 8.30 AM Doha Time)|[Release Note_6d Billing_V 1.1_01-05-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%201.1_01-05-2021-bb7d0ddf-eb8b-4b38-a7cf-8b65787074ce.docx)|Yet to Begin|
 ====================================================================================

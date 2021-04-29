@@ -1,0 +1,525 @@
+{
+  "apiVersion": "2021-01-01-preview",
+  "properties": {
+    "entityDefinitions": {
+      "existingEntities": [
+        {
+          "primaryKey": [
+            "UnitOfMeasureId"
+          ],
+          "baseEntityReference": {
+            "path": "/UnitOfMeasure.cdm.json/UnitOfMeasure",
+            "name": "UnitOfMeasure"
+          },
+          "name": "UnitOfMeasure",
+          "description": "A standard of measurement.\n\nEx:\ncentimeter, (cm), LENGTH\nfoot, (ft_i), LENGTH\ninch, (in_i), LENGTH\nmile, (mi_us), LENGTH\nmeter, (m), LENGTH\ngram, (g), MASS\nlong ton, British ton, (lton_av), MASS\nounce, (oz_tr), MASS\npound, (lb_tr), MASS\nshort ton, U.S. ton, (ston_av), MASS\ntonne, (t), MASS\ncubic foot, (CFT), VOLUME\nfluid ounce, (foz_br), VOLUME\nfreight ton, measurement ton, (FT), VOLUME\nliter, (L), VOLUME\none billion Cubic Feet, (BCF), VOLUME\none hundred Cubic Feet, (CCF), VOLUME\none million Cubic Feet, (MMCF), VOLUME\none thousand Cubic Feet, (MCF), VOLUME\none trillion Cubic Feet, (TCF), VOLUME\nBritish thermal unit at 59�F, (Btu59�F), ENERGY\nBritish thermal unit, (btu), ENERGY\ncalorie at 15�C, (cal15�C), ENERGY\nJoule, (J), ENERGY\nday, (d), TIME\nhour, (h), TIME\nminute, (min), TIME\nsecond, (s), TIME\nbarrel, (bbl_us), FLUID VOLUME\nfluid ounce, (foz_us), FLUID VOLUME\ncubic meter per hour, (m3/hour), FLOW RATE \ncubic meter per second, (m3/s), FLOW RATE \nliter per hour, (l/hour), FLOW RATE \nmillions of cubic feet per day, (MMCFD), FLOW RATE \nGigawatt Hour, (gWh), ENERGY\nKilowatt Hour, (kWh), ENERGY\nMegawatt Hour, (mWh), ENERGY\nWatt Hour, (Wh), ENERGY\nkilovolt ampere, (kVa), POWER\nkilowatt, (kW), POWER\nMegawatt, (MW), POWER\nGigawatt, (gW), POWER\ndegree Celsius, (�C), TEMPERATURE\ndegree Fahrenheit, (�F), TEMPERATURE\npound per sqare inch, (psi), PRESSURE\nbit, (bit), AMOUNT OF INFORMATION\nbyte, (B), AMOUNT OF INFORMATION\n�ngstr�m, (�), LENGTH\nastronomic unit, (AU), LENGTH\ncicero, Didot's pica, (cicero), LENGTH\ndidot, Didot's point, (didot), LENGTH\nfathom, (fth_br), LENGTH\nfathom, (fth_us), LENGTH\nfoot, (ft_br), LENGTH\nfoot, (ft_us), LENGTH\nfurlong, (fur_us), LENGTH\nGunter's chain, (ch_br), LENGTH\nGunter's chain, Surveyor's chain, (ch_us), LENGTH\ninch, (in_br), LENGTH\ninch, (in_us), LENGTH\nlight-year, (l.y.), LENGTH\nligne, French line, (ligne), LENGTH\nline, (lne), LENGTH\nlink for Gunter's chain, (lk_br), LENGTH\nlink for Gunter's chain, (lk_us), LENGTH\nlink for Ramden's chain, (rlk_us), LENGTH\nmil, (mil_i), LENGTH\nmil, (mil_us), LENGTH\nmile, (mi_br), LENGTH\nmillimeter, (mm), LENGTH\nnautical mile, (nmi_br), LENGTH\nnautical mile, (nmi_i), LENGTH\npace, (pc_br), LENGTH\nparsec, (pc), LENGTH\npica, (pca), LENGTH\npied, French foot, (pied), LENGTH\npoint, (pnt), LENGTH\npouce, French inch, (pouce), LENGTH\nPrinter's pica, (pca_pr), LENGTH\nPrinter's point, (pnt_pr), LENGTH\nRamden's chain, Engineer's chain, (rch_us), LENGTH\nrod, (rd_br), LENGTH\nrod, (rd_us), LENGTH\nSmoot, (smoot), LENGTH\nstatute mile, (mi_i), LENGTH\nyard, (yd_br), LENGTH\nyard, (yd_i), LENGTH\nyard, (yd_us), LENGTH\ndram, (dr_av), MASS\ndram, drachm, (dr_ap), MASS\nelectron mass, (me), MASS\ngrain, (gr), MASS\nkilogram of wet tissue, (kg(wet tissue)), MASS\nlong hunderdweight, British hundredweight, (lcwt_av), MASS\nmetric carat, (ctm), MASS\nmetric ounce, (oz_m), MASS\nmilligram of creatinine, (mg(creat.)), MASS\nounce, (oz_ap), MASS\nounce, (oz_av), MASS\npennyweight, (pwt_tr), MASS\npound, (lb_ap), MASS\npound, (lb_av), MASS\nproton mass, (mp), MASS\nscruple, (sc_ap), MASS\nshort hundredweight, U.S. hundredweight, (scwt_av), MASS\nstone, British stone, (stone_av), MASS\nunified atomic mass unit, (u), MASS\nboard foot, (bf_i), VOLUME\nbushel, (bu_br), VOLUME\ncord, (cr_i), VOLUME\ncubic inch, (cin_i), VOLUME\ncubic meter, (m3), VOLUME\nbillion cubic meter, (bcm), VOLUME\ncubic yard, (cyd_i), VOLUME\ncup, (cup_us), VOLUME\ndrop, (drp), VOLUME\nfluid dram, (fdr_br), VOLUME\ngallon, (gal_br), VOLUME\ngill, (gil_br), VOLUME\nliter, (l), VOLUME\nmetric cup, (cup_m), VOLUME\nmetric tablespoon, (tbs_m), VOLUME\nmetric teaspoon, (tsp_m), VOLUME\nmilliliter, (mL), VOLUME\nminim, (min_br), VOLUME\npeck, (pk_br), VOLUME\npint, (pt_br), VOLUME\nquart, (qt_br), VOLUME\nstere, (st), VOLUME\ntablespoon, (tbs_us), VOLUME\nteaspoon, (tsp_us), VOLUME\nBritish thermal unit at 39�F, (Btu39�F), ENERGY\nBritish thermal unit at 60�F, (Btu60�F), ENERGY\ncalorie at 20�C, (cal20�C), ENERGY\ncalorie, (cal), ENERGY\nelectronvolt, (eV), ENERGY\nerg, (erg), ENERGY\ninternational table British thermal unit, (BtuIT), ENERGY\ninternational table calorie, (calIT), ENERGY\nmean British thermal unit, (Btum), ENERGY\nmean calorie, (calm), ENERGY\nMegajoule, (MJ), ENERGY\nnutrition label Calories, (Cal), ENERGY\nthermochemical British thermal unit, (Btuth), ENERGY\nthermochemical calorie, (calth), ENERGY\nbarrel of oil, (boe), ENERGY EQUIVALENT\none thousand barrels of oil equivalent, (Mboe), ENERGY EQUIVALENT\none million barrels of oil equivalent, (Mmboe), ENERGY EQUIVALENT\none million cubic feet of natural gas equivalentl, (Mmcfe), ENERGY EQUIVALENT\none billion cubic feet of natural gas equivalentl, (Bcfe), ENERGY EQUIVALENT\none trillion cubic feet of natural gas equivalentl, (Tcfe), ENERGY EQUIVALENT\nmean Gregorian month, (mog), TIME\nmean Gregorian year, (ag), TIME\nmean Julian month, (moj), TIME\nmean Julian year, (aj), TIME\nmonth, (mo), TIME\nsynodal month, (mos), TIME\ntropical year, (at), TIME\nweek, (wk), TIME\nyear, (a), TIME\nacre, (acr_br), AREA\nacre, (acr_us), AREA\nare, (a), AREA\ncircular mil, (cml_i), AREA\nsection, (sct), AREA\nsquare foot, (sft_i), AREA\nsquare inch, (sin_i), AREA\nsquare mile, (smi_us), AREA\nsquare rod, (srd_us), AREA\nsquare yard, (syd_i), AREA\ntownship, (twp), AREA\ncord, (crd_us), FLUID VOLUME\nfluid dram, (fdr_us), FLUID VOLUME\ngill, (gil_us), FLUID VOLUME\nmetric fluid ounce, (foz_m), FLUID VOLUME\nminim, (min_us), FLUID VOLUME\npint, (pt_us), FLUID VOLUME\nquart, (qt_us), FLUID VOLUME\nQueenAnne's wine gallon, (gal_us), FLUID VOLUME\nbar, (bar), PRESSURE\ninch of mercury column, (inHg), PRESSURE\ninch of water column, (inH2O), PRESSURE\nmeter of mercury column, (mHg), PRESSURE\nmeter of water column, (mH2O), PRESSURE\nPascal, (Pa), PRESSURE\nstandard atmosphere, (atm), PRESSURE\ntechnical atmosphere, (at), PRESSURE\ncircle, (circ), PLANE ANGLE\ndegree, (�), PLANE ANGLE\ngon, grade, (gon), PLANE ANGLE\nminute, ('), PLANE ANGLE\nradian, (rad), PLANE ANGLE\nsecond, (''), PLANE ANGLE\nbushel, (bu_us), DRY VOLUME\ndry pint, (dpt_us), DRY VOLUME\ndry quart, (dqt_us), DRY VOLUME\nhistorical winchester gallon, (gal_wi), DRY VOLUME\npeck, (pk_us), DRY VOLUME\narbitary unit, (arb. U), ARBITRARY\ninternational unit, (i.U.), ARBITRARY\ninternational unit, (IU), ARBITRARY\nUnited States Pharmacopeia unit, (U.S.P.), ARBITRARY\nBoltzmann constant, (k), (UNCLASSIFIED)\nNewtonian constant of gravitation, (G), (UNCLASSIFIED)\nGal, (Gal), ACCELERATION\nstandard acceleration of free fall, (gn), ACCELERATION\npH, (pH), ACIDITY\nbarn, (b), ACTION AREA\nPlanck constant, (h), ACTION\ncolony forming units, (CFU), AMOUNT OF A PROLIFERATING ORGANISM\nbioequivalent allergen unit, (BAU), AMOUNT OF AN ALLERGEN CALLIBRATED THROUGH IN-VIVO TESTING BASED ON THE ID50EAL METHOD OF (INTRADERMAL DILUTION FOR 50MM SUM OF ERYTHEMA DIAMETERS\nfocus forming units, (FFU), AMOUNT OF AN INFECTIOUS AGENT\nplaque forming units, (PFU), AMOUNT OF AN INFECTIOUS AGENT\nfibrinogen equivalent unit, (FEU), AMOUNT OF FIBRINOGEN BROKEN DOWN INTO THE MEASURED D-DIMERS\nbit, (bits), AMOUNT OF INFORMATION\nosmole, (osm), AMOUNT OF SUBSTANCE (DISSOLVED PARTICLES)\nequivalents, (eq), AMOUNT OF SUBSTANCE\nmole, (mol), AMOUNT OF SUBSTANCE\nKunkel unit, (knk'U), ARBITRARY BIOLOGIC ACTIVITY\nMac Lagan unit, (mclg'U), ARBITRARY BIOLOGIC ACTIVITY\nELISA unit, (ELU), ARBITRARY ELISA UNIT\n50% cell culture infectious dose, (CCID50), BIOLOGIC ACTIVITY (INFECTIVITY) OF AN INFECTIOUS AGENT PREPARATION\n50% embryo infectious dose, (EID50), BIOLOGIC ACTIVITY (INFECTIVITY) OF AN INFECTIOUS AGENT PREPARATION\n50% tissue culture infectious dose, (TCID50), BIOLOGIC ACTIVITY (INFECTIVITY) OF AN INFECTIOUS AGENT PREPARATION\nTodd unit, (todd'U), BIOLOGIC ACTIVITY ANTISTREPTOLYSIN O\nDye unit, (dye'U), BIOLOGIC ACTIVITY OF AMYLASE\nSomogyi unit, (smgy'U), BIOLOGIC ACTIVITY OF AMYLASE\nAPL unit, (APL'U), BIOLOGIC ACTIVITY OF ANTICARDIOLIPIN IGA\nGPL unit, (GPL'U), BIOLOGIC ACTIVITY OF ANTICARDIOLIPIN IGG\nMPL unit, (MPL'U), BIOLOGIC ACTIVITY OF ANTICARDIOLIPIN IGM\nBethesda unit, (beth'U), BIOLOGIC ACTIVITY OF FACTOR VIII INHIBITOR\nanti factor Xa unit, (anti'Xa'U), BIOLOGIC ACTIVITY OF FACTOR XA INHIBITOR (HEPARIN)\nBodansky unit, (bdsk'U), BIOLOGIC ACTIVITY OF PHOSPHATASE\nKing-Armstrong unit, (ka'U), BIOLOGIC ACTIVITY OF PHOSPHATASE\ntuberculin unit, (tb'U), BIOLOGIC ACTIVITY OF TUBERCULIN\nLambert, (L), BRIGHTNESS\nkatal, (kat), CATALYTIC ACTIVITY\nUnit, (U), CATALYTIC ACTIVITY\nfathom, (fth_i), DEPTH OF WATER\nradiation equivalent man, (REM), DOSE EQUIVALENT\nSievert, (Sv), DOSE EQUIVALENT\nPoise, (P), DYNAMIC VISCOSITY\nEhrlich unit, (EU), EHRLICH UNIT\nFarad, (F), ELECTRIC CAPACITANCE\nCoulomb, (C), ELECTRIC CHARGE\nelementary charge, (e), ELECTRIC CHARGE\nmho, (mho), ELECTRIC CONDUCTANCE\nSiemens, (S), ELECTRIC CONDUCTANCE\nAmp�re, (A), ELECTRIC CURRENT\nBiot, (Bi), ELECTRIC CURRENT\npermittivity of vacuum, (e0), ELECTRIC PERMITTIVITY\nbel 10 nanovolt, (B(10 nV)), ELECTRIC POTENTIAL LEVEL\nbel microvolt, (B(�V)), ELECTRIC POTENTIAL LEVEL\nbel millivolt, (B(mV)), ELECTRIC POTENTIAL LEVEL\nbel volt, (B(V)), ELECTRIC POTENTIAL LEVEL\nKilovolt, (kV), ELECTRIC POTENTIAL\nVolt, (V), ELECTRIC POTENTIAL\nOhm, (O), ELECTRIC RESISTANCE\nGray, (Gy), ENERGY DOSE\nradiation absorbed dose, (RAD), ENERGY DOSE\nperipheral vascular resistance unit, (P.R.U.), FLUID RESISTANCE\nWood unit, (Wood U.), FLUID RESISTANCE\nMaxwell, (Mx), FLUX OF MAGNETIC INDUCTION\ndyne, (dyn), FORCE\ngram-force, (gf), FORCE\nNewton, (N), FORCE\npound force, (lbf), FORCE\nHertz, (Hz), FREQUENCY\nCharri�re, french, (Ch), GAUGE OF CATHETERS\nhand, (hd_i), HEIGHT OF HORSES\nhomeopathic potency of centesimal hahnemannian series, (hp_C), HOMEOPATHIC POTENCY (HAHNEMANN)\nhomeopathic potency of decimal hahnemannian series, (hp_X), HOMEOPATHIC POTENCY (HAHNEMANN)\nhomeopathic potency of millesimal hahnemannian series, (hp_M), HOMEOPATHIC POTENCY (HAHNEMANN)\nhomeopathic potency of quintamillesimal hahnemannian series, (hp_Q), HOMEOPATHIC POTENCY (HAHNEMANN)\nhomeopathic potency of centesimal korsakovian series, (kp_C), HOMEOPATHIC POTENCY (KORSAKOV)\nhomeopathic potency of decimal korsakovian series, (kp_X), HOMEOPATHIC POTENCY (KORSAKOV)\nhomeopathic potency of millesimal korsakovian series, (kp_M), HOMEOPATHIC POTENCY (KORSAKOV)\nhomeopathic potency of quintamillesimal korsakovian series, (kp_Q), HOMEOPATHIC POTENCY (KORSAKOV)\nhomeopathic potency of centesimal series (retired), (hp'_C), HOMEOPATHIC POTENCY (RETIRED)\nhomeopathic potency of decimal series (retired), (hp'_X), HOMEOPATHIC POTENCY (RETIRED)\nhomeopathic potency of millesimal series (retired), (hp'_M), HOMEOPATHIC POTENCY (RETIRED)\nhomeopathic potency of quintamillesimal series (retired), (hp'_Q), HOMEOPATHIC POTENCY (RETIRED)\nlux, (lx), ILLUMINANCE\nphot, (ph), ILLUMINANCE\nHenry, (H), INDUCTANCE\nRoentgen, (R), ION DOSE\nStokes, (St), KINEMATIC VISCOSITY\nbel, (B), LEVEL\nneper, (Np), LEVEL\nDenier, (den), LINEAR MASS DENSITY (OF TEXTILE THREAD)\ntex, (tex), LINEAR MASS DENSITY (OF TEXTILE THREAD)\nKayser, (K), LINEIC NUMBER\nmesh, (mesh_i), LINEIC NUMBER\nstilb, (sb), LUM. INTENSITY DENSITY\nlumen, (lm), LUMINOUS FLUX\ncandela, (cd), LUMINOUS INTENSITY\nWeber, (Wb), MAGENTIC FLUX\nOersted, (Oe), MAGNETIC FIELD INTENSITY\nGauss, (Gs, G), MAGNETIC FLUX DENSITY\nTesla, (T), MAGNETIC FLUX DENSITY\npermeability of vacuum, (�0), MAGNETIC PERMEABILITY\nGilbert, (Gb), MAGNETIC TENSION\ngram percent, (g%), MASS CONCENTRATION\ncarat of gold alloys, (ctAu), MASS FRACTION\nmetabolic equivalent, (MET), METABOLIC COST OF PHYSICAL ACTIVITY\nparticles total count, (tot.), NUMBER\nred blood cell count, (R.B.C.), NUMBER\ntablets, (tbl.), NUMBER\nvolt ampere, (Va), POWER\nbel kilowatt, (B(kW)), POWER LEVEL\nbel watt, (B(W)), POWER LEVEL\nhorsepower, (HP), POWER\nWatt, (W), POWER\nbel sound pressure, (B(SPL)), PRESSURE LEVEL\nD-antigen unit, (D'ag'U), PROCEDURE DEFINED AMOUNT OF A POLIOMYELITIS D-ANTIGEN SUBSTANCE\nprotein nitrogen unit, (PNU), PROCEDURE DEFINED AMOUNT OF A PROTEIN SUBSTANCE\nallergen unit, (AU), PROCEDURE DEFINED AMOUNT OF AN ALLERGEN USING SOME REFERENCE STANDARD\nLimit of flocculation, (Lf), PROCEDURE DEFINED AMOUNT OF AN ANTIGEN SUBSTANCE\nallergen unit for Ambrosia artemisiifolia, (Amb a 1 U), PROCEDURE DEFINED AMOUNT OF THE MAJOR ALLERGEN OF RAGWEED.\ngram meter per heartbeat, (g- m/H.B.), PROPORTIONAL TO VENTRICULAR STROKE WORK\nBecquerel, (Bq), RADIOACTIVITY\nCurie, (Ci), RADIOACTIVITY\ndiopter, (dpt), REFRACTION OF A LENS\nprism diopter, (PD), REFRACTION OF A PRISM\nSvedberg unit, (S), SEDIMENTATION COEFFICIENT\nbaud, (Bd), SIGNAL TRANSMISSION RATE\npercent of slope, (%), SLOPE\nspere, (sph), SOLID ANGLE\nsteradian, (sr), SOLID ANGLE\ndegree Rankine, (�R), TEMPERATURE\nKelvin, (K), TEMPERATURE\nknot, (kn_br), VELOCITY\nknot, (kn_i), VELOCITY\nvelocity of light, (c), VELOCITY\ngram-force meter per heartbeat, (gf- m/H.B.), VENTRICULAR STROKE WORK\nhigh power field, (HPF), VIEW AREA IN MICROSCOPE\nlow power field, (LPF), VIEW AREA IN MICROSCOPE\nHounsfield unit, (hnsf'U), X-RAY ATTENUATION\nItem, (ITM), Item",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "UnitOfMeasureId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/UnitOfMeasure.cdm.json/UnitOfMeasure",
+                  "name": "UnitOfMeasureId"
+                }
+              },
+              {
+                "name": "UnitOfMeasureName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/UnitOfMeasure.cdm.json/UnitOfMeasure",
+                  "name": "UnitOfMeasureName"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "ProductId",
+            "VendorId",
+            "PeriodStartDate"
+          ],
+          "baseEntityReference": {
+            "path": "/ProductVendor.cdm.json/ProductVendor",
+            "name": "ProductVendor"
+          },
+          "name": "ProductVendor",
+          "description": "Who are the vendors for the associated product during a period.",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "ProductId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductVendor.cdm.json/ProductVendor",
+                  "name": "ProductId"
+                }
+              },
+              {
+                "name": "VendorId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductVendor.cdm.json/ProductVendor",
+                  "name": "VendorId"
+                }
+              },
+              {
+                "name": "PeriodStartDate",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductVendor.cdm.json/ProductVendor",
+                  "name": "PeriodStartDate"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "ProductId"
+          ],
+          "baseEntityReference": {
+            "path": "/Product.cdm.json/Product",
+            "name": "Product"
+          },
+          "name": "Product",
+          "description": "A product is anything that can be offered to a market that might satisfy a want or need by potential customers.    That product is the sum of all physical, psychological, symbolic, and service attributes associated with it.\n\nThere are two basic types of products:\n\n- Tangible (physical)\n- Intangible (non-physical) such as services\n\nA service is a non-material or intangible product - such as professional consultancy, maintenance service, repair service etc.\nEach product has its own benefits, application, brand name, and packaging that gives it its own identity and distinguishing characteristics.\n\nEvery business or organization has business rules that define precisely what a product is.    While we intuitively know what a product is, we must quantify that knowledge and associated business rules with consistent definitions that can be implemented within the organization in strategies and applications.\n\nA product typically goes through five stages of development:\n\n(1) Idea Stage - involving a thorough evaluation of the potential product\n\n(2) Concept Stage - determines customer acceptance by testing and presentation to consumers and distribution channel members.   Specific aspects regarding quality, dependability, reliability, warranty, packaging, service, pricing, terms of sale, sales and distribution channels, advertising and promotions are evaluated.\n\n(3) Product Development Stage - transforms the prototype product into an actual product for mass sale.   This stage requires close interaction between both marketing and manufacturing.\n\n(4) Test Marketing Stage - may or may not be used since it is an expensive and time-consuming process.  Test marketing involves evaluating various product options and alternatives.\n\n(5) Commercialization - It is very expensive to launch a new product so commercialization only applies to those specific products that are actually going to be sold to the market.\n\nProducts tend to be categorized as either:  Industrial goods and consumer goods\n\nIndustrial goods are used to produce other products .\n\nIndustrial goods may be further divided into:\n\n- Raw materials\n- Equipment\n- Pre-built materials \n- Supplies.\n\nConsumer goods are intended for consumption by the general public.\n\nConsumer goods may be further divided into:\n\n- Durable goods\n- Nondurable goods\n- Packaged goods\n\nA product may be a member of a product family or product line.\n\nA product family is a grouping of products or services that are related to each other by common function, functionality, design platform or similar characteristics.\n\nMembers of a product family frequently have many common parts and assemblies.\n\nProduct families are the highest level of grouping for forecasting, capacity planning or related functions.\n\nEx:\nThe Apple Macintosh family of products consists of the product lines:\n- Mac mini\n- MacBook Pro\n- Mac Pro\n\nA product line is a grouping of products that are closely related in usage, functionality or marketing characteristics.\n\nA Product Family typically is created to address one or five functions:\n\n1. To increase profits and not erode the sales of existing products\n\n2. To attract additional Markets or Market Segments\n\n3. To counter competitor's products\n\n4. To fill a gap in an existing Product Family.\n\n5. To promote sales of other products in the family line\n\nLine Depth refers to the number of products in the product line.\n\nLine consistency refers to how closely related the products are that make up the product line.\n\nLine vulnerability refers to the percentage of sales or profits that are derived from only a few products in the product line.\n\nProduct width refers to the number of different product lines sold by a company.\n\nProduct mix refers to the total number of products sold in all product lines.\n\nLine extension refers to the adding of a new product to a line.\n\n\"Trading up or brand leveraging\" refers to adding a product of better quality to a product line than the other products in that line.\n\n\"Trading down\" refers to adding a product of lesser quality to a product line than the other products in that line.\n\nIf a line of products is sold with the same brand name, this is referred to as family branding.\nStrategy and decisions regarding a product line are usually incorporated in a high-level marketing plan addressing product line strategy, sales, channels, distribution channels, pricing and related issues.\nA product-line manager is responsible for a product line and supervises several product managers who are responsible for individual products within the line.\nProduct-line managers typically have the following responsibilities:\n- Expansion and composition of a product line\n- Evaluate the effects of product mixes on the profitability of other items in the line\n- Planning and allocation of resources to individual products in the line\nA product is normally associated with a brand strategy - manufacturer, private or generic.\n\n1. Manufacturer-  or 'national' branding in which the brand is assigned by the manufacturer of the Product.\n\n2. Private - or 'dealer' branding in which the brand is assigned by the retailer or wholesaler of the Product.\n\n3. Generic - in which the Product is not marked with any identification.   Generic brands are a means for manufacturers to increase profits by saving on advertising, packaging or other costs associated with manufacturer or private branding.\n\nA brand is name, term, sign, symbol or design or a combination of these which identify the goods or services and differentiate them from those of competitors'\n\nA Trade mark is a brand or some part of the brand that is given legal protection because it is capable of exclusive appropriation and representation.\n\nManufacturers can use their own brands (known as Manufacturers' brands) or brands of their distributors (Distributors' brands).\n\nManufacturers/ distributors use brand names for a variety of reasons ranging from simple identification purposes to having legal protection for unique features of the products from imitations.\n\nBrands help consumers recognize certain quality parameters. In some cases, brands are just used to endow the product with unique story and character which itself can be a basis for product differentiation.\n\nIndividual brands have their own identity and the corporate or common name is not used to promote its equity.\n\nIndividual branding requires more expensive advertising and brand extensive brand creation investments.  By extension, each new brand does not benefit from the positive perceptions of earlier brands.\n\nBy contrast, family branding has several advantages.\n\nEach new product is quickly associated with the other products and brand in terms of quality and benefits.\n\nReduced or eliminated time for name identification and advertising for name recognition purposes.",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "ProductId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Product.cdm.json/Product",
+                  "name": "ProductId"
+                }
+              },
+              {
+                "name": "ProductName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Product.cdm.json/Product",
+                  "name": "ProductName"
+                }
+              },
+              {
+                "name": "ProductInternalName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Product.cdm.json/Product",
+                  "name": "ProductInternalName"
+                }
+              },
+              {
+                "name": "IntroductionDate",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Product.cdm.json/Product",
+                  "name": "IntroductionDate"
+                }
+              },
+              {
+                "name": "ItemSku",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Product.cdm.json/Product",
+                  "name": "ItemSku"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "ProductGroupId",
+            "ProductId",
+            "PeriodStartDate"
+          ],
+          "baseEntityReference": {
+            "path": "/ProductGroupProduct.cdm.json/ProductGroupProduct",
+            "name": "ProductGroupProduct"
+          },
+          "name": "ProductGroupProduct",
+          "description": "The Product(s) that comprise or are members of the associated Product Group.",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "ProductGroupId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductGroupProduct.cdm.json/ProductGroupProduct",
+                  "name": "ProductGroupId"
+                }
+              },
+              {
+                "name": "ProductId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductGroupProduct.cdm.json/ProductGroupProduct",
+                  "name": "ProductId"
+                }
+              },
+              {
+                "name": "PeriodStartDate",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductGroupProduct.cdm.json/ProductGroupProduct",
+                  "name": "PeriodStartDate"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "VendorId"
+          ],
+          "baseEntityReference": {
+            "path": "/Vendor.cdm.json/Vendor",
+            "name": "Vendor"
+          },
+          "name": "Vendor",
+          "description": "A supplier of products, goods or services.",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "VendorId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Vendor.cdm.json/Vendor",
+                  "name": "VendorId"
+                }
+              },
+              {
+                "name": "VendorName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Vendor.cdm.json/Vendor",
+                  "name": "VendorName"
+                }
+              },
+              {
+                "name": "VendorNote",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Vendor.cdm.json/Vendor",
+                  "name": "VendorNote"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "ProductGroupId"
+          ],
+          "baseEntityReference": {
+            "path": "/ProductGroup.cdm.json/ProductGroup",
+            "name": "ProductGroup"
+          },
+          "name": "ProductGroup",
+          "description": "An arbitrary grouping of Products.\n\nEx:\n- Products\n- Software Products\n- Retail Products\n- Appliances\n- Services\n- Electric services\n- Gas services",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "ProductGroupId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductGroup.cdm.json/ProductGroup",
+                  "name": "ProductGroupId"
+                }
+              },
+              {
+                "name": "ProductGroupName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/ProductGroup.cdm.json/ProductGroup",
+                  "name": "ProductGroupName"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "CustomerTypeId"
+          ],
+          "baseEntityReference": {
+            "path": "/CustomerType.cdm.json/CustomerType",
+            "name": "CustomerType"
+          },
+          "name": "CustomerType",
+          "description": "A categorization of customers based upon common characteristics or similar criteria.\n\nEx:\n- Individual\n- Legal Entity",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "CustomerTypeId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerType.cdm.json/CustomerType",
+                  "name": "CustomerTypeId"
+                }
+              },
+              {
+                "name": "CustomerTypeName",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerType.cdm.json/CustomerType",
+                  "name": "CustomerTypeName"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "TransactionId"
+          ],
+          "baseEntityReference": {
+            "path": "/Transaction.cdm.json/Transaction",
+            "name": "Transaction"
+          },
+          "name": "Transaction",
+          "description": "The lowest level of executable work or customer activity.\n\nA transaction consists of one or more discrete events.",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "TransactionId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Transaction.cdm.json/Transaction",
+                  "name": "TransactionId"
+                }
+              },
+              {
+                "name": "TransactionEntryTimestamp",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Transaction.cdm.json/Transaction",
+                  "name": "TransactionEntryTimestamp"
+                }
+              },
+              {
+                "name": "CustomerId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Transaction.cdm.json/Transaction",
+                  "name": "CustomerId"
+                }
+              },
+              {
+                "name": "CustomerAccountId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Transaction.cdm.json/Transaction",
+                  "name": "CustomerAccountId"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "CustomerId"
+          ],
+          "baseEntityReference": {
+            "path": "/Customer.cdm.json/Customer",
+            "name": "Customer"
+          },
+          "name": "Customer",
+          "description": "A customer is an individual or legal entity that has or has purchased a product or service.\n\nA potential customer is an individual or legal entity that has the desire to acquire a product or service, the financial ability to pay for that product or service and is located in a location in which the product or service can be delivered to them.\n\nThe definition of 'customer' is of critical importance for every organization.    \n\nIt is the customer that is the focus of product planning, marketing, sales, service, reporting and analytics.    Without 'customer' there would be no need for the organization to exist since its purpose is to serve the customer and profit from that interaction.\n\nThe definition of 'customer' must be consistent with how customers exist and interact with the organization in the real world.  An artificial or conceptual definition of 'customer' that is not consistent with these two objectives is doomed to fail because the data will not be consistent with the definition and employees will not accept concepts or terms that are not consistent with what they see, know and how they interact with customers on a working basis.\n\nADRM defines 'customer' to meet these objectives.    When we look out into the real world we see two dominant types of customers:  human beings and legal entities.     \n\nHuman beings are obviously male and female individuals of various ages, sex, demographics and a variety of similar dimensions that describe and define them who purchase products, good and services.    \n\nLegal entities are those legally-defined entities such as corporations, partnerships, non-profit organizations, government organizations etc. that purchase products, goods and services.\n\nThis view of 'customer' is consistent with the real world and consistent with how employees view and interact with customers.\n\nOf course, that is just the start of identifying, defining and understanding each type of 'customer'.     There is a great deal of detail, complexity and related data that can be used to define each type of customer to various levels of detail and different dimensions of information.\n\nADRM implements these detailed concepts and related data via two distinct business area models that expand the coverage and complexity of each type of customer:\n\n-  INDIVIDUAL CUSTOMER Business Area Model\n-  LEGAL ENTITY CUSTOMER Business Area Model\n\nNote:\nEach of the ADRM models - enterprise, business area or data warehouse - have a representative level of detail for the appropriate type of customer, which is a 'subset' of the total data available in the associated INDIVIDUAL CUSTOMER or LEGAL ENTITY CUSTOMER business area models..   Reference either of those models to expand the coverage or level of detail in each respective data model.\n\nThe actual customer implemented in each model depends upon the dominant use of customer for that industry.     \n\nFor example, in the pharmaceutical industry the customer is a legal entity, which represents another corporation, company, government organization etc. that purchases the pharmaceutical product and then distributes that product to the end-customer, which is an individual in a retail environment or a government-distribution scheme.    \n\nFor this example, the pharmaceutical models will have the legal entity customer represented but not the individual 'end customer' since that is represented in the appropriate retail industry models, which are a different offering.     \n\nOf course, the entire set of data available for a legal entity customer is contained in the associated LEGAL ENTITY CUSTOMER Business Area Model.   Reference the LEGAL ENTITY CUSTOMER Business Area Model to incorporate additional data that may be of relevance.\n\nIn many industries both types of customers are represented since a legal entity or individual can purchase products, goods or services and enter into contracts.    For these industries, both types of customers are represented by some of the more significant or relevant data derived from the associated LEGAL ENTITY or INDIVIDUAL CUSTOMER business area models.   These models can be used to expand the scope or level of detail in any of the enterprise, business area or data warehouse models.",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "CustomerId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Customer.cdm.json/Customer",
+                  "name": "CustomerId"
+                }
+              },
+              {
+                "name": "CustomerTypeId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/Customer.cdm.json/Customer",
+                  "name": "CustomerTypeId"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "TransactionId",
+            "TransactionLineItemId"
+          ],
+          "baseEntityReference": {
+            "path": "/TransactionLineItem.cdm.json/TransactionLineItem",
+            "name": "TransactionLineItem"
+          },
+          "name": "TransactionLineItem",
+          "description": "The components of an Transaction broken down by Product and Quantity, one per line item.",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "TransactionId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "TransactionId"
+                }
+              },
+              {
+                "name": "TransactionLineItemId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "TransactionLineItemId"
+                }
+              },
+              {
+                "name": "ProductId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "ProductId"
+                }
+              },
+              {
+                "name": "Quantity",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "Quantity"
+                }
+              },
+              {
+                "name": "UnitOfMeasureId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "UnitOfMeasureId"
+                }
+              },
+              {
+                "name": "TotalTransactionLineItemAmount",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+                  "name": "TotalTransactionLineItemAmount"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "primaryKey": [
+            "CustomerAccountId"
+          ],
+          "baseEntityReference": {
+            "path": "/CustomerAccount.cdm.json/CustomerAccount",
+            "name": "CustomerAccount"
+          },
+          "name": "CustomerAccount",
+          "description": "An 'account' is an administrative means of defining one or more relationships between the customer and the selling or service-providing organization.\n\nThe Customer/ Account relationship reflects the way in customers interact with business in the real world - so that systems which are developed reflect real-world business practices and are consistent with the way business is performed.\n\nA customer may have one or more accounts with a business. This is more likely the case with a legal entity but may also be true for individuals.   \n\nFor example, a large corporation may have many accounts with a business. Each account may be assigned to a specific department or function.\n\nThis account structure reflects the way business is done in the real world and provides a 'drill-down' capability from ultimate customer to each of the accounts. It also provides a means of consolidating customer account information to the ultimate customer level.",
+          "projectionInfo": {
+            "attributes": [
+              {
+                "name": "CustomerAccountId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                  "name": "CustomerAccountId"
+                }
+              },
+              {
+                "name": "CustomerAccountOpenedDate",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                  "name": "CustomerAccountOpenedDate"
+                }
+              },
+              {
+                "name": "CustomerAccountClosedDate",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                  "name": "CustomerAccountClosedDate"
+                }
+              },
+              {
+                "name": "CustomerId",
+                "type": "Existing",
+                "attributeReference": {
+                  "entity": "/CustomerAccount.cdm.json/CustomerAccount",
+                  "name": "CustomerId"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "newEntities": []
+    },
+    "baseModel": {
+      "name": "Retail",
+      "format": "CDM",
+      "version": "0.1.0"
+    },
+    "relationshipDefinitions": [
+      {
+        "joinPairs": [
+          {
+            "fromAttribute": "CustomerAccountId",
+            "toAttribute": "CustomerAccountId"
+          }
+        ],
+        "fromEntity": "/Transaction.cdm.json/Transaction",
+        "toEntity": "/CustomerAccount.cdm.json/CustomerAccount"
+      },
+      {
+        "joinPairs": [
+          {
+            "fromAttribute": "CustomerId",
+            "toAttribute": "CustomerId"
+          }
+        ],
+        "fromEntity": "/Transaction.cdm.json/Transaction",
+        "toEntity": "/Customer.cdm.json/Customer"
+      },
+      {
+        "joinPairs": [
+          {
+            "fromAttribute": "UnitOfMeasureId",
+            "toAttribute": "UnitOfMeasureId"
+          }
+        ],
+        "fromEntity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+        "toEntity": "/UnitOfMeasure.cdm.json/UnitOfMeasure"
+      },
+      {
+        "joinPairs": [
+          {
+            "fromAttribute": "ProductId",
+            "toAttribute": "ProductId"
+          }
+        ],
+        "fromEntity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+        "toEntity": "/Product.cdm.json/Product"
+      },
+      {
+        "joinPairs": [
+          {
+            "fromAttribute": "TransactionId",
+            "toAttribute": "TransactionId"
+          }
+        ],
+        "fromEntity": "/TransactionLineItem.cdm.json/TransactionLineItem",
+        "toEntity": "/Transaction.cdm.json/Transaction"
+      }
+    ]
+  }
+}

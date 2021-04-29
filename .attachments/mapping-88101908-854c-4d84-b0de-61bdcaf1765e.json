@@ -1,0 +1,574 @@
+{
+  "properties": {
+    "sourceModel": {
+      "name": "ServiceProviderSM",
+      "modelType": "Derived"
+    },
+    "targetModel": {
+      "name": "ServiceProviderSTD",
+      "modelType": "Derived"
+    },
+    "entityMappings": [
+      {
+        "targetEntityReference": {
+          "name": "Product",
+          "path": "Product.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "CRMProduct",
+          "path": "CRMProduct.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "ProductId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "createdonId",
+                "entity": "CRMProduct.cdm.json/CRMProduct"
+              }
+            },
+            {
+              "name": "ProductName",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "name",
+                "entity": "CRMProduct.cdm.json/CRMProduct"
+              }
+            },
+            {
+              "name": "ProductInternalName",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "Id",
+                "entity": "CRMProduct.cdm.json/CRMProduct"
+              }
+            },
+            {
+              "name": "IntroductionDate",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "createdon",
+                "entity": "CRMProduct.cdm.json/CRMProduct"
+              }
+            },
+            {
+              "name": "ItemSku",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "productnumber",
+                "entity": "CRMProduct.cdm.json/CRMProduct"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "ProductGroup",
+          "path": "ProductGroup.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "CRMProductFamily",
+          "path": "CRMProductFamily.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "ProductGroupId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "createdonId",
+                "entity": "CRMProductFamily.cdm.json/CRMProductFamily"
+              }
+            },
+            {
+              "name": "ProductGroupName",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "name",
+                "entity": "CRMProductFamily.cdm.json/CRMProductFamily"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "ProductGroupProduct",
+          "path": "ProductGroupProduct.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "CRMProductFamilyProduct",
+          "path": "CRMProductFamilyProduct.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "ProductGroupId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "ProductFamilyId",
+                "entity": "CRMProductFamilyProduct.cdm.json/CRMProductFamilyProduct"
+              }
+            },
+            {
+              "name": "ProductId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "ProductId",
+                "entity": "CRMProductFamilyProduct.cdm.json/CRMProductFamilyProduct"
+              }
+            },
+            {
+              "name": "PeriodStartDate",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "createdon",
+                "entity": "CRMProductFamilyProduct.cdm.json/CRMProductFamilyProduct"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "Vendor",
+          "path": "Vendor.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "CRMServiceProvider",
+          "path": "CRMServiceProvider.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "VendorId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "createdonId",
+                "entity": "CRMServiceProvider.cdm.json/CRMServiceProvider"
+              }
+            },
+            {
+              "name": "VendorName",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "name",
+                "entity": "CRMServiceProvider.cdm.json/CRMServiceProvider"
+              }
+            },
+            {
+              "name": "VendorNote",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "id",
+                "entity": "CRMServiceProvider.cdm.json/CRMServiceProvider"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "ProductVendor",
+          "path": "ProductVendor.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "CRMServiceProviderProduct",
+          "path": "CRMServiceProviderProduct.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "ProductId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "ProductId",
+                "entity": "CRMServiceProviderProduct.cdm.json/CRMServiceProviderProduct"
+              }
+            },
+            {
+              "name": "VendorId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "ServiceProviderId",
+                "entity": "CRMServiceProviderProduct.cdm.json/CRMServiceProviderProduct"
+              }
+            },
+            {
+              "name": "PeriodStartDate",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "createdon",
+                "entity": "CRMServiceProviderProduct.cdm.json/CRMServiceProviderProduct"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "UnitOfMeasure",
+          "path": "UnitOfMeasure.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "BillingUnitOfMeasure",
+          "path": "BillingUnitOfMeasure.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "UnitOfMeasureId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "UnitOfMeasureId",
+                "entity": "BillingUnitOfMeasure.cdm.json/BillingUnitOfMeasure"
+              }
+            },
+            {
+              "name": "UnitOfMeasureName",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "UnitOfMeasureName",
+                "entity": "BillingUnitOfMeasure.cdm.json/BillingUnitOfMeasure"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "CustomerType",
+          "path": "CustomerType.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "BillingCustomerType",
+          "path": "BillingCustomerType.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "CustomerTypeId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "CustomerTypeId",
+                "entity": "BillingCustomerType.cdm.json/BillingCustomerType"
+              }
+            },
+            {
+              "name": "CustomerTypeName",
+              "type": "Derived",
+              "attributeReferences": [
+                {
+                  "name": "CustomerTypeName",
+                  "entity": "BillingCustomerType.cdm.json/BillingCustomerType"
+                }
+              ],
+              "expression": "upper(CustomerTypeName)"
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "Customer",
+          "path": "Customer.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "BillingEntityExtract",
+          "path": "BillingEntityExtract.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "CustomerId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "AccountId",
+                "entity": "BillingEntityExtract.cdm.json/BillingEntityExtract"
+              }
+            },
+            {
+              "name": "CustomerTypeId",
+              "type": "Lookup",
+              "lookupFrom": {
+                "entity": "CustomerType.cdm.json/CustomerType",
+                "attribute": "CustomerTypeId",
+                "whereConditions": {
+                  "conditions": [
+                    {
+                      "ExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "ProfileType",
+                            "entity": "BillingEntityExtract.cdm.json/BillingEntityExtract",
+                            "attributeAlias": "ProfileTypeAlias"
+                          }
+                        ],
+                        "expression": "upper(ProfileTypeAlias)"
+                      },
+                      "LookupFromExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "CustomerTypeName",
+                            "attributeAlias": "CustomerTypeNameAlias"
+                          }
+                        ],
+                        "expression": "CustomerTypeName"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "CustomerAccount",
+          "path": "CustomerAccount.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "BillingEntityExtract",
+          "path": "BillingEntityExtract.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "CustomerAccountId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "SubsciptionId",
+                "entity": "BillingEntityExtract.cdm.json/BillingEntityExtract"
+              }
+            },
+            {
+              "name": "CustomerAccountOpenedDate",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "SubscriptionCreationDate",
+                "entity": "BillingEntityExtract.cdm.json/BillingEntityExtract"
+              }
+            },
+            {
+              "name": "CustomerAccountClosedDate",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "TerminationDate",
+                "entity": "BillingEntityExtract.cdm.json/BillingEntityExtract"
+              }
+            },
+            {
+              "name": "CustomerId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "AccountId",
+                "entity": "BillingEntityExtract.cdm.json/BillingEntityExtract"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "Transaction",
+          "path": "Transaction.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "BillingDailyConsumption",
+          "path": "BillingDailyConsumption.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "TransactionId",
+              "type": "SurrogateKey",
+              "AlternateKeys": [ "TransactionEntryTimestamp", "CustomerAccountId" ]
+            },
+            {
+              "name": "TransactionEntryTimestamp",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "Date",
+                "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption"
+              }
+            },
+            {
+              "name": "CustomerId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "AccountId",
+                "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption"
+              }
+            },
+            {
+              "name": "CustomerAccountId",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "SubscriptionId",
+                "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "targetEntityReference": {
+          "name": "TransactionLineItem",
+          "path": "TransactionLineItem.cdm.json"
+        },
+        "sourceEntityReference": {
+          "name": "BillingDailyConsumption",
+          "path": "BillingDailyConsumption.cdm.json"
+        },
+        "attributeMappingInfo": {
+          "attributeMappings": [
+            {
+              "name": "TransactionId",
+              "type": "Lookup",
+              "lookupFrom": {
+                "entity": "Transaction.cdm.json/Transaction",
+                "attribute": "TransactionId",
+                "whereConditions": {
+                  "conditions": [
+                    {
+                      "ExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "Date",
+                            "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption",
+                            "attributeAlias": "DateAlias"
+                          }
+                        ],
+                        "expression": "DateAlias"
+                      },
+                      "LookupFromExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "TransactionEntryTimestamp",
+                            "attributeAlias": "TransactionEntryTimestampAlias"
+                          }
+                        ],
+                        "expression": "TransactionEntryTimestampAlias"
+                      }
+                    },
+                    {
+                      "ExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "SubscriptionId",
+                            "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption",
+                            "attributeAlias": "SubscriptionIdAlias"
+                          }
+                        ],
+                        "expression": "SubscriptionIdAlias"
+                      },
+                      "LookupFromExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "CustomerAccountId",
+                            "attributeAlias": "CustomerAccountIdAlias"
+                          }
+                        ],
+                        "expression": "CustomerAccountIdAlias"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "TransactionLineItemId",
+              "type": "SurrogateKey",
+              "AlternateKeys": [ "TransactionId", "ProductId", "UnitOfMeasureId" ]
+            },
+            {
+              "name": "ProductId",
+              "type": "Lookup",
+              "lookupFrom": {
+                "entity": "Product.cdm.json/Product",
+                "attribute": "ProductId",
+                "whereConditions": {
+                  "conditions": [
+                    {
+                      "ExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "PlanId",
+                            "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption",
+                            "attributeAlias": "PlanIdAlias"
+                          }
+                        ],
+                        "expression": "PlanIdAlias"
+                      },
+                      "LookupFromExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "ProductInternalName",
+                            "attributeAlias": "ProductInternalNameAlias"
+                          }
+                        ],
+                        "expression": "ProductInternalNameAlias"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "UnitOfMeasureId",
+              "type": "Lookup",
+              "lookupFrom": {
+                "entity": "UnitOfMeasure.cdm.json/UnitOfMeasure",
+                "attribute": "UnitOfMeasureId",
+                "whereConditions": {
+                  "conditions": [
+                    {
+                      "ExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "ConsumptionType",
+                            "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption",
+                            "attributeAlias": "ConsumptionTypeAlias"
+                          }
+                        ],
+                        "expression": "ConsumptionTypeAlias"
+                      },
+                      "LookupFromExpressionInfo": {
+                        "ParticipatingAttributes": [
+                          {
+                            "name": "UnitOfMeasureName",
+                            "attributeAlias": "UnitOfMeasureNameAlias"
+                          }
+                        ],
+                        "expression": "UnitOfMeasureNameAlias"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Quantity",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "ConsumptionQty",
+                "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption"
+              }
+            },
+            {
+              "name": "TotalTransactionLineItemAmount",
+              "type": "Direct",
+              "attributeReference": {
+                "name": "ChargeAmount",
+                "entity": "BillingDailyConsumption.cdm.json/BillingDailyConsumption"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

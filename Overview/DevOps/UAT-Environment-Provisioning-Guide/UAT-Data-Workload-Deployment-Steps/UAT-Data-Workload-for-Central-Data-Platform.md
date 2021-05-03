@@ -203,6 +203,10 @@ The data moved by the ADF into the gold zone datalake is then referenced by a Sy
 1. Connect to snp-cpd-data-<ENV>-we-01-ondemand.sql.azuresynapse.net with Synapse Workspace Studio or with a SQL client of your choice
 2. Run queries described in /CommandControl/Mcs.Tasmu.CostMgmt.SyA/CostManagementSynapseQueries, with manual steps as described inline
 3. Please note that Synapse Workspace connects to the Gold Zone datalake with Shared Access Signature, which has an expire date.
+# Deployment of Billing Database.
+1. [Run the pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1537)  to copy all billing data to ADLS Landing Zone Billing folder (folder is created automatically)
+1. Run the ADF pipeline ![image.png](/.attachments/image-a2a62ff7-def8-4e46-bcc4-2d360939aaa9.png)
+1. Run queries described in **/ServiceProvider/BillingSynapseQueries.sql** , with manual steps as described inline. 
 
 # Assign all Smart City services to Log Analytics Workspace.
 1. Login with az login --tenant "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"  where "XXX..." is tenant id

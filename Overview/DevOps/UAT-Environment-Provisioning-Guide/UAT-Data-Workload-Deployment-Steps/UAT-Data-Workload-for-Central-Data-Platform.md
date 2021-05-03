@@ -96,6 +96,21 @@ _If DevOps agent is not deployed within a vnet, to make successful copy data opr
 
 ![image.png](/.attachments/image-6f137059-f948-44d4-b586-44b1979c7b53.png)
 
+**Files in Landingzone**
+1. All the sectorial data files must be uploaded to the KPI folder of the container of respective sector.
+
+For example:
+- healthcare/KPI
+- sport/KPI
+
+![image.png](/.attachments/image-55dd72a1-bf22-4846-b1a1-946441aa7659.png)
+
+2. A particular naming convention has to be followed for all the files. It should start with sector abbreviation and end with a date.
+
+For example: 
+- HLT_005_Perc pop with hlt file access prov_2020-10-29.csv
+- SPR_001_Number of Gym memberships_2020-12-03.csv
+
 **Run the following pipelines in sequence:**
 
 1. Make sure that DevOps SPN has Storage BLOB Contributor role for gold and raw zone storages.

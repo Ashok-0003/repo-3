@@ -9,6 +9,7 @@
 | UAT |03rd May 2021| 16.00 PM IST ( 2.00 PM Doha Time) |Completed|
 |Pre-Prod|04th May 2021| 11.00 AM IST ( 08.30 AM Doha Time )|Completed|
 |Release Notes for deployment| Only Mobile release|[ReleaseNotes_ MSFT_v0.01_03May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_03May2021-e7ec665f-4183-4238-bfdb-f2110a6dc834.docx) ||
+| Pre-Prod |4th May 2021| 17.00 PM IST ( 2.30 PM Doha Time)|[Release Note_6d Billing_V 1.2_04-05-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%201.2_04-05-2021-d2d0cb4d-578e-4b4c-b22e-b4b538d259b8.docx) |Yet to Begin|
 
 | Date  : 29th April 2021 |
 |----------------------|

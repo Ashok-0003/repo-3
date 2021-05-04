@@ -11,6 +11,13 @@ It for now reflects what has been presented in the blueprint demo on 15th April 
 ## Azure Data Lake Storage
 - Name : dlscprawdatadevwe02
 
+# Source Systems
+## Dynamics CRM
+![source1.PNG](/.attachments/source1-7b9171da-5322-458f-88f1-76ebf7246fc3.PNG)
+## 6D Billing System
+![source2.PNG](/.attachments/source2-fbe74894-49fc-4c9c-a8ac-c8e83a50e846.PNG)
+
+
 # Models Artifacts
 ## Source Model
 
@@ -105,3 +112,11 @@ az datamodel create
     --model-directives ServiceProviderAM.json
     -g 'rg-cpd-data-dev-we-02'
     --synapse-workspace 'snp-cpd-data-dev-we-02'
+
+
+Power BI Report Star Schema Model
+![PBI2.PNG](/.attachments/PBI2-818b6764-4a36-4fa4-bd9d-1032c745ee5a.PNG)
+
+Power BI Dashboard
+![PBI1.PNG](/.attachments/PBI1-b54cb920-f49b-40a7-964f-4b4994c724a8.PNG)
+

@@ -106,6 +106,7 @@ For example:
 ![image.png](/.attachments/image-55dd72a1-bf22-4846-b1a1-946441aa7659.png)
 
 2. A particular naming convention has to be followed for all the files. It should start with sector abbreviation and end with a date.
+3. [Run the sectorial data pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1539)
 
 For example: 
 - HLT_005_Perc pop with hlt file access prov_2020-10-29.csv

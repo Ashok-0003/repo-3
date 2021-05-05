@@ -219,7 +219,8 @@ The data moved by the ADF into the gold zone datalake is then referenced by a Sy
 1. Run exec dbo.uspLoadDimTime to pupulate Time dimension entity.
 1. Run exec dbo.uspLoadDimDate '01/01/2020','01-01-2030' where parameters are first and last date of dimension values scope.
 
-# Deployment of Dynamics custom views
+# Deployment of Dynamics data & custom views
+1. Import data from Dynamics system do SQL database.
 1. Connect to Dynamics database of the current environment using SSMS
 1. Run the sql script in the code repo under Dynamics/Views.sql  
 

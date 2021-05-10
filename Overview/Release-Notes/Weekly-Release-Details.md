@@ -1,6 +1,15 @@
 =====================================================
    ### **High Level - Weekly Deployment updates in UAT, Pre-Prod Environments**
 =====================================================
+
+| Date  : 10th May 2021 |
+|----------------------|
+
+| Environment | Deployment Start Date | Deployment Start Time | Status |
+|-----|-----------------------|-----------------------|--------|
+| UAT |10th May 2021| 16.30 PM IST ( 2.00 PM Doha Time) |Completed|
+|Pre-Prod|10th May 2021 | 18.00 AM IST ( 3.30 PM Doha Time ) [ReleaseNotes_ MSFT_v0.01_10May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_10May2021-9ba11fd2-09ae-4a2f-8b81-7e34e0198694.docx)|Completed|
+
 | Date  : 06th May 2021 |
 |----------------------|
 

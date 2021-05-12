@@ -605,12 +605,12 @@ Update role assignment for  following resources
 |`spn-apps-aks-<env>`|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Contributor |
 |`spn-apps-aks-<env>`|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Operator |
 |`spn-apps-aks-<env>`|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Virtual Machine Contributor |
-|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Reader |
-|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Operator |
-|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`acst-<sub>-apps-str-<env>-we-01`| App Configuration Data Reader |
-|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`agw-<sub>-apps-aks-<env>-we-01`| Contributor |
-|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`mi-<sub>-apps-agwaks-<env>-we-01`| Managed Identity Operator |
-|`mi-<sub>-apps-aksnode-<env>-we-01 `|Service Principal |`rg-<sub>-apps-aks-<env>-we-01`| Reader |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Managed Identity |`rg-<sub>-apps-aksnode-<env>-we-01`| Reader |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Managed Identity |`rg-<sub>-apps-aksnode-<env>-we-01`| Managed Identity Operator |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Managed Identity |`acst-<sub>-apps-str-<env>-we-01`| App Configuration Data Reader |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Managed Identity |`agw-<sub>-apps-aks-<env>-we-01`| Contributor |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Managed Identity |`mi-<sub>-apps-agwaks-<env>-we-01`| Managed Identity Operator |
+|`mi-<sub>-apps-aksnode-<env>-we-01 `|Managed Identity |`rg-<sub>-apps-aks-<env>-we-01`| Reader |
 
 ## 4.16 Configuring Notification Hubs for FCM and APNS
 1. Obtain the API Key of [Google Firebase Cloud Account](https://console.firebase.google.com/) after creating the project from project settings

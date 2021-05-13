@@ -315,6 +315,7 @@ Header Image: Link -
 ![image.png](/.attachments/image-c3aee32d-d21d-40ed-96a6-793e18557b66.png)
 ![image.png](/.attachments/image-cd44aeb9-e2ac-46ee-a0a2-126417e193e3.png)
 
+Follow the above steps for updating links for below red arrowed buttons, hyper links
 
 # 6 	Appendix
 ## Appendix A - Solution Import

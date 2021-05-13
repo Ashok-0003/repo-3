@@ -311,11 +311,33 @@ Again, close the workflow. Again, re open the workflow and click on "Activate" b
 ####5.17.1 Email Templates images has to be uploaded to CDN for production environment.
 ####5.17.2 After deployment, English and Arabic templates has to be updated with correct environment specific links for images, hyperlinks and buttons.
 
-Header Image: Link - 
+Header/Footer Image: Link - https://marketplace.env.sqcp.qa/en/home
+Support Button  : Link - https://mytasmu.env.sqcp.qa/en/support/contactus
+Terms and Condition :Link https://marketplace.env.sqcp.qa/en/about/tc
+Unsubscribe: Link  unsubscribe : https://account.env.sqcp.qa
+
+Note: env-> Specific to environment
+
+for below highlight
 ![image.png](/.attachments/image-c3aee32d-d21d-40ed-96a6-793e18557b66.png)
 ![image.png](/.attachments/image-cd44aeb9-e2ac-46ee-a0a2-126417e193e3.png)
 
 Follow the above steps for updating links for below red arrowed buttons, hyper links
+![Template Imgaes Update.png](/.attachments/Template%20Imgaes%20Update-8daeef46-f321-40b1-ae5d-9bceddfe2d1b.png)
+
+Need to updates for the English and Arabic Templates both
+
+Closed Case Acknowledgement
+External Note added
+Organisation Authentication Change Notification
+Organisation Profile Email Verification
+Profile Authentication Change Notification
+Profile Email Verification Notification
+Work Order Booking Created
+Work Order Booking Updated
+Welcome to SQCP
+New Case Acknowledgement
+
 
 # 6 	Appendix
 ## Appendix A - Solution Import

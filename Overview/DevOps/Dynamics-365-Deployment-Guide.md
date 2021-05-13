@@ -306,6 +306,15 @@ Again, close the workflow. Again, re open the workflow and click on "Activate" b
 
 ![image.png](/.attachments/image-35e05c78-46c8-4e96-bbfb-786a950953ba.png)
 
+### 5.17 Email templates in CRM and Images needs to be uploaded for Prod
+
+####Email Templates images has to be uploaded to CDN for production environment.
+####After deployment, English and Arabic templates has to be updated with correct environment specific links for images, hyperlinks and buttons.
+
+
+
+
+
 # 6 	Appendix
 ## Appendix A - Solution Import
 

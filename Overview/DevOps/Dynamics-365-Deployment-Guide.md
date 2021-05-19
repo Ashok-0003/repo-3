@@ -199,7 +199,11 @@ https://customervoice.microsoft.com/
 4. Now click on Send Tab. Then select "Resend" option in the dropdown. Next in the "Current Flow Run" click on 3dots, Next click on "Edit in Power Automate" option
 ![EditinPowerutomate.PNG](/.attachments/EditinPowerutomate-623212f3-a32a-4570-afef-81cbc71bde70.PNG)
 5. Now "Send a survey when a case is resolved in Dynamics 365" flow is opened in Power Automate. Next select 3dots of "When  case is resolved" step, then select settings option.
- 
+ ![trigger.PNG](/.attachments/trigger-faa49a57-9b43-42d2-bffc-62836a873f55.PNG)
+6. Once the settings pop up is opened update the "Trigger Conditions" text box with below text
+
+@or(equals(triggerBody()?['statuscode'], 5),equals(triggerBody()?['statuscode'], 1000),equals(triggerBody()?['statuscode'], 923080007))
+
 ### 5.5	Enable SLA Flows after deployment
 
 1.	Go to SLA record (Service Management --> Service Level Agreement) and open SLA Record and deactivate.

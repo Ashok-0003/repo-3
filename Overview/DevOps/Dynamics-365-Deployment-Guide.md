@@ -169,6 +169,21 @@ https://customervoice.microsoft.com/
 5.	Go to Send tab and click on Edit in Power Automate and Turn on Send Survey Flow.
 ![image.png](/.attachments/image-0c719ccd-b197-47e4-9572-1f71c2259bc4.png)
 ![image.png](/.attachments/image-6cfc9a74-53fe-4196-ab28-1ad3778af50c.png)
+
+###5.4.1 Creating Arabic email template
+1. Browse customer voice URL https://customervoice.microsoft.com/Pages/ProjectPage.aspx
+2. Click on "All Projects", it will show all available projects then double click on the project for which you want to do the update
+![AllProjects.PNG](/.attachments/AllProjects-9de1f80a-65e4-4c7d-990a-2bb3c2d16dd1.PNG)
+3. Here I am giving example of Test Environment
+ Once open the project, then select the survey called "Support Survey - 
+ Test". Based on the environment name will be differ. if it is UAT then 
+ we have select "Support Survey - UAT", for Dev "Support Survey - Dev".
+![Survey.PNG](/.attachments/Survey-dfa60926-0917-4e5b-b319-9a0aa26885ea.PNG)
+4. Now click on Send Tab. Then select "Email" in the dropdown.
+![Email.PNG](/.attachments/Email-749270de-36e7-4745-9cbc-86c1bf54a66d.PNG)
+5. Click on "Template" dropdown then select "Create New", then "Arabic Support Feedback" as a name then click on Add
+![CreateNewTemplte.PNG](/.attachments/CreateNewTemplte-bbdec755-0a99-490e-b656-9f0851968ab4.PNG). ![Addingname.PNG](/.attachments/Addingname-30f81b9a-fa81-447e-9c69-de7abca38efe.PNG)
+
  
 ### 5.5	Enable SLA Flows after deployment
 

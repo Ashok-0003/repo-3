@@ -220,7 +220,7 @@ https://customervoice.microsoft.com/
 5. Now "Send a survey when a case is resolved in Dynamics 365" flow is opened in Power Automate. Click on "Check if Customer is of type accounts" step. Then in the "If yes" condition, create a new step after "Get primary contact". select "Add an Action" while creating the step
 ![ifyespr.PNG](/.attachments/ifyespr-99e83814-75ed-49b0-85f6-e0c49ffeace1.PNG)
 6. Now select "Condition" as action in the "Choose an operation"
-
+![chooseope.PNG](/.attachments/chooseope-cf9dd3b6-bedd-490b-b72b-223667538d48.PNG)
 
 ### 5.5	Enable SLA Flows after deployment
 

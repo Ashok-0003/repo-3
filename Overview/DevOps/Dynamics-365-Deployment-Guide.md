@@ -183,6 +183,7 @@ https://customervoice.microsoft.com/
 ![Email.PNG](/.attachments/Email-749270de-36e7-4745-9cbc-86c1bf54a66d.PNG)
 5. Click on "Template" dropdown then select "Create New", then "Arabic Support Feedback" as a name then click on Add
 ![CreateNewTemplte.PNG](/.attachments/CreateNewTemplte-bbdec755-0a99-490e-b656-9f0851968ab4.PNG). ![Addingname.PNG](/.attachments/Addingname-30f81b9a-fa81-447e-9c69-de7abca38efe.PNG)
+6. Now open the newly created Arabic Support Feedback template using Template dropdown and click on "Source" option in the Editor.
 
  
 ### 5.5	Enable SLA Flows after deployment

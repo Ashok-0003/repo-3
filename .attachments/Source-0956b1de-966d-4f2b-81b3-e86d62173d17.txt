@@ -1,0 +1,44 @@
+<div id="templateContent">
+<div align="center" style="background-color:white; height:auto">
+<p style="margin-left:20px; margin-right:20px"><!--__NOLOGO__--></p>
+
+<table align="center" style="direction:ltr; text-align:left; width:525.0pt">
+	<tbody>
+		<tr>
+			<td style="background-color:#2266e3; background:#2266e3; height:.25in; padding:15.0pt; width:60.0pt" width="80"><span style="color:#ffffff">ملاحظات الدعم</span></td>
+		</tr>
+		<tr>
+			<td style="background-color:white; background:white; padding:10pt 15.0pt 5.0pt 15.0pt; vertical-align:top; width:100.0%" valign="top">
+			<p style="text-align:right">&nbsp; ,[[FirstName]] [[LastName]]&nbsp;العزيز</p>
+
+			<p style="text-align:right">شكرا لكونك عميلنا الكرام. يتم مراعاة ملاحظاتك بعناية لمساعدتنا على تحسين خدماتنا في المستقبل.</p>
+
+			<p style="text-align:right">يُرجى إخبارنا كيف سارت تجربة الدعم الأخيرة من خلال المشاركة في هذا الاستبيان السريع. يمكنك البدء بالنقر فوق الزر &quot;بدء الاستبيان&quot;.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding:5pt 15.0pt 5pt 15.0pt">
+			<table style="width:160px">
+				<tbody>
+					<tr>
+						<td style="background-color:#2266e3; height:30px; text-align:center; width:120px"><a href="[[SurveyLink]]"><span style="color:#ffffff">ابدأ المسح</span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding:3.75pt 15.0pt 15.0pt 15.0pt">
+			<p style="text-align:right">,شكرا لك<br />
+			<span style="font-family:Segoe UI,sans-serif; font-size:10.0pt">[[companyname]]</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="background-color:#f2f2f2; background:#f2f2f2; padding:15.0pt 15.0pt 15.0pt 15.0pt" valign="top">
+			<p><span style="font-family:Segoe UI,sans-serif; font-size:9.0pt">This is a system generated email, please do not reply to it. The survey link in this email is unique to its recipient. Please do not forward this email. If you would like to unsubscribe and stop receiving these emails, click <a href="[[UnsubscribeLink]]">unsubscribe</a>.</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>

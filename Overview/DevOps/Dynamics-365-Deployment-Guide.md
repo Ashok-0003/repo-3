@@ -223,11 +223,20 @@ https://customervoice.microsoft.com/
 ![chooseope.PNG](/.attachments/chooseope-cf9dd3b6-bedd-490b-b72b-223667538d48.PNG)
 7. Rename the condition name as "Check Profile Communication Preferred Language", then add dynamic value as "Preferred Communication Language" and select condition as "Preferred Communication Language" is equal to 1025 and Add a comment using 3dots as "1025" is for Arabic
 ![AddCondition.PNG](/.attachments/AddCondition-2842f338-beed-4df3-8a1c-bf0d848da451.PNG)
-8. Then in the If yes section "Check Profile Communication Preferred Language" click on add an action. Then in the "Choose an Operation", search for "Customer voice" then select "Dynamics 365 Customer Voice" in the result. Then in the Actions tab select "Send a survey"
+8. Then in the If yes section "Check Profile Communication Preferred Language" step, then click on add an action. Then in the "Choose an Operation", search for "Customer voice" then select "Dynamics 365 Customer Voice" in the result. Then in the Actions tab select "Send a survey"
 ![CustomerVoice.PNG](/.attachments/CustomerVoice-cf39ee0a-5dbf-4f72-9cf9-375366063a01.PNG)
 ![SelectCustomervoice.PNG](/.attachments/SelectCustomervoice-492d1087-591c-4f5a-842b-375a93a11f34.PNG)
-9. Once the send survey is added give the values as shown in the image
+Once the send survey is added give the values as shown in the image
 ![SendSurvey.PNG](/.attachments/SendSurvey-158d6fb5-6d14-46a7-abd1-98f5bba72151.PNG)
+9. Now click on "If no" section of "Check Profile Communication Preferred Language" step, clcik on Add an action, then select "Condition" as action in the "Choose an operation"
+![chooseope.PNG](/.attachments/chooseope-cf9dd3b6-bedd-490b-b72b-223667538d48.PNG)
+Now give the condition as "Preferred Communication Lnguage" is equl to 1033. and add comment as 1033 is for English
+![image.png](/.attachments/image-df0d87a3-12b7-4946-b124-166b5d5cd965.png)
+10. Now go to "If yes" section of Condition2, then click on add an action. Then in the "Choose an Operation", search for "Customer voice" then select "Dynamics 365 Customer Voice" in the result. Then in the Actions tab select "Send a survey"
+![CustomerVoice.PNG](/.attachments/CustomerVoice-cf39ee0a-5dbf-4f72-9cf9-375366063a01.PNG)
+![SelectCustomervoice.PNG](/.attachments/SelectCustomervoice-492d1087-591c-4f5a-842b-375a93a11f34.PNG)
+Once the send survey is added give the values as shown in the image
+![EnglishSenSurvey.PNG](/.attachments/EnglishSenSurvey-258e9b20-e5dd-43e3-b270-89791adaf6f8.PNG)
 
 
 ### 5.5	Enable SLA Flows after deployment

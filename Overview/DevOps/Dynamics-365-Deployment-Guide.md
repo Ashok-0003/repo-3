@@ -188,7 +188,7 @@ https://customervoice.microsoft.com/
 [Source.txt](/.attachments/Source-0956b1de-966d-4f2b-81b3-e86d62173d17.txt)![Ok.PNG](/.attachments/Ok-dcf02b24-954f-4088-a79c-23cb83c5c55a.PNG)
 
 ###5.4.2 Changing the Trigger Point of Case resolved step.
- Browse customer voice URL https://customervoice.microsoft.com/Pages/ProjectPage.aspx
+1 Browse customer voice URL https://customervoice.microsoft.com/Pages/ProjectPage.aspx
 2. Click on "All Projects", it will show all available projects then double click on the project for which you want to do the update
 ![AllProjects.PNG](/.attachments/AllProjects-9de1f80a-65e4-4c7d-990a-2bb3c2d16dd1.PNG)
 3. Here I am giving example of Test Environment
@@ -205,6 +205,20 @@ https://customervoice.microsoft.com/
 @or(equals(triggerBody()?['statuscode'], 5),equals(triggerBody()?['statuscode'], 1000),equals(triggerBody()?['statuscode'], 923080007))
 
 ![triggertext.PNG](/.attachments/triggertext-f2e0d909-fa5a-414d-a8e9-e3991719d693.PNG)
+
+###5.4.3 Updating "Send a survey when a case is resolved in Dynamics 365" flow.
+1. Browse customer voice URL https://customervoice.microsoft.com/Pages/ProjectPage.aspx
+2. Click on "All Projects", it will show all available projects then double click on the project for which you want to do the update
+![AllProjects.PNG](/.attachments/AllProjects-9de1f80a-65e4-4c7d-990a-2bb3c2d16dd1.PNG)
+3. Here I am giving example of Test Environment
+ Once open the project, then select the survey called "Support Survey - 
+ Test". Based on the environment name will be differ. if it is UAT then 
+ we have select "Support Survey - UAT", for Dev "Support Survey - Dev".
+![Survey.PNG](/.attachments/Survey-dfa60926-0917-4e5b-b319-9a0aa26885ea.PNG)
+4. Now click on Send Tab. Then select "Resend" option in the dropdown. Next in the "Current Flow Run" click on 3dots, Next click on "Edit in Power Automate" option
+![EditinPowerutomate.PNG](/.attachments/EditinPowerutomate-623212f3-a32a-4570-afef-81cbc71bde70.PNG)
+5. Now "Send a survey when a case is resolved in Dynamics 365" flow is opened in Power Automate. Click on 
+
 
 ### 5.5	Enable SLA Flows after deployment
 

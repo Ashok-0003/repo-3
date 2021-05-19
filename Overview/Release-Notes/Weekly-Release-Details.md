@@ -4,10 +4,10 @@
 | Date  : 18th May 2021 |
 |----------------------|
 
-| Environment | Deployment Start Date | Deployment Start Time | Status |
+| Environment | Deployment Start Date | Deployment Start Time | Status |Comments|
 |-----|-----------------------|-----------------------|--------|
-| UAT |18th May 2021| 19.00 PM IST ( 16.30 PM Doha Time) |Completed|
-|Pre-Prod|19th May 2021 | 10.00 AM IST ( 7.30 AM Doha Time ) [ReleaseNotes_ MSFT_v0.01_18May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_18May2021-442c2159-b34b-47a8-9ca0-8dc9c12301d0.docx)|Yet to Begin ( Key areas - Infra Updates, CKAN, CRM, CDN, WebApps, Platform APIs, Bot & Mobile)|
+| UAT |18th May 2021| 19.00 PM IST ( 16.30 PM Doha Time) |Completed||
+|Pre-Prod|19th May 2021 | 10.00 AM IST ( 7.30 AM Doha Time ) [ReleaseNotes_ MSFT_v0.01_18May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_18May2021-442c2159-b34b-47a8-9ca0-8dc9c12301d0.docx)|In-Progress| ( Key areas - Infra Updates, CKAN, CRM, CDN, WebApps, Platform APIs, Bot & Mobile)|
 
 | Date  : 13th May 2021 |
 |----------------------|

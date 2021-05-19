@@ -187,6 +187,8 @@ https://customervoice.microsoft.com/
 ![selectingArabic.PNG](/.attachments/selectingArabic-1b66fe0b-5c75-4af5-a20d-545532ef52e0.PNG)
 [Source.txt](/.attachments/Source-0956b1de-966d-4f2b-81b3-e86d62173d17.txt)![Ok.PNG](/.attachments/Ok-dcf02b24-954f-4088-a79c-23cb83c5c55a.PNG)
 
+###5.4.2 Changing the Trigger Point.
+1. 
  
 ### 5.5	Enable SLA Flows after deployment
 

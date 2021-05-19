@@ -197,6 +197,7 @@ https://customervoice.microsoft.com/
  we have select "Support Survey - UAT", for Dev "Support Survey - Dev".
 ![Survey.PNG](/.attachments/Survey-dfa60926-0917-4e5b-b319-9a0aa26885ea.PNG)
 4. Now click on Send Tab. Then select "Resend" option in the dropdown. Next in the "Current Flow Run" click on 3dots, Next click on "Edit in Power Automate" option
+![EditinPowerutomate.PNG](/.attachments/EditinPowerutomate-623212f3-a32a-4570-afef-81cbc71bde70.PNG)
  
 ### 5.5	Enable SLA Flows after deployment
 

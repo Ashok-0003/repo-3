@@ -187,8 +187,16 @@ https://customervoice.microsoft.com/
 ![selectingArabic.PNG](/.attachments/selectingArabic-1b66fe0b-5c75-4af5-a20d-545532ef52e0.PNG)
 [Source.txt](/.attachments/Source-0956b1de-966d-4f2b-81b3-e86d62173d17.txt)![Ok.PNG](/.attachments/Ok-dcf02b24-954f-4088-a79c-23cb83c5c55a.PNG)
 
-###5.4.2 Changing the Trigger Point.
-1. 
+###5.4.2 Changing the Trigger Point of Case resolved step.
+ Browse customer voice URL https://customervoice.microsoft.com/Pages/ProjectPage.aspx
+2. Click on "All Projects", it will show all available projects then double click on the project for which you want to do the update
+![AllProjects.PNG](/.attachments/AllProjects-9de1f80a-65e4-4c7d-990a-2bb3c2d16dd1.PNG)
+3. Here I am giving example of Test Environment
+ Once open the project, then select the survey called "Support Survey - 
+ Test". Based on the environment name will be differ. if it is UAT then 
+ we have select "Support Survey - UAT", for Dev "Support Survey - Dev".
+![Survey.PNG](/.attachments/Survey-dfa60926-0917-4e5b-b319-9a0aa26885ea.PNG)
+4. Now click on Send Tab. Then select "Resend" option in the dropdown. Next in the "Current Flow Run" click on 3dots, Next click on "Edit in Power Automate" option
  
 ### 5.5	Enable SLA Flows after deployment
 

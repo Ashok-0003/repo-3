@@ -222,6 +222,7 @@ https://customervoice.microsoft.com/
 6. Now select "Condition" as action in the "Choose an operation"
 ![chooseope.PNG](/.attachments/chooseope-cf9dd3b6-bedd-490b-b72b-223667538d48.PNG)
 7. Rename the condition name as "Check Profile Communication Preferred Language", then add dynamic value as "Preferred Communication Language" and select condition as "Preferred Communication Language" is equal to 1025
+![AddCondition.PNG](/.attachments/AddCondition-2842f338-beed-4df3-8a1c-bf0d848da451.PNG)
 
 ### 5.5	Enable SLA Flows after deployment
 

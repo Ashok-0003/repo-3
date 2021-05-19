@@ -204,6 +204,8 @@ https://customervoice.microsoft.com/
 
 @or(equals(triggerBody()?['statuscode'], 5),equals(triggerBody()?['statuscode'], 1000),equals(triggerBody()?['statuscode'], 923080007))
 
+![triggertext.PNG](/.attachments/triggertext-f2e0d909-fa5a-414d-a8e9-e3991719d693.PNG)
+
 ### 5.5	Enable SLA Flows after deployment
 
 1.	Go to SLA record (Service Management --> Service Level Agreement) and open SLA Record and deactivate.

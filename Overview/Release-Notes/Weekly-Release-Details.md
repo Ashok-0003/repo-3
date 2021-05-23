@@ -8,7 +8,7 @@
 |-----|-----------------------|-----------------------|--------|-----|
 | UAT |20th May 2021| 19.00 PM IST ( 16.30 PM Doha Time) |Completed||
 |Pre-Prod (6D Billing)|22nd May 2021 | 11.00 AM IST ( 8.30 AM Doha Time ) [Release Note_6d Billing_V 1.6_22-05-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%201.6_22-05-2021-7fa9e136-4dce-4892-8d06-a390ca307d40.docx)|Completed| |
-|Pre-Prod|23rd May 2021 | 10.30 AM IST ( 8.00 AM Doha Time )[ReleaseNotes_ MSFT_v0.01_20May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_20May2021-2521cb87-85b7-4dd1-88f3-8abf163e00df.docx)|In-Progress| ( Key areas - Infra Updates, CRM, CDN, WebApps, Platform APIs, TLS|
+|Pre-Prod|23rd May 2021 | 10.30 AM IST ( 8.00 AM Doha Time )[ReleaseNotes_ MSFT_v0.01_20May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_20May2021-2521cb87-85b7-4dd1-88f3-8abf163e00df.docx)|Completed| ( Key areas - Infra Updates, CRM, CDN, WebApps, Platform APIs, TLS|
 
 | Date  : 18th May 2021 |
 |----------------------|

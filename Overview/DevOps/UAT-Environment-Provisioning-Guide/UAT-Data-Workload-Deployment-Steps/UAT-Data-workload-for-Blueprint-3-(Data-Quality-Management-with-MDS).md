@@ -17,7 +17,6 @@
 |Virtual Machine with SQL database  |vmcpddatauatwe05|
 
 ## Deployment of Data Infrastructure in following order.
-### Please pay your attention to keep the proper order of activities to avoid getting errors due to lack of secrets in KeyVault.
 
 1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1559)
 

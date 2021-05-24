@@ -19,18 +19,5 @@
 ## Deployment of Data Infrastructure in following order.
 ### Please pay your attention to keep the proper order of activities to avoid getting errors due to lack of secrets in KeyVault.
 
-1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=511)
+1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1559)
 
-# Deployment of UAT Blueprint 3
-## Environment Variables for Azure Pipelines
-The following list of variables are required to be updated after a new Azure infrastructure is created prior to deploying the solution components below.
-
-|Variable Name| Description |
-|--|--|
-| RawZone-Key | Primary key for raw zone storage |
-| GoldZone-Key | Primary key for gold zone storage |
-| GoldZone-CRM-Key |Primary key for CRM storage  |
-| stcpddata01-Key | Primary key for stcpddata01 storage |
-| stcpddata02-Key | Primary key for stcpddata02 storage |
-| SQLServer01-Admin-Password | Admin Password |
-| SQLServer01-Admin-Username | Admin Username |

@@ -19,4 +19,4 @@
 ## Deployment of Data Infrastructure in following order.
 
 1. Run the pipeline [Deployment of master infra pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1559)
-
+1. Install and Configure MDS  [as described here](https://docs.microsoft.com/en-us/sql/master-data-services/master-data-services-installation-and-configuration?view=sql-server-ver15#deploySample)

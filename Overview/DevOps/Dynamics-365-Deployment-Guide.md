@@ -397,6 +397,8 @@ Again, close the workflow. Again, re open the workflow and click on "Activate" b
 
 ![image.png](/.attachments/image-35e05c78-46c8-4e96-bbfb-786a950953ba.png)
 
+After Deployment Make sure that The Business rules are activated in the Target environment.(For Case Entity ,Marketplace Product Entity and Profile Entity)
+
 ### 5.17 Email templates in CRM and Images needs to be uploaded for Prod
 
 ####5.17.1 Email Templates images has to be uploaded to CDN for production environment.

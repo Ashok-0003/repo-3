@@ -109,9 +109,11 @@ Note: During import of managed solutions into ETE Organization, make sure to sel
  ![image.png](/.attachments/image-cced0f4a-4239-4d3c-9d4b-c0d775e8b1e3.png)
 
 # 5	Post Deployment Steps
-### 5.1	Import Data [Automated]
+### 5.1	Import Data
 Import the following data packages using configuration migration tool (refer Appendix B).
-•	MasterData.zip
+1. MasterData.zip [Automated]
+2. Business Units.csv
+
 
 ### 5.2	Updating System Settings [Automated]
 1.	Sign into Dynamics 365 as System administrator user.

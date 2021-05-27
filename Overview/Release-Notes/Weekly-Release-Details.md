@@ -1,6 +1,14 @@
 =====================================================
    ### **High Level - Weekly Deployment updates in UAT, Pre-Prod Environments**
 =====================================================
+| Date  : 26th May 2021 |
+|----------------------|
+
+| Environment | Deployment Start Date | Deployment Start Time | Status | Comments|
+|-----|-----------------------|-----------------------|--------|-----|
+| UAT |26th May 2021| 18.00 PM IST ( 15.30 PM Doha Time) |Completed||
+|Pre-Prod |26th May 2021 | 18.30 AM IST ( 16.00 AM Doha Time ) |In-Progress| |
+
 | Date  : 25th May 2021 |
 |----------------------|
 

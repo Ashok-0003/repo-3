@@ -1,13 +1,22 @@
 =====================================================
    ### **High Level - Weekly Deployment updates in UAT, Pre-Prod Environments**
 =====================================================
+| Date  : 28th May 2021 |
+|----------------------|
+
+| Environment | Deployment Start Date | Deployment Start Time | Status | Comments|
+|-----|-----------------------|-----------------------|--------|-----|
+| UAT |28th May 2021| 17.00 PM IST ( 14.30 PM Doha Time) |Completed||
+|Pre-Prod |28th May 2021 | 21.30 PM IST ( 19.00 PM Doha Time ) ( CRM, WebApps) |Completed|[ReleaseNotes_ MSFT_v0.01_28May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_28May2021-86cf3e01-14f2-4fc6-9a52-c50454b20523.docx)|
+|Pre-Prod |28th May 2021 | 14.00 PM IST ( 11.30 AM Doha Time ) |Completed|[Release Note_6d Billing_V 1.7_28-05-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%201.7_28-05-2021-91004015-4cc0-498f-979e-6f5e3210657f.docx)|
+
 | Date  : 27th May 2021 |
 |----------------------|
 
 | Environment | Deployment Start Date | Deployment Start Time | Status | Comments|
 |-----|-----------------------|-----------------------|--------|-----|
 | UAT |27th May 2021| 18.00 PM IST ( 15.30 PM Doha Time) |Completed||
-|Pre-Prod |27th May 2021 | 18.30 PM IST ( 16.00 PM Doha Time ) |Completed| [ReleaseNotes_ MSFT_v0.01_27May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_27May2021-d2fc6206-d592-4906-a32b-6881692c30a5.docx)|
+|Pre-Prod |27th May 2021 | 18.30 PM IST ( 16.00 PM Doha Time ) (TLS, Logic Apps, Web, Platform APIs, Other APIs update to https |Completed| [ReleaseNotes_ MSFT_v0.01_27May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_27May2021-d2fc6206-d592-4906-a32b-6881692c30a5.docx)|
 
 | Date  : 25th May 2021 |
 |----------------------|

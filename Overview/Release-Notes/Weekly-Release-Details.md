@@ -1,6 +1,15 @@
 =====================================================
    ### **High Level - Weekly Deployment updates in UAT, Pre-Prod Environments**
 =====================================================
+
+| Date  : 31st May 2021 |
+|----------------------|
+
+| Environment | Deployment Start Date | Deployment Start Time | Status | Comments|
+|-----|-----------------------|-----------------------|--------|-----|
+| UAT |31st May 2021| 20.00 PM IST ( 17.30 PM Doha Time) |Completed||
+|Pre-Prod |1st Jun 2021 | 10.00 AM IST ( 7.30 AM Doha Time ) |Yet to Begin|[ReleaseNotes_ MSFT_v0.01_31May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_31May2021-4ed81bc5-a58b-493a-9c0a-874e871997cf.docx) ( Ckan, Bot, Dev Portal, Infra, CRM, WebApps) |
+
 | Date  : 28th May 2021 |
 |----------------------|
 

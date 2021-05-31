@@ -28,4 +28,42 @@ Workload classification is the concept of assigning a request to a workload grou
 Workload importance influences the order in which a request gets access to resources. On a busy system, a request with higher importance has first access to resources. Importance can also ensure ordered access to locks.[Full description of Workload Importance is available here.](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-isolation)
 
 ### Workload Isolation
-Workload isolation reserves resources for a workload group. Resources reserved in a workload group are held exclusively for that workload group to ensure execution. Workload groups also allow you to define the amount of resources that are assigned per request, much like resource classes do. Workload groups give you the ability to reserve or cap the amount of resources a set of requests can consume. Finally, workload groups are a mechanism to apply rules, such as query timeout, to requests.[Full description of Workload Isolation is available here.](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-importance)
+Workload isolation reserves resources for a workload group. Resources reserved in a workload group are held exclusively for that workload group to ensure execution. Workload groups also allow you to define the amount of resources that are assigned per request, much like resource classes do. Workload groups give you the ability to reserve or cap the amount of resources a set of requests can consume. Finally, workload groups are a mechanism to apply rules, such as query timeout, to requests.[Full description of Workload Isolation is available here.](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-importance).
+
+## TASMU Implementation
+### VIP user for snp-cpd-data-uat-we-01
+
+
+IF NOT EXISTS (SELECT * FROM sys.sql_logins WHERE name = 'VIPLogin')
+CREATE LOGIN VIPLogin WITH PASSWORD='P@ssw0rd1234'
+
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'VIPUser')
+CREATE USER VIPUser FOR LOGIN VIPLogin
+
+CREATE WORKLOAD CLASSIFIER [wgcVIPUser]
+WITH (WORKLOAD_GROUP = 'xlargerc'
+      ,MEMBERNAME = 'VIPUser'
+      ,IMPORTANCE = HIGH);
+
+### Priviledged user for snp-cpd-data-uat-we-01
+
+IF NOT EXISTS (SELECT * FROM sys.sql_logins WHERE name = 'PriviledgedLogin')
+CREATE LOGIN PriviledgedLogin WITH PASSWORD='P@ssw0rd1234'
+
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'PriviledgedUser')
+CREATE USER PriviledgedUser FOR LOGIN PriviledgedLogin
+
+CREATE WORKLOAD CLASSIFIER [wgcPriviledgedUser]
+WITH (WORKLOAD_GROUP = 'xlargerc',MEMBERNAME = 'PriviledgedUser',IMPORTANCE = above_normal);
+
+
+### Standard user for snp-cpd-data-uat-we-01
+
+IF NOT EXISTS (SELECT * FROM sys.sql_logins WHERE name = 'StandardLogin')
+CREATE LOGIN StandardLogin WITH PASSWORD='P@ssw0rd1234'
+
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'StandardUser')
+CREATE USER StandardUser FOR LOGIN StandardLogin
+
+CREATE WORKLOAD CLASSIFIER [wgcStandardUser]
+WITH (WORKLOAD_GROUP = 'xlargerc',MEMBERNAME = 'wgcStandardUser',IMPORTANCE = above_normal);

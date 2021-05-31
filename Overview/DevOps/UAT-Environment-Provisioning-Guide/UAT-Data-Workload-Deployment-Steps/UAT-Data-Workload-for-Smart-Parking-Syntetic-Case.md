@@ -25,7 +25,7 @@
 |App Service Plan  | plan-cpd-data-uat-we-01 |
 |Application Insight  | appi-cpd-data-uat-we-01 |
 |Azure Data Explorer Cluster  |adxcpddatauatwe02  |
-|Azure Data Factory  |adf-cpd-data-uat-we-03 (Smart Parking) |
+|Azure Data Factory  |adf-cpd-data-uat-we-02 (Smart Parking) |
 |Event Hubs Namespace   |evh-cpd-data-uat-we-01ns  |
 |Event Hubs Namespace   |evh-cpd-data-uat-we-02ns  |
 |Azure IoT Hub  |iot-cpd-data-uat-we-01  |

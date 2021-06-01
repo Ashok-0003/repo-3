@@ -567,6 +567,7 @@ Redeploy `rg-<sub>-apps-sec-<env>-we-01`
 |`func-<sub>-apps-intbpa-<env>-we-01`|Get|Get|
 |`func-<sub>-apps-pt-<env>-we-01`|Get||
 |`func-<sub>-apps-ckan-<env>-we-01`|Get||
+|`func-<sub>-apps-prflint-<env>-we-01`|Get||
 
 ## 4.12 Seeding secrets to Key Vault 
 `kv-<sub>-apps-<env>-we-01`

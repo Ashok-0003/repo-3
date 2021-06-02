@@ -1,5 +1,5 @@
 =====================================================
-   ### **High Level - Weekly Deployment updates in UAT, Pre-Prod Environments**
+   ### **High Level - Deployment updates in UAT, Pre-Prod Environments**
 =====================================================
 | Date  : 1st Jun 2021 |
 |----------------------|

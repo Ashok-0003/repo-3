@@ -23,7 +23,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status | Comments|
 |-----|-----------------------|-----------------------|--------|-----|
 | UAT |31st May 2021| 20.00 PM IST ( 17.30 PM Doha Time) |Completed||
-|Pre-Prod |1st Jun 2021 | 10.00 AM IST ( 7.30 AM Doha Time ) |Completed  (All apart from CKAN is completed.)|[ReleaseNotes_ MSFT_v0.01_31May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_31May2021-4ed81bc5-a58b-493a-9c0a-874e871997cf.docx) ( Ckan, Bot, Dev Portal, Infra, CRM, WebApps) |
+|Pre-Prod |1st Jun 2021 | 10.00 AM IST ( 7.30 AM Doha Time ) |Completed |[ReleaseNotes_ MSFT_v0.01_31May2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_31May2021-4ed81bc5-a58b-493a-9c0a-874e871997cf.docx) ( Ckan, Bot, Dev Portal, Infra, CRM, WebApps) |
 |Pre-Prod (6D Billing) |31st May 2021 | 12.00 PM IST ( 9.30 AM Doha Time ) |Completed|[Release Note_6d Billing_V 1.8_31-05-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%201.8_31-05-2021-94d1ea14-8828-4d4c-9c8c-cacaf4d54c10.docx)|
 
 | Date  : 28th May 2021 |

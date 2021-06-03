@@ -1,6 +1,14 @@
 =====================================================
    ### **High Level - Deployment updates in UAT, Pre-Prod Environments**
 =====================================================
+| Date  : 3rd Jun 2021 |
+|----------------------|
+
+| Environment | Deployment Start Date | Deployment Start Time | Status | Comments|
+|-----|-----------------------|-----------------------|--------|-----|
+| UAT |3rd Jun 2021| 20.00 PM IST ( 17.30 PM Doha Time) |Completed||
+|Pre-Prod |4th Jun 2021 | 10.30 AM IST ( 8.00 AM Doha Time ) |Yet to Begin| [ReleaseNotes_ MSFT_v0.01_03June2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_03June2021-a4491ffa-7f6e-47b0-be22-dadec36935f6.docx) ( Infra, CDN, Platform APIs, API (cmsdocumentsapi, WebApps, Bot,Mobile) |
+
 | Date  : 2nd Jun 2021 |
 |----------------------|
 

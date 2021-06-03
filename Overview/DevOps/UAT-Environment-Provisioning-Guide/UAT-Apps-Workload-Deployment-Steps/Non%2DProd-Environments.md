@@ -35,26 +35,29 @@ Tenant Id - 92603419-35d1-4eb0-8427-cac731071355
 |--|--|--|
 1|<p><p>spn-crm-common-integration-test</p>Client ID: 9364f7ba-f249-4151-b278-c5fd3c00c5a8</p><p>Client Secret : **********</p><p><p>|Test
 2|<p><p>spn-crm-profile-management-integration-test</p>Client ID: d60021f7-df14-4731-a311-83d30d2bec1b</p><p>Client Secret : **********</p><p><p>|Test
-3|<p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : **********</p><p><p>|Test
-4|<p><p>spn-crm-general-integration-dev</p>Client ID: d99b1bc8-c4b4-4165-821c-bfa088255bfa</p><p>Client Secret : **********</p><p><p>|Dev
-5|<p><p>spn-crm-profile-management-integration-dev</p>Client ID: 339cd370-6762-4b24-be2e-35ffa8d3bcc4</p><p>Client Secret : **********</p><p><p>|Dev
-6|<p><p>spn-crm-case-management-integration-dev</p>Client ID: 28832e23-19ed-48b8-aaff-4979519394df</p><p>Client Secret : **********</p><p><p>|Dev
-7|<p><p>spn-crm-common-integration-test</p>Client ID: 9364f7ba-f249-4151-b278-c5fd3c00c5a8</p><p>Client Secret : **********</p><p><p>|UAT
-8|<p><p>spn-crm-profile-management-integration-test</p>Client ID: d60021f7-df14-4731-a311-83d30d2bec1b</p><p>Client Secret : **********</p><p><p>|UAT
-9|<p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : **********</p><p><p>|UAT
-10|<p><p>spn-cmsbpa-dev</p>Client ID: 18de3da3-ecfa-4b26-b819-f6bf366f0265</p><p>Certificate</p><p><p>|Dev
-11|<p><p>spn-cmsapi-dev</p>Client ID: 8b3a1cb0-c080-4a28-ae3e-3de3de56549c</p><p>Certificate</p><p><p>|Dev
-12|<p><p>spn-cmsbpa-tst</p>Client ID: f822b95e-e7ae-4b4c-945d-a2791b96c43a</p><p>Certificate</p><p><p>|Test
-13|<p><p>spn-cmsapi-tst</p>Client ID: 570a1b9e-f0e6-43da-a8af-aa8f7f31044e</p><p>Certificate</p><p><p>|Test
-14|<p><p>spn-cmsbpa-uat</p>Client ID: 5cff9256-4cc7-4b39-92a2-e48926e22d7c</p><p>Certificate</p><p><p>|UAT
-15|<p><p>spn-cmsapi-uat</p>Client ID: 5e4456ea-6c48-414e-bf7b-904882a21f82</p><p>Certificate</p><p><p>|UAT
-16|<p><p>spn-bot-dev</p>Client ID: 2d6a26ed-4c86-4d6e-b7a6-b7cee194e5e9</p><p>Client Secret : **********</p><p><p>|Dev
-17|<p><p>spn-bot-tst</p>Client ID: 85100d91-3748-446e-b434-a2e5b842c667</p><p>Client Secret : **********</p><p><p>|Test
-18|<p><p>spn-bot-sbx</p>Client ID: 291f394b-1c27-4ddd-b64c-cfa5f65ecea7</p><p>Client Secret : **********</p><p><p>|SBX
-19|<p><p>spn-bot-tra</p>Client ID: 7c42dfb0-b532-4c89-a3cf-9a8a7578bd03</p><p>Client Secret : **********</p><p><p>|TRA
-20|<p><p>spn-bot-uat</p>Client ID: 64d794aa-a017-4fe2-a793-fa841ebed766</p><p>Client Secret : **********</p><p><p>|UAT
+3|<p><p>spn-crm-profile-daemon-integration-tst</p>Client ID: e26a6e46-8b04-4f41-a4f2-e749df465c31</p><p>Client Secret : **********</p><p><p>|Test
+4|<p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : **********</p><p><p>|Test
+5|<p><p>spn-crm-general-integration-dev</p>Client ID: d99b1bc8-c4b4-4165-821c-bfa088255bfa</p><p>Client Secret : **********</p><p><p>|Dev
+6|<p><p>spn-crm-profile-management-integration-dev</p>Client ID: 339cd370-6762-4b24-be2e-35ffa8d3bcc4</p><p>Client Secret : **********</p><p><p>|Dev
+7|<p><p>spn-crm-profile-daemon-integration-dev</p>Client ID: adc3aaa4-9992-454f-9eab-752ad2b7ea7f</p><p>Client Secret : **********</p><p><p>|Dev
+8|<p><p>spn-crm-case-management-integration-dev</p>Client ID: 28832e23-19ed-48b8-aaff-4979519394df</p><p>Client Secret : **********</p><p><p>|Dev
+9|<p><p>spn-crm-common-integration-test</p>Client ID: 9364f7ba-f249-4151-b278-c5fd3c00c5a8</p><p>Client Secret : **********</p><p><p>|UAT
+10|<p><p>spn-crm-profile-management-integration-test</p>Client ID: d60021f7-df14-4731-a311-83d30d2bec1b</p><p>Client Secret : **********</p><p><p>|UAT
+11|<p><p>spn-crm-profile-daemon-integration-tst</p>Client ID: e26a6e46-8b04-4f41-a4f2-e749df465c31</p><p>Client Secret : **********</p><p><p>|UAT
+12|<p><p>spn-crm-case-management-integration-test</p>Client ID: 37fd8453-e25f-4b3e-bd78-32b28328f51a</p><p>Client Secret : **********</p><p><p>|UAT
+13|<p><p>spn-cmsbpa-dev</p>Client ID: 18de3da3-ecfa-4b26-b819-f6bf366f0265</p><p>Certificate</p><p><p>|Dev
+14|<p><p>spn-cmsapi-dev</p>Client ID: 8b3a1cb0-c080-4a28-ae3e-3de3de56549c</p><p>Certificate</p><p><p>|Dev
+15|<p><p>spn-cmsbpa-tst</p>Client ID: f822b95e-e7ae-4b4c-945d-a2791b96c43a</p><p>Certificate</p><p><p>|Test
+16|<p><p>spn-cmsapi-tst</p>Client ID: 570a1b9e-f0e6-43da-a8af-aa8f7f31044e</p><p>Certificate</p><p><p>|Test
+17|<p><p>spn-cmsbpa-uat</p>Client ID: 5cff9256-4cc7-4b39-92a2-e48926e22d7c</p><p>Certificate</p><p><p>|UAT
+18|<p><p>spn-cmsapi-uat</p>Client ID: 5e4456ea-6c48-414e-bf7b-904882a21f82</p><p>Certificate</p><p><p>|UAT
+19|<p><p>spn-bot-dev</p>Client ID: 2d6a26ed-4c86-4d6e-b7a6-b7cee194e5e9</p><p>Client Secret : **********</p><p><p>|Dev
+20|<p><p>spn-bot-tst</p>Client ID: 85100d91-3748-446e-b434-a2e5b842c667</p><p>Client Secret : **********</p><p><p>|Test
+21|<p><p>spn-bot-sbx</p>Client ID: 291f394b-1c27-4ddd-b64c-cfa5f65ecea7</p><p>Client Secret : **********</p><p><p>|SBX
+22|<p><p>spn-bot-tra</p>Client ID: 7c42dfb0-b532-4c89-a3cf-9a8a7578bd03</p><p>Client Secret : **********</p><p><p>|TRA
+23|<p><p>spn-bot-uat</p>Client ID: 64d794aa-a017-4fe2-a793-fa841ebed766</p><p>Client Secret : **********</p><p><p>|UAT
 21|<p><p>spn-powerbiembed</p>Client ID: 07ab695f-5e5d-4e05-a5e6-645c70a8e4ff</p><p>Client Secret : **********</p><p><p>|DEV, TST, TRA, UAT
-22|<p><p>spn-armapi-reader-npd</p>Client ID: c00ce23b-b4cd-4164-9735-3c63381f9441</p><p>Client Secret : **********</p><p><p>|DEV, TST, TRA, UAT, SBX
+24|<p><p>spn-armapi-reader-npd</p>Client ID: c00ce23b-b4cd-4164-9735-3c63381f9441</p><p>Client Secret : **********</p><p><p>|DEV, TST, TRA, UAT, SBX
 
 **For more details on CMS Azure AD apps please refer** : [*CMS Azure AD apps*](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/153/CMS-Azure-AD-apps) 
 # Environment URLs

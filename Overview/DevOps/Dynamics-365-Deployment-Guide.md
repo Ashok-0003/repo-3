@@ -414,15 +414,6 @@ Unsubscribe: Link  unsubscribe : https://account.env.sqcp.qa
 
 Note: env-> Specific to environment
 
-for below highlight
-![image.png](/.attachments/image-c3aee32d-d21d-40ed-96a6-793e18557b66.png)
-![image.png](/.attachments/image-cd44aeb9-e2ac-46ee-a0a2-126417e193e3.png)
-
-Follow the above steps for updating links for below red arrowed buttons, hyper links
-For English:
-![Template Imgaes Update.png](/.attachments/Template%20Imgaes%20Update-8daeef46-f321-40b1-ae5d-9bceddfe2d1b.png)
-For Arabic:![Template_Arabic_Images.png](/.attachments/Template_Arabic_Images-51e26c51-22d5-493c-8865-6af3ae489c38.png)
-
 Need to updates for the below English and Arabic Templates both
 Closed Case Acknowledgement
 External Note added

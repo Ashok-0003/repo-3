@@ -407,7 +407,8 @@ After Deployment Make sure that The Business rules are activated in the Target e
 ####5.17.2 After deployment, English and Arabic templates has to be updated with correct environment specific links for images, hyperlinks and buttons.
 
 Header/Footer Image: Link - https://marketplace.env.sqcp.qa/en/home
-Support Button  : Link - https://mytasmu.env.sqcp.qa/en/support/contactus
+Support Button  : Link - https://marketplace.tst.sqcp.qa/en/support/contactus
+Support Button Arabic Template : Link -https://marketplace.tst.sqcp.qa/ar/support/contactus
 Terms and Condition :Link https://marketplace.env.sqcp.qa/en/about/tc
 Unsubscribe: Link  unsubscribe : https://account.env.sqcp.qa
 

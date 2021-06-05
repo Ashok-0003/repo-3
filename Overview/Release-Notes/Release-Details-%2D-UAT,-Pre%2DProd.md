@@ -7,7 +7,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status | Comments|
 |-----|-----------------------|-----------------------|--------|-----|
 | UAT |5th Jun 2021| 18.00 PM IST ( 15.30 PM Doha Time) |Completed||
-|Pre-Prod |5th Jun 2021 | 20.00 PM IST ( 17.30 PM Doha Time ) |In-Progress| [ReleaseNotes_ MSFT_v0.01_05June2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_05June2021-d9d9b931-b85d-44e1-8df2-d642678d5579.docx) (WebApps, PlatformAPI, CRM, B2C) |
+|Pre-Prod |5th Jun 2021 | 20.00 PM IST ( 17.30 PM Doha Time ) |Completed| [ReleaseNotes_ MSFT_v0.01_05June2021.docx](/.attachments/ReleaseNotes_%20MSFT_v0.01_05June2021-d9d9b931-b85d-44e1-8df2-d642678d5579.docx) (WebApps, PlatformAPI, CRM, B2C) |
 |Pre-Prod (6D Billing) |5th Jun 2021 | 18.00 PM IST ( 15.30 PM Doha Time ) |Completed|[Release Note_6d Billing_V 1.9_05-06-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%201.9_05-06-2021-fefac30d-32d1-4b72-9b5d-0a22276dc31e.docx)|
 
 | Date  : 3rd Jun 2021 |

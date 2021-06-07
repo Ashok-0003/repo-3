@@ -34,7 +34,7 @@
 	• A runbook can be configured according to the connection [service principal] -
 		• Open the runbook> click on edit - 
 			• In the script, change the connection name here -
-			 $servicePrincipalConnection=Get-AutomationConnection -Name "Give your connection name"
+			     • servicePrincipalConnection=Get-AutomationConnection -Name "Give your connection name"
 		• Save and publish the runbook.
 
 ## Steps for executing the Scripts -

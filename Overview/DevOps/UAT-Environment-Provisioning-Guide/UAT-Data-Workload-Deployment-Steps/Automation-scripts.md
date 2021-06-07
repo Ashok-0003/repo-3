@@ -1,4 +1,5 @@
 # Steps for establishing an Automation Account and executing the scripts-
+These Automation Scripts are designed to Pause/Resume the ADX clusters and Synapse SQL pools at scheduled intervals.
 
 ## Prerequisites -
 

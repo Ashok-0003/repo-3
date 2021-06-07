@@ -8,7 +8,7 @@
 	2. pfx file with the private key to be uploaded in the automation account>certificates.
 - Service Principal can have a contributor level access :
 	1. At the Resource Group level. [OR]
-	2. At Resource level which is to be managed by the Automation Account.[Recommended]
+	2. At Resource level which is to be managed by the Automation Account. [Recommended]
 	
 ## Configuring the Automation Account -
 
@@ -25,7 +25,7 @@
 	3. Import Az.Synapse module.
 	4. Import Az.Kusto module.
      
-	**Note**- Az.Accounts module has to be imported first and it's status should be available before importing the other modules.
+	**Note**- Az.Accounts module must be imported first and it's status should be available prior to importing the other modules.
 	
 ## Creating the runbooks -
 
@@ -34,7 +34,7 @@
 - A runbook can be configured according to the connection [service principal] -
 	 Open the runbook> click on edit -
 	1. In the script, change the connection name here -
-	     servicePrincipalConnection=Get-AutomationConnection -Name "Give your connection name"
+	     servicePrincipalConnection=Get-AutomationConnection -Name "_Give your connection name_"
 - Save and publish the runbook.
 
 ## Steps for executing the Scripts -
@@ -45,5 +45,5 @@
 ## Creating a Schedule -
 
 - Automation Account> Shared Resources> Schedules -
-     1. Click on Add Schedule and configure the schedule accordingly [ Start time, Time zone, Recurring].
+      Click on Add Schedule and configure the schedule accordingly [ Start time, Time zone, Recurring].
 - A schedule can now be linked to a runbook which is to be executed in a timely order without manually running it.

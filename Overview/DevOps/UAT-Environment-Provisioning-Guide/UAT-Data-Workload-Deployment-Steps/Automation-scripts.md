@@ -1,4 +1,4 @@
-# Steps for establishing an Automation Account-
+# Steps for establishing an Automation Account and executing the scripts-
 
 ## Prerequisites -
 

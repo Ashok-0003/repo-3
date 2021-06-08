@@ -19,6 +19,6 @@
 1. More about different access levels - [refer](https://docs.microsoft.com/en-us/azure/devops/organizations/security/access-levels?view=azure-devops)
 
 # Subscription Access
-1. Add the member account to respective Security Group (User Access Administrator Permission is required for this in the AD)
+1. Add the member account to respective Security Group (User Administrator Permission is required for this in the AD)
 1. Refer [Microsoft RBAC](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/79/Microsoft-RBAC) wiki for details on different groups
 1. Provide access to higher environments or specific resource group for limited time only and avoid it if it can be.

@@ -22,7 +22,7 @@
     >- [ServicesBuildEndPoint](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=faa0de55-176a-4f89-b775-5e7d1528be93)
     >- [ServiceSonar-CORP](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=ec940214-bf76-4afd-a2ea-16e9bb43b28a)
     >- [vsogd-bdd-nuget](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=abb77288-1df8-4945-8579-1eb5e2c09fa1)
-    >- [Telerik](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=95433af2-3073-4654-bcc7-40d9d720e54a) - Malomatia should plan on their own telerik license as it is being used in Mobile Pipelines
+    >- [Telerik](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=95433af2-3073-4654-bcc7-40d9d720e54a) - Malomatia should plan on their own telerik license as it is being used in Mobile Pipelines.
 1. Remove Sonar or Quality Control (QC-) pipelines.
 1. Remove Microsoft Users from Azure DevOps and Azure Active Directory.
 1. Clean up the temporary cloud resources being used by Microsoft team members.

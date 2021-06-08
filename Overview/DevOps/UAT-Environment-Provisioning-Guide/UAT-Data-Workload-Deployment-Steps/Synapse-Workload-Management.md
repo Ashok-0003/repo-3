@@ -67,3 +67,12 @@ CREATE USER StandardUser FOR LOGIN StandardLogin
 
 CREATE WORKLOAD CLASSIFIER [wgcStandardUser]
 WITH (WORKLOAD_GROUP = 'xlargerc',MEMBERNAME = 'wgcStandardUser',IMPORTANCE = above_normal);
+
+
+## Workloads validations
+### Validation with Azure Portal
+![image.png](/.attachments/image-95d29eac-e06b-47e4-a91c-deab49676606.png)
+
+### Validation with SQL Query
+
+_SELECT * FROM sys.workload_management_workload_groups_ 

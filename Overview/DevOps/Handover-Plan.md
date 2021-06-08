@@ -11,4 +11,10 @@
     >- [bldvmdevwe04](https://portal.azure.com/#@tasmusqcpprod.onmicrosoft.com/resource/subscriptions/d8c326fb-f8b4-4854-a2af-dd55e86f6117/resourceGroups/rg-cph-pltf-bldvms-prd-we-01/providers/Microsoft.Compute/virtualMachines/bldvmdevwe04)
     >- [bldvmdevwe05](https://portal.azure.com/#@tasmusqcpprod.onmicrosoft.com/resource/subscriptions/d8c326fb-f8b4-4854-a2af-dd55e86f6117/resourceGroups/rg-cph-pltf-bldvms-prd-we-01/providers/Microsoft.Compute/virtualMachines/bldvmdevwe05)
 
+1. Uninstall the Microsoft specific ADO extensions:
+    >- [Microsoft Security Code Analysis (Unified Support)](https://dev.azure.com/TASMUCP/_settings/extensions?tab=installed&extension=ms-codeanalysis.vss-microsoft-security-code-analysis-devops)
+    >- [ServicesDevOps](https://dev.azure.com/TASMUCP/_settings/extensions?tab=installed&extension=EnterpriseServicesDevOpsTeam.BuildTool-Tasks)
+    >- [ServicesDevOpsTab](https://dev.azure.com/TASMUCP/_settings/extensions?tab=installed&extension=EnterpriseServicesDevOpsTeam.ServicesCode-BuildReportTab)
+    >- [SonarQube](https://dev.azure.com/TASMUCP/_settings/extensions?tab=installed&extension=SonarSource.sonarqube)
+
 1. 

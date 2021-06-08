@@ -1,6 +1,6 @@
-1. Inform Malomatia to provision their own build VMs and plan for migration
-1. Update the agent pools and pipelines to use new ones
-1. Remove Build Virtual Machines and their related resources - data and OS disks, etc used by Microsoft
+1. Inform Malomatia to provision their own build VMs and plan for migration.
+1. Update the agent pools and pipelines to use new ones.
+1. Remove Build Virtual Machines and their related resources - data and OS disks, etc used by Microsoft.
     >Central Platform Development
     >-  [rg-cpd-glob-bvm-we-01](https://portal.azure.com/#@tasmusqcp.onmicrosoft.com/resource/subscriptions/d0694def-b27e-4bb7-900d-437fbeb802da/resourceGroups/rg-cpd-glob-bvm-we-01/overview)
     >- All other virtual machines in apps resource groups
@@ -26,5 +26,5 @@
 1. Remove Sonar or Quality Control (QC-) pipelines.
 1. Remove Microsoft Users from Azure DevOps and Azure Active Directory.
 1. Clean up the temporary cloud resources being used by Microsoft team members.
-1. Transfer the [organisation](https://dev.azure.com/TASMUCP/_settings/organizationOverview) owner rights to Malomatia POC
+1. Transfer the [organisation](https://dev.azure.com/TASMUCP/_settings/organizationOverview) owner rights to Malomatia POC.
 1. Delete this wiki as the handover activities complete.

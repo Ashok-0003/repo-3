@@ -29,7 +29,11 @@ https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Centr
 1. Deploy Compute Resources
 https://docs.microsoft.com/en-us/learn/paths/az-104-manage-compute-resources/
 
-1. Build and Release
+1. Build Applications with Azure DevOps
+https://docs.microsoft.com/en-us/learn/paths/build-applications-with-azure-devops/?source=learn
+
+1. Deploy Application with Azure DevOps
+https://docs.microsoft.com/en-us/learn/paths/deploy-applications-with-azure-devops/
 
 1. AKS
 https://azure.microsoft.com/mediahandler/files/resourcefiles/kubernetes-learning-path/Kubernetes%20Learning%20Path%20version%201.0.pdf

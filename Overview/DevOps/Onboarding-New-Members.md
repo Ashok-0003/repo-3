@@ -2,7 +2,7 @@
 
 # Fill RBAC Excel
 1. Fill the resource information in [TASMU RBAC](https://microsofteur.sharepoint.com/:x:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/ESoPzSk_bHVHktzXLI8XSZgB7ER7ZBT73CbyiIlkSKwyEA?e=dplOpa)
-1. Get the member account created in Azure AD by Fahim (fmathany@malomatia.com)
+1. Get the member account created in Azure AD by Fahim Mohammed Mathany (fmathany@malomatia.com) or any Malomatia POC for this activity.
 # Add the account to ADO team
 - [TASMU MS Apps Workstream](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/teams?subjectDescriptor=vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjY3NTY2NC0yMjk4MzkzNjc4LTMxMzI0MDY0OTAtNDIzMzY4NjAxMC0xLTE1MDYzNjEzOC0zMTQ0ODEyODc2LTI2MDA2NjM0NzItMTI4MTY3MTQ1OQ)
 - [TASMU MS Biz Apps Workstream](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/teams?subjectDescriptor=vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjY3NTY2NC0yMjk4MzkzNjc4LTMxMzI0MDY0OTAtNDIzMzY4NjAxMC0xLTEwNjE1MzUxNjgtNzQyMjY5NzcxLTI3MDIyMTg0NTktMzQwNjk0MjA4Mg)

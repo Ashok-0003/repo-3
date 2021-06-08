@@ -25,3 +25,5 @@
     >- [Telerik](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=95433af2-3073-4654-bcc7-40d9d720e54a)
 6. Remove Microsoft Users from Azure DevOps and Azure Active Directory.
 7. Clean up the temporary cloud resources being used by Microsoft team members.
+8. Transfer the organisation owner rights to Malomatia POC
+9. Delete this wiki as the handover activities complete.

@@ -1,4 +1,4 @@
-1. Inform MSI to provision their own build VMs
+1. Inform Malomatia to provision their own build VMs and plan for migration
 1. Update the agent pools and pipelines to use new ones
 1. Remove Build Virtual Machines and their related resources - data and OS disks, etc used by Microsoft
     >Central Platform Development

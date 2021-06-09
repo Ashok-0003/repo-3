@@ -98,7 +98,7 @@ kubectl get events -n <namespace>
 ```
 8. For more debugging, follow this [link](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
-# Deploy helm charts from local:
+# Deploy helm charts from local
 Replace the following values in the command:
 1. <buildId> - last successful run buildId can be used
 2. <chartPath> - give the helm chart path from the machine the command is being executed

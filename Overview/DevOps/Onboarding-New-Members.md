@@ -25,4 +25,4 @@
 
 1. Refer [Microsoft RBAC](/Overview/DevOps/Microsoft-RBAC) wiki for details on different groups
 1. PIM should be used all the time for the provided access. Permissions should be granted on granular level. Avoid providing access to whole subscription unless absolutely required. 
-1. Coordinate with Fahim or any Malomatia POC for revoking the access or removing the account when it is not required. Please refer to Account Deletion Process for more details.
+1. Coordinate with Fahim or any Malomatia POC for revoking the access or removing the account when it is not required. Please refer to [Account Deletion Process](/Overview/DevOps/Removing-Users) for more details.

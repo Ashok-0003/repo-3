@@ -1,6 +1,8 @@
+[[_TOC_]]
+
 ## **Developer onboarding!!** - Apps
 
-Welcome to team TASMU Central platform. 
+Welcome to team TASMU Central Platform. 
 
 Ensure you have completed the below steps before you start development. 
 
@@ -73,3 +75,6 @@ Ensure you have completed the below steps before you start development.
 - Go through following Functional/Architecture design documents - 
   - [Functional specification](https://microsofteur.sharepoint.com/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/_layouts/15/Doc.aspx?sourcedoc=%7BA160C455-41DD-4028-B4A9-7D8710E7D4D1%7D&file=TASMU-Smart-Qatar-Central-Platform-functional-specification.docx&action=default&mobileredirect=true&CT=1589695281522&OR=ItemsView) 
   - [Requirement Document](https://microsofteur.sharepoint.com/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/_layouts/15/Doc.aspx?sourcedoc=%7BC8E05259-B8B8-44E4-9FE6-048B5242AE50%7D&file=TASMU-Smart-Qatar-Central-Platform-requirements.docx&action=default&mobileredirect=true&CT=1589695422264&OR=ItemsView)
+
+## DevOps RamUp Guide
+Follow the DevOps -> [Rampup Guide](/Overview/DevOps/Ramp-Up-Guide)

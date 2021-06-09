@@ -1,3 +1,4 @@
+[[_TOC_]]
 # URLs per environment:
 
 | Environment| Developer Portal | APIs |Marketplace  |Admin Portal  |My TASMU| Account|
@@ -11,9 +12,9 @@ For APIs, change the API path accordingly as per ingress path configured
 
 
 # Debugging Guide
-1. Make sure you have the certificate installed and using the correct url. If your API is still not accessible, try below steps:
+1. Make sure you are using the correct url. If your API is still not accessible, try below steps:
 2. The API swagger.json was updated and the API was deployed to the target environment APIM using APIM pipelines.
-3. Go to application gateway acting as an ingress controller (agw-cpd-apps-<env>-we-01) to run a health probe on the API.
+3. Go to application gateway acting as an ingress controller (`agw-<sub>-apps-aks-<env>-we-01`) to run a health probe on the API.
 - Settings -> Health probes -> Select the matching probe -> Test
 - If the communication is not successful, there is some problem with AKS cluster (check steps to debug the cluster)
 - If the backend is not healthy, check whether it is APIM or AGIC, test the communication from VM having bastion access (restricted access) using the URLs specific to APIM or AGIC
@@ -25,7 +26,7 @@ For APIs, change the API path accordingly as per ingress path configured
 
 ## AKS Cluster
 ### Using portal UI
-1. Go to the environment specific cluster - aks-cpd-apps-<env>-we-01
+1. Go to the environment specific cluster - `aks-<sub>-apps-<env>-we-01`
 Monitoring -> Insights -> Containers
 - Select the relevant container
 - Check if the deployed image is latest or matched with the build Id

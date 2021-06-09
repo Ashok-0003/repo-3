@@ -1,4 +1,7 @@
 [[_TOC_]]
+# Architecture Diagram
+![image.png](/.attachments/image-075af69a-e2d7-48e8-80b1-827a171746f5.png)
+
 # URLs per environment:
 
 | Environment| Developer Portal | APIs |Marketplace  |Admin Portal  |My TASMU| Account|
@@ -8,16 +11,32 @@
 |tst|https://developer.tst.sqcp.qa/|https://api.tst.sqcp.qa/config/api/feature|https://marketplace.tst.sqcp.qa/|https://cpadmin.tst.sqcp.qa/|https://mytasmu.tst.sqcp.qa/|https://account.tst.sqcp.qa/|
 |tra|https://developer.trn.sqcp.qa/|https://api.trn.sqcp.qa/config/api/feature|https://marketplace.trn.sqcp.qa/|https://cpadmin.trn.sqcp.qa/|https://mytasmu.trn.sqcp.qa/|https://account.trn.sqcp.qa/|
 |uat|https://developer.uat.sqcp.qa/|https://api.uat.sqcp.qa/config/api/feature|https://marketplace.uat.sqcp.qa/|https://cpadmin.uat.sqcp.qa/|https://mytasmu.uat.sqcp.qa/|https://account.uat.sqcp.qa/|
-For APIs, change the API path accordingly as per ingress path configured
+For APIs, change the URL as per ingress path configured
 
 
 # Debugging Guide
-1. Make sure you are using the correct url. If your API is still not accessible, try below steps:
-2. The API swagger.json was updated and the API was deployed to the target environment APIM using APIM pipelines.
-3. Go to application gateway acting as an ingress controller (`agw-<sub>-apps-aks-<env>-we-01`) to run a health probe on the API.
-- Settings -> Health probes -> Select the matching probe -> Test
-- If the communication is not successful, there is some problem with AKS cluster (check steps to debug the cluster)
-- If the backend is not healthy, check whether it is APIM or AGIC, test the communication from VM having bastion access (restricted access) using the URLs specific to APIM or AGIC
+1. Validate the URL. If API is still not accessible, try below steps:
+1. The API swagger.json was updated and the API was deployed to the target environment APIM using APIM pipelines.
+1. Release was made to AKS cluster using respective pipeline.
+
+## Health Probe
+1. Identify the flow path from above architecture diagram.
+    > **API Traffic**
+    >- `agw-<sub>-apps-api-<env>-we-01` -> Monitoring -> Backend Health
+    >- All the backend pools should be healthy. If not, check the issue with APIM resource and API health in `agw-<sub>-apps-aks-<env>-we-01`
+
+    > **Notification Traffic**
+    >- `agw-<sub>-apps-ntf-<env>-we-01` -> Monitoring -> Backend Health
+    >- All the backend pools should be healthy. If not, check the issue with APIM resource and API health in `agw-<sub>-apps-aks-<env>-we-01`
+
+    > **Web Application Traffic**
+    >- `agw-<sub>-apps-web-<env>-we-01` -> Monitoring -> Backend Health
+    >- All the backend pools should be healthy. If not, check the issue with `agw-<sub>-apps-aks-<env>-we-01`
+
+    > **Ingress Controller Health**
+    >- `agw-<sub>-apps-aks-<env>-we-01` -> Monitoring -> Backend Health
+    >- The API or web app in consideration should be healthy, if not issue can be with the AKS cluster
+
 
 ### AKS Namespaces:
 1. apiapps - All Platform APIs
@@ -29,7 +48,7 @@ For APIs, change the API path accordingly as per ingress path configured
 1. Go to the environment specific cluster - `aks-<sub>-apps-<env>-we-01`
 Monitoring -> Insights -> Containers
 - Select the relevant container
-- Check if the deployed image is latest or matched with the build Id
+- Check if the deployed image is latest or matching with the build Id
 - Select view in analytics and view kubernetes event logs
 
 2. For public clusters, kubernetes resources pane gives good view on workloads
@@ -85,22 +104,23 @@ Replace the following values in the command:
 2. <chartPath> - give the helm chart path from the machine the command is being executed
 3. <releaseName> - specify the release name which is being upgraded
 ```
-helm upgrade --namespace apiapps --install --wait --create-namespace --set image.tag=<buildId>,image.repository=acrcpdglobnpdwe01.azurecr.io/apiapps/<releaseName>,podIdentity=mi-cpd-apps-aks-sbx-we-01,environment.ConnectionStrings__AppConfig=https://acst-cpd-apps-sbx-we-01.azconfig.io <releasename> <chartPath>
+helm upgrade --namespace apiapps --install --wait --create-namespace --set image.tag=<buildId>,image.repository=acrcpdglobnpdwe01.azurecr.io/apiapps/<releaseName>,podIdentity=mi-cpd-apps-aksnode-sbx-we-01,environment.ConnectionStrings__AppConfig=https://acst-cpd-apps-str-sbx-we-01.azconfig.io <releasename> <chartPath>
 ```
 
 # Access URLs updated and certificates installed (for sbx env only)
 
 If you want to test or browse the APIs or applications on public network using https. Please follow below steps:
-1.	Make the host file entries as below for sbx environment only:
+1. Make the host file entries as below for sbx environment only:
 20.54.136.87 sbx-accounts.tasmu.gov.qa
 20.54.136.87 sbx-marketplace.tasmu.gov.qa
 20.54.136.87 sbx-cpadmin.tasmu.gov.qa
 20.54.136.87 sbx-mytasmu.tasmu.gov.qa
 
-2.	Download the certificate - wildcard.tasmu.gov.qa.pfx from [Certs](https://microsofteur.sharepoint.com/:f:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/EmAB3GrQ2RBLnNB0TS4C6PgBO5_p8E-iFFZPQGv8FYT9lg?e=PkJ84E)
-3.	Install the cert using below steps:
-a)	Choose store location as local 
-b)	Give the path to downloaded pfx
-c)	Give password
-d)	Specify store as Trusted Root Certification Authority 
-e)	Finish
+1. Download the certificate - wildcard.tasmu.gov.qa.pfx from [Certs](https://microsofteur.sharepoint.com/:f:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/EmAB3GrQ2RBLnNB0TS4C6PgBO5_p8E-iFFZPQGv8FYT9lg?e=PkJ84E)
+
+1. Install the cert using below steps:
+    a) Choose store location as local 
+    b) Give the path to downloaded pfx
+    c) Give password
+    d) Specify store as Trusted Root Certification Authority 
+    e) Finish

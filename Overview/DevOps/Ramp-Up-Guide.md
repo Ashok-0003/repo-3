@@ -20,8 +20,12 @@
 >>- ARM Tools (Microsoft)
 
 2. Azure CLI [(Latest Stable Version)](https://aka.ms/installazurecliwindows)
+
 # Branching Strategy
-https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/27/Branching-Strategy-and-Policies
+[Branching Strategy and Policies](/Overview/Process/Branching-Strategy-and-Policies)
+
+# Repo Structure
+[Repository Structure](/Overview/Developer-Resources/Repo-Structure)
 
 # Learning Path
 1. [Infra repository understanding](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?anchor=introduction) - **MUST**

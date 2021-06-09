@@ -1,5 +1,5 @@
-1. Onboarding Members
-1. Regularly review user access 
+1. [Onboarding Members](/Overview/DevOps/Onboarding-New-Members)
+1. [Regularly review user access](/Overview/DevOps/Removing-Users) 
 1. Regularly review manual resources
 1. Add schedule in calendar to remove users and manual resources.
 1. Sonar pipeline failure or report review

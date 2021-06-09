@@ -14,11 +14,15 @@
 - [TASMU MS SQA TQA](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/teams?subjectDescriptor=vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjY3NTY2NC0yMjk4MzkzNjc4LTMxMzI0MDY0OTAtNDIzMzY4NjAxMC0xLTQxMTYxODAxOTItNDY2ODcxNjMxLTI4MjQ3NDQzMTktMTA3Nzg1ODg2MQ)
 
 # Update User Access (if required):
-1. Search for the [user in organisation](https://dev.azure.com/TASMUCP/_settings/users)
-1. If user, needs access to advanced features like repositories update the access to Basic.
+1. Add a new record in [RBAC Sheet](https://microsofteur.sharepoint.com/:x:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/ESoPzSk_bHVHktzXLI8XSZgB7ER7ZBT73CbyiIlkSKwyEA?e=dplOpa)
+1. For Azure resources RBAC/PIM, send an email to Fahim Mohammed Mathany (fmathany@malomatia.com) or any Malomatia POC for this activity to change the permission as per the RBAC sheet.
+1. For DevOps, If user needs access to advanced features in DevOps like repositories update the access to Basic.
 1. More about different access levels - [refer](https://docs.microsoft.com/en-us/azure/devops/organizations/security/access-levels?view=azure-devops)
 
 # Subscription Access
-1. Add the member account to respective Security Group (User Administrator Permission is required for this in the AD)
+1. Add a new record in [RBAC Sheet](https://microsofteur.sharepoint.com/:x:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/ESoPzSk_bHVHktzXLI8XSZgB7ER7ZBT73CbyiIlkSKwyEA?e=dplOpa)
+1. For Azure resources RBAC/PIM, send an email to Fahim Mohammed Mathany (fmathany@malomatia.com) or any Malomatia POC for this activity to change the permission as per the RBAC sheet.
+
 1. Refer [Microsoft RBAC](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/79/Microsoft-RBAC) wiki for details on different groups
-1. Provide access to higher environments or specific resource group for limited time only and avoid it if it can be.
+1. PIM should be used all the time for the provided access. Permissions should be granted on granular level. Avoid providing access to whole subscription unless absolutely required. 
+1. Coordinate with Fahim or any Malomatia POC for revoking the access or removing the account when it is not required. Please refer to Account Deletion Process for more details.

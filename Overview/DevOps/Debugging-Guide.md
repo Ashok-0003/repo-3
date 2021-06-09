@@ -38,7 +38,7 @@ For APIs, change the URL as per ingress path configured
     >- The API or web app in consideration should be healthy, if not issue can be with the AKS cluster
 
 
-### AKS Namespaces:
+## AKS Namespaces
 1. apiapps - All Platform APIs
 2. webapps - marketplace, adminportal, other web apps
 3. jobs - function apps

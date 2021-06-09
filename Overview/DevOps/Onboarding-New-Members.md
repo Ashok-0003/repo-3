@@ -23,6 +23,6 @@
 1. Add a new record in [RBAC Sheet](https://microsofteur.sharepoint.com/:x:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/ESoPzSk_bHVHktzXLI8XSZgB7ER7ZBT73CbyiIlkSKwyEA?e=dplOpa)
 1. For Azure resources RBAC/PIM, send an email to Fahim Mohammed Mathany (fmathany@malomatia.com) or any Malomatia POC for this activity to change the permission as per the RBAC sheet.
 
-1. Refer [Microsoft RBAC](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/79/Microsoft-RBAC) wiki for details on different groups
+1. Refer [Microsoft RBAC](/Overview/DevOps/Microsoft-RBAC) wiki for details on different groups
 1. PIM should be used all the time for the provided access. Permissions should be granted on granular level. Avoid providing access to whole subscription unless absolutely required. 
 1. Coordinate with Fahim or any Malomatia POC for revoking the access or removing the account when it is not required. Please refer to Account Deletion Process for more details.

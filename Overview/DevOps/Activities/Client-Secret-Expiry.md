@@ -7,7 +7,7 @@
 |spn-apps-aks-uat||3/27/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-apps-aks-tra||3/26/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-apps-aks-tst||3/27/2023|ARM template and pipeline secret for AKS Service Principal|
-|spn-apps-aks-dev||3/27/2023|ARM template and pipeline secret for AKS Service Principal|
+|spn-apps-aks-dev|`cb37a940-37f2-483f-abfd-8492eeaebc96`|3/27/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-bot-sbx|`291f394b-1c27-4ddd-b64c-cfa5f65ecea7`|8/31/2021| BotAppSecret in Pipelines and ARM templates|
 |spn-bot-dev|`2d6a26ed-4c86-4d6e-b7a6-b7cee194e5e9`|8/31/2021| BotAppSecret Pipelines and ARM templates|
 |spn-bot-tst|`85100d91-3748-446e-b434-a2e5b842c667`|8/31/2021| BotAppSecret Pipelines and ARM templates|

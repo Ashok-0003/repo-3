@@ -106,8 +106,62 @@ Replace the following values in the command:
 ```
 helm upgrade --namespace apiapps --install --wait --create-namespace --set image.tag=<buildId>,image.repository=acrcpdglobnpdwe01.azurecr.io/apiapps/<releaseName>,podIdentity=mi-cpd-apps-aksnode-sbx-we-01,environment.ConnectionStrings__AppConfig=https://acst-cpd-apps-str-sbx-we-01.azconfig.io <releasename> <chartPath>
 ```
+# Dev Ops Troubleshooting
+1. Connect to the cluster
+    ```
+    az aks get-credentials -g <Resource Group Name> -n <AKS Cluster Name>
+    ```
+1. If already connected to a cluster, confirm the name
+    ```
+    kubectl config current-context
+    ```
+1. Check if all the APIs and apps are running
+    ```
+    kubectl get pods -n apiapps
+    ```
+    ```
+    kubectl get pods -n webapps
+    ```
+1. If any failure, check the logs for a specific API
+    ```
+    kubectl logs pod/<podname> -n apiapps
+    ```
+1. Navigating the API from within virtual network
+    ```
+    kubectl describe pod/<podname> -n apiapps
+    ```
+    Copy the cluster IP and navigate to `http://<clusterIP>/index.html`
 
-# Access URLs updated and certificates installed (for sbx env only)
+1. Verify the minimum node count for each of the pool with ARM parameters
+1. Monitor Kube System pods
+    ```
+    kubectl get pods -n kube-system
+    ```
+1. All the pods should be in ready state
+1. Check the logs of nmi and mic pods in kube system
+    ```
+    kubectl logs pod/<aad-pod-identity-mic-podname> -n kube-system > micoutput.txt
+    kubectl logs pod/<aad-pod-identity-nmi-podname> -n kube-system > nmioutput.txt
+    ```
+
+1. Check the above logs from bottom and see if there is any error
+1. Check the logs of ingress pods
+    ```
+    kubectl get pods -n ingress
+    ```
+1. All the pods should be in ready state
+
+    ```
+    kubectl logs pod/<ingress-azure-podname> -n ingress > ingressoutput.txt
+    ```
+1. Check the above file for any errors
+1. Check the cluster for any health or network issues.
+1. All the role assignments are as required (compare with working environment)
+1. NSG rules are correct and not blocking some type of request
+1. As a last step, log the support request with Azure Team with all the details attached.
+
+# Appendix
+## Access URLs updated and certificates installed (for sbx env only)
 
 If you want to test or browse the APIs or applications on public network using https. Please follow below steps:
 1. Make the host file entries as below for sbx environment only:

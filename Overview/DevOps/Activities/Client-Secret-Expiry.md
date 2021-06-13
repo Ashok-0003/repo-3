@@ -19,5 +19,6 @@
 |spn-data-dev|8/19/2021|Used by Data team and resources|
 |spn-powerbiembed|12/31/2299|Used by Data team|
 |spn-purview-dev|1/17/2023|Used by Data team `purv-cpd-data-dev-we-01`|
+|spn-CrmProfileAndOrganisationApis-dev| 7/5/2022 |Crm Profile And Organisation Apis - Dev|
 
 <Add more to the list from AAD>

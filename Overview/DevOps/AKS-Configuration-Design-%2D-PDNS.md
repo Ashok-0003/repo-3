@@ -24,7 +24,7 @@
 
 # Notes
 1. The above changes are done for non production
-1. Ameen Abdullah is evaluating cross tenant role assignment for SPNs to enable non production deployment.
+1. Ameen Abdullah is evaluating cross tenant role assignment for SPNs to enable non production deployment without workaround
 1. Workaround for non prod - 
     >- Create a dummy PDNS in non prod tenant
     >- Link the PDNS to non prod env vnet only

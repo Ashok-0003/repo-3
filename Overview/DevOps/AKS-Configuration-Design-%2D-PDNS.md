@@ -1,3 +1,5 @@
+[[_TOC_]]
+
 # For development tenant environments
 1. Create a private DNS Zone – privatelink.westeurope.azmk8s.io
 1. Add Vnet linking to hub network:

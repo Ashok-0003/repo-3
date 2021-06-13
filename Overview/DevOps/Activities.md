@@ -11,4 +11,4 @@
 1. Keeping the documentations up to date
 1. Identifying and fixing any environment issues
 1. Clean up of disk space in build VMs (eg: webappspool - nuget directory)
-1. Review app registration client secrets in Azure AD and rotate the expiring ones.
+1. [Review app registration client secrets in Azure AD and rotate the expiring ones.](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_wiki/wikis/TASMU-Central-Platform.wiki/596/Client-Secret-Expiry)

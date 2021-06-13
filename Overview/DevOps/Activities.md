@@ -6,7 +6,7 @@
 1. Sonar pipeline failure or report review
 1. Deployment to UAT environment
 1. Tagging the pipelines
-1. Preparing Release Notes
+1. Preparing [Release Notes](https://microsofteur.sharepoint.com/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/Shared%20Documents/Forms/AllItems.aspx?viewid=09ce8502%2D71ab%2D4a48%2D8c57%2D489a62778e72&id=%2Fteams%2FTASMUNationalPlatform%2DDeliveryStream%2DMicrosoftOnly%2FShared%20Documents%2FMicrosoft%20Only%2F01%20%2D%20Program%20Governance%2F05%20%2D%20Quality%20Management%2FSIT) - MSFT Only link
 1. Pull Request Reviews
 1. User Access Management
 1. Keeping the documentations up to date

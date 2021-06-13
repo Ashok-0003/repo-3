@@ -123,7 +123,7 @@ Refer the document uploaded on [Ooredoo Sharepoint](https://ooredooonline.sharep
 
 1. The DNS Zones are deployed in CPH subscription and linked to CPH VNet. Deploy or reuse from the same directly for prd environments
 1. For development subscription environments, dummy private DNS zones created in rg-cpd-pltf-dev-net and linked to non prod env Vnets.
-1. After deployment of private end point in CPD, move the A records from CPD to CPH private DNS Zone.
+1. After deployment of private end point in CPD, copy the A records from CPD to CPH private DNS Zone manually.
 
 
 ## 3.6 Platform Security Resource Group

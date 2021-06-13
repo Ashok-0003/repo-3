@@ -32,7 +32,7 @@
     >- Monitor the A records of dummy PDNS
     >- Move the A records to CPH AKS PDNS *asap*
     >- Rerun the pipeline in case it fails due to delay in above step.
-1. Steps are documented in [archives](/Overview/DevOps/UAT-Environment-Provisioning-Guide/UAT-Apps-Workload-Deployment-Steps) which should be moved to main wiki when the changes are ready for prd. Discuss with Alkim, Marko and Ameen and do a detail evaluation and testing on non prod.
+1. Steps are documented in [archives](/Overview/Archives/Apps-Deployment-Guide) which should be moved to main wiki when the changes are ready for prd. Discuss with Alkim, Marko and Ameen and do a detail evaluation and testing on non prod.
 
 
 

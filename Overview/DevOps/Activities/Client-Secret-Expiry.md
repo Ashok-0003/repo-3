@@ -3,7 +3,7 @@
 |--|--|--|--|
 | sqcp-ado-spn |`1e4c6f30-e9eb-40bf-9173-263983cd73ab` |6/13/2022 | Service Connection [sqcp-ado-spn-dev](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=a4b73e7c-6712-4ae7-a8cd-e3ff87bbdbac)|
 | sqcp-ado-spn | `1e4c6f30-e9eb-40bf-9173-263983cd73ab`]|12/2/2022 | CD-BotLuisQnAInitialDeploy|
-| spn-armapi-reader-npd||1/25/2023||
+| spn-armapi-reader-npd|`c00ce23b-b4cd-4164-9735-3c63381f9441`|1/25/2023| ARM API Reader|
 |spn-apps-aks-uat||3/27/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-apps-aks-tra||3/26/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-apps-aks-tst||3/27/2023|ARM template and pipeline secret for AKS Service Principal|
@@ -18,7 +18,7 @@
 |spn-b2c-npd|`fbb56f9c-41e4-46ca-9d4d-b23c85840dff`|12/31/2299|non prod B2C integration|
 |spn-data-dev|`7367fae7-ba78-49c7-aa75-6269f7714414`|8/19/2021|Used by Data team and resources|
 |spn-powerbiembed|`07ab695f-5e5d-4e05-a5e6-645c70a8e4ff`|12/31/2299|Used by Data team|
-|spn-purview-dev||1/17/2023|Used by Data team `purv-cpd-data-dev-we-01`|
+|spn-purview-dev|`9ac3fe30-5ed6-4a5e-b6fa-7abcbfe3f7cb`|1/17/2023|Used by Data team `purv-cpd-data-dev-we-01`|
 |spn-CrmProfileAndOrganisationApis-dev|`990295a2-8366-4beb-8e05-736c68c340d4`|7/5/2022 |Crm Profile And Organisation Apis - Dev|
 
 <Add more to the list from AAD>

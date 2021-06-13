@@ -25,7 +25,7 @@ https://dev.azure.com/TASMUCP/_usersSettings/tokens
 
 |Connection Name| Expiring On | Permission | User |
 |--|--|--|--|
-|[ServicesBuildEndPoint](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=faa0de55-176a-4f89-b775-5e7d1528be93)| |Full access||
+|[ServicesBuildEndPoint](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=faa0de55-176a-4f89-b775-5e7d1528be93)| |Full Access||
 
 # PR Decorator in Sonar
 |Sonar Template| Expiring On | Permission | User |

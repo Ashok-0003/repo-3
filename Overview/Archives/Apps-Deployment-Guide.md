@@ -583,13 +583,6 @@ Add application configurations for `<env>`.
 Placeholders already present for all env
 Add stage for `<env>` to the app configuration seeding pipeline - [CD-AppConfigurations-Master-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=406) (Uses powershell commands to import)
 
-## 4.14 Link AKS Cluster DNS Zone to CPH Subscription
-1. A user account being used should have access to both the subscriptions 
-1. Go to AKS node resource group (`rg-<sub>-apps-aksnode-<env>-we-01`)
-1. Open the private DNS Zone
-1. Go to virtual network links and add link as below
-![image.png](/.attachments/image-ae0af3f0-3406-4327-bf7f-2d29bfa8c5c4.png)
-
 ## 4.15 Role Assignments 
 Update role assignment for  following resources
 

@@ -1,8 +1,8 @@
 
 |Registration Name| ClientId | Expiry | Usage |
 |--|--|--|--|
-| sqcp-ado-spn | |6/13/2022 | Service Connection [sqcp-ado-spn-dev](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=a4b73e7c-6712-4ae7-a8cd-e3ff87bbdbac)|
-| sqcp-ado-spn | |12/2/2022 | CD-BotLuisQnAInitialDeploy|
+| sqcp-ado-spn |`1e4c6f30-e9eb-40bf-9173-263983cd73ab` |6/13/2022 | Service Connection [sqcp-ado-spn-dev](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=a4b73e7c-6712-4ae7-a8cd-e3ff87bbdbac)|
+| sqcp-ado-spn | `1e4c6f30-e9eb-40bf-9173-263983cd73ab`]|12/2/2022 | CD-BotLuisQnAInitialDeploy|
 | spn-armapi-reader-npd||1/25/2023||
 |spn-apps-aks-uat||3/27/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-apps-aks-tra||3/26/2023|ARM template and pipeline secret for AKS Service Principal|

@@ -4,7 +4,7 @@
 | sqcp-ado-spn |`1e4c6f30-e9eb-40bf-9173-263983cd73ab` |6/13/2022 | Service Connection [sqcp-ado-spn-dev](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=a4b73e7c-6712-4ae7-a8cd-e3ff87bbdbac)|
 | sqcp-ado-spn | `1e4c6f30-e9eb-40bf-9173-263983cd73ab`|12/2/2022 | CD-BotLuisQnAInitialDeploy|
 | spn-armapi-reader-npd|`c00ce23b-b4cd-4164-9735-3c63381f9441`|1/25/2023| ARM API Reader|
-|spn-apps-aks-uat||3/27/2023|ARM template and pipeline secret for AKS Service Principal|
+|spn-apps-aks-uat|`e36847ba-e82d-4b38-a67a-ea45c5ab15b5`|3/27/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-apps-aks-tra|`df4d1bcf-46e0-481d-9d21-492213882310`|3/26/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-apps-aks-tst|`98cc2e36-7380-4fca-bfd7-0246a0ebc96b`|3/27/2023|ARM template and pipeline secret for AKS Service Principal|
 |spn-apps-aks-dev|`cb37a940-37f2-483f-abfd-8492eeaebc96`|3/27/2023|ARM template and pipeline secret for AKS Service Principal|

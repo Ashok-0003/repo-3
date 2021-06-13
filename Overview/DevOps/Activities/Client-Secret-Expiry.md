@@ -15,5 +15,9 @@
 |spn-bot-uat|9/8/2021| BotAppSecret Pipelines and ARM templates|
 |spn-crm-profile-daemon-integration-dev|6/3/2023|Dev Profile API|
 |spn-crm-profile-daemon-integration-tst|6/3/2023|Test Profile API|
+|spn-b2c-npd|12/31/2299|non prod B2C integration|
+|spn-data-dev|8/19/2021|Used by Data team and resources|
+|spn-powerbiembed|12/31/2299|Used by Data team|
+|spn-purview-dev|1/17/2023|Used by Data team `purv-cpd-data-dev-we-01`|
 
 <Add more to the list from AAD>

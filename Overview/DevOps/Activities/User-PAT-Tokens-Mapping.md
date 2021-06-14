@@ -14,23 +14,23 @@ https://dev.azure.com/TASMUCP/_usersSettings/tokens
 
 |Agent Pool| Expiring On  | Permissions | User  |
 |--|--|--|--|
-|[platformapispool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=112&view=jobs)| | Agent Pools (Read & manage); Deployment Groups (Read & manage)| |
-|[testagentpool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=50&view=agents)| |Agent Pools (Read & manage); Deployment Groups (Read & manage)| |
-|[webappspool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=111&view=agents)| |Agent Pools (Read & manage); Deployment Groups (Read & manage)| |
-|[datapool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=113&view=agents)| |Agent Pools (Read & manage); Deployment Groups (Read & manage)| |
-|[tasmumsagents](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=11&view=agents)| |Agent Pools (Read & manage); Deployment Groups (Read & manage)| |
+|[platformapispool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=112&view=jobs)| 10th Dec, 2021 | Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |
+|[testagentpool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=50&view=agents)| 10th Dec, 2021 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |
+|[webappspool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=111&view=agents)| 10th Dec, 2021 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |
+|[datapool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=113&view=agents)| 10th Dec, 2021 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |
+|[tasmumsagents](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=11&view=agents)| 10th Dec, 2021 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |
 
 # Service Connections
 
 
 |Connection Name| Expiring On | Permission | User |
 |--|--|--|--|
-|[ServicesBuildEndPoint](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=faa0de55-176a-4f89-b775-5e7d1528be93)| |Full Access||
+|[ServicesBuildEndPoint](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=faa0de55-176a-4f89-b775-5e7d1528be93)| 10th Dec, 2021 |Full Access| Paritosh Kumar |
 
 # PR Decorator in Sonar
 |Sonar Template| Expiring On | Permission | User |
 |--|--|--|--|
-||| Full Access||
+| TASMU_Platfrom_APIs_PR | 10th Dec, 2021 | Full Access| Paritosh Kumar |
 
 Raise a ticket with https://aka.ms/servicesdevopsrequest to update token of TASMU Project template used for PR decorations.
 

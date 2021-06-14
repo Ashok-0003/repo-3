@@ -30,7 +30,7 @@ https://dev.azure.com/TASMUCP/_usersSettings/tokens
 # PR Decorator in Sonar
 |Sonar Template| Expiring On | Permission | User |
 |--|--|--|--|
-| TASMU_Platfrom_APIs_PR | 10th Dec, 2021 | Full Access| Paritosh Kumar |
+| TASMUCP_platform-apis_PR_master | 10th Dec, 2021 | Full Access| Paritosh Kumar |
 
 Raise a ticket with https://aka.ms/servicesdevopsrequest to update token of TASMU Project template used for PR decorations.
 

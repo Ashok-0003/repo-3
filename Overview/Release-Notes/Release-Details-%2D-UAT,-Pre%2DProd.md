@@ -7,7 +7,7 @@
 | Environment | Deployment Start Date | Deployment Start Time | Status | Comments|
 |-----|-----------------------|-----------------------|--------|-----|
 | UAT |11th Jun 2021| 12.00 PM IST ( 09.30 AM Doha Time) |Completed||
-|Pre-Prod (6D Billing) |11th Jun 2021 | 14.00 PM IST ( 11.30 AM Doha Time ) |In-Progress|[Release Note_6d Billing_V 2.0_11-06-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%202.0_11-06-2021-37d1a1d1-430e-46da-80b7-61cf12391ce7.docx)|
+|Pre-Prod (6D Billing) |11th Jun 2021 | 14.00 PM IST ( 11.30 AM Doha Time ) |Completed|[Release Note_6d Billing_V 2.0_11-06-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%202.0_11-06-2021-37d1a1d1-430e-46da-80b7-61cf12391ce7.docx)|
 
 | Date  : 7th Jun 2021 |
 |----------------------|

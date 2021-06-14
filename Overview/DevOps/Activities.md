@@ -1,5 +1,5 @@
 1. Working on [DevOps issues](https://dev.azure.com/TASMUCP/TASMU%20MSI/_queries/query/351c8671-59ea-4e11-84ca-592a9035a506/)
-1. [Onboarding Members](/Overview/DevOps/Onboarding-New-Members)
+1. [Onboarding Members](/Overview/DevOps/Activities/Onboarding-New-Members)
 1. [Regularly review user access](/Overview/DevOps/Removing-Users) 
 1. Regularly review manual resources
 1. Add schedule in calendar to remove users and manual resources.

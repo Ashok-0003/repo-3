@@ -1,4 +1,5 @@
 1. Inform Malomatia to provision their own build VMs and plan for migration.
+1. If MSI is not able to provision their own VMs for builds, they can plan to migrate to agent pool - _Hosted Windows 2019 with VS2019_
 1. Update the agent pools and pipelines to use new ones.
 1. Remove Build Virtual Machines and their related resources - data and OS disks, etc used by Microsoft.
     >Central Platform Development

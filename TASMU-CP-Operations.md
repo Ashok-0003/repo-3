@@ -1,0 +1,1 @@
+This is a container for working with artefacts thru ADO. Documentation etc. may be made available to the relevant parties via other channels eventually.

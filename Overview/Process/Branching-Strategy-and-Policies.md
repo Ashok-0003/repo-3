@@ -29,7 +29,8 @@
 
 - Create release branch from latest stable tag (Eg. SIT_Web_06Jun2021)
 - Follow this naming Hotfix/<Phase>_<Component>_ddmmmyyyy (Eg. Hotfix/RFS_Web_16Jun2021)
-- Cherry pick commits or merge directly on release branch as per the need
+- Apply policies mentioned below on the hotflix branch
+- Cherry pick commits on release branch and raise PR to add the changes
 - Run CI/CD Pipelines from release branch
 - Sanity testing will be done on lower environments (dev,tst,uat) before promoting it to pre/prd (if the changes are for pre/prd only, then it is not required)
 

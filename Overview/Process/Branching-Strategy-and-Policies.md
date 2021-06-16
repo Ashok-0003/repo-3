@@ -24,3 +24,16 @@
 ## SIT Release
 1. The change being promoted is tagged on respective repositories as SIT_ddmmmyyyy (SIT_16Feb2021)
 1. Pipelines for pre environment are run from the tags.
+
+## Hotfix Release
+
+- Create release branch from latest stable tag (Eg. SIT_Web_06June2021)
+- Follow this naming <Phase>_RC_nn (Eg. RFS_RC_01)
+- Cherry pick commits needed for release
+- Run CI/CD Pipelines from release branch
+
+## Hotfix Branch Policies - 
+1. Minimum Number of Reviewers: 1
+1. No direct changes, just cherry picking commits from master
+1. Check for comment resolution - REQUIRED
+1. Mandatory approvers based on ADO groups like ARM templates approved by DevOps lead, Mobile changes approved by Mobile feature team lead.

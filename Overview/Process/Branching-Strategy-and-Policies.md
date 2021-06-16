@@ -29,7 +29,8 @@
 
 - Create release branch from latest stable tag (Eg. SIT_Web_06June2021)
 - Follow this naming <Phase>_RC_nn (Eg. RFS_RC_01)
-- Cherry pick commits needed for release
+- Cherry pick commits or merge directly on release branch as per the need
+- General recommendation is to do direct merge to release and then do a backward merge to master
 - Run CI/CD Pipelines from release branch
 - Sanity testing will be done on lower environments (dev,tst,uat) before promoting it to pre/prd (if the changes are for pre/prd only, then it is not required)
 

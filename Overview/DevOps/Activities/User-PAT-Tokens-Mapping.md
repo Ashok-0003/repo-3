@@ -6,8 +6,10 @@ https://dev.azure.com/TASMUCP/_usersSettings/tokens
 
 | Pipeline | Variable | Expiring On | Permissions |User|
 |--|--|--|--|--|
-|[CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)|System.NugetAccessToken|15th Jun, 2022|Packaging (Read)| Santosh Nair |
-|[CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)|System.NugetAccessToken|15th Jun, 2022|Packaging (Read)| Santosh Nair |
+|[CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)|System.NugetAccessToken|10th Dec, 2021|Packaging (Read)| Paritosh Kumar |
+|[CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)|System.NugetAccessToken|10th Dec, 2021|Packaging (Read)| Paritosh Kumar |
+|[CD-PlatformAPIs-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1021)|System.NugetAccessToken|15th Jun, 2022|Packaging (Read)| Santosh Nair |
+|[CD-WebApps-Prd-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1020)|System.NugetAccessToken|15th Jun, 2022|Packaging (Read)| Santosh Nair |
 
 
 # Agent Pools

@@ -6,8 +6,8 @@ https://dev.azure.com/TASMUCP/_usersSettings/tokens
 
 | Pipeline | Variable | Expiring On | Permissions |User|
 |--|--|--|--|--|
-|[CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)|System.NugetAccessToken|10th Dec, 2021|Packaging (Read)| Paritosh Kumar |
-|[CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)|System.NugetAccessToken|10th Dec, 2021|Packaging (Read)| Paritosh Kumar |
+|[CD-PlatformAPIs-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=141)|System.NugetAccessToken|15th Jun, 2022|Packaging (Read)| Santosh Nair |
+|[CD-WebApps-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=130)|System.NugetAccessToken|15th Jun, 2022|Packaging (Read)| Santosh Nair |
 
 
 # Agent Pools

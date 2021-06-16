@@ -31,6 +31,7 @@
 - Follow this naming <Phase>_RC_nn (Eg. RFS_RC_01)
 - Cherry pick commits needed for release
 - Run CI/CD Pipelines from release branch
+- Sanity testing will be done on lower environments (dev,tst,uat) before promoting it to pre/prd (if the changes are for pre/prd only, then it is not required)
 
 ## Hotfix Branch Policies - 
 1. Minimum Number of Reviewers: 1

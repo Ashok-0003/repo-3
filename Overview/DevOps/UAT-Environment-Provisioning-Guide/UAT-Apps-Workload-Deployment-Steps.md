@@ -268,7 +268,7 @@ More Information on this limiation - [Link](https://dev.azure.com/TASMUCP/TASMU%
 |APIConnectionCognitiveService | `apicon-<sub>-apps-intcog-<env>-we-01` | API Connection to Translator Cognitive Service|
 |APIConnection | `apicon-<sub>-apps-ascalrt-<env>-we-01` | API Connection to Azure Security Alert trigger.|
 |ApiConnectionCommonDataService | `apicon-<sub>-apps-intcds-<env>-we-01` | API Connection to Common Data Service for Case api. Client Id will be the Client Id of App Registration - `spn-crm-case-management-integration-<env>`|
-|ApiConnectionCommonDataService | `apicon-<sub>-apps-prdcds-<env>-we-01` | API Connection to Common Data Service for market place product api. Client Id will be the Client Id of App Registration - `spn-crm-general-integration-<env>`|
+|ApiConnectionCommonDataService | `apicon-<sub>-apps-prdcds-<env>-we-01` | API Connection to Common Data Service for market place product api. Client Id will be the Client Id of App Registration - `spn-crm-common-integration-<env>`|
 |ApiConnectionCommonDataService | `apicon-<sub>-apps-pflcds-<env>-we-01` | API Connection to Common Data Service for profile and organisation profile api. Client Id will be the Client Id of App Registration - `spn-crm-profile-management-integration-<env>`|
 |ApiConnectionLogAnalytics | `apicon-<sub>-apps-log-<env>-we-01` | API Connection to Log Analytics - `log-<sub>-pltf-<env>-we-01`|
 |AppServicePlan | `plan-<sub>-apps-int-<env>-we-01`||

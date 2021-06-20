@@ -426,6 +426,16 @@ Work Order Booking Updated
 Welcome to SQCP
 New Case Acknowledgement
 
+### 5.18 Update the CRM unique name in the logic apps ARM Templates
+For below mentioned Logic apps we have to update environment specific CRM unique names in the ARM Templates. Open the logic app ARM Template and search the environment specific unique name and change it accordingly. Below yellow highlighted has to be changed.
+
+![image.png](/.attachments/image-07fccdb5-a4ca-4ba9-8f8c-fe483284e890.png)
+
+List of Logic Apps to be modified
+1. logic-cpd-apps-intfile-<env>-we-01
+2. logic-cpd-apps-intsubs-<env>-we-01
+3. logic-cpp-apps-dfndr-<env>-we-01
+4. logic-cpd-apps-intacnt-<env>-we-01
 
 # 6 	Appendix
 ## Appendix A - Solution Import

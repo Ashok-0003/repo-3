@@ -43,3 +43,15 @@
 ## CRM Hotfix
 - Solution patching will be used for CRM configuration hotfixes. More details are documented [here](https://docs.microsoft.com/en-us/power-platform/alm/create-patches-simplify-solution-updates).
 - A clone of the main CRM Platform CD pipeline will be used for deploying the hotfix solution when required.
+
+## WebApps Hotfix
+
+1. For the web-apps repository, create a branch from the last production deployment commit/Tag/Branch. Name it as Hotfix/web-apps-rfs-<DDMMMYYYY>
+2. Merge all the files(changes) that are for the hotfix into this branch.
+a. Update the minor package version of all the libraries to next minor version e.g. 1.0.0 should be updated to 1.1.0
+3. Build the CI pipeline (from the branch) to verify the merging is proper.
+4. Change the file get-publishchange-queue.ps1 under /pipeline/build/templates as below:
+![image.png](/.attachments/image-61c86fb3-7ef6-4cff-adb5-65439a6f65a5.png)
+5. Run CI-Webapps-Npm to publish the library changes to artifacts.
+6. Run CD-Webapp-Release to deploy to DEV, TEST and UAT.
+7. Then, Run CD-Webapps-prd-Release to deploy to pre-prod and prod environment.

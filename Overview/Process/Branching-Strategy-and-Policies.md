@@ -44,6 +44,9 @@
 - Solution patching will be used for CRM configuration hotfixes. More details are documented [here](https://docs.microsoft.com/en-us/power-platform/alm/create-patches-simplify-solution-updates).
 - A clone of the main CRM Platform CD pipeline will be used for deploying the hotfix solution when required.
 
+## CMS Hotfix
+- SPO Patch updates will be performed through pipeline, CD  SPO patch Update, which will execute the PowerShell(.ps) patch file.Main Script as well should be updated for these patch updates.
+
 ## WebApps Hotfix
 
 1. For the web-apps repository, create a branch from the last production deployment commit/Tag/Branch. Name it as Hotfix/web-apps-rfs-<DDMMMYYYY>

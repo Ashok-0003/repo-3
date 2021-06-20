@@ -39,3 +39,7 @@
 1. No direct changes, just cherry picking commits from master
 1. Check for comment resolution - REQUIRED
 1. Mandatory approvers based on ADO groups like ARM templates approved by DevOps lead, Mobile changes approved by Mobile feature team lead.
+
+## CRM Hotfix
+- Solution patching will be used for CRM configuration hotfixes. More details are documented [here](https://docs.microsoft.com/en-us/power-platform/alm/create-patches-simplify-solution-updates).
+- A clone of the main CRM Platform CD pipeline will be used for deploying the hotfix solution when required.

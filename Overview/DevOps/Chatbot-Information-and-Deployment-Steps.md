@@ -223,3 +223,46 @@ The above setup is used at following places:
 2. **Bot-Directline-Key** from the variable group is used in following pipeline - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FPipeline%2Ftemplates%2Fbuild-template.yml)
 
 
+###Troubleshooting BOT Api in App service
+
+##Troubleshoot - 500 Error on accessing Messages endpoint - Option 1
+
+The error on accessing /api/messages endpoint if we get error like below picture then follow these steps:
+![image.png](/.attachments/image-db4538e4-31c9-4622-afe1-89eb3145e239.png)
+
+1. Go to App service where bot api is hosted and restart it.
+2. Go to log stream then see the logs if it shows error like below image.
+3. Then check whether the adaptive card is properly updated in app config store (acst-cpd-apps-str-<env>-we-01).
+
+![image.png](/.attachments/image-ad787dc0-8cf5-42b1-9d78-47bde091178e.png)
+
+4. Some of the adaptive card properties are below:
+`"FindInformationMenuCard": "<base64 string>",
+        "MainMenuCard": "<base64 string>",
+        "RequestServiceOrSupportMenuCard": "<base64 string>"
+     `
+same above list is available for Arabic and English.
+5. All the above fields should contain valid json adaptive card.
+
+##Troubleshoot - 500 Error on accessing Messages endpoint - Option 2
+
+The error on accessing /api/messages endpoint if we get error like below picture then follow these steps:
+![image.png](/.attachments/image-db4538e4-31c9-4622-afe1-89eb3145e239.png)
+
+1. Go to App service where bot api is hosted and restart it.
+2. go to Kudu under Adavnced tools and click on Debug console and CMD.
+3. then go to the following path C:\home\site\wwwroot>
+4. then hit the following command as shown in below image 
+`dotnet .\Mcs.TASMU.Bot.dll`
+2. Then see the logs if it shows error like below image.
+![image.png](/.attachments/image-773dc46c-0345-4ecc-9aa8-ea6ce5455a7b.png)
+3. Then check whether the adaptive card is properly updated in app config store (acst-cpd-apps-str-<env>-we-01).
+
+
+4. Some of the adaptive card properties are below:
+`"FindInformationMenuCard": "<base64 string>",
+        "MainMenuCard": "<base64 string>",
+        "RequestServiceOrSupportMenuCard": "<base64 string>"
+     `
+same above list is available for Arabic and English.
+5. All the above fields should contain valid json adaptive card.

@@ -223,7 +223,7 @@ The above setup is used at following places:
 2. **Bot-Directline-Key** from the variable group is used in following pipeline - [Link](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/apim-api-config?path=%2Fpipelines%2FAPIM%2Fsrc%2FPipeline%2Ftemplates%2Fbuild-template.yml)
 
 
-###Troubleshooting BOT Api in App service
+#Troubleshooting BOT Api in App service
 
 ##Troubleshoot - 500 Error on accessing Messages endpoint - Option 1
 

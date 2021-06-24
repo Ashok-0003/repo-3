@@ -1,5 +1,5 @@
 # 1	User Set up verifying otp activity hiding feature
 
-1. Changed the owner of the workflow (Ex: Profile : Auto generate Email/Mobile Verification OTP) to some other User .The Owner of work flow should have "system Admin" role.
-1. Then change the User(Owner of Workflow) Business unit to "SQCP" BU. 
-1. Then update the “SensitiveRecordsOwnerId” id value in the system configuration to the build user's user id. For Build User, Business unit will be in "TASMU" and they have "System admin" role.
+- Set owner of the workflows of TASMU Processes solution to a service account (ex. svc.crm.pre@tasmusqcpprod.onmicrosoft.com).
+- Then change the aforementioned user's Business unit to "**SQCP**" BU. The Owner of work flow should have "**System Administrator**" role. Make sure the security role is assigned again after changing BU (because roles gets removed while changing BU).
+- Then update the “SensitiveRecordsOwnerId” id value in the system configuration to the build user's user id. For Build User, Business unit should be in "**TASMU**" and it should also have "**System Administrator**" role.

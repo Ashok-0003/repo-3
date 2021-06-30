@@ -1,4 +1,4 @@
-# User Set up verifying otp activity hiding feature
+# User Setup
 
 - Set owner of the workflows of TASMU Processes solution to a service account (ex. svc.crm.pre@tasmusqcpprod.onmicrosoft.com).
 - Then change the aforementioned user's Business unit to "**SQCP**" BU. The Owner of work flow should have "**System Administrator**" role. Make sure the security role is assigned again after changing BU (because roles gets removed while changing BU).

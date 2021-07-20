@@ -266,3 +266,22 @@ The error on accessing /api/messages endpoint if we get error like below picture
      `
 same above list is available for Arabic and English.
 5. All the above fields should contain valid json adaptive card.
+
+
+
+#How to Update LUIS Dispatch Threshold score in BOT Api
+
+Go to Platform-apis repo to this file [MainDialog](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fsrc%2Fservices%2FBOT%2FMcs.Tasmu.Bot%2FDialogs%2FMainDialog.cs&version=GBmaster&_a=contents)
+
+At line 869 - change value 0.02 to the decided value and update in 885 line.
+Refer screen shot below:
+![image.png](/.attachments/image-e6e1846d-9626-4249-8644-519147f12727.png)
+
+
+#How to Update QnaMaker Threshold score in BOT Api
+
+Go to Platform-apis repo to this file [QnaMakerOptions](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2Fsrc%2Fservices%2FBOT%2FMcs.Tasmu.Bot.Models%2FQnAMakerOptions.cs&version=GBmaster&_a=contents)
+
+At line 22 - change value 0.6f to the decided value.
+Refer screen shot below:
+![image.png](/.attachments/image-eeb82f4a-13fa-4582-afe1-cfee25ce4aa4.png)

@@ -2,8 +2,8 @@
    ### **High Level - Approved deployment updates from Dev to PROD Environments**
 =====================================================
 | Date  : 03rd Aug 2021 |
-|----------------------|
 
+|----------------------|
 | Environment | Deployment Start Date | Deployment Start Time | Status | CR Number | ADO Number | Comments|
 |-----|-----------------------|-----------------------|--------|-----|
 | UAT |15th Jun 2021| 16.00 PM IST ( 13.30 PM Doha Time) |In-Progress||

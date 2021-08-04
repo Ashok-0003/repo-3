@@ -7,7 +7,7 @@
 
 | Environment | Deployment Start Date | Deployment Start Time | Status | CR Number | ADO Number | Comments| Down Time|
 |-----|-----------------------|-----------------------|--------|-----|---|----|----------|
-| UAT |Aug 2021| 16.00 PM IST ( 13.30 PM Doha Time) |In-Progress|#12|ADO 123| | Aug 2021|
+| UAT | 02 Aug 2021| 12.00 PM IST ( 09.30 AM Doha Time) |Deployed|#12|ADO [37956](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_workitems/edit/37956)| [Release Note_gis_v0.01_2 Aug 2021.docx](/.attachments/Release%20Note_gis_v0.01_2%20Aug%202021-38f721ea-cf7a-42dc-8d00-81279b14bfc3.docx) | 02 Aug 2021|
 |Pre-Prod |Aug 2021 | 20.00 PM IST ( 17.30 PM Doha Time ) |In-Progress|#12 | ADO 123|SAMPLE -[Release Note_6d Billing_V 2.1_15-06-2021.docx](/.attachments/Release%20Note_6d%20Billing_V%202.1_15-06-2021-5cb7017d-1f73-420a-960a-bbaad7871e65.docx) | Aug 2021|
 
 

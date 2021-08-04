@@ -2,8 +2,8 @@
    ### **High Level - Approved deployment updates from Dev to PROD Environments**
 =====================================================
 
-| Change Activity Description : _GIS API untagged issue_ | Dev POC - _Sachin Ninawe_ |
-|----------------------|----|
+| Change Activity Description : _GIS API untagged issue_ | Dev POC - _Sachin Ninawe_ | **Initial Draft** |
+|----------------------|----|----|
 
 | Environment | Deployment Start Date | Deployment Start Time | Status | CR Number | ADO Number | Comments| Down Time|
 |-----|-----------------------|-----------------------|--------|-----|---|----|----------|

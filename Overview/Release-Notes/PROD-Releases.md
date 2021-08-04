@@ -1,1 +1,2 @@
-This page will have details around the PROD releases. It will have details around how a CR is being moved from Dev till PROD env.
+* This page will have details around the PROD releases. It will have details around how a CR is being moved from Dev till PROD env.
+* It will also have details around the maintenance releases which are being planned for PROD (from Dev till Prod).

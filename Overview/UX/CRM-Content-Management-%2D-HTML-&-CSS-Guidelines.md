@@ -2,18 +2,18 @@
 
 
 **Description** section:
-|View|Suggested HTML/CSS Structure  |
+|View|  |
 |--|--|
-|  |  |
+| HTML/CSS Structure |  |
 
 
 **Features** section:
-|View|Suggested HTML/CSS Structure  |
+|View|  |
 |--|--|
-|  |  |
+| HTML/CSS Structure |  |
 
 **Benefits** section:
-|View|Suggested HTML/CSS Structure  |
+|View|  |
 |--|--|
-|  |  |
+| HTML/CSS Structure |  |
 

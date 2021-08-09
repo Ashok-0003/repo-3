@@ -1,4 +1,4 @@
-1. ##  **Product Detail View** - CRM Content Management HTML/CSS Guidelines
+##  **Product Detail View** - CRM Content Management HTML/CSS Guidelines
 
 
 **Description** section:

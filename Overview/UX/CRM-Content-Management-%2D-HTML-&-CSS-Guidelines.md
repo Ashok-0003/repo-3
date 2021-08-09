@@ -12,7 +12,7 @@
 |--|--|
 |  |  |
 
-**Benifits** section:
+**Benefits** section:
 |View|Suggested HTML/CSS Structure  |
 |--|--|
 |  |  |

@@ -59,6 +59,7 @@
 |kv-cpd-apps-<env>-we-01|SmartParking-ADAuth-ClientSecret| Secret |create and retrieve Client Secret for **Smart Parking API** App registration in B2C tenant under certificates and secrets menu||
 |kv-cpd-apps-<env>-we-01|Cms-Function-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint| CMSBPA Self signed certificate|
 |kv-cpd-apps-<env>-we-01|Cms-Api-ClientCertificate| Certificate |Certificate used to authenticate to SharePoint|CMSAPI Self signed certificate| 
+|kv-cpd-apps-<env>-we-01|NotificationApi-AzureAdOptions-ClientSecret| ClientSecret |ClientSecret used to authenticate to Notification API|ClientSecret used to authenticate to Notification API, this is the client secret of Dynamics365Client App| 
 
 # Notes 
 1. All the connection strings and client secrets should be rotated periodically

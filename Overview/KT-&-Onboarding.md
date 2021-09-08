@@ -11,7 +11,8 @@
 ## Workstream : Web Apps
 |Step| Guide / Reference |
 |--|--|
-| 1 | [Read the Reference Documents](/Overview/KT-&-Onboarding) |
-| 2 |  |
-
+|1| [Read the Reference Documents](/Overview/KT-&-Onboarding) |
+|2| <p>Watch these videos</p><p>[Overview Session 1](https://tasmusqcp.sharepoint.com/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/TASMU%20KT%20Sessions%20__%20Portal-1%20%20(Apps%20Workstream).mp4)</p><p>[Overview Session 2](https://tasmusqcp.sharepoint.com/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/TASMU%20KT%20Sessions%20__%20Portal-2%20%20(Apps%20Workstream).mp4)</p>|
+|3| [Read this wiki](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/web-apps?path=%2FREADME.md&_a=preview) |
+|4| Explore the folder structure within this [Git Repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/web-apps)| 
  

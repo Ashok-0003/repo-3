@@ -1,7 +1,7 @@
-# Index of Documentation
+# Quick links
 
 
-## Reference documents 
+## Reference documentation 
 | SL | Document  | Link |
 |--|--|--|
 | 1 | TASMU Platform - **High Level Architecture**  | [Link to SQCP SharePoint](https://tasmusqcp.sharepoint.com/:w:/r/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/04.%20Deliverables/02.%20External%20-%20MoTC%20Deliverables/S06_Sprint%206%20Deliverables/B12_S6_D10_MA_Central%20Platform%20High%20Level%20Solution%20Architecture%20%26%20Design/B12_S6_D10_MA_Central%20Platform%20High%20Level%20Solution%20Architecture%20%26%20Design_V0.20.docx?d=w3a217e97bf984f30bf5487efa2646604&csf=1&web=1&e=rV3V0x) |

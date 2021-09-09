@@ -22,7 +22,7 @@
 1. Delete the branch after merge 
 
 ## SIT Release
-1. The change being promoted is tagged on respective repositories as SIT_ddmmmyyyy (SIT_16Feb2021)
+1. The change being promoted is tagged on respective repositories as SIT_<Component>_ddmmmyyyy (Eg.SIT_APIM_16Feb2021)
 1. Pipelines for pre environment are run from the tags.
 
 ## Hotfix Release

@@ -35,3 +35,4 @@
 |7|Manage all API definitions published to APIM in this [git repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-api-config)|
 |8|Manage the export of the APIM Developer Portal in [this Git Repostory](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-devportal)|
 |9|Refer the wiki documentation in [this repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-devopskit) to understand about the APIM DevOps Kit|
+|10| Manage all [configuration settings here](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FAppConfigurations)|

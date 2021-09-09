@@ -12,7 +12,9 @@
 **Features (check type list)** section:
 |View| ![FeaturesCheckTypeList.jpg](/.attachments/FeaturesCheckTypeList-e08bce2f-7eb3-4077-966b-d13cd579c99e.jpg) |
 |--|--|
-| HTML/CSS Structure | <p class="d-flex"><span class="m-x-2">✔</span><span>Access a reliable point of contact for support queries. Access a reliable point of contact for support queries. Access a reliable point of contact for support queries</span></p> |
+| HTML/CSS Structure | <p class="d-flex"><span class="m-x-2">✔</span><span>Access a reliable point of contact for support queries. Access a reliable point of contact for support queries. Access a reliable point of contact for support queries</span></p>
+
+<p class="d-flex"><span class="m-x-2">✔</span><span>Access a reliable point of contact for support queries. Access a reliable point of contact for support queries. Access a reliable point of contact for support queries</span></p> |
 
 **Benefits** section:
 |View| ![benefits-sec.jpg](/.attachments/benefits-sec-2512d48a-3071-4ed4-930a-e996c1142dc0.jpg) |

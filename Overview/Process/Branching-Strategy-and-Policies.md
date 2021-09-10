@@ -43,7 +43,7 @@
 ## CRM Configurations/Solutions Hotfix
 - Solution patching can be used for CRM configuration hotfixes whenever the complete build deployment or complete solution(s) deployments cannot be done. More details on how to create patch solutions is documented [here](https://docs.microsoft.com/en-us/power-platform/alm/create-patches-simplify-solution-updates).
 - Follow the steps below to prepare the hotfix.
-  - Identify the components which needs to be deployed. There are two options depending on the components. Either identify one of more of the existing solutions which contains the changes to be deployed in the hotfix, if that's not possible, create small patch solutions based on existing solutions.
+  - Identify the components which needs to be deployed. There are two options depending on the components. Either identify one or more of the existing solutions which contains the changes to be deployed in the hotfix, if that's not possible, create small patch solutions based on existing solutions.
   - The patch solution would contain only the changes required to be deployed in the hotfix.
   - The CD pipeline [CD-CrmPlatform-Hotfix](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1597) will be used whenever a hotfix needs to be deployed with any specific solution(s) or solution patches. The solution(s) or solution patches for the specific hotfix release needs to be updated in the aforementioned pipeline.
   - Then follow the usual deployment process of promoting the same pipeline to each environment.

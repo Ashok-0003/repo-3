@@ -48,6 +48,7 @@
   - The patch solution would contain only the changes required to be deployed in the hotfix.
   - The CD pipeline [CD-CrmPlatform-Hotfix](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1597) will be used whenever a hotfix needs to be deployed with any specific solution(s) or solution patches. The solution(s) or solution patches for the specific hotfix release needs to be updated in the aforementioned pipeline.
   - Then follow the usual deployment process of promoting the same pipeline to each environment.
+- Recording of the session explaining hotfix process for CRM is available [here](https://msit.microsoftstream.com/video/1e910840-98dc-b561-66c1-f1ebd4ee92dc).
 
 ## CMS Hotfix
 - SPO Patch updates will be performed through pipeline, CD  SPO patch Update, which will execute the PowerShell(.ps) patch file.Main Script as well should be updated for these patch updates.

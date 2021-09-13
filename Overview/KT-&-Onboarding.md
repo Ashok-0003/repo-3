@@ -36,3 +36,17 @@
 |8|Manage the export of the APIM Developer Portal in [this Git Repostory](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-devportal)|
 |9|Refer the wiki documentation in [this repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-devopskit) to understand about the APIM DevOps Kit|
 |10| Manage all [configuration settings](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FAppConfigurations) referenced by the APIs|
+
+## Workstream : CMS Authoring, Flows and API's
+|Step| Guide / Reference |
+|--|--|
+|1| [Read the Reference Documents](/Overview/KT-&-Onboarding) |
+|2|<p>Watch these videos:</p><p>[API Management](https://tasmusqcp.sharepoint.com/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/Tasmu%20APIM%20portal%20sync%20up.mp4)</p><p>[Azure Search](https://tasmusqcp.sharepoint.com/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/TASMU%20KT%20Sessions%20__%20Azure%20Search%20(Apps%20Workstream).mp4)</p><p>[Chatbot](https://tasmusqcp.sharepoint.com/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/TASMU%20KT%20Sessions%20__%20Chatbot%20%20(Apps%20Workstream).mp4)</p><p>[QnA Maker](https://tasmusqcp.sharepoint.com/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/TASMU%20KT%20Sessions_QnA%20Maker%20-2%20(Apps%20Workstream).mp4)</p><p>[Metering Data Interface](https://tasmusqcp.sharepoint.com/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/TASMU%20KT%20Sessions%20__%20Metering%20Data%20Interface%20(Apps%20Workstream).mp4)</p><p>[National Integration Layer](https://tasmusqcp.sharepoint.com/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/TASMU%20KT%20Sessions%20__%20Event%20grid%20(National%20Integration%20Layer)%20(Apps%20Workstream).mp4)</p>|
+|3|Read about the [DevOps Processes](/Overview/Process)|
+|4| Read [this wiki](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-apis) to orient yourself about API Apps development |
+|5| Explore this [Git Repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-apis) for source code, build and release pipelines & configuration files|
+|6|Manage common libraries i.e. Platform Core in this [Git Repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-core) |
+|7|Manage all API definitions published to APIM in this [git repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-api-config)|
+|8|Manage the export of the APIM Developer Portal in [this Git Repostory](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-devportal)|
+|9|Refer the wiki documentation in [this repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-devopskit) to understand about the APIM DevOps Kit|
+|10| Manage all [configuration settings](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FAppConfigurations) referenced by the APIs|

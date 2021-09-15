@@ -487,7 +487,7 @@ Refer `kv-<sub>-pltf-<env>-we-01` and `mi-<sub>-pltf-<env>-we-01` for ssl certif
 |AppServicePlan | `plan-<sub>-apps-pt-<env>-we-01` ||
 |FunctionAppPt | `func-<sub>-apps-pt-<env>-we-01`||
 
-## 4.10 Update Key Vault Access Policies 
+### 4.9.4 Update Key Vault Access Policies 
 for `kv-<sub>-apps-pt-we-01`
 Redeploy `rg-<sub>-apps-pt-<env>-we-01`
 
@@ -495,6 +495,23 @@ Redeploy `rg-<sub>-apps-pt-<env>-we-01`
 |--|--|--|
 |`func-<sub>-apps-pt-<env>-we-01`|Get, List, Set||
 
+## 4.10 Apps Shared Resource Group
+### 4.10.1 Resource Group
+`rg-<sub>-shrd-<env>-we-01`
+### 4.10.2 Dependencies
+1. `rg-<sub>-apps-mon-<env>-we-01`
+### 4.10.3 Resources 
+| Module Name | Parameter File Name | Remarks |
+|--|--|--|
+|Maps | `maps-<sub>-shrd-<env>-we-01` ||
+
+## 4.10 Update Key Vault Access Policies 
+for `kv-<sub>-apps-<env>-we-01`
+Redeploy `rg-<sub>-apps-sec-<env>-we-01`
+
+|Object Id| Secrets |  Certificates|
+|--|--|--|
+|`func-<sub>-apps-pt-<env>-we-01`|Get, List, Set||
 
 ## 4.11 Update Key Vault Access Policies
 `kv-<sub>-apps-<env>-we-01`

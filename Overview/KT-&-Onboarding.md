@@ -45,7 +45,7 @@
 |3|Explore this [Git Repo](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/infra?path=/Scripts/CMS) for CMS scripts , XML and pipelines files|
 |4|Read about the [DevOps Processes](/Overview/Process)|
 |5| Read [this wiki](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-apis) to orient yourself about API Apps development |
-|6| Explore this [Git Repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-apis) for source code, build and release pipelines & configuration files of CMS API and CMS Function app|
+|6| Explore this [Git Repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-apis) for source code, build and release pipelines & configuration files of CMS API and CMS Function apps|
 |7|Manage common libraries i.e. Platform Core in this [Git Repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/platform-core) |
 |8|Manage all API definitions published to APIM in this [git repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-api-config)|
 |9| Manage all [configuration settings](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FAppConfigurations) referenced by the APIs|

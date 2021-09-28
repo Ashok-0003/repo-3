@@ -285,3 +285,23 @@ Go to Platform-apis repo to this file [QnaMakerOptions](https://dev.azure.com/TA
 At line 22 - change value 0.6f to the decided value.
 Refer screen shot below:
 ![image.png](/.attachments/image-eeb82f4a-13fa-4582-afe1-cfee25ce4aa4.png)
+
+
+#How to Update LUIS for enabling Sentiment Analysis for Reporting in Power BI
+
+[Go to LUIS AI website](https://www.luis.ai/applications)
+
+Select LUIS authoring resource based on environment:
+![image.png](/.attachments/image-961e6154-8946-4c72-a0c6-5bf84fc5aef9.png)
+
+Select both english luis resources one by one and do following steps:
+![image.png](/.attachments/image-7a78c5c7-9b0c-418a-a36d-229fa4dfb870.png)
+
+1. ![image.png](/.attachments/image-f34b21cc-3d16-4103-8124-3e9321ec9eb1.png)
+
+2. ![image.png](/.attachments/image-7efaf9a2-ae69-4d7a-a63b-742ac0942bf2.png)
+
+3. ![image.png](/.attachments/image-87d668da-8300-4ab9-b88a-74946642235f.png)
+
+enable sentiment analysis for General and Dispatch luis highlighted in above steps.
+After this any sentiment score we can check in Power BI report.

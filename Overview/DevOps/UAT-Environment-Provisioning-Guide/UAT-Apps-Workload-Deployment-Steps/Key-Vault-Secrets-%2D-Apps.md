@@ -42,6 +42,7 @@
 |kv-cpd-apps-<env>-we-01|GraphClientSecret| Secret | Client Secret of TASMU-Portal app on Azure B2C Tenant ||
 |kv-cpd-apps-<env>-we-01|ManageEventFunction-AzureADOptions-ClientSecret| Secret | Client Secret of ManageEventFunction app on Azure B2C Tenant | |
 |kv-cpd-apps-<env>-we-01|NotificationFunctionSettings-SendGridApiKey| Secret | **Sendgrid API key to be provided by customer.** |
+|kv-cpd-apps-<env>-we-01|NotificationFunctionSettings-SendGridEmailValidationApiKey| Secret | **SendGridEmailValidationApiKey API key to be provided by customer. This key is specific to email validation.** |
 |kv-cpd-apps-<env>-we-01|NotificationSettings-AzureADOptions-ClientSecret| Secret | Client Secret for Notification API App Registration in B2C tenant||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-GSMSKey| Secret | Government SMS Provider Password, key to be provided by customer.||
 |kv-cpd-apps-<env>-we-01|NotificationSettings-NotificationServiceBusConnectionString| Secret | Connection string of SAS policy (RootManageSharedAccessKey) of resource `sb-cpd-apps-strntf-<env>-we-01` ||

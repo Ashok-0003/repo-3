@@ -23,7 +23,7 @@ The Data Quality blue print has been implemented to present the full Data Qualit
 ### Implementation steps.
 1. Purview is deployed within CDP pipeline.
 1. [SQL Database deployment with pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1680).
-1. ADF Pipeline deployment 
+1. [ADF Data pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1682)
 1. Databricks scripts adjustment
 The full solution makes three scripts:
 - Settings (to set up all the settings and install the libraries)

@@ -26,11 +26,12 @@ The Data Quality blue print has been implemented to present the full Data Qualit
 1. ADF Pipeline deployment 
 1. Databricks scripts adjustment
 The full solution makes three scripts:
-- Settings (to set up all the settings 
-- 
-All the scripts all pro
+- Settings (to set up all the settings and install the libraries)
+- SchemaAndDQConformancyCheck
+- Load_HealthCare_KPI
 ![image.png](/.attachments/image-c7f7a932-a2b5-4ad9-b565-2ffc1b658d67.png)
     - check whether kv-cpd-data-uat-we-01 instance is added as 
+
 
 
 

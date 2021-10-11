@@ -22,15 +22,25 @@ The Data Quality blue print has been implemented to present the full Data Qualit
 
 ### Implementation steps.
 1. Purview is deployed within CDP pipeline.
+1. [Deploy the other infrastructure](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1684).
+1. [Import Data to purviewhealth container at Landing Zone](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1683) 
+**_Note_**: Please check whether **dlslandingzoneuatwe01** storage account is assignet to VNET. If so, please enable free access to the storage account and after copy operation is done, restore the network assignment.
+1. Add secrets to Key Vault - 
+     - purview-tenantId - 
+     - purview-clientId
+     - purview-clientSecret
 1. [SQL Database deployment with pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1680).
 1. [ADF Data pipeline](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1682)
-1. Databricks scripts adjustment
-The full solution makes three scripts:
-- Settings (to set up all the settings and install the libraries)
-- SchemaAndDQConformancyCheck
-- Load_HealthCare_KPI
+1. Databricks scripts validation.
+
 ![image.png](/.attachments/image-c7f7a932-a2b5-4ad9-b565-2ffc1b658d67.png)
     - check whether kv-cpd-data-uat-we-01 instance is added as 
+
+- **Settings** 
+No adjustment needed
+- **SchemaAndDQConformancyCheck**
+
+- **Load_HealthCare_KPI**
 
 
 

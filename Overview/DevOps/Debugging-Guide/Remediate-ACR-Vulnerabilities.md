@@ -16,7 +16,7 @@ az aks get-credentials -g <Resource Group Name> -n <AKS Cluster Name>
 ```
 kubectl config current-context
 ```
-- To check image of apiapps and webapps pods. Check this for all environments supported by ACR.
+- To check image(tag) of apiapps and webapps pods. Check this for all environments supported by ACR.
 ```
 kubectl get pods --all-namespaces -o jsonpath="{.items[*].spec.containers[*].image}"
 
@@ -24,12 +24,27 @@ kubectl get pods -n apiapps -o jsonpath="{.items[*].spec.containers[*].image}"
 kubectl get pods -n webapps -o jsonpath="{.items[*].spec.containers[*].image}"
 ```
 
-5. Delete the old image with the vulnerability from your registry. 
-To delete old images run script **platform-apis\script\deleteTags.ps1**.
-
+5. Delete the old image(tag) with the vulnerability from your registry. 
+You can either manually delete old tags or run script **platform-apis\script\deleteTags.ps1** to perform deletion.
+> Don't forget to mention currently used images in $doNotDeleteTags variable in the script.
 6. After few minutes check ACR security to validate if vulnerability is resolved and removed. 
 
+##Another script to delete old images(tags)
+Only use this command when there are many tags to be deleted or you want to delete tags created before specific time.
 
+First run this set of commands to check what all images will be purged
+```
+$PURGE_CMD="acr purge --filter '<repository>:.*' --ago <days> --untagged --dry-run"
+az acr run --cmd $PURGE_CMD --registry "<registry_name>" /dev/null'
+az acr repository list –-name <registry_name> –-output table
+```
+After validating, run below sets of commands to purge all the tags created before specific time.
+```
+# Example:
+$PURGE_CMD="acr purge --filter 'apiapps/profileapi:.*' --ago 120d --untagged"
+az acr run --cmd $PURGE_CMD --registry "acrcpdglobnpdwe01" /dev/null'
+az acr repository list –-name acrcpdglobnpdwe01 –-output table
+```
 
 
 

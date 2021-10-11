@@ -29,3 +29,14 @@
 1. In the Website list box, choose Default Web Site, and then select Create to create a web application.
 ![image.png](/.attachments/image-9f171f66-9351-4ced-b767-f2b3a49b5ed7.png)
 **Note:** If you select Default Web Site, you'll need to separately create a web application. If you choose Create new website in the list box, the application is automatically created.
+1. In the Application Pool section, enter a different user name, enter the password, and then select OK.
+![image.png](/.attachments/image-f9704ef0-1bc8-4e54-8519-14ada5fbf570.png)
+**Note:** Make sure that the user can access the database with the Active Directory Integrated authentication that you recently created. Alternatively, you can change the connection in web.config later.
+1. On the Web Configuration pane in the Web application window, select the application you've created, and then choose Select in the Associate Application with Database section.
+1. Select Connect and choose the Master Data Services database that you want to associate with the web application. Select OK.
+1. You've finished setting up the website. The Web Configuration page now displays the website you selected, web application you created, and the Master Data Services database associated with the application.
+![image.png](/.attachments/image-76f6ae24-0468-4c33-afb6-f7d043cd70e0.png)
+1. Select Apply. You'll see the Configuration Complete message. Select OK in the message box to launch the web application. The website address is http://server name/web application/.
+
+## Reference article 
+[https://docs.microsoft.com/en-us/sql/master-data-services/master-data-services-host-database-on-managed-instance?view=sql-server-ver15](https://docs.microsoft.com/en-us/sql/master-data-services/master-data-services-host-database-on-managed-instance?view=sql-server-ver15)

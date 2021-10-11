@@ -43,7 +43,7 @@ The Data Quality blue print has been implemented to present the full Data Qualit
   - Cmd 15 Line 1 - check the SQL server name
   - Cmd 15 Line 2 - check the SQL database name
 - **SchemaAndDQConformancyCheck**
-
+  -  
 - **Load_HealthCare_KPI**
 
 

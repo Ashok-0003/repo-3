@@ -51,7 +51,7 @@
 |8|Manage all API definitions published to APIM in this [git repo](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/apim-api-config)|
 |9| Manage all [configuration settings](https://dev.azure.com/tasmucp/TASMU%20Central%20Platform/_git/infra?path=%2FScripts%2FAppConfigurations) referenced by the APIs|
 
-## Workstream : CRM and related APIs
+## Workstream : D365/CRM and related APIs
 
 |Step| Guide / Reference |
 |--|--|

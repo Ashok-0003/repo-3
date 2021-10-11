@@ -29,7 +29,7 @@ You can either manually delete old tags or run script **platform-apis\script\del
 > Don't forget to mention currently used images in $doNotDeleteTags variable in the script.
 6. After few minutes check ACR security to validate if vulnerability is resolved and removed. 
 
-##Another script to delete old images(tags)
+##Another method to delete old images(tags)
 Only use this command when there are many tags to be deleted or you want to delete tags created before specific time.
 
 First run this set of commands to check what all images will be purged

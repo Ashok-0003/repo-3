@@ -27,6 +27,7 @@ kubectl get pods -n webapps -o jsonpath="{.items[*].spec.containers[*].image}"
 5. Delete the old image(tag) with the vulnerability from your registry. 
 You can either manually delete old tags or run script **platform-apis\script\deleteTags.ps1** to perform deletion.
 > Don't forget to mention currently used images in $doNotDeleteTags variable in the script.
+
 6. After few minutes check ACR security to validate if vulnerability is resolved and removed. 
 
 ##Another method to delete old images(tags)

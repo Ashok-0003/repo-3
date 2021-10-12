@@ -31,7 +31,7 @@ You can either manually delete old tags or run script **platform-apis\script\del
 6. After few minutes check ACR security to validate if vulnerability is resolved and removed. 
 
 ##Another method to delete old images(tags)
-Only use this command when there are many tags to be deleted or you want to delete tags created before specific time.
+Only use this command when there are many tags to be deleted and you want to delete tags created before specific time.
 This will delete tags from specified repository.
 
 First run this set of commands to check what all images will be purged

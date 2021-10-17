@@ -33,6 +33,7 @@ You can either manually delete old tags or run script **platform-apis\script\del
 ##Another method to delete old images(tags)
 Only use this command when there are many tags to be deleted and you want to delete tags created before specific time.
 This will delete tags from specified repository.
+> Recommendation: Try this method on unused repository first to see how it works.
 
 First run this set of commands to check what all images will be purged
 ```

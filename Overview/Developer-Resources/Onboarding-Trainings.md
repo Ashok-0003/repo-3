@@ -9,4 +9,4 @@ GIT & NPM Process -  https://tasmusqcp.sharepoint.com/:v:/r/sites/TASMU-CentralP
 
 Localization process - https://web.microsoftstream.com/video/11f9a0ff-0400-b9eb-a116-f1eb2eeac42b
 
-Dynamic Menu - https://web.microsoftstream.com/video/11f9a0ff-0400-b9eb-5810-f1eb2fc87213
+Dynamic Menu - https://tasmusqcp.sharepoint.com/:v:/r/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/Dynamic%20menu.mp4?csf=1&web=1&e=c7xMMW

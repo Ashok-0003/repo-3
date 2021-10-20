@@ -14,3 +14,30 @@
 | 10 | Validate code in TEST environment against acceptance criteria | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
 | 11 | Publish release notes to Malomatia to deploy code in UAT | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
 
+**CRM** 
+| ID | Dev Process | Tool | Responsible | Accountable | Consulted | Informed |
+|--|--|--|--|--|--|--|--|
+| 1 | |  | | |  | |
+| 2 | |  | | |  | |
+| 3 | |  | | |  | |
+
+**CMS** 
+| ID | Dev Process | Tool | Responsible | Accountable | Consulted | Informed |
+|--|--|--|--|--|--|--|--|
+| 1 | |  | | |  | |
+| 2 | |  | | |  | |
+| 3 | |  | | |  | |
+
+**API** 
+| ID | Dev Process | Tool | Responsible | Accountable | Consulted | Informed |
+|--|--|--|--|--|--|--|--|
+| 1 | |  | | |  | |
+| 2 | |  | | |  | |
+| 3 | |  | | |  | |
+
+**Chatbot** 
+| ID | Dev Process | Tool | Responsible | Accountable | Consulted | Informed |
+|--|--|--|--|--|--|--|--|
+| 1 | |  | | |  | |
+| 2 | |  | | |  | |
+| 3 | |  | | |  | |

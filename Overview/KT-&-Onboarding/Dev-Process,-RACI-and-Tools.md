@@ -6,7 +6,7 @@
 | 2 | Create a Feature branch for each work item and change the status of user story from 'Committed' to 'Under Development'| Visual Studio, Git, ADO | Developer | Developer | Dev Lead | Dev Lead |
 | 3 | Develop code in Feature branch. Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 4 | Check-in code in Feature branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
-| 5 | Conduct unit test in Feature branch - Angular (Jasmine), C# (XUnit), Chatbot (XUnit),  | Jasmine, NUnit, XUnit | Developer | Dev Lead | Dev Lead | Project Manager | 
+| 5 | Conduct unit test in Feature branch - Angular (Jasmine), C# (XUnit), Chatbot (XUnit) | Jasmine, XUnit | Developer | Dev Lead | Dev Lead | Project Manager | 
 | 6 | Submit Pull Request from Feature branch to merge code changes to master branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 7 | Review the PR and approve for merging to master (or provide feedback for developer to address). Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git, SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Dev Lead | Dev Lead | Architect | Developer |
 | 8 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 

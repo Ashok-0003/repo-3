@@ -7,7 +7,7 @@
 | 3 | Check-in code in Feature branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 4 | Conduct unit test in Feature branch | Jasmine, NUnit, XUnit | Developer | Dev Lead | Dev Lead | Project Manager | 
 | 5 | Submit Pull Request from Feature branch to merge code changes to master branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
-| 6 | Review the PR and approve for merging to master (or provide feedback for developer to address). Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git | Dev Lead | Dev Lead | Architect | Developer |
+| 6 | Review the PR and approve for merging to master (or provide feedback for developer to address). Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git, SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Dev Lead | Dev Lead | Architect | Developer |
 | 7 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
 | 8 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
 | 9 | Validate code in Dev environment against acceptance criteria | Visual Studio, Git | Developer | Dev Lead | Dev Lead | Dev Lead | 

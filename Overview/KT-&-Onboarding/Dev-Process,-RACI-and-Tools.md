@@ -1,6 +1,6 @@
 
 **B2B Portal**
-| ID | Dev Process | Tool | Responsible | Accountable | Consulted | Informed |
+**| ID | Dev Process | Tool | Responsible | Accountable | Consulted | Informed |**
 |--|--|--|--|--|--|--|--|
 | 1 | Create a Feature branch for each work item | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 2 | Check-in code in Feature branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |

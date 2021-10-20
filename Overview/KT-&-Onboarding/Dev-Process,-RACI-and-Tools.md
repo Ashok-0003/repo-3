@@ -27,6 +27,7 @@
 | 6 | Submit Pull Request from Feature branch to merge code changes to master branch (if code involved) | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 7 | Review the PR and approve for merging to master if code involved (or provide feedback for developer to address). Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git, SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Dev Lead | Dev Lead | Architect | Developer |
 | 8 | For configuration changes, review the changes in in Dev CRM environment. After review, update the configuration in Config CRM environment. | D365 | Dev Lead | Dev Lead | Architect | Developer |
+| 10 | Ensure compliance with solution checker tool | D365 [solution checker](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/use-powerapps-checker) | Dev Lead | Dev Lead | Developer | Developer | 
 | 9 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
 | 10 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
 | 11 | Validate code in Dev environment against acceptance criteria (using test scripts from the test team) and update the status of user story from 'Under Development' to 'Dev Complete' | Visual Studio, Git, ADO | Developer | Dev Lead | Dev Lead | Dev Lead | 

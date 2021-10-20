@@ -11,5 +11,6 @@
 | 7 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
 | 8 | Validate code in Dev environment against acceptance criteria | Visual Studio + Git| Developer | Dev Lead | Dev Lead | Dev Lead | 
 | 9 | Deploy code in TEST environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
-| 10 | Validate code in TEST environment against acceptance criteria | Test Lead | Test Lead | Dev Lead | Dev Lead | Test Lead | 
+| 10 | Validate code in TEST environment against acceptance criteria | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
+| 11 | Publish release notes to Malomatia to deploy code in UAT | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
 

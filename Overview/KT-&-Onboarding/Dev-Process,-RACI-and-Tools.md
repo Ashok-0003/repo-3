@@ -5,7 +5,7 @@
 | 1 | Create a Feature branch for each work item | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 2 | Develop code in Feature branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 3 | Check-in code in Feature branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
-| 4 | Conduct unit test in Feature branch | Jasmine | Developer | Dev Lead | Dev Lead | Project Manager | 
+| 4 | Conduct unit test in Feature branch | Jasmine, NUnit, XUnit | Developer | Dev Lead | Dev Lead | Project Manager | 
 | 5 | Submit Pull Request from Feature branch to merge code changes to master branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 6 | Review the PR and approve for merging to master (or provide feedback for developer to address). Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git | Dev Lead | Dev Lead | Architect | Developer |
 | 7 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 

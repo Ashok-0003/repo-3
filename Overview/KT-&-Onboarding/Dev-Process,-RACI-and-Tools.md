@@ -62,7 +62,7 @@
 | 5 | Review the PR and approve for merging to master (or provide feedback for developer to address) | Visual Studio, Git | DevOps Engineer | DevOps Engineer | Architect | Architect |
 | 6 | Delete Feature branch | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | DevOps Engineer | 
 | 7 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | DevOps Engineer | DevOps Engineer | Test Lead | 
-| 8 | Validate code in Dev environment against acceptance criteria | Visual Studio, Git | DevOps Engineer | DevOps Engineer | Dev Lead | Dev Lead | 
+| 8 | Validate code in Dev environment against acceptance criteria | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | Dev Lead | 
 | 9 | Deploy code in TEST environment | CI/CD pipelines | DevOps Engineer | DevOps Engineer | Test Lead | Test Lead | 
 | 10 | Validate code in TEST environment against acceptance criteria | ADO | Test Lead | DevOps Engineer | DevOps Engineer | Test Lead | 
 | 11 | Publish release notes to Malomatia to deploy code in UAT | Email | DevOps Engineer | DevOps Engineer | Test Lead | Project Manager | 

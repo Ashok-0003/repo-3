@@ -52,12 +52,12 @@
 | 12 | Validate code in TEST environment against acceptance criteria and update the status of user story from 'Dev Complete' to 'Test Complete' | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
 | 13 | Publish release notes to Malomatia to deploy code in UAT and change the status of user story from 'Test Complete' to 'DoD Ready' | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
 
-**DevOps**
+**DevOps - Infra**
 | **ID** | **Dev Process** | **Tool** | **Responsible** | **Accountable** | **Consulted** | **Informed** |
 |--|--|--|--|--|--|--|--|
 | 1 | Create a Feature branch for each work item | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | DevOps Engineer |
 | 2 | Check-in code in Feature branch | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | Architect |
-| 3 | Conduct unit test in Feature branch | Azure Portal, Automated scripts | DevOps Engineer | DevOps Engineer | DevOps Engineer | Project Manager | 
+| 3 | Conduct unit test in Feature branch | Azure Portal, Powershell | DevOps Engineer | DevOps Engineer | DevOps Engineer | Project Manager | 
 | 4 | Submit Pull Request from Feature branch to merge code changes to master branch | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | Architect |
 | 5 | Review the PR and approve for merging to master (or provide feedback for developer to address) | Visual Studio, Git | DevOps Engineer | DevOps Engineer | Architect | Architect |
 | 6 | Delete Feature branch | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | DevOps Engineer | 

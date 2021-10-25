@@ -1,7 +1,6 @@
-Overview - https://microsofteur.sharepoint.com/:p:/t/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/EQmo66EcjEBOk948XJR-qDgBzMFsTM53-FdYQrDeVtaBPA?e=dbdmaY&CID=65D163A1-2E9E-420E-9BC4-6722416B7955&wdLOR=cC1F71946-2046-47CA-BAA6-7432FF534641
-https://web.microsoftstream.com/video/9b13a1ff-0400-a9f4-c55d-f1ea9f22b392
+Overview - https://tasmusqcp.sharepoint.com/:p:/r/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/20200922_TASMU%20Central%20Platform%20-Platform%20Services_v0.5.pptx?d=w1fdebb1bc4df45049e53523e54a6f961&csf=1&web=1&e=WyOmdS
 
-Application architecture - https://microsofteur.sharepoint.com/:u:/r/teams/TASMUNationalPlatform-DeliveryStream-MicrosoftOnly/_layouts/15/Doc.aspx?sourcedoc=%7BAB69922B-E7DA-4154-A2F5-6AF7B6C4D13E%7D&file=Apps-Design.vsdx&action=default&cid=762d9e9e-0bd3-44b8-b766-076155545596
+Application architecture - https://tasmusqcp.sharepoint.com/:u:/r/sites/TASMU-CentralPlatformPMO/Shared%20Documents/General/05.%20Workstreams/07.%20Microsoft/Apps/KT%20Recordings/Apps-Design.vsdx?d=w74e6d9e953254df8a1427b7d920e58f9&csf=1&web=1&e=WsI11b
 
 Platform API - https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/platform-apis?path=%2FREADME.md
 

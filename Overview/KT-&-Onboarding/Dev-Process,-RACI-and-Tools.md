@@ -27,13 +27,13 @@
 | 6 | Submit Pull Request from Feature branch to merge code changes to master branch (if code involved) | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 7 | Review the PR and approve for merging to master if code involved (or provide feedback for developer to address). Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git, SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Dev Lead | Dev Lead | Architect | Developer |
 | 8 | For configuration changes, review the changes in Dev CRM environment. After review, update the configuration in Config CRM environment. | D365 | Dev Lead | Dev Lead | Architect | Developer |
-| 10 | Ensure compliance with solution checker tool | D365 [solution checker](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/use-powerapps-checker) | Dev Lead | Dev Lead | Developer | Developer | 
-| 9 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
-| 10 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
-| 11 | Validate code in Dev environment against acceptance criteria (using test scripts from the test team) and update the status of user story from 'Under Development' to 'Dev Complete' | Visual Studio, Git, ADO | Developer | Dev Lead | Dev Lead | Dev Lead | 
-| 12 | Deploy code in TEST environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
-| 13 | Validate code in TEST environment against acceptance criteria and update the status of user story from 'Dev Complete' to 'Test Complete' | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
-| 14 | Publish release notes to Malomatia to deploy code in UAT and change the status of user story from 'Test Complete' to 'DoD Ready' | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
+| 9 | Ensure compliance with solution checker tool | D365 [solution checker](https://docs.microsoft.com/en-us/powerapps/maker/data-platform/use-powerapps-checker) | Dev Lead | Dev Lead | Developer | Developer | 
+| 10 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
+| 11 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
+| 12 | Validate code in Dev environment against acceptance criteria (using test scripts from the test team) and update the status of user story from 'Under Development' to 'Dev Complete' | Visual Studio, Git, ADO | Developer | Dev Lead | Dev Lead | Dev Lead | 
+| 13 | Deploy code in TEST environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
+| 14 | Validate code in TEST environment against acceptance criteria and update the status of user story from 'Dev Complete' to 'Test Complete' | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
+| 15 | Publish release notes to Malomatia to deploy code in UAT and change the status of user story from 'Test Complete' to 'DoD Ready' | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
 
 **CMS** 
 | **ID** | **Dev Process** | **Tool** | **Responsible** | **Accountable** | **Consulted** | **Informed** |

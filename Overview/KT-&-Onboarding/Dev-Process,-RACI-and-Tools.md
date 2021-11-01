@@ -40,7 +40,7 @@
 |--|--|--|--|--|--|--|--|
 | 1 | Change the status of User Story from 'Approved' to 'Committed' state and create child Tasks for development.  | ADO | Developer | Developer | Dev Lead | Dev Lead |
 | 2 | Create a Feature branch for each work item and change the status of user story from 'Committed' to 'Under Development'. Script and SPFx Changes (Infra Repo), CMS API and Functions(Platform Core and Platform API) | Visual Studio, Git, ADO, O365, PowerShell | Developer | Developer | Dev Lead | Dev Lead |
-| 3 | Develop code in Feature branch. Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git, O365 | Developer | Developer | Dev Lead | Dev Lead |
+| 3 | Develop code (code, configurations, flows, scripts) in Feature branch. Ensure compliance with SonarQube, JSLint, FXcop, StyleCop, CodeMetrics, FXcop Roslyn Analyser | Visual Studio, Git, O365 | Developer | Developer | Dev Lead | Dev Lead |
 | 4 | Check-in code in Feature branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
 | 5 | Conduct unit test in Feature branch - SPFx(Jest), C# (XUnit) | Jest, XUnit | Developer | Dev Lead | Dev Lead | Project Manager | 
 | 6 | Submit Pull Request from Feature branch to merge code changes to master branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |

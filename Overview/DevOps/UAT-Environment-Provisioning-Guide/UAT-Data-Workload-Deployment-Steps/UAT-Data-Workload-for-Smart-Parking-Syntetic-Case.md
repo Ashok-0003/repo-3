@@ -83,7 +83,7 @@ Add ADX deployment scripts in the following [project](https://dev.azure.com/TASM
 Before you start, please check in rg-cpd-data-uat-we-01 resource group if:
 - Data Lake raw zone (**spsimulator** container)
 - Synapse SmartParking SQL pool
-- Databricks 
+- Databricks (**add notebook here**)
 
 services has been deployed and running.
 

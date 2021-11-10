@@ -79,6 +79,13 @@ Add ADX deployment scripts in the following [project](https://dev.azure.com/TASM
 1. Functions
 1. Policies 
 1. Tables
+# Check availability of services
+Before you start, please check in rg-cpd-data-uat-we-01 resource group if:
+- Data Lake raw zone (**spsimulator** container)
+- Synapse SmartParking SQL pool
+- Databricks 
+
+services has been deployed and running.
 
 # Deployment of the solution components (Synthetic Use Case components (not production ready!))
 Run the following pipelines in sequence:

@@ -72,9 +72,6 @@ The following list of variables are required to be updated after a new Azure inf
 | evh_sharedAccessPolicyKey | Event Hub policy key |
 
 
-1. Update [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps in the variable groups - uat.
-The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\data-secrets.yml
-1. Run the pipeline to populate key vault [CD-KeyVaultSecrets-Master-Data-Release](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=966).
 
 # Update ADX SmartCity Project for new Environment
 Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=%2FSmartParking%2FMcs.Tasmu.SmartParking.ADX) similar to the existing environments implementation for:

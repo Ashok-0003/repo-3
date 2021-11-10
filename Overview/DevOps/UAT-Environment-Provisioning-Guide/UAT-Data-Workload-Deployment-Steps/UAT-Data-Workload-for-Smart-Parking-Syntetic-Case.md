@@ -66,15 +66,11 @@ The following list of variables are required to be updated after a new Azure inf
 |Variable Name| Description |
 |--|--|
 | stcpddata03-Key | Primary key for stcpddatauat03 storage |
-| SQLServer01-Admin-Password | Admin Password |
-| SQLServer01-Admin-Username | Admin Username |
-| Databricks-bearerToken | Generate a new user bearer tokerm from databricks portal |
+| SQLServer02-Admin-Password | Admin Password |
+| SQLServer02-Admin-Username | Admin Username |
 | iot_sharedAccessPolicyKey | IOT policy key |
 | evh_sharedAccessPolicyKey | Event Hub policy key |
-| SPN-Data-Id | Service Principle Id |
-| SPN-Data-Key | Service Principle Key |
-| SPN-ADO-Id | Service Principle Id |
-| SPN-ADO-Key | Service Principle Key |
+
 
 1. Update [library variable group](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_library?itemType=VariableGroups) in Azure DevOps in the variable groups - uat.
 The list of secrets to be seeded to kv-cpd-data-<env>-we-01 - Scripts\KeyVault\data-secrets.yml

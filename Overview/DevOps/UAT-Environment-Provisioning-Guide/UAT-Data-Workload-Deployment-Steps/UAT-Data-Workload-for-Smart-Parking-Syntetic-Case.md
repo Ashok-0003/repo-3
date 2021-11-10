@@ -20,7 +20,6 @@
 |API Connection  |apicon-cpd-data-sql-uat-we-01 (apicon-cpd-data-sql-uat-we-01-parameters.json)  |
 |Function App  |func-cpd-data-uat-we-01  |
 |Function App  |func-cpd-data-uat-we-02  |
-|Function App | func-cpd-data-uat-we-03 |
 |Function App  | func-cpd-telsim-uat-we-01 |
 |App Service Plan  | plan-cpd-data-uat-we-01 |
 |Application Insight  | appi-cpd-data-uat-we-01 |
@@ -67,7 +66,6 @@ The following list of variables are required to be updated after a new Azure inf
 |Variable Name| Description |
 |--|--|
 | stcpddata03-Key | Primary key for stcpddatauat03 storage |
-| stcpddata04-Key | Primary key for stcpddatauat04 storage |
 | SQLServer01-Admin-Password | Admin Password |
 | SQLServer01-Admin-Username | Admin Username |
 | Databricks-bearerToken | Generate a new user bearer tokerm from databricks portal |

@@ -94,7 +94,13 @@ Run the following pipelines in sequence:
 1. [Deploy Azure Function Parking Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=544)
 1. [Deploy Azure Function Telemetry Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=625)
 1. [Deploy Azure Stream Analytics Jobs](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=545)
-1. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
+Before the next step, which is ADX database deployment, please check the settings of **nsg-cpd-data-daisvc-uat-we-01** NSG. For the proper deployment the port 443 must be open for all traffic for inbound and outbound rules as follows:
+![image.png](/.attachments/image-20e53990-9321-4b78-a816-25813e149e04.png)
+
+![image.png](/.attachments/image-4233c4da-81a7-4929-b381-71b4438fec3e.png)
+
+
+6. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)
 1. [Deploy Event Grid for Device Avaiability](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1696)
 

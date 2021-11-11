@@ -98,7 +98,7 @@ Run the following pipelines in sequence:
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)
 1. [Deploy Event Grid for Device Avaiability](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1696)
 
-#Assign all Smart City services to Log Analytics Workspace.
+#Assign all Smart Parking services to Log Analytics Workspace.
 Login with az login --tenant "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" where "XXX..." is tenant id
 Run the script SmartParkingLogs.ps1 (PlatformEvents/Mcs.PlatformEvents.LogAnalytics/SmartParkingLogs.ps1) from data-platform repo.
 

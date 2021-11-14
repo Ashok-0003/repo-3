@@ -103,7 +103,7 @@ Before the next step, which is ADX database deployment, please check the setting
 
 7. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)
-1. [Deploy Azure Analytics Services Cube](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1699)
+1. [Deploy Azure Analytics Services Cubes](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1699)
 1. [Deploy Event Grid for Device Avaiability](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1696)
 
 #Assign all Smart Parking services to Log Analytics Workspace.
@@ -114,8 +114,8 @@ Run the script SmartParkingLogs.ps1 (PlatformEvents/Mcs.PlatformEvents.LogAnalyt
 Currently we are deploying all the Power BI reports in the TST environment. A new workspace named “Automation Tst - Tasmu Command & Control Center Dashboards” is created where all the reports are automatically deployed.
 For the automatic deployment, “Power BI: Action” extension is used.
 * Automatic:
-  * Deployment of Power BI reports to tst environment.
-  * Update Data sources for Azure Analysis Service pointing it to the tst.
+  * Deployment of Power BI reports to uat environment.
+  * Update Data sources for Azure Analysis Service pointing it to the uat.
 - After Automatic Deployment, we need to change few things manually.
 * Manual:
   * Update Data sources for SQL (Credentials too) , ADX and Blob storage.

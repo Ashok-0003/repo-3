@@ -90,6 +90,7 @@ Before you start, please check in rg-cpd-data-uat-we-01 resource group if:
 services has been deployed and running.
 # Provision IoT Devices
 1. Check if **iotdevices** container has been created for **stcpddatauatwe01** storage account. If not, [run the script](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1704) to create it.
+1. Update the secret **iotdevstorage** stored in **kv-cpd-data-uat-we-01** with **stcpddatauatwe03** connection string. The value is use by telemetry data simulator to get the connection strings to all devices.
 1. Create a SAS authentication credential for **iotdevices** container.
 ![image.png](/.attachments/image-3c1bd61d-c085-4a21-b851-230a45d76dc3.png)
 and update the script **IoTDevicesGetConnstringUat-cli.ps1**

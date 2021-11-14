@@ -90,6 +90,10 @@ Before you start, please check in rg-cpd-data-uat-we-01 resource group if:
 services has been deployed and running.
 # Provision IoT Devices
 1. Check if **iotdevices** container has been created for **stcpddatauatwe01** storage account. If not, [run the script](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1704) to create it.
+1. Create a SAS authentication credential for **iotdevices** container.
+![image.png](/.attachments/image-3c1bd61d-c085-4a21-b851-230a45d76dc3.png)
+and update the script **IoTDevicesGetConnstringUat-cli.ps1**
+![image.png](/.attachments/image-fb7950f8-fde8-44b9-a8e5-a8078610de8f.png)
 1. Run the provisioning script to provision the IoT devices for simulation [---> run script]()
 1. Export provisioned devices as file  for telemetry data simulator[---> run script](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1703)
 

@@ -88,6 +88,9 @@ Before you start, please check in rg-cpd-data-uat-we-01 resource group if:
 - Databricks (**add notebook here**)
 
 services has been deployed and running.
+# Provision IoT Devices
+1. [Run the provisioning script to provision the IoT devices for simulation]()
+1. [Export provisioned devices as file  for telemetry data simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1703)
 
 # Deployment of the solution components (Synthetic Use Case components (not production ready!))
 Run the following pipelines in sequence:

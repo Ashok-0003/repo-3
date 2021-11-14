@@ -70,7 +70,7 @@ The following list of variables are required to be updated after a new Azure inf
 | SQLServer02-Admin-Username | Admin Username |
 | iot_sharedAccessPolicyKey | IOT policy key |
 | evh_sharedAccessPolicyKey | Event Hub policy key |
-
+| evh02_sharedAccessPolicyKey | Event Hub policy key |
 
 
 # Update ADX SmartParking Project for new Environment (check)
@@ -90,6 +90,7 @@ services has been deployed and running.
 # Deployment of the solution components (Synthetic Use Case components (not production ready!))
 Run the following pipelines in sequence:
 1. [Deploy Azure SQLDB](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=501)
+1. [Deploy Azure Synapse database](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=896)
 1. [Deploy Azure Function Parking Lot Update](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=543)
 1. [Deploy Azure Function Parking Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=544)
 1. [Deploy Azure Function Telemetry Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=625)
@@ -100,7 +101,7 @@ Before the next step, which is ADX database deployment, please check the setting
 ![image.png](/.attachments/image-4233c4da-81a7-4929-b381-71b4438fec3e.png)
 
 
-6. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
+7. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)
 1. [Deploy Event Grid for Device Avaiability](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1696)
 

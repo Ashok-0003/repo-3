@@ -103,6 +103,7 @@ Before the next step, which is ADX database deployment, please check the setting
 
 7. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)
+1. [Deploy Azure Analytics Services Cube](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1699)
 1. [Deploy Event Grid for Device Avaiability](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1696)
 
 #Assign all Smart Parking services to Log Analytics Workspace.

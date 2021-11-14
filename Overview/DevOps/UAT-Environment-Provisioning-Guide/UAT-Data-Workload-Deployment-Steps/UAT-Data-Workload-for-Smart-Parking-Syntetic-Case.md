@@ -72,6 +72,8 @@ The following list of variables are required to be updated after a new Azure inf
 | evh_sharedAccessPolicyKey | Event Hub policy key |
 | evh02_sharedAccessPolicyKey | Event Hub policy key |
 
+# Check SPN account
+Before you will start with another steps, check if SPN **spn-data-dev** is an owner for **rg-cpd-data-uat-we-02** group.
 
 # Update ADX SmartParking Project for new Environment (check)
 Add ADX deployment scripts in the following [project](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_git/data-platform?path=%2FSmartParking%2FMcs.Tasmu.SmartParking.ADX) similar to the existing environments implementation for:

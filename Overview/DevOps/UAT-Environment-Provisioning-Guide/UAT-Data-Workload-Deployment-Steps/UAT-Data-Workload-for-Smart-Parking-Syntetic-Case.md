@@ -94,7 +94,7 @@ services has been deployed and running.
 ![image.png](/.attachments/image-3c1bd61d-c085-4a21-b851-230a45d76dc3.png)
 and update the script **IoTDevicesGetConnstringUat-cli.ps1**
 ![image.png](/.attachments/image-fb7950f8-fde8-44b9-a8e5-a8078610de8f.png)
-1. Run the provisioning script to provision the IoT devices for simulation [---> run script]()
+1. Run the provisioning script to provision the IoT devices for simulation [---> run script](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1705)
 1. Export provisioned devices as file  for telemetry data simulator[---> run script](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1703)
 
 # Deployment of the solution components (Synthetic Use Case components (not production ready!))

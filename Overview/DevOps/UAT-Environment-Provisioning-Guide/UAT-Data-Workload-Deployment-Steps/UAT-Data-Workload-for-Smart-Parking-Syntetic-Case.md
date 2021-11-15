@@ -102,6 +102,16 @@ and update the script **IoTDevicesGetConnstringUat-cli.ps1**
 Run the following pipelines in sequence:
 1. [Deploy Azure SQLDB](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=501)
 1. [Deploy Azure Synapse database](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=896)
+Before next steps please update the variables in uat library as follows:
+
+|  |  |
+|--|--|
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+
+
 1. [Deploy Azure Function Parking Lot Update](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=543)
 1. [Deploy Azure Function Parking Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=544)
 1. [Deploy Azure Function Telemetry Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=625)

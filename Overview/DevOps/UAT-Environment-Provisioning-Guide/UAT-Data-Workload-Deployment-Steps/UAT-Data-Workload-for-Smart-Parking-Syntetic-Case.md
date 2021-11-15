@@ -104,12 +104,7 @@ Run the following pipelines in sequence:
 1. [Deploy Azure Synapse database](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=896)
 Before next steps please update the variables in uat library as follows:
 
-|  |  |
-|--|--|
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+
 
 
 1. [Deploy Azure Function Parking Lot Update](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=543)

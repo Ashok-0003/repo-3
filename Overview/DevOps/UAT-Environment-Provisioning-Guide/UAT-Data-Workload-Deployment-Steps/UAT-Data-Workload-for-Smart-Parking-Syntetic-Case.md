@@ -89,7 +89,7 @@ Before you start, please check in rg-cpd-data-uat-we-01 resource group if:
 
 services has been deployed and running.
 # Provision IoT Devices
-1. Check if **iotdevices** container has been created for **stcpddatauatwe01** storage account. If not, [run the script](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1704) to create it.
+1. Check if **iotdevices** container has been created for **stcpddatauatwe03** storage account. If not, [run the script](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1704) to create it.
 1. Update the secret **iotdevstorage** stored in **kv-cpd-data-uat-we-01** with **stcpddatauatwe03** connection string. The value is use by telemetry data simulator to get the connection strings to all devices.
 1. Create a SAS authentication credential for **iotdevices** container.
 ![image.png](/.attachments/image-3c1bd61d-c085-4a21-b851-230a45d76dc3.png)
@@ -102,11 +102,6 @@ and update the script **IoTDevicesGetConnstringUat-cli.ps1**
 Run the following pipelines in sequence:
 1. [Deploy Azure SQLDB](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=501)
 1. [Deploy Azure Synapse database](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=896)
-Before next steps please update the variables in uat library as follows:
-
-
-
-
 1. [Deploy Azure Function Parking Lot Update](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=543)
 1. [Deploy Azure Function Parking Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=544)
 1. [Deploy Azure Function Telemetry Simulator](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=625)
@@ -119,8 +114,10 @@ Before the next step, which is ADX database deployment, please check the setting
 
 7. [Deploy Azure Data Explorer](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=559)
 1. [Deploy Azure Data Factory](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=462)
+**After deployment ... placeholder for databricks notebook check**
 1. [Deploy Azure Analytics Services Cubes](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1699)
 1. [Deploy Event Grid for Device Avaiability](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_build?definitionId=1696)
+
 
 #Assign all Smart Parking services to Log Analytics Workspace.
 Login with az login --tenant "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" where "XXX..." is tenant id

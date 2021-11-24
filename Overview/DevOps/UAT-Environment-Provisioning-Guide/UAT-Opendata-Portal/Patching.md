@@ -7,6 +7,8 @@ sudo vi base.html
  
 **On line 113, add the following code snippet (refer image below)**
 
+
+```
 <script type="text/javascript"> 
 var currentLanguage = document.getElementsByTagName('html')[0].getAttribute('lang'); 
 var aTag = document.getElementById('motctmlogo'); 
@@ -17,7 +19,9 @@ aTag.href = https://www.motc.gov.qa/ar;
 } else { 
 aTag.href = https://www.motc.gov.qa/en; 
 } 
-</script>  
+</script>
+```
+  
 
 ![image.png](/.attachments/image-aa8cf0b2-4a57-405c-8957-4beba0ac947b.png)
 		

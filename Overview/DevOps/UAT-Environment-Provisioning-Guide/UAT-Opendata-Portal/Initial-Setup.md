@@ -42,95 +42,98 @@
 	Uncomment these parameters and add smtp.password (SendGrid key)
 	![image.png](/.attachments/image-2a95b252-62c1-4cfc-88ec-29c331194ea4.png)
 
-Setup PostgreSQL Server -
+**Setup PostgreSQL Server -**
 
 1. Connect to the PostgreSQL Server -
-	psql "host=gresql-<sub>-apps-ckan-<env>-we-04.postgres.database.azure.com port=5432 dbname=postgres user=<username>@gresql-cpd-apps-ckan-tst-we-04 password=<password> sslmode=require"
+	`psql "host=gresql-<sub>-apps-ckan-<env>-we-04.postgres.database.azure.com port=5432 dbname=postgres user=<username>@gresql-cpd-apps-ckan-tst-we-04 password=<password> sslmode=require"`
 	
 2. Execute SQL Commands -
-	CREATE DATABASE datastore_default;
-	CREATE ROLE datastore_user WITH LOGIN NOSUPERUSER INHERIT NOCREATEROLE NOREPLICATION PASSWORD 'Tasmu54321';
-	CREATE ROLE ckan_default WITH LOGIN NOSUPERUSER INHERIT NOCREATEROLE NOREPLICATION PASSWORD 'Tasmu54321';
-	GRANT ALL PRIVILEGES ON DATABASE datastore_default TO ckan_default;
+	
+```
+CREATE DATABASE datastore_default;
+CREATE ROLE datastore_user WITH LOGIN NOSUPERUSER INHERIT NOCREATEROLE NOREPLICATION PASSWORD 'Tasmu54321';
+CREATE ROLE ckan_default WITH LOGIN NOSUPERUSER INHERIT NOCREATEROLE NOREPLICATION PASSWORD 'Tasmu54321';
+GRANT ALL PRIVILEGES ON DATABASE datastore_default TO ckan_default;
 
-	\c datastore_default
+\c datastore_default
 	
-	REVOKE CREATE ON SCHEMA public FROM PUBLIC;
-	REVOKE USAGE ON SCHEMA public FROM PUBLIC;
+REVOKE CREATE ON SCHEMA public FROM PUBLIC;
+REVOKE USAGE ON SCHEMA public FROM PUBLIC;
+
+GRANT CREATE ON SCHEMA public TO "citus";
+GRANT USAGE ON SCHEMA public TO "citus";
 	
-	GRANT CREATE ON SCHEMA public TO "citus";
-	GRANT USAGE ON SCHEMA public TO "citus";
+GRANT CREATE ON SCHEMA public TO "ckan_default";
+GRANT USAGE ON SCHEMA public TO "ckan_default";
 	
-	GRANT CREATE ON SCHEMA public TO "ckan_default";
-	GRANT USAGE ON SCHEMA public TO "ckan_default";
+-- take connect permissions from main db
+REVOKE CONNECT ON DATABASE "citus" FROM "datastore_user";
 	
-	-- take connect permissions from main db
-	REVOKE CONNECT ON DATABASE "citus" FROM "datastore_user";
+-- grant select permissions for read-only user
+GRANT CONNECT ON DATABASE "datastore_default" TO "datastore_user";
+GRANT USAGE ON SCHEMA public TO "datastore_user";
 	
-	-- grant select permissions for read-only user
-	GRANT CONNECT ON DATABASE "datastore_default" TO "datastore_user";
-	GRANT USAGE ON SCHEMA public TO "datastore_user";
+-- grant access to current tables and views to read-only user
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO "datastore_user";
 	
-	-- grant access to current tables and views to read-only user
-	GRANT SELECT ON ALL TABLES IN SCHEMA public TO "datastore_user";
+-- grant access to new tables and views by default
+ALTER DEFAULT PRIVILEGES FOR USER "ckan_default" IN SCHEMA public
+GRANT SELECT ON TABLES TO "datastore_user";
 	
-	-- grant access to new tables and views by default
-	ALTER DEFAULT PRIVILEGES FOR USER "ckan_default" IN SCHEMA public
-	GRANT SELECT ON TABLES TO "datastore_user";
+-- a view for listing valid table (resource id) and view names
+CREATE OR REPLACE VIEW "_table_metadata" AS
+SELECT DISTINCT
+substr(md5(dependee.relname || COALESCE(dependent.relname, '')), 0, 17) AS "_id",
+dependee.relname AS name,
+dependee.oid AS oid,
+dependent.relname AS alias_of
+FROM
+pg_class AS dependee
+LEFT OUTER JOIN pg_rewrite AS r ON r.ev_class = dependee.oid
+LEFT OUTER JOIN pg_depend AS d ON d.objid = r.oid
+LEFT OUTER JOIN pg_class AS dependent ON d.refobjid = dependent.oid
+WHERE
+(dependee.oid != dependent.oid OR dependent.oid IS NULL) AND
+-- is a table (from pg_tables view definition)
+-- or is a view (from pg_views view definition)
+(dependee.relkind = 'r'::"char" OR dependee.relkind = 'v'::"char")
+AND dependee.relnamespace = (
+SELECT oid FROM pg_namespace WHERE nspname='public')
+ORDER BY dependee.oid DESC;
+ALTER VIEW "_table_metadata" OWNER TO "ckan_default";
+GRANT SELECT ON "_table_metadata" TO "datastore_user";
 	
-	-- a view for listing valid table (resource id) and view names
-	CREATE OR REPLACE VIEW "_table_metadata" AS
-	SELECT DISTINCT
-	substr(md5(dependee.relname || COALESCE(dependent.relname, '')), 0, 17) AS "_id",
-	dependee.relname AS name,
-	dependee.oid AS oid,
-	dependent.relname AS alias_of
-	FROM
-	pg_class AS dependee
-	LEFT OUTER JOIN pg_rewrite AS r ON r.ev_class = dependee.oid
-	LEFT OUTER JOIN pg_depend AS d ON d.objid = r.oid
-	LEFT OUTER JOIN pg_class AS dependent ON d.refobjid = dependent.oid
-	WHERE
-	(dependee.oid != dependent.oid OR dependent.oid IS NULL) AND
-	-- is a table (from pg_tables view definition)
-	-- or is a view (from pg_views view definition)
-	(dependee.relkind = 'r'::"char" OR dependee.relkind = 'v'::"char")
-	AND dependee.relnamespace = (
-	SELECT oid FROM pg_namespace WHERE nspname='public')
-	ORDER BY dependee.oid DESC;
-	ALTER VIEW "_table_metadata" OWNER TO "ckan_default";
-	GRANT SELECT ON "_table_metadata" TO "datastore_user";
-	
-	-- _full_text fields are now updated by a trigger when set to NULL
-	CREATE OR REPLACE FUNCTION populate_full_text_trigger() RETURNS trigger
-	AS $body$
-	BEGIN
-	IF NEW._full_text IS NOT NULL THEN
-	RETURN NEW;
-	END IF;
-	NEW._full_text := (
-	SELECT to_tsvector(string_agg(value, ' '))
-	FROM json_each_text(row_to_json(NEW.*))
-	WHERE key NOT LIKE '\_%');
-	RETURN NEW;
-	END;
-	$body$ LANGUAGE plpgsql;
-	ALTER FUNCTION populate_full_text_trigger() OWNER TO "ckan_default";
-	
-	-- migrate existing tables that don't have full text trigger applied
-	DO $body$
-	BEGIN
-	EXECUTE coalesce(
-	(SELECT string_agg(
-	'CREATE TRIGGER zfulltext BEFORE INSERT OR UPDATE ON ' ||
-	quote_ident(relname) || ' FOR EACH ROW EXECUTE PROCEDURE ' ||
-	'populate_full_text_trigger();', ' ')
-	FROM pg_class
-	LEFT OUTER JOIN pg_trigger AS t
-	ON t.tgrelid = relname::regclass AND t.tgname = 'zfulltext'
-	WHERE relkind = 'r'::"char" AND t.tgname IS NULL
-	AND relnamespace = (
-	SELECT oid FROM pg_namespace WHERE nspname='public')),
-	'SELECT 1;');
-	END;
+-- _full_text fields are now updated by a trigger when set to NULL
+CREATE OR REPLACE FUNCTION populate_full_text_trigger() RETURNS trigger
+AS $body$
+BEGIN
+IF NEW._full_text IS NOT NULL THEN
+RETURN NEW;
+END IF;
+NEW._full_text := (
+SELECT to_tsvector(string_agg(value, ' '))
+FROM json_each_text(row_to_json(NEW.*))
+WHERE key NOT LIKE '\_%');
+RETURN NEW;
+END;
+$body$ LANGUAGE plpgsql;
+ALTER FUNCTION populate_full_text_trigger() OWNER TO "ckan_default";
+
+-- migrate existing tables that don't have full text trigger applied
+DO $body$
+BEGIN
+EXECUTE coalesce(
+(SELECT string_agg(
+'CREATE TRIGGER zfulltext BEFORE INSERT OR UPDATE ON ' ||
+quote_ident(relname) || ' FOR EACH ROW EXECUTE PROCEDURE ' ||
+'populate_full_text_trigger();', ' ')
+FROM pg_class
+LEFT OUTER JOIN pg_trigger AS t
+ON t.tgrelid = relname::regclass AND t.tgname = 'zfulltext'
+WHERE relkind = 'r'::"char" AND t.tgname IS NULL
+AND relnamespace = (
+SELECT oid FROM pg_namespace WHERE nspname='public')),
+'SELECT 1;');
+END;
 $body$;
+```

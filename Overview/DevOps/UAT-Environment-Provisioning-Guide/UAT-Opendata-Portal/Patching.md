@@ -42,7 +42,7 @@ sudo vi /opt/bitnami/ckan/venv/src/ckan/ckan/templates/footer.html
 </div> 
 ```
 ###3. Change last div class from **col-md-4** to **col-md-3** 
-	![image.png](/.attachments/image-4f03d9a6-7ad5-4d1e-8edf-7dfce41c6b0c.png)
+![image.png](/.attachments/image-4f03d9a6-7ad5-4d1e-8edf-7dfce41c6b0c.png)
 		 
 ##**Patch header.html**
 ```

@@ -100,9 +100,9 @@ WantedBy=multi-user.target
 	
 ## **Setup PdfView and GeoView Extensions**
 
-sudo pip install ckanext-pdfview
-sudo pip install ckanext-geoview
+    sudo pip install ckanext-pdfview
+    sudo pip install ckanext-geoview
 
 ## **Restart Bitnami Service**
 
-sudo service bitnami restart
+    sudo service bitnami restart

@@ -12,4 +12,4 @@ Below image depicts the file (resource) uploading process.
 **For more information and visual representation, Recordings of the KT will be helpful.**
 
 
-Data pusher will support tabular formats. like csv,tsv,xslx. (subject to correction.)
+- Data pusher will support tabular formats. like csv,tsv,xslx. (subject to correction.)

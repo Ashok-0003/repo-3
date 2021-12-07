@@ -10,4 +10,6 @@ Below image depicts the file (resource) uploading process.
 7. the function app will upload the file to front portal using rest api. this code is present in the platform api and the solution is: CkanResourceCreationFunction
  
 **For more information and visual representation, Recordings of the KT will be helpful.**
- 
+
+
+Data pusher will support tabular formats. like csv,tsv,xslx. (subject to correction.)

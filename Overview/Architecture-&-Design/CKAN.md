@@ -11,5 +11,7 @@ Below image depicts the file (resource) uploading process.
  
 **For more information and visual representation, Recordings of the KT will be helpful.**
 
-
+**Data Pusher:**
+- Please refer to Open data deployment wiki for the setup and commands to use
 - Data pusher will support tabular formats. like csv,tsv,xslx. (subject to correction.)
+- Logs and other things can be seen in PostgreSQL. Install PGAdmin and connect to the servers using the credentials used in the configurations/setup. Enable the firewall for your client machine.

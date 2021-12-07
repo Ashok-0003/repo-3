@@ -1,3 +1,4 @@
+**Resource uploading process:**
 Below image depicts the file (resource) uploading process.
 ![image.png](/.attachments/image-405936f4-3dc9-40c0-bc11-451e9c9ad0f3.png)
 

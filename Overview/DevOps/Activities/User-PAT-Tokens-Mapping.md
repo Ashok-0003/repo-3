@@ -22,7 +22,7 @@ https://dev.azure.com/TASMUCP/_usersSettings/tokens
 |[datapool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=113&view=agents)| 15th Jun, 2022 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Santosh Nair |
 |[tasmumsagents](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=11&view=agents)| 15th Jun, 2022 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Santosh Nair |
 |[tasmumsiagents](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=217&view=agents)| 15th Jun, 2022 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Santosh Nair |
-|[tasmumsagents](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=217&view=agents)| 15th Jun, 2022 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Santosh Nair |
+|[tasmumsiprdagents](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=154&view=agents)| 15th Jun, 2022 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Santosh Nair |
 # Service Connections
 
 

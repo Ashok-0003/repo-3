@@ -31,7 +31,7 @@
 | 10 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
 | 11 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
 | 12 | Validate code in Dev environment against acceptance criteria (using test scripts from the test team) and update the status of user story from 'Under Development' to 'Dev Complete' | Visual Studio, Git, ADO | Developer | Dev Lead | Dev Lead | Dev Lead | 
-| 13 | Deploy code in TEST environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
+| 13 | Deploy code in TEST environment (potentially multiple times a week whenever a story or bug fix is ready for testing) | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
 | 14 | Validate code in TEST environment against acceptance criteria and update the status of user story from 'Dev Complete' to 'Test Complete' | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
 | 15 | Publish release notes to Malomatia to deploy code in UAT and change the status of user story from 'Test Complete' to 'DoD Ready' | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
 

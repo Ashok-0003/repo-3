@@ -17,7 +17,7 @@ https://dev.azure.com/TASMUCP/_usersSettings/tokens
 |Agent Pool| Expiring On  | Permissions | User  |
 |--|--|--|--|
 |[platformapispool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=112&view=jobs)| 15th Jun, 2022 | Agent Pools (Read & manage); Deployment Groups (Read & manage)| Santosh Nair |
-|[testagentpool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=50&view=agents)| 10th Dec, 2021 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |
+|[testagentpool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=50&view=agents)| -- This has been replaced with tasmumsagents -- |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Santosh Nair |
 |[webappspool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=111&view=agents)| 10th Dec, 2021 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |
 |[datapool](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=113&view=agents)| 10th Dec, 2021 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |
 |[tasmumsagents](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/agentqueues?queueId=11&view=agents)| 10th Dec, 2021 |Agent Pools (Read & manage); Deployment Groups (Read & manage)| Paritosh Kumar |

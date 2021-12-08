@@ -70,10 +70,16 @@
 **Data Platform**
 | **ID** | **Dev Process** | **Tool** | **Responsible** | **Accountable** | **Consulted** | **Informed** |
 |--|--|--|--|--|--|--|--|
-| 1 | Update Synapse database project | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | DevOps Engineer |
-| 2 | Update SQL database project | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | Architect |
-| 3 | Update Logic App | Azure Portal, Powershell | DevOps Engineer | DevOps Engineer | DevOps Engineer | Project Manager | 
-| 4 | Update Stream Analytics | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | Architect |
-| 5 | Update ADX database| Visual Studio, Git | DevOps Engineer | DevOps Engineer | Architect | Architect |
-| 6 | Update AAS model| Visual Studio, Git | DevOps Engineer | DevOps Engineer | Architect | Architect |
+| 1 | Update Synapse database project | Visual Studio, VSCode | Developer | DevLead| Architect | Test Lead|
+| 2 | Update SQL database project | Visual Studio, VSCode | Developer | DevLead| Architect | Test Lead|
+| 3 | Update Logic App | Azure Portal, Visual Studio, VSCode|  Developer | DevLead| Architect | Test Lead| 
+| 4 | Update Stream Analytics | Visual Studio, VSCode | Developer | DevLead| Architect | Test Lead|
+| 5 | Update ADX database| Visual Studio, VSCode |  Developer | DevLead| Architect | Test Lead|
+| 6 | Update AAS model| Visual Studio |  Developer | DevLead| Architect | Test Lead|
+| 7 | Deploy Updated Synapse database project | CI/CD pipelines| DevOps Engineer| DevOps Engineer| DevLead| Architect|
+| 8 | Deploy Updated SQL database project |CI/CD pipelines | DevOps Engineer| DevOps Engineer| DevLead| Architect|
+| 9 | Deploy Updated Logic App | CI/CD pipelines|  DevOps Engineer| DevOps Engineer| DevLead| Architect|
+| 10 | Deploy Updated Stream Analytics |CI/CD pipelines | DevOps Engineer| DevOps Engineer| DevLead| Architect|
+| 11 | Deploy Updated ADX database| CI/CD pipelines |DevOps Engineer| DevOps Engineer| DevLead| Architect|
+| 12 | Deploy Updated AAS model| CI/CD pipelines |DevOps Engineer| DevOps Engineer| DevLead| Architect|
 

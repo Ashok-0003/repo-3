@@ -12,7 +12,7 @@
 | 8 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
 | 9 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
 | 10 | Validate code in Dev environment against acceptance criteria (using test scripts from the test team) and update the status of user story from 'Under Development' to 'Dev Complete' | Visual Studio, Git, ADO | Developer | Dev Lead | Dev Lead | Dev Lead | 
-| 11 | Deploy code in TEST environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
+| 11 | Deploy code in TEST environment (potentially multiple times a week whenever a story or bug fix is ready for testing) | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
 | 12 | Validate code in TEST environment against acceptance criteria and update the status of user story from 'Dev Complete' to 'Test Complete' | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
 | 13 | Publish release notes to Malomatia to deploy code in UAT and change the status of user story from 'Test Complete' to 'DoD Ready' | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
 
@@ -48,7 +48,7 @@
 | 8 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
 | 9 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
 | 10 | Validate code in Dev environment against acceptance criteria (using test scripts from the test team) and update the status of user story from 'Under Development' to 'Dev Complete' | Visual Studio, Git, ADO | Developer | Dev Lead | Dev Lead | Dev Lead | 
-| 11 | Deploy code in TEST environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
+| 11 | Deploy code in TEST environment (potentially multiple times a week whenever a story or bug fix is ready for testing) | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
 | 12 | Validate code in TEST environment against acceptance criteria and update the status of user story from 'Dev Complete' to 'Test Complete' | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
 | 13 | Publish release notes to Malomatia to deploy code in UAT and change the status of user story from 'Test Complete' to 'DoD Ready' | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
 
@@ -63,6 +63,6 @@
 | 6 | Delete Feature branch | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | DevOps Engineer | 
 | 7 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | DevOps Engineer | DevOps Engineer | Test Lead | 
 | 8 | Validate code in Dev environment against acceptance criteria | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | Dev Lead | 
-| 9 | Deploy code in TEST environment | CI/CD pipelines | DevOps Engineer | DevOps Engineer | Test Lead | Test Lead | 
+| 9 | Deploy code in TEST environment (potentially multiple times a week whenever a story or bug fix is ready for testing) | CI/CD pipelines | DevOps Engineer | DevOps Engineer | Test Lead | Test Lead | 
 | 10 | Validate code in TEST environment against acceptance criteria | ADO | Test Lead | DevOps Engineer | DevOps Engineer | Test Lead | 
 | 11 | Publish release notes to Malomatia to deploy code in UAT | Email | DevOps Engineer | DevOps Engineer | Test Lead | Project Manager | 

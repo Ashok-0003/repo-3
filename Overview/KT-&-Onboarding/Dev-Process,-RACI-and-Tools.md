@@ -66,3 +66,14 @@
 | 9 | Deploy code in TEST environment (potentially multiple times a week whenever a story or bug fix is ready for testing) | CI/CD pipelines | DevOps Engineer | DevOps Engineer | Test Lead | Test Lead | 
 | 10 | Validate code in TEST environment against acceptance criteria | ADO | Test Lead | DevOps Engineer | DevOps Engineer | Test Lead | 
 | 11 | Publish release notes to Malomatia to deploy code in UAT | Email | DevOps Engineer | DevOps Engineer | Test Lead | Project Manager | 
+
+**Data Platform**
+| **ID** | **Dev Process** | **Tool** | **Responsible** | **Accountable** | **Consulted** | **Informed** |
+|--|--|--|--|--|--|--|--|
+| 1 | Update Synapse database project | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | DevOps Engineer |
+| 2 | Update SQL database project | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | Architect |
+| 3 | Update Logic App | Azure Portal, Powershell | DevOps Engineer | DevOps Engineer | DevOps Engineer | Project Manager | 
+| 4 | Update Stream Analytics | Visual Studio, Git | DevOps Engineer | DevOps Engineer | DevOps Engineer | Architect |
+| 5 | Update ADX database| Visual Studio, Git | DevOps Engineer | DevOps Engineer | Architect | Architect |
+| 6 | Update AAS model| Visual Studio, Git | DevOps Engineer | DevOps Engineer | Architect | Architect |
+

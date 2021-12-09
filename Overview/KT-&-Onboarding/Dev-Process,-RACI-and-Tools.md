@@ -67,7 +67,7 @@
 | 10 | Validate code in TEST environment against acceptance criteria | ADO | Test Lead | DevOps Engineer | DevOps Engineer | Test Lead | 
 | 11 | Publish release notes to Malomatia to deploy code in UAT | Email | DevOps Engineer | DevOps Engineer | Test Lead | Project Manager | 
 
-**Data Platform**
+**Data Platform - Services**
 | **ID** | **Dev Process** | **Tool** | **Responsible** | **Accountable** | **Consulted** | **Informed** |
 |--|--|--|--|--|--|--|--|
 | 1 | Update Synapse database project | Visual Studio, VSCode | Developer | DevLead| Architect | Test Lead|
@@ -82,17 +82,21 @@
 | 10 | Deploy Updated Stream Analytics |CI/CD pipelines | Developer| DevLead| DevLead| DevLead|
 | 11 | Deploy Updated ADX database| CI/CD pipelines |Developer| DevLead| DevLead| DevLead|
 | 12 | Deploy Updated AAS model| CI/CD pipelines |Developer| DevLead| DevLead| DevLead|
-| 13 | Change the status of User Story from 'Approved' to 'Committed' state and create child Tasks for development | ADO | Developer | Developer | Dev Lead | Dev Lead |
-| 14 | Create a Feature branch for each work item and change the status of user story from 'Committed' to 'Under Development'| Visual Studio, Git, ADO | Developer | Developer | Dev Lead | Dev Lead |
-| 15 | Develop code in Feature branch. | Visual Studio,VSCode| Developer | Developer | Dev Lead | Dev Lead |
-| 16 | Check-in code in Feature branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
-| 17 | Submit Pull Request from Feature branch to merge code changes to master branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
-| 18 | Review the PR and approve for merging to master (or provide feedback for developer to address). | Visual Studio, Git, VSCode | Dev Lead | Dev Lead | Architect | Developer |
-| 19 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
-| 20 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
-| 21 | Validate code in Dev environment against acceptance criteria (using test scripts from the test team) and update the status of user story from 'Under Development' to 'Dev Complete' | Visual Studio, Git, ADO | Developer | Dev Lead | Dev Lead | Dev Lead | 
-| 22 | Deploy code in TEST environment (potentially multiple times a week whenever a story or bug fix is ready for testing) | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
-| 23 | Validate code in TEST environment against acceptance criteria and update the status of user story from 'Dev Complete' to 'Test Complete' | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
-| 24 | Publish release notes to Malomatia to deploy code in UAT and change the status of user story from 'Test Complete' to 'DoD Ready' | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
+
+**Data Platform - Development and Deployment Process**
+| **ID** | **Dev Process** | **Tool** | **Responsible** | **Accountable** | **Consulted** | **Informed** |
+|--|--|--|--|--|--|--|--|
+| 1 | Change the status of User Story from 'Approved' to 'Committed' state and create child Tasks for development | ADO | Developer | Developer | Dev Lead | Dev Lead |
+| 2 | Create a Feature branch for each work item and change the status of user story from 'Committed' to 'Under Development'| Visual Studio, Git, ADO | Developer | Developer | Dev Lead | Dev Lead |
+| 3 | Develop code in Feature branch. | Visual Studio,VSCode| Developer | Developer | Dev Lead | Dev Lead |
+| 4 | Check-in code in Feature branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
+| 5 | Submit Pull Request from Feature branch to merge code changes to master branch | Visual Studio, Git | Developer | Developer | Dev Lead | Dev Lead |
+| 6 | Review the PR and approve for merging to master (or provide feedback for developer to address). | Visual Studio, Git, VSCode | Dev Lead | Dev Lead | Architect | Developer |
+| 7 | Delete Feature branch | Visual Studio, Git | Dev Lead | Dev Lead | Developer | Developer | 
+| 8 | Create a build from master branch and deploy the solution in Dev environment | CI/CD pipelines | DevOps Engineer | Dev Lead | Dev Lead | Test Lead | 
+| 9 | Validate code in Dev environment against acceptance criteria (using test scripts from the test team) and update the status of user story from 'Under Development' to 'Dev Complete' | Visual Studio, Git, ADO | Developer | Dev Lead | Dev Lead | Dev Lead | 
+| 10 | Deploy code in TEST environment (potentially multiple times a week whenever a story or bug fix is ready for testing) | CI/CD pipelines | DevOps Engineer | Dev Lead | Test Lead | Test Lead | 
+| 11 | Validate code in TEST environment against acceptance criteria and update the status of user story from 'Dev Complete' to 'Test Complete' | ADO | Test Lead | Dev Lead | Dev Lead | Test Lead | 
+| 12 | Publish release notes to Malomatia to deploy code in UAT and change the status of user story from 'Test Complete' to 'DoD Ready' | Email | DevOps Engineer | Dev Lead | Test Lead | Project Manager | 
 
 

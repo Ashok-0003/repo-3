@@ -18,7 +18,16 @@ Specific to AKS upgrade from V 1.21 to 1.22
 ## The next command checks the available versions to upgrade to 
 - az aks get-upgrades --resource-group rg-**cpd**-apps-aks-**dev**-we-01 --name aks-**cpd**-apps-**dev**-we-01 --output table (Ensure to change the subscription and environment) 
 ## The next command is to start the upgrade (Ensure to change the subscription and environment)
-- az aks upgrade --resource-group rg-cpd-apps-aks-dev-we-01 --name aks-cpd-apps-dev-we-01 --kubernetes-version 1.21.7 
+- az aks upgrade --resource-group rg-**cpd**-apps-aks-**dev**-we-01 --name aks-**cpd**-apps-**dev**-we-01 --kubernetes-version 1.22.6
+## This step will take approximately one hour, depending on the number of node pools and nodes. 
+## After the upgrade, validate status by checking on the Azure Portal and running
+- az aks show --resource-group rg-**cpd**-apps-aks-**dev**-we-01 --name aks-**cpd**-apps-**dev**-we-01 --output table
+- Remove the granted Network Contributor permissions
+## Validate pod status by running 
+- kubectl get pods -n webapps
+- kubectl get pods -n apiapps
+
+
 
 
 

@@ -33,6 +33,7 @@ Specific to AKS upgrade from V 1.21 to 1.22
 - az aks get-credentials -g rg-cpd-apps-aks-dev-we-01 -n aks-cpd-apps-dev-we-01
 - helm list -A
 - helm repo add application-gateway-kubernetes-ingress https://appgwingress.blob.core.windows.net/ingress-azure-helm-package/
+- helm repo update
 - kubectl config current-context
 - helm uninstall --namespace ingress ingress-azure
 ### After the below command is run, additional commands are required to set permissions for the AGIC. Install the AGIC first to obtain the AGIC Object ID

@@ -2,7 +2,7 @@
 |Registration Name| ClientId | Expiry | Usage |
 |--|--|--|--|
 | sqcp-ado-spn |`1e4c6f30-e9eb-40bf-9173-263983cd73ab` |6/13/2022 | Service Connection [sqcp-ado-spn-dev](https://dev.azure.com/TASMUCP/TASMU%20Central%20Platform/_settings/adminservices?resourceId=a4b73e7c-6712-4ae7-a8cd-e3ff87bbdbac)|
-| acrcpdglobnpdwe02-spn | | 1st Jun 2023 | Dev, Tst, UAT ACR|
+| acrcpdglobnpdwe02-spn | | 06/02/2023 | Dev, Tst, UAT ACR|
 | acrcpdglobnpdwe01-spn | secret value | | EXPIRED|
 | acrcppglobprdwe01-spn | |10/2/2023 | Pre, PRD ACR|
 | spn-armapi-reader-npd|`c00ce23b-b4cd-4164-9735-3c63381f9441`|1/25/2023| ARM API Reader|

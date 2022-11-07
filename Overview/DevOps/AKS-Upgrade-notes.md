@@ -13,7 +13,7 @@ Specific to AKS upgrade from V 1.21 to 1.22
 **Steps**
 - Access the virtual machine
 - Open PowerShell as Administrator
-- Use “az login” to login
+- Use “az login” to login (Login should have contributor access on AKS RG)
 - az account set --subscription 'Central Platform Development'
 - az aks get-credentials -g rg-cpd-apps-aks-dev-we-01 -n aks-cpd-apps-dev-we-01
 ## The next command checks the available versions to upgrade to 

@@ -17,6 +17,8 @@ Process for renewal
 
 
 **Development, dev.sqcp.qa**
-1. Areas of use
+1. Key Vault : Development Subscription : kv-cpd-pltf-dev-we-01 -- Dev-SQCP-Certificate
+2. NVA
+3. Key Vault : HUB Subscription : kv-cph-pltf-npd-we-01 -- DEV-SQCP-QA
 
 - deded

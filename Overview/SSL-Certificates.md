@@ -41,3 +41,14 @@ Process for renewal
 4. Provision PFX 
 openssl pkcs12 -export -out FINALPFX.pfx -inkey privkey.key -in CERTBUNDLE.cer
 provide the password for importing private key and exporting PFX
+
+
+
+**TASMUPLATFORM.qa**
+1. Inform Aissac/SOC, ITSM Team, Yousif/Ops Manager, Platform team, i4s, Crowd Management
+2. Replace on NVA
+3. Replace on ITSM Servers (Web and App) + App GW, restart IIS services
+4. Replace on On Premises Firewall for VPN
+5. Replace on Crowd Management - Development Key Vault - kv-crmgn-sec-dev-we-01
+6. Testing  - Aisaac inbound testing , VPN check, Crowd Management validation
+![image.png](/.attachments/image-bfa9f7c7-5381-49c8-a0f6-34c4458fa8f0.png)

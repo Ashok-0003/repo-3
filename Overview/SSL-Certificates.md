@@ -21,6 +21,18 @@ Process for renewal
 2. NVA
 3. Key Vault : HUB Subscription : kv-cph-pltf-npd-we-01 -- DEV-SQCP-QA
 
+
+**TASMUPLATFORM.qa**
+1. Inform Aissac/SOC, ITSM Team, Yousif/Ops Manager, Platform team, i4s, Crowd Management
+2. Replace on NVA
+3. Replace on ITSM Servers (Web and App) + App GW, restart IIS services
+4. Replace on On Premises Firewall for VPN
+5. Replace on Crowd Management - Development Key Vault - kv-crmgn-sec-dev-we-01
+6. Testing  - Aisaac inbound testing , VPN check, Crowd Management validation
+![image.png](/.attachments/image-bfa9f7c7-5381-49c8-a0f6-34c4458fa8f0.png)
+
+
+
 **Steps to generate PFX**
 1. Extract Private Key - openssl pkcs12 -in Certificate.pfx -nocerts -out private.key
 2. Validate that Leaf and Intermediates are in Base 64 CRT/CER, else you could do it later by saving it as Base 64 CER
@@ -42,14 +54,10 @@ Process for renewal
 openssl pkcs12 -export -out FINALPFX.pfx -inkey privkey.key -in CERTBUNDLE.cer
 provide the password for importing private key and exporting PFX
 5. Import PFX to both key vaults, run AGW command to set certificate
+6. Command
+az account set --subscription 'Central Platform Hub'
 
-
-
-**TASMUPLATFORM.qa**
-1. Inform Aissac/SOC, ITSM Team, Yousif/Ops Manager, Platform team, i4s, Crowd Management
-2. Replace on NVA
-3. Replace on ITSM Servers (Web and App) + App GW, restart IIS services
-4. Replace on On Premises Firewall for VPN
-5. Replace on Crowd Management - Development Key Vault - kv-crmgn-sec-dev-we-01
-6. Testing  - Aisaac inbound testing , VPN check, Crowd Management validation
-![image.png](/.attachments/image-bfa9f7c7-5381-49c8-a0f6-34c4458fa8f0.png)
+$AppGw = Get-AzApplicationGateway -Name agw-cph-pltf-ntf-prd-we-01 -ResourceGroupName rg-cph-pltf-edgeagw-prd-we-01
+$secret = Get-AzKeyVaultSecret -VaultName "kv-cpp-pltf-prd-we-01" -Name "TASMU-Certificate"
+$secretId = $secret.Id.Replace($secret.Version, "9a31bb020e1d454c8b32ccaba41cea3e") # https://kv-cpp-pltf-prd-we-01.vault.azure.net/secrets/
+Set-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "TASMU-Certificate" -KeyVaultSecretId $secretId

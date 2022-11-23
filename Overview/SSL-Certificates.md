@@ -41,6 +41,7 @@ Process for renewal
 4. Provision PFX 
 openssl pkcs12 -export -out FINALPFX.pfx -inkey privkey.key -in CERTBUNDLE.cer
 provide the password for importing private key and exporting PFX
+5. Import PFX to both key vaults, run AGW command to set certificate
 
 
 

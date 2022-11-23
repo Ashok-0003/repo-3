@@ -21,4 +21,23 @@ Process for renewal
 2. NVA
 3. Key Vault : HUB Subscription : kv-cph-pltf-npd-we-01 -- DEV-SQCP-QA
 
-- deded
+**Steps to generate PFX**
+1. Extract Private Key - openssl pkcs12 -in Certificate.pfx -nocerts -out private.key
+2. Validate that Leaf and Intermediates are in Base 64 CRT/CER, else you could do it later by saving it as Base 64 CER
+3. Then recreate a PEM/CER Bundle of the entire chain ensuring that they are bundled in the correct order and save to a new bundled.cer. This is done by opening a new notepad/notepad++ file and copying in the contents of the CERTIFICATE (LEAF) and Bundle (Intermediate + Root) into a new file. This new file can be saved as CRT. After saving the file, open the CRT and click on the second tab "Details", then "Copy to File" -- When saving, save as - base 64 encoded CER. 
+
+-----BEGIN CERTIFICATE-----
+(Your Primary SSL certificate: your_domain_name.cer)
+-----END CERTIFICATE-----
+
+ -----BEGIN CERTIFICATE-----
+(Your Intermediate certificate: DigiCertCA.cer)
+-----END CERTIFICATE-----
+
+ -----BEGIN CERTIFICATE-----
+(Your Root certificate: TrustedRoot.cer)
+-----END CERTIFICATE-----
+
+4. Provision PFX 
+openssl pkcs12 -export -out FINALPFX.pfx -inkey privkey.key -in CERTBUNDLE.cer
+provide the password for importing private key and exporting PFX

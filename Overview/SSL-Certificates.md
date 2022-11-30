@@ -36,7 +36,7 @@ Process for renewal
 **Steps to generate PFX**
 1. Extract Private Key - openssl pkcs12 -in Certificate.pfx -nocerts -out private.key
 2. Validate that Leaf and Intermediates are in Base 64 CRT/CER, else you could do it later by saving it as Base 64 CER
-3. Then recreate a PEM/CER Bundle of the entire chain ensuring that they are bundled in the correct order and save to a new bundled.cer. This is done by opening a new notepad/notepad++ file and copying in the contents of the CERTIFICATE (LEAF) and Bundle (Intermediate + Root) into a new file. This new file can be saved as CRT. After saving the file, open the CRT and click on the second tab "Details", then "Copy to File" -- When saving, save as - base 64 encoded CER. 
+3. Then recreate a PEM/CER Bundle of the entire chain ensuring that they are bundled in the correct order and save to a new bundled.crt. This is done by opening a new notepad/notepad++ file and copying in the contents of the CERTIFICATE (LEAF) and Bundle (Intermediate + Root) into a new file. 
 
 -----BEGIN CERTIFICATE-----
 (Your Primary SSL certificate: your_domain_name.cer)
@@ -61,3 +61,15 @@ $AppGw = Get-AzApplicationGateway -Name agw-cph-pltf-ntf-prd-we-01 -ResourceGrou
 $secret = Get-AzKeyVaultSecret -VaultName "kv-cpp-pltf-prd-we-01" -Name "TASMU-Certificate"
 $secretId = $secret.Id.Replace($secret.Version, "9a31bb020e1d454c8b32ccaba41cea3e") # https://kv-cpp-pltf-prd-we-01.vault.azure.net/secrets/
 Set-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "TASMU-Certificate" -KeyVaultSecretId $secretId
+
+
+Test, tst.sqcp.qa
+
+
+
+Key Vault : Development Subscription : kv-cpd-pltf-tst-we-01 -- Test-SQCP-Certificate
+NVA
+Key Vault : HUB Subscription : kv-cph-pltf-npd-we-01 -- TST-SQCP-QA
+agw-cpd-apps-itsm-tst-we-01 - Manually
+
+On ITSM Server - Tst & Proxy, add certificate manually in IIS and map it to web service

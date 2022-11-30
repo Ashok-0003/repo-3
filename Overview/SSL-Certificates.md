@@ -73,3 +73,9 @@ Key Vault : HUB Subscription : kv-cph-pltf-npd-we-01 -- TST-SQCP-QA
 agw-cpd-apps-itsm-tst-we-01 - Manually
 
 On ITSM Server - Tst & Proxy, add certificate manually in IIS and map it to web service
+
+$AppGw = Get-AzApplicationGateway -Name agw-cpd-apps-aks-tst-we-01 -ResourceGroupName rg-cpd-apps-aks-tst-we-01
+Set-AzApplicationGateway -ApplicationGateway $AppGW
+
+
+just do some config change such as time interval to reload the config after running above command
